@@ -1,0 +1,587 @@
+{
+  "game": "Honor of Kings",
+  "name_cn": "王者荣耀",
+  "total": 121,
+  "heroes": [
+    {
+      "name": "廉颇",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "白起",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "程咬金",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "刘邦",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "项羽",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "刘禅",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "庄周",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "牛魔",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "张飞",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "钟无艳",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "东皇太一",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "梦奇",
+      "role": "坦克/法师",
+      "universal_role": "tank"
+    },
+    {
+      "name": "苏烈",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "猪八戒",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "盾山",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "蒙恬",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "阿古朵",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "夏侯惇",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "亚瑟",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "典韦",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "曹操",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "吕布",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "达摩",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "关羽",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "老夫子",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "宫本武藏",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "花木兰",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "孙悟空",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "杨戬",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "雅典娜",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "哪吒",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "铠",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "李信",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "盘古",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "狂铁",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "孙策",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "马超",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "曜",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "夏洛特",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "司空震",
+      "role": "战士/法师",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "云缨",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "赵怀真",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "姬小满",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "亚连",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "大司命",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "韩信",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "阿轲",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "兰陵王",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "露娜",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "李白",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "橘右京",
+      "role": "刺客/战士",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "娜可露露",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "百里玄策",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "裴擒虎",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "元歌",
+      "role": "刺客/战士",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "司马懿",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "云中君",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "镜",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "澜",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "暃",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "妲己",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "小乔",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "安琪拉",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "甄姬",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "王昭君",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "貂蝉",
+      "role": "法师/刺客",
+      "universal_role": "mage"
+    },
+    {
+      "name": "嬴政",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "扁鹊",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "芈月",
+      "role": "法师/坦克",
+      "universal_role": "mage"
+    },
+    {
+      "name": "周瑜",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "高渐离",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "姜子牙",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "张良",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "武则天",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "不知火舞",
+      "role": "法师/刺客",
+      "universal_role": "mage"
+    },
+    {
+      "name": "钟馗",
+      "role": "法师/坦克",
+      "universal_role": "mage"
+    },
+    {
+      "name": "墨子",
+      "role": "法师/坦克",
+      "universal_role": "mage"
+    },
+    {
+      "name": "诸葛亮",
+      "role": "法师/刺客",
+      "universal_role": "mage"
+    },
+    {
+      "name": "干将莫邪",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "女娲",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "杨玉环",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "奕星",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "米莱狄",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "沈梦溪",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "上官婉儿",
+      "role": "法师/刺客",
+      "universal_role": "mage"
+    },
+    {
+      "name": "嫦娥",
+      "role": "法师/坦克",
+      "universal_role": "mage"
+    },
+    {
+      "name": "西施",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "海月",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "金蝉",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "后羿",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "鲁班七号",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "狄仁杰",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "孙尚香",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "马可波罗",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "虞姬",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "成吉思汗",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "李元芳",
+      "role": "射手/打野",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "黄忠",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "百里守约",
+      "role": "射手/刺客",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "公孙离",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "伽罗",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "蒙犽",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "艾琳",
+      "role": "射手/法师",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "戈娅",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "莱西奥",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "孙膑",
+      "role": "辅助/法师",
+      "universal_role": "support"
+    },
+    {
+      "name": "蔡文姬",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "太乙真人",
+      "role": "辅助/坦克",
+      "universal_role": "support"
+    },
+    {
+      "name": "鬼谷子",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "大乔",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "明世隐",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "瑶",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "鲁班大师",
+      "role": "辅助/坦克",
+      "universal_role": "support"
+    },
+    {
+      "name": "桑启",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "朵莉亚",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "少司缘",
+      "role": "辅助",
+      "universal_role": "support"
+    }
+  ]
+}

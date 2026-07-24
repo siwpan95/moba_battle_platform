@@ -1,0 +1,2158 @@
+{
+  "旅行者": [
+    {
+      "name": "旅行者·烈斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "旅行者·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "旅行者·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "旅行者·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    }
+  ],
+  "琴": [
+    {
+      "name": "琴·守护结界",
+      "key": "Q",
+      "type": "法术",
+      "action": "提供护盾",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 5,
+      "description": "提供护盾（友方）。护盾",
+      "approx": true
+    },
+    {
+      "name": "琴·增益祝福",
+      "key": "W",
+      "type": "混合",
+      "action": "提升属性",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "增益"
+        }
+      ],
+      "cooldown": 6,
+      "description": "提升属性（友方）。增益",
+      "approx": true
+    },
+    {
+      "name": "琴·净化术",
+      "key": "E",
+      "type": "法术",
+      "action": "移除负面",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "cleanse",
+          "desc": "净化"
+        }
+      ],
+      "cooldown": 5,
+      "description": "移除负面（友方）。净化",
+      "approx": true
+    },
+    {
+      "name": "琴·群体治疗",
+      "key": "R",
+      "type": "混合",
+      "action": "治疗多人",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "heal",
+          "desc": "群疗"
+        }
+      ],
+      "cooldown": 8,
+      "description": "治疗多人（区域）。群疗",
+      "approx": true
+    }
+  ],
+  "安柏": [
+    {
+      "name": "安柏·穿甲弹",
+      "key": "Q",
+      "type": "物理",
+      "action": "贯穿多重目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "pierce",
+          "desc": "穿透"
+        }
+      ],
+      "cooldown": 6,
+      "description": "贯穿多重目标（单体）。穿透",
+      "approx": true
+    },
+    {
+      "name": "安柏·战术翻滚",
+      "key": "W",
+      "type": "物理",
+      "action": "拉开距离",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "dash",
+          "desc": "位移"
+        }
+      ],
+      "cooldown": 4,
+      "description": "拉开距离（自身）。位移",
+      "approx": true
+    },
+    {
+      "name": "安柏·爆头狙击",
+      "key": "E",
+      "type": "物理",
+      "action": "蓄力重击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "crit",
+          "desc": "重伤"
+        }
+      ],
+      "cooldown": 8,
+      "description": "蓄力重击（单体）。重伤",
+      "approx": true
+    },
+    {
+      "name": "安柏·压制火力",
+      "key": "R",
+      "type": "物理",
+      "action": "限制走位",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 6,
+      "description": "限制走位（区域）。减速",
+      "approx": true
+    }
+  ],
+  "凯亚": [
+    {
+      "name": "凯亚·致命标记",
+      "key": "Q",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "凯亚·影分身",
+      "key": "W",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    },
+    {
+      "name": "凯亚·处决",
+      "key": "E",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "凯亚·暗影突袭",
+      "key": "R",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    }
+  ],
+  "丽莎": [
+    {
+      "name": "丽莎·雷霆之矛",
+      "key": "Q",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    },
+    {
+      "name": "丽莎·奥术护盾",
+      "key": "W",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    },
+    {
+      "name": "丽莎·奥能飞弹",
+      "key": "E",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "force",
+          "desc": "力场伤害"
+        }
+      ],
+      "cooldown": 3,
+      "description": "发射魔法飞弹（单体）。力场伤害",
+      "approx": true
+    },
+    {
+      "name": "丽莎·元素风暴",
+      "key": "R",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 7,
+      "description": "召唤元素席卷（区域）。范围伤害",
+      "approx": true
+    }
+  ],
+  "芭芭拉": [
+    {
+      "name": "芭芭拉·复活祈愿",
+      "key": "Q",
+      "type": "法术",
+      "action": "复活倒下队友",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CHA",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "revive",
+          "desc": "复活"
+        }
+      ],
+      "cooldown": 12,
+      "description": "复活倒下队友（友方）。复活",
+      "approx": true
+    },
+    {
+      "name": "芭芭拉·治愈之光",
+      "key": "W",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "heal",
+          "desc": "治疗"
+        }
+      ],
+      "cooldown": 3,
+      "description": "恢复生命（友方）。治疗",
+      "approx": true
+    },
+    {
+      "name": "芭芭拉·守护结界",
+      "key": "E",
+      "type": "法术",
+      "action": "提供护盾",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 5,
+      "description": "提供护盾（友方）。护盾",
+      "approx": true
+    },
+    {
+      "name": "芭芭拉·增益祝福",
+      "key": "R",
+      "type": "混合",
+      "action": "提升属性",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "增益"
+        }
+      ],
+      "cooldown": 6,
+      "description": "提升属性（友方）。增益",
+      "approx": true
+    }
+  ],
+  "雷泽": [
+    {
+      "name": "雷泽·烈斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "雷泽·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "雷泽·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "雷泽·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    }
+  ],
+  "温迪": [
+    {
+      "name": "温迪·元素风暴",
+      "key": "Q",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 7,
+      "description": "召唤元素席卷（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "温迪·时空禁锢",
+      "key": "W",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    },
+    {
+      "name": "温迪·焰爆术",
+      "key": "E",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "温迪·雷霆之矛",
+      "key": "R",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    }
+  ],
+  "可莉": [
+    {
+      "name": "可莉·时空禁锢",
+      "key": "Q",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    },
+    {
+      "name": "可莉·焰爆术",
+      "key": "W",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "可莉·雷霆之矛",
+      "key": "E",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    },
+    {
+      "name": "可莉·奥术护盾",
+      "key": "R",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    }
+  ],
+  "班尼特": [
+    {
+      "name": "班尼特·净化术",
+      "key": "Q",
+      "type": "法术",
+      "action": "移除负面",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "cleanse",
+          "desc": "净化"
+        }
+      ],
+      "cooldown": 5,
+      "description": "移除负面（友方）。净化",
+      "approx": true
+    },
+    {
+      "name": "班尼特·群体治疗",
+      "key": "W",
+      "type": "混合",
+      "action": "治疗多人",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "heal",
+          "desc": "群疗"
+        }
+      ],
+      "cooldown": 8,
+      "description": "治疗多人（区域）。群疗",
+      "approx": true
+    },
+    {
+      "name": "班尼特·复活祈愿",
+      "key": "E",
+      "type": "法术",
+      "action": "复活倒下队友",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CHA",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "revive",
+          "desc": "复活"
+        }
+      ],
+      "cooldown": 12,
+      "description": "复活倒下队友（友方）。复活",
+      "approx": true
+    },
+    {
+      "name": "班尼特·治愈之光",
+      "key": "R",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "heal",
+          "desc": "治疗"
+        }
+      ],
+      "cooldown": 3,
+      "description": "恢复生命（友方）。治疗",
+      "approx": true
+    }
+  ],
+  "诺艾尔": [
+    {
+      "name": "诺艾尔·巨石投掷",
+      "key": "Q",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "投掷巨石轰击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "诺艾尔·不屈意志",
+      "key": "W",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "immune",
+          "desc": "免疫控制"
+        }
+      ],
+      "cooldown": 10,
+      "description": "短暂免疫控制（自身）。免疫控制",
+      "approx": true
+    },
+    {
+      "name": "诺艾尔·岩盾守护",
+      "key": "E",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "获得临时生命"
+        }
+      ],
+      "cooldown": 0,
+      "description": "展开护盾抵御伤害（自身）。获得临时生命",
+      "approx": true
+    },
+    {
+      "name": "诺艾尔·震荡猛击",
+      "key": "R",
+      "type": "物理",
+      "action": "重击前方敌人",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "prone",
+          "desc": "击倒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "重击前方敌人（单体）。击倒",
+      "approx": true
+    }
+  ],
+  "菲谢尔": [
+    {
+      "name": "菲谢尔·压制火力",
+      "key": "Q",
+      "type": "物理",
+      "action": "限制走位",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 6,
+      "description": "限制走位（区域）。减速",
+      "approx": true
+    },
+    {
+      "name": "菲谢尔·精准射击",
+      "key": "W",
+      "type": "物理",
+      "action": "远程精准打击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "crit",
+          "desc": "暴击"
+        }
+      ],
+      "cooldown": 2,
+      "description": "远程精准打击（单体）。暴击",
+      "approx": true
+    },
+    {
+      "name": "菲谢尔·速射连射",
+      "key": "E",
+      "type": "物理",
+      "action": "快速倾泻弹幕",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围"
+        }
+      ],
+      "cooldown": 5,
+      "description": "快速倾泻弹幕（区域）。范围",
+      "approx": true
+    },
+    {
+      "name": "菲谢尔·穿甲弹",
+      "key": "R",
+      "type": "物理",
+      "action": "贯穿多重目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "pierce",
+          "desc": "穿透"
+        }
+      ],
+      "cooldown": 6,
+      "description": "贯穿多重目标（单体）。穿透",
+      "approx": true
+    }
+  ],
+  "迪卢克": [
+    {
+      "name": "迪卢克·烈斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "迪卢克·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "迪卢克·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "迪卢克·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    }
+  ],
+  "北斗": [
+    {
+      "name": "北斗·旋风斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "北斗·冲锋",
+      "key": "W",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "北斗·破甲击",
+      "key": "E",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    },
+    {
+      "name": "北斗·战吼",
+      "key": "R",
+      "type": "混合",
+      "action": "鼓舞自身与队友",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "攻击提升"
+        }
+      ],
+      "cooldown": 8,
+      "description": "鼓舞自身与队友（友方）。攻击提升",
+      "approx": true
+    }
+  ],
+  "凝光": [
+    {
+      "name": "凝光·时空禁锢",
+      "key": "Q",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    },
+    {
+      "name": "凝光·焰爆术",
+      "key": "W",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "凝光·雷霆之矛",
+      "key": "E",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    },
+    {
+      "name": "凝光·奥术护盾",
+      "key": "R",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    }
+  ],
+  "钟离": [
+    {
+      "name": "钟离·荆棘反甲",
+      "key": "Q",
+      "type": "物理",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "reflect",
+          "desc": "反伤"
+        }
+      ],
+      "cooldown": 6,
+      "description": "反弹近战伤害（自身）。反伤",
+      "approx": true
+    },
+    {
+      "name": "钟离·巨石投掷",
+      "key": "W",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "投掷巨石轰击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "钟离·不屈意志",
+      "key": "E",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "immune",
+          "desc": "免疫控制"
+        }
+      ],
+      "cooldown": 10,
+      "description": "短暂免疫控制（自身）。免疫控制",
+      "approx": true
+    },
+    {
+      "name": "钟离·岩盾守护",
+      "key": "R",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "获得临时生命"
+        }
+      ],
+      "cooldown": 0,
+      "description": "展开护盾抵御伤害（自身）。获得临时生命",
+      "approx": true
+    }
+  ],
+  "香菱": [
+    {
+      "name": "香菱·战吼",
+      "key": "Q",
+      "type": "混合",
+      "action": "鼓舞自身与队友",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "攻击提升"
+        }
+      ],
+      "cooldown": 8,
+      "description": "鼓舞自身与队友（友方）。攻击提升",
+      "approx": true
+    },
+    {
+      "name": "香菱·致命连击",
+      "key": "W",
+      "type": "物理",
+      "action": "高速连斩",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 7,
+      "description": "高速连斩（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "香菱·烈斩",
+      "key": "E",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "香菱·旋风斩",
+      "key": "R",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    }
+  ],
+  "行秋": [
+    {
+      "name": "行秋·复活祈愿",
+      "key": "Q",
+      "type": "法术",
+      "action": "复活倒下队友",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CHA",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "revive",
+          "desc": "复活"
+        }
+      ],
+      "cooldown": 12,
+      "description": "复活倒下队友（友方）。复活",
+      "approx": true
+    },
+    {
+      "name": "行秋·治愈之光",
+      "key": "W",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "heal",
+          "desc": "治疗"
+        }
+      ],
+      "cooldown": 3,
+      "description": "恢复生命（友方）。治疗",
+      "approx": true
+    },
+    {
+      "name": "行秋·守护结界",
+      "key": "E",
+      "type": "法术",
+      "action": "提供护盾",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 5,
+      "description": "提供护盾（友方）。护盾",
+      "approx": true
+    },
+    {
+      "name": "行秋·增益祝福",
+      "key": "R",
+      "type": "混合",
+      "action": "提升属性",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "增益"
+        }
+      ],
+      "cooldown": 6,
+      "description": "提升属性（友方）。增益",
+      "approx": true
+    }
+  ],
+  "七七": [
+    {
+      "name": "七七·治愈之光",
+      "key": "Q",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "heal",
+          "desc": "治疗"
+        }
+      ],
+      "cooldown": 3,
+      "description": "恢复生命（友方）。治疗",
+      "approx": true
+    },
+    {
+      "name": "七七·守护结界",
+      "key": "W",
+      "type": "法术",
+      "action": "提供护盾",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 5,
+      "description": "提供护盾（友方）。护盾",
+      "approx": true
+    },
+    {
+      "name": "七七·增益祝福",
+      "key": "E",
+      "type": "混合",
+      "action": "提升属性",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "增益"
+        }
+      ],
+      "cooldown": 6,
+      "description": "提升属性（友方）。增益",
+      "approx": true
+    },
+    {
+      "name": "七七·净化术",
+      "key": "R",
+      "type": "法术",
+      "action": "移除负面",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "cleanse",
+          "desc": "净化"
+        }
+      ],
+      "cooldown": 5,
+      "description": "移除负面（友方）。净化",
+      "approx": true
+    }
+  ],
+  "莫娜": [
+    {
+      "name": "莫娜·元素风暴",
+      "key": "Q",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 7,
+      "description": "召唤元素席卷（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "莫娜·时空禁锢",
+      "key": "W",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    },
+    {
+      "name": "莫娜·焰爆术",
+      "key": "E",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "莫娜·雷霆之矛",
+      "key": "R",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    }
+  ],
+  "甘雨": [
+    {
+      "name": "甘雨·穿甲弹",
+      "key": "Q",
+      "type": "物理",
+      "action": "贯穿多重目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "pierce",
+          "desc": "穿透"
+        }
+      ],
+      "cooldown": 6,
+      "description": "贯穿多重目标（单体）。穿透",
+      "approx": true
+    },
+    {
+      "name": "甘雨·战术翻滚",
+      "key": "W",
+      "type": "物理",
+      "action": "拉开距离",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "dash",
+          "desc": "位移"
+        }
+      ],
+      "cooldown": 4,
+      "description": "拉开距离（自身）。位移",
+      "approx": true
+    },
+    {
+      "name": "甘雨·爆头狙击",
+      "key": "E",
+      "type": "物理",
+      "action": "蓄力重击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "crit",
+          "desc": "重伤"
+        }
+      ],
+      "cooldown": 8,
+      "description": "蓄力重击（单体）。重伤",
+      "approx": true
+    },
+    {
+      "name": "甘雨·压制火力",
+      "key": "R",
+      "type": "物理",
+      "action": "限制走位",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 6,
+      "description": "限制走位（区域）。减速",
+      "approx": true
+    }
+  ],
+  "魈": [
+    {
+      "name": "魈·致命标记",
+      "key": "Q",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "魈·影分身",
+      "key": "W",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    },
+    {
+      "name": "魈·处决",
+      "key": "E",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "魈·暗影突袭",
+      "key": "R",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    }
+  ]
+}

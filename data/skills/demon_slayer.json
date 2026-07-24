@@ -1,0 +1,1129 @@
+{
+  "灶门炭治郎": [
+    {
+      "name": "水之呼吸·壹之型 水面斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "水之呼吸·肆之型 打击之浪潮",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "1d10+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "火之神神乐",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d10+STR 火焰伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "圆舞",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ],
+  "灶门祢豆子": [
+    {
+      "name": "血鬼术·爆血",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+DEX 火焰伤害。",
+      "approx": true
+    },
+    {
+      "name": "鬼化冲刺",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 穿刺伤害。",
+      "approx": true
+    },
+    {
+      "name": "脚踢连击",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+DEX 钝击伤害。",
+      "approx": true
+    },
+    {
+      "name": "巨大化狂暴",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+DEX 钝击伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ],
+  "我妻善逸": [
+    {
+      "name": "雷之呼吸·壹之型 霹雳一闪",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "雷鸣"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+DEX 雷鸣伤害。",
+      "approx": true
+    },
+    {
+      "name": "雷之呼吸·六连",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "雷鸣"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 雷鸣伤害。",
+      "approx": true
+    },
+    {
+      "name": "雷之呼吸·八连",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "雷鸣"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d10+DEX 雷鸣伤害。",
+      "approx": true
+    },
+    {
+      "name": "雷之呼吸·神速",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 12,
+        "bonus_attr": "DEX",
+        "type": "雷鸣"
+      },
+      "effects": [
+        {
+          "type": "麻痹",
+          "duration": 0,
+          "desc": "对低生命目标附加麻痹",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d12+DEX 雷鸣伤害。",
+      "approx": true
+    }
+  ],
+  "嘴平伊之助": [
+    {
+      "name": "兽之呼吸·壹之型 齿",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "兽之呼吸·贰之型 头突",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+STR 钝击伤害。",
+      "approx": true
+    },
+    {
+      "name": "兽之呼吸·肆之型 狂牙",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "兽之呼吸·拾之型 空间把握·无序",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ],
+  "富冈义勇": [
+    {
+      "name": "水之呼吸·贰之型 水车",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d10+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "水之呼吸·伍之型 干天之壶",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "水之呼吸·捌之型 泷壶",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d10+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "水之呼吸·拾壹之型 凪",
+      "key": "R",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "防御",
+          "duration": 1,
+          "desc": "完全防御下一次攻击",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 4,
+      "description": "进入完全防御，抵御下一次攻击。",
+      "approx": true
+    }
+  ],
+  "蝴蝶忍": [
+    {
+      "name": "虫之呼吸·蝶之舞 戏弄",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d6+DEX 毒素伤害。",
+      "approx": true
+    },
+    {
+      "name": "虫之呼吸·蜂牙之舞 真弊",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 毒素伤害。",
+      "approx": true
+    },
+    {
+      "name": "毒雾喷洒",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "中毒",
+          "duration": 2,
+          "desc": "范围内敌人中毒",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+DEX 毒素伤害，使范围敌人中毒。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "虫之呼吸·蜩之舞 复讐",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "剧毒",
+          "duration": 0,
+          "desc": "对鬼造成额外剧毒",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 毒素伤害，对鬼额外有效。",
+      "approx": true
+    }
+  ],
+  "炼狱杏寿郎": [
+    {
+      "name": "炎之呼吸·壹之型 不知火",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d10+STR 火焰伤害。",
+      "approx": true
+    },
+    {
+      "name": "炎之呼吸·伍之型 炎虎",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+STR 火焰伤害。",
+      "approx": true
+    },
+    {
+      "name": "炎之呼吸·肆之型 盛艳之炉",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d10+STR 火焰伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "炎之呼吸·玖之型 炼狱",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d12+STR 火焰伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ],
+  "宇髄天元": [
+    {
+      "name": "音之呼吸·壹之型 轰",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+DEX 钝击（音波）伤害。",
+      "approx": true
+    },
+    {
+      "name": "双刀投掷",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 穿刺伤害。",
+      "approx": true
+    },
+    {
+      "name": "炸药引信",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+DEX 火焰伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "音之呼吸·终之型 残响斩击",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+DEX 钝击伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 12
+    }
+  ],
+  "甘露寺蜜璃": [
+    {
+      "name": "恋之呼吸·壹之型 初恋之绊创",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "恋之呼吸·叁之型 猫猫恋爱",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "恋之呼吸·伍之型 摇曳恋风",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "恋之呼吸·陆之型 猫猫狂恋",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ],
+  "时透无一郎": [
+    {
+      "name": "霞之呼吸·壹之型 垂天远霞",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+DEX 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "霞之呼吸·叁之型 霞散之飞沫",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "霞之呼吸·伍之型 霞云之海",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+DEX 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "霞之呼吸·柒之型 胧",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+DEX 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 12
+    }
+  ],
+  "悲鸣屿行冥": [
+    {
+      "name": "岩之呼吸·壹之型 蛇纹岩撞",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d12+CON 钝击伤害。",
+      "approx": true
+    },
+    {
+      "name": "岩之呼吸·肆之型 流纹岩速",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+CON 钝击伤害。",
+      "approx": true
+    },
+    {
+      "name": "守护结界",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "单体",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "duration": 2,
+          "desc": "为友方提供护盾",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "为友方提供护盾，持续 2 回合。",
+      "approx": true
+    },
+    {
+      "name": "岩之呼吸·玖之型 铸毁",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 10,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "4d10+CON 钝击伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ],
+  "伊黑小芭内": [
+    {
+      "name": "蛇之呼吸·壹之型 蛇镰",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+DEX 穿刺伤害。",
+      "approx": true
+    },
+    {
+      "name": "蛇之呼吸·贰之型 狭头之蛇",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 穿刺伤害。",
+      "approx": true
+    },
+    {
+      "name": "蛇之呼吸·肆之型 头狱之蛇",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+DEX 穿刺伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "蛇之呼吸·捌之型 大型蛇镰",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 12,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d12+DEX 穿刺伤害。",
+      "approx": true
+    }
+  ],
+  "鬼舞辻无惨": [
+    {
+      "name": "血鬼术·鞭",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "毒素"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+INT 毒素伤害。",
+      "approx": true
+    },
+    {
+      "name": "血鬼术·散桩",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "毒素"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+INT 毒素伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "血鬼术·刺鞭",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+INT 穿刺伤害。",
+      "approx": true
+    },
+    {
+      "name": "血鬼术·千鞭乱舞",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 12,
+        "bonus_attr": "INT",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "剧毒",
+          "duration": 0,
+          "desc": "对范围内目标施加剧毒",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d12+INT 毒素伤害，覆盖大片区域。",
+      "approx": true,
+      "aoe_radius": 15
+    }
+  ],
+  "珠世": [
+    {
+      "name": "血鬼术·嗅",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "duration": 1,
+          "desc": "标记并减速目标",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+INT 心灵伤害，标记目标。",
+      "approx": true
+    },
+    {
+      "name": "治愈之血",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "单体",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "duration": 1,
+          "desc": "为友方恢复生命",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "为友方施加治疗之血。",
+      "approx": true
+    },
+    {
+      "name": "麻痹之香",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "麻痹",
+          "duration": 2,
+          "desc": "范围内敌人麻痹",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+INT 毒素伤害，麻痹范围敌人。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "芬芳血药",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "duration": 2,
+          "desc": "群体治疗友方",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d6+WIS 光耀伤害，群体治疗友方。",
+      "approx": true,
+      "aoe_radius": 12
+    }
+  ]
+}

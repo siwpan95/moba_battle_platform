@@ -1,0 +1,1211 @@
+{
+  "game": "League of Legends",
+  "name_cn": "英雄联盟",
+  "total": 172,
+  "heroes": [
+    {
+      "name": "Alistar",
+      "name_cn": "阿利斯塔",
+      "alias": "牛头酋长",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Annie",
+      "name_cn": "安妮",
+      "alias": "黑暗之女",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Ashe",
+      "name_cn": "艾希",
+      "alias": "寒冰射手",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Fiddlesticks",
+      "name_cn": "费德提克",
+      "alias": "远古恐惧",
+      "role": "法师/打野",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Jax",
+      "name_cn": "贾克斯",
+      "alias": "武器大师",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Kayle",
+      "name_cn": "凯尔",
+      "alias": "正义天使",
+      "role": "战士/辅助",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Master Yi",
+      "name_cn": "易",
+      "alias": "无极剑圣",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Morgana",
+      "name_cn": "莫甘娜",
+      "alias": "堕落天使",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Nunu & Willump",
+      "name_cn": "努努和威朗普",
+      "alias": "雪原双子",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Ryze",
+      "name_cn": "瑞兹",
+      "alias": "符文法师",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Sion",
+      "name_cn": "赛恩",
+      "alias": "亡灵战神",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Sivir",
+      "name_cn": "希维尔",
+      "alias": "战争女神",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Soraka",
+      "name_cn": "索拉卡",
+      "alias": "众星之子",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Teemo",
+      "name_cn": "提莫",
+      "alias": "迅捷斥候",
+      "role": "射手/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Tristana",
+      "name_cn": "崔丝塔娜",
+      "alias": "麦林炮手",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Twisted Fate",
+      "name_cn": "崔斯特",
+      "alias": "卡牌大师",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Warwick",
+      "name_cn": "沃里克",
+      "alias": "祖安怒兽",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Singed",
+      "name_cn": "辛吉德",
+      "alias": "炼金术士",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Zilean",
+      "name_cn": "基兰",
+      "alias": "时光守护者",
+      "role": "辅助/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Evelynn",
+      "name_cn": "伊芙琳",
+      "alias": "痛苦之拥",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Tryndamere",
+      "name_cn": "泰达米尔",
+      "alias": "蛮族之王",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Twitch",
+      "name_cn": "图奇",
+      "alias": "瘟疫之源",
+      "role": "射手/打野",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Karthus",
+      "name_cn": "卡尔萨斯",
+      "alias": "死亡颂唱者",
+      "role": "法师/打野",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Amumu",
+      "name_cn": "阿木木",
+      "alias": "殇之木乃伊",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Cho'Gath",
+      "name_cn": "科加斯",
+      "alias": "虚空恐惧",
+      "role": "坦克/法师",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Anivia",
+      "name_cn": "艾尼维亚",
+      "alias": "冰晶凤凰",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Rammus",
+      "name_cn": "拉莫斯",
+      "alias": "披甲龙龟",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Veigar",
+      "name_cn": "维迦",
+      "alias": "邪恶小法师",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Kassadin",
+      "name_cn": "卡萨丁",
+      "alias": "虚空行者",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Gangplank",
+      "name_cn": "普朗克",
+      "alias": "海洋之灾",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Taric",
+      "name_cn": "塔里克",
+      "alias": "瓦洛兰之盾",
+      "role": "辅助/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Blitzcrank",
+      "name_cn": "布里茨",
+      "alias": "蒸汽机器人",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Dr. Mundo",
+      "name_cn": "蒙多医生",
+      "alias": "祖安狂人",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Janna",
+      "name_cn": "迦娜",
+      "alias": "风暴之怒",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Malphite",
+      "name_cn": "墨菲特",
+      "alias": "熔岩巨兽",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Corki",
+      "name_cn": "库奇",
+      "alias": "英勇投弹手",
+      "role": "射手/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Katarina",
+      "name_cn": "卡特琳娜",
+      "alias": "不祥之刃",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Nasus",
+      "name_cn": "内瑟斯",
+      "alias": "沙漠死神",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Heimerdinger",
+      "name_cn": "黑默丁格",
+      "alias": "大发明家",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Shaco",
+      "name_cn": "萨科",
+      "alias": "恶魔小丑",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Udyr",
+      "name_cn": "乌迪尔",
+      "alias": "兽灵行者",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Nidalee",
+      "name_cn": "奈德丽",
+      "alias": "狂野女猎手",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Poppy",
+      "name_cn": "波比",
+      "alias": "圣锤之毅",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Gragas",
+      "name_cn": "古拉加斯",
+      "alias": "酒桶",
+      "role": "法师/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Pantheon",
+      "name_cn": "潘森",
+      "alias": "不屈之枪",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Mordekaiser",
+      "name_cn": "莫德凯撒",
+      "alias": "铁铠冥魂",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ezreal",
+      "name_cn": "伊泽瑞尔",
+      "alias": "探险家",
+      "role": "射手/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Shen",
+      "name_cn": "慎",
+      "alias": "暮光之眼",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Kennen",
+      "name_cn": "凯南",
+      "alias": "狂暴之心",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Garen",
+      "name_cn": "盖伦",
+      "alias": "德玛西亚之力",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Akali",
+      "name_cn": "阿卡丽",
+      "alias": "离群之刺",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Malzahar",
+      "name_cn": "玛尔扎哈",
+      "alias": "虚空先知",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Olaf",
+      "name_cn": "奥拉夫",
+      "alias": "狂战士",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Kog'Maw",
+      "name_cn": "克格莫",
+      "alias": "深渊巨口",
+      "role": "射手/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Xin Zhao",
+      "name_cn": "赵信",
+      "alias": "德邦总管",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Vladimir",
+      "name_cn": "弗拉基米尔",
+      "alias": "猩红收割者",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Galio",
+      "name_cn": "加里奥",
+      "alias": "正义巨像",
+      "role": "坦克/法师",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Urgot",
+      "name_cn": "厄加特",
+      "alias": "无畏战车",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Miss Fortune",
+      "name_cn": "厄运小姐",
+      "alias": "赏金猎人",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Sona",
+      "name_cn": "娑娜",
+      "alias": "琴瑟仙女",
+      "role": "辅助/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Swain",
+      "name_cn": "斯维因",
+      "alias": "诺克萨斯统领",
+      "role": "法师/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Lux",
+      "name_cn": "拉克丝",
+      "alias": "光辉女郎",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "LeBlanc",
+      "name_cn": "乐芙兰",
+      "alias": "诡术妖姬",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Irelia",
+      "name_cn": "艾瑞莉娅",
+      "alias": "刀锋舞者",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Trundle",
+      "name_cn": "特朗德尔",
+      "alias": "巨魔之王",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Cassiopeia",
+      "name_cn": "卡西奥佩娅",
+      "alias": "魔蛇之拥",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Caitlyn",
+      "name_cn": "凯特琳",
+      "alias": "皮城女警",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Renekton",
+      "name_cn": "雷克顿",
+      "alias": "荒漠屠夫",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Karma",
+      "name_cn": "卡尔玛",
+      "alias": "天启者",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Maokai",
+      "name_cn": "茂凯",
+      "alias": "扭曲树精",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Jarvan IV",
+      "name_cn": "嘉文四世",
+      "alias": "德玛西亚皇子",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Nocturne",
+      "name_cn": "魔腾",
+      "alias": "永恒梦魇",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Lee Sin",
+      "name_cn": "李青",
+      "alias": "盲僧",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Brand",
+      "name_cn": "布兰德",
+      "alias": "复仇焰魂",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Rumble",
+      "name_cn": "兰博",
+      "alias": "机械公敌",
+      "role": "战士/法师",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Vayne",
+      "name_cn": "薇恩",
+      "alias": "暗夜猎手",
+      "role": "射手/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Orianna",
+      "name_cn": "奥莉安娜",
+      "alias": "发条魔灵",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Yorick",
+      "name_cn": "约里克",
+      "alias": "牧魂人",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Leona",
+      "name_cn": "蕾欧娜",
+      "alias": "曙光女神",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Wukong",
+      "name_cn": "孙悟空",
+      "alias": "齐天大圣",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Skarner",
+      "name_cn": "斯卡纳",
+      "alias": "水晶先锋",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Talon",
+      "name_cn": "泰隆",
+      "alias": "刀锋之影",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Riven",
+      "name_cn": "锐雯",
+      "alias": "放逐之刃",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Xerath",
+      "name_cn": "泽拉斯",
+      "alias": "远古巫灵",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Graves",
+      "name_cn": "格雷福斯",
+      "alias": "法外狂徒",
+      "role": "射手/打野",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Shyvana",
+      "name_cn": "希瓦娜",
+      "alias": "龙血武姬",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Fizz",
+      "name_cn": "菲兹",
+      "alias": "潮汐海灵",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Volibear",
+      "name_cn": "沃利贝尔",
+      "alias": "不灭狂雷",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Ahri",
+      "name_cn": "阿狸",
+      "alias": "九尾妖狐",
+      "role": "法师/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Viktor",
+      "name_cn": "维克托",
+      "alias": "机械先驱",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Sejuani",
+      "name_cn": "瑟庄妮",
+      "alias": "北地之怒",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Ziggs",
+      "name_cn": "吉格斯",
+      "alias": "爆破鬼才",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Nautilus",
+      "name_cn": "诺提勒斯",
+      "alias": "深海泰坦",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Fiora",
+      "name_cn": "菲奥娜",
+      "alias": "无双剑姬",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Lulu",
+      "name_cn": "璐璐",
+      "alias": "仙灵女巫",
+      "role": "辅助/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Hecarim",
+      "name_cn": "赫卡里姆",
+      "alias": "战争之影",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Varus",
+      "name_cn": "韦鲁斯",
+      "alias": "惩戒之箭",
+      "role": "射手/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Darius",
+      "name_cn": "德莱厄斯",
+      "alias": "诺克萨斯之手",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Draven",
+      "name_cn": "德莱文",
+      "alias": "荣耀行刑官",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Jayce",
+      "name_cn": "杰斯",
+      "alias": "未来守护者",
+      "role": "战士/射手",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Zyra",
+      "name_cn": "婕拉",
+      "alias": "荆棘之兴",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Diana",
+      "name_cn": "黛安娜",
+      "alias": "皎月女神",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Rengar",
+      "name_cn": "雷恩加尔",
+      "alias": "傲之追猎者",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Syndra",
+      "name_cn": "辛德拉",
+      "alias": "暗黑元首",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Kha'Zix",
+      "name_cn": "卡兹克",
+      "alias": "虚空掠夺者",
+      "role": "刺客/打野",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Elise",
+      "name_cn": "伊莉丝",
+      "alias": "蜘蛛女皇",
+      "role": "法师/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Zed",
+      "name_cn": "劫",
+      "alias": "影流之主",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Nami",
+      "name_cn": "娜美",
+      "alias": "唤潮鲛姬",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Vi",
+      "name_cn": "蔚",
+      "alias": "皮城执法官",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Thresh",
+      "name_cn": "锤石",
+      "alias": "魂锁典狱长",
+      "role": "辅助/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Quinn",
+      "name_cn": "奎因",
+      "alias": "德玛西亚之翼",
+      "role": "射手/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Zac",
+      "name_cn": "扎克",
+      "alias": "生化魔人",
+      "role": "坦克/打野",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Lissandra",
+      "name_cn": "丽桑卓",
+      "alias": "冰霜女巫",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Aatrox",
+      "name_cn": "亚托克斯",
+      "alias": "暗裔剑魔",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Lucian",
+      "name_cn": "卢锡安",
+      "alias": "圣枪游侠",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Jinx",
+      "name_cn": "金克丝",
+      "alias": "暴走萝莉",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Yasuo",
+      "name_cn": "亚索",
+      "alias": "疾风剑豪",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Vel'Koz",
+      "name_cn": "维克兹",
+      "alias": "虚空之眼",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Braum",
+      "name_cn": "布隆",
+      "alias": "弗雷尔卓德之心",
+      "role": "辅助/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Gnar",
+      "name_cn": "纳尔",
+      "alias": "迷失之牙",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Azir",
+      "name_cn": "阿兹尔",
+      "alias": "沙漠皇帝",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Kalista",
+      "name_cn": "卡莉丝塔",
+      "alias": "复仇之矛",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Rek'Sai",
+      "name_cn": "雷克塞",
+      "alias": "虚空遁地兽",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Bard",
+      "name_cn": "巴德",
+      "alias": "星界游神",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Ekko",
+      "name_cn": "艾克",
+      "alias": "时间刺客",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Tahm Kench",
+      "name_cn": "塔姆",
+      "alias": "河流之王",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Kindred",
+      "name_cn": "千珏",
+      "alias": "永猎双子",
+      "role": "射手/打野",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Illaoi",
+      "name_cn": "俄洛伊",
+      "alias": "海兽祭司",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Jhin",
+      "name_cn": "烬",
+      "alias": "戏命师",
+      "role": "射手/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Aurelion Sol",
+      "name_cn": "奥瑞利安·索尔",
+      "alias": "铸星龙王",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Taliyah",
+      "name_cn": "塔莉垭",
+      "alias": "岩雀",
+      "role": "法师/打野",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Kled",
+      "name_cn": "克烈",
+      "alias": "暴怒骑士",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ivern",
+      "name_cn": "艾翁",
+      "alias": "翠神",
+      "role": "辅助/打野",
+      "universal_role": "support"
+    },
+    {
+      "name": "Camille",
+      "name_cn": "卡蜜尔",
+      "alias": "青钢影",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Rakan",
+      "name_cn": "洛",
+      "alias": "幻翎",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Xayah",
+      "name_cn": "霞",
+      "alias": "逆羽",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Kayn",
+      "name_cn": "凯隐",
+      "alias": "影流之镰",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ornn",
+      "name_cn": "奥恩",
+      "alias": "山隐之焰",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Zoe",
+      "name_cn": "佐伊",
+      "alias": "暮光星灵",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Kai'Sa",
+      "name_cn": "卡莎",
+      "alias": "虚空之女",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Pyke",
+      "name_cn": "派克",
+      "alias": "血港鬼影",
+      "role": "刺客/辅助",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Neeko",
+      "name_cn": "妮蔻",
+      "alias": "万花通灵",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Sylas",
+      "name_cn": "塞拉斯",
+      "alias": "解脱者",
+      "role": "战士/法师",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Yuumi",
+      "name_cn": "悠米",
+      "alias": "魔法猫咪",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Qiyana",
+      "name_cn": "奇亚娜",
+      "alias": "元素女皇",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Senna",
+      "name_cn": "赛娜",
+      "alias": "涤魂圣枪",
+      "role": "射手/辅助",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Aphelios",
+      "name_cn": "厄斐琉斯",
+      "alias": "残月之肃",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Sett",
+      "name_cn": "瑟提",
+      "alias": "腕豪",
+      "role": "战士/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Lillia",
+      "name_cn": "莉莉娅",
+      "alias": "含羞蓓蕾",
+      "role": "法师/打野",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Yone",
+      "name_cn": "永恩",
+      "alias": "封魔剑魂",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Samira",
+      "name_cn": "莎弥拉",
+      "alias": "沙漠玫瑰",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Seraphine",
+      "name_cn": "萨勒芬妮",
+      "alias": "星籁歌姬",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Rell",
+      "name_cn": "芮尔",
+      "alias": "镕铁少女",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Viego",
+      "name_cn": "佛耶戈",
+      "alias": "破败之王",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Gwen",
+      "name_cn": "格温",
+      "alias": "灵罗娃娃",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Akshan",
+      "name_cn": "阿克尚",
+      "alias": "影哨",
+      "role": "射手/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Vex",
+      "name_cn": "薇古丝",
+      "alias": "愁云使者",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Zeri",
+      "name_cn": "泽丽",
+      "alias": "祖安花火",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Renata Glasc",
+      "name_cn": "烈娜塔",
+      "alias": "炼金男爵",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Bel'Veth",
+      "name_cn": "卑尔维斯",
+      "alias": "虚空女皇",
+      "role": "战士/打野",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Nilah",
+      "name_cn": "尼菈",
+      "alias": "不羁之悦",
+      "role": "战士/射手",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "K'Sante",
+      "name_cn": "奎桑提",
+      "alias": "纳祖芒荣耀",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Milio",
+      "name_cn": "米利欧",
+      "alias": "明烛",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Naafiri",
+      "name_cn": "纳亚菲利",
+      "alias": "百裂冥犬",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Briar",
+      "name_cn": "贝蕾亚",
+      "alias": "狂厄蔷薇",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Hwei",
+      "name_cn": "慧",
+      "alias": "异画师",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Smolder",
+      "name_cn": "斯莫德",
+      "alias": "炽炎雏龙",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Aurora",
+      "name_cn": "奥萝拉",
+      "alias": "双界灵巫",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Ambessa",
+      "name_cn": "安蓓萨",
+      "alias": "铁血狼母",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Mel",
+      "name_cn": "梅尔",
+      "alias": "魂镜之影",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Yunara",
+      "name_cn": "尤娜拉",
+      "alias": "不灭信仰",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Zaahen",
+      "name_cn": "扎亨",
+      "alias": "无垠之兆",
+      "role": "法师",
+      "universal_role": "mage"
+    }
+  ]
+}

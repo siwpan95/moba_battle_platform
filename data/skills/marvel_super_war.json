@@ -1,0 +1,492 @@
+{
+  "钢铁侠": [
+    {
+      "name": "胸部光束",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "光耀"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 光耀伤害。"
+    },
+    {
+      "name": "冲击炮",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "导弹齐射",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "派对时间",
+      "key": "4",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。"
+    }
+  ],
+  "蜘蛛侠": [
+    {
+      "name": "蛛网射击",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "蛛丝摆荡",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "蜘蛛感应",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "蛛网茧",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d8+DEX 挥砍伤害。"
+    }
+  ],
+  "美国队长": [
+    {
+      "name": "盾牌投掷",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "盾击",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "复仇者集结",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "振金盾",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "雷神": [
+    {
+      "name": "雷神之锤",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 闪电伤害。"
+    },
+    {
+      "name": "闪电攻击",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 闪电伤害。"
+    },
+    {
+      "name": "雷神",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+STR 闪电伤害。"
+    },
+    {
+      "name": "彩虹桥",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "浩克": [
+    {
+      "name": "伽马冲刺",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d10+STR 穿刺伤害。"
+    },
+    {
+      "name": "雷霆掌",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d10+STR 闪电伤害。"
+    },
+    {
+      "name": "浩克砸",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d10+STR 钝击伤害。"
+    },
+    {
+      "name": "灭世者",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "黑寡妇": [
+    {
+      "name": "寡妇蜇",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "手雷",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 闪电伤害。"
+    },
+    {
+      "name": "钩索",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "红房",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d8+DEX 挥砍伤害。"
+    }
+  ],
+  "奇异博士": [
+    {
+      "name": "神秘术",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "传送门",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "时间宝石",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "镜像维度",
+      "key": "4",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。"
+    }
+  ]
+}

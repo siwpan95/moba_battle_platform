@@ -1,0 +1,224 @@
+刺客 (assassin) — 194 位英雄
+核心功能: 瞬间爆发、击杀核心——制造威胁，逼迫对手分散注意力
+============================================================
+
+
+[300 Heroes] (18位)
+  • 十六夜咲夜
+  • 芙兰朵露
+  • 桐人
+  • 黑
+  • 三笠
+  • 利威尔
+  • 两仪式
+  • 白井黑子
+  • 宇智波佐助
+  • 旗木卡卡西
+  • 我妻善逸
+  • 蝴蝶忍
+  • 伏黑惠
+  • 忍野忍
+  • 奇犽
+  • 西索
+  • DIO
+  • 伊利丹
+
+[Arena of Valor] (13位)
+  • Aoi
+  • Butterfly
+  • Nakroth
+  • Wukong
+  • Kriknak
+  • Airi
+  • Murad
+  • Quillen
+  • Enzo
+  • Keera
+  • Paine
+  • Sinestrea
+  • Kaine
+
+[Dota 2] (11位)
+  • 米拉娜
+  • 风行者
+  • 力丸
+  • 圣堂刺客
+  • 冥界亚龙
+  • 先知
+  • 克林克兹
+  • 赏金猎人
+  • 司夜刺客
+  • 灰烬之灵
+  • 齐天大圣
+
+[Extraordinary Ones] (2位)
+  • 白骨精
+  • 雷姆
+
+[Heroes of the Storm] (25位)
+  • Alarak
+  • Cassia
+  • Falstad
+  • Fenix
+  • Genji
+  • Greymane
+  • Hanzo
+  • Illidan
+  • Junkrat
+  • Kerrigan
+  • Lunara
+  • Maiev
+  • Nova
+  • Qhira
+  • Raynor
+  • Samuro
+  • Sgt. Hammer
+  • Sylvanas
+  • The Butcher
+  • Tracer
+  • Tychus
+  • Valeera
+  • Valla
+  • Zeratul
+  • Zul'jin
+
+[Honor of Kings] (15位)
+  • 韩信
+  • 阿轲
+  • 兰陵王
+  • 露娜
+  • 李白
+  • 橘右京
+  • 娜可露露
+  • 百里玄策
+  • 裴擒虎
+  • 元歌
+  • 司马懿
+  • 云中君
+  • 镜
+  • 澜
+  • 暃
+
+[League of Legends] (23位)
+  • 易
+  • 伊芙琳
+  • 卡萨丁
+  • 卡特琳娜
+  • 萨科
+  • 奈德丽
+  • 阿卡丽
+  • 乐芙兰
+  • 魔腾
+  • 薇恩
+  • 泰隆
+  • 菲兹
+  • 阿狸
+  • 雷恩加尔
+  • 卡兹克
+  • 伊莉丝
+  • 劫
+  • 奎因
+  • 艾克
+  • 派克
+  • 奇亚娜
+  • 阿克尚
+  • 纳亚菲利
+
+[Marvel Super War] (9位)
+  • 幽灵
+  • 夜魔侠
+  • 黑寡妇
+  • 蜘蛛侠
+  • 卡魔拉
+  • 快银
+  • 艾丽卡
+  • 秘客
+  • 灵蝶
+
+[Mobile Legends: Bang Bang] (27位)
+  • Aamon
+  • Alucard
+  • Arlott
+  • Benedetta
+  • Fanny
+  • Gusion
+  • Hanzo
+  • Harley
+  • Hayabusa
+  • Helcurt
+  • Joy
+  • Julian
+  • Kadita
+  • Karina
+  • Lancelot
+  • Lesley
+  • Ling
+  • Natalia
+  • Nolan
+  • Paquito
+  • Saber
+  • Selena
+  • Sora
+  • Suyou
+  • Yi Sun-shin
+  • Yin
+  • Zilong
+
+[Onmyoji Arena] (10位)
+  • 以津真天
+  • 骨女
+  • 夜叉
+  • 万年竹
+  • 山风
+  • 杀生丸
+  • 犬夜叉
+  • 桔梗
+  • 一反木绵
+  • 大岳丸
+
+[Pokemon UNITE] (10位)
+  • 嘟嘟利
+  • 耿鬼
+  • 阿勃梭鲁
+  • 拉帝亚斯
+  • 达克莱伊
+  • 索罗亚克
+  • 甲贺忍蛙
+  • 烈箭鹰
+  • 捷拉奥拉
+  • 魔幻假面喵
+
+[SMITE] (25位)
+  • Ao Kuang
+  • Arachne
+  • Awilix
+  • Bakasura
+  • Bastet
+  • Camazotz
+  • Cliodhna
+  • Da Ji
+  • Fenrir
+  • Hun Batz
+  • Kali
+  • Lancelot
+  • Loki
+  • Mercury
+  • Ne Zha
+  • Nemesis
+  • Pele
+  • Ratatoskr
+  • Ravana
+  • Serqet
+  • Set
+  • Susano
+  • Thanatos
+  • Thor
+  • Tsukuyomi
+
+[Vainglory] (6位)
+  • Blackfeather
+  • Idris
+  • Koshka
+  • Miho
+  • Reza
+  • Taka

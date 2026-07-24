@@ -1,0 +1,194 @@
+{
+  "card_id": "DEM-1341",
+  "hero": {
+    "name": "富冈义勇",
+    "name_en": "Giyu Tomioka",
+    "alias": "",
+    "title": "Giyu Tomioka"
+  },
+  "game": {
+    "name": "Demon Slayer",
+    "name_cn": "鬼灭之刃",
+    "native_role": "水柱 (Water Hashira)",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "鬼灭之刃",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "水之呼吸·贰之型 水车",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d10+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "水之呼吸·伍之型 干天之壶",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+STR 挥砍伤害。",
+      "approx": true
+    },
+    {
+      "name": "水之呼吸·捌之型 泷壶",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d10+STR 挥砍伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "水之呼吸·拾壹之型 凪",
+      "key": "R",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "防御",
+          "duration": 1,
+          "desc": "完全防御下一次攻击",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 4,
+      "description": "进入完全防御，抵御下一次攻击。",
+      "approx": true
+    }
+  ]
+}

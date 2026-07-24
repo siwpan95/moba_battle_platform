@@ -1,0 +1,214 @@
+{
+  "card_id": "HAR-1539",
+  "hero": {
+    "name": "伏地魔",
+    "name_en": "Lord Voldemort",
+    "alias": "",
+    "title": "Lord Voldemort"
+  },
+  "game": {
+    "name": "Harry Potter",
+    "name_cn": "哈利波特",
+    "native_role": "黑魔王 (Dark Lord)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "哈利波特",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "杀戮咒",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "重伤",
+          "duration": 0,
+          "desc": "对生命值低于阈值的造物即死",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "3d8+INT 黯蚀伤害（不可豁免的杀戮咒，近似）。",
+      "approx": true
+    },
+    {
+      "name": "钻心咒",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "痛苦",
+          "duration": 1,
+          "desc": "目标持续受苦并减弱",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+INT 黯蚀伤害，使目标痛苦 1 回合。",
+      "approx": true
+    },
+    {
+      "name": "魂器分裂",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "duration": 2,
+          "desc": "受到的伤害降低",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "获得减伤护持，持续 2 回合。",
+      "approx": true
+    },
+    {
+      "name": "厉火术",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "type": "灼烧",
+          "duration": 2,
+          "desc": "范围内持续受到火焰伤害",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d10+INT 火焰伤害，召唤无法控制的厉火。",
+      "approx": true,
+      "aoe_radius": 15
+    }
+  ]
+}

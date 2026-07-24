@@ -1,0 +1,375 @@
+法师 (mage) — 341 位英雄
+核心功能: 范围伤害、控制技能——提供AOE输出和团战控制
+============================================================
+
+
+[300 Heroes] (29位)
+  • 蓝染惣右介
+  • 吕小鱼
+  • 博丽灵梦
+  • 雾雨魔理沙
+  • 远坂凛
+  • 间桐樱
+  • 伊莉雅
+  • 克子
+  • 五更琉璃
+  • 御坂美琴
+  • 折纸大师
+  • 朽木露琪亚
+  • 王也
+  • 镜音双子
+  • 五条悟
+  • 夏油杰
+  • 安兹
+  • 艾米莉亚
+  • 雪之下雪乃
+  • 凉宫春日
+  • 长门有希
+  • 小鸟游六花
+  • 战场原黑仪
+  • 司波达也
+  • 司波深雪
+  • 酷拉皮卡
+  • 花京院典明
+  • 吉安娜
+  • 凯尔萨斯
+
+[Arena of Valor] (26位)
+  • Krixi
+  • Mganga
+  • Diaochan
+  • AzzenKa
+  • Natalya
+  • Jinnar
+  • Ilumia
+  • Preyta
+  • Raz
+  • Lauriel
+  • Ignis
+  • Zill
+  • Liliana
+  • The Flash
+  • Marja
+  • D'arcy
+  • Ishar
+  • Dirak
+  • Zata
+  • Lorion
+  • Yue
+  • Bonnie
+  • Aleister
+  • Veera
+  • Tulen
+  • Iggy
+
+[Dawn Heroes] (13位)
+  • 西王母
+  • 羲和
+  • 望舒
+  • 祝融
+  • 梅朵
+  • 乌雅
+  • 孙武
+  • 张角
+  • 爱丽丝
+  • 黄泉
+  • 火莲
+  • 鳗鳗
+  • 图塔卡蒙
+
+[Dota 2] (14位)
+  • 帕克
+  • 风暴之灵
+  • 宙斯
+  • 莉娜
+  • 修补匠
+  • 瘟疫法师
+  • 痛苦女王
+  • 死亡先知
+  • 拉席克
+  • 祈求者
+  • 殁境神蚀者
+  • 维萨吉
+  • 虚无之灵
+  • 琼英碧灵
+
+[Extraordinary Ones] (8位)
+  • 百目
+  • 广目
+  • 金蝉
+  • 雷震子
+  • 土地
+  • 悟静
+  • 玄蛛
+  • 钟馗
+
+[Heroes Evolved] (38位)
+  • 火舞歌灵
+  • 水元素
+  • 诸葛亮
+  • 宙斯
+  • 周瑜
+  • 玉皇大帝
+  • 雅典娜
+  • 血腥女王
+  • 小乔
+  • 忘川巫女
+  • 司马懿
+  • 树精长老
+  • 食人魔首领
+  • 时空猎人
+  • 圣女贞德
+  • 神农氏
+  • 森林之女
+  • 潘多拉
+  • 聂小倩
+  • 蛇发美杜莎
+  • 绿野花仙
+  • 洛神
+  • 幻卡魔女
+  • 福娃
+  • 风暴之灵
+  • 貂蝉
+  • 灯神
+  • 德古拉伯爵
+  • 妲己
+  • 炽焰火女
+  • 嫦娥
+  • 布丁
+  • 波塞冬
+  • 冰雪女王
+  • 暴君萨特
+  • 白袍巫师
+  • 埃及艳后
+  • 阿努比斯
+
+[Heroes of the Storm] (14位)
+  • Azmodan
+  • Chromie
+  • Gall
+  • Gul'dan
+  • Jaina
+  • Kael'thas
+  • Kel'Thuzad
+  • Li-Ming
+  • Mephisto
+  • Nazeebo
+  • Orphea
+  • Probius
+  • Tassadar
+  • Zagara
+
+[Honor of Kings] (29位)
+  • 妲己
+  • 小乔
+  • 安琪拉
+  • 甄姬
+  • 王昭君
+  • 貂蝉
+  • 嬴政
+  • 扁鹊
+  • 芈月
+  • 周瑜
+  • 高渐离
+  • 姜子牙
+  • 张良
+  • 武则天
+  • 不知火舞
+  • 钟馗
+  • 墨子
+  • 诸葛亮
+  • 干将莫邪
+  • 女娲
+  • 杨玉环
+  • 奕星
+  • 米莱狄
+  • 沈梦溪
+  • 上官婉儿
+  • 嫦娥
+  • 西施
+  • 海月
+  • 金蝉
+
+[League of Legends] (45位)
+  • 安妮
+  • 费德提克
+  • 莫甘娜
+  • 瑞兹
+  • 提莫
+  • 崔斯特
+  • 基兰
+  • 卡尔萨斯
+  • 艾尼维亚
+  • 维迦
+  • 库奇
+  • 黑默丁格
+  • 伊泽瑞尔
+  • 凯南
+  • 玛尔扎哈
+  • 克格莫
+  • 弗拉基米尔
+  • 娑娜
+  • 拉克丝
+  • 卡西奥佩娅
+  • 卡尔玛
+  • 布兰德
+  • 奥莉安娜
+  • 泽拉斯
+  • 维克托
+  • 吉格斯
+  • 璐璐
+  • 韦鲁斯
+  • 婕拉
+  • 辛德拉
+  • 丽桑卓
+  • 维克兹
+  • 阿兹尔
+  • 烬
+  • 奥瑞利安·索尔
+  • 塔莉垭
+  • 佐伊
+  • 妮蔻
+  • 莉莉娅
+  • 萨勒芬妮
+  • 薇古丝
+  • 慧
+  • 奥萝拉
+  • 梅尔
+  • 扎亨
+
+[Marvel Super War] (16位)
+  • 冰月花雪
+  • 迷境魔
+  • 古一
+  • 百光花火
+  • 北极星
+  • 奇异博士
+  • 钢铁侠
+  • 洛基
+  • 万磁王
+  • 暴风女
+  • 凤凰女
+  • 猩红女巫
+  • 幻视
+  • 冰人
+  • 德古拉
+  • 征服者康
+
+[Mobile Legends: Bang Bang] (26位)
+  • Aurora
+  • Bane
+  • Cecilion
+  • Chang'e
+  • Cyclops
+  • Eudora
+  • Gord
+  • Harith
+  • Kagura
+  • Kimmy
+  • Lunox
+  • Luo Yi
+  • Lylia
+  • Nana
+  • Novaria
+  • Odette
+  • Pharsa
+  • Vale
+  • Valentina
+  • Valir
+  • Vexana
+  • Xavier
+  • Yve
+  • Zetian
+  • Zhask
+  • Zhuxin
+
+[Onmyoji Arena] (19位)
+  • 大天狗
+  • 雪女
+  • 判官
+  • 鬼女红叶
+  • 荒
+  • 面灵气
+  • 清姬
+  • 青行灯
+  • 烟烟罗
+  • 玉藻前
+  • 追月神
+  • 彼岸花
+  • 金鱼姬
+  • 书翁
+  • 一反木绵
+  • 不知火
+  • 铃鹿御前
+  • 帝释天
+  • 千姬
+
+[Pokemon UNITE] (19位)
+  • 妙蛙花
+  • 皮卡丘
+  • 阿罗拉九尾
+  • 超梦Y
+  • 梦幻
+  • 火暴兽
+  • 太阳伊布
+  • 沙奈朵
+  • 拉帝欧斯
+  • 水晶灯火灵
+  • 妖火红狐
+  • 仙子伊布
+  • 狙射树枭
+  • 闪焰王牌
+  • 千面避役
+  • 古月鸟
+  • 多龙巴鲁托
+  • 红莲铠骑
+  • 密勒顿
+
+[SMITE] (34位)
+  • Agni
+  • Ah Puch
+  • Anubis
+  • Baba Yaga
+  • Baron Samedi
+  • Chang'e
+  • Chronos
+  • Discordia
+  • Eset
+  • Hades
+  • He Bo
+  • Hel
+  • Hera
+  • Ix Chel
+  • Janus
+  • Kukulkan
+  • Merlin
+  • Morgan Le Fay
+  • Nox
+  • Nu Wa
+  • Olorun
+  • Persephone
+  • Poseidon
+  • Ra
+  • Raijin
+  • Scylla
+  • Sol
+  • The Morrigan
+  • Thoth
+  • Tiamat
+  • Vulcan
+  • Yu Huang
+  • Zeus
+  • Zhong Kui
+
+[Vainglory] (11位)
+  • Adagio
+  • Baptiste
+  • Celeste
+  • Magnus
+  • Malene
+  • Petal
+  • Reim
+  • Samuel
+  • Skaarf
+  • Skye
+  • Varya

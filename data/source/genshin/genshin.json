@@ -1,0 +1,161 @@
+{
+  "game": "genshin",
+  "name_cn": "原神",
+  "total": 22,
+  "heroes": [
+    {
+      "name": "旅行者",
+      "name_cn": "旅行者",
+      "name_en": "Traveler",
+      "role": "法师",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "琴",
+      "name_cn": "琴",
+      "name_en": "Jean",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "安柏",
+      "name_cn": "安柏",
+      "name_en": "Amber",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "凯亚",
+      "name_cn": "凯亚",
+      "name_en": "Kaeya",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "丽莎",
+      "name_cn": "丽莎",
+      "name_en": "Lisa",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "芭芭拉",
+      "name_cn": "芭芭拉",
+      "name_en": "Barbara",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "雷泽",
+      "name_cn": "雷泽",
+      "name_en": "Razor",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "温迪",
+      "name_cn": "温迪",
+      "name_en": "Venti",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "可莉",
+      "name_cn": "可莉",
+      "name_en": "Klee",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "班尼特",
+      "name_cn": "班尼特",
+      "name_en": "Bennett",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "诺艾尔",
+      "name_cn": "诺艾尔",
+      "name_en": "Noelle",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "菲谢尔",
+      "name_cn": "菲谢尔",
+      "name_en": "Fischl",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "迪卢克",
+      "name_cn": "迪卢克",
+      "name_en": "Diluc",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "北斗",
+      "name_cn": "北斗",
+      "name_en": "Beidou",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "凝光",
+      "name_cn": "凝光",
+      "name_en": "Ningguang",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "钟离",
+      "name_cn": "钟离",
+      "name_en": "Zhongli",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "香菱",
+      "name_cn": "香菱",
+      "name_en": "Xiangling",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "行秋",
+      "name_cn": "行秋",
+      "name_en": "Xingqiu",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "七七",
+      "name_cn": "七七",
+      "name_en": "Qiqi",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "莫娜",
+      "name_cn": "莫娜",
+      "name_en": "Mona",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "甘雨",
+      "name_cn": "甘雨",
+      "name_en": "Ganyu",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "魈",
+      "name_cn": "魈",
+      "name_en": "Xiao",
+      "role": "刺客",
+      "universal_role": "assassin"
+    }
+  ]
+}

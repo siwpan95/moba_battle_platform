@@ -1,0 +1,203 @@
+{
+  "card_id": "THE-2587",
+  "hero": {
+    "name": "史强",
+    "name_en": "Shi Qiang",
+    "alias": "",
+    "title": "Shi Qiang"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "刑警/硬汉 (Detective/Hardboiled)",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "三体",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "护盾"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "铁拳制服",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d10+CON 钝击伤害。",
+      "approx": true
+    },
+    {
+      "name": "防弹护卫",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "单体",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "duration": 2,
+          "desc": "为友方提供护盾",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "为友方提供护盾，持续 2 回合。",
+      "approx": true
+    },
+    {
+      "name": "烟雾掩护",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "潜行",
+          "duration": 2,
+          "desc": "范围内友方获得潜行",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "为范围内友方提供烟雾掩护，持续 2 回合。",
+      "approx": true,
+      "aoe_radius": 10
+    },
+    {
+      "name": "硬汉压制",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+CON 钝击伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 10
+    }
+  ]
+}

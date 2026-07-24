@@ -1,0 +1,161 @@
+{
+  "game": "One Piece",
+  "name_cn": "海贼王",
+  "total": 22,
+  "heroes": [
+    {
+      "name": "蒙奇·D·路飞",
+      "name_cn": "蒙奇·D·路飞",
+      "name_en": "Monkey D. Luffy",
+      "role": "草帽船长/橡胶人 (Captain/Rubber Man)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "罗罗诺亚·索隆",
+      "name_cn": "罗罗诺亚·索隆",
+      "name_en": "Roronoa Zoro",
+      "role": "剑士/三刀流 (Swordsman/Three-Sword)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "娜美",
+      "name_cn": "娜美",
+      "name_en": "Nami",
+      "role": "航海士/天气 (Navigator/Weather)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "乌索普",
+      "name_cn": "乌索普",
+      "name_en": "Usopp",
+      "role": "狙击手/说谎王 (Sniper/Liar)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "山治",
+      "name_cn": "山治",
+      "name_en": "Sanji",
+      "role": "厨师/踢技 (Cook/Black-Leg)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "托尼托尼·乔巴",
+      "name_cn": "托尼托尼·乔巴",
+      "name_en": "Tony Tony Chopper",
+      "role": "船医/人人果实 (Doctor/Hito Hito)",
+      "universal_role": "support"
+    },
+    {
+      "name": "妮可·罗宾",
+      "name_cn": "妮可·罗宾",
+      "name_en": "Nico Robin",
+      "role": "考古学家/花花果实 (Archaeologist/Hana Hana)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "弗兰奇",
+      "name_cn": "弗兰奇",
+      "name_en": "Franky",
+      "role": "船匠/改造人 (Shipwright/Cyborg)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "布鲁克",
+      "name_cn": "布鲁克",
+      "name_en": "Brook",
+      "role": "音乐家/黄泉果实 (Musician/Yomi Yomi)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "甚平",
+      "name_cn": "甚平",
+      "name_en": "Jinbe",
+      "role": "舵手/鱼人空手道 (Helmsman/Fishman Karate)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "波特卡斯·D·艾斯",
+      "name_cn": "波特卡斯·D·艾斯",
+      "name_en": "Portgas D. Ace",
+      "role": "火拳/烧烧果实 (Fire Fist/Mera Mera)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "萨博",
+      "name_cn": "萨博",
+      "name_en": "Sabo",
+      "role": "革命军参谋/龙爪 (Revolutionary/Dragon Claw)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "香克斯",
+      "name_cn": "香克斯",
+      "name_en": "Shanks",
+      "role": "红发海贼王 (Red-Haired Yonko)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "蒙奇·D·卡普",
+      "name_cn": "蒙奇·D·卡普",
+      "name_en": "Monkey D. Garp",
+      "role": "海军英雄/拳骨 (Hero of Marines/Fist)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "巴基",
+      "name_cn": "巴基",
+      "name_en": "Buggy",
+      "role": "小丑/四分五裂果实 (Clown/Bara Bara)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "特拉法尔加·罗",
+      "name_cn": "特拉法尔加·罗",
+      "name_en": "Trafalgar Law",
+      "role": "手术果实/死亡外科医生 (Ope Ope/Death Surgeon)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "波雅·汉库克",
+      "name_cn": "波雅·汉库克",
+      "name_en": "Boa Hancock",
+      "role": "女帝/甜甜果实 (Empress/Mero Mero)",
+      "universal_role": "support"
+    },
+    {
+      "name": "多弗朗明哥",
+      "name_cn": "多弗朗明哥",
+      "name_en": "Donquixote Doflamingo",
+      "role": "天夜叉/线线果实 (Heavenly Demon/Ito Ito)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "艾尼路",
+      "name_cn": "艾尼路",
+      "name_en": "Enel",
+      "role": "神/响雷果实 (God/Goro Goro)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "赤犬",
+      "name_cn": "赤犬",
+      "name_en": "Sakazuki",
+      "role": "海军元帅/岩浆果实 (Fleet Admiral/Magma)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "黄猿",
+      "name_cn": "黄猿",
+      "name_en": "Borsalino",
+      "role": "海军大将/闪光果实 (Admiral/Pika Pika)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "白胡子",
+      "name_cn": "白胡子",
+      "name_en": "Edward Newgate",
+      "role": "海贼王/震震果实 (Yonko/Gura Gura)",
+      "universal_role": "tank"
+    }
+  ]
+}

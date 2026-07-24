@@ -1,0 +1,68 @@
+# Vainglory / 虚荣
+
+- **英文名:** Vainglory
+- **开发商:** Super Evil Megacorp
+- **平台:** iOS/Android/PC
+- **英雄总数:** 54
+- **数据更新:** 2026-06
+
+---
+
+## 英雄列表
+
+| 序号 | 名称 | 别名/英文名 | 定位/职业 |
+|------|------|------------|----------|
+| 1 | Adagio |  | 法师/辅助 |
+| 2 | Alpha |  | 战士/刺客 |
+| 3 | Ardan |  | 辅助/坦克 |
+| 4 | Baptiste |  | 法师 |
+| 5 | Baron |  | 射手 |
+| 6 | Blackfeather |  | 刺客 |
+| 7 | Caine |  | 射手 |
+| 8 | Catherine |  | 辅助/坦克 |
+| 9 | Celeste |  | 法师 |
+| 10 | Churnwalker |  | 坦克/辅助 |
+| 11 | Flicker |  | 辅助 |
+| 12 | Fortress |  | 辅助/刺客 |
+| 13 | Glaive |  | 战士/刺客 |
+| 14 | Grace |  | 辅助/坦克 |
+| 15 | Grumpjaw |  | 坦克/战士 |
+| 16 | Gwen |  | 射手 |
+| 17 | Idris |  | 刺客/法师 |
+| 18 | Inara |  | 战士 |
+| 19 | Ishtar |  | 射手 |
+| 20 | Joule |  | 战士 |
+| 21 | Karas |  | 射手 |
+| 22 | Kensei |  | 战士 |
+| 23 | Kestrel |  | 射手/刺客 |
+| 24 | Kinetic |  | 射手 |
+| 25 | Koshka |  | 刺客 |
+| 26 | Krul |  | 战士 |
+| 27 | Lance |  | 坦克/辅助 |
+| 28 | Leo |  | 战士 |
+| 29 | Lorelai |  | 辅助/法师 |
+| 30 | Lyra |  | 辅助/法师 |
+| 31 | Magnus |  | 法师 |
+| 32 | Malene |  | 法师/刺客 |
+| 33 | Miho |  | 刺客 |
+| 34 | Ozo |  | 战士/刺客 |
+| 35 | Petal |  | 法师 |
+| 36 | Phinn |  | 坦克/辅助 |
+| 37 | Reim |  | 法师/坦克 |
+| 38 | Reza |  | 刺客 |
+| 39 | Ringo |  | 射手 |
+| 40 | Rona |  | 战士 |
+| 41 | Samuel |  | 法师 |
+| 42 | San Feng |  | 战士/坦克 |
+| 43 | SAW |  | 射手 |
+| 44 | Silvernail |  | 射手 |
+| 45 | Skaarf |  | 法师 |
+| 46 | Skye |  | 法师/刺客 |
+| 47 | Taka |  | 刺客 |
+| 48 | Tony |  | 战士/坦克 |
+| 49 | Varya |  | 法师 |
+| 50 | Viola |  | 辅助 |
+| 51 | Vox |  | 射手 |
+| 52 | Warhawk |  | 射手 |
+| 53 | Yates |  | 坦克/辅助 |
+| 54 | Ylva |  | 射手/刺客 |

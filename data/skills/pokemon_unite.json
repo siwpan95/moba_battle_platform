@@ -1,0 +1,702 @@
+{
+  "皮卡丘": [
+    {
+      "name": "电击",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 闪电伤害。"
+    },
+    {
+      "name": "电球/十万伏特",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 闪电伤害。"
+    },
+    {
+      "name": "伏特攻击",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "打雷风暴",
+      "key": "U",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 闪电伤害。"
+    }
+  ],
+  "喷火龙": [
+    {
+      "name": "喷射火焰",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 火焰伤害。"
+    },
+    {
+      "name": "火焰拳/闪焰冲锋",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 火焰伤害。"
+    },
+    {
+      "name": "大字爆",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "地震重击",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "耿鬼": [
+    {
+      "name": "暗影球",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d6+DEX 黯蚀伤害。"
+    },
+    {
+      "name": "污泥炸弹/祸不单行",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "食梦",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "幽灵伏击",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d8+DEX 挥砍伤害。"
+    }
+  ],
+  "路卡利欧": [
+    {
+      "name": "彗星拳",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 钝击伤害。"
+    },
+    {
+      "name": "增强拳/骨棒",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 钝击伤害。"
+    },
+    {
+      "name": "近身战",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "波导弹",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "卡比兽": [
+    {
+      "name": "重磅冲撞",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "挡路/哈欠",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "睡觉",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "强力午睡",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "沙奈朵": [
+    {
+      "name": "念力",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "精神强念/月亮之力",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "预知未来",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "妖精奇点",
+      "key": "U",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。"
+    }
+  ],
+  "水箭龟": [
+    {
+      "name": "喷水",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "水炮/冲浪",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "高速旋转",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "水龙卷",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "快龙": [
+    {
+      "name": "龙息",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "龙舞/逆鳞",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "破坏光线",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+STR 光耀伤害。"
+    },
+    {
+      "name": "画龙点睛",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "妙蛙花": [
+    {
+      "name": "飞叶快刀",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "污泥炸弹/日光束",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "光耀"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 光耀伤害。"
+    },
+    {
+      "name": "花瓣舞",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "翠绿怒火",
+      "key": "U",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 火焰伤害。"
+    }
+  ],
+  "甲贺忍蛙": [
+    {
+      "name": "水手里剑",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "冲浪/烟幕",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "影子分身",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d6+DEX 挥砍伤害。"
+    },
+    {
+      "name": "水爆手里剑",
+      "key": "U",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d8+DEX 挥砍伤害。"
+    }
+  ]
+}

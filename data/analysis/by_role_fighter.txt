@@ -1,0 +1,359 @@
+战士 (fighter) — 327 位英雄
+核心功能: 持续输出、切入后排——平衡坦度与伤害，扮演团队搅局者
+============================================================
+
+
+[300 Heroes] (56位)
+  • 法尼·瓦伦泰
+  • 奴良陆生
+  • 比那名居天子
+  • 坂本
+  • 吕树
+  • 蕾米莉亚
+  • 亚丝娜
+  • 夏娜
+  • 坂田银时
+  • 神乐
+  • 艾伦
+  • Saber
+  • 吉尔伽美什
+  • 卫宫士郎
+  • 奈亚子
+  • 高坂桐乃
+  • 夜刀神十香
+  • 五河琴里
+  • 一方通行
+  • 佐仓杏子
+  • 美树沙耶香
+  • 卡莲
+  • 樱满集
+  • 漩涡鸣人
+  • 黑崎一护
+  • 路飞
+  • 索隆
+  • 罗罗诺亚·索隆
+  • 艾斯
+  • 冯宝宝
+  • 张楚岚
+  • 白月初
+  • 托尔
+  • 红细胞
+  • 002
+  • 灶门炭治郎
+  • 灶门祢豆子
+  • 嘴平伊之助
+  • 富冈义勇
+  • 炼狱杏寿郎
+  • 甘露寺蜜璃
+  • 虎杖悠仁
+  • 钉崎野蔷薇
+  • 利姆露
+  • 雷姆
+  • 明日香
+  • 逢坂大河
+  • 阿良良木历
+  • 安达垣爱姬
+  • 小杰
+  • 空条承太郎
+  • 布加拉提
+  • 阿尔萨斯
+  • 萨尔
+  • 瓦里安
+  • 巫妖王
+
+[Arena of Valor] (32位)
+  • Lu Bu
+  • Zanis
+  • Ormarr
+  • Maloch
+  • Arthur
+  • Skud
+  • Zuka
+  • Arduin
+  • Ryoma
+  • Astrid
+  • Superman
+  • Wonder Woman
+  • Kil'Groth
+  • Omen
+  • Max
+  • Rourke
+  • Amily
+  • Riktor
+  • Florentino
+  • Veres
+  • Errol
+  • Yena
+  • Qi
+  • Volkath
+  • Ata
+  • Allain
+  • Dextra
+  • Yan
+  • Tachi
+  • Bijan
+  • Roxie
+  • Zephys
+
+[Dawn Heroes] (10位)
+  • 欧治子
+  • 猪八戒
+  • 展昭
+  • 关羽
+  • 托尔
+  • 曹操
+  • 阿尔弗雷德
+  • 杨玉环
+  • 缪桂英
+  • 杨戬
+
+[Dota 2] (17位)
+  • 帕吉
+  • 斯温
+  • 小小
+  • 昆卡
+  • 冥魂大帝
+  • 龙骑士
+  • 噬魂鬼
+  • 哈斯卡
+  • 裂魂人
+  • 炼金术士
+  • 狼人
+  • 混沌骑士
+  • 钢背兽
+  • 巨牙海民
+  • 军团指挥官
+  • 大地之灵
+  • 破晓辰星
+
+[Extraordinary Ones] (11位)
+  • 嫦娥
+  • 大鹏
+  • 红孩儿
+  • 金角
+  • 龙马
+  • 鹿哩
+  • 哪吒
+  • 铁扇
+  • 杨戬
+  • 银角
+  • 玉子
+
+[Heroes of the Storm] (19位)
+  • Artanis
+  • Chen
+  • Deathwing
+  • Dehaka
+  • D.Va
+  • Gazlowe
+  • Hogger
+  • Imperius
+  • Leoric
+  • Malthael
+  • Murky
+  • Ragnaros
+  • Rexxar
+  • Sonya
+  • Thrall
+  • Varian
+  • Xul
+  • Yrel
+  • Zarya
+
+[Honor of Kings] (27位)
+  • 亚瑟
+  • 典韦
+  • 曹操
+  • 吕布
+  • 达摩
+  • 关羽
+  • 老夫子
+  • 宫本武藏
+  • 花木兰
+  • 孙悟空
+  • 杨戬
+  • 雅典娜
+  • 哪吒
+  • 铠
+  • 李信
+  • 盘古
+  • 狂铁
+  • 孙策
+  • 马超
+  • 曜
+  • 夏洛特
+  • 司空震
+  • 云缨
+  • 赵怀真
+  • 姬小满
+  • 亚连
+  • 大司命
+
+[League of Legends] (38位)
+  • 贾克斯
+  • 凯尔
+  • 沃里克
+  • 泰达米尔
+  • 普朗克
+  • 乌迪尔
+  • 潘森
+  • 莫德凯撒
+  • 奥拉夫
+  • 赵信
+  • 艾瑞莉娅
+  • 特朗德尔
+  • 李青
+  • 兰博
+  • 约里克
+  • 孙悟空
+  • 锐雯
+  • 希瓦娜
+  • 菲奥娜
+  • 赫卡里姆
+  • 德莱厄斯
+  • 杰斯
+  • 黛安娜
+  • 蔚
+  • 亚托克斯
+  • 亚索
+  • 雷克塞
+  • 克烈
+  • 卡蜜尔
+  • 凯隐
+  • 塞拉斯
+  • 永恩
+  • 佛耶戈
+  • 格温
+  • 卑尔维斯
+  • 尼菈
+  • 贝蕾亚
+  • 安蓓萨
+
+[Marvel Super War] (20位)
+  • 战虎
+  • 浪
+  • 模仿大师
+  • 恶灵骑士
+  • 魔剑客
+  • 刀锋战士
+  • 毒液
+  • 灭霸
+  • 铁拳
+  • 神奇先生
+  • 雷神
+  • 黑豹
+  • 蚁人
+  • 死侍
+  • 金刚狼
+  • 月光骑士
+  • 尚气
+  • 天使
+  • 牌皇
+  • 银影侠
+
+[Mobile Legends: Bang Bang] (25位)
+  • Aldous
+  • Alpha
+  • Argus
+  • Aulus
+  • Badang
+  • Balmond
+  • Chou
+  • Cici
+  • Dyrroth
+  • Freya
+  • Guinevere
+  • Jawhead
+  • Khaleed
+  • Lapu-Lapu
+  • Leomord
+  • Lukas
+  • Martis
+  • Minsitthar
+  • Phoveus
+  • Ruby
+  • Silvanna
+  • Sun
+  • Thamuz
+  • X.Borg
+  • Yu Zhong
+
+[Onmyoji Arena] (20位)
+  • 妖刀姬
+  • 犬神
+  • 姑获鸟
+  • 鸦天狗
+  • 黑童子
+  • 鬼使黑
+  • 鬼切
+  • 酒吞童子
+  • 茨木童子
+  • 两面佛
+  • 般若
+  • 跳跳哥哥
+  • 镰鼬
+  • 小鹿男
+  • 络新妇
+  • 鬼童丸
+  • 久次良
+  • 大岳丸
+  • 荒川之主
+  • 风狸
+
+[Pokemon UNITE] (20位)
+  • 喷火龙
+  • 怪力
+  • 暴鲤龙
+  • 快龙
+  • 超梦X
+  • 大力鳄
+  • 玛力露丽
+  • 巨钳螳螂
+  • 班基拉斯
+  • 火焰鸡
+  • 巨金怪
+  • 烈咬陆鲨
+  • 路卡利欧
+  • 坚盾剑怪
+  • 甜冷美后
+  • 爆肌蚊
+  • 谜拟Q
+  • 苍响
+  • 武道熊师
+  • 苍炎刃鬼
+
+[SMITE] (21位)
+  • Achilles
+  • Amaterasu
+  • Bellona
+  • Chaac
+  • Cu Chulainn
+  • Erlang Shen
+  • Freya
+  • Gilgamesh
+  • Guan Yu
+  • Hercules
+  • Horus
+  • King Arthur
+  • Mulan
+  • Nike
+  • Odin
+  • Osiris
+  • Shiva
+  • Sun Wukong
+  • Surtr
+  • Tyr
+  • Vamana
+
+[Vainglory] (11位)
+  • Alpha
+  • Glaive
+  • Inara
+  • Joule
+  • Kensei
+  • Krul
+  • Leo
+  • Ozo
+  • Rona
+  • San Feng
+  • Tony

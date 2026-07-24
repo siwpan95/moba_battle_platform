@@ -1,0 +1,2158 @@
+{
+  "超人": [
+    {
+      "name": "超人·岩盾守护",
+      "key": "Q",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "获得临时生命"
+        }
+      ],
+      "cooldown": 0,
+      "description": "展开护盾抵御伤害（自身）。获得临时生命",
+      "approx": true
+    },
+    {
+      "name": "超人·震荡猛击",
+      "key": "W",
+      "type": "物理",
+      "action": "重击前方敌人",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "prone",
+          "desc": "击倒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "重击前方敌人（单体）。击倒",
+      "approx": true
+    },
+    {
+      "name": "超人·地裂践踏",
+      "key": "E",
+      "type": "物理",
+      "action": "践踏地面造成范围震荡",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 8,
+      "description": "践踏地面造成范围震荡（区域）。减速",
+      "approx": true
+    },
+    {
+      "name": "超人·荆棘反甲",
+      "key": "R",
+      "type": "物理",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "reflect",
+          "desc": "反伤"
+        }
+      ],
+      "cooldown": 6,
+      "description": "反弹近战伤害（自身）。反伤",
+      "approx": true
+    }
+  ],
+  "蝙蝠侠": [
+    {
+      "name": "蝙蝠侠·淬毒刃",
+      "key": "Q",
+      "type": "物理",
+      "action": "涂抹剧毒",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "poison",
+          "desc": "中毒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "涂抹剧毒（单体）。中毒",
+      "approx": true
+    },
+    {
+      "name": "蝙蝠侠·烟雾遁走",
+      "key": "W",
+      "type": "混合",
+      "action": "释放烟雾消失",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "invis",
+          "desc": "隐身"
+        }
+      ],
+      "cooldown": 8,
+      "description": "释放烟雾消失（自身）。隐身",
+      "approx": true
+    },
+    {
+      "name": "蝙蝠侠·致命标记",
+      "key": "E",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "蝙蝠侠·影分身",
+      "key": "R",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    }
+  ],
+  "神奇女侠": [
+    {
+      "name": "神奇女侠·冲锋",
+      "key": "Q",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "神奇女侠·破甲击",
+      "key": "W",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    },
+    {
+      "name": "神奇女侠·战吼",
+      "key": "E",
+      "type": "混合",
+      "action": "鼓舞自身与队友",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "攻击提升"
+        }
+      ],
+      "cooldown": 8,
+      "description": "鼓舞自身与队友（友方）。攻击提升",
+      "approx": true
+    },
+    {
+      "name": "神奇女侠·致命连击",
+      "key": "R",
+      "type": "物理",
+      "action": "高速连斩",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 7,
+      "description": "高速连斩（单体）。流血",
+      "approx": true
+    }
+  ],
+  "闪电侠": [
+    {
+      "name": "闪电侠·致命标记",
+      "key": "Q",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "闪电侠·影分身",
+      "key": "W",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    },
+    {
+      "name": "闪电侠·处决",
+      "key": "E",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "闪电侠·暗影突袭",
+      "key": "R",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    }
+  ],
+  "绿箭侠": [
+    {
+      "name": "绿箭侠·爆头狙击",
+      "key": "Q",
+      "type": "物理",
+      "action": "蓄力重击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "crit",
+          "desc": "重伤"
+        }
+      ],
+      "cooldown": 8,
+      "description": "蓄力重击（单体）。重伤",
+      "approx": true
+    },
+    {
+      "name": "绿箭侠·压制火力",
+      "key": "W",
+      "type": "物理",
+      "action": "限制走位",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 6,
+      "description": "限制走位（区域）。减速",
+      "approx": true
+    },
+    {
+      "name": "绿箭侠·精准射击",
+      "key": "E",
+      "type": "物理",
+      "action": "远程精准打击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "crit",
+          "desc": "暴击"
+        }
+      ],
+      "cooldown": 2,
+      "description": "远程精准打击（单体）。暴击",
+      "approx": true
+    },
+    {
+      "name": "绿箭侠·速射连射",
+      "key": "R",
+      "type": "物理",
+      "action": "快速倾泻弹幕",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围"
+        }
+      ],
+      "cooldown": 5,
+      "description": "快速倾泻弹幕（区域）。范围",
+      "approx": true
+    }
+  ],
+  "海王": [
+    {
+      "name": "海王·致命连击",
+      "key": "Q",
+      "type": "物理",
+      "action": "高速连斩",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 7,
+      "description": "高速连斩（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "海王·烈斩",
+      "key": "W",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "海王·旋风斩",
+      "key": "E",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "海王·冲锋",
+      "key": "R",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    }
+  ],
+  "钢骨": [
+    {
+      "name": "钢骨·烈斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "钢骨·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "钢骨·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "钢骨·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    }
+  ],
+  "火星猎人": [
+    {
+      "name": "火星猎人·元素风暴",
+      "key": "Q",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 7,
+      "description": "召唤元素席卷（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "火星猎人·时空禁锢",
+      "key": "W",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    },
+    {
+      "name": "火星猎人·焰爆术",
+      "key": "E",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "火星猎人·雷霆之矛",
+      "key": "R",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    }
+  ],
+  "沙赞": [
+    {
+      "name": "沙赞·冲锋",
+      "key": "Q",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "沙赞·破甲击",
+      "key": "W",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    },
+    {
+      "name": "沙赞·战吼",
+      "key": "E",
+      "type": "混合",
+      "action": "鼓舞自身与队友",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "友方",
+          "kind": "buff",
+          "desc": "攻击提升"
+        }
+      ],
+      "cooldown": 8,
+      "description": "鼓舞自身与队友（友方）。攻击提升",
+      "approx": true
+    },
+    {
+      "name": "沙赞·致命连击",
+      "key": "R",
+      "type": "物理",
+      "action": "高速连斩",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 7,
+      "description": "高速连斩（单体）。流血",
+      "approx": true
+    }
+  ],
+  "绿灯侠": [
+    {
+      "name": "绿灯侠·焰爆术",
+      "key": "Q",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "绿灯侠·雷霆之矛",
+      "key": "W",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    },
+    {
+      "name": "绿灯侠·奥术护盾",
+      "key": "E",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    },
+    {
+      "name": "绿灯侠·奥能飞弹",
+      "key": "R",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "force",
+          "desc": "力场伤害"
+        }
+      ],
+      "cooldown": 3,
+      "description": "发射魔法飞弹（单体）。力场伤害",
+      "approx": true
+    }
+  ],
+  "蝙蝠女": [
+    {
+      "name": "蝙蝠女·影分身",
+      "key": "Q",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    },
+    {
+      "name": "蝙蝠女·处决",
+      "key": "W",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "蝙蝠女·暗影突袭",
+      "key": "E",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    },
+    {
+      "name": "蝙蝠女·淬毒刃",
+      "key": "R",
+      "type": "物理",
+      "action": "涂抹剧毒",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "poison",
+          "desc": "中毒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "涂抹剧毒（单体）。中毒",
+      "approx": true
+    }
+  ],
+  "夜翼": [
+    {
+      "name": "夜翼·处决",
+      "key": "Q",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "夜翼·暗影突袭",
+      "key": "W",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    },
+    {
+      "name": "夜翼·淬毒刃",
+      "key": "E",
+      "type": "物理",
+      "action": "涂抹剧毒",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "poison",
+          "desc": "中毒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "涂抹剧毒（单体）。中毒",
+      "approx": true
+    },
+    {
+      "name": "夜翼·烟雾遁走",
+      "key": "R",
+      "type": "混合",
+      "action": "释放烟雾消失",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "invis",
+          "desc": "隐身"
+        }
+      ],
+      "cooldown": 8,
+      "description": "释放烟雾消失（自身）。隐身",
+      "approx": true
+    }
+  ],
+  "哈莉奎茵": [
+    {
+      "name": "哈莉奎茵·烈斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "哈莉奎茵·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "哈莉奎茵·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "哈莉奎茵·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    }
+  ],
+  "小丑": [
+    {
+      "name": "小丑·淬毒刃",
+      "key": "Q",
+      "type": "物理",
+      "action": "涂抹剧毒",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "poison",
+          "desc": "中毒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "涂抹剧毒（单体）。中毒",
+      "approx": true
+    },
+    {
+      "name": "小丑·烟雾遁走",
+      "key": "W",
+      "type": "混合",
+      "action": "释放烟雾消失",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "invis",
+          "desc": "隐身"
+        }
+      ],
+      "cooldown": 8,
+      "description": "释放烟雾消失（自身）。隐身",
+      "approx": true
+    },
+    {
+      "name": "小丑·致命标记",
+      "key": "E",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "小丑·影分身",
+      "key": "R",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    }
+  ],
+  "毒藤女": [
+    {
+      "name": "毒藤女·时空禁锢",
+      "key": "Q",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    },
+    {
+      "name": "毒藤女·焰爆术",
+      "key": "W",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "burn",
+          "desc": "灼烧"
+        }
+      ],
+      "cooldown": 5,
+      "description": "引爆烈焰（区域）。灼烧",
+      "approx": true
+    },
+    {
+      "name": "毒藤女·雷霆之矛",
+      "key": "E",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    },
+    {
+      "name": "毒藤女·奥术护盾",
+      "key": "R",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    }
+  ],
+  "丧钟": [
+    {
+      "name": "丧钟·致命标记",
+      "key": "Q",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "丧钟·影分身",
+      "key": "W",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    },
+    {
+      "name": "丧钟·处决",
+      "key": "E",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "丧钟·暗影突袭",
+      "key": "R",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    }
+  ],
+  "康斯坦丁": [
+    {
+      "name": "康斯坦丁·雷霆之矛",
+      "key": "Q",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "stun",
+          "desc": "麻痹"
+        }
+      ],
+      "cooldown": 6,
+      "description": "降下闪电（单体）。麻痹",
+      "approx": true
+    },
+    {
+      "name": "康斯坦丁·奥术护盾",
+      "key": "W",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    },
+    {
+      "name": "康斯坦丁·奥能飞弹",
+      "key": "E",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "force",
+          "desc": "力场伤害"
+        }
+      ],
+      "cooldown": 3,
+      "description": "发射魔法飞弹（单体）。力场伤害",
+      "approx": true
+    },
+    {
+      "name": "康斯坦丁·元素风暴",
+      "key": "R",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 7,
+      "description": "召唤元素席卷（区域）。范围伤害",
+      "approx": true
+    }
+  ],
+  "扎坦娜": [
+    {
+      "name": "扎坦娜·奥术护盾",
+      "key": "Q",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "shield",
+          "desc": "护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "凝结护盾（自身）。护盾",
+      "approx": true
+    },
+    {
+      "name": "扎坦娜·奥能飞弹",
+      "key": "W",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "force",
+          "desc": "力场伤害"
+        }
+      ],
+      "cooldown": 3,
+      "description": "发射魔法飞弹（单体）。力场伤害",
+      "approx": true
+    },
+    {
+      "name": "扎坦娜·元素风暴",
+      "key": "E",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 7,
+      "description": "召唤元素席卷（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "扎坦娜·时空禁锢",
+      "key": "R",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "hold",
+          "desc": "定身"
+        }
+      ],
+      "cooldown": 6,
+      "description": "定身目标（单体）。定身",
+      "approx": true
+    }
+  ],
+  "黑亚当": [
+    {
+      "name": "黑亚当·烈斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "bleed",
+          "desc": "流血"
+        }
+      ],
+      "cooldown": 3,
+      "description": "强力近战斩击（单体）。流血",
+      "approx": true
+    },
+    {
+      "name": "黑亚当·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "aoe",
+          "desc": "范围伤害"
+        }
+      ],
+      "cooldown": 6,
+      "description": "环绕横扫多个敌人（区域）。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "黑亚当·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "突进并撞击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "黑亚当·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "sunder",
+          "desc": "降防"
+        }
+      ],
+      "cooldown": 4,
+      "description": "削弱目标防御（单体）。降防",
+      "approx": true
+    }
+  ],
+  "比扎罗": [
+    {
+      "name": "比扎罗·震荡猛击",
+      "key": "Q",
+      "type": "物理",
+      "action": "重击前方敌人",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "prone",
+          "desc": "击倒"
+        }
+      ],
+      "cooldown": 4,
+      "description": "重击前方敌人（单体）。击倒",
+      "approx": true
+    },
+    {
+      "name": "比扎罗·地裂践踏",
+      "key": "W",
+      "type": "物理",
+      "action": "践踏地面造成范围震荡",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 8,
+      "description": "践踏地面造成范围震荡（区域）。减速",
+      "approx": true
+    },
+    {
+      "name": "比扎罗·荆棘反甲",
+      "key": "E",
+      "type": "物理",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "reflect",
+          "desc": "反伤"
+        }
+      ],
+      "cooldown": 6,
+      "description": "反弹近战伤害（自身）。反伤",
+      "approx": true
+    },
+    {
+      "name": "比扎罗·巨石投掷",
+      "key": "R",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "投掷巨石轰击（单体）。击退",
+      "approx": true
+    }
+  ],
+  "达克赛德": [
+    {
+      "name": "达克赛德·地裂践踏",
+      "key": "Q",
+      "type": "物理",
+      "action": "践踏地面造成范围震荡",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "slow",
+          "desc": "减速"
+        }
+      ],
+      "cooldown": 8,
+      "description": "践踏地面造成范围震荡（区域）。减速",
+      "approx": true
+    },
+    {
+      "name": "达克赛德·荆棘反甲",
+      "key": "W",
+      "type": "物理",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "reflect",
+          "desc": "反伤"
+        }
+      ],
+      "cooldown": 6,
+      "description": "反弹近战伤害（自身）。反伤",
+      "approx": true
+    },
+    {
+      "name": "达克赛德·巨石投掷",
+      "key": "E",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "knockback",
+          "desc": "击退"
+        }
+      ],
+      "cooldown": 5,
+      "description": "投掷巨石轰击（单体）。击退",
+      "approx": true
+    },
+    {
+      "name": "达克赛德·不屈意志",
+      "key": "R",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "target": "自身",
+          "kind": "immune",
+          "desc": "免疫控制"
+        }
+      ],
+      "cooldown": 10,
+      "description": "短暂免疫控制（自身）。免疫控制",
+      "approx": true
+    }
+  ],
+  "逆闪电": [
+    {
+      "name": "逆闪电·致命标记",
+      "key": "Q",
+      "type": "物理",
+      "action": "标记目标增伤",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "mark",
+          "desc": "标记"
+        }
+      ],
+      "cooldown": 5,
+      "description": "标记目标增伤（单体）。标记",
+      "approx": true
+    },
+    {
+      "name": "逆闪电·影分身",
+      "key": "W",
+      "type": "物理",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "confuse",
+          "desc": "混乱"
+        }
+      ],
+      "cooldown": 7,
+      "description": "制造分身扰乱（区域）。混乱",
+      "approx": true
+    },
+    {
+      "name": "逆闪电·处决",
+      "key": "E",
+      "type": "真实",
+      "action": "对低血目标斩杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "execute",
+          "desc": "斩杀"
+        }
+      ],
+      "cooldown": 9,
+      "description": "对低血目标斩杀（单体）。斩杀",
+      "approx": true
+    },
+    {
+      "name": "逆闪电·暗影突袭",
+      "key": "R",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "target": "敌方",
+          "kind": "vuln",
+          "desc": "易伤"
+        }
+      ],
+      "cooldown": 3,
+      "description": "从暗处突进刺杀（单体）。易伤",
+      "approx": true
+    }
+  ]
+}

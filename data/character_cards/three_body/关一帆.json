@@ -1,0 +1,195 @@
+{
+  "card_id": "THE-2598",
+  "hero": {
+    "name": "关一帆",
+    "name_en": "Guan Yifan",
+    "alias": "",
+    "title": "Guan Yifan"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "宇宙学家 (Cosmologist)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "三体",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "护盾",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "引力透镜",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d6+INT 力场伤害。",
+      "approx": true
+    },
+    {
+      "name": "小宇宙庇护",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "单体",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "duration": 2,
+          "desc": "为友方提供护盾",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "为友方提供护盾，持续 2 回合。",
+      "approx": true
+    },
+    {
+      "name": "维度折叠",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+INT 力场伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 12
+    },
+    {
+      "name": "归零者号角",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+INT 力场伤害，覆盖大片区域。",
+      "approx": true,
+      "aoe_radius": 15
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "game": "Harry Potter",
+  "name_cn": "哈利波特",
+  "total": 15,
+  "heroes": [
+    {
+      "name": "哈利·波特",
+      "name_cn": "哈利·波特",
+      "name_en": "Harry Potter",
+      "role": "巫师/救世之星 (Wizard/Chosen One)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "赫敏·格兰杰",
+      "name_cn": "赫敏·格兰杰",
+      "name_en": "Hermione Granger",
+      "role": "女巫/学霸 (Witch/Top Student)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "罗恩·韦斯莱",
+      "name_cn": "罗恩·韦斯莱",
+      "name_en": "Ron Weasley",
+      "role": "巫师/棋手 (Wizard/Chessmaster)",
+      "universal_role": "support"
+    },
+    {
+      "name": "阿不思·邓布利多",
+      "name_cn": "阿不思·邓布利多",
+      "name_en": "Albus Dumbledore",
+      "role": "巫师/霍格沃茨校长 (Wizard/Headmaster)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "伏地魔",
+      "name_cn": "伏地魔",
+      "name_en": "Lord Voldemort",
+      "role": "黑魔王 (Dark Lord)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "西弗勒斯·斯内普",
+      "name_cn": "西弗勒斯·斯内普",
+      "name_en": "Severus Snape",
+      "role": "魔药大师/双面间谍 (Potions Master/Double Agent)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "米勒娃·麦格",
+      "name_cn": "米勒娃·麦格",
+      "name_en": "Minerva McGonagall",
+      "role": "变形术教授/阿尼马格斯 (Transfiguration Professor/Animagus)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "鲁伯·海格",
+      "name_cn": "鲁伯·海格",
+      "name_en": "Rubeus Hagrid",
+      "role": "猎场看守/半巨人 (Gamekeeper/Half-Giant)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "小天狼星·布莱克",
+      "name_cn": "小天狼星·布莱克",
+      "name_en": "Sirius Black",
+      "role": "阿尼马格斯/凤凰社 (Animagus/Order of Phoenix)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "莱姆斯·卢平",
+      "name_cn": "莱姆斯·卢平",
+      "name_en": "Remus Lupin",
+      "role": "狼人/黑魔法防御 (Werewolf/DADA Teacher)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "贝拉特里克斯·莱斯特兰奇",
+      "name_cn": "贝拉特里克斯·莱斯特兰奇",
+      "name_en": "Bellatrix Lestrange",
+      "role": "食死徒/疯婆 (Death Eater)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "阿拉斯托·穆迪",
+      "name_cn": "阿拉斯托·穆迪",
+      "name_en": "Alastor Moody",
+      "role": "傲罗/疯眼 (Auror)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "纳威·隆巴顿",
+      "name_cn": "纳威·隆巴顿",
+      "name_en": "Neville Longbottom",
+      "role": "格兰芬多/勇气 (Gryffindor/Bravery)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "卢娜·洛夫古德",
+      "name_cn": "卢娜·洛夫古德",
+      "name_en": "Luna Lovegood",
+      "role": "古怪女孩/拉文克劳 (Eccentric Ravenclaw)",
+      "universal_role": "support"
+    },
+    {
+      "name": "德拉科·马尔福",
+      "name_cn": "德拉科·马尔福",
+      "name_en": "Draco Malfoy",
+      "role": "食死徒/少爷 (Death Eater/Heir)",
+      "universal_role": "marksman"
+    }
+  ]
+}

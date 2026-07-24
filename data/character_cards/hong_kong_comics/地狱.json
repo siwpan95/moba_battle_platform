@@ -1,0 +1,247 @@
+{
+  "card_id": "港漫群-2658",
+  "hero": {
+    "name": "地狱",
+    "name_en": "Hell",
+    "alias": "地狱大统领",
+    "title": "地狱大统领"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "海虎",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "护盾",
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "地狱之火·焚天",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "80尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "持续伤害",
+          "duration": 2,
+          "dmg_per_turn": "1d4",
+          "desc": "地狱业火持续灼烧",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "半伤"
+      },
+      "cooldown": 0,
+      "description": "地狱大统领的招牌——焚尽万物的地狱业火。2d6+INT 火焰伤害，15尺范围。后续2回合每回合1d4火焰伤害。DEX豁免减半。"
+    },
+    {
+      "name": "地狱战神·百裂拳",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "百拳齐发的冲击波",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "元祖四强之一地狱的战神之拳。3d10+STR 钝击伤害，CON豁免失败眩晕1回合。冷却2回合。"
+    },
+    {
+      "name": "地狱磁场·金刚不坏",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "duration": 3,
+          "value_formula": "3*LVL+CON",
+          "desc": "磁场护体，刀枪不入",
+          "target": "自身"
+        },
+        {
+          "type": "减伤",
+          "duration": 3,
+          "value": 50,
+          "desc": "金刚不坏之身",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 5,
+      "description": "地狱以磁场力量凝聚护体真气。获得3×LVL+CON护盾，受到伤害减半。持续3回合。冷却5回合。"
+    },
+    {
+      "name": "地狱轮回·永劫沉沦",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "120尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 10,
+        "bonus_attr": "CHA",
+        "type": "黯蚀"
+      },
+      "aoe_radius": 50,
+      "effects": [
+        {
+          "type": "恐惧",
+          "duration": 2,
+          "dc_attr": "WIS",
+          "desc": "注视地狱的深渊",
+          "target": "敌方"
+        },
+        {
+          "type": "持续伤害",
+          "duration": 3,
+          "dmg_per_turn": "2d6",
+          "desc": "坠入地狱的业火永不停息",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "半伤"
+      },
+      "cooldown": 6,
+      "description": "地狱的终极奥义——令敌人感受无尽的轮回之苦。5d10+CHA 黯蚀伤害，50尺超大范围。WIS豁免失败则恐惧2回合+3回合业火灼烧(每回合2d6)。冷却6回合。"
+    }
+  ]
+}

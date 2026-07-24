@@ -1,0 +1,243 @@
+{
+  "card_id": "港漫群-2657",
+  "hero": {
+    "name": "海虎",
+    "name_en": "Seahorse",
+    "alias": "磁场强者",
+    "title": "磁场强者"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "海虎",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "磁场转动·细胞重组",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "duration": 2,
+          "desc": "磁场干扰令目标行动迟滞",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "海虎以磁场力量干扰敌人细胞运作。2d8+CON 力场伤害，CON豁免失败减速2回合。"
+    },
+    {
+      "name": "海虎爆破拳",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "击飞",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "磁场推动下的毁灭一拳",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "海虎以磁场转动百万匹力量轰出的至强一拳。3d8+STR 钝击伤害，STR豁免失败被击飞。冷却1回合。"
+    },
+    {
+      "name": "磁场转动·电流推动",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "闪电"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 3,
+          "value": 30,
+          "desc": "以磁场推动加速",
+          "target": "自身"
+        },
+        {
+          "type": "攻速强化",
+          "duration": 3,
+          "value": 50,
+          "desc": "电流刺激提升反应速度",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 4,
+      "description": "以磁场力量推动自身细胞——速度+30尺，攻速+50%。持续3回合。冷却4回合。"
+    },
+    {
+      "name": "终极磁场转动·破星",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "100尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 6,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "aoe_radius": 40,
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 2,
+          "dc_attr": "CON",
+          "desc": "磁场风暴摧毁一切",
+          "target": "敌方"
+        },
+        {
+          "type": "治疗",
+          "value_formula": "3d8+CON",
+          "desc": "磁场重组自身细胞",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "半伤"
+      },
+      "cooldown": 6,
+      "description": "海虎破星境界——磁场转动的终极威力！6d8+CON 力场伤害，40尺超大范围。CON豁免失败眩晕2回合。自身恢复3d8+CON生命。冷却6回合。"
+    }
+  ]
+}

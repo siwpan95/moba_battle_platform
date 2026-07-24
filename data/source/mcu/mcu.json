@@ -1,0 +1,161 @@
+{
+  "game": "mcu",
+  "name_cn": "漫威电影宇宙",
+  "total": 22,
+  "heroes": [
+    {
+      "name": "钢铁侠",
+      "name_cn": "钢铁侠",
+      "name_en": "Iron Man",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "美国队长",
+      "name_cn": "美国队长",
+      "name_en": "Captain America",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "雷神",
+      "name_cn": "雷神",
+      "name_en": "Thor",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "浩克",
+      "name_cn": "浩克",
+      "name_en": "Hulk",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "黑寡妇",
+      "name_cn": "黑寡妇",
+      "name_en": "Black Widow",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "鹰眼",
+      "name_cn": "鹰眼",
+      "name_en": "Hawkeye",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "蜘蛛侠",
+      "name_cn": "蜘蛛侠",
+      "name_en": "Spider-Man",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "奇异博士",
+      "name_cn": "奇异博士",
+      "name_en": "Doctor Strange",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "猩红女巫",
+      "name_cn": "猩红女巫",
+      "name_en": "Scarlet Witch",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "洛基",
+      "name_cn": "洛基",
+      "name_en": "Loki",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "星爵",
+      "name_cn": "星爵",
+      "name_en": "Star-Lord",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "格鲁特",
+      "name_cn": "格鲁特",
+      "name_en": "Groot",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "火箭浣熊",
+      "name_cn": "火箭浣熊",
+      "name_en": "Rocket",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "卡魔拉",
+      "name_cn": "卡魔拉",
+      "name_en": "Gamora",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "德拉克斯",
+      "name_cn": "德拉克斯",
+      "name_en": "Drax",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "幻视",
+      "name_cn": "幻视",
+      "name_en": "Vision",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "战争机器",
+      "name_cn": "战争机器",
+      "name_en": "War Machine",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "猎鹰",
+      "name_cn": "猎鹰",
+      "name_en": "Falcon",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "冬兵",
+      "name_cn": "冬兵",
+      "name_en": "Winter Soldier",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "黑豹",
+      "name_cn": "黑豹",
+      "name_en": "Black Panther",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "惊奇队长",
+      "name_cn": "惊奇队长",
+      "name_en": "Captain Marvel",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "蚁人",
+      "name_cn": "蚁人",
+      "name_en": "Ant-Man",
+      "role": "刺客",
+      "universal_role": "assassin"
+    }
+  ]
+}

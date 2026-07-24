@@ -1,0 +1,187 @@
+{
+  "game": "Extraordinary Ones",
+  "name_cn": "非人学园",
+  "total": 36,
+  "heroes": [
+    {
+      "name": "阿蛟",
+      "role": "肉盾/体术",
+      "universal_role": "tank"
+    },
+    {
+      "name": "白骨精",
+      "role": "突袭",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "白灵",
+      "role": "远击",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "百目",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "常乐",
+      "role": "支援",
+      "universal_role": "support"
+    },
+    {
+      "name": "嫦娥",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "大鹏",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "广目",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "红孩儿",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "虎力",
+      "role": "肉盾",
+      "universal_role": "tank"
+    },
+    {
+      "name": "金蝉",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "金角",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "九头虫",
+      "role": "远击",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "雷姆",
+      "role": "突袭",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "雷震子",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "灵感大王",
+      "role": "远击/体术",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "龙马",
+      "role": "体术/突袭",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "鹿哩",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "哪吒",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "牛魔",
+      "role": "远击",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "顺风耳",
+      "role": "远击",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "太白",
+      "role": "远击",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "铁扇",
+      "role": "体术",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "土地",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "魍魉",
+      "role": "支援",
+      "universal_role": "support"
+    },
+    {
+      "name": "悟静",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "晓音",
+      "role": "支援",
+      "universal_role": "support"
+    },
+    {
+      "name": "熊黑",
+      "role": "肉盾",
+      "universal_role": "tank"
+    },
+    {
+      "name": "玄蛛",
+      "role": "灵能",
+      "universal_role": "mage"
+    },
+    {
+      "name": "琰萝",
+      "role": "肉盾",
+      "universal_role": "tank"
+    },
+    {
+      "name": "羊丽",
+      "role": "支援",
+      "universal_role": "support"
+    },
+    {
+      "name": "杨戬",
+      "role": "体术/突袭",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "银角",
+      "role": "体术/突袭",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "雨师",
+      "role": "支援",
+      "universal_role": "support"
+    },
+    {
+      "name": "玉子",
+      "role": "体术/突袭",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "钟馗",
+      "role": "灵能",
+      "universal_role": "mage"
+    }
+  ]
+}

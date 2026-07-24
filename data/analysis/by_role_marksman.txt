@@ -1,0 +1,255 @@
+射手/ADC (marksman) — 225 位英雄
+核心功能: 持续物理输出——后期核心输出，依赖团队保护
+============================================================
+
+
+[300 Heroes] (7位)
+  • Archer
+  • 黑岩射手
+  • 时崎狂三
+  • 晓美焰
+  • 巴麻美
+  • 希尔瓦娜斯
+  • 泰兰德
+
+[Arena of Valor] (19位)
+  • Valhein
+  • Violet
+  • Yorn
+  • Fennik
+  • Slimz
+  • Moren
+  • Lindis
+  • Wisp
+  • Elsu
+  • Hayate
+  • Capheny
+  • Eland'orr
+  • Laville
+  • Thorne
+  • Bright
+  • Tel'Annas
+  • Teeri
+  • Brunhilda
+  • Stuart
+
+[Dawn Heroes] (18位)
+  • 残影
+  • 吕洞宾
+  • 雷震子
+  • 嫦娥
+  • 特斯拉
+  • 西施
+  • 貂蝉
+  • 赵云
+  • 阿尔忒弥斯
+  • 黄月英
+  • 帕提多
+  • 美杜莎
+  • 花荣
+  • 精卫
+  • 黄忠
+  • 青木
+  • 飞廉
+  • 王昭君
+
+[Dota 2] (26位)
+  • 敌法师
+  • 血魔
+  • 卓尔游侠
+  • 主宰
+  • 变体精灵
+  • 影魔
+  • 幻影长矛手
+  • 剃刀
+  • 狙击手
+  • 虚空假面
+  • 幻影刺客
+  • 露娜
+  • 育母蜘蛛
+  • 编织者
+  • 幽鬼
+  • 熊战士
+  • 矮人直升机
+  • 德鲁伊
+  • 米波
+  • 娜迦海妖
+  • 斯拉克
+  • 美杜莎
+  • 巨魔战将
+  • 恐怖利刃
+  • 天穹守望者
+  • 凯
+
+[Extraordinary Ones] (6位)
+  • 白灵
+  • 九头虫
+  • 灵感大王
+  • 牛魔
+  • 顺风耳
+  • 太白
+
+[Heroes Evolved] (37位)
+  • 宫本武藏
+  • 狼蛛
+  • 袋鼠拳王
+  • 织田信长
+  • 赵云
+  • 玉兔
+  • 幽能刺客
+  • 亚瑟王
+  • 雪豹
+  • 小龙女
+  • 西门飞雪
+  • 孙悟空
+  • 孙尚香
+  • 企鹅
+  • 女武神
+  • 哪吒
+  • 冥王哈迪斯
+  • 罗刹郡主
+  • 猎魔人
+  • 李探花
+  • 精灵王子
+  • 金乌
+  • 火元素
+  • 后羿
+  • 黑桃皇后
+  • 服部半藏
+  • 绯雨剑星
+  • 二郎神杨戬
+  • 电光侠
+  • 达芬奇
+  • 丛林之子
+  • 布鲁
+  • 波斯王子
+  • 霸王项羽
+  • 暗月猎手
+  • 暗精灵
+  • 暗黑死神
+
+[Honor of Kings] (16位)
+  • 后羿
+  • 鲁班七号
+  • 狄仁杰
+  • 孙尚香
+  • 马可波罗
+  • 虞姬
+  • 成吉思汗
+  • 李元芳
+  • 黄忠
+  • 百里守约
+  • 公孙离
+  • 伽罗
+  • 蒙犽
+  • 艾琳
+  • 戈娅
+  • 莱西奥
+
+[League of Legends] (19位)
+  • 艾希
+  • 希维尔
+  • 崔丝塔娜
+  • 图奇
+  • 厄运小姐
+  • 凯特琳
+  • 格雷福斯
+  • 德莱文
+  • 卢锡安
+  • 金克丝
+  • 卡莉丝塔
+  • 千珏
+  • 霞
+  • 卡莎
+  • 赛娜
+  • 厄斐琉斯
+  • 莎弥拉
+  • 泽丽
+  • 斯莫德
+
+[Marvel Super War] (8位)
+  • 金牌手
+  • 战争机器
+  • 勇度
+  • 火箭浣熊
+  • 鹰眼
+  • 星爵
+  • 黄蜂女
+  • 制裁者
+
+[Mobile Legends: Bang Bang] (19位)
+  • Beatrix
+  • Brody
+  • Bruno
+  • Claude
+  • Clint
+  • Granger
+  • Hanabi
+  • Irithel
+  • Ixia
+  • Karrie
+  • Layla
+  • Melissa
+  • Miya
+  • Moskov
+  • Natan
+  • Obsidia
+  • Popol and Kupa
+  • Roger
+  • Wanwan
+
+[Onmyoji Arena] (13位)
+  • 白狼
+  • 妖狐
+  • 管狐
+  • 鸩
+  • 青蛙瓷器
+  • 二口女
+  • 首无
+  • 御馔津
+  • 百目鬼
+  • 铁鼠
+  • 铃鹿御前
+  • 紧那罗
+  • 薰
+
+[SMITE] (24位)
+  • Ah Muzen Cab
+  • Anhur
+  • Apollo
+  • Artemis
+  • Cernunnos
+  • Charybdis
+  • Chernobog
+  • Chiron
+  • Cupid
+  • Danzaburou
+  • Hachiman
+  • Heimdallr
+  • Hou Yi
+  • Ishtar
+  • Izanami
+  • Jing Wei
+  • Martichoras
+  • Medusa
+  • Neith
+  • Nut
+  • Rama
+  • Skadi
+  • Ullr
+  • Xbalanque
+
+[Vainglory] (13位)
+  • Baron
+  • Caine
+  • Gwen
+  • Ishtar
+  • Karas
+  • Kestrel
+  • Kinetic
+  • Ringo
+  • SAW
+  • Silvernail
+  • Vox
+  • Warhawk
+  • Ylva

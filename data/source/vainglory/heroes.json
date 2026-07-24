@@ -1,0 +1,277 @@
+{
+  "game": "Vainglory",
+  "name_cn": "虚荣",
+  "total": 48,
+  "heroes": [
+    {
+      "name": "Adagio",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Alpha",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ardan",
+      "role": "辅助/坦克",
+      "universal_role": "support"
+    },
+    {
+      "name": "Baptiste",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Baron",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Blackfeather",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Caine",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Catherine",
+      "role": "辅助/坦克",
+      "universal_role": "support"
+    },
+    {
+      "name": "Celeste",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Churnwalker",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Flicker",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Fortress",
+      "role": "辅助/刺客",
+      "universal_role": "support"
+    },
+    {
+      "name": "Glaive",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Grace",
+      "role": "辅助/坦克",
+      "universal_role": "support"
+    },
+    {
+      "name": "Grumpjaw",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Gwen",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Idris",
+      "role": "刺客/法师",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Inara",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ishtar",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Joule",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Karas",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Kensei",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Kestrel",
+      "role": "射手/刺客",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Kinetic",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Koshka",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Krul",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Lance",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Leo",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Lorelai",
+      "role": "辅助/法师",
+      "universal_role": "support"
+    },
+    {
+      "name": "Lyra",
+      "role": "辅助/法师",
+      "universal_role": "support"
+    },
+    {
+      "name": "Magnus",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Malene",
+      "role": "法师/刺客",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Miho",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Ozo",
+      "role": "战士/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Petal",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Phinn",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Reim",
+      "role": "法师/坦克",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Reza",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Ringo",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Rona",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Samuel",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "San Feng",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "SAW",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Silvernail",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Skaarf",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Skye",
+      "role": "法师/刺客",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Taka",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Tony",
+      "role": "战士/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Varya",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Viola",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "Vox",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Warhawk",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Yates",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Ylva",
+      "role": "射手/刺客",
+      "universal_role": "marksman"
+    }
+  ]
+}

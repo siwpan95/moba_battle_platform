@@ -1,0 +1,4732 @@
+{
+  "tank": [
+    {
+      "name": "护盾猛击",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "duration": 1,
+          "desc": "速度减半",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。"
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "210+STR 伤害。冷却1回合。"
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "410+STR 范围伤害。DEX豁免减半。冷却4回合。"
+    },
+    [
+      {
+        "name": "坦克·岩盾守护",
+        "key": "Q",
+        "type": "真实",
+        "action": "展开护盾抵御伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "CON",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "获得临时生命",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 0,
+        "description": "2d12+CON 钝击伤害。获得临时生命"
+      },
+      {
+        "name": "坦克·震荡猛击",
+        "key": "W",
+        "type": "物理",
+        "action": "重击前方敌人",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "prone",
+            "duration": 1,
+            "desc": "击倒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d12+STR 钝击伤害。击倒"
+      },
+      {
+        "name": "坦克·地裂践踏",
+        "key": "E",
+        "type": "物理",
+        "action": "践踏地面造成范围震荡",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+STR 钝击伤害。减速"
+      },
+      {
+        "name": "坦克·荆棘反甲",
+        "key": "R",
+        "type": "物理",
+        "action": "反弹近战伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "CON",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "reflect",
+            "duration": 1,
+            "desc": "反伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+CON 穿刺伤害。反伤"
+      },
+      {
+        "name": "坦克·巨石投掷",
+        "key": "Q",
+        "type": "物理",
+        "action": "投掷巨石轰击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+STR 钝击伤害。击退"
+      },
+      {
+        "name": "坦克·不屈意志",
+        "key": "W",
+        "type": "真实",
+        "action": "短暂免疫控制",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "CON",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "immune",
+            "duration": 1,
+            "desc": "免疫控制",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 10,
+        "description": "1d4+CON 能量伤害。免疫控制"
+      },
+      {
+        "name": "坦克·岩盾守护",
+        "key": "E",
+        "type": "真实",
+        "action": "展开护盾抵御伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "CON",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "获得临时生命",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 0,
+        "description": "2d12+CON 钝击伤害。获得临时生命"
+      },
+      {
+        "name": "坦克·震荡猛击",
+        "key": "R",
+        "type": "物理",
+        "action": "重击前方敌人",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "prone",
+            "duration": 1,
+            "desc": "击倒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d12+STR 钝击伤害。击倒"
+      },
+      {
+        "name": "坦克·地裂践踏",
+        "key": "Q",
+        "type": "物理",
+        "action": "践踏地面造成范围震荡",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+STR 钝击伤害。减速"
+      },
+      {
+        "name": "坦克·荆棘反甲",
+        "key": "W",
+        "type": "物理",
+        "action": "反弹近战伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "CON",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "reflect",
+            "duration": 1,
+            "desc": "反伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+CON 穿刺伤害。反伤"
+      },
+      {
+        "name": "坦克·巨石投掷",
+        "key": "E",
+        "type": "物理",
+        "action": "投掷巨石轰击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+STR 钝击伤害。击退"
+      },
+      {
+        "name": "坦克·不屈意志",
+        "key": "R",
+        "type": "真实",
+        "action": "短暂免疫控制",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "CON",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "immune",
+            "duration": 1,
+            "desc": "免疫控制",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 10,
+        "description": "1d4+CON 能量伤害。免疫控制"
+      }
+    ],
+    [
+      {
+        "name": "坦克·岩盾守护",
+        "key": "Q",
+        "type": "真实",
+        "action": "展开护盾抵御伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "CON",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "获得临时生命",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 0,
+        "description": "2d12+CON 钝击伤害。获得临时生命"
+      },
+      {
+        "name": "坦克·震荡猛击",
+        "key": "W",
+        "type": "物理",
+        "action": "重击前方敌人",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "prone",
+            "duration": 1,
+            "desc": "击倒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d12+STR 钝击伤害。击倒"
+      },
+      {
+        "name": "坦克·地裂践踏",
+        "key": "E",
+        "type": "物理",
+        "action": "践踏地面造成范围震荡",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+STR 钝击伤害。减速"
+      },
+      {
+        "name": "坦克·荆棘反甲",
+        "key": "R",
+        "type": "物理",
+        "action": "反弹近战伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "CON",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "reflect",
+            "duration": 1,
+            "desc": "反伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+CON 穿刺伤害。反伤"
+      },
+      {
+        "name": "坦克·巨石投掷",
+        "key": "Q",
+        "type": "物理",
+        "action": "投掷巨石轰击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+STR 钝击伤害。击退"
+      },
+      {
+        "name": "坦克·不屈意志",
+        "key": "W",
+        "type": "真实",
+        "action": "短暂免疫控制",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "CON",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "immune",
+            "duration": 1,
+            "desc": "免疫控制",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 10,
+        "description": "1d4+CON 能量伤害。免疫控制"
+      },
+      {
+        "name": "坦克·岩盾守护",
+        "key": "E",
+        "type": "真实",
+        "action": "展开护盾抵御伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "CON",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "获得临时生命",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 0,
+        "description": "2d12+CON 钝击伤害。获得临时生命"
+      },
+      {
+        "name": "坦克·震荡猛击",
+        "key": "R",
+        "type": "物理",
+        "action": "重击前方敌人",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "prone",
+            "duration": 1,
+            "desc": "击倒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d12+STR 钝击伤害。击倒"
+      },
+      {
+        "name": "坦克·地裂践踏",
+        "key": "Q",
+        "type": "物理",
+        "action": "践踏地面造成范围震荡",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+STR 钝击伤害。减速"
+      },
+      {
+        "name": "坦克·荆棘反甲",
+        "key": "W",
+        "type": "物理",
+        "action": "反弹近战伤害",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "CON",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "reflect",
+            "duration": 1,
+            "desc": "反伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+CON 穿刺伤害。反伤"
+      },
+      {
+        "name": "坦克·巨石投掷",
+        "key": "E",
+        "type": "物理",
+        "action": "投掷巨石轰击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+STR 钝击伤害。击退"
+      },
+      {
+        "name": "坦克·不屈意志",
+        "key": "R",
+        "type": "真实",
+        "action": "短暂免疫控制",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "CON",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "immune",
+            "duration": 1,
+            "desc": "免疫控制",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+CON",
+          "on_save": "无效"
+        },
+        "cooldown": 10,
+        "description": "1d4+CON 能量伤害。免疫控制"
+      }
+    ]
+  ],
+  "fighter": [
+    {
+      "name": "旋风斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "aoe_radius": 5,
+      "cooldown": 0,
+      "description": "1d8+STR 挥砍伤害，命中5尺内所有敌人。"
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "28+STR 伤害。冷却1回合。"
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "48+STR 范围伤害。DEX豁免减半。冷却4回合。"
+    },
+    [
+      {
+        "name": "战士·烈斩",
+        "key": "Q",
+        "type": "物理",
+        "action": "强力近战斩击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d10+STR 挥砍伤害。流血"
+      },
+      {
+        "name": "战士·旋风斩",
+        "key": "W",
+        "type": "物理",
+        "action": "环绕横扫多个敌人",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+STR 挥砍伤害。范围伤害"
+      },
+      {
+        "name": "战士·冲锋",
+        "key": "E",
+        "type": "物理",
+        "action": "突进并撞击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d12+STR 钝击伤害。击退"
+      },
+      {
+        "name": "战士·破甲击",
+        "key": "R",
+        "type": "物理",
+        "action": "削弱目标防御",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "STR",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "sunder",
+            "duration": 1,
+            "desc": "降防",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d6+STR 穿刺伤害。降防"
+      },
+      {
+        "name": "战士·战吼",
+        "key": "Q",
+        "type": "混合",
+        "action": "鼓舞自身与队友",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "攻击提升",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d6+CHA 能量伤害。攻击提升"
+      },
+      {
+        "name": "战士·致命连击",
+        "key": "W",
+        "type": "物理",
+        "action": "高速连斩",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d6+DEX 挥砍伤害。流血"
+      },
+      {
+        "name": "战士·烈斩",
+        "key": "E",
+        "type": "物理",
+        "action": "强力近战斩击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d10+STR 挥砍伤害。流血"
+      },
+      {
+        "name": "战士·旋风斩",
+        "key": "R",
+        "type": "物理",
+        "action": "环绕横扫多个敌人",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+STR 挥砍伤害。范围伤害"
+      },
+      {
+        "name": "战士·冲锋",
+        "key": "Q",
+        "type": "物理",
+        "action": "突进并撞击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d12+STR 钝击伤害。击退"
+      },
+      {
+        "name": "战士·破甲击",
+        "key": "W",
+        "type": "物理",
+        "action": "削弱目标防御",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "STR",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "sunder",
+            "duration": 1,
+            "desc": "降防",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d6+STR 穿刺伤害。降防"
+      },
+      {
+        "name": "战士·战吼",
+        "key": "E",
+        "type": "混合",
+        "action": "鼓舞自身与队友",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "攻击提升",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d6+CHA 能量伤害。攻击提升"
+      },
+      {
+        "name": "战士·致命连击",
+        "key": "R",
+        "type": "物理",
+        "action": "高速连斩",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d6+DEX 挥砍伤害。流血"
+      }
+    ],
+    [
+      {
+        "name": "战士·烈斩",
+        "key": "Q",
+        "type": "物理",
+        "action": "强力近战斩击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d10+STR 挥砍伤害。流血"
+      },
+      {
+        "name": "战士·旋风斩",
+        "key": "W",
+        "type": "物理",
+        "action": "环绕横扫多个敌人",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+STR 挥砍伤害。范围伤害"
+      },
+      {
+        "name": "战士·冲锋",
+        "key": "E",
+        "type": "物理",
+        "action": "突进并撞击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d12+STR 钝击伤害。击退"
+      },
+      {
+        "name": "战士·破甲击",
+        "key": "R",
+        "type": "物理",
+        "action": "削弱目标防御",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "STR",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "sunder",
+            "duration": 1,
+            "desc": "降防",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d6+STR 穿刺伤害。降防"
+      },
+      {
+        "name": "战士·战吼",
+        "key": "Q",
+        "type": "混合",
+        "action": "鼓舞自身与队友",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "攻击提升",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d6+CHA 能量伤害。攻击提升"
+      },
+      {
+        "name": "战士·致命连击",
+        "key": "W",
+        "type": "物理",
+        "action": "高速连斩",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d6+DEX 挥砍伤害。流血"
+      },
+      {
+        "name": "战士·烈斩",
+        "key": "E",
+        "type": "物理",
+        "action": "强力近战斩击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d10+STR 挥砍伤害。流血"
+      },
+      {
+        "name": "战士·旋风斩",
+        "key": "R",
+        "type": "物理",
+        "action": "环绕横扫多个敌人",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "STR",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+STR 挥砍伤害。范围伤害"
+      },
+      {
+        "name": "战士·冲锋",
+        "key": "Q",
+        "type": "物理",
+        "action": "突进并撞击",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "STR",
+          "type": "钝击"
+        },
+        "effects": [
+          {
+            "type": "knockback",
+            "duration": 1,
+            "desc": "击退",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d12+STR 钝击伤害。击退"
+      },
+      {
+        "name": "战士·破甲击",
+        "key": "W",
+        "type": "物理",
+        "action": "削弱目标防御",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "STR",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "sunder",
+            "duration": 1,
+            "desc": "降防",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "STR",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "2d6+STR 穿刺伤害。降防"
+      },
+      {
+        "name": "战士·战吼",
+        "key": "E",
+        "type": "混合",
+        "action": "鼓舞自身与队友",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "攻击提升",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d6+CHA 能量伤害。攻击提升"
+      },
+      {
+        "name": "战士·致命连击",
+        "key": "R",
+        "type": "物理",
+        "action": "高速连斩",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "duration": 1,
+            "desc": "流血",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d6+DEX 挥砍伤害。流血"
+      }
+    ]
+  ],
+  "assassin": [
+    {
+      "name": "暗杀",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d6+DEX 穿刺伤害。若目标生命低于一半，伤害翻倍。"
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "26+DEX 伤害。冷却1回合。"
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "46+DEX 范围伤害。DEX豁免减半。冷却4回合。"
+    },
+    [
+      {
+        "name": "刺客·暗影突袭",
+        "key": "Q",
+        "type": "物理",
+        "action": "从暗处突进刺杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "vuln",
+            "duration": 1,
+            "desc": "易伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+DEX 穿刺伤害。易伤"
+      },
+      {
+        "name": "刺客·淬毒刃",
+        "key": "W",
+        "type": "物理",
+        "action": "涂抹剧毒",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "poison",
+            "duration": 1,
+            "desc": "中毒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d6+DEX 穿刺伤害。中毒"
+      },
+      {
+        "name": "刺客·烟雾遁走",
+        "key": "E",
+        "type": "混合",
+        "action": "释放烟雾消失",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "invis",
+            "duration": 1,
+            "desc": "隐身",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d4+DEX 能量伤害。隐身"
+      },
+      {
+        "name": "刺客·致命标记",
+        "key": "R",
+        "type": "物理",
+        "action": "标记目标增伤",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "mark",
+            "duration": 1,
+            "desc": "标记",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d6+DEX 穿刺伤害。标记"
+      },
+      {
+        "name": "刺客·影分身",
+        "key": "Q",
+        "type": "物理",
+        "action": "制造分身扰乱",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "confuse",
+            "duration": 1,
+            "desc": "混乱",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "2d6+DEX 挥砍伤害。混乱"
+      },
+      {
+        "name": "刺客·处决",
+        "key": "W",
+        "type": "真实",
+        "action": "对低血目标斩杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "execute",
+            "duration": 1,
+            "desc": "斩杀",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 9,
+        "description": "3d8+DEX 挥砍伤害。斩杀"
+      },
+      {
+        "name": "刺客·暗影突袭",
+        "key": "E",
+        "type": "物理",
+        "action": "从暗处突进刺杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "vuln",
+            "duration": 1,
+            "desc": "易伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+DEX 穿刺伤害。易伤"
+      },
+      {
+        "name": "刺客·淬毒刃",
+        "key": "R",
+        "type": "物理",
+        "action": "涂抹剧毒",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "poison",
+            "duration": 1,
+            "desc": "中毒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d6+DEX 穿刺伤害。中毒"
+      },
+      {
+        "name": "刺客·烟雾遁走",
+        "key": "Q",
+        "type": "混合",
+        "action": "释放烟雾消失",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "invis",
+            "duration": 1,
+            "desc": "隐身",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d4+DEX 能量伤害。隐身"
+      },
+      {
+        "name": "刺客·致命标记",
+        "key": "W",
+        "type": "物理",
+        "action": "标记目标增伤",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "mark",
+            "duration": 1,
+            "desc": "标记",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d6+DEX 穿刺伤害。标记"
+      },
+      {
+        "name": "刺客·影分身",
+        "key": "E",
+        "type": "物理",
+        "action": "制造分身扰乱",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "confuse",
+            "duration": 1,
+            "desc": "混乱",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "2d6+DEX 挥砍伤害。混乱"
+      },
+      {
+        "name": "刺客·处决",
+        "key": "R",
+        "type": "真实",
+        "action": "对低血目标斩杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "execute",
+            "duration": 1,
+            "desc": "斩杀",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 9,
+        "description": "3d8+DEX 挥砍伤害。斩杀"
+      }
+    ],
+    [
+      {
+        "name": "刺客·暗影突袭",
+        "key": "Q",
+        "type": "物理",
+        "action": "从暗处突进刺杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "vuln",
+            "duration": 1,
+            "desc": "易伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+DEX 穿刺伤害。易伤"
+      },
+      {
+        "name": "刺客·淬毒刃",
+        "key": "W",
+        "type": "物理",
+        "action": "涂抹剧毒",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "poison",
+            "duration": 1,
+            "desc": "中毒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d6+DEX 穿刺伤害。中毒"
+      },
+      {
+        "name": "刺客·烟雾遁走",
+        "key": "E",
+        "type": "混合",
+        "action": "释放烟雾消失",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "invis",
+            "duration": 1,
+            "desc": "隐身",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d4+DEX 能量伤害。隐身"
+      },
+      {
+        "name": "刺客·致命标记",
+        "key": "R",
+        "type": "物理",
+        "action": "标记目标增伤",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "mark",
+            "duration": 1,
+            "desc": "标记",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d6+DEX 穿刺伤害。标记"
+      },
+      {
+        "name": "刺客·影分身",
+        "key": "Q",
+        "type": "物理",
+        "action": "制造分身扰乱",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "confuse",
+            "duration": 1,
+            "desc": "混乱",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "2d6+DEX 挥砍伤害。混乱"
+      },
+      {
+        "name": "刺客·处决",
+        "key": "W",
+        "type": "真实",
+        "action": "对低血目标斩杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "execute",
+            "duration": 1,
+            "desc": "斩杀",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 9,
+        "description": "3d8+DEX 挥砍伤害。斩杀"
+      },
+      {
+        "name": "刺客·暗影突袭",
+        "key": "E",
+        "type": "物理",
+        "action": "从暗处突进刺杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "vuln",
+            "duration": 1,
+            "desc": "易伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+DEX 穿刺伤害。易伤"
+      },
+      {
+        "name": "刺客·淬毒刃",
+        "key": "R",
+        "type": "物理",
+        "action": "涂抹剧毒",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "poison",
+            "duration": 1,
+            "desc": "中毒",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d6+DEX 穿刺伤害。中毒"
+      },
+      {
+        "name": "刺客·烟雾遁走",
+        "key": "Q",
+        "type": "混合",
+        "action": "释放烟雾消失",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "invis",
+            "duration": 1,
+            "desc": "隐身",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "1d4+DEX 能量伤害。隐身"
+      },
+      {
+        "name": "刺客·致命标记",
+        "key": "W",
+        "type": "物理",
+        "action": "标记目标增伤",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "mark",
+            "duration": 1,
+            "desc": "标记",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d6+DEX 穿刺伤害。标记"
+      },
+      {
+        "name": "刺客·影分身",
+        "key": "E",
+        "type": "物理",
+        "action": "制造分身扰乱",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "confuse",
+            "duration": 1,
+            "desc": "混乱",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "2d6+DEX 挥砍伤害。混乱"
+      },
+      {
+        "name": "刺客·处决",
+        "key": "R",
+        "type": "真实",
+        "action": "对低血目标斩杀",
+        "range": "近战",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "挥砍"
+        },
+        "effects": [
+          {
+            "type": "execute",
+            "duration": 1,
+            "desc": "斩杀",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 9,
+        "description": "3d8+DEX 挥砍伤害。斩杀"
+      }
+    ]
+  ],
+  "mage": [
+    {
+      "name": "火球术",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 10,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 0,
+      "description": "2d6+INT 火焰伤害，10尺半径范围。DEX豁免减半。"
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "26+INT 伤害。冷却1回合。"
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。"
+    },
+    [
+      {
+        "name": "法师·奥能飞弹",
+        "key": "Q",
+        "type": "法术",
+        "action": "发射魔法飞弹",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "force",
+            "duration": 1,
+            "desc": "力场伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "3d6+INT 法术伤害。力场伤害"
+      },
+      {
+        "name": "法师·元素风暴",
+        "key": "W",
+        "type": "法术",
+        "action": "召唤元素席卷",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d8+INT 法术伤害。范围伤害"
+      },
+      {
+        "name": "法师·时空禁锢",
+        "key": "E",
+        "type": "法术",
+        "action": "定身目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "寒冰"
+        },
+        "effects": [
+          {
+            "type": "hold",
+            "duration": 1,
+            "desc": "定身",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+INT 寒冰伤害。定身"
+      },
+      {
+        "name": "法师·焰爆术",
+        "key": "R",
+        "type": "法术",
+        "action": "引爆烈焰",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "火焰"
+        },
+        "effects": [
+          {
+            "type": "burn",
+            "duration": 1,
+            "desc": "灼烧",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+INT 火焰伤害。灼烧"
+      },
+      {
+        "name": "法师·雷霆之矛",
+        "key": "Q",
+        "type": "法术",
+        "action": "降下闪电",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "雷电"
+        },
+        "effects": [
+          {
+            "type": "stun",
+            "duration": 1,
+            "desc": "麻痹",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+INT 雷电伤害。麻痹"
+      },
+      {
+        "name": "法师·奥术护盾",
+        "key": "W",
+        "type": "法术",
+        "action": "凝结护盾",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d10+INT 法术伤害。护盾"
+      },
+      {
+        "name": "法师·奥能飞弹",
+        "key": "E",
+        "type": "法术",
+        "action": "发射魔法飞弹",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "force",
+            "duration": 1,
+            "desc": "力场伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "3d6+INT 法术伤害。力场伤害"
+      },
+      {
+        "name": "法师·元素风暴",
+        "key": "R",
+        "type": "法术",
+        "action": "召唤元素席卷",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d8+INT 法术伤害。范围伤害"
+      },
+      {
+        "name": "法师·时空禁锢",
+        "key": "Q",
+        "type": "法术",
+        "action": "定身目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "寒冰"
+        },
+        "effects": [
+          {
+            "type": "hold",
+            "duration": 1,
+            "desc": "定身",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+INT 寒冰伤害。定身"
+      },
+      {
+        "name": "法师·焰爆术",
+        "key": "W",
+        "type": "法术",
+        "action": "引爆烈焰",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "火焰"
+        },
+        "effects": [
+          {
+            "type": "burn",
+            "duration": 1,
+            "desc": "灼烧",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+INT 火焰伤害。灼烧"
+      },
+      {
+        "name": "法师·雷霆之矛",
+        "key": "E",
+        "type": "法术",
+        "action": "降下闪电",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "雷电"
+        },
+        "effects": [
+          {
+            "type": "stun",
+            "duration": 1,
+            "desc": "麻痹",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+INT 雷电伤害。麻痹"
+      },
+      {
+        "name": "法师·奥术护盾",
+        "key": "R",
+        "type": "法术",
+        "action": "凝结护盾",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d10+INT 法术伤害。护盾"
+      }
+    ],
+    [
+      {
+        "name": "法师·奥能飞弹",
+        "key": "Q",
+        "type": "法术",
+        "action": "发射魔法飞弹",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "force",
+            "duration": 1,
+            "desc": "力场伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "3d6+INT 法术伤害。力场伤害"
+      },
+      {
+        "name": "法师·元素风暴",
+        "key": "W",
+        "type": "法术",
+        "action": "召唤元素席卷",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d8+INT 法术伤害。范围伤害"
+      },
+      {
+        "name": "法师·时空禁锢",
+        "key": "E",
+        "type": "法术",
+        "action": "定身目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "寒冰"
+        },
+        "effects": [
+          {
+            "type": "hold",
+            "duration": 1,
+            "desc": "定身",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+INT 寒冰伤害。定身"
+      },
+      {
+        "name": "法师·焰爆术",
+        "key": "R",
+        "type": "法术",
+        "action": "引爆烈焰",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "火焰"
+        },
+        "effects": [
+          {
+            "type": "burn",
+            "duration": 1,
+            "desc": "灼烧",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+INT 火焰伤害。灼烧"
+      },
+      {
+        "name": "法师·雷霆之矛",
+        "key": "Q",
+        "type": "法术",
+        "action": "降下闪电",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "雷电"
+        },
+        "effects": [
+          {
+            "type": "stun",
+            "duration": 1,
+            "desc": "麻痹",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+INT 雷电伤害。麻痹"
+      },
+      {
+        "name": "法师·奥术护盾",
+        "key": "W",
+        "type": "法术",
+        "action": "凝结护盾",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d10+INT 法术伤害。护盾"
+      },
+      {
+        "name": "法师·奥能飞弹",
+        "key": "E",
+        "type": "法术",
+        "action": "发射魔法飞弹",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "force",
+            "duration": 1,
+            "desc": "力场伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "3d6+INT 法术伤害。力场伤害"
+      },
+      {
+        "name": "法师·元素风暴",
+        "key": "R",
+        "type": "法术",
+        "action": "召唤元素席卷",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围伤害",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 7,
+        "description": "3d8+INT 法术伤害。范围伤害"
+      },
+      {
+        "name": "法师·时空禁锢",
+        "key": "Q",
+        "type": "法术",
+        "action": "定身目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "寒冰"
+        },
+        "effects": [
+          {
+            "type": "hold",
+            "duration": 1,
+            "desc": "定身",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d8+INT 寒冰伤害。定身"
+      },
+      {
+        "name": "法师·焰爆术",
+        "key": "W",
+        "type": "法术",
+        "action": "引爆烈焰",
+        "range": "近战",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "火焰"
+        },
+        "effects": [
+          {
+            "type": "burn",
+            "duration": 1,
+            "desc": "灼烧",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "2d10+INT 火焰伤害。灼烧"
+      },
+      {
+        "name": "法师·雷霆之矛",
+        "key": "E",
+        "type": "法术",
+        "action": "降下闪电",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "INT",
+          "type": "雷电"
+        },
+        "effects": [
+          {
+            "type": "stun",
+            "duration": 1,
+            "desc": "麻痹",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d8+INT 雷电伤害。麻痹"
+      },
+      {
+        "name": "法师·奥术护盾",
+        "key": "R",
+        "type": "法术",
+        "action": "凝结护盾",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "INT",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "INT",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d10+INT 法术伤害。护盾"
+      }
+    ]
+  ],
+  "marksman": [
+    {
+      "name": "穿刺箭",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "120尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+DEX 穿刺伤害，射程120尺。"
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "120尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "28+DEX 伤害。冷却1回合。"
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "48+DEX 范围伤害。DEX豁免减半。冷却4回合。"
+    },
+    [
+      {
+        "name": "射手·精准射击",
+        "key": "Q",
+        "type": "物理",
+        "action": "远程精准打击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "暴击",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 2,
+        "description": "2d8+DEX 穿刺伤害。暴击"
+      },
+      {
+        "name": "射手·速射连射",
+        "key": "W",
+        "type": "物理",
+        "action": "快速倾泻弹幕",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "3d6+DEX 穿刺伤害。范围"
+      },
+      {
+        "name": "射手·穿甲弹",
+        "key": "E",
+        "type": "物理",
+        "action": "贯穿多重目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "pierce",
+            "duration": 1,
+            "desc": "穿透",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d10+DEX 穿刺伤害。穿透"
+      },
+      {
+        "name": "射手·战术翻滚",
+        "key": "R",
+        "type": "物理",
+        "action": "拉开距离",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "dash",
+            "duration": 1,
+            "desc": "位移",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d4+DEX 能量伤害。位移"
+      },
+      {
+        "name": "射手·爆头狙击",
+        "key": "Q",
+        "type": "物理",
+        "action": "蓄力重击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "重伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+DEX 穿刺伤害。重伤"
+      },
+      {
+        "name": "射手·压制火力",
+        "key": "W",
+        "type": "物理",
+        "action": "限制走位",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d6+DEX 穿刺伤害。减速"
+      },
+      {
+        "name": "射手·精准射击",
+        "key": "E",
+        "type": "物理",
+        "action": "远程精准打击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "暴击",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 2,
+        "description": "2d8+DEX 穿刺伤害。暴击"
+      },
+      {
+        "name": "射手·速射连射",
+        "key": "R",
+        "type": "物理",
+        "action": "快速倾泻弹幕",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "3d6+DEX 穿刺伤害。范围"
+      },
+      {
+        "name": "射手·穿甲弹",
+        "key": "Q",
+        "type": "物理",
+        "action": "贯穿多重目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "pierce",
+            "duration": 1,
+            "desc": "穿透",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d10+DEX 穿刺伤害。穿透"
+      },
+      {
+        "name": "射手·战术翻滚",
+        "key": "W",
+        "type": "物理",
+        "action": "拉开距离",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "dash",
+            "duration": 1,
+            "desc": "位移",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d4+DEX 能量伤害。位移"
+      },
+      {
+        "name": "射手·爆头狙击",
+        "key": "E",
+        "type": "物理",
+        "action": "蓄力重击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "重伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+DEX 穿刺伤害。重伤"
+      },
+      {
+        "name": "射手·压制火力",
+        "key": "R",
+        "type": "物理",
+        "action": "限制走位",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d6+DEX 穿刺伤害。减速"
+      }
+    ],
+    [
+      {
+        "name": "射手·精准射击",
+        "key": "Q",
+        "type": "物理",
+        "action": "远程精准打击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "暴击",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 2,
+        "description": "2d8+DEX 穿刺伤害。暴击"
+      },
+      {
+        "name": "射手·速射连射",
+        "key": "W",
+        "type": "物理",
+        "action": "快速倾泻弹幕",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "3d6+DEX 穿刺伤害。范围"
+      },
+      {
+        "name": "射手·穿甲弹",
+        "key": "E",
+        "type": "物理",
+        "action": "贯穿多重目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "pierce",
+            "duration": 1,
+            "desc": "穿透",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d10+DEX 穿刺伤害。穿透"
+      },
+      {
+        "name": "射手·战术翻滚",
+        "key": "R",
+        "type": "物理",
+        "action": "拉开距离",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "dash",
+            "duration": 1,
+            "desc": "位移",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d4+DEX 能量伤害。位移"
+      },
+      {
+        "name": "射手·爆头狙击",
+        "key": "Q",
+        "type": "物理",
+        "action": "蓄力重击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "重伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+DEX 穿刺伤害。重伤"
+      },
+      {
+        "name": "射手·压制火力",
+        "key": "W",
+        "type": "物理",
+        "action": "限制走位",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d6+DEX 穿刺伤害。减速"
+      },
+      {
+        "name": "射手·精准射击",
+        "key": "E",
+        "type": "物理",
+        "action": "远程精准打击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "暴击",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 2,
+        "description": "2d8+DEX 穿刺伤害。暴击"
+      },
+      {
+        "name": "射手·速射连射",
+        "key": "R",
+        "type": "物理",
+        "action": "快速倾泻弹幕",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "aoe",
+            "duration": 1,
+            "desc": "范围",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "3d6+DEX 穿刺伤害。范围"
+      },
+      {
+        "name": "射手·穿甲弹",
+        "key": "Q",
+        "type": "物理",
+        "action": "贯穿多重目标",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "pierce",
+            "duration": 1,
+            "desc": "穿透",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d10+DEX 穿刺伤害。穿透"
+      },
+      {
+        "name": "射手·战术翻滚",
+        "key": "W",
+        "type": "物理",
+        "action": "拉开距离",
+        "range": "自身",
+        "target": "自身",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "DEX",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "dash",
+            "duration": 1,
+            "desc": "位移",
+            "target": "自身"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 4,
+        "description": "1d4+DEX 能量伤害。位移"
+      },
+      {
+        "name": "射手·爆头狙击",
+        "key": "E",
+        "type": "物理",
+        "action": "蓄力重击",
+        "range": "远程",
+        "target": "单体",
+        "damage": {
+          "dice_count": 3,
+          "dice_size": 10,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "crit",
+            "duration": 1,
+            "desc": "重伤",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "3d10+DEX 穿刺伤害。重伤"
+      },
+      {
+        "name": "射手·压制火力",
+        "key": "R",
+        "type": "物理",
+        "action": "限制走位",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "DEX",
+          "type": "穿刺"
+        },
+        "effects": [
+          {
+            "type": "slow",
+            "duration": 1,
+            "desc": "减速",
+            "target": "敌方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+DEX",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "2d6+DEX 穿刺伤害。减速"
+      }
+    ]
+  ],
+  "support": [
+    {
+      "name": "治疗波",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "30尺",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "value_formula": "1d8+WIS",
+          "desc": "恢复生命",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 0,
+      "description": "恢复1d8+WIS生命值。"
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "30尺",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "28+WIS 伤害。冷却1回合。"
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "48+WIS 范围伤害。DEX豁免减半。冷却4回合。"
+    },
+    [
+      {
+        "name": "辅助·治愈之光",
+        "key": "Q",
+        "type": "混合",
+        "action": "恢复生命",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "治疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+WIS 能量伤害。治疗"
+      },
+      {
+        "name": "辅助·守护结界",
+        "key": "W",
+        "type": "法术",
+        "action": "提供护盾",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d10+WIS 法术伤害。护盾"
+      },
+      {
+        "name": "辅助·增益祝福",
+        "key": "E",
+        "type": "混合",
+        "action": "提升属性",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "增益",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d6+CHA 能量伤害。增益"
+      },
+      {
+        "name": "辅助·净化术",
+        "key": "R",
+        "type": "法术",
+        "action": "移除负面",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "cleanse",
+            "duration": 1,
+            "desc": "净化",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d4+WIS 法术伤害。净化"
+      },
+      {
+        "name": "辅助·群体治疗",
+        "key": "Q",
+        "type": "混合",
+        "action": "治疗多人",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "群疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "2d6+WIS 能量伤害。群疗"
+      },
+      {
+        "name": "辅助·复活祈愿",
+        "key": "W",
+        "type": "法术",
+        "action": "复活倒下队友",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "CHA",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "revive",
+            "duration": 1,
+            "desc": "复活",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 12,
+        "description": "1d12+CHA 法术伤害。复活"
+      },
+      {
+        "name": "辅助·治愈之光",
+        "key": "E",
+        "type": "混合",
+        "action": "恢复生命",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "治疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+WIS 能量伤害。治疗"
+      },
+      {
+        "name": "辅助·守护结界",
+        "key": "R",
+        "type": "法术",
+        "action": "提供护盾",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d10+WIS 法术伤害。护盾"
+      },
+      {
+        "name": "辅助·增益祝福",
+        "key": "Q",
+        "type": "混合",
+        "action": "提升属性",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "增益",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d6+CHA 能量伤害。增益"
+      },
+      {
+        "name": "辅助·净化术",
+        "key": "W",
+        "type": "法术",
+        "action": "移除负面",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "cleanse",
+            "duration": 1,
+            "desc": "净化",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d4+WIS 法术伤害。净化"
+      },
+      {
+        "name": "辅助·群体治疗",
+        "key": "E",
+        "type": "混合",
+        "action": "治疗多人",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "群疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "2d6+WIS 能量伤害。群疗"
+      },
+      {
+        "name": "辅助·复活祈愿",
+        "key": "R",
+        "type": "法术",
+        "action": "复活倒下队友",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "CHA",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "revive",
+            "duration": 1,
+            "desc": "复活",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 12,
+        "description": "1d12+CHA 法术伤害。复活"
+      }
+    ],
+    [
+      {
+        "name": "辅助·治愈之光",
+        "key": "Q",
+        "type": "混合",
+        "action": "恢复生命",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "治疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+WIS 能量伤害。治疗"
+      },
+      {
+        "name": "辅助·守护结界",
+        "key": "W",
+        "type": "法术",
+        "action": "提供护盾",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d10+WIS 法术伤害。护盾"
+      },
+      {
+        "name": "辅助·增益祝福",
+        "key": "E",
+        "type": "混合",
+        "action": "提升属性",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "增益",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d6+CHA 能量伤害。增益"
+      },
+      {
+        "name": "辅助·净化术",
+        "key": "R",
+        "type": "法术",
+        "action": "移除负面",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "cleanse",
+            "duration": 1,
+            "desc": "净化",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d4+WIS 法术伤害。净化"
+      },
+      {
+        "name": "辅助·群体治疗",
+        "key": "Q",
+        "type": "混合",
+        "action": "治疗多人",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "群疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "2d6+WIS 能量伤害。群疗"
+      },
+      {
+        "name": "辅助·复活祈愿",
+        "key": "W",
+        "type": "法术",
+        "action": "复活倒下队友",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "CHA",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "revive",
+            "duration": 1,
+            "desc": "复活",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 12,
+        "description": "1d12+CHA 法术伤害。复活"
+      },
+      {
+        "name": "辅助·治愈之光",
+        "key": "E",
+        "type": "混合",
+        "action": "恢复生命",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 8,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "治疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 3,
+        "description": "2d8+WIS 能量伤害。治疗"
+      },
+      {
+        "name": "辅助·守护结界",
+        "key": "R",
+        "type": "法术",
+        "action": "提供护盾",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 10,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "shield",
+            "duration": 1,
+            "desc": "护盾",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d10+WIS 法术伤害。护盾"
+      },
+      {
+        "name": "辅助·增益祝福",
+        "key": "Q",
+        "type": "混合",
+        "action": "提升属性",
+        "range": "自身",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 6,
+          "bonus_attr": "CHA",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "buff",
+            "duration": 1,
+            "desc": "增益",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 6,
+        "description": "1d6+CHA 能量伤害。增益"
+      },
+      {
+        "name": "辅助·净化术",
+        "key": "W",
+        "type": "法术",
+        "action": "移除负面",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 4,
+          "bonus_attr": "WIS",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "cleanse",
+            "duration": 1,
+            "desc": "净化",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 5,
+        "description": "1d4+WIS 法术伤害。净化"
+      },
+      {
+        "name": "辅助·群体治疗",
+        "key": "E",
+        "type": "混合",
+        "action": "治疗多人",
+        "range": "远程",
+        "target": "区域",
+        "damage": {
+          "dice_count": 2,
+          "dice_size": 6,
+          "bonus_attr": "WIS",
+          "type": "能量"
+        },
+        "effects": [
+          {
+            "type": "heal",
+            "duration": 1,
+            "desc": "群疗",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "WIS",
+          "dc_formula": "8+PROF+WIS",
+          "on_save": "无效"
+        },
+        "cooldown": 8,
+        "description": "2d6+WIS 能量伤害。群疗"
+      },
+      {
+        "name": "辅助·复活祈愿",
+        "key": "R",
+        "type": "法术",
+        "action": "复活倒下队友",
+        "range": "远程",
+        "target": "友方",
+        "damage": {
+          "dice_count": 1,
+          "dice_size": 12,
+          "bonus_attr": "CHA",
+          "type": "法术"
+        },
+        "effects": [
+          {
+            "type": "revive",
+            "duration": 1,
+            "desc": "复活",
+            "target": "友方"
+          }
+        ],
+        "saving_throw": {
+          "attr": "CHA",
+          "dc_formula": "8+PROF+CHA",
+          "on_save": "无效"
+        },
+        "cooldown": 12,
+        "description": "1d12+CHA 法术伤害。复活"
+      }
+    ]
+  ]
+}

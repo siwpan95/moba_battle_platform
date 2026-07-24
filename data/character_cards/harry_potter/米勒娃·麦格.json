@@ -1,0 +1,201 @@
+{
+  "card_id": "HAR-1541",
+  "hero": {
+    "name": "米勒娃·麦格",
+    "name_en": "Minerva McGonagall",
+    "alias": "",
+    "title": "Minerva McGonagall"
+  },
+  "game": {
+    "name": "Harry Potter",
+    "name_cn": "哈利波特",
+    "native_role": "变形术教授/阿尼马格斯 (Transfiguration Professor/Animagus)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "哈利波特",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "变形之击",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d6+INT 力场伤害。",
+      "approx": true
+    },
+    {
+      "name": "阿尼马格斯·猫",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "闪避",
+          "duration": 2,
+          "desc": "闪避与移动力提升",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "化为猫形，提升闪避，持续 2 回合。",
+      "approx": true
+    },
+    {
+      "name": "石墩出动",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "增援",
+          "duration": 2,
+          "desc": "召唤石像协助友方",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+INT 钝击伤害，并召唤石像增援。",
+      "approx": true,
+      "aoe_radius": 10
+    },
+    {
+      "name": "猛烈变形",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d8+INT 力场伤害，覆盖大片区域。",
+      "approx": true,
+      "aoe_radius": 15
+    }
+  ]
+}

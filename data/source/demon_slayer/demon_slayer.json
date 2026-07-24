@@ -1,0 +1,105 @@
+{
+  "game": "Demon Slayer",
+  "name_cn": "鬼灭之刃",
+  "total": 14,
+  "heroes": [
+    {
+      "name": "灶门炭治郎",
+      "name_cn": "灶门炭治郎",
+      "name_en": "Tanjiro Kamado",
+      "role": "水之呼吸/火之神乐 (Water Breathing/Hinokami)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "灶门祢豆子",
+      "name_cn": "灶门祢豆子",
+      "name_en": "Nezuko Kamado",
+      "role": "鬼/血鬼术 (Demon/Blood Demon Art)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "我妻善逸",
+      "name_cn": "我妻善逸",
+      "name_en": "Zenitsu Agatsuma",
+      "role": "雷之呼吸 (Thunder Breathing)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "嘴平伊之助",
+      "name_cn": "嘴平伊之助",
+      "name_en": "Inosuke Hashibira",
+      "role": "兽之呼吸 (Beast Breathing)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "富冈义勇",
+      "name_cn": "富冈义勇",
+      "name_en": "Giyu Tomioka",
+      "role": "水柱 (Water Hashira)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "蝴蝶忍",
+      "name_cn": "蝴蝶忍",
+      "name_en": "Shinobu Kocho",
+      "role": "虫柱/毒 (Insect Hashira/Poison)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "炼狱杏寿郎",
+      "name_cn": "炼狱杏寿郎",
+      "name_en": "Kyojuro Rengoku",
+      "role": "炎柱 (Flame Hashira)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "宇髄天元",
+      "name_cn": "宇髄天元",
+      "name_en": "Tengen Uzui",
+      "role": "音柱/忍者 (Sound Hashira/Ninja)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "甘露寺蜜璃",
+      "name_cn": "甘露寺蜜璃",
+      "name_en": "Mitsuri Kanroji",
+      "role": "恋柱 (Love Hashira)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "时透无一郎",
+      "name_cn": "时透无一郎",
+      "name_en": "Muichiro Tokito",
+      "role": "霞柱 (Mist Hashira)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "悲鸣屿行冥",
+      "name_cn": "悲鸣屿行冥",
+      "name_en": "Gyomei Himejima",
+      "role": "岩柱/盲僧 (Stone Hashira/Blind Monk)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "伊黑小芭内",
+      "name_cn": "伊黑小芭内",
+      "name_en": "Obanai Iguro",
+      "role": "蛇柱 (Serpent Hashira)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "鬼舞辻无惨",
+      "name_cn": "鬼舞辻无惨",
+      "name_en": "Muzan Kibutsuji",
+      "role": "鬼王 (Demon King)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "珠世",
+      "name_cn": "珠世",
+      "name_en": "Tamayo",
+      "role": "医疗鬼/医师 (Healing Demon/Doctor)",
+      "universal_role": "support"
+    }
+  ]
+}

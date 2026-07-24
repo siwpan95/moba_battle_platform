@@ -1,0 +1,462 @@
+{
+  "card_id": "HER-1672",
+  "hero": {
+    "name": "布雷泽",
+    "name_en": "Blaze",
+    "alias": "",
+    "title": "Blaze"
+  },
+  "game": {
+    "name": "Heroes of the Storm",
+    "name_cn": "风暴英雄",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "星际争霸",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "坦克·岩盾守护",
+      "key": "Q",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "获得临时生命",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d12+CON 钝击伤害。获得临时生命"
+    },
+    {
+      "name": "坦克·震荡猛击",
+      "key": "W",
+      "type": "物理",
+      "action": "重击前方敌人",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "prone",
+          "duration": 1,
+          "desc": "击倒",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d12+STR 钝击伤害。击倒"
+    },
+    {
+      "name": "坦克·地裂践踏",
+      "key": "E",
+      "type": "物理",
+      "action": "践踏地面造成范围震荡",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "slow",
+          "duration": 1,
+          "desc": "减速",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 8,
+      "description": "3d10+STR 钝击伤害。减速"
+    },
+    {
+      "name": "坦克·荆棘反甲",
+      "key": "R",
+      "type": "物理",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "reflect",
+          "duration": 1,
+          "desc": "反伤",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 6,
+      "description": "1d8+CON 穿刺伤害。反伤"
+    },
+    {
+      "name": "坦克·巨石投掷",
+      "key": "Q",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "knockback",
+          "duration": 1,
+          "desc": "击退",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 5,
+      "description": "2d10+STR 钝击伤害。击退"
+    },
+    {
+      "name": "坦克·不屈意志",
+      "key": "W",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "immune",
+          "duration": 1,
+          "desc": "免疫控制",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 10,
+      "description": "1d4+CON 能量伤害。免疫控制"
+    },
+    {
+      "name": "坦克·岩盾守护",
+      "key": "E",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "获得临时生命",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d12+CON 钝击伤害。获得临时生命"
+    },
+    {
+      "name": "坦克·震荡猛击",
+      "key": "R",
+      "type": "物理",
+      "action": "重击前方敌人",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "prone",
+          "duration": 1,
+          "desc": "击倒",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d12+STR 钝击伤害。击倒"
+    },
+    {
+      "name": "坦克·地裂践踏",
+      "key": "Q",
+      "type": "物理",
+      "action": "践踏地面造成范围震荡",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "slow",
+          "duration": 1,
+          "desc": "减速",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 8,
+      "description": "3d10+STR 钝击伤害。减速"
+    },
+    {
+      "name": "坦克·荆棘反甲",
+      "key": "W",
+      "type": "物理",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "reflect",
+          "duration": 1,
+          "desc": "反伤",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 6,
+      "description": "1d8+CON 穿刺伤害。反伤"
+    },
+    {
+      "name": "坦克·巨石投掷",
+      "key": "E",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "knockback",
+          "duration": 1,
+          "desc": "击退",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 5,
+      "description": "2d10+STR 钝击伤害。击退"
+    },
+    {
+      "name": "坦克·不屈意志",
+      "key": "R",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 4,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "immune",
+          "duration": 1,
+          "desc": "免疫控制",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 10,
+      "description": "1d4+CON 能量伤害。免疫控制"
+    }
+  ]
+}

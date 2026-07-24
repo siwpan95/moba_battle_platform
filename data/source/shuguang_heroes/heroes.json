@@ -1,0 +1,262 @@
+{
+  "game": "Dawn Heroes",
+  "name_cn": "曙光英雄",
+  "total": 47,
+  "heroes": [
+    {
+      "name": "鲁智深",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "白浩",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "尉迟炎",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "许诸",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "张飞",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "鲁班",
+      "role": "坦克/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "牛魔王",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "欧治子",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "猪八戒",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "展昭",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "关羽",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "托尔",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "曹操",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "阿尔弗雷德",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "杨玉环",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "残影",
+      "role": "游侠",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "吕洞宾",
+      "role": "游侠/法师",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "雷震子",
+      "role": "游侠",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "缪桂英",
+      "role": "战士/游侠",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "嫦娥",
+      "role": "游侠/法师",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "特斯拉",
+      "role": "游侠/法师",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "西施",
+      "role": "游侠",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "杨戬",
+      "role": "战士/游侠",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "貂蝉",
+      "role": "游侠",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "赵云",
+      "role": "游侠",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "西王母",
+      "role": "法师/射手",
+      "universal_role": "mage"
+    },
+    {
+      "name": "羲和",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "望舒",
+      "role": "法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "祝融",
+      "role": "法师/射手",
+      "universal_role": "mage"
+    },
+    {
+      "name": "梅朵",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "乌雅",
+      "role": "法师/射手",
+      "universal_role": "mage"
+    },
+    {
+      "name": "孙武",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "张角",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "爱丽丝",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "黄泉",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "火莲",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "鳗鳗",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "图塔卡蒙",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "阿尔忒弥斯",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "黄月英",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "帕提多",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "美杜莎",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "花荣",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "精卫",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "黄忠",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "青木",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "飞廉",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "王昭君",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "铁扇公主",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "桑榆",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "华佗",
+      "role": "辅助",
+      "universal_role": "support"
+    }
+  ]
+}

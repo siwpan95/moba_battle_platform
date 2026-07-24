@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 工程保障 / 备份
+.workbuddy/
+*.bak*
+
+# 系统
+.DS_Store
+node_modules/

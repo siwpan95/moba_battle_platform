@@ -1,0 +1,786 @@
+{
+  "大天狗": [
+    {
+      "name": "羽刃暴风",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "天狗风",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "天狗之羽",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "天狗降世",
+      "key": "4",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。"
+    }
+  ],
+  "妖刀姬": [
+    {
+      "name": "斩击",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "刀鸣",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。",
+      "aoe_radius": 15
+    },
+    {
+      "name": "妖刀",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "斩杀",
+          "desc": "目标生命<30%时伤害翻倍",
+          "threshold": 30,
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。目标生命<30%时伤害翻倍。"
+    },
+    {
+      "name": "不祥之刃",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "酒吞童子": [
+    {
+      "name": "狂气",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "鬼葫芦",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "狂啸",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "魅惑",
+          "desc": "目标必须攻击施法者",
+          "duration": 1,
+          "dc_attr": "WIS",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。目标必须攻击施法者1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      }
+    },
+    {
+      "name": "鬼王降临",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "变身",
+          "desc": "变身为强化形态",
+          "duration": 3,
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。变身为强化形态3回合。"
+    }
+  ],
+  "姑获鸟": [
+    {
+      "name": "伞剑",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "影翼",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "位移",
+          "desc": "向目标方向移动30尺",
+          "value": 30,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。向目标方向移动30尺。"
+    },
+    {
+      "name": "天翔鹤斩",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "以津真天",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "一目连": [
+    {
+      "name": "风符·破",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d6+STR 挥砍伤害。"
+    },
+    {
+      "name": "风符·护",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "desc": "获得临时生命",
+          "duration": 2,
+          "value_formula": "2*LVL+CHA",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 挥砍伤害。获得临时生命2回合。"
+    },
+    {
+      "name": "风符·湮",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d6+STR 挥砍伤害。",
+      "aoe_radius": 15
+    },
+    {
+      "name": "风神之佑",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d8+STR 挥砍伤害。",
+      "aoe_radius": 15
+    }
+  ],
+  "辉夜姬": [
+    {
+      "name": "蓬莱玉枝",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d6+STR 挥砍伤害。"
+    },
+    {
+      "name": "月光叠影",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "desc": "标记目标，后续攻击增伤",
+          "duration": 3,
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 光耀伤害。标记目标，后续攻击增伤3回合。"
+    },
+    {
+      "name": "龙首之玉",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d6+STR 挥砍伤害。"
+    },
+    {
+      "name": "万象之海",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d8+STR 挥砍伤害。",
+      "aoe_radius": 15
+    }
+  ],
+  "茨木童子": [
+    {
+      "name": "地狱之手",
+      "key": "1",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "罗生门",
+      "key": "2",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。"
+    },
+    {
+      "name": "六道轮回",
+      "key": "3",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。",
+      "aoe_radius": 15
+    },
+    {
+      "name": "黑焰",
+      "key": "4",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "雪女": [
+    {
+      "name": "寒冰风暴",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 寒冷伤害。"
+    },
+    {
+      "name": "冰墙",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 寒冷伤害。"
+    },
+    {
+      "name": "冰封",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "麻痹",
+          "desc": "目标被冻结，无法行动",
+          "duration": 1,
+          "dc_attr": "CON",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+INT 寒冷伤害。目标被冻结，无法行动1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      }
+    },
+    {
+      "name": "暴风雪",
+      "key": "4",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。",
+      "aoe_radius": 15
+    }
+  ],
+  "彼岸花": [
+    {
+      "name": "花海",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。",
+      "aoe_radius": 15
+    },
+    {
+      "name": "彼岸花毒",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "毒素"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 毒素伤害。"
+    },
+    {
+      "name": "花影",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "位移",
+          "desc": "短距离传送/移动",
+          "value": 20,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。短距离传送/移动。"
+    },
+    {
+      "name": "黄泉花海",
+      "key": "4",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。",
+      "aoe_radius": 15
+    }
+  ],
+  "玉藻前": [
+    {
+      "name": "狐火",
+      "key": "1",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 火焰伤害。"
+    },
+    {
+      "name": "妖术",
+      "key": "2",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "天狐之姿",
+      "key": "3",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "位移",
+          "desc": "短距离传送/移动",
+          "value": 20,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。短距离传送/移动。"
+    },
+    {
+      "name": "九尾封印",
+      "key": "4",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。"
+    }
+  ]
+}

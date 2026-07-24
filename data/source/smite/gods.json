@@ -1,0 +1,787 @@
+{
+  "game": "SMITE",
+  "name_cn": "神之浩劫",
+  "total": 130,
+  "heroes": [
+    {
+      "name": "Achilles",
+      "role": "战士",
+      "pantheon": "希腊",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Agni",
+      "role": "法师",
+      "pantheon": "印度",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Ah Muzen Cab",
+      "role": "射手",
+      "pantheon": "玛雅",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Ah Puch",
+      "role": "法师",
+      "pantheon": "玛雅",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Amaterasu",
+      "role": "战士",
+      "pantheon": "日本",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Anhur",
+      "role": "射手",
+      "pantheon": "埃及",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Anubis",
+      "role": "法师",
+      "pantheon": "埃及",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Ao Kuang",
+      "role": "刺客",
+      "pantheon": "中国",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Aphrodite",
+      "role": "辅助",
+      "pantheon": "希腊",
+      "universal_role": "support"
+    },
+    {
+      "name": "Apollo",
+      "role": "射手",
+      "pantheon": "希腊",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Arachne",
+      "role": "刺客",
+      "pantheon": "希腊",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Ares",
+      "role": "坦克",
+      "pantheon": "希腊",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Artemis",
+      "role": "射手",
+      "pantheon": "希腊",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Artio",
+      "role": "坦克",
+      "pantheon": "凯尔特",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Athena",
+      "role": "坦克",
+      "pantheon": "希腊",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Atlas",
+      "role": "坦克",
+      "pantheon": "希腊",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Awilix",
+      "role": "刺客",
+      "pantheon": "玛雅",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Baba Yaga",
+      "role": "法师",
+      "pantheon": "斯拉夫",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Bacchus",
+      "role": "坦克",
+      "pantheon": "罗马",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Bakasura",
+      "role": "刺客",
+      "pantheon": "印度",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Bake Kujira",
+      "role": "坦克",
+      "pantheon": "日本",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Baron Samedi",
+      "role": "法师",
+      "pantheon": "巫毒",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Bastet",
+      "role": "刺客",
+      "pantheon": "埃及",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Bellona",
+      "role": "战士",
+      "pantheon": "罗马",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Cabrakan",
+      "role": "坦克",
+      "pantheon": "玛雅",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Camazotz",
+      "role": "刺客",
+      "pantheon": "玛雅",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Cerberus",
+      "role": "坦克",
+      "pantheon": "希腊",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Cernunnos",
+      "role": "射手",
+      "pantheon": "凯尔特",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Chaac",
+      "role": "战士",
+      "pantheon": "玛雅",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Chang'e",
+      "role": "法师",
+      "pantheon": "中国",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Charon",
+      "role": "坦克",
+      "pantheon": "希腊",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Charybdis",
+      "role": "射手",
+      "pantheon": "希腊",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Chernobog",
+      "role": "射手",
+      "pantheon": "斯拉夫",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Chiron",
+      "role": "射手",
+      "pantheon": "希腊",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Chronos",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Cliodhna",
+      "role": "刺客",
+      "pantheon": "凯尔特",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Cthulhu",
+      "role": "坦克",
+      "pantheon": "旧日支配者",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Cu Chulainn",
+      "role": "战士",
+      "pantheon": "凯尔特",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Cupid",
+      "role": "射手",
+      "pantheon": "罗马",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Da Ji",
+      "role": "刺客",
+      "pantheon": "中国",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Danzaburou",
+      "role": "射手",
+      "pantheon": "日本",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Discordia",
+      "role": "法师",
+      "pantheon": "罗马",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Erlang Shen",
+      "role": "战士",
+      "pantheon": "中国",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Eset",
+      "role": "法师",
+      "pantheon": "埃及",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Fafnir",
+      "role": "坦克",
+      "pantheon": "北欧",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Fenrir",
+      "role": "刺客",
+      "pantheon": "北欧",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Freya",
+      "role": "战士",
+      "pantheon": "北欧",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ganesha",
+      "role": "坦克",
+      "pantheon": "印度",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Geb",
+      "role": "坦克",
+      "pantheon": "埃及",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Gilgamesh",
+      "role": "战士",
+      "pantheon": "巴比伦",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Guan Yu",
+      "role": "战士",
+      "pantheon": "中国",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Hachiman",
+      "role": "射手",
+      "pantheon": "日本",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Hades",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "He Bo",
+      "role": "法师",
+      "pantheon": "中国",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Heimdallr",
+      "role": "射手",
+      "pantheon": "北欧",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Hel",
+      "role": "法师",
+      "pantheon": "北欧",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Hera",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Hercules",
+      "role": "战士",
+      "pantheon": "罗马",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Horus",
+      "role": "战士",
+      "pantheon": "埃及",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Hou Yi",
+      "role": "射手",
+      "pantheon": "中国",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Hun Batz",
+      "role": "刺客",
+      "pantheon": "玛雅",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Ishtar",
+      "role": "射手",
+      "pantheon": "巴比伦",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Ix Chel",
+      "role": "法师",
+      "pantheon": "玛雅",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Izanami",
+      "role": "射手",
+      "pantheon": "日本",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Janus",
+      "role": "法师",
+      "pantheon": "罗马",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Jing Wei",
+      "role": "射手",
+      "pantheon": "中国",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Jormungandr",
+      "role": "坦克",
+      "pantheon": "北欧",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Kali",
+      "role": "刺客",
+      "pantheon": "印度",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Khepri",
+      "role": "坦克",
+      "pantheon": "埃及",
+      "universal_role": "tank"
+    },
+    {
+      "name": "King Arthur",
+      "role": "战士",
+      "pantheon": "亚瑟王",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Kukulkan",
+      "role": "法师",
+      "pantheon": "玛雅",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Kumbhakarna",
+      "role": "坦克",
+      "pantheon": "印度",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Kuzenbo",
+      "role": "坦克",
+      "pantheon": "日本",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Lancelot",
+      "role": "刺客",
+      "pantheon": "亚瑟王",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Loki",
+      "role": "刺客",
+      "pantheon": "北欧",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Maman Brigitte",
+      "role": "坦克",
+      "pantheon": "巫毒",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Martichoras",
+      "role": "射手",
+      "pantheon": "希腊",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Maui",
+      "role": "坦克",
+      "pantheon": "波利尼西亚",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Medusa",
+      "role": "射手",
+      "pantheon": "希腊",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Mercury",
+      "role": "刺客",
+      "pantheon": "罗马",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Merlin",
+      "role": "法师",
+      "pantheon": "亚瑟王",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Morgan Le Fay",
+      "role": "法师",
+      "pantheon": "亚瑟王",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Mulan",
+      "role": "战士",
+      "pantheon": "中国",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ne Zha",
+      "role": "刺客",
+      "pantheon": "中国",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Neith",
+      "role": "射手",
+      "pantheon": "埃及",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Nemesis",
+      "role": "刺客",
+      "pantheon": "希腊",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Nike",
+      "role": "战士",
+      "pantheon": "希腊",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Nox",
+      "role": "法师",
+      "pantheon": "罗马",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Nu Wa",
+      "role": "法师",
+      "pantheon": "中国",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Nut",
+      "role": "射手",
+      "pantheon": "埃及",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Odin",
+      "role": "战士",
+      "pantheon": "北欧",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Olorun",
+      "role": "法师",
+      "pantheon": "约鲁巴",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Osiris",
+      "role": "战士",
+      "pantheon": "埃及",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Pele",
+      "role": "刺客",
+      "pantheon": "波利尼西亚",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Persephone",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Poseidon",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Ra",
+      "role": "法师",
+      "pantheon": "埃及",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Raijin",
+      "role": "法师",
+      "pantheon": "日本",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Rama",
+      "role": "射手",
+      "pantheon": "印度",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Ratatoskr",
+      "role": "刺客",
+      "pantheon": "北欧",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Ravana",
+      "role": "刺客",
+      "pantheon": "印度",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Scylla",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Serqet",
+      "role": "刺客",
+      "pantheon": "埃及",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Set",
+      "role": "刺客",
+      "pantheon": "埃及",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Shiva",
+      "role": "战士",
+      "pantheon": "印度",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Skadi",
+      "role": "射手",
+      "pantheon": "北欧",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Sobek",
+      "role": "坦克",
+      "pantheon": "埃及",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Sol",
+      "role": "法师",
+      "pantheon": "北欧",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Sun Wukong",
+      "role": "战士",
+      "pantheon": "中国",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Surtr",
+      "role": "战士",
+      "pantheon": "北欧",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Susano",
+      "role": "刺客",
+      "pantheon": "日本",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Sylvanus",
+      "role": "坦克",
+      "pantheon": "罗马",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Terra",
+      "role": "坦克",
+      "pantheon": "罗马",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Thanatos",
+      "role": "刺客",
+      "pantheon": "希腊",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "The Morrigan",
+      "role": "法师",
+      "pantheon": "凯尔特",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Thor",
+      "role": "刺客",
+      "pantheon": "北欧",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Thoth",
+      "role": "法师",
+      "pantheon": "埃及",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Tiamat",
+      "role": "法师",
+      "pantheon": "巴比伦",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Tsukuyomi",
+      "role": "刺客",
+      "pantheon": "日本",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Tyr",
+      "role": "战士",
+      "pantheon": "北欧",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Ullr",
+      "role": "射手",
+      "pantheon": "北欧",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Vamana",
+      "role": "战士",
+      "pantheon": "印度",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Vulcan",
+      "role": "法师",
+      "pantheon": "罗马",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Xbalanque",
+      "role": "射手",
+      "pantheon": "玛雅",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "Xing Tian",
+      "role": "坦克",
+      "pantheon": "中国",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Yemoja",
+      "role": "坦克",
+      "pantheon": "约鲁巴",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Ymir",
+      "role": "坦克",
+      "pantheon": "北欧",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Yu Huang",
+      "role": "法师",
+      "pantheon": "中国",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Zeus",
+      "role": "法师",
+      "pantheon": "希腊",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Zhong Kui",
+      "role": "法师",
+      "pantheon": "中国",
+      "universal_role": "mage"
+    }
+  ]
+}

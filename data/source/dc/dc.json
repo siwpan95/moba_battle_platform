@@ -1,0 +1,161 @@
+{
+  "game": "dc",
+  "name_cn": "DC宇宙",
+  "total": 22,
+  "heroes": [
+    {
+      "name": "超人",
+      "name_cn": "超人",
+      "name_en": "Superman",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "蝙蝠侠",
+      "name_cn": "蝙蝠侠",
+      "name_en": "Batman",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "神奇女侠",
+      "name_cn": "神奇女侠",
+      "name_en": "Wonder Woman",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "闪电侠",
+      "name_cn": "闪电侠",
+      "name_en": "The Flash",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "绿箭侠",
+      "name_cn": "绿箭侠",
+      "name_en": "Green Arrow",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "海王",
+      "name_cn": "海王",
+      "name_en": "Aquaman",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "钢骨",
+      "name_cn": "钢骨",
+      "name_en": "Cyborg",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "火星猎人",
+      "name_cn": "火星猎人",
+      "name_en": "Martian Manhunter",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "沙赞",
+      "name_cn": "沙赞",
+      "name_en": "Shazam",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "绿灯侠",
+      "name_cn": "绿灯侠",
+      "name_en": "Green Lantern",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "蝙蝠女",
+      "name_cn": "蝙蝠女",
+      "name_en": "Batgirl",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "夜翼",
+      "name_cn": "夜翼",
+      "name_en": "Nightwing",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "哈莉奎茵",
+      "name_cn": "哈莉奎茵",
+      "name_en": "Harley Quinn",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "小丑",
+      "name_cn": "小丑",
+      "name_en": "Joker",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "毒藤女",
+      "name_cn": "毒藤女",
+      "name_en": "Poison Ivy",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "丧钟",
+      "name_cn": "丧钟",
+      "name_en": "Deathstroke",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "康斯坦丁",
+      "name_cn": "康斯坦丁",
+      "name_en": "John Constantine",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "扎坦娜",
+      "name_cn": "扎坦娜",
+      "name_en": "Zatanna",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "黑亚当",
+      "name_cn": "黑亚当",
+      "name_en": "Black Adam",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "比扎罗",
+      "name_cn": "比扎罗",
+      "name_en": "Bizarro",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "达克赛德",
+      "name_cn": "达克赛德",
+      "name_en": "Darkseid",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "逆闪电",
+      "name_cn": "逆闪电",
+      "name_en": "Reverse-Flash",
+      "role": "刺客",
+      "universal_role": "assassin"
+    }
+  ]
+}

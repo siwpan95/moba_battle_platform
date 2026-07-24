@@ -1,0 +1,332 @@
+{
+  "game": "Marvel Super War",
+  "name_cn": "漫威超级战争",
+  "total": 65,
+  "heroes": [
+    {
+      "name": "战虎",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "冰月花雪",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "浪",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "模仿大师",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "金牌手",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "松鼠女",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "恶灵骑士",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "纳摩",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "魔剑客",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "迷境魔",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "宇宙术士亚当",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "古一",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "刀锋战士",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "百光花火",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "幽灵",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "战争机器",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "北极星",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "毒液",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "沙魔",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "奇异博士",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "灭霸",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "铁拳",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "夜魔侠",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "石头人",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "隐形女侠",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "神奇先生",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "曼蒂斯",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "勇度",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "罗南",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "火箭浣熊",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "美国队长",
+      "role": "坦克/战士",
+      "universal_role": "tank"
+    },
+    {
+      "name": "钢铁侠",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "雷神",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "黑寡妇",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "鹰眼",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "浩克",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "蜘蛛侠",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "黑豹",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "蚁人",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "星爵",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "卡魔拉",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "格鲁特",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "洛基",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "死侍",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "万磁王",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "暴风女",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "金刚狼",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "凤凰女",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "猩红女巫",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "幻视",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "快银",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "黄蜂女",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "月光骑士",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "制裁者",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "艾丽卡",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "尚气",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "冰人",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "秘客",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "灵蝶",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "天使",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "牌皇",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "小淘气",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "银影侠",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "德古拉",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "征服者康",
+      "role": "法师",
+      "universal_role": "mage"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "card_id": "300-1072",
+  "hero": {
+    "name": "康娜",
+    "name_en": "",
+    "alias": "",
+    "title": ""
+  },
+  "game": {
+    "name": "300 Heroes",
+    "name_cn": "300英雄",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "小林家的龙女仆",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "圣光弹",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "duration": 0,
+          "desc": "恢复生命值。",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "圣光弹（Q）：远程治疗。造成 1d10+WIS 光耀伤害。恢复生命值。"
+    },
+    {
+      "name": "鼓舞",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "duration": 3,
+          "desc": "属性全面提升。",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "鼓舞（W）：全队增益。属性全面提升。"
+    },
+    {
+      "name": "驱散",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 3,
+      "description": "驱散（E）：解除负面。"
+    },
+    {
+      "name": "复活术",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 5,
+      "description": "复活术（R）：复活友军。造成 3d12+WIS 力场伤害。"
+    }
+  ]
+}

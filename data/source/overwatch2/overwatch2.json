@@ -1,0 +1,161 @@
+{
+  "game": "overwatch2",
+  "name_cn": "守望先锋2",
+  "total": 22,
+  "heroes": [
+    {
+      "name": "士兵76",
+      "name_cn": "士兵76",
+      "name_en": "Soldier 76",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "猎空",
+      "name_cn": "猎空",
+      "name_en": "Tracer",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "源氏",
+      "name_cn": "源氏",
+      "name_en": "Genji",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "半藏",
+      "name_cn": "半藏",
+      "name_en": "Hanzo",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "法老之鹰",
+      "name_cn": "法老之鹰",
+      "name_en": "Pharah",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "死神",
+      "name_cn": "死神",
+      "name_en": "Reaper",
+      "role": "刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "卡西迪",
+      "name_cn": "卡西迪",
+      "name_en": "Cassidy",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "黑百合",
+      "name_cn": "黑百合",
+      "name_en": "Widowmaker",
+      "role": "射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "托比昂",
+      "name_cn": "托比昂",
+      "name_en": "Torbjorn",
+      "role": "战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "路霸",
+      "name_cn": "路霸",
+      "name_en": "Roadhog",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "温斯顿",
+      "name_cn": "温斯顿",
+      "name_en": "Winston",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "查莉雅",
+      "name_cn": "查莉雅",
+      "name_en": "Zarya",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "莱因哈特",
+      "name_cn": "莱因哈特",
+      "name_en": "Reinhardt",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "D.Va",
+      "name_cn": "D.Va",
+      "name_en": "D.Va",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "奥丽莎",
+      "name_cn": "奥丽莎",
+      "name_en": "Orisa",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "西格玛",
+      "name_cn": "西格玛",
+      "name_en": "Sigma",
+      "role": "坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "秩序之光",
+      "name_cn": "秩序之光",
+      "name_en": "Symmetra",
+      "role": "法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "天使",
+      "name_cn": "天使",
+      "name_en": "Mercy",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "禅雅塔",
+      "name_cn": "禅雅塔",
+      "name_en": "Zenyatta",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "卢西奥",
+      "name_cn": "卢西奥",
+      "name_en": "Lúcio",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "安娜",
+      "name_cn": "安娜",
+      "name_en": "Ana",
+      "role": "辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "黑影",
+      "name_cn": "黑影",
+      "name_en": "Sombra",
+      "role": "刺客",
+      "universal_role": "assassin"
+    }
+  ]
+}

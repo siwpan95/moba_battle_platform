@@ -1,0 +1,194 @@
+{
+  "card_id": "ONE-2267",
+  "hero": {
+    "name": "布鲁克",
+    "name_en": "Brook",
+    "alias": "",
+    "title": "Brook"
+  },
+  "game": {
+    "name": "One Piece",
+    "name_cn": "海贼王",
+    "native_role": "音乐家/黄泉果实 (Musician/Yomi Yomi)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "海贼王",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "鼻歌·夜明曲",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "2d8+INT 寒冷伤害。",
+      "approx": true
+    },
+    {
+      "name": "灵魂出窍",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "闪避",
+          "duration": 1,
+          "desc": "灵魂离体获得闪避",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "灵魂出窍，获得闪避，持续 1 回合。",
+      "approx": true
+    },
+    {
+      "name": "冷冻剑",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "2d8+INT 寒冷伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 8
+    },
+    {
+      "name": "黄泉相击",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "寒冷"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d10+INT 寒冷伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 12
+    }
+  ]
+}

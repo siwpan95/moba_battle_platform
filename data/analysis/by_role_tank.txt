@@ -1,0 +1,273 @@
+坦克 (tank) — 239 位英雄
+核心功能: 承担伤害、开团控制——为团队创造输出空间，吸收敌方火力
+============================================================
+
+
+[300 Heroes] (3位)
+  • 刑天
+  • 雅儿贝德
+  • 死亡之翼
+
+[Arena of Valor] (13位)
+  • Thane
+  • Mina
+  • Omega
+  • Gildur
+  • Toro
+  • Taara
+  • Grakk
+  • Lumburr
+  • Cresht
+  • Arum
+  • Baldum
+  • Y'bneth
+  • Wiro
+
+[Dawn Heroes] (7位)
+  • 鲁智深
+  • 白浩
+  • 尉迟炎
+  • 许诸
+  • 张飞
+  • 鲁班
+  • 牛魔王
+
+[Dota 2] (21位)
+  • 斧王
+  • 撼地者
+  • 沙王
+  • 斯拉达
+  • 潮汐猎人
+  • 谜团
+  • 兽王
+  • 发条技师
+  • 黑暗贤者
+  • 暗夜魔王
+  • 蝙蝠骑士
+  • 末日使者
+  • 酒仙
+  • 半人马战行者
+  • 马格纳斯
+  • 伐木机
+  • 上古巨神
+  • 孽主
+  • 石鳞剑士
+  • 玛尔斯
+  • 獸
+
+[Extraordinary Ones] (4位)
+  • 阿蛟
+  • 虎力
+  • 熊黑
+  • 琰萝
+
+[Heroes Evolved] (37位)
+  • 罪业狂屠
+  • 终结者9号
+  • 张飞
+  • 战神阿瑞斯
+  • 玄武
+  • 熊猫武僧
+  • 蝎子王
+  • 小鹿
+  • 五彩神石
+  • 温蒂
+  • 图坦卡蒙
+  • 天蓬元帅
+  • 饕餮
+  • 泰坦巨人
+  • 死亡骑士
+  • 斯巴达
+  • 石甲守护者
+  • 山丘之王
+  • 判官钟馗
+  • 牛头人酋长
+  • 吕布
+  • 龙骑士
+  • 李元霸
+  • 狼王沃夫
+  • 凯撒大帝
+  • 火神战姬
+  • 红炎双刃
+  • 黑胡子船长
+  • 关羽
+  • 疯狂博士
+  • 地狱领主
+  • 地狱火
+  • 大天使
+  • 蚩尤
+  • 八岐大蛇
+  • 奥丁
+  • 阿波罗
+
+[Heroes of the Storm] (13位)
+  • Anub'arak
+  • Arthas
+  • Blaze
+  • Cho
+  • Diablo
+  • E.T.C.
+  • Garrosh
+  • Johanna
+  • Mal'Ganis
+  • Mei
+  • Muradin
+  • Stitches
+  • Tyrael
+
+[Honor of Kings] (18位)
+  • 廉颇
+  • 白起
+  • 程咬金
+  • 刘邦
+  • 项羽
+  • 刘禅
+  • 庄周
+  • 牛魔
+  • 张飞
+  • 钟无艳
+  • 东皇太一
+  • 梦奇
+  • 苏烈
+  • 猪八戒
+  • 盾山
+  • 蒙恬
+  • 阿古朵
+  • 夏侯惇
+
+[League of Legends] (37位)
+  • 阿利斯塔
+  • 努努和威朗普
+  • 赛恩
+  • 辛吉德
+  • 阿木木
+  • 科加斯
+  • 拉莫斯
+  • 塔里克
+  • 布里茨
+  • 蒙多医生
+  • 墨菲特
+  • 内瑟斯
+  • 波比
+  • 古拉加斯
+  • 慎
+  • 盖伦
+  • 加里奥
+  • 厄加特
+  • 斯维因
+  • 雷克顿
+  • 茂凯
+  • 嘉文四世
+  • 蕾欧娜
+  • 斯卡纳
+  • 沃利贝尔
+  • 瑟庄妮
+  • 诺提勒斯
+  • 锤石
+  • 扎克
+  • 布隆
+  • 纳尔
+  • 塔姆
+  • 俄洛伊
+  • 奥恩
+  • 瑟提
+  • 芮尔
+  • 奎桑提
+
+[Marvel Super War] (9位)
+  • 松鼠女
+  • 纳摩
+  • 沙魔
+  • 石头人
+  • 罗南
+  • 美国队长
+  • 浩克
+  • 格鲁特
+  • 小淘气
+
+[Mobile Legends: Bang Bang] (25位)
+  • Akai
+  • Alice
+  • Atlas
+  • Barats
+  • Baxia
+  • Belerick
+  • Carmilla
+  • Chip
+  • Edith
+  • Esmeralda
+  • Franco
+  • Fredrinn
+  • Gatotkaca
+  • Gloo
+  • Grock
+  • Hilda
+  • Hylos
+  • Johnson
+  • Khufra
+  • Lolita
+  • Masha
+  • Minotaur
+  • Terizla
+  • Tigreal
+  • Uranus
+
+[Onmyoji Arena] (10位)
+  • 惠比寿
+  • 兵俑
+  • 狸猫
+  • 海坊主
+  • 山童
+  • 食梦貘
+  • 跳跳妹妹
+  • 匣中少女
+  • 日和坊
+  • 缘结神
+
+[Pokemon UNITE] (12位)
+  • 水箭龟
+  • 呆壳兽
+  • 拉普拉斯
+  • 卡比兽
+  • 大竺葵
+  • 月亮伊布
+  • 象牙猪
+  • 岩殿居蟹
+  • 黏美龙
+  • 朽木妖
+  • 藏饱栗鼠
+  • 骨纹巨声鳄
+
+[SMITE] (25位)
+  • Ares
+  • Artio
+  • Athena
+  • Atlas
+  • Bacchus
+  • Bake Kujira
+  • Cabrakan
+  • Cerberus
+  • Charon
+  • Cthulhu
+  • Fafnir
+  • Ganesha
+  • Geb
+  • Jormungandr
+  • Khepri
+  • Kumbhakarna
+  • Kuzenbo
+  • Maman Brigitte
+  • Maui
+  • Sobek
+  • Sylvanus
+  • Terra
+  • Xing Tian
+  • Yemoja
+  • Ymir
+
+[Vainglory] (5位)
+  • Churnwalker
+  • Grumpjaw
+  • Lance
+  • Phinn
+  • Yates

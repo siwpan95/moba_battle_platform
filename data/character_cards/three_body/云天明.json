@@ -1,0 +1,209 @@
+{
+  "card_id": "THE-2590",
+  "hero": {
+    "name": "云天明",
+    "name_en": "Yun Tianming",
+    "alias": "",
+    "title": "Yun Tianming"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "情报员/童话使者 (Intelligence/Fairy-tale Messenger)",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "三体",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "童话隐喻",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "暗示",
+          "duration": 1,
+          "desc": "目标被暗示扰乱",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+INT 心灵伤害，暗示扰乱目标。",
+      "approx": true
+    },
+    {
+      "name": "安乐椅",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "单体",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "duration": 2,
+          "desc": "安抚并治疗友方",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "安抚并治疗友方。",
+      "approx": true
+    },
+    {
+      "name": "故事启示",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "duration": 2,
+          "desc": "范围内友方获得增益",
+          "target": "友方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 心灵伤害，增益友方。",
+      "approx": true,
+      "aoe_radius": 10
+    },
+    {
+      "name": "赠星之礼",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "3d6+INT 力场伤害，覆盖一片区域。",
+      "approx": true,
+      "aoe_radius": 15
+    }
+  ]
+}

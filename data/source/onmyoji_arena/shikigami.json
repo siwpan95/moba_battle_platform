@@ -1,0 +1,437 @@
+{
+  "game": "Onmyoji Arena",
+  "name_cn": "决战平安京",
+  "total": 92,
+  "heroes": [
+    {
+      "name": "妖刀姬",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "犬神",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "姑获鸟",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "鸦天狗",
+      "role": "侍/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "黑童子",
+      "role": "侍/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "鬼使黑",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "鬼切",
+      "role": "侍/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "酒吞童子",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "茨木童子",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "两面佛",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "般若",
+      "role": "侍/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "跳跳哥哥",
+      "role": "侍/坦克",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "镰鼬",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "小鹿男",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "络新妇",
+      "role": "侍/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "鬼童丸",
+      "role": "侍/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "久次良",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "大岳丸",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "荒川之主",
+      "role": "侍/战士",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "风狸",
+      "role": "侍/刺客",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "大天狗",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "雪女",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "判官",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "鬼女红叶",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "荒",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "面灵气",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "清姬",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "青行灯",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "烟烟罗",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "玉藻前",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "追月神",
+      "role": "巫/法师/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "彼岸花",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "金鱼姬",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "书翁",
+      "role": "巫/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "一反木绵",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "不知火",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "铃鹿御前",
+      "role": "巫/法师",
+      "universal_role": "mage"
+    },
+    {
+      "name": "帝释天",
+      "role": "巫/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "千姬",
+      "role": "巫/辅助",
+      "universal_role": "mage"
+    },
+    {
+      "name": "白狼",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "妖狐",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "管狐",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "鸩",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "青蛙瓷器",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "二口女",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "首无",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "御馔津",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "百目鬼",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "铁鼠",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "铃鹿御前",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "紧那罗",
+      "role": "射/射手",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "薰",
+      "role": "射/辅助",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "以津真天",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "骨女",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "夜叉",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "万年竹",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "山风",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "杀生丸",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "犬夜叉",
+      "role": "忍/战士",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "桔梗",
+      "role": "忍/射手",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "一反木绵",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "大岳丸",
+      "role": "忍/刺客",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "惠比寿",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "兵俑",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "狸猫",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "海坊主",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "山童",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "食梦貘",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "跳跳妹妹",
+      "role": "守/坦克",
+      "universal_role": "tank"
+    },
+    {
+      "name": "匣中少女",
+      "role": "守/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "日和坊",
+      "role": "守/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "缘结神",
+      "role": "守/辅助",
+      "universal_role": "tank"
+    },
+    {
+      "name": "辉夜姬",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "山兔",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "萤草",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "桃花妖",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "花鸟卷",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "一目连",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "椒图",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "兔丸",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "化鲸",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "云外镜",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "天井下",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "垢尝",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "十六谷",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    },
+    {
+      "name": "虫师",
+      "role": "祝/辅助",
+      "universal_role": "support"
+    }
+  ]
+}

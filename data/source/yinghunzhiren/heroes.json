@@ -1,0 +1,567 @@
+{
+  "game": "Heroes Evolved",
+  "name_cn": "英魂之刃",
+  "total": 112,
+  "heroes": [
+    {
+      "name": "罪业狂屠",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "终结者9号",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "张飞",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "战神阿瑞斯",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "玄武",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "熊猫武僧",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "蝎子王",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "小鹿",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "五彩神石",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "温蒂",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "图坦卡蒙",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "天蓬元帅",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "饕餮",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "泰坦巨人",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "死亡骑士",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "斯巴达",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "石甲守护者",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "山丘之王",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "判官钟馗",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "牛头人酋长",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "吕布",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "龙骑士",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "李元霸",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "狼王沃夫",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "凯撒大帝",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "火神战姬",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "红炎双刃",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "黑胡子船长",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "关羽",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "疯狂博士",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "地狱领主",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "地狱火",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "大天使",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "蚩尤",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "八岐大蛇",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "奥丁",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "阿波罗",
+      "role": "力量",
+      "universal_role": "tank"
+    },
+    {
+      "name": "宫本武藏",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "狼蛛",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "袋鼠拳王",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "织田信长",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "赵云",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "玉兔",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "幽能刺客",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "亚瑟王",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "雪豹",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "小龙女",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "西门飞雪",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "孙悟空",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "孙尚香",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "企鹅",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "女武神",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "哪吒",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "冥王哈迪斯",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "罗刹郡主",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "猎魔人",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "李探花",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "精灵王子",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "金乌",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "火元素",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "后羿",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "黑桃皇后",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "服部半藏",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "绯雨剑星",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "二郎神杨戬",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "电光侠",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "达芬奇",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "丛林之子",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "布鲁",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "波斯王子",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "霸王项羽",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "暗月猎手",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "暗精灵",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "暗黑死神",
+      "role": "敏捷",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "火舞歌灵",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "水元素",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "诸葛亮",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "宙斯",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "周瑜",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "玉皇大帝",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "雅典娜",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "血腥女王",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "小乔",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "忘川巫女",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "司马懿",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "树精长老",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "食人魔首领",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "时空猎人",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "圣女贞德",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "神农氏",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "森林之女",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "潘多拉",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "聂小倩",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "蛇发美杜莎",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "绿野花仙",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "洛神",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "幻卡魔女",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "福娃",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "风暴之灵",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "貂蝉",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "灯神",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "德古拉伯爵",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "妲己",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "炽焰火女",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "嫦娥",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "布丁",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "波塞冬",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "冰雪女王",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "暴君萨特",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "白袍巫师",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "埃及艳后",
+      "role": "智力",
+      "universal_role": "mage"
+    },
+    {
+      "name": "阿努比斯",
+      "role": "智力",
+      "universal_role": "mage"
+    }
+  ]
+}

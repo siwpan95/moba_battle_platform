@@ -1,0 +1,54 @@
+{
+  "game": "港漫群英",
+  "game_name_cn": "港漫群英",
+  "heroes": [
+    {
+      "name": "步惊云",
+      "name_en": "Bu Jingyun",
+      "alias": "不哭死神",
+      "native_role": "战士/剑客",
+      "universal_role": "fighter",
+      "source": "风云"
+    },
+    {
+      "name": "聂风",
+      "name_en": "Nie Feng",
+      "alias": "风中之神",
+      "native_role": "战士/刀客",
+      "universal_role": "fighter",
+      "source": "风云"
+    },
+    {
+      "name": "华英雄",
+      "name_en": "Hua Yingxiong",
+      "alias": "天煞孤星",
+      "native_role": "剑客/侠客",
+      "universal_role": "fighter",
+      "source": "中华英雄"
+    },
+    {
+      "name": "王小虎",
+      "name_en": "Wang Xiaohu",
+      "alias": "龙虎三皇",
+      "native_role": "战士/拳师",
+      "universal_role": "fighter",
+      "source": "龙虎门"
+    },
+    {
+      "name": "海虎",
+      "name_en": "Seahorse",
+      "alias": "磁场强者",
+      "native_role": "战士/超能者",
+      "universal_role": "fighter",
+      "source": "海虎"
+    },
+    {
+      "name": "地狱",
+      "name_en": "Hell",
+      "alias": "地狱大统领",
+      "native_role": "战士/超能者",
+      "universal_role": "fighter",
+      "source": "海虎"
+    }
+  ]
+}

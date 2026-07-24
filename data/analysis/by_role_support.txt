@@ -1,0 +1,209 @@
+辅助 (support) — 177 位英雄
+核心功能: 保护、治疗、视野控制——提供团队增益，弥补队友短板
+============================================================
+
+
+[300 Heroes] (36位)
+  • 阿希娅
+  • 东风谷早苗
+  • 结城明日奈
+  • 银
+  • 四系乃
+  • 茵蒂克丝
+  • 小圆
+  • 鲁路修
+  • C.C.
+  • 楪祈
+  • 涂山苏苏
+  • 康娜
+  • 和泉纱雾
+  • 血小板
+  • 初音未来
+  • 洛天依
+  • 广
+  • 菜月昴
+  • 拉姆
+  • 比企谷八幡
+  • 由比滨结衣
+  • 折木奉太郎
+  • 千反田爱瑠
+  • 绫波丽
+  • 碇真嗣
+  • 朝比奈实玖瑠
+  • 平泽唯
+  • 秋山澪
+  • 中野梓
+  • 八九寺真宵
+  • 鹿目圆
+  • 乔鲁诺·乔巴纳
+  • 岸边露伴
+  • 东方仗助
+  • 阿莱克斯塔萨
+  • 玛法里奥
+
+[Arena of Valor] (12位)
+  • Chaugnar
+  • Alice
+  • Xeniel
+  • TeeMee
+  • Annette
+  • Sephera
+  • Zip
+  • Krizzix
+  • Rouie
+  • Aya
+  • Helen
+  • Ming
+
+[Dawn Heroes] (3位)
+  • 铁扇公主
+  • 桑榆
+  • 华佗
+
+[Dota 2] (37位)
+  • 祸乱之源
+  • 水晶室女
+  • 复仇之魂
+  • 莱恩
+  • 暗影萨满
+  • 巫医
+  • 巫妖
+  • 术士
+  • 剧毒术士
+  • 帕格纳
+  • 戴泽
+  • 全能骑士
+  • 魅惑魔女
+  • 杰奇洛
+  • 陈
+  • 远古冰魄
+  • 沉默术士
+  • 暗影恶魔
+  • 树精卫士
+  • 食人魔魔法师
+  • 不朽尸王
+  • 拉比克
+  • 干扰者
+  • 光之守卫
+  • 艾欧
+  • 天怒法师
+  • 亚巴顿
+  • 工程师
+  • 凤凰
+  • 神谕者
+  • 寒冬飞龙
+  • 邪影芳灵
+  • 天涯墨客
+  • 森海飞霞
+  • 电炎绝手
+  • 百戏大王
+  • 玛西
+
+[Extraordinary Ones] (5位)
+  • 常乐
+  • 魍魉
+  • 晓音
+  • 羊丽
+  • 雨师
+
+[Heroes of the Storm] (19位)
+  • Abathur
+  • Alexstrasza
+  • Ana
+  • Anduin
+  • Auriel
+  • Brightwing
+  • Deckard
+  • Kharazim
+  • Li Li
+  • Lt. Morales
+  • Lucio
+  • Malfurion
+  • Medivh
+  • Rehgar
+  • Stukov
+  • The Lost Vikings
+  • Tyrande
+  • Uther
+  • Whitemane
+
+[Honor of Kings] (11位)
+  • 孙膑
+  • 蔡文姬
+  • 太乙真人
+  • 鬼谷子
+  • 大乔
+  • 明世隐
+  • 瑶
+  • 鲁班大师
+  • 桑启
+  • 朵莉亚
+  • 少司缘
+
+[League of Legends] (10位)
+  • 索拉卡
+  • 迦娜
+  • 娜美
+  • 巴德
+  • 艾翁
+  • 洛
+  • 悠米
+  • 烈娜塔
+  • 米利欧
+  • 尤娜拉
+
+[Marvel Super War] (3位)
+  • 宇宙术士亚当
+  • 隐形女侠
+  • 曼蒂斯
+
+[Mobile Legends: Bang Bang] (10位)
+  • Angela
+  • Diggie
+  • Estes
+  • Faramis
+  • Floryn
+  • Kaja
+  • Kalea
+  • Marcel
+  • Mathilda
+  • Rafaela
+
+[Onmyoji Arena] (14位)
+  • 辉夜姬
+  • 山兔
+  • 萤草
+  • 桃花妖
+  • 花鸟卷
+  • 一目连
+  • 椒图
+  • 兔丸
+  • 化鲸
+  • 云外镜
+  • 天井下
+  • 垢尝
+  • 十六谷
+  • 虫师
+
+[Pokemon UNITE] (8位)
+  • 皮可西
+  • 胖可丁
+  • 魔墙人偶
+  • 幸福蛋
+  • 勾魂眼
+  • 胡帕
+  • 花疗环环
+  • 白蓬蓬
+
+[SMITE] (1位)
+  • Aphrodite
+
+[Vainglory] (8位)
+  • Ardan
+  • Catherine
+  • Flicker
+  • Fortress
+  • Grace
+  • Lorelai
+  • Lyra
+  • Viola

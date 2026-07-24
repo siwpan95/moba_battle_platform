@@ -1,0 +1,105 @@
+{
+  "game": "The Three-Body Problem",
+  "name_cn": "三体",
+  "total": 14,
+  "heroes": [
+    {
+      "name": "叶文洁",
+      "name_cn": "叶文洁",
+      "name_en": "Ye Wenjie",
+      "role": "天体物理学家/ETO统帅 (Astrophysicist/ETO Leader)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "汪淼",
+      "name_cn": "汪淼",
+      "name_en": "Wang Miao",
+      "role": "纳米材料科学家 (Nanomaterial Scientist)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "史强",
+      "name_cn": "史强",
+      "name_en": "Shi Qiang",
+      "role": "刑警/硬汉 (Detective/Hardboiled)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "罗辑",
+      "name_cn": "罗辑",
+      "name_en": "Luo Ji",
+      "role": "面壁者/宇宙社会学家 (Wallfacer/Cosmologist)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "章北海",
+      "name_cn": "章北海",
+      "name_en": "Zhang Beihai",
+      "role": "太空军/钢印族 (Space Force/Seal Clan)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "云天明",
+      "name_cn": "云天明",
+      "name_en": "Yun Tianming",
+      "role": "情报员/童话使者 (Intelligence/Fairy-tale Messenger)",
+      "universal_role": "support"
+    },
+    {
+      "name": "维德",
+      "name_cn": "维德",
+      "name_en": "Thomas Wade",
+      "role": "PIA主管/前进 (PIA Chief/Forward)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "程心",
+      "name_cn": "程心",
+      "name_en": "Cheng Xin",
+      "role": "执剑人/工程师 (Swordholder/Engineer)",
+      "universal_role": "support"
+    },
+    {
+      "name": "丁仪",
+      "name_cn": "丁仪",
+      "name_en": "Ding Yi",
+      "role": "理论物理学家 (Theoretical Physicist)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "智子",
+      "name_cn": "智子",
+      "name_en": "Sophon",
+      "role": "三体监视者/AI (Trisolaran Monitor/AI)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "雷迪亚兹",
+      "name_cn": "雷迪亚兹",
+      "name_en": "Rey Diaz",
+      "role": "面壁者/水星核弹 (Wallfacer/Mercury Nukes)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "希恩斯",
+      "name_cn": "希恩斯",
+      "name_en": "Hines",
+      "role": "面壁者/神经科学家 (Wallfacer/Neuroscientist)",
+      "universal_role": "support"
+    },
+    {
+      "name": "泰勒",
+      "name_cn": "泰勒",
+      "name_en": "Alexander Tyler",
+      "role": "面壁者/量子幽灵军 (Wallfacer/Quantum Ghost)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "关一帆",
+      "name_cn": "关一帆",
+      "name_en": "Guan Yifan",
+      "role": "宇宙学家 (Cosmologist)",
+      "universal_role": "mage"
+    }
+  ]
+}

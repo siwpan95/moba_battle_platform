@@ -1,0 +1,135 @@
+{
+  "project": "MOBA英雄角色卡",
+  "framework": "基于D&D 5e规则的数值体系",
+  "total_cards": 1659,
+  "total_games": 24,
+  "games": {
+    "300_heroes": {
+      "display": "300 Heroes",
+      "count": 149,
+      "directory": "300_heroes"
+    },
+    "arena_of_valor": {
+      "display": "Arena of Valor",
+      "count": 115,
+      "directory": "arena_of_valor"
+    },
+    "dc": {
+      "display": "DC Universe",
+      "count": 22,
+      "directory": "dc"
+    },
+    "shuguang_heroes": {
+      "display": "Dawn Heroes",
+      "count": 51,
+      "directory": "shuguang_heroes"
+    },
+    "demon_slayer": {
+      "display": "Demon Slayer",
+      "count": 14,
+      "directory": "demon_slayer"
+    },
+    "dota2": {
+      "display": "Dota 2",
+      "count": 126,
+      "directory": "dota2"
+    },
+    "feiren_xueyuan": {
+      "display": "Extraordinary Ones",
+      "count": 36,
+      "directory": "feiren_xueyuan"
+    },
+    "genshin": {
+      "display": "Genshin Impact",
+      "count": 22,
+      "directory": "genshin"
+    },
+    "harry_potter": {
+      "display": "Harry Potter",
+      "count": 15,
+      "directory": "harry_potter"
+    },
+    "yinghunzhiren": {
+      "display": "Heroes Evolved",
+      "count": 112,
+      "directory": "yinghunzhiren"
+    },
+    "heroes_of_the_storm": {
+      "display": "Heroes of the Storm",
+      "count": 90,
+      "directory": "heroes_of_the_storm"
+    },
+    "honor_of_kings": {
+      "display": "Honor of Kings",
+      "count": 116,
+      "directory": "honor_of_kings"
+    },
+    "league_of_legends": {
+      "display": "League of Legends",
+      "count": 172,
+      "directory": "league_of_legends"
+    },
+    "mcu": {
+      "display": "Marvel Cinematic Universe",
+      "count": 22,
+      "directory": "mcu"
+    },
+    "marvel_super_war": {
+      "display": "Marvel Super War",
+      "count": 65,
+      "directory": "marvel_super_war"
+    },
+    "mobile_legends_bang_bang": {
+      "display": "Mobile Legends: Bang Bang",
+      "count": 132,
+      "directory": "mobile_legends_bang_bang"
+    },
+    "one_piece": {
+      "display": "One Piece",
+      "count": 22,
+      "directory": "one_piece"
+    },
+    "onmyoji_arena": {
+      "display": "Onmyoji Arena",
+      "count": 83,
+      "directory": "onmyoji_arena"
+    },
+    "overwatch2": {
+      "display": "Overwatch 2",
+      "count": 22,
+      "directory": "overwatch2"
+    },
+    "pokemon_unite": {
+      "display": "Pokemon UNITE",
+      "count": 69,
+      "directory": "pokemon_unite"
+    },
+    "smite": {
+      "display": "SMITE",
+      "count": 130,
+      "directory": "smite"
+    },
+    "three_body": {
+      "display": "The Three-Body Problem",
+      "count": 14,
+      "directory": "three_body"
+    },
+    "vainglory": {
+      "display": "Vainglory",
+      "count": 54,
+      "directory": "vainglory"
+    },
+    "hong_kong_comics": {
+      "display": "港漫群英",
+      "count": 6,
+      "directory": "hong_kong_comics"
+    }
+  },
+  "card_schema": {
+    "attributes": "六维属性(STR/DEX/CON/INT/WIS/CHA)，含属性值和调整值",
+    "stats": "1级和18级战斗数值(生命 / 护甲 / 攻击 / 法强 / 冷却 / 暴击率 / 暴击伤害 / 攻速 / 豁免)",
+    "skills": "4个技能(3个基础+1个大招)，含中文功能描述",
+    "difficulty": "1-5星难度评级",
+    "playstyle_tags": "最多8个玩法标签，支持搜索筛选"
+  }
+}

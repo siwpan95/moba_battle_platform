@@ -1,0 +1,421 @@
+{
+  "game": "Pokemon UNITE",
+  "name_cn": "宝可梦大集结",
+  "total": 64,
+  "heroes": [
+    {
+      "name": "Venusaur",
+      "name_cn": "妙蛙花",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Charizard",
+      "name_cn": "喷火龙",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Blastoise",
+      "name_cn": "水箭龟",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Pikachu",
+      "name_cn": "皮卡丘",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Clefable",
+      "name_cn": "皮可西",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Alolan Ninetales",
+      "name_cn": "阿罗拉九尾",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Wigglytuff",
+      "name_cn": "胖可丁",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Machamp",
+      "name_cn": "怪力",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Slowbro",
+      "name_cn": "呆壳兽",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Dodrio",
+      "name_cn": "嘟嘟利",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Gengar",
+      "name_cn": "耿鬼",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Mr. Mime",
+      "name_cn": "魔墙人偶",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Gyarados",
+      "name_cn": "暴鲤龙",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Lapras",
+      "name_cn": "拉普拉斯",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Snorlax",
+      "name_cn": "卡比兽",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Dragonite",
+      "name_cn": "快龙",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Mewtwo X",
+      "name_cn": "超梦X",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Mewtwo Y",
+      "name_cn": "超梦Y",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Mew",
+      "name_cn": "梦幻",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Meganium",
+      "name_cn": "大竺葵",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Typhlosion",
+      "name_cn": "火暴兽",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Feraligatr",
+      "name_cn": "大力鳄",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Azumarill",
+      "name_cn": "玛力露丽",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Espeon",
+      "name_cn": "太阳伊布",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Umbreon",
+      "name_cn": "月亮伊布",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Scizor",
+      "name_cn": "巨钳螳螂",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Blissey",
+      "name_cn": "幸福蛋",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Tyranitar",
+      "name_cn": "班基拉斯",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Blaziken",
+      "name_cn": "火焰鸡",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Gardevoir",
+      "name_cn": "沙奈朵",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Sableye",
+      "name_cn": "勾魂眼",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Absol",
+      "name_cn": "阿勃梭鲁",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Metagross",
+      "name_cn": "巨金怪",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Latias",
+      "name_cn": "拉帝亚斯",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Latios",
+      "name_cn": "拉帝欧斯",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Garchomp",
+      "name_cn": "烈咬陆鲨",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Lucario",
+      "name_cn": "路卡利欧",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Mamoswine",
+      "name_cn": "象牙猪",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Darkrai",
+      "name_cn": "达克莱伊",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Crustle",
+      "name_cn": "岩殿居蟹",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Zoroark",
+      "name_cn": "索罗亚克",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Chandelure",
+      "name_cn": "水晶灯火灵",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Delphox",
+      "name_cn": "妖火红狐",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Greninja",
+      "name_cn": "甲贺忍蛙",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Talonflame",
+      "name_cn": "烈箭鹰",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Aegislash",
+      "name_cn": "坚盾剑怪",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Sylveon",
+      "name_cn": "仙子伊布",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Goodra",
+      "name_cn": "黏美龙",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Trevenant",
+      "name_cn": "朽木妖",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Hoopa",
+      "name_cn": "胡帕",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Decidueye",
+      "name_cn": "狙射树枭",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Tsareena",
+      "name_cn": "甜冷美后",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Comfey",
+      "name_cn": "花疗环环",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Buzzwole",
+      "name_cn": "爆肌蚊",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Mimikyu",
+      "name_cn": "谜拟Q",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Zeraora",
+      "name_cn": "捷拉奥拉",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Cinderace",
+      "name_cn": "闪焰王牌",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Inteleon",
+      "name_cn": "千面避役",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Greedent",
+      "name_cn": "藏饱栗鼠",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Eldegoss",
+      "name_cn": "白蓬蓬",
+      "role": "辅助型",
+      "universal_role": "support"
+    },
+    {
+      "name": "Cramorant",
+      "name_cn": "古月鸟",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Dragapult",
+      "name_cn": "多龙巴鲁托",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Zacian",
+      "name_cn": "苍响",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Urshifu",
+      "name_cn": "武道熊师",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Meowscarada",
+      "name_cn": "魔幻假面喵",
+      "role": "敏捷型",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "Skeledirge",
+      "name_cn": "骨纹巨声鳄",
+      "role": "防御型",
+      "universal_role": "tank"
+    },
+    {
+      "name": "Armarouge",
+      "name_cn": "红莲铠骑",
+      "role": "攻击型",
+      "universal_role": "mage"
+    },
+    {
+      "name": "Ceruledge",
+      "name_cn": "苍炎刃鬼",
+      "role": "平衡型",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "Miraidon",
+      "name_cn": "密勒顿",
+      "role": "攻击型",
+      "universal_role": "mage"
+    }
+  ]
+}

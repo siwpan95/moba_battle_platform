@@ -1,0 +1,777 @@
+{
+  "吕布": [
+    {
+      "name": "方天画斩",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "无双",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "飞将",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "位移",
+          "desc": "向目标方向移动30尺",
+          "value": 30,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+STR 挥砍伤害。向目标方向移动30尺。"
+    },
+    {
+      "name": "辕门射戟",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "宫本武藏": [
+    {
+      "name": "燕返",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+DEX 挥砍伤害。"
+    },
+    {
+      "name": "居合",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+DEX 挥砍伤害。"
+    },
+    {
+      "name": "神速",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+DEX 挥砍伤害。"
+    },
+    {
+      "name": "二天一流",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+DEX 挥砍伤害。"
+    }
+  ],
+  "宙斯": [
+    {
+      "name": "闪电链",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 闪电伤害。",
+      "aoe_radius": 30
+    },
+    {
+      "name": "雷霆之怒",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 闪电伤害。"
+    },
+    {
+      "name": "静电场",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 闪电伤害。"
+    },
+    {
+      "name": "雷神之怒",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "闪电"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 闪电伤害。"
+    }
+  ],
+  "貂蝉": [
+    {
+      "name": "魅惑",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "花雨",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。",
+      "aoe_radius": 15
+    },
+    {
+      "name": "倾国",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "闭月",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。",
+      "aoe_radius": 15
+    }
+  ],
+  "孙悟空": [
+    {
+      "name": "如意棒法",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+DEX 挥砍伤害。"
+    },
+    {
+      "name": "七十二变",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "分身",
+          "desc": "召唤一个镜像分身",
+          "duration": 3,
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 挥砍伤害。召唤一个镜像分身3回合。"
+    },
+    {
+      "name": "筋斗云",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "位移",
+          "desc": "向目标方向移动30尺",
+          "value": 30,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+DEX 挥砍伤害。向目标方向移动30尺。"
+    },
+    {
+      "name": "大闹天宫",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+DEX 挥砍伤害。"
+    }
+  ],
+  "后羿": [
+    {
+      "name": "落日箭",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+DEX 穿刺伤害。"
+    },
+    {
+      "name": "逐日",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "desc": "速度+15尺",
+          "duration": 2,
+          "value": 15,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 挥砍伤害。速度+15尺2回合。"
+    },
+    {
+      "name": "射日",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+DEX 挥砍伤害。"
+    },
+    {
+      "name": "九日耀天",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+DEX 挥砍伤害。"
+    }
+  ],
+  "张飞": [
+    {
+      "name": "怒吼",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "魅惑",
+          "desc": "目标必须攻击施法者",
+          "duration": 1,
+          "dc_attr": "WIS",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。目标必须攻击施法者1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      }
+    },
+    {
+      "name": "丈八蛇矛",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "据水断桥",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "燕人张飞",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "变身",
+          "desc": "变身为强化形态",
+          "duration": 3,
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。变身为强化形态3回合。"
+    }
+  ],
+  "关羽": [
+    {
+      "name": "青龙偃月",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "赤兔",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "desc": "速度+15尺",
+          "duration": 2,
+          "value": 15,
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。速度+15尺2回合。"
+    },
+    {
+      "name": "武圣",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d10+STR 挥砍伤害。"
+    },
+    {
+      "name": "千里走单骑",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。"
+    }
+  ],
+  "诸葛亮": [
+    {
+      "name": "东风",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。",
+      "aoe_radius": 15
+    },
+    {
+      "name": "奇门遁甲",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "七星灯",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "desc": "恢复生命",
+          "value_formula": "1d8+WIS",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。恢复生命。"
+    },
+    {
+      "name": "空城计",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。"
+    }
+  ],
+  "妲己": [
+    {
+      "name": "狐火",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "1d8+INT 火焰伤害。"
+    },
+    {
+      "name": "魅惑",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "2d8+INT 力场伤害。"
+    },
+    {
+      "name": "妖术",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "1d8+INT 力场伤害。"
+    },
+    {
+      "name": "妖狐",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "变身",
+          "desc": "变身为强化形态",
+          "duration": 3,
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+INT 力场伤害。变身为强化形态3回合。"
+    }
+  ]
+}

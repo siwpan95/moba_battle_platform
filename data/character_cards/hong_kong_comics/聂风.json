@@ -1,0 +1,248 @@
+{
+  "card_id": "港漫群-2654",
+  "hero": {
+    "name": "聂风",
+    "name_en": "Nie Feng",
+    "alias": "风中之神",
+    "title": "风中之神"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "战士/刀客",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "风云",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "风神腿·风中劲草",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "位移",
+          "value": 20,
+          "desc": "以极速突进至目标身边",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 0,
+      "description": "风神腿入门式，迅疾如风。1d8+DEX 钝击伤害，附带20尺冲刺接近目标。"
+    },
+    {
+      "name": "傲寒六诀·惊寒一瞥",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "40尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "duration": 2,
+          "desc": "寒气入体，目标速度减半",
+          "target": "敌方"
+        },
+        {
+          "type": "冻结",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "40尺冰刀寒气，目标有概率被冻结",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "部分"
+      },
+      "cooldown": 1,
+      "description": "聂家祖传刀法的至高奥义。2d8+DEX 寒冷伤害，CON豁免失败则冻结1回合，成功则减速2回合。冷却1回合。"
+    },
+    {
+      "name": "冰心诀",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "净化",
+          "desc": "解除所有负面效果",
+          "target": "自身"
+        },
+        {
+          "type": "加速",
+          "duration": 3,
+          "value": 30,
+          "desc": "心如冰清，速度+30尺",
+          "target": "自身"
+        },
+        {
+          "type": "免疫控制",
+          "duration": 2,
+          "desc": "心若冰清天塌不惊，免疫控制效果",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 4,
+      "description": "聂家祖传心法——心若冰清，天塌不惊。解除所有负面效果，速度+30尺，免疫控制2回合。冷却4回合。"
+    },
+    {
+      "name": "魔刀·血刃魔功",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "吸血",
+          "value": 50,
+          "desc": "造成伤害的50%转化为治疗",
+          "target": "自身"
+        },
+        {
+          "type": "恐惧",
+          "duration": 1,
+          "dc_attr": "WIS",
+          "desc": "魔气滔天令周围敌人陷入恐惧",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 5,
+      "description": "入魔后的终极一刀——天魔降世般的恐怖力量。4d8+DEX 黯蚀伤害，25尺范围，50%生命偷取。WIS豁免失败则恐惧1回合。冷却5回合。"
+    }
+  ]
+}
