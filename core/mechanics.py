@@ -17,6 +17,8 @@
 
 from __future__ import annotations
 
+import ast
+import operator
 import random
 import re
 from typing import Any, Dict, List, Optional
@@ -93,6 +95,47 @@ def roll_dice(count: int, size: int, rng: Any = random) -> int:
 _DICE_RE = re.compile(r"(\d+)d(\d+)", re.I)
 
 
+# ── 安全算式求值（替代 eval，ADR-004）──
+# 仅允许整数/浮点字面量与 + - * / 及一元正负号；任何函数调用、属性访问、
+# 名字引用都会在 AST 遍历时被拒绝。白名单节点法比 eval + 正则过滤更鲁棒：
+# 即使上游正则写错，这里也不会执行任意代码。
+_SAFE_BIN_OPS = {
+    ast.Add: operator.add,
+    ast.Sub: operator.sub,
+    ast.Mult: operator.mul,
+    ast.Div: operator.truediv,
+}
+_SAFE_UNARY_OPS = {
+    ast.UAdd: operator.pos,
+    ast.USub: operator.neg,
+}
+
+
+def _safe_arith(expr: str) -> int:
+    """安全求值整数算式（仅 + - * / 与一元正负号）。
+
+    替代 eval(s)：用 ast.parse 解析后按节点白名单遍历，
+    任何非数字/非白名单运算符的节点直接抛 ValueError。
+    """
+    tree = ast.parse(expr, mode="eval")
+
+    def _ev(node):
+        if isinstance(node, ast.Expression):
+            return _ev(node.body)
+        # Python 3.8+ 用 ast.Constant；旧版用 ast.Num（已弃用但兼容）
+        if isinstance(node, ast.Constant):
+            if isinstance(node.value, bool) or not isinstance(node.value, (int, float)):
+                raise ValueError("非法常量类型")
+            return node.value
+        if isinstance(node, ast.BinOp) and type(node.op) in _SAFE_BIN_OPS:
+            return _SAFE_BIN_OPS[type(node.op)](_ev(node.left), _ev(node.right))
+        if isinstance(node, ast.UnaryOp) and type(node.op) in _SAFE_UNARY_OPS:
+            return _SAFE_UNARY_OPS[type(node.op)](_ev(node.operand))
+        raise ValueError(f"不支持的表达式节点: {type(node).__name__}")
+
+    return int(_ev(tree))
+
+
 def roll_dice_expr(expr: Any, attr_mods: Dict[str, int], rng: Any = random) -> int:
     """解析 "1d8+WIS" 这类表达式并掷骰。属性名替换为 attr_mods 的值。"""
     if not expr:
@@ -103,7 +146,7 @@ def roll_dice_expr(expr: Any, attr_mods: Dict[str, int], rng: Any = random) -> i
     s = _DICE_RE.sub(lambda m: str(roll_dice(int(m.group(1)), int(m.group(2)), rng)), s)
     if re.fullmatch(r"[0-9+\-*/\s]+", s):
         try:
-            return int(eval(s))
+            return _safe_arith(s)
         except Exception:
             return 0
     return 0
@@ -119,7 +162,7 @@ def parse_dc(formula: Any, prof_bonus: int, attr_mods: Dict[str, int]) -> int:
         s = s.replace(ab, str(attr_mods.get(ab, 0)))
     if re.fullmatch(r"[0-9+\-*/\s]+", s):
         try:
-            return int(eval(s))
+            return _safe_arith(s)
         except Exception:
             return 8 + prof_bonus
     return 8 + prof_bonus

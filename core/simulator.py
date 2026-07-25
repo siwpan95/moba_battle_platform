@@ -264,6 +264,14 @@ class BattleSimulator:
         return logs
 
     def _hero_act(self, side, card, stats, attrs, skills, cds) -> list:
+        """英雄单回合行动编排：选技能 → 结算伤害 → 施加效果。
+
+        原为 199 行单体方法（圈复杂度过高），按 ADR-003 消费路线拆为：
+          - _choose_skill          : AI 选技能
+          - _extract_instant_flags : 提取斩杀/真伤标志
+          - _resolve_damage        : 伤害结算（骰子→减伤→暴击→豁免→斩杀→护盾→扣血）
+          - _apply_effects         : 20 类 effects 施加
+        """
         logs = []
         hero_name = card["hero"]["name"]
         role = card.get("game", {}).get("universal_role", "fighter")
@@ -276,16 +284,7 @@ class BattleSimulator:
             logs.append(f"第{self.turn}回合 | {hero_name}({role_cn}) 被控制，无法行动！")
             return logs
 
-        available = [i for i in range(4) if cds[i] <= 0]
-        if not available:
-            available = [0]
-        weights = {0: 40, 1: 30, 2: 20, 3: 10}
-        if 3 in available and self.rng.random() < 0.5:
-            skill_idx = 3
-        else:
-            skill_idx = self.rng.choices(
-                available, weights=[weights.get(i, 20) for i in available])[0]
-
+        skill_idx = self._choose_skill(cds)
         skill = self._get_skill(card, skill_idx)
         skill_name = self._skill_name(card, skill_idx)
         skill_desc = self._skill_desc(card, skill_idx)
@@ -298,9 +297,32 @@ class BattleSimulator:
         else:
             is_magic = (role == "mage")
 
-        raw = BattleEngine.skill_raw_damage(skill, attrs, self.rng)
+        execute_th, true_dmg = self._extract_instant_flags(skill)
 
-        # 第一遍：提取瞬时标志（斩杀 / 真伤）
+        dmg = self._resolve_damage(
+            side, card, attrs, skill, skill_idx, skill_desc, role_cn, is_magic,
+            execute_th, true_dmg, enemy_side, enemy_stats, enemy_attrs, cds, logs)
+
+        self._apply_effects(
+            side, card, stats, attrs, skill, dmg, hero_name,
+            enemy_side, enemy_attrs, logs)
+
+        return logs
+
+    def _choose_skill(self, cds) -> int:
+        """AI 选技能：优先大招(50%) → 按权重抽取可用技能。"""
+        available = [i for i in range(4) if cds[i] <= 0]
+        if not available:
+            available = [0]
+        weights = {0: 40, 1: 30, 2: 20, 3: 10}
+        if 3 in available and self.rng.random() < 0.5:
+            return 3
+        return self.rng.choices(
+            available, weights=[weights.get(i, 20) for i in available])[0]
+
+    @staticmethod
+    def _extract_instant_flags(skill):
+        """第一遍遍历 effects，提取瞬时标志（斩杀阈值 / 是否真伤）。"""
         execute_th = None
         true_dmg = False
         for eff in ((skill or {}).get("effects") or []):
@@ -309,89 +331,100 @@ class BattleSimulator:
                 execute_th = eff.get("threshold", 30)
             elif cat == "true_dmg":
                 true_dmg = True
+        return execute_th, true_dmg
 
-        dmg = 0
-        crit_mark = ""
-        if raw > 0:
-            enemy_ac_or_wis = (enemy_stats["ac"] if not is_magic
-                               else enemy_stats["save_bonuses"].get("WIS", 0))
-            dm = BattleEngine.apply_mitigation(raw, enemy_ac_or_wis, is_magic)
-            crit_chance = BattleEngine.calc_crit_chance(self._dex_mod(card)) + self._sum(side, "crit")
-            crit_chance = min(0.95, crit_chance)
-            is_crit = self.rng.random() < crit_chance
-            if is_crit:
-                crit_mult = BattleEngine.crit_damage_multiplier(self._dex_mod(card))
-                dm["final"] = round(dm["final"] * crit_mult, 1)
-                crit_mark = "💥暴击! "
-            final = dm["final"] * DAMAGE_SCALE * self.active_damage_scale * DND_DAMAGE_SCALE
-            dmg = int(max(1, final))
+    def _resolve_damage(self, side, card, attrs, skill, skill_idx, skill_desc,
+                        role_cn, is_magic, execute_th, true_dmg,
+                        enemy_side, enemy_stats, enemy_attrs, cds, logs) -> int:
+        """结算技能伤害：骰子 → 减伤 → 暴击 → 豁免 → 斩杀 → 减/易/增伤 → 护盾 → 扣血。"""
+        hero_name = card["hero"]["name"]
+        raw = BattleEngine.skill_raw_damage(skill, attrs, self.rng)
 
-            # 防御方豁免
-            on_save = None
-            st = skill.get("saving_throw") if isinstance(skill, dict) else None
-            if st:
-                enemy_mods = self._attr_mods(enemy_attrs)
-                enemy_mods["_prof"] = enemy_stats.get("prof_bonus", 2)
-                on_save = roll_saving_throw(st, enemy_mods, self.rng)
-            if on_save == "无效":
-                dmg = 0
-            elif on_save == "半伤":
-                dmg = dmg // 2
-
-            # 斩杀
-            if execute_th is not None:
-                enemy_hp_now = self.hp2 if side == 1 else self.hp1
-                enemy_max = self.max_hp2 if side == 1 else self.max_hp1
-                if enemy_max > 0 and enemy_hp_now / enemy_max * 100 < execute_th:
-                    dmg *= 2
-                    logs.append(f"  ⚔️ 斩杀触发！({enemy_hp_now}/{enemy_max})")
-
-            # 减伤 / 易伤 / 增伤
-            if not true_dmg and self._has(enemy_side, "reduce"):
-                dmg = int(dmg * 0.5)
-            if not true_dmg:
-                dmg = int(dmg * (1 + self._sum(enemy_side, "vuln") / 100.0))
-            dmg = int(dmg * (1 + self._sum(side, "bonus") / 100.0))
-
-            # 护盾吸收
-            if not true_dmg:
-                pool = self._shield_pool(enemy_side)
-                absorbed = min(dmg, pool)
-                if absorbed > 0:
-                    self._absorb_shield(enemy_side, absorbed)
-                    dmg -= absorbed
-                    logs.append(f"  🛡️ 护盾吸收 {absorbed}点")
-            dmg = max(0, dmg)
-
-            if side == 1:
-                self.hp2 = max(0, self.hp2 - dmg)
-                remain = self.hp2
-                target = self.hero2
-            else:
-                self.hp1 = max(0, self.hp1 - dmg)
-                remain = self.hp1
-                target = self.hero1
-
-            is_skill = skill_idx > 0
-            skill_mark = f"【{skill_desc}】" if is_skill else "普攻"
-            log = f"第{self.turn}回合 | {hero_name}({role_cn}) {skill_mark} → {target}"
-            log += f" | {crit_mark}{('法术' if is_magic else '物理')}伤害 {dmg}点"
-            if on_save:
-                log += f" | 豁免:{on_save}"
-            log += f" | {target} 剩余生命:{remain}"
-            if cds[skill_idx] > 0:
-                log += f" | 冷却:{cds[skill_idx]}回合"
-            logs.append(log)
-        else:
+        if raw <= 0:
             logs.append(f"第{self.turn}回合 | {hero_name}({role_cn}) 释放【{skill_desc}】（无伤害，施放效果）")
+            return 0
 
-        # 第二遍：施加持续/瞬时效果
+        enemy_ac_or_wis = (enemy_stats["ac"] if not is_magic
+                           else enemy_stats["save_bonuses"].get("WIS", 0))
+        dm = BattleEngine.apply_mitigation(raw, enemy_ac_or_wis, is_magic)
+        crit_chance = BattleEngine.calc_crit_chance(self._dex_mod(card)) + self._sum(side, "crit")
+        crit_chance = min(0.95, crit_chance)
+        is_crit = self.rng.random() < crit_chance
+        crit_mark = ""
+        if is_crit:
+            crit_mult = BattleEngine.crit_damage_multiplier(self._dex_mod(card))
+            dm["final"] = round(dm["final"] * crit_mult, 1)
+            crit_mark = "💥暴击! "
+        final = dm["final"] * DAMAGE_SCALE * self.active_damage_scale * DND_DAMAGE_SCALE
+        dmg = int(max(1, final))
+
+        # 防御方豁免
+        on_save = None
+        st = skill.get("saving_throw") if isinstance(skill, dict) else None
+        if st:
+            enemy_mods = self._attr_mods(enemy_attrs)
+            enemy_mods["_prof"] = enemy_stats.get("prof_bonus", 2)
+            on_save = roll_saving_throw(st, enemy_mods, self.rng)
+        if on_save == "无效":
+            dmg = 0
+        elif on_save == "半伤":
+            dmg = dmg // 2
+
+        # 斩杀
+        if execute_th is not None:
+            enemy_hp_now = self.hp2 if side == 1 else self.hp1
+            enemy_max = self.max_hp2 if side == 1 else self.max_hp1
+            if enemy_max > 0 and enemy_hp_now / enemy_max * 100 < execute_th:
+                dmg *= 2
+                logs.append(f"  ⚔️ 斩杀触发！({enemy_hp_now}/{enemy_max})")
+
+        # 减伤 / 易伤 / 增伤
+        if not true_dmg and self._has(enemy_side, "reduce"):
+            dmg = int(dmg * 0.5)
+        if not true_dmg:
+            dmg = int(dmg * (1 + self._sum(enemy_side, "vuln") / 100.0))
+        dmg = int(dmg * (1 + self._sum(side, "bonus") / 100.0))
+
+        # 护盾吸收
+        if not true_dmg:
+            pool = self._shield_pool(enemy_side)
+            absorbed = min(dmg, pool)
+            if absorbed > 0:
+                self._absorb_shield(enemy_side, absorbed)
+                dmg -= absorbed
+                logs.append(f"  🛡️ 护盾吸收 {absorbed}点")
+        dmg = max(0, dmg)
+
+        if side == 1:
+            self.hp2 = max(0, self.hp2 - dmg)
+            remain = self.hp2
+            target = self.hero2
+        else:
+            self.hp1 = max(0, self.hp1 - dmg)
+            remain = self.hp1
+            target = self.hero1
+
+        is_skill = skill_idx > 0
+        skill_mark = f"【{skill_desc}】" if is_skill else "普攻"
+        log = f"第{self.turn}回合 | {hero_name}({role_cn}) {skill_mark} → {target}"
+        log += f" | {crit_mark}{('法术' if is_magic else '物理')}伤害 {dmg}点"
+        if on_save:
+            log += f" | 豁免:{on_save}"
+        log += f" | {target} 剩余生命:{remain}"
+        if cds[skill_idx] > 0:
+            log += f" | 冷却:{cds[skill_idx]}回合"
+        logs.append(log)
+        return dmg
+
+    def _apply_effects(self, side, card, stats, attrs, skill, dmg, hero_name,
+                       enemy_side, enemy_attrs, logs) -> None:
+        """第二遍遍历 effects，施加 20 类持续/瞬时效果（控制/护盾/减伤/治疗/吸血…）。"""
         for eff in ((skill or {}).get("effects") or []):
             cat = categorize_effect(eff)
             dur = eff.get("duration", 1) or 1
             if cat == "control":
                 if self._has(enemy_side, "immune"):
-                    logs.append(f"  🛡️ {target if False else (self.hero2 if side==1 else self.hero1)} 免疫控制")
+                    logs.append(f"  🛡️ {self.hero2 if side==1 else self.hero1} 免疫控制")
                     continue
                 cc = stats.get("cc_resist_pct", 0) or 0
                 turns = max(1, int(dur) - int(cc / 50))
@@ -460,8 +493,6 @@ class BattleSimulator:
                 logs.append(f"  💀 {hero_name} 触发复活效果（演练：记日志）")
             else:  # aoe / invis / flavor
                 logs.append(f"  ✦ D&D效果：{eff.get('type')}（{eff.get('desc','')}）")
-
-        return logs
 
     # ── 属性取值器（保留供其它模块/测试使用）──
     def _dex_mod(self, card):

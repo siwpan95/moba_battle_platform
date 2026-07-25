@@ -30,6 +30,7 @@ class BattlePlatform:
         self.card2 = None
         self.battle_log_lines = []
         self.current_line = 0
+        self.log_count = 0  # 日志总行数（与动画进度 current_line 解耦，修复快速模拟计数 bug）
         self.is_battling = False
         self.after_id = None
         self.log_y = 10
@@ -571,7 +572,8 @@ class BattlePlatform:
         self.log_y += self.line_height
         self.canvas.config(scrollregion=self.canvas.bbox("all"))
         self.canvas.yview_moveto(1)
-        self.log_count_label.config(text=f"共 {self.current_line} 行")
+        self.log_count += 1
+        self.log_count_label.config(text=f"共 {self.log_count} 行")
 
     def _clear_log(self):
         """清空日志"""
@@ -587,6 +589,7 @@ class BattlePlatform:
         self.log_y = 10
         self.all_logs = []
         self.current_line = 0
+        self.log_count = 0
         self.log_count_label.config(text="")
 
     def _on_mousewheel(self, event):

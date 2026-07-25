@@ -3,9 +3,10 @@
 ## 启动
 
 ```bash
-cd battle_platform
 python main.py
 ```
+
+> 注：`main.py` 位于项目根目录，无需 `cd` 到子目录。
 
 ## 功能
 
@@ -31,9 +32,10 @@ python main.py
 
 ## 英雄池
 
-- 1500+ 英雄，来自 16 款 MOBA 游戏
-- 300+ 知名英雄使用真实技能数据
-- 其余使用角色定位模板自动填充
+- 1659 张角色卡，来自 24 款 MOBA / 泛娱乐 IP（实测，2026-07-25）
+- 7553 条结构化技能（平均 4.55/英雄）
+- 技能数据完整度：92% 带 damage 骰 / 75% 带 effects / 63% 带 saving_throw
+- 300+ 知名英雄使用真实技能数据，其余使用角色定位模板自动填充
 
 ## 角色卡管理
 
@@ -49,6 +51,7 @@ python card_tool.py info 亚索         # 查看详情
 
 ## 依赖
 
-- Python 3.10+
+- Python 3.10+（实测 3.10 / 3.11 / 3.12 / 3.13 / 3.14 均通过）
 - tkinter (内置)
+- pytest（仅测试需要）
 - 字体: simhei.ttf (黑体), simkai.ttf (楷体) — assets/fonts/
