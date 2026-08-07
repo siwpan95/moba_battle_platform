@@ -1,0 +1,77 @@
+[
+  {
+    "name": "狼群召唤",
+    "key": "A",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。召唤一个镜像分身3回合。",
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "duration": 3,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "爪击",
+    "key": "B",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 1,
+    "description": "2d10+STR 挥砍伤害。每回合受到流血伤害2回合。",
+    "effects": [
+      {
+        "type": "流血",
+        "desc": "每回合受到流血伤害",
+        "duration": 2,
+        "target": "敌方",
+        "dmg_per_turn": "1d4"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "群狼突击",
+    "key": "U",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 4,
+    "description": "4d10+STR 挥砍伤害。攻击力提升2回合。",
+    "effects": [
+      {
+        "type": "强化",
+        "desc": "攻击力提升",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 15
+  }
+]

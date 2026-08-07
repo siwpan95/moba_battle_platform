@@ -1,0 +1,112 @@
+[
+  {
+    "name": "银臂之剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "努亚达挥出银臂之剑——在失去右臂后，医神为他打造了完美的白银义肢。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "王者之令",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "王者之令击溃防御",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "努亚达下达王者之令——作为达努神族的国王，他的号令就是绝对的真理。AOE破甲2回合。2d8+STR 挥砍伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "银臂再生",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "白银义肢的魔力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+STR"
+      },
+      {
+        "type": "shield",
+        "desc": "银臂化作盾牌",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+STR"
+      }
+    ],
+    "cooldown": 2,
+    "description": "努亚达激活银臂之力——他的白银义肢不仅是武器，更是治愈与防护的源泉。回复+护盾。"
+  },
+  {
+    "name": "银臂王",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "银臂抹杀",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "银臂王的光芒",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "努亚达展现银臂王的全盛之力——他的银臂在阳光下反射出令人目眩的光芒，随后便是致命的斩击。低血斩杀+AOE恐惧。2d10+STR 挥砍伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

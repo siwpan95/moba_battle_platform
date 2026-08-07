@@ -1,0 +1,117 @@
+[
+  {
+    "name": "天柱",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "舒举起天柱——大气之神以双肩撑起天空女神努特。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "大气之墙",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "大气屏障",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "风墙抵御攻击",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "舒建造大气之墙——他站在天与地之间，以无形的空气隔绝万物。护盾+减伤各2回合。"
+  },
+  {
+    "name": "风暴",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "狂风吹袭",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "sunder",
+        "desc": "风暴撕裂",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "舒掀起风暴——空气在他的手中变成了最锋利的刀刃。AOE减速2回合+破甲1回合。1d8+STR 挥砍伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "天地分离",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "天地间的压力粉碎一切",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "恐惧",
+        "desc": "创世之力的震撼",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "舒重演天地分离——创世之初他将天与地撑开，这份力量足以碾碎山岳。AOE控制+恐惧。2d8+STR 钝击伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "name": "猛扑",
+    "key": "A",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "向目标方向移动30尺",
+        "value": 30,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+DEX 挥砍伤害。向目标方向移动30尺。"
+  },
+  {
+    "name": "旋转死亡",
+    "key": "B",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。"
+  },
+  {
+    "name": "美味猫薄荷狂暴",
+    "key": "U",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d6+DEX 挥砍伤害。"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "name": "崩裂禁锢",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。目标无法移动1回合。召唤一个镜像分身3回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "目标无法移动",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      },
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "target": "敌方",
+        "duration": 3
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "灵魂猎手",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。无视护甲和魔抗。标记目标，后续攻击增伤3回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "desc": "无视护甲和魔抗",
+        "target": "敌方"
+      },
+      {
+        "type": "标记",
+        "desc": "标记目标，后续攻击增伤",
+        "target": "敌方",
+        "duration": 3
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "暗影剧毒",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 2,
+    "description": "1d6+WIS 力场伤害。每回合受到毒素伤害3回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "持续伤害",
+        "desc": "每回合受到毒素伤害",
+        "target": "敌方",
+        "duration": 3,
+        "dmg_per_turn": "1d4"
+      }
+    ]
+  },
+  {
+    "name": "邪恶净化",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。目标失去动作1回合。目标速度减半2回合。移除负面效果。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      },
+      {
+        "type": "净化",
+        "desc": "移除负面效果",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

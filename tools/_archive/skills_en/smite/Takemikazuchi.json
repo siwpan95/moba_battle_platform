@@ -1,0 +1,110 @@
+[
+  {
+    "name": "雷剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "建御雷神高举雷剑——这柄剑曾劈开苇原中国的大地，令国津神望风而降。1d10+STR 闪电伤害。"
+  },
+  {
+    "name": "雷鼓",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "雷声震天慑地",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "建御雷神擂动雷鼓——他在天界的每一次击鼓，都在人间引发山崩地裂。AOE减速。2d8+STR 闪电伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "武神降临",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "武神之姿战力飙升",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "雷光步法迅捷如电",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "建御雷神降临战场——他是天界最强的武神，经津主神也要敬畏三分。增伤+加速各2回合。1d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "建御雷",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "雷电之剑斩杀一切弱者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "雷火焚身",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "建御雷神释放全部神力——整个战场被雷暴覆盖，他的雷剑化作万千电蛇吞噬一切。低血斩杀+dot 2回合。2d10+STR 闪电伤害，AOE。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

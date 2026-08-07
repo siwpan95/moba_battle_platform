@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Windblow",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+INT 火焰伤害。目标被推开10尺1回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Windstorm",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "3d6+INT 寒冷伤害。目标被击飞，失去动作1回合。",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "Windtalk",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "速度+15尺2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "target": "自身",
+        "duration": 2,
+        "value": 15
+      }
+    ]
+  },
+  {
+    "name": "Wind Control",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "6d6+INT 闪电伤害。目标失去动作1回合。目标被击飞，失去动作1回合。",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

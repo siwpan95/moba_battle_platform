@@ -1,0 +1,70 @@
+[
+  {
+    "name": "三段斩杀",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d6+DEX 挥砍伤害。"
+  },
+  {
+    "name": "死亡低语",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d6+DEX 黯蚀伤害。"
+  },
+  {
+    "name": "灵魂交换",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d6+DEX 挥砍伤害。"
+  },
+  {
+    "name": "死亡重力",
+    "key": "P",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d8+DEX 挥砍伤害。"
+  }
+]

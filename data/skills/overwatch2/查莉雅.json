@@ -1,0 +1,98 @@
+[
+  {
+    "name": "查莉雅·不屈意志",
+    "key": "Q",
+    "type": "真实",
+    "action": "短暂免疫控制",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 4,
+      "bonus_attr": "CON",
+      "type": "能量"
+    },
+    "effects": [
+      {
+        "target": "自身",
+        "kind": "immune",
+        "desc": "免疫控制"
+      }
+    ],
+    "cooldown": 10,
+    "description": "短暂免疫控制（自身）。免疫控制",
+    "approx": true
+  },
+  {
+    "name": "查莉雅·岩盾守护",
+    "key": "W",
+    "type": "真实",
+    "action": "展开护盾抵御伤害",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 12,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "target": "自身",
+        "kind": "shield",
+        "desc": "获得临时生命"
+      }
+    ],
+    "cooldown": 0,
+    "description": "展开护盾抵御伤害（自身）。获得临时生命",
+    "approx": true
+  },
+  {
+    "name": "查莉雅·震荡猛击",
+    "key": "E",
+    "type": "物理",
+    "action": "重击前方敌人",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "target": "敌方",
+        "kind": "prone",
+        "desc": "击倒"
+      }
+    ],
+    "cooldown": 4,
+    "description": "重击前方敌人（单体）。击倒",
+    "approx": true
+  },
+  {
+    "name": "查莉雅·地裂践踏",
+    "key": "R",
+    "type": "物理",
+    "action": "践踏地面造成范围震荡",
+    "range": "近战",
+    "target": "区域",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "target": "敌方",
+        "kind": "slow",
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 8,
+    "description": "践踏地面造成范围震荡（区域）。减速",
+    "approx": true
+  }
+]

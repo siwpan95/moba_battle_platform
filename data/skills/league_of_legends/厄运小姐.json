@@ -1,0 +1,108 @@
+[
+  {
+    "name": "一箭双雕",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "aoe",
+        "desc": "子弹穿透首个目标后弹射至后方敌人",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "射出一发跳弹——命中首个敌人后弹射至其身后的目标。造成1d8+DEX穿刺伤害。若首段击杀目标，弹射伤害翻倍。弹射优先命中英雄。"
+  },
+  {
+    "name": "大步流星",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "移动速度+30尺，攻击速度+60%",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赏金猎人的脚步从不停歇。造成2d6+DEX穿刺伤害。被动：若5回合内未受到伤害，获得移动速度+30尺。主动激活：攻击速度+60%，持续2回合。"
+  },
+  {
+    "name": "枪林弹雨",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "弹幕区域内的敌人移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "呼叫海盗船炮火覆盖目标区域。造成1d8+DEX穿刺伤害。弹幕持续3回合，每回合对区域内的敌人造成伤害并减速。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  },
+  {
+    "name": "弹幕时间",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "aoe",
+        "desc": "向前方锥形区域倾泻毁灭性弹幕",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "莎拉双枪齐鸣，向前方锥形区域倾泻数百发子弹的毁灭弹幕。造成3d8+DEX穿刺伤害。弹幕共12波，持续2回合，每波可触发暴击。DEX豁免成功则伤害减半。施放期间无法移动但可随时中断。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 30
+  }
+]

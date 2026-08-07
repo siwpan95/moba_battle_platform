@@ -1,0 +1,132 @@
+[
+  {
+    "name": "修罗道·暗兽拳",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "value": 30,
+        "desc": "暗兽拳吸取生命精华",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "黑暗修罗道的暗兽拳——拳出如暗兽猎食，以敌之血养己之身。1d10+DEX 黯蚀伤害，30%生命偷取。"
+  },
+  {
+    "name": "修罗道·六道轮回",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "40尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "六道轮回的景象令敌人崩溃",
+        "target": "敌方"
+      },
+      {
+        "type": "持续伤害",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "轮回业火持续焚烧",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "黑暗修罗道绝学——六道轮回！令敌人亲历地狱道、饿鬼道、畜生道之恐怖。3d6+CHA 黯蚀伤害，15尺范围。WIS豁免失败恐惧1回合+轮回业火2回合(每回合1d6)。冷却1回合。"
+  },
+  {
+    "name": "修罗道·不死之身",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "value_formula": "2d10+CON",
+        "desc": "修罗道生命力极速再生",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 35,
+        "desc": "不死之身抵御一切伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "黑暗修罗道的不死之身——生命力之顽强冠绝海虎世界。恢复2d10+CON生命，减伤35%。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "修罗道·灭世轮回",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "灭世轮回粉碎一切意志",
+        "target": "敌方"
+      },
+      {
+        "type": "吸血",
+        "value": 50,
+        "desc": "轮回吸取众生之命",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "黑暗修罗道终极奥义——将整个世界拖入无尽轮回的灭世之力！5d8+CHA 黯蚀伤害，30尺范围。WIS豁免失败眩晕2回合。造成伤害50%转化为治疗。冷却4回合。"
+  }
+]

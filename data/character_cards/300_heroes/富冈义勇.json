@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1087",
+  "card_id": "300_heroes:富冈义勇",
   "hero": {
     "name": "富冈义勇",
     "name_en": "",
@@ -110,95 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "连斩",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "连斩（Q）：三连击。造成 1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "血战",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "血战（W）：低血增伤。造成 2d8+STR 挥砍伤害。属性全面提升。"
-    },
-    {
-      "name": "冲锋",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "duration": 2,
-          "desc": "移动与攻速提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 4,
-      "description": "冲锋（E）：突进。造成 1d10+STR 挥砍伤害。移动与攻速提升。"
-    },
-    {
-      "name": "战神降临",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 5,
-      "description": "战神降临（R）：变身强化。属性全面提升。"
-    }
-  ]
+  "legacy_card_id": "300-1087"
 }

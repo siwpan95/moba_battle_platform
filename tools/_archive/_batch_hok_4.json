@@ -1,0 +1,167 @@
+{
+  "太乙天尊": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  },
+  "元始天尊": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "通天教主": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "陆压道人": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "镇元大仙": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "E": [
+        "heal"
+      ]
+    }
+  },
+  "慈航道人": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "cleanse"
+      ]
+    }
+  },
+  "多宝道人": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "金灵圣母": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "无当圣母": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "赵公明": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "sunder"
+      ]
+    }
+  },
+  "云霄娘娘": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "碧霄娘娘": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "slow"
+      ]
+    }
+  },
+  "琼霄娘娘": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "cleanse"
+      ]
+    }
+  },
+  "申公豹": {
+    "role": "mage",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "石矶娘娘": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  }
+}

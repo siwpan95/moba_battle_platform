@@ -1,0 +1,67 @@
+[
+  {
+    "name": "孙尚香击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    }
+  },
+  {
+    "name": "孙尚香斩",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "孙尚香护",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "孙尚香护。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    }
+  },
+  {
+    "name": "孙尚香怒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "150尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "4d8+DEX 穿刺伤害。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "泰坦镰刀",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "克洛诺斯挥动镰刀——这柄镰刀曾阉割了他的父亲乌拉诺斯，开启了泰坦的统治。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "时间之握",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "时间凝固",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "slow",
+        "desc": "时间流逝变慢",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "克洛诺斯掌控时间——作为时间之神，他能让万物衰老或停滞。束缚+减速各1回合。2d8+STR 力场伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "泰坦之躯",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "泰坦的远古之力",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "泰坦神族的不朽之躯",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "克洛诺斯唤起泰坦之力——他统治黄金时代的远古力量仍在血脉中流淌。护盾+减伤各2回合。"
+  },
+  {
+    "name": "吞噬苍穹",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "吞噬一切",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "吞子之父的恐怖",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "克洛诺斯张开吞天巨口——他曾将赫斯提亚、得墨忒尔、赫拉、哈迪斯、波塞冬一一吞入腹中。低血斩杀+AOE恐惧。2d10+STR 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "name": "月神之箭",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "阿尔忒弥斯拉开银弓——月光凝聚为箭矢，无声而致命。作为狩猎女神，她的箭从不惊动猎物，直到箭头穿心。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "狩猎陷阱",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "魔法猎网束缚猎物",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "阿尔忒弥斯布下神造猎网——那是连百眼巨人也挣脱不了的束缚。猎物踏入陷阱的瞬间，月光绳索从四面八方收束。2d6+DEX 穿刺伤害，束缚1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "牡鹿之跃",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "如受惊的牡鹿般轻盈后跃，躲避攻势",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "阿尔忒弥斯模仿她的圣兽——金角牡鹿——纵身跃起，在空中划过一道银弧。落地的瞬间已搭好下一支箭。获得加速1回合。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "荒野之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "狩猎女神的标记让猎物无处遁形",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "阿尔忒弥斯呼唤整片荒野为她而战——狼群、熊罴、猎鹰从天际和密林深处同时扑出。她标记的猎物，纵使逃到世界尽头也难逃一死。3d8+DEX 穿刺伤害，AOE，标记易伤2回合。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

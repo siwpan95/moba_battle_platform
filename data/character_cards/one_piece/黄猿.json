@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2279",
+  "card_id": "one_piece:黄猿",
   "hero": {
     "name": "黄猿",
     "name_en": "Borsalino",
@@ -109,80 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "八尺琼勾玉",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "光耀"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d10+DEX 光耀伤害。",
-      "approx": true
-    },
-    {
-      "name": "天丛云剑",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "光耀"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+DEX 光耀伤害。",
-      "approx": true
-    },
-    {
-      "name": "光速踢",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "光耀"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d10+DEX 光耀伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 8
-    },
-    {
-      "name": "八尺镜",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "DEX",
-        "type": "光耀"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d12+DEX 光耀伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 12
-    }
-  ]
+  "legacy_card_id": "ONE-2279"
 }

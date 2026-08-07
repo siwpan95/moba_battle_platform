@@ -1,0 +1,124 @@
+[
+  {
+    "name": "金皮",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "剥皮之痛",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "希佩托特克披上金色人皮——春天与重生之神通过剥落旧皮带来新生。1d10+STR 挥砍伤害，dot 2回合。"
+  },
+  {
+    "name": "新生",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "蜕皮新生",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "buff",
+        "desc": "重生之力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "希佩托特克剥落旧皮——正如大地每年春天褪去枯黄换上新绿。回复2d8+STR+增伤2回合。"
+  },
+  {
+    "name": "春耕",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "新皮护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+STR"
+      },
+      {
+        "type": "accel",
+        "desc": "春风步伐",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "希佩托特克播下春种——他是农神，也是带来新生的春天之神。护盾+加速各2回合。"
+  },
+  {
+    "name": "剥皮之主",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "剥皮之神的真容",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "剥去旧皮即为毁灭",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "希佩托特克展现剥皮之主真容——他的祭祀仪式要求祭司披上牺牲者的人皮，象征旧死新生。AOE恐惧+低血斩杀。2d10+STR 挥砍伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

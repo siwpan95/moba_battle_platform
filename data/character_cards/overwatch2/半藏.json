@@ -1,5 +1,5 @@
 {
-  "card_id": "OVE-2367",
+  "card_id": "overwatch2:半藏",
   "hero": {
     "name": "半藏",
     "name_en": "Hanzo",
@@ -111,102 +111,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "半藏·战术翻滚",
-      "key": "Q",
-      "type": "物理",
-      "action": "拉开距离",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 4,
-        "bonus_attr": "DEX",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "target": "自身",
-          "kind": "dash",
-          "desc": "位移"
-        }
-      ],
-      "cooldown": 4,
-      "description": "拉开距离（自身）。位移",
-      "approx": true
-    },
-    {
-      "name": "半藏·爆头狙击",
-      "key": "W",
-      "type": "物理",
-      "action": "蓄力重击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "crit",
-          "desc": "重伤"
-        }
-      ],
-      "cooldown": 8,
-      "description": "蓄力重击（单体）。重伤",
-      "approx": true
-    },
-    {
-      "name": "半藏·压制火力",
-      "key": "E",
-      "type": "物理",
-      "action": "限制走位",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "slow",
-          "desc": "减速"
-        }
-      ],
-      "cooldown": 6,
-      "description": "限制走位（区域）。减速",
-      "approx": true
-    },
-    {
-      "name": "半藏·精准射击",
-      "key": "R",
-      "type": "物理",
-      "action": "远程精准打击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "crit",
-          "desc": "暴击"
-        }
-      ],
-      "cooldown": 2,
-      "description": "远程精准打击（单体）。暴击",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "OVE-2367"
 }

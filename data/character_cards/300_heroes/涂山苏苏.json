@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1070",
+  "card_id": "300_heroes:涂山苏苏",
   "hero": {
     "name": "涂山苏苏",
     "name_en": "",
@@ -109,81 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "能量链接",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "能量链接（Q）：友军加攻。"
-    },
-    {
-      "name": "减速力场",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 2,
-          "desc": "移动速度降低。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 2,
-      "description": "减速力场（W）：敌方减速。移动速度降低。"
-    },
-    {
-      "name": "传送门",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "传送门（E）：友方传送。"
-    },
-    {
-      "name": "时间静止",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "时间静止（R）：群体金身。造成 3d12+WIS 力场伤害。（范围效果）"
-    }
-  ]
+  "legacy_card_id": "300-1070"
 }

@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2272",
+  "card_id": "one_piece:蒙奇·D·卡普",
   "hero": {
     "name": "蒙奇·D·卡普",
     "name_en": "Monkey D. Garp",
@@ -110,79 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "拳骨·陨石",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d12+CON 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "铁拳",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+CON 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "车钩",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d10+CON 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "拳骨·流星群",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 10,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "4d10+CON 钝击伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 10
-    }
-  ]
+  "legacy_card_id": "ONE-2272"
 }

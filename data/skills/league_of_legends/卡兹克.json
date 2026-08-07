@@ -1,0 +1,118 @@
+[
+  {
+    "name": "品尝恐惧",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "目标孤立无援时伤害翻倍",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "用镰刀状虚空利爪猛击目标，造成1d10+DEX挥砍伤害。若目标15尺内没有任何盟友，则目标被视为孤立无援，伤害翻倍。"
+  },
+  {
+    "name": "虚空突刺",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "自身处于爆炸范围内时回复1d8生命值",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "description": "发射一排虚空能量尖刺，爆炸后对范围内敌人造成2d8+DEX穿刺伤害并减速2回合。若卡兹克自身处于爆炸范围，虚空能量反哺回复1d8生命值。DEX豁免成功则伤害减半。"
+  },
+  {
+    "name": "跃击",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "跳跃至目标区域，跨越地形与敌人",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "展开虚空虫翼跃向目标区域，着陆时利爪撕裂周围敌人，造成1d8+DEX挥砍伤害。可用于跨越地形或突入/脱离战场。"
+  },
+  {
+    "name": "虚空来袭",
+    "key": "R",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "进入隐形状态",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "移动速度+30尺",
+        "duration": 2,
+        "value": 30,
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "隐形期间的下次攻击附加额外伤害并触发孤立无援效果",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "遁入虚空阴影之中，进入隐形状态并获得30尺移动速度加成，持续2回合。隐形期间发动的下次攻击造成4d6+DEX挥砍伤害，且目标自动视为孤立无援。可在10秒内再次激活。"
+  }
+]

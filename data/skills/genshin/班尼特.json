@@ -1,0 +1,98 @@
+[
+  {
+    "name": "班尼特·净化术",
+    "key": "Q",
+    "type": "法术",
+    "action": "移除负面",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 4,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "target": "友方",
+        "kind": "cleanse",
+        "desc": "净化"
+      }
+    ],
+    "cooldown": 5,
+    "description": "移除负面（友方）。净化",
+    "approx": true
+  },
+  {
+    "name": "班尼特·群体治疗",
+    "key": "W",
+    "type": "混合",
+    "action": "治疗多人",
+    "range": "远程",
+    "target": "区域",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "能量"
+    },
+    "effects": [
+      {
+        "target": "友方",
+        "kind": "heal",
+        "desc": "群疗"
+      }
+    ],
+    "cooldown": 8,
+    "description": "治疗多人（区域）。群疗",
+    "approx": true
+  },
+  {
+    "name": "班尼特·复活祈愿",
+    "key": "E",
+    "type": "法术",
+    "action": "复活倒下队友",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 12,
+      "bonus_attr": "CHA",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "target": "友方",
+        "kind": "revive",
+        "desc": "复活"
+      }
+    ],
+    "cooldown": 12,
+    "description": "复活倒下队友（友方）。复活",
+    "approx": true
+  },
+  {
+    "name": "班尼特·治愈之光",
+    "key": "R",
+    "type": "混合",
+    "action": "恢复生命",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "能量"
+    },
+    "effects": [
+      {
+        "target": "友方",
+        "kind": "heal",
+        "desc": "治疗"
+      }
+    ],
+    "cooldown": 3,
+    "description": "恢复生命（友方）。治疗",
+    "approx": true
+  }
+]

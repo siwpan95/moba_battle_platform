@@ -1,0 +1,91 @@
+[
+  {
+    "name": "音波",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "duration": 1,
+        "dc_attr": "STR",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+STR 挥砍伤害。目标被推开10尺1回合。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "切歌",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "value_formula": "1d8+WIS",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 挥砍伤害。恢复生命。"
+  },
+  {
+    "name": "增强",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d6+STR 挥砍伤害。"
+  },
+  {
+    "name": "音障",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d8+STR 挥砍伤害。",
+    "aoe_radius": 15
+  }
+]

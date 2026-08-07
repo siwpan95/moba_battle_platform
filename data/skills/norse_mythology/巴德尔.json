@@ -1,0 +1,109 @@
+[
+  {
+    "name": "光之矢",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。巴德尔以光明之神的光辉化作箭矢。",
+    "approx": true
+  },
+  {
+    "name": "槲寄生之愈",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "回复2d6+WIS",
+        "value": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。唯一能伤到巴德尔的槲寄生，他将其化为治愈之力。回复2d6+WIS。",
+    "approx": true
+  },
+  {
+    "name": "不死之身",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 2,
+        "desc": "免疫一切伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。巴德尔激活万物不伤的誓言。免疫一切伤害2回合。（冷却2回合）",
+    "approx": true
+  },
+  {
+    "name": "光明重生",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体护盾2d8+WIS",
+        "value": "2d8+WIS"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "duration": 0,
+        "desc": "清除全体负面效果"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。巴德尔从冥界归来，以重生之光照耀战场。全体护盾2回合+净化负面效果。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

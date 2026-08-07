@@ -1,0 +1,77 @@
+[
+  {
+    "name": "种子",
+    "key": "A",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。召唤一个镜像分身3回合。",
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "duration": 3,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "跳跃",
+    "key": "B",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。短距离传送/移动1回合。",
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "value": 20,
+        "target": "自身",
+        "duration": 1
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "发芽",
+    "key": "U",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。攻击力提升2回合。",
+    "effects": [
+      {
+        "type": "强化",
+        "desc": "攻击力提升",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

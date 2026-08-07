@@ -1,0 +1,133 @@
+[
+  {
+    "name": "噬咬",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "撕咬偷取攻击力",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "sunder",
+        "desc": "降低目标攻击力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "冰封领域",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "极冰领域移速攻速提升",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "heal",
+        "desc": "领域内回复增强",
+        "duration": 2,
+        "value": 10,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 寒冷伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "寒冰之柱",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "召唤冰柱阻挡并减速",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "冰柱周围大幅减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 寒冷伤害。"
+  },
+  {
+    "name": "强权至敌",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "吸取目标双抗与生命",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "buff",
+        "desc": "偷取的防御与生命加于自身",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

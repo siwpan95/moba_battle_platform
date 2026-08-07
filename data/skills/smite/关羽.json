@@ -1,0 +1,107 @@
+[
+  {
+    "name": "青龙偃月",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "关羽挥动青龙偃月刀——这柄重八十二斤的冷艳锯，刀锋过处如青龙出海，万军之中取上将首级如同探囊取物。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "单刀赴会",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "青龙刀气破开敌人防御",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "关羽单人匹马冲入敌阵——江东群雄皆不敢动。青龙偃月刀携万钧之势劈下，刀气穿透甲胄直取要害。2d8+STR 挥砍伤害，破甲2回合。"
+  },
+  {
+    "name": "千里走单骑",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "赤兔马日行千里",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "cleanse",
+        "desc": "义薄云天，摆脱一切束缚",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "关羽催动赤兔马——过五关斩六将，千里之遥不过一日。忠义之心使他免疫一切阻碍，获得加速并净化负面效果。1d8+STR 挥砍伤害，加速2回合。"
+  },
+  {
+    "name": "威震华夏",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "对溃败之敌一刀斩落",
+        "target": "敌方"
+      },
+      {
+        "type": "恐惧",
+        "desc": "武圣威名震慑全场",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "关羽水淹七军、威震华夏——此招一出，敌军望风披靡。青龙偃月刀划出横扫千军之势，怯者当场毙命，勇者亦胆寒股栗。对低血量敌人斩杀，AOE恐惧。2d10+STR 挥砍伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

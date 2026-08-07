@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Heavy Slam",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "沉重的钝击撕裂空气，Maloch挥动武器发起冲锋。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "Iron Fortress",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "value": 5,
+        "desc": "获得5点临时护盾，持续2轮"
+      }
+    ],
+    "cooldown": 1,
+    "description": "Maloch架起防御姿态，以钢铁意志吸收伤害。2d6+STR 钝击伤害。 获得5点临时护盾，持续2轮。"
+  },
+  {
+    "name": "Unyielding Will",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "使目标倒地1轮"
+      }
+    ],
+    "cooldown": 2,
+    "description": "大地震颤，Maloch的重击碾碎敌阵。1d8+STR 钝击伤害。 使目标倒地1轮。"
+  },
+  {
+    "name": "Earthshatter",
+    "key": "P",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "desc": "使目标魅惑1轮（CON豁免 DC=8+PROF+STR，豁免无效）"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「见证我的怒火！」Maloch化身不可阻挡的战争机器。2d8+STR 钝击伤害。 使目标魅惑1轮（CON豁免 DC=8+PROF+STR，豁免无效）。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

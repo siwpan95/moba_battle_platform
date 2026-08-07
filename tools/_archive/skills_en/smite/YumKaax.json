@@ -1,0 +1,118 @@
+[
+  {
+    "name": "玉米之箭",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "尤姆卡克斯射出玉米之箭——森林与农神用谷物武装自己。1d8+WIS 穿刺伤害。"
+  },
+  {
+    "name": "丰收",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "玉米的滋养",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "丰收之神的祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "尤姆卡克斯召唤丰收——玉米是玛雅人最神圣的作物，而他是玉米的守护者。回复2d8+WIS+增伤2回合。"
+  },
+  {
+    "name": "丛林庇护",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "树叶与藤蔓编织的护甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+WIS"
+      },
+      {
+        "type": "invis",
+        "desc": "融入丛林",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "尤姆卡克斯遁入丛林——森林是他的王国，每一棵树都是他的哨兵。护盾2回合+隐身1回合。"
+  },
+  {
+    "name": "生命之树",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "生命之树的甘露",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "4d8+WIS"
+      },
+      {
+        "type": "束缚",
+        "desc": "树根缠绕",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "尤姆卡克斯召唤生命之树——那棵连接天地的巨树从战场中央升起。AOE束缚+超量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

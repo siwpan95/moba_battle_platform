@@ -1,0 +1,123 @@
+[
+  {
+    "name": "狮爪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "狮爪撕裂",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "塞赫麦特挥出狮爪——狮头女战神的一爪足以开膛破肚。1d10+STR 挥砍伤害，dot 2回合。"
+  },
+  {
+    "name": "瘟疫之息",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "瘟疫蔓延",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "病痛缠身",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "塞赫麦特释放瘟疫之息——拉神曾派她惩罚人类，她的呼吸就是流行病本身。AOE dot+减速。2d6+STR 黯蚀伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "烈日狮吼",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "狮子般的狂暴",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "母狮的爆发力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "塞赫麦特发出烈日狮吼——她的吼声能传到太阳系的边缘，令万物颤抖。增伤+加速各2回合。"
+  },
+  {
+    "name": "拉之眼",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "拉神的怒火化身",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "太阳之眼焚烧一切",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "塞赫麦特展现拉之眼的真容——她是太阳神愤怒的化身，曾几乎毁灭了全人类。AOE恐惧+低血斩杀。2d10+STR 火焰伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

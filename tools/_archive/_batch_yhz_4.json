@@ -1,0 +1,156 @@
+{
+  "天之锁": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "炼狱魔君": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "冰霜巨龙": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "烈焰凤凰": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "heal"
+      ]
+    }
+  },
+  "雷霆战锤": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "accel"
+      ]
+    }
+  },
+  "暗影舞者": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "星辰术士": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "暴风射手": {
+    "role": "marksman",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "圣盾骑士": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "灵魂祭司": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "cleanse"
+      ]
+    }
+  },
+  "魔刃刺客": {
+    "role": "assassin",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "天罚之枪": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "月神祭司": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  },
+  "大地守卫": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "E": [
+        "control"
+      ]
+    }
+  }
+}

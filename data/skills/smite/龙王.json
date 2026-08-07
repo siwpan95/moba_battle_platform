@@ -1,0 +1,124 @@
+[
+  {
+    "name": "龙威",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "龙威所至，血脉冻结",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "龙王双目一瞪——四海之主的目光足以让凡人血液凝固。1d8+INT 寒冷伤害，减速1回合。"
+  },
+  {
+    "name": "呼风唤雨",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "狂风暴雨令敌军寸步难行",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "龙王行云布雨——一声令下，暴雨倾盆、狂风大作，整片战场浸没在水中。AOE减速2回合。2d6+INT 寒冷伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "水晶宫",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "水晶壁垒",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "heal",
+        "desc": "龙宫灵气治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "龙王召唤水晶宫虚影——海底龙宫的亿万水晶折射出七彩屏障。护盾2回合+回复1d8+INT。"
+  },
+  {
+    "name": "四海龙啸",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "冻结",
+        "desc": "四海之水同时沸腾又冻结",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "dot",
+        "desc": "深海寒流侵蚀骨髓",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "四海龙王齐声咆哮——东海、南海、西海、北海同时掀起滔天巨浪，将战场化作极寒深渊。AOE冻结+dot 2回合。4d6+INT 寒冷伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

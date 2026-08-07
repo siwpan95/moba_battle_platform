@@ -1,0 +1,108 @@
+[
+  {
+    "name": "蒙古弯弓",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "蒙古复合弓精准射击！1d8+DEX 穿刺伤害。草原之鹰的箭矢从不虚发。"
+  },
+  {
+    "name": "箭雨覆盖",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "箭雨压制，速度减半"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "蒙古骑射手万箭齐发！2d6+DEX 穿刺伤害，DEX豁免无效。箭雨压制使目标速度减半1回合。"
+  },
+  {
+    "name": "草原疾驰",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "骑射机动，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "蒙古铁骑来去如风！1d8+DEX 穿刺伤害。成吉思汗骑射机动，速度翻倍2回合。"
+  },
+  {
+    "name": "天可汗之鞭",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "天罚标记，目标易伤"
+      },
+      {
+        "type": "aoe",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "范围轰击"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "description": "天可汗降下神罚之鞭！3d8+DEX 穿刺范围伤害，DEX豁免半伤。目标被标记为易伤2回合。"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "龙胆枪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "枪出如龙，1d10+DEX 穿刺伤害。赵云的基础枪法，精准而致命。"
+  },
+  {
+    "name": "七探盘蛇",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "每回合1d4穿刺"
+      }
+    ],
+    "cooldown": 1,
+    "description": "连续七枪如毒蛇吐信！2d8+DEX 穿刺伤害，目标流血2回合。"
+  },
+  {
+    "name": "七进七出",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 1,
+        "desc": "获得临时生命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "长坂坡之勇再现！自身速度翻倍2回合，获得护盾抵御一次伤害。"
+  },
+  {
+    "name": "一身是胆",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+50%"
+      }
+    ],
+    "cooldown": 4,
+    "description": "赵子龙浑身是胆！2d10+DEX 范围穿刺伤害，自身获得加速与增伤2回合。",
+    "aoe_radius": 15
+  }
+]

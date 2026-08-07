@@ -1,667 +1,518 @@
-{
-  "game": "Mobile Legends: Bang Bang",
-  "name_cn": "无尽对决",
-  "total": 132,
-  "heroes": [
-    {
-      "name": "Aamon",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Akai",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Aldous",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Alice",
-      "role": "坦克/法师",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Alpha",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Alucard",
-      "role": "战士/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Angela",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "Argus",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Arlott",
-      "role": "战士/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Atlas",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Aulus",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Aurora",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Badang",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Balmond",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Bane",
-      "role": "战士/法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Barats",
-      "role": "坦克/战士",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Baxia",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Beatrix",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Belerick",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Benedetta",
-      "role": "刺客/战士",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Brody",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Bruno",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Carmilla",
-      "role": "辅助/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Cecilion",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Chang'e",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Chip",
-      "role": "辅助/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Chou",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Cici",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Claude",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Clint",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Cyclops",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Diggie",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "Dyrroth",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Edith",
-      "role": "坦克/射手",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Esmeralda",
-      "role": "坦克/法师",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Estes",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "Eudora",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Fanny",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Faramis",
-      "role": "辅助/法师",
-      "universal_role": "support"
-    },
-    {
-      "name": "Floryn",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "Franco",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Fredrinn",
-      "role": "战士/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Freya",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Gatotkaca",
-      "role": "坦克/战士",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Gloo",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Gord",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Granger",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Grock",
-      "role": "坦克/战士",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Guinevere",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Gusion",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Hanabi",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Hanzo",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Harith",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Harley",
-      "role": "刺客/法师",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Hayabusa",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Helcurt",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Hilda",
-      "role": "战士/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Hylos",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Irithel",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Ixia",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Jawhead",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Johnson",
-      "role": "坦克/辅助",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Joy",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Julian",
-      "role": "刺客/战士",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Kadita",
-      "role": "法师/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Kagura",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Kaja",
-      "role": "辅助/战士",
-      "universal_role": "support"
-    },
-    {
-      "name": "Kalea",
-      "role": "辅助/战士",
-      "universal_role": "support"
-    },
-    {
-      "name": "Karina",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Karrie",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Khaleed",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Khufra",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Kimmy",
-      "role": "射手/法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Lancelot",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Lapu-Lapu",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Layla",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Leomord",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Lesley",
-      "role": "射手/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Ling",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Lolita",
-      "role": "辅助/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Lukas",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Lunox",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Luo Yi",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Lylia",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Marcel",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "Martis",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Masha",
-      "role": "战士/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Mathilda",
-      "role": "辅助/刺客",
-      "universal_role": "support"
-    },
-    {
-      "name": "Melissa",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Minotaur",
-      "role": "坦克/辅助",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Minsitthar",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Miya",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Moskov",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Nana",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Natalia",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Natan",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Nolan",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Novaria",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Obsidia",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Odette",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Paquito",
-      "role": "战士/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Pharsa",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Phoveus",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Popol and Kupa",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Rafaela",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "Roger",
-      "role": "战士/射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "Ruby",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Saber",
-      "role": "刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Selena",
-      "role": "刺客/法师",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Silvanna",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Sora",
-      "role": "战士/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Sun",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Suyou",
-      "role": "刺客/战士",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Terizla",
-      "role": "战士/坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Thamuz",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Tigreal",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Uranus",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Vale",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Valentina",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Valir",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Vexana",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Wanwan",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "X.Borg",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Xavier",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Yi Sun-shin",
-      "role": "刺客/射手",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Yin",
-      "role": "战士/刺客",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Yu Zhong",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Yve",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Zetian",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Zhask",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Zhuxin",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Zilong",
-      "role": "战士/刺客",
-      "universal_role": "assassin"
-    }
-  ]
-}
+[
+  {
+    "name": "Aamon"
+  },
+  {
+    "name": "Akai"
+  },
+  {
+    "name": "Aldous"
+  },
+  {
+    "name": "Alice"
+  },
+  {
+    "name": "Alpha"
+  },
+  {
+    "name": "Alucard"
+  },
+  {
+    "name": "Angela"
+  },
+  {
+    "name": "Arawn"
+  },
+  {
+    "name": "Argus"
+  },
+  {
+    "name": "Arlott"
+  },
+  {
+    "name": "Asura"
+  },
+  {
+    "name": "Atlas"
+  },
+  {
+    "name": "Aulus"
+  },
+  {
+    "name": "Aurora"
+  },
+  {
+    "name": "Azrael"
+  },
+  {
+    "name": "Badang"
+  },
+  {
+    "name": "Balmond"
+  },
+  {
+    "name": "Bane"
+  },
+  {
+    "name": "Barats"
+  },
+  {
+    "name": "Baxia"
+  },
+  {
+    "name": "Beatrix"
+  },
+  {
+    "name": "Belerick"
+  },
+  {
+    "name": "Benedetta"
+  },
+  {
+    "name": "Boreas"
+  },
+  {
+    "name": "Brody"
+  },
+  {
+    "name": "Bruno"
+  },
+  {
+    "name": "Carmilla"
+  },
+  {
+    "name": "Cecilion"
+  },
+  {
+    "name": "Celestia"
+  },
+  {
+    "name": "Chang'e"
+  },
+  {
+    "name": "Chip"
+  },
+  {
+    "name": "Chou"
+  },
+  {
+    "name": "Cici"
+  },
+  {
+    "name": "Cinder"
+  },
+  {
+    "name": "Claude"
+  },
+  {
+    "name": "Clint"
+  },
+  {
+    "name": "Cyclops"
+  },
+  {
+    "name": "Dagon"
+  },
+  {
+    "name": "Diggie"
+  },
+  {
+    "name": "Draven"
+  },
+  {
+    "name": "Dyrroth"
+  },
+  {
+    "name": "Edith"
+  },
+  {
+    "name": "Elara"
+  },
+  {
+    "name": "Erebus"
+  },
+  {
+    "name": "Esmeralda"
+  },
+  {
+    "name": "Estes"
+  },
+  {
+    "name": "Eudora"
+  },
+  {
+    "name": "Fanny"
+  },
+  {
+    "name": "Faramis"
+  },
+  {
+    "name": "Fenris"
+  },
+  {
+    "name": "Fiera"
+  },
+  {
+    "name": "Floryn"
+  },
+  {
+    "name": "Franco"
+  },
+  {
+    "name": "Fredrinn"
+  },
+  {
+    "name": "Freya"
+  },
+  {
+    "name": "Gareth"
+  },
+  {
+    "name": "Gatotkaca"
+  },
+  {
+    "name": "Gloo"
+  },
+  {
+    "name": "Gord"
+  },
+  {
+    "name": "Granger"
+  },
+  {
+    "name": "Grock"
+  },
+  {
+    "name": "Gryphon"
+  },
+  {
+    "name": "Guinevere"
+  },
+  {
+    "name": "Gusion"
+  },
+  {
+    "name": "Hanabi"
+  },
+  {
+    "name": "Hanzo"
+  },
+  {
+    "name": "Harith"
+  },
+  {
+    "name": "Harley"
+  },
+  {
+    "name": "Hayabusa"
+  },
+  {
+    "name": "Helcurt"
+  },
+  {
+    "name": "Hikari"
+  },
+  {
+    "name": "Hilda"
+  },
+  {
+    "name": "Hylos"
+  },
+  {
+    "name": "Igneous"
+  },
+  {
+    "name": "Irithel"
+  },
+  {
+    "name": "Ishara"
+  },
+  {
+    "name": "Ixia"
+  },
+  {
+    "name": "Jade"
+  },
+  {
+    "name": "Jawhead"
+  },
+  {
+    "name": "Johnson"
+  },
+  {
+    "name": "Jorah"
+  },
+  {
+    "name": "Joy"
+  },
+  {
+    "name": "Julian"
+  },
+  {
+    "name": "Kadita"
+  },
+  {
+    "name": "Kagura"
+  },
+  {
+    "name": "Kaida"
+  },
+  {
+    "name": "Kaja"
+  },
+  {
+    "name": "Kalea"
+  },
+  {
+    "name": "Karina"
+  },
+  {
+    "name": "Karrie"
+  },
+  {
+    "name": "Kenshin"
+  },
+  {
+    "name": "Khaleed"
+  },
+  {
+    "name": "Khufra"
+  },
+  {
+    "name": "Kimmy"
+  },
+  {
+    "name": "Kylin"
+  },
+  {
+    "name": "Lancelot"
+  },
+  {
+    "name": "Lapu-Lapu"
+  },
+  {
+    "name": "Layla"
+  },
+  {
+    "name": "Leomord"
+  },
+  {
+    "name": "Lesley"
+  },
+  {
+    "name": "Levi"
+  },
+  {
+    "name": "Ling"
+  },
+  {
+    "name": "Lolita"
+  },
+  {
+    "name": "Lukas"
+  },
+  {
+    "name": "Lunox"
+  },
+  {
+    "name": "Luo Yi"
+  },
+  {
+    "name": "Lylia"
+  },
+  {
+    "name": "Lyria"
+  },
+  {
+    "name": "Marcel"
+  },
+  {
+    "name": "Martis"
+  },
+  {
+    "name": "Masha"
+  },
+  {
+    "name": "Mathilda"
+  },
+  {
+    "name": "Melissa"
+  },
+  {
+    "name": "Minotaur"
+  },
+  {
+    "name": "Minsitthar"
+  },
+  {
+    "name": "Miya"
+  },
+  {
+    "name": "Mizu"
+  },
+  {
+    "name": "Morax"
+  },
+  {
+    "name": "Moskov"
+  },
+  {
+    "name": "Nana"
+  },
+  {
+    "name": "Natalia"
+  },
+  {
+    "name": "Natan"
+  },
+  {
+    "name": "Nolan"
+  },
+  {
+    "name": "Novaria"
+  },
+  {
+    "name": "Nyxus"
+  },
+  {
+    "name": "Obsidia"
+  },
+  {
+    "name": "Odette"
+  },
+  {
+    "name": "Oriana"
+  },
+  {
+    "name": "Paquito"
+  },
+  {
+    "name": "Pharsa"
+  },
+  {
+    "name": "Phoveus"
+  },
+  {
+    "name": "Popol and Kupa"
+  },
+  {
+    "name": "Pyrrhus"
+  },
+  {
+    "name": "Quorra"
+  },
+  {
+    "name": "Rafaela"
+  },
+  {
+    "name": "Riven"
+  },
+  {
+    "name": "Roger"
+  },
+  {
+    "name": "Ruby"
+  },
+  {
+    "name": "Saber"
+  },
+  {
+    "name": "Selena"
+  },
+  {
+    "name": "Shiroe"
+  },
+  {
+    "name": "Silvanna"
+  },
+  {
+    "name": "Sora"
+  },
+  {
+    "name": "Sun"
+  },
+  {
+    "name": "Suyou"
+  },
+  {
+    "name": "Sylas"
+  },
+  {
+    "name": "Talon"
+  },
+  {
+    "name": "Tenma"
+  },
+  {
+    "name": "Terizla"
+  },
+  {
+    "name": "Thamuz"
+  },
+  {
+    "name": "Tigreal"
+  },
+  {
+    "name": "Umbra"
+  },
+  {
+    "name": "Uranus"
+  },
+  {
+    "name": "Vale"
+  },
+  {
+    "name": "Valentina"
+  },
+  {
+    "name": "Valir"
+  },
+  {
+    "name": "Vexana"
+  },
+  {
+    "name": "Vexia"
+  },
+  {
+    "name": "Wanwan"
+  },
+  {
+    "name": "Wraith"
+  },
+  {
+    "name": "X.Borg"
+  },
+  {
+    "name": "Xavier"
+  },
+  {
+    "name": "Yi Sun-shin"
+  },
+  {
+    "name": "Yin"
+  },
+  {
+    "name": "Yu Zhong"
+  },
+  {
+    "name": "Yurei"
+  },
+  {
+    "name": "Yve"
+  },
+  {
+    "name": "Zara"
+  },
+  {
+    "name": "Zetian"
+  },
+  {
+    "name": "Zhask"
+  },
+  {
+    "name": "Zhuxin"
+  },
+  {
+    "name": "Zilong"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "绳索",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "死亡绳索",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "伊什塔布掷出绳索——自杀女神以绳索引导亡魂前往乐园。1d8+WIS 黯蚀伤害，减速1回合。"
+  },
+  {
+    "name": "乐园之邀",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "永恒乐园的诱惑",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "乐园之息",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊什塔布发出乐园之邀——她守护着自杀者的天堂，那里的美好令人无法拒绝。魅惑1回合+回复。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "冥界引渡",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "穿越阴阳",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "亡者无重",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊什塔布穿梭阴阳两界——作为引渡女神，她可以在生与死之间自由穿行。隐身+加速各2回合。"
+  },
+  {
+    "name": "永息之风",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "永息之风带走一切",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "被引渡至永恒",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "伊什塔布吹起永息之风——死亡并非终结，而是前往永恒乐园的旅程。AOE控制+低血斩杀。3d8+WIS 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

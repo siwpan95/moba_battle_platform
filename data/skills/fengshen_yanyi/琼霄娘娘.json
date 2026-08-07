@@ -1,0 +1,121 @@
+[
+  {
+    "name": "戮目珠",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "1d4目盲伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "戮目珠专伤双目，1d10+DEX 穿刺伤害，附带持续伤害1回合。"
+  },
+  {
+    "name": "金蛟剪",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "金蛟剪化为两条蛟龙拦腰剪断！2d8+DEX 挥砍伤害，低血量额外伤害，破甲1回合。"
+  },
+  {
+    "name": "云霄遁",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "遁形"
+      }
+    ],
+    "cooldown": 2,
+    "description": "三仙岛仙法腾云驾雾。速度翻倍2回合并短暂遁形。"
+  },
+  {
+    "name": "三仙岛主",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量斩杀"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "恐惧"
+      }
+    ],
+    "cooldown": 4,
+    "description": "三仙岛琼霄娘娘怒降灾厄！4d6+DEX 挥砍伤害，低血量斩杀，恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    }
+  }
+]

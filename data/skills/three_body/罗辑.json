@@ -1,0 +1,104 @@
+[
+  {
+    "name": "黑暗森林威慑",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "威慑使敌人退避"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+INT 力场伤害。",
+    "approx": true
+  },
+  {
+    "name": "宇宙社会学推演",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "预判",
+        "duration": 2,
+        "desc": "洞察敌意并提升闪避",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "推演战局，提升闪避，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "雪地工程",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "寒冷减速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 寒冷伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 12
+  },
+  {
+    "name": "执剑人宣言",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "威慑",
+        "duration": 0,
+        "desc": "范围内敌人被迫退避",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+INT 力场伤害，同归于尽式威慑。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

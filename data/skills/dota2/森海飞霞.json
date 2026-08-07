@@ -1,0 +1,117 @@
+[
+  {
+    "name": "爆栗出击",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    }
+  },
+  {
+    "name": "野地奇袭",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。目标无法移动1回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "目标无法移动",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "密林奔走",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 2,
+    "description": "1d6+WIS 力场伤害。速度+15尺2回合。短距离传送/移动。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "target": "自身",
+        "duration": 2,
+        "value": 15
+      },
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "name": "一箭穿心",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。目标失去动作1回合。目标生命<30%时伤害翻倍。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "斩杀",
+        "desc": "目标生命<30%时伤害翻倍",
+        "target": "敌方",
+        "threshold": 30
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

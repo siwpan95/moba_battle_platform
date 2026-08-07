@@ -1,0 +1,115 @@
+[
+  {
+    "name": "复仇之刃",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "涅墨西斯挥动复仇之刃——报应女神的剑从不落空。1d10+DEX 挥砍伤害。"
+  },
+  {
+    "name": "天平",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "天平倾斜，标记罪人",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "罪孽的重量",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "涅墨西斯举起天平——在报应女神面前，一切罪行都要被称量并付出代价。标记易伤2回合+减速1回合。"
+  },
+  {
+    "name": "报应之轮",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "报应之轮转动",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "buff",
+        "desc": "正义之怒",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "涅墨西斯转动报应之轮——命运与惩罚在她手中旋转，无人可以逃脱。加速2回合+增伤1回合。"
+  },
+  {
+    "name": "不可逃脱",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "罪人无处可逃",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "报应降临",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "涅墨西斯宣告报应降临——她的审判是最终且不可上诉的，连诸神也无法干涉因果报应。低血斩杀+AOE恐惧。4d6+DEX 黯蚀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

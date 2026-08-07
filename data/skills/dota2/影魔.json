@@ -1,0 +1,71 @@
+[
+  {
+    "name": "毁灭阴影",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "魔王降临",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "魂之挽歌",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+DEX 挥砍伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "支配死灵",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+DEX 挥砍伤害。"
+  }
+]

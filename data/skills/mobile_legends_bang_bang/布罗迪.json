@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Abyss Impact",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    }
+  },
+  {
+    "name": "Corrosive Strike",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。目标速度减半2回合。标记目标，后续攻击增伤3回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      },
+      {
+        "type": "标记",
+        "desc": "标记目标，后续攻击增伤",
+        "target": "敌方",
+        "duration": 3
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "Torn-Apart Memory",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "目标失去动作1回合。短距离传送/移动。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Deadly Blow",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "150尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "4d8+DEX 穿刺伤害。目标生命<30%时伤害翻倍。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "desc": "目标生命<30%时伤害翻倍",
+        "target": "敌方",
+        "threshold": 30
+      }
+    ]
+  }
+]

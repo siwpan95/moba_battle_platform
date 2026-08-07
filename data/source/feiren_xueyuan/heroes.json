@@ -1,187 +1,410 @@
-{
-  "game": "Extraordinary Ones",
-  "name_cn": "非人学园",
-  "total": 36,
-  "heroes": [
-    {
-      "name": "阿蛟",
-      "role": "肉盾/体术",
-      "universal_role": "tank"
-    },
-    {
-      "name": "白骨精",
-      "role": "突袭",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "白灵",
-      "role": "远击",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "百目",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "常乐",
-      "role": "支援",
-      "universal_role": "support"
-    },
-    {
-      "name": "嫦娥",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "大鹏",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "广目",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "红孩儿",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "虎力",
-      "role": "肉盾",
-      "universal_role": "tank"
-    },
-    {
-      "name": "金蝉",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "金角",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "九头虫",
-      "role": "远击",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "雷姆",
-      "role": "突袭",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "雷震子",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "灵感大王",
-      "role": "远击/体术",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "龙马",
-      "role": "体术/突袭",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "鹿哩",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "哪吒",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "牛魔",
-      "role": "远击",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "顺风耳",
-      "role": "远击",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "太白",
-      "role": "远击",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "铁扇",
-      "role": "体术",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "土地",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "魍魉",
-      "role": "支援",
-      "universal_role": "support"
-    },
-    {
-      "name": "悟静",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "晓音",
-      "role": "支援",
-      "universal_role": "support"
-    },
-    {
-      "name": "熊黑",
-      "role": "肉盾",
-      "universal_role": "tank"
-    },
-    {
-      "name": "玄蛛",
-      "role": "灵能",
-      "universal_role": "mage"
-    },
-    {
-      "name": "琰萝",
-      "role": "肉盾",
-      "universal_role": "tank"
-    },
-    {
-      "name": "羊丽",
-      "role": "支援",
-      "universal_role": "support"
-    },
-    {
-      "name": "杨戬",
-      "role": "体术/突袭",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "银角",
-      "role": "体术/突袭",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "雨师",
-      "role": "支援",
-      "universal_role": "support"
-    },
-    {
-      "name": "玉子",
-      "role": "体术/突袭",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "钟馗",
-      "role": "灵能",
-      "universal_role": "mage"
-    }
-  ]
-}
+[
+  {
+    "name": "七仙女"
+  },
+  {
+    "name": "万圣龙王"
+  },
+  {
+    "name": "举钵罗汉"
+  },
+  {
+    "name": "九头驸马"
+  },
+  {
+    "name": "乾闼婆"
+  },
+  {
+    "name": "二十八宿"
+  },
+  {
+    "name": "二郎神"
+  },
+  {
+    "name": "伏羲"
+  },
+  {
+    "name": "伏虎罗汉"
+  },
+  {
+    "name": "共工"
+  },
+  {
+    "name": "刑天"
+  },
+  {
+    "name": "判官"
+  },
+  {
+    "name": "十八罗汉"
+  },
+  {
+    "name": "千里眼"
+  },
+  {
+    "name": "吉祥天"
+  },
+  {
+    "name": "后羿"
+  },
+  {
+    "name": "哪吒三太子"
+  },
+  {
+    "name": "唐僧_FL"
+  },
+  {
+    "name": "喜神"
+  },
+  {
+    "name": "四大天王"
+  },
+  {
+    "name": "地煞"
+  },
+  {
+    "name": "地藏"
+  },
+  {
+    "name": "地藏王"
+  },
+  {
+    "name": "坐鹿罗汉"
+  },
+  {
+    "name": "城隍"
+  },
+  {
+    "name": "夜叉"
+  },
+  {
+    "name": "大势至"
+  },
+  {
+    "name": "大黑天"
+  },
+  {
+    "name": "天罡"
+  },
+  {
+    "name": "太上老君"
+  },
+  {
+    "name": "太白金星"
+  },
+  {
+    "name": "夸父"
+  },
+  {
+    "name": "奔波儿灞"
+  },
+  {
+    "name": "女娲"
+  },
+  {
+    "name": "如意真仙"
+  },
+  {
+    "name": "孔雀"
+  },
+  {
+    "name": "孙悟空_FL"
+  },
+  {
+    "name": "孟婆"
+  },
+  {
+    "name": "寿星"
+  },
+  {
+    "name": "巨灵神"
+  },
+  {
+    "name": "布袋罗汉"
+  },
+  {
+    "name": "帝释"
+  },
+  {
+    "name": "应龙"
+  },
+  {
+    "name": "开心罗汉"
+  },
+  {
+    "name": "悟空"
+  },
+  {
+    "name": "托塔天王"
+  },
+  {
+    "name": "托塔罗汉"
+  },
+  {
+    "name": "拉姆"
+  },
+  {
+    "name": "挖耳罗汉"
+  },
+  {
+    "name": "摩睺罗伽"
+  },
+  {
+    "name": "文殊"
+  },
+  {
+    "name": "无常"
+  },
+  {
+    "name": "日光菩萨"
+  },
+  {
+    "name": "普贤"
+  },
+  {
+    "name": "月光菩萨"
+  },
+  {
+    "name": "有巢"
+  },
+  {
+    "name": "杏仙"
+  },
+  {
+    "name": "梵天"
+  },
+  {
+    "name": "毗湿奴"
+  },
+  {
+    "name": "沉思罗汉"
+  },
+  {
+    "name": "沙和尚"
+  },
+  {
+    "name": "湿婆"
+  },
+  {
+    "name": "灞波儿奔"
+  },
+  {
+    "name": "灵吉菩萨"
+  },
+  {
+    "name": "灶君"
+  },
+  {
+    "name": "燧人"
+  },
+  {
+    "name": "牛魔王_FL"
+  },
+  {
+    "name": "狮驼"
+  },
+  {
+    "name": "狮驼王"
+  },
+  {
+    "name": "猪八戒"
+  },
+  {
+    "name": "玉兔"
+  },
+  {
+    "name": "玉皇"
+  },
+  {
+    "name": "玉面公主"
+  },
+  {
+    "name": "王母"
+  },
+  {
+    "name": "电母"
+  },
+  {
+    "name": "白象"
+  },
+  {
+    "name": "白面狐狸"
+  },
+  {
+    "name": "白面狐狸_FL"
+  },
+  {
+    "name": "白骨"
+  },
+  {
+    "name": "白鹿精"
+  },
+  {
+    "name": "白龙马"
+  },
+  {
+    "name": "百眼魔君"
+  },
+  {
+    "name": "看门罗汉"
+  },
+  {
+    "name": "祝融_FL"
+  },
+  {
+    "name": "神农_FL"
+  },
+  {
+    "name": "禄神"
+  },
+  {
+    "name": "福神"
+  },
+  {
+    "name": "笑狮罗汉"
+  },
+  {
+    "name": "紧那罗"
+  },
+  {
+    "name": "红孩"
+  },
+  {
+    "name": "红孩儿_FL"
+  },
+  {
+    "name": "罗刹"
+  },
+  {
+    "name": "老鼠精"
+  },
+  {
+    "name": "芭蕉罗汉"
+  },
+  {
+    "name": "虚空藏"
+  },
+  {
+    "name": "虾兵"
+  },
+  {
+    "name": "蚩尤_FL"
+  },
+  {
+    "name": "蜘蛛"
+  },
+  {
+    "name": "蜘蛛精_FL"
+  },
+  {
+    "name": "蝎子"
+  },
+  {
+    "name": "蝎子精_FL"
+  },
+  {
+    "name": "蟹将"
+  },
+  {
+    "name": "观音"
+  },
+  {
+    "name": "象王"
+  },
+  {
+    "name": "财神"
+  },
+  {
+    "name": "赛太岁"
+  },
+  {
+    "name": "辩才天"
+  },
+  {
+    "name": "过江罗汉"
+  },
+  {
+    "name": "迦楼罗"
+  },
+  {
+    "name": "金刚意"
+  },
+  {
+    "name": "金刚手"
+  },
+  {
+    "name": "金刚拳"
+  },
+  {
+    "name": "金刚语"
+  },
+  {
+    "name": "金翅"
+  },
+  {
+    "name": "金翅大鹏_FL"
+  },
+  {
+    "name": "金角大王"
+  },
+  {
+    "name": "铁扇公主_FL"
+  },
+  {
+    "name": "银角大王"
+  },
+  {
+    "name": "长眉罗汉"
+  },
+  {
+    "name": "门神"
+  },
+  {
+    "name": "阎罗"
+  },
+  {
+    "name": "阿修罗"
+  },
+  {
+    "name": "降龙罗汉"
+  },
+  {
+    "name": "除盖障"
+  },
+  {
+    "name": "雷公"
+  },
+  {
+    "name": "青牛精"
+  },
+  {
+    "name": "青狮"
+  },
+  {
+    "name": "静坐罗汉"
+  },
+  {
+    "name": "风伯"
+  },
+  {
+    "name": "骑象罗汉"
+  },
+  {
+    "name": "鬼子母"
+  },
+  {
+    "name": "黄眉大王"
+  },
+  {
+    "name": "黄袍怪"
+  },
+  {
+    "name": "黑白"
+  },
+  {
+    "name": "龙王"
+  },
+  {
+    "name": "龟丞相"
+  }
+]

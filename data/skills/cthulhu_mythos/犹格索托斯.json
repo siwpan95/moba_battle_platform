@@ -1,0 +1,124 @@
+[
+  {
+    "name": "时空裂隙",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。犹格索托斯以时空连续体中的一道裂隙攻击。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "全知之球",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被万物的知识禁锢"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。犹格索托斯以知晓过去未来一切的全知之球禁锢敌人1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "维度漫步",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "跨维度位移25尺"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。犹格索托斯从容漫步于所有维度之间。加速1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "万物归一",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "时空坍缩"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。犹格索托斯将万物归于一点。眩晕1回合+破甲2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

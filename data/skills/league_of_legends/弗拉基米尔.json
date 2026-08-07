@@ -1,0 +1,126 @@
+[
+  {
+    "name": "鲜血转换",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "吸取目标生命力回复自身",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "强化：下一次鲜血转换伤害+50%且治疗翻倍",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "从目标体内抽取鲜血精华，造成1d8+INT黯蚀伤害并回复等量生命值。每施放两次后，第三次进入猩红冲刺：伤害+50%且治疗翻倍，移动速度短暂提升。"
+  },
+  {
+    "name": "血红之池",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "化为血池，无法被选中",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "slow",
+        "desc": "血池中的敌人被减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "将自己溶解为一滩不可被选中（免疫一切攻击与技能）的血池，持续1回合。站在血池中的敌人受到2d6+INT黯蚀伤害并被减速。血池结束时弗拉基米尔重新凝聚。"
+  },
+  {
+    "name": "血之潮汐",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "所有被击中的敌人减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "持续蓄力——消耗自身生命来凝聚一颗血球，释放时对周围所有敌人造成2d6+INT黯蚀伤害。蓄力越久伤害越高（最高翻倍），但自身消耗也越大。被命中的敌人减速2回合。CON豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "血之瘟疫",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "被瘟疫感染的敌人受到持续伤害",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "每个被感染的敌人为你回复生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "在目标区域引爆一场猩红瘟疫，感染范围内的所有敌人。造成4d6+INT黯蚀伤害。受感染的敌人在2回合内每回合受到额外1d6黯蚀伤害，每个被感染的敌人为你回复1d4生命值。CON豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

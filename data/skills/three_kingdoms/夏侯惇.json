@@ -1,0 +1,110 @@
+[
+  {
+    "name": "刚烈斩",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "大开大合的重斩，1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "啖睛之怒",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复2d6生命"
+      }
+    ],
+    "cooldown": 1,
+    "description": "拔矢啖睛，怒气冲天！2d8+STR 挥砍伤害，自身增伤2回合并回复生命。"
+  },
+  {
+    "name": "刚勇无前",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "突进"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复少量生命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "不顾伤势勇往直前！1d8+STR 挥砍伤害，获得加速并回复少量生命。"
+  },
+  {
+    "name": "独目战鬼",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量斩杀"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+50%"
+      }
+    ],
+    "cooldown": 4,
+    "description": "独目将军的怒火席卷战场！2d10+STR 挥砍范围伤害，斩杀低血量目标，自身增伤2回合。",
+    "aoe_radius": 15
+  }
+]

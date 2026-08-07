@@ -1,0 +1,103 @@
+[
+  {
+    "name": "ROOM·屠宰场",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 2,
+        "desc": "短距位移加速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+INT 力场伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "注射射击",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 毒素伤害。",
+    "approx": true
+  },
+  {
+    "name": "ROOM·空间置换",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "duration": 1,
+        "desc": "瞬移到 ROOM 内位置",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "在 ROOM 内瞬移换位。",
+    "approx": true
+  },
+  {
+    "name": "伽马刀",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "duration": 0,
+        "desc": "对要害造成额外伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+INT 力场伤害，攻击要害。",
+    "approx": true
+  }
+]

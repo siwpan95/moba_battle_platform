@@ -1,0 +1,119 @@
+[
+  {
+    "name": "百草",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+INT 火焰伤害。恢复生命。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "target": "自身",
+        "value_formula": "1d8+WIS"
+      }
+    ]
+  },
+  {
+    "name": "神农鼎",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "3d6+INT 寒冷伤害。获得临时生命2回合。受到伤害减半2回合。",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA"
+      },
+      {
+        "type": "减伤",
+        "desc": "受到伤害减半",
+        "target": "自身",
+        "duration": 2,
+        "value": 50
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "尝百草",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "恢复生命。恢复生命。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "target": "自身",
+        "value_formula": "1d8+WIS"
+      },
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "target": "自身",
+        "value_formula": "1d6+WIS"
+      }
+    ]
+  },
+  {
+    "name": "神农本草经",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "6d6+INT 闪电伤害。恢复生命。移除负面效果。",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "target": "自身",
+        "value_formula": "1d8+WIS"
+      },
+      {
+        "type": "净化",
+        "desc": "移除负面效果",
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

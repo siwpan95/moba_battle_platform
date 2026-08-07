@@ -1,0 +1,106 @@
+[
+  {
+    "name": "暗裔利刃",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "造成伤害的30%转化为自身生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "挥舞巨剑发动三连斩，剑锋边缘造成额外伤害。造成1d10+STR挥砍伤害，伤害的30%转化为自身生命值。每次斩击范围逐渐收窄，剑锋命中伤害提升50%。"
+  },
+  {
+    "name": "恶火束链",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "被锁链拖拽减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "向前方挥出一道恶火锁链，命中首个敌人后嵌入其体内。造成2d8+STR挥砍伤害。若目标在2回合内未能脱离锁链范围，则被拖拽回原位并再次受到伤害。STR豁免成功则挣脱锁链。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "暗影冲决",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "向目标方向突进15尺",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "化为暗影向前突进15尺，同时挥剑横扫路径上的敌人。造成1d8+STR挥砍伤害。被动：对敌方英雄造成伤害时回复少量生命值。"
+  },
+  {
+    "name": "大灭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "体型增大，攻击力+50%，获得飞行能力",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "heal",
+        "desc": "受到致命伤害时回复50%生命（限一次）",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "释放暗裔真身，体型暴增并展开恶魔双翼。造成2d10+STR黯蚀伤害。攻击力+50%，获得飞行能力，持续3回合。持续期间若受到致命伤害，原地复活并回复50%生命值（限一次）。"
+  }
+]

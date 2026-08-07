@@ -1,0 +1,132 @@
+[
+  {
+    "name": "锻炉之锤",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被重锤砸晕"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。赫菲斯托斯以奥林匹斯锻炉中的巨锤砸击。减速1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "青铜护甲",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "神造护甲",
+        "value": "2d8+STR"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。赫菲斯托斯为自己打造青铜护甲。护盾2回合。",
+    "approx": true
+  },
+  {
+    "name": "机械之网",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被金网缠住"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。赫菲斯托斯掷出他打造的金色机械之网。束缚1回合+破甲1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "奥林匹斯锻炉",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被锻炉之火震慑"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "神造护盾-50%伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d8+STR 火焰伤害。赫菲斯托斯释放锻炉的全部烈焰。范围眩晕1回合+自身减伤50%持续2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "name": "鹿角冲撞",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "科尔努诺斯以鹿角冲撞——兽主的角冠是最原始的武器。1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "兽群召唤",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "野兽之潮",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "科尔努诺斯召唤兽群——森林中所有的野兽同时回应兽主的号令。AOE减速2回合。2d8+STR 挥砍伤害。",
+    "aoe_radius": 25
+  },
+  {
+    "name": "森林守护",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "树皮铠甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "heal",
+        "desc": "森林呼吸",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+STR"
+      }
+    ],
+    "cooldown": 2,
+    "description": "科尔努诺斯扎根大地——他的双腿化为树根，与整片森林合为一体。护盾+回复。"
+  },
+  {
+    "name": "荒野之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "兽主的咆哮",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "被万兽撕碎",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "科尔努诺斯释放荒野之怒——所有掠食者的力量在他身上同时爆发。AOE恐惧+低血斩杀。2d10+STR 穿刺伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

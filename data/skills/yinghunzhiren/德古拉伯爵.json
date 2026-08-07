@@ -1,0 +1,137 @@
+[
+  {
+    "name": "血之盛宴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+INT 火焰伤害。造成伤害的30%转化为治疗。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "蝙蝠化身",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "3d6+INT 寒冷伤害。速度+15尺2回合。短距离传送/移动。变身为强化形态3回合。",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "target": "自身",
+        "duration": 2,
+        "value": 15
+      },
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      },
+      {
+        "type": "变身",
+        "desc": "变身为强化形态",
+        "target": "敌方",
+        "duration": 3
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "暗夜降临",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "目标速度减半2回合。目标陷入目盲1回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      },
+      {
+        "type": "目盲",
+        "desc": "目标陷入目盲",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "德古拉之怒",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "6d6+INT 闪电伤害。目标陷入恐惧1回合。造成伤害的30%转化为治疗。",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "目标陷入恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "WIS"
+      },
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

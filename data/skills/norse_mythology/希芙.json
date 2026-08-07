@@ -1,0 +1,116 @@
+[
+  {
+    "name": "金麦之箭",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。希芙以丰收女神之力射出金麦之箭。",
+    "approx": true
+  },
+  {
+    "name": "丰收祝福",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "回复2d8+WIS",
+        "value": "2d8+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。希芙赐予大地丰收般的祝福。友方回复2d8+WIS生命。",
+    "approx": true
+  },
+  {
+    "name": "金发之盾",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "金发编织的护盾",
+        "value": "1d10+WIS"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "护甲+2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。希芙以矮人打造的金发编织护盾。护盾2回合+护甲+2。",
+    "approx": true
+  },
+  {
+    "name": "大地丰穰",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "全体回复3d6+WIS",
+        "value": "3d6+WIS"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 3,
+        "desc": "全体生命上限+20%"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。希芙释放大地的丰穰之力。全体回复3d6+WIS+生命上限+20%持续3回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

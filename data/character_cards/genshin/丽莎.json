@@ -1,5 +1,5 @@
 {
-  "card_id": "GEN-1517",
+  "card_id": "genshin:丽莎",
   "hero": {
     "name": "丽莎",
     "name_en": "Lisa",
@@ -109,102 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "丽莎·雷霆之矛",
-      "key": "Q",
-      "type": "法术",
-      "action": "降下闪电",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "雷电"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "stun",
-          "desc": "麻痹"
-        }
-      ],
-      "cooldown": 6,
-      "description": "降下闪电（单体）。麻痹",
-      "approx": true
-    },
-    {
-      "name": "丽莎·奥术护盾",
-      "key": "W",
-      "type": "法术",
-      "action": "凝结护盾",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "target": "自身",
-          "kind": "shield",
-          "desc": "护盾"
-        }
-      ],
-      "cooldown": 4,
-      "description": "凝结护盾（自身）。护盾",
-      "approx": true
-    },
-    {
-      "name": "丽莎·奥能飞弹",
-      "key": "E",
-      "type": "法术",
-      "action": "发射魔法飞弹",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "force",
-          "desc": "力场伤害"
-        }
-      ],
-      "cooldown": 3,
-      "description": "发射魔法飞弹（单体）。力场伤害",
-      "approx": true
-    },
-    {
-      "name": "丽莎·元素风暴",
-      "key": "R",
-      "type": "法术",
-      "action": "召唤元素席卷",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "aoe",
-          "desc": "范围伤害"
-        }
-      ],
-      "cooldown": 7,
-      "description": "召唤元素席卷（区域）。范围伤害",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "GEN-1517"
 }

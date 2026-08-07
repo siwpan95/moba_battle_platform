@@ -1,0 +1,112 @@
+[
+  {
+    "name": "纺线",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "弗丽格拈起命运之线——北欧天后的指尖缠绕着万物的命运。1d8+WIS 力场伤害。"
+  },
+  {
+    "name": "预知",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "预知危险，提前防御",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "命运之力加持",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "弗丽格窥视未来——她能预知一切却不曾吐露，这份沉默是她最大的力量与悲哀。护盾+增伤各2回合。"
+  },
+  {
+    "name": "天空之帷",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "天空之帷如云般笼罩",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "弗丽格展开天空之帷——她以云为衣、以星为冠，将整片天空化作自己的披风。AOE减速2回合。2d6+WIS 光耀伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "芬撒里尔之光",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "芬撒里尔的圣光",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      },
+      {
+        "type": "致盲",
+        "desc": "天后的光芒",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "弗丽格召唤芬撒里尔之光——她的海中宫殿光华万丈，连巴德尔之死的哀伤也被这份光明抚慰。AOE致盲+大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

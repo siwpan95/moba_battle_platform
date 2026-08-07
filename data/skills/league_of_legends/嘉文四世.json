@@ -1,0 +1,122 @@
+[
+  {
+    "name": "巨龙撞击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "长枪穿透降低护甲",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "黄金圣盾",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "圣盾光环护体",
+        "duration": 2,
+        "value": 30,
+        "target": "自身"
+      },
+      {
+        "type": "slow",
+        "desc": "光环减速周围敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。",
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "德邦军旗",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "掷出军旗，可再次激活突进军旗处",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "军旗光环提升友军攻速",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。"
+  },
+  {
+    "name": "天崩地裂",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "跃起砸地形成环形壁垒困住敌人",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

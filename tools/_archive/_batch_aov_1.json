@@ -1,0 +1,178 @@
+{
+  "Billow": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Biron": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Bolt Baron": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "Celica": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "vuln"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "Charlotte": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "Dolia": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  },
+  "Dyadia": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "Edras": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Erin": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "Flowborn": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Goverra": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "Heino": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "Kahlii": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Tamyn": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "The Flash": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "invis"
+      ]
+    }
+  },
+  "Obsidio": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "vuln"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  }
+}

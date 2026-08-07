@@ -1,0 +1,139 @@
+[
+  {
+    "name": "极寒突袭",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "骑猪冲锋",
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "撞击击飞",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "凛冬之怒",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "连枷旋转两段横扫",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "第二段减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 寒冷伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "永冻领域",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "冰冻标记叠加眩晕",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "永久冻土减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "极冰寒狱",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "投掷极冰套索远距离眩晕",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "冰狱风暴减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d8+STR 寒冷伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

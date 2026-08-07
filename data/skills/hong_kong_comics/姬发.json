@@ -1,0 +1,132 @@
+[
+  {
+    "name": "先天乾坤功·乾坤一击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "乾坤之力震退敌手",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "周武王姬发以先天乾坤功轰出——乾坤一击定江山！2d6+STR 钝击伤害，STR豁免失败击退10尺。"
+  },
+  {
+    "name": "天剑·天帝之威",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "天帝神剑之威令敌胆寒",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "姬发挥动天帝之剑——剑出如天命降临！2d8+STR 光耀伤害，15尺范围。WIS豁免失败恐惧1回合。冷却1回合。"
+  },
+  {
+    "name": "浑天宝鉴·血穹苍",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "3*LVL+WIS",
+        "desc": "女娲神功护体",
+        "target": "自身"
+      },
+      {
+        "type": "全属性强化",
+        "duration": 3,
+        "value": "PROF",
+        "desc": "浑天宝鉴提升天子命格",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "姬发运转女娲所传浑天宝鉴——血穹苍！天子命格大放光明。获得3×LVL+WIS护盾，全属性+PROF。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "浑天宝鉴·玄宇宙·天子降临",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "80尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "天子降临众生俯首",
+        "target": "敌方"
+      },
+      {
+        "type": "治疗",
+        "value_formula": "2d8+WIS",
+        "desc": "天道之力疗愈众生",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "姬发以浑天宝鉴最高境界玄宇宙——天子降临，天道归一！5d8+WIS 光耀伤害，30尺范围。WIS豁免失败眩晕2回合。自身恢复2d8+WIS生命。冷却4回合。"
+  }
+]

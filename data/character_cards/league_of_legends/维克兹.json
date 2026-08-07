@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1985",
+  "card_id": "league_of_legends:维克兹",
+  "legacy_card_id": "LEA-1117",
   "hero": {
     "name": "维克兹",
     "name_en": "Vel'Koz",
@@ -18,6 +19,7 @@
   "difficulty": 3,
   "playstyle_tags": [
     "AOE",
+    "变身",
     "控制",
     "远程"
   ],
@@ -107,30 +109,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "大招",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 4,
-      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。"
-    }
-  ]
+  }
 }

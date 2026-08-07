@@ -1,0 +1,85 @@
+[
+  {
+    "name": "泪如泉涌",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "duration": 1,
+        "dc_attr": "STR",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。目标被击飞，失去动作1回合。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "叹息水流",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "洛神降临",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "凝泪成冰",
+    "key": "P",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+INT 寒冷伤害。"
+  }
+]

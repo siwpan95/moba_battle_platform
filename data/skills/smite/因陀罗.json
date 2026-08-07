@@ -1,0 +1,110 @@
+[
+  {
+    "name": "金刚杵",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "因陀罗挥动金刚杵——这柄雷电之杵由工匠神陀湿多用仙人骨骸锻造，无坚不摧。1d10+STR 闪电伤害。"
+  },
+  {
+    "name": "因陀罗网",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "因陀罗网笼罩，无处可逃",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "因陀罗撒出因陀罗网——这张天网无穷无尽，每个网结上都嵌着一颗宝珠，宝珠中又映出整张网。AOE减速。2d8+STR 闪电伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "天帝坐骑",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "白象爱罗婆多冲锋",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "buff",
+        "desc": "天帝之威",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "因陀罗驾白象爱罗婆多冲锋——这头四牙白象踏碎云层，所过之处皆为天帝的领地。加速2回合+增伤1回合。"
+  },
+  {
+    "name": "雷帝降世",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "天帝之怒斩杀不敬者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "雷帝真身震慑",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "因陀罗降下雷帝之怒——他曾斩杀巨龙弗栗多，释放被囚禁的水流。如今这份雷电之力倾泻于战场。低血斩杀+AOE恐惧。2d10+STR 闪电伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

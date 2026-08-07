@@ -1,5 +1,5 @@
 {
-  "card_id": "EXT-1480",
+  "card_id": "feiren_xueyuan:百目",
   "hero": {
     "name": "百目",
     "name_en": "",
@@ -110,74 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "火球术",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "火球术（Q）：单体法伤。"
-    },
-    {
-      "name": "冰霜新星",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "冰霜新星（W）：范围冻结。"
-    },
-    {
-      "name": "闪现",
-      "key": "E",
-      "type": "法术",
-      "action": "附赠动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "雷鸣"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "闪现（E）：短距传送。"
-    },
-    {
-      "name": "陨石天降",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "陨石天降（R）：大范围轰炸。造成 3d12+INT 力场伤害。"
-    }
-  ]
+  "legacy_card_id": "EXT-1480"
 }

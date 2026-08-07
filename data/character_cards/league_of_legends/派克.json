@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-2008",
+  "card_id": "league_of_legends:派克",
+  "legacy_card_id": "LEA-1140",
   "hero": {
     "name": "派克",
     "name_en": "Pyke",
@@ -107,24 +108,5 @@
     "hp": 60,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能二",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "26+DEX 伤害。冷却1回合。"
-    }
-  ]
+  }
 }

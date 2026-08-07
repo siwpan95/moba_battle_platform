@@ -1,0 +1,99 @@
+[
+  {
+    "name": "黄泉颤抖",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+INT 火焰伤害。目标速度减半2回合。攻击速度+30%2回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      },
+      {
+        "type": "攻速强化",
+        "desc": "攻击速度+30%",
+        "target": "自身",
+        "duration": 2,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "灵魂超度",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "3d6+INT 寒冷伤害。",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "陵卫斗篷",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "获得临时生命2回合。受到伤害减半2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA"
+      },
+      {
+        "type": "减伤",
+        "desc": "受到伤害减半",
+        "target": "自身",
+        "duration": 2,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "召唤佣兽",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "6d6+INT 闪电伤害。",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "aoe_radius": 20
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Leonin Crystal",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+DEX 穿刺伤害。目标速度减半2回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "name": "Meow, Rhythm of Joy!",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    }
+  },
+  {
+    "name": "Leonin's Roar",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "目标失去动作1回合。目标被推开10尺1回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Beat Energy",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "5d6+DEX 穿刺伤害。速度+15尺2回合。",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "target": "自身",
+        "duration": 2,
+        "value": 15
+      }
+    ]
+  }
+]

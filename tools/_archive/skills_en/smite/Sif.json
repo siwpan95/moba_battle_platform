@@ -1,0 +1,117 @@
+[
+  {
+    "name": "金发之刃",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "希芙挥出金发之刃——她那头矮人锻造的黄金长发比任何刀剑都锋利。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "收获",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "大地收获之力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+STR"
+      },
+      {
+        "type": "buff",
+        "desc": "丰收祝福",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "希芙召唤大地收获之力——作为丰收女神，她的每一次呼吸都让麦穗低垂。回复2d6+STR+增伤1回合。"
+  },
+  {
+    "name": "盾女冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "盾女冲锋",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "sunder",
+        "desc": "盾击碎甲",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "希芙发起盾女冲锋——她是雷神索尔的妻子，也是维京盾女中的翘楚。加速2回合+破甲1回合。"
+  },
+  {
+    "name": "大地之母",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "大地裂开吞噬敌人",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "shield",
+        "desc": "大地之盾",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      }
+    ],
+    "cooldown": 4,
+    "description": "希芙唤醒大地之力——麦田在脚下翻涌，岩石从地底升起形成壁垒。AOE击倒+护盾2回合。2d10+STR 钝击伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

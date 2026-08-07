@@ -1,0 +1,178 @@
+{
+  "楚虞": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "灵梦": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "雅儿贝德": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "精卫填海": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "铁扇公主": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "普罗米修斯": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "安兹乌尔恭": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "曹焱兵": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "阿修罗": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "鹤道大师": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "cleanse"
+      ]
+    }
+  },
+  "东方月初": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "涂山红红": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "白月初": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "涂山苏苏": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  },
+  "米莉姆": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "利姆鲁": {
+    "role": "mage",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  }
+}

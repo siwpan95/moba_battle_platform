@@ -1,5 +1,6 @@
 {
-  "card_id": "DEM-1342",
+  "card_id": "demon_slayer:蝴蝶忍",
+  "legacy_card_id": "DEM-1005",
   "hero": {
     "name": "蝴蝶忍",
     "name_en": "Shinobu Kocho",
@@ -123,7 +124,14 @@
         "bonus_attr": "DEX",
         "type": "毒素"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "中毒",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "毒素持续伤害"
+        }
+      ],
       "cooldown": 0,
       "description": "2d6+DEX 毒素伤害。",
       "approx": true
@@ -141,7 +149,14 @@
         "bonus_attr": "DEX",
         "type": "毒素"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "中毒",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "毒素持续伤害"
+        }
+      ],
       "cooldown": 1,
       "description": "2d6+DEX 毒素伤害。",
       "approx": true

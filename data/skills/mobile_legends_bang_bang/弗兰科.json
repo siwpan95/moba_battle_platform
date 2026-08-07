@@ -1,0 +1,89 @@
+[
+  {
+    "name": "铁钩",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "钩拽",
+        "desc": "将目标拉向自己",
+        "dc_attr": "DEX",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。将目标拉向自己。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "怒火冲击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d10+STR 火焰伤害。目标速度减半2回合。"
+  },
+  {
+    "name": "血腥猎杀",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "废土之力",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。"
+  }
+]

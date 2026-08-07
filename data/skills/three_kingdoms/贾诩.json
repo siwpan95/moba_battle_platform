@@ -1,0 +1,132 @@
+[
+  {
+    "name": "毒士谋",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "中毒1d4"
+      }
+    ],
+    "cooldown": 0,
+    "description": "毒士贾诩的阴毒计谋，1d8+INT 力场伤害，中毒2回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "乱武之计",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "混乱"
+      }
+    ],
+    "cooldown": 1,
+    "description": "乱武之计，天下大乱！2d6+INT 力场范围伤害，混乱1回合。WIS豁免无效。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "文和乱法",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "剧毒1d8"
+      },
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 2,
+    "description": "「文和乱法，天下奇谋！」目标中毒2回合并易伤1回合。CON豁免无效。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "算无遗策",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "混乱/恐惧"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "剧毒2d4"
+      }
+    ],
+    "cooldown": 4,
+    "description": "贾诩一生算无遗策！4d6+INT 力场范围伤害，混乱2回合、剧毒2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 25
+  }
+]

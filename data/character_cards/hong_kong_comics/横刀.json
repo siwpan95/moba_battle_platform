@@ -1,0 +1,250 @@
+{
+  "card_id": "hong_kong_comics:横刀",
+  "legacy_card_id": "港漫群-1037",
+  "hero": {
+    "name": "横刀",
+    "name_en": "Heng Dao",
+    "alias": "霸气刀客·三大高手",
+    "title": "霸气刀客·三大高手"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "战士/刀客",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "刀剑笑",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "横刀诀·一刀两断",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "破甲",
+          "desc": "横刀之势无可阻挡，无视3点护甲",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "霸气刀客横刀——一刀之下万物两分。1d12+STR 挥砍伤害，无视3点护甲加值。"
+    },
+    {
+      "name": "横刀诀·刀霸天下",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "20尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "击飞",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "霸刀劲力轰飞目标",
+          "target": "敌方"
+        },
+        {
+          "type": "流血",
+          "duration": 2,
+          "dmg_per_turn": "1d6",
+          "desc": "霸道刀伤极难愈合",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "横刀霸绝天下的一刀——刀出如虎啸山林！2d10+STR 挥砍伤害，20尺刀气。STR豁免失败击飞15尺+流血2回合(每回合1d6)。冷却1回合。"
+    },
+    {
+      "name": "怒意·血战不休",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "狂暴",
+          "duration": 3,
+          "desc": "怒意燃烧战力飙升至极限，攻速+60%",
+          "target": "自身"
+        },
+        {
+          "type": "治疗",
+          "value_formula": "1d8+CON",
+          "desc": "战意昂扬激发潜能",
+          "target": "自身"
+        },
+        {
+          "type": "免疫恐惧",
+          "duration": 3,
+          "desc": "血战之志无所畏惧",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "横刀燃起无尽战意——血战不休直至敌亡！攻速+60%，恢复1d8+CON生命，免疫恐惧。持续3回合。冷却2回合。"
+    },
+    {
+      "name": "终极横刀诀·天崩地裂",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 2,
+          "dc_attr": "CON",
+          "desc": "天崩之威震晕群敌",
+          "target": "敌方"
+        },
+        {
+          "type": "击飞",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "地裂之力轰飞一切",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "横刀终极一刀——天崩地裂！刀势之猛仿若开天辟地。4d12+STR 挥砍伤害，25尺范围。CON豁免失败眩晕2回合+STR豁免失败击飞25尺。冷却4回合。"
+    }
+  ]
+}

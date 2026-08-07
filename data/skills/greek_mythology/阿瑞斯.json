@@ -1,0 +1,119 @@
+[
+  {
+    "name": "嗜血之矛",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 1,
+        "desc": "嗜血+3伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。阿瑞斯以嗜血之矛攻击，每一次见血都让他更狂暴。",
+    "approx": true
+  },
+  {
+    "name": "战吼",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被战吼震慑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 雷鸣伤害。阿瑞斯发出震天的战吼。恐惧1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "战车猛冲",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "青铜战车突进30尺"
+      },
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 1,
+        "desc": "汲取鲜血"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。阿瑞斯驾青铜战车冲锋。突进+吸血1回合。",
+    "approx": true
+  },
+  {
+    "name": "血怒之狂",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 3,
+        "desc": "狂暴攻击力+6"
+      },
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 2,
+        "desc": "嗜血汲取"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。阿瑞斯进入血怒狂暴。增益3回合+吸血2回合。",
+    "approx": true
+  }
+]

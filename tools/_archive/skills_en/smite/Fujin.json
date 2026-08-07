@@ -1,0 +1,115 @@
+[
+  {
+    "name": "风袋",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "风神解开风袋一角——利刃般的狂风呼啸而出。1d8+INT 挥砍伤害。"
+  },
+  {
+    "name": "台风",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "狂风之中寸步难行",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "风神完全解开风袋——台风过境，战场化为狂风的游乐场。AOE减速2回合。2d6+INT 挥砍伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "疾风步",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "驾驭疾风瞬息千里",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "invis",
+        "desc": "融入风中无形无迹",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "风神驾驭疾风——风即是他的躯体，无人能捕捉风的踪迹。加速2回合+隐身1回合。"
+  },
+  {
+    "name": "神风",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "神风将敌人卷上高空",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "风刃切碎盔甲",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "风神释放神风——传说中摧毁蒙古舰队的飓风再现，钢铁战舰亦如纸片般被撕裂。AOE击飞+破甲。4d6+INT 挥砍伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

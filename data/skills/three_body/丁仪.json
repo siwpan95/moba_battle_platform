@@ -1,0 +1,109 @@
+[
+  {
+    "name": "宏原子撞击",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      },
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "物理法则穿透防御"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+INT 力场伤害。",
+    "approx": true
+  },
+  {
+    "name": "强相互作用",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "物理法则穿透防御"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。",
+    "approx": true
+  },
+  {
+    "name": "量子涨落",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "闪避",
+        "duration": 1,
+        "desc": "获得短暂相位闪避",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "获得相位闪避，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "物理规律改写",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "物理法则穿透防御"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+INT 力场伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

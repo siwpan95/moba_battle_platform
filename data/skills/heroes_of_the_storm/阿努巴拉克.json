@@ -1,0 +1,114 @@
+[
+  {
+    "name": "穿刺",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。目标被击飞1回合。",
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "硬化甲壳",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 1,
+    "description": "2d10+STR 钝击伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 15
+  },
+  {
+    "name": "地穴潜行",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d10+STR 力场伤害。短距离传送/移动1回合。",
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "value": 20,
+        "target": "自身",
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "name": "虫群风暴",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 4,
+    "description": "4d10+STR 钝击伤害。目标失去动作1回合。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  }
+]

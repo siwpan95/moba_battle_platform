@@ -1,0 +1,104 @@
+[
+  {
+    "name": "思想钢印",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "信念",
+        "duration": 2,
+        "desc": "目标被植入必胜信念",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+INT 心灵伤害，植入信念。",
+    "approx": true
+  },
+  {
+    "name": "绝对忠诚",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "单体",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "duration": 2,
+        "desc": "友方获得增益",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "为友方提供增益，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "脑波共鸣",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "duration": 2,
+        "desc": "范围内友方获得增益",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 心灵伤害，增益友方。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "胜利信念",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "友方",
+        "duration": 2,
+        "desc": "精神鼓舞增益"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+INT 心灵伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

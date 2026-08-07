@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1931",
+  "card_id": "league_of_legends:艾瑞莉娅",
+  "legacy_card_id": "LEA-1063",
   "hero": {
     "name": "艾瑞莉娅",
     "name_en": "Irelia",
@@ -111,27 +112,120 @@
   },
   "skills": [
     {
-      "name": "大招",
-      "key": "R",
+      "name": "战士·烈斩",
+      "key": "Q",
       "type": "物理",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "STR",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "挥砍"
       },
-      "effects": [],
-      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "bleed",
+          "duration": 1,
+          "desc": "流血",
+          "target": "敌方"
+        }
+      ],
       "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d10+STR 挥砍伤害。流血",
+      "approx": true
+    },
+    {
+      "name": "战士·旋风斩",
+      "key": "W",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "战士·冲锋",
+      "key": "E",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "knockback",
+          "duration": 1,
+          "desc": "击退",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "1d12+STR 钝击伤害。击退",
+      "approx": true
+    },
+    {
+      "name": "战士·破甲击",
+      "key": "R",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "sunder",
+          "duration": 1,
+          "desc": "降防",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
       },
       "cooldown": 4,
-      "description": "48+STR 范围伤害。DEX豁免减半。冷却4回合。"
+      "description": "2d6+STR 穿刺伤害。降防",
+      "approx": true
     }
   ]
 }

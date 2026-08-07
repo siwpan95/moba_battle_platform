@@ -1,0 +1,116 @@
+[
+  {
+    "name": "先天八卦",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "伏羲推演八卦——阴阳二爻在他指尖变幻无穷，乾坤震巽各显神通。1d8+INT 力场伤害。"
+  },
+  {
+    "name": "河图洛书",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "河图揭示天地之序的弱点",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伏羲祭出河图洛书——龙马负图出于河，神龟载书出于洛，天地万物的秩序尽在其上显现。AOE破甲2回合。2d6+INT 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "阴阳调和",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "阴阳流转，生生不息",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "buff",
+        "desc": "太极之力护持",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伏羲调和阴阳二气——太极图中黑白双鱼旋转，生死荣枯尽在其中。回复2d6+INT+增伤1回合。"
+  },
+  {
+    "name": "太极",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "太极图展开，领域之内万物凝滞",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "reflect",
+        "desc": "太极之力逆转攻击",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "伏羲展开先天太极图——阴阳轮转之间，万物定于一瞬，不洁之力被原路反弹。AOE控制，自身反弹伤害。4d6+INT 力场伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

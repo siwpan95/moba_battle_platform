@@ -1,0 +1,108 @@
+[
+  {
+    "name": "布里希嘉曼之光",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "芙蕾雅颈间的布里希嘉曼项链绽放出夺目光芒——那是四位矮人工匠用灵魂锻造的至美之物，光芒可灼伤一切不洁。1d8+INT 光耀伤害。"
+  },
+  {
+    "name": "鹰羽之衣",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "鹰羽风暴减速敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "芙蕾雅展开猎鹰羽衣——这件由华纳神族传承的圣物赋予她翱翔九界的力量。羽翼扇起的魔法风暴席卷战场，减速被卷入的敌人。2d6+INT 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "塞兹咒缚",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "塞兹魔法编织命运之网，束缚目标",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "芙蕾雅施展塞兹魔法——那是连奥丁都须向她求教的古老巫术，能编织命运、预知未来。魔力之网缠绕敌人，使其动弹不得。2d6+INT 力场伤害，目标被束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "弗尔克范格之召",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "战亡勇士的英灵返回，治愈芙蕾雅",
+        "value_formula": "2d8+INT",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "芙蕾雅召唤弗尔克范格的原野之力——阵亡勇士的英灵从她的殿堂涌出，金色光芒笼罩战场。她拥有优先选择战死者的权利，连奥丁也不能僭越。4d6+INT 光耀伤害，AOE，自身回复2d8+INT生命。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

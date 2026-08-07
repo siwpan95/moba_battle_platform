@@ -1,0 +1,134 @@
+{
+  "祝融": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "共工": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "夸父": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "accel"
+      ]
+    }
+  },
+  "精卫": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "蚩尤": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "刑天": {
+    "role": "fighter",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "九天玄女": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  },
+  "风伯": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "雨师": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "cleanse"
+      ]
+    }
+  },
+  "雷公": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "电母": {
+    "role": "mage",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "河伯": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  }
+}

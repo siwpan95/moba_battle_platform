@@ -1,0 +1,116 @@
+[
+  {
+    "name": "天照辉光",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "天照大神洒下日光——从她左眼中诞生的光芒是万物生命的源泉，也是邪魔的末日。1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "八咫镜",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "八咫镜反射一切恶意",
+        "value_formula": "2d6+WIS",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "reflect",
+        "desc": "镜面反弹伤害",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "天照大神祭出八咫镜——三神器之一，当年正是此镜将天照从天岩户中引出，让光明重归世界。获得护盾，并反弹部分伤害2回合。"
+  },
+  {
+    "name": "天岩户之光",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "天照大神的光芒治愈信徒",
+        "value_formula": "1d8+WIS",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "太阳的祝福强化自身",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "天照大神走出天岩户——当她踏出洞穴的那一刻，光明重临大地，万物复苏。治愈自身并强化战力。1d6+WIS 光耀伤害，回复1d8+WIS，增伤2回合。"
+  },
+  {
+    "name": "高天原降临",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "高天原的圣光照耀",
+        "value_formula": "3d8+WIS",
+        "target": "自身"
+      },
+      {
+        "type": "致盲",
+        "desc": "烈日当空，敌人目不能视",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "天照大神召唤高天原的荣光——整个天界的太阳之力凝聚为一束炽白光柱，照彻九重云霄。敌人目盲，自身获得巨量治愈。2d8+WIS 光耀伤害，AOE致盲，回复3d8+WIS。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  }
+]

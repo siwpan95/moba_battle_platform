@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1886",
+  "card_id": "league_of_legends:基兰",
+  "legacy_card_id": "LEA-1018",
   "hero": {
     "name": "基兰",
     "name_en": "Zilean",
@@ -107,30 +108,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "火球术",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "aoe_radius": 10,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 0,
-      "description": "2d6+INT 火焰伤害，10尺半径范围。DEX豁免减半。"
-    }
-  ]
+  }
 }

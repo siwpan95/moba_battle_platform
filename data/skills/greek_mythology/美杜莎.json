@@ -1,0 +1,131 @@
+[
+  {
+    "name": "蛇发之鞭",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<25%增伤75%"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 挥砍伤害。美杜莎以蛇发为鞭抽打敌人。",
+    "approx": true
+  },
+  {
+    "name": "石化凝视",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被美杜莎之眼石化"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 力场伤害。美杜莎以魔眼凝视敌人。石化1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "蛇行",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "蛇形突进25尺"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "蛇毒"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。美杜莎化为蛇形滑行突进并注入蛇毒。中毒1回合。",
+    "approx": true
+  },
+  {
+    "name": "戈尔贡之怒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "范围石化"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": ""
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+DEX 力场伤害。美杜莎释放戈尔贡的诅咒。范围石化2回合+破甲2回合+隐身1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  }
+]

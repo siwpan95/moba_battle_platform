@@ -1,0 +1,133 @@
+[
+  {
+    "name": "天魔功·天魔蚀肉",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "40尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "value": 30,
+        "desc": "天魔蚀肉吸取目标生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "商纣王以天魔功施展天魔蚀肉——魔功吞噬血肉精华！2d6+CHA 黯蚀伤害，30%生命偷取。"
+  },
+  {
+    "name": "天魔功·天魔裂地",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "倒地",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "大地碎裂令敌人站立不稳",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "纣王天魔功——裂地一击令大地崩碎！2d8+CHA 力场伤害，15尺范围。STR豁免失败被震倒。冷却1回合。"
+  },
+  {
+    "name": "天魔功·魔铠护体",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "3*LVL+CHA",
+        "desc": "天魔铠化出防护",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 35,
+        "desc": "魔气护体抵御伤害",
+        "target": "自身"
+      },
+      {
+        "type": "反伤",
+        "duration": 3,
+        "value": "1d6",
+        "desc": "魔铠反震攻击者",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "纣王以天魔功凝聚魔铠——天魔之铠万邪不侵！获得3×LVL+CHA护盾，减伤35%，反弹1d6黯蚀伤害。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "天魔功·天魔极乐",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "天魔极乐令万灵沉沦",
+        "target": "敌方"
+      },
+      {
+        "type": "吸血",
+        "value": 50,
+        "desc": "天魔吸取众生精魂",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "纣王天魔功至高境界——天魔极乐！令众生沉沦于天魔之乐中被吸尽精魂。5d8+CHA 黯蚀伤害，30尺范围。WIS豁免失败恐惧2回合。造成伤害50%转化为治疗。冷却4回合。"
+  }
+]

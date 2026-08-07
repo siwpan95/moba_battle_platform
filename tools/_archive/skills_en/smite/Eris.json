@@ -1,0 +1,128 @@
+[
+  {
+    "name": "金苹果",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "纷争的种子",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "厄里斯掷出金苹果——上面刻着「献给最美者」，正是这颗苹果引发了特洛伊战争。1d8+INT 力场伤害，减速1回合。"
+  },
+  {
+    "name": "不和",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "金苹果让敌人内讧",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "内斗削弱防御",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "厄里斯播下不和的种子——她曾让赫拉、雅典娜和阿佛洛狄忒为了一颗苹果争得不可开交。AOE魅惑+破甲。2d6+INT 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "混乱之舞",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "混乱中穿梭",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "invis",
+        "desc": "混乱掩盖行踪",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "厄里斯在混乱中起舞——战争越混乱她越强大，鲜血与哭喊是她最爱的音乐。加速2回合+隐身1回合。"
+  },
+  {
+    "name": "诸神之争",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "诸神的纷争令凡人崩溃",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "控制",
+        "desc": "全面混乱",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "厄里斯引发诸神之争——她能让最亲密的盟友反目成仇，让整个战场陷入无差别的厮杀。AOE恐惧+控制。4d6+INT 力场伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2585",
+  "card_id": "three_body:叶文洁",
+  "legacy_card_id": "THE-1000",
   "hero": {
     "name": "叶文洁",
     "name_en": "Ye Wenjie",
@@ -122,7 +123,14 @@
         "bonus_attr": "INT",
         "type": "雷鸣"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "干扰",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "信号干扰敌方"
+        }
+      ],
       "cooldown": 0,
       "description": "2d6+INT 雷鸣（无线电波）伤害，覆盖一片区域。",
       "approx": true,
@@ -166,7 +174,14 @@
         "bonus_attr": "INT",
         "type": "雷鸣"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "干扰",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "信号干扰敌方"
+        }
+      ],
       "cooldown": 2,
       "description": "1d10+INT 雷鸣伤害，覆盖一片区域。",
       "approx": true,
@@ -185,7 +200,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "召唤降临派增援"
+        }
+      ],
       "cooldown": 4,
       "description": "3d8+INT 力场伤害，覆盖大片区域。",
       "approx": true,

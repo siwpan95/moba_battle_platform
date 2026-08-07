@@ -1,0 +1,132 @@
+[
+  {
+    "name": "皇极经世·水母拳",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "40尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "duration": 2,
+        "desc": "水母拳劲令目标如坠冰海",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "蓝梦以皇极经世推演出的水母拳——拳劲如水母触手缠绞目标。1d10+INT 寒冷伤害，减速2回合。"
+  },
+  {
+    "name": "皇极经世·磁场天锁",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "封技",
+        "duration": 1,
+        "dc_attr": "INT",
+        "desc": "磁场天锁封禁目标技能",
+        "target": "敌方"
+      },
+      {
+        "type": "减速",
+        "duration": 2,
+        "desc": "天锁压制令行动迟缓",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "INT",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "蓝梦以皇极经世衍生的封印之术——磁场天锁！以磁场力量封禁目标力量运转。2d8+INT 力场伤害。INT豁免失败封技1回合+减速2回合。冷却1回合。"
+  },
+  {
+    "name": "蓝梦计划·创世蓝图",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "3*LVL+INT",
+        "desc": "以创世蓝图构建完美防御",
+        "target": "自身"
+      },
+      {
+        "type": "全属性强化",
+        "duration": 3,
+        "value": "PROF",
+        "desc": "皇极经世推演令战力飙升",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "蓝梦以皇极经世的终极推演力激活创世蓝图——理想世界的领袖之力。获得3×LVL+INT护盾，全属性+PROF。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "皇极经世·创世灭世",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "aoe_radius": 35,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "INT",
+        "desc": "创世与灭世之力同时爆发",
+        "target": "敌方"
+      },
+      {
+        "type": "即死",
+        "dc_attr": "CON",
+        "threshold": "HP<20%",
+        "desc": "皇极推演锁定死线",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "INT",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "蓝梦以皇极经世推演出的终极之力——先创世再灭世，抹除一切不完美！5d8+INT 力场伤害，35尺范围。INT豁免失败眩晕2回合。HP<20%目标CON豁免失败即死。冷却4回合。"
+  }
+]

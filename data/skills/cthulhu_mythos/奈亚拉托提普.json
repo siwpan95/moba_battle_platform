@@ -1,0 +1,125 @@
+[
+  {
+    "name": "千面之刃",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<30%增伤60%"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 穿刺伤害。奈亚拉托提普以千种面目之一挥出致命一击。",
+    "approx": true
+  },
+  {
+    "name": "黑暗魅影",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被黑暗魅影扰乱心智"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 心灵伤害。奈亚拉托提普以黑暗魅影扰乱敌人的心智。混乱1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "千面变幻",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "变幻形态位移30尺"
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 心灵伤害。奈亚拉托提普切换千种面目之一，瞬间位移并隐身1回合。",
+    "approx": true
+  },
+  {
+    "name": "混沌信使",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "目睹混沌信使的真面目"
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 2,
+        "desc": ""
+      },
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 2,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+DEX 心灵伤害。奈亚拉托提普以混沌信使之姿降临。恐惧2回合+隐身2回合+加速2回合。",
+    "approx": true
+  }
+]

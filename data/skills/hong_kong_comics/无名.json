@@ -1,0 +1,132 @@
+[
+  {
+    "name": "莫名剑法·一剑成名",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "desc": "此剑精准异常，暴击范围+1",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "莫名剑法——剑出无名却惊天动地。1d10+DEX 挥砍伤害，暴击范围+1（掷出19-20即暴击）。"
+  },
+  {
+    "name": "万剑归宗",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "40尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "流血",
+        "duration": 2,
+        "dmg_per_turn": "1d4",
+        "desc": "万剑穿身血流不止",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "武林神话无名的成名绝技——万千剑气如暴雨倾泻。3d6+DEX 穿刺伤害，15尺范围。DEX豁免失败流血2回合。冷却1回合。"
+  },
+  {
+    "name": "天剑境界·无我",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*10",
+        "desc": "天剑境界剑意通神",
+        "target": "自身"
+      },
+      {
+        "type": "免疫恐惧",
+        "duration": 3,
+        "desc": "心剑合一无惧无畏",
+        "target": "自身"
+      },
+      {
+        "type": "命中强化",
+        "duration": 3,
+        "value": 5,
+        "desc": "剑意锁定目标",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "无名进入天剑境界——人即是剑，剑即是人。暴击率+PROF×10%，命中+5，免疫恐惧。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "无上剑道·剑血浮生",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "即死",
+        "dc_attr": "CON",
+        "threshold": "HP<20%",
+        "desc": "剑意穿透斩杀濒死之敌",
+        "target": "敌方"
+      },
+      {
+        "type": "恐惧",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "剑血浮生的杀意震慑魂魄",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "无名自创的无上剑道——以血祭剑天地浮生。5d8+DEX 挥砍伤害，25尺范围。HP<20%目标CON豁免失败即死。其余WIS豁免失败恐惧2回合。冷却4回合。"
+  }
+]

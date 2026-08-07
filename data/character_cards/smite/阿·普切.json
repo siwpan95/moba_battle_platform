@@ -1,0 +1,213 @@
+{
+  "card_id": "smite:阿·普切",
+  "hero": {
+    "name": "阿·普切",
+    "name_en": "Ah Puch",
+    "alias": "",
+    "title": "Ah Puch"
+  },
+  "game": {
+    "name": "SMITE",
+    "name_cn": "神之浩劫",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "玛雅",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "护盾",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "技能二",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "26+INT 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能三",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 2,
+      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
+    },
+    {
+      "name": "法师·奥能飞弹",
+      "key": "R",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "force",
+          "duration": 1,
+          "desc": "力场伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "3d6+INT 法术伤害。力场伤害",
+      "approx": true
+    }
+  ],
+  "legacy_card_id": "SMI-2458"
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "name": "日炎之箭",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "阿波罗弯弓搭箭——箭头凝聚的不是金属，而是太阳表面的一缕火焰。此箭射出，如正午烈日灼目。1d8+DEX 光耀伤害。"
+  },
+  {
+    "name": "福玻斯之歌",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "魔音灌耳，目不能视",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "阿波罗拨动七弦琴——福玻斯之音既是天界最动听的旋律，也是战场上最致命的声波。音浪撞击敌人，使其目眩耳鸣。2d6+DEX 光耀伤害，致盲1回合。"
+  },
+  {
+    "name": "日辇疾驰",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "太阳战车赋予神速",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "阿波罗跃上他的太阳战车——四匹天马拉动金辇横跨天际，所过之处白昼降临。获得加速2回合。1d8+DEX 光耀伤害。"
+  },
+  {
+    "name": "许珀里翁之瘟",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "太阳瘟疫在敌人体内燃烧",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "阿波罗释放许珀里翁的瘟疫之箭——他的怒火曾让希腊军营尸横遍野，太阳的热病在血液中燃烧，无药可医。3d8+DEX 光耀伤害，AOE，dot 2回合。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

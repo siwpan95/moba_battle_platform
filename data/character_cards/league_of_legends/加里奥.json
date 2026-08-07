@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1924",
+  "card_id": "league_of_legends:加里奥",
+  "legacy_card_id": "LEA-1056",
   "hero": {
     "name": "加里奥",
     "name_en": "Galio",
@@ -109,75 +110,5 @@
     "hp": 100,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "战争罡风",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "杜朗护盾",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "正义重拳",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d10+STR 钝击伤害。"
-    },
-    {
-      "name": "英雄登场",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  }
 }

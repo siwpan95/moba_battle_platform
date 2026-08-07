@@ -1,5 +1,5 @@
 {
-  "card_id": "HAR-1542",
+  "card_id": "harry_potter:鲁伯·海格",
   "hero": {
     "name": "鲁伯·海格",
     "name_en": "Rubeus Hagrid",
@@ -109,86 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "巨拳猛击",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d10+CON 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "岩石投掷",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 12,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "1d12+CON 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "獒犬牙牙",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "CON",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d6+CON 穿刺伤害。",
-      "approx": true
-    },
-    {
-      "name": "半巨人狂暴",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "CON",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "type": "击退",
-          "duration": 0,
-          "desc": "范围内敌人被击退",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 4,
-      "description": "3d10+CON 钝击伤害，击退范围内敌人。",
-      "approx": true,
-      "aoe_radius": 10
-    }
-  ]
+  "legacy_card_id": "HAR-1542"
 }

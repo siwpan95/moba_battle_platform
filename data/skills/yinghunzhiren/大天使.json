@@ -1,0 +1,98 @@
+[
+  {
+    "name": "圣光裁决",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    }
+  },
+  {
+    "name": "天使之翼",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d10+STR 钝击伤害。速度+15尺2回合。短距离传送/移动。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "target": "自身",
+        "duration": 2,
+        "value": 15
+      },
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      }
+    ],
+    "aoe_radius": 5
+  },
+  {
+    "name": "神圣庇护",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "获得临时生命2回合。恢复生命。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA"
+      },
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "target": "自身",
+        "value_formula": "1d8+WIS"
+      }
+    ]
+  },
+  {
+    "name": "审判之光",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d10+STR 钝击伤害。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "aoe_radius": 15
+  }
+]

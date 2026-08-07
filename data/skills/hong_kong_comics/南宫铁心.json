@@ -1,0 +1,123 @@
+[
+  {
+    "name": "心剑神诀·心高剑翔",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "desc": "心高则剑翔，此剑暴击范围+1",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "南宫铁心心剑神诀第一式——心高则剑翔于九天。1d10+DEX 挥砍伤害，暴击范围+1（掷出19-20暴击）。"
+  },
+  {
+    "name": "心剑神诀·心冷剑锐",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "20尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "冻结",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "心冷如冰，剑气冻结目标",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "心剑神诀——心冷则剑锐如霜。2d8+DEX 寒冷伤害，20尺剑气。CON豁免失败冻结1回合。冷却1回合。"
+  },
+  {
+    "name": "万剑魔甲·剑翼无双",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "2*LVL+DEX",
+        "desc": "万剑魔甲化出剑翼护罩",
+        "target": "自身"
+      },
+      {
+        "type": "反伤",
+        "duration": 3,
+        "value": "2d4",
+        "desc": "剑翼自动反击攻击者",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "南宫铁心展开魔兵无妄的万剑魔甲——剑翼遮天！获得2×LVL+DEX护盾，对攻击者反弹2d4挥砍伤害。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "心剑神诀·心仁剑皇·忘我",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "50尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "剑皇之威令众生俯首",
+        "target": "敌方"
+      },
+      {
+        "type": "净化",
+        "desc": "忘我境界净化一切杂念",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "南宫铁心心剑神诀第八式——心忘·剑神！舍弃一切成就剑中之皇。5d8+DEX 光耀伤害，25尺范围。WIS豁免失败眩晕2回合。自身解除全部负面状态。冷却4回合。"
+  }
+]

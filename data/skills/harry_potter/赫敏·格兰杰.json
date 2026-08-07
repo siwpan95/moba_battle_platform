@@ -1,0 +1,103 @@
+[
+  {
+    "name": "万弹齐发",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "弹幕冲击"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "速速禁锢",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "duration": 2,
+        "desc": "目标无法移动",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "1d6+INT 力场伤害，束缚目标 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "清水如泉",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "水流冲击减速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 寒冷（水流）伤害。",
+    "approx": true
+  },
+  {
+    "name": "时间转换器",
+    "key": "R",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "额外行动",
+        "duration": 1,
+        "desc": "本回合获得一次额外动作",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "获得一次额外动作。",
+    "approx": true
+  }
+]

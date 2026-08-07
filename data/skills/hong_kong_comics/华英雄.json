@@ -1,0 +1,120 @@
+[
+  {
+    "name": "白家剑法·白龙戏水",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "value": 2,
+        "desc": "一剑化二，二剑化四，连续刺击",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "白家四式剑法之精华——剑出如龙，灵动飘逸。1d8+DEX 穿刺伤害，二段连击。"
+  },
+  {
+    "name": "无量神掌·佛法无边",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "佛法无边，群邪辟易",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "以佛门大智慧化为无上掌力。2d8+WIS 光耀伤害，15尺范围。STR豁免失败则被击退。冷却1回合。"
+  },
+  {
+    "name": "天煞孤星·天命",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*10",
+        "desc": "命中注定克死亲近之人，代价换来惊人战力",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 25,
+        "desc": "孤星之命，万邪不侵",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 5,
+    "description": "天煞孤星的宿命之力——牺牲一切换来的终极战力。暴击率大幅提升+减伤25%。持续3回合。冷却5回合。"
+  },
+  {
+    "name": "中华傲诀·傲视群雄",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "剑意震天，群雄俯首",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 5,
+    "description": "华英雄自创剑法之极——中华傲诀！5d8+DEX 挥砍伤害，30尺超大范围。CON豁免失败眩晕1回合。冷却5回合。"
+  }
+]

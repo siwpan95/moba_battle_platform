@@ -1,0 +1,156 @@
+{
+  "敖隐": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "大司命": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "元流之子(法师)": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "元流之子(坦克)": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "少司缘": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "cleanse"
+      ]
+    }
+  },
+  "影": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "空空儿": {
+    "role": "assassin",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "invis"
+      ]
+    }
+  },
+  "元流之子(射手)": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "孙权": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "蚩奼": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "元流之子(辅助)": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "heal"
+      ]
+    }
+  },
+  "大禹": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "E": [
+        "control"
+      ]
+    }
+  },
+  "元流之子(刺客)": {
+    "role": "assassin",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "E": [
+        "accel"
+      ]
+    }
+  },
+  "心魔六耳": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  }
+}

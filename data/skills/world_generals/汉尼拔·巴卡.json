@@ -1,0 +1,110 @@
+[
+  {
+    "name": "迦太基战象",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "战象践踏，护甲降低"
+      }
+    ],
+    "cooldown": 0,
+    "description": "战象踏破敌军防线！1d10+STR 钝击伤害。迦太基战象践踏使目标护甲降低。"
+  },
+  {
+    "name": "坎尼合围",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "包围战术，速度减半"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "坎尼战役式的完美合围！2d8+STR 挥砍伤害。汉尼拔的包围战术使目标速度减半2回合——史上最伟大的战术之一。"
+  },
+  {
+    "name": "翻越阿尔卑斯",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "奇袭行军，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "如翻越阿尔卑斯山般出其不意！1d8+STR 钝击伤害。奇袭行军使汉尼拔速度翻倍2回合。"
+  },
+  {
+    "name": "扎马决战",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "战略之父：伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "致命一击：低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "战略之父的最终决战！2d10+STR 挥砍范围伤害。汉尼拔展现天才战术增伤2回合，低血量目标触发致命一击。"
+  }
+]

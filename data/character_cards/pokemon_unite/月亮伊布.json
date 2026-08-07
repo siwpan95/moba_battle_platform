@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2410",
+  "card_id": "pokemon_unite:月亮伊布",
   "hero": {
     "name": "月亮伊布",
     "name_en": "Umbreon",
@@ -111,23 +111,53 @@
   },
   "skills": [
     {
-      "name": "护盾猛击",
+      "name": "坦克·荆棘反甲",
       "key": "Q",
       "type": "物理",
-      "action": "动作",
-      "range": "近战",
+      "action": "反弹近战伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "reflect",
+          "duration": 1,
+          "desc": "反伤",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "1d8+CON 穿刺伤害。反伤",
+      "approx": true
+    },
+    {
+      "name": "坦克·巨石投掷",
+      "key": "W",
+      "type": "物理",
+      "action": "投掷巨石轰击",
+      "range": "远程",
       "target": "单体",
       "damage": {
         "dice_count": 1,
-        "dice_size": 10,
+        "dice_size": 12,
         "bonus_attr": "STR",
         "type": "钝击"
       },
       "effects": [
         {
-          "type": "减速",
+          "type": "knockback",
           "duration": 1,
-          "desc": "速度减半",
+          "desc": "击退",
           "target": "敌方"
         }
       ],
@@ -136,8 +166,70 @@
         "dc_formula": "8+PROF+STR",
         "on_save": "无效"
       },
-      "cooldown": 0,
-      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。"
+      "cooldown": 1,
+      "description": "2d10+STR 钝击伤害。击退",
+      "approx": true
+    },
+    {
+      "name": "坦克·不屈意志",
+      "key": "E",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "immune",
+          "duration": 1,
+          "desc": "免疫控制",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "1d4+CON 能量伤害。免疫控制",
+      "approx": true
+    },
+    {
+      "name": "坦克·岩盾守护",
+      "key": "R",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "获得临时生命",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d12+CON 钝击伤害。获得临时生命",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "POK-2410"
 }

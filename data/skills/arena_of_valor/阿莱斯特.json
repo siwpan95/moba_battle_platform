@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Arcane Bolt",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "冰霜"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "奥术能量在指尖凝聚，Aleister释放出一枚魔法飞弹。1d8+INT 冰霜伤害。"
+  },
+  {
+    "name": "Mystic Cage",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "暗蚀"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "desc": "使目标冻结1轮（DEX豁免 DC=8+PROF+INT，豁免无效）"
+      }
+    ],
+    "cooldown": 1,
+    "description": "咒语的符文在空中闪烁，一道魔法阵轰然展开。2d6+INT 暗蚀伤害。 使目标冻结1轮（DEX豁免 DC=8+PROF+INT，豁免无效）。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "Eldritch Flow",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰霜"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "desc": "获得额外移动力，本回合可穿越敌人"
+      }
+    ],
+    "cooldown": 2,
+    "description": "空间扭曲，Aleister的身影在奥术光辉中消失又重现。2d6+INT 冰霜伤害。 获得额外移动力，本回合可穿越敌人。"
+  },
+  {
+    "name": "Cataclysm",
+    "key": "P",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 3,
+        "value": 3,
+        "desc": "目标每回合3点持续伤害，持续3轮"
+      }
+    ],
+    "cooldown": 4,
+    "description": "禁忌的咒文被咏唱，Aleister释放出毁灭性的魔力洪流。4d6+INT 闪电伤害。 目标每回合3点持续伤害，持续3轮。",
+    "aoe_radius": 10
+  }
+]

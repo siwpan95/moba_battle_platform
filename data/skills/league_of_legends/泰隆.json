@@ -1,0 +1,114 @@
+[
+  {
+    "name": "诺克萨斯式外交",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "近战距离时暴击率+50%",
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "击杀目标时回复少量生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "跃向敌人发动一记精准的刺杀突刺。造成1d10+DEX穿刺伤害。若在近战距离施放，暴击率+50%。以此技能击杀目标时回复1d8生命值。"
+  },
+  {
+    "name": "斩草除根",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "掷出一排扇形的刺客飞刀，短暂延迟后收回。造成2d8+DEX穿刺伤害。飞刀命中减速1回合；收回时再次造成伤害。DEX豁免成功则无视减速效果。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "刺客之道",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "翻越地形障碍，移动速度+20尺",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "以超凡的身手翻越地形障碍物。造成1d8+DEX挥砍伤害（落地时对周围敌人）。同一地形在3回合内不可再次翻越。翻越后移动速度+20尺，持续1回合。"
+  },
+  {
+    "name": "暗影突袭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "进入隐形状态并获得移动速度加成",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "移动速度+40尺",
+        "duration": 2,
+        "value": 40,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "散开一圈环形飞刀并进入隐形状态，移动速度+40尺，持续2回合。飞刀收回时穿过所有被击中的敌人，造成4d6+DEX挥砍伤害。隐形状态下首次攻击或施法会提前显形。"
+  }
+]

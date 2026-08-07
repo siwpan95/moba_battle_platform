@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1847",
+  "card_id": "honor_of_kings:成吉思汗",
   "hero": {
     "name": "成吉思汗",
     "name_en": "",
@@ -111,21 +111,125 @@
   },
   "skills": [
     {
-      "name": "穿刺箭",
+      "name": "射手·穿甲弹",
       "key": "Q",
       "type": "物理",
-      "action": "动作",
-      "range": "120尺",
+      "action": "贯穿多重目标",
+      "range": "远程",
       "target": "单体",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
+        "dice_count": 2,
+        "dice_size": 6,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "pierce",
+          "duration": 1,
+          "desc": "穿透",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
       "cooldown": 0,
-      "description": "1d8+DEX 穿刺伤害，射程120尺。"
+      "description": "2d10+DEX 穿刺伤害。穿透",
+      "approx": true
+    },
+    {
+      "name": "射手·战术翻滚",
+      "key": "W",
+      "type": "物理",
+      "action": "拉开距离",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "dash",
+          "duration": 1,
+          "desc": "位移",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "1d4+DEX 能量伤害。位移",
+      "approx": true
+    },
+    {
+      "name": "射手·爆头狙击",
+      "key": "E",
+      "type": "物理",
+      "action": "蓄力重击",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "crit",
+          "duration": 1,
+          "desc": "重伤",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "3d10+DEX 穿刺伤害。重伤",
+      "approx": true
+    },
+    {
+      "name": "射手·压制火力",
+      "key": "R",
+      "type": "物理",
+      "action": "限制走位",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "slow",
+          "duration": 1,
+          "desc": "减速",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d6+DEX 穿刺伤害。减速",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1847"
 }

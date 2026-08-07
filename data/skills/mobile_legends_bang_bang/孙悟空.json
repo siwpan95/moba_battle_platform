@@ -1,0 +1,87 @@
+[
+  {
+    "name": "齐天大圣",
+    "key": "被动",
+    "type": "物理",
+    "action": "被动",
+    "range": "自身",
+    "target": "自身",
+    "damage": null,
+    "effects": [
+      {
+        "name": "毛发护甲",
+        "desc": "获得基于最大生命值的护甲加成，生命越低护甲越高。"
+      }
+    ],
+    "cooldown": 0,
+    "description": "被动：化身毛发护甲，依据当前生命值获得护甲，残血时防御大幅提升。"
+  },
+  {
+    "name": "无穷变化",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "迅捷置换",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "瞬移突袭",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "分身术",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。"
+  }
+]

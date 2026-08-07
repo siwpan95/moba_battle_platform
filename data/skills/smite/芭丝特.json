@@ -1,0 +1,104 @@
+[
+  {
+    "name": "猫爪撕裂",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "利爪割开伤口，血流不止",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "芭丝特亮出她的猫爪——如沙漠中最致命的猎手，她的利爪能轻易撕开猎物的喉咙。伤口深可见骨，流血不止。1d10+DEX 挥砍伤害，流血2回合。"
+  },
+  {
+    "name": "魅影突袭",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "猫的优雅——从阴影中突然现身",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "芭丝特融入阴影——猫的脚步连诸神也无法察觉。再度现身时已贴近猎物，双爪同时挥下。获得隐形1回合。2d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "猫之优雅",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "猫的速度与敏捷",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "芭丝特舒展身体——如同猫在午后的阳光中伸懒腰，但她的每一次舒展都是致命的舞蹈。获得加速2回合。1d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "九命之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "对虚弱猎物一击致命",
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "暴怒加速，如猫群席卷战场",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "芭丝特释放九命之力——埃及的猫女神召唤整个族群的怒火，无数猫灵从黑暗中闪现，利爪如暴雨般倾泻。对低生命敌人斩杀，自身加速。4d6+DEX 挥砍伤害，AOE。",
+    "aoe_radius": 20
+  }
+]

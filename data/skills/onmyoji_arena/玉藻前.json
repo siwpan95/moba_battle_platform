@@ -1,0 +1,77 @@
+[
+  {
+    "name": "狐火",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 火焰伤害。"
+  },
+  {
+    "name": "妖术",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。"
+  },
+  {
+    "name": "天狐之姿",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "value": 20,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。短距离传送/移动。"
+  },
+  {
+    "name": "九尾封印",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+INT 力场伤害。"
+  }
+]

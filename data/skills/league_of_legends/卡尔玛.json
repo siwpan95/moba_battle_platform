@@ -1,0 +1,131 @@
+[
+  {
+    "name": "心灵烈焰",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "灵能冲击减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "坚定不移",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "灵链束缚目标",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "梵咒强化时治疗自身",
+        "value": 15,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "鼓舞",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "灵能护盾",
+        "duration": 1,
+        "value": 25,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "护盾提供移速",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "梵咒",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "强化下一个技能效果翻倍",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "无直接伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "name": "闪光幽魂",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    }
+  },
+  {
+    "name": "磁场",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。获得临时生命2回合。攻击速度+30%2回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA"
+      },
+      {
+        "type": "攻速强化",
+        "desc": "攻击速度+30%",
+        "target": "自身",
+        "duration": 2,
+        "value": 30
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "火花幽魂",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "每回合受到火焰伤害2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "持续伤害",
+        "desc": "每回合受到火焰伤害",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "1d4"
+      }
+    ]
+  },
+  {
+    "name": "风暴双雄",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "150尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "4d8+DEX 穿刺伤害。召唤一个镜像分身3回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "target": "敌方",
+        "duration": 3
+      }
+    ]
+  }
+]

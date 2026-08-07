@@ -1,0 +1,92 @@
+[
+  {
+    "name": "弹跳攻击",
+    "key": "A",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "2d6+DEX 穿刺伤害。目标被推开10尺1回合。",
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "回旋踢",
+    "key": "B",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。目标被推开10尺1回合。",
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "环游世界",
+    "key": "U",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "5d6+DEX 穿刺伤害。目标失去动作1回合。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

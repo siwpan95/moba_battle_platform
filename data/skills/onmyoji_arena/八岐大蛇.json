@@ -1,0 +1,103 @@
+[
+  {
+    "name": "蛇魔",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。每回合受到毒素伤害2回合。",
+    "effects": [
+      {
+        "type": "中毒",
+        "desc": "每回合受到毒素伤害",
+        "duration": 2,
+        "target": "敌方",
+        "dmg_per_turn": "1d4"
+      }
+    ]
+  },
+  {
+    "name": "毒素",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "蛇蜕",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "八岐降临",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。变身为强化形态3回合。",
+    "effects": [
+      {
+        "type": "变身",
+        "desc": "变身为强化形态",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

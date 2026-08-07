@@ -1,0 +1,126 @@
+[
+  {
+    "name": "月轮斩",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "月宫玉兔的月轮弯刀，1d10+DEX 挥砍伤害，目标减速1回合。"
+  },
+  {
+    "name": "月宫幻影",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐形"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "魅惑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "化身天竺公主迷惑众生！2d8+DEX 光耀伤害，隐形1回合，未通过WIS豁免者魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "玉兔捣药",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复少量生命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "广寒宫中捣药仙兔。速度翻倍2回合并回复少量生命。"
+  },
+  {
+    "name": "广寒月华",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量斩杀"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "魅惑"
+      }
+    ],
+    "cooldown": 4,
+    "description": "月华之力洒满战场！4d6+DEX 光耀伤害，低血量斩杀，未通过WIS豁免者魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    }
+  }
+]

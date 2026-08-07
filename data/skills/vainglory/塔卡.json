@@ -1,0 +1,60 @@
+[
+  {
+    "name": "回旋斩",
+    "key": "A",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d6+DEX 挥砍伤害。"
+  },
+  {
+    "name": "烟雾弹",
+    "key": "B",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "隐形",
+        "desc": "变为隐形",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。变为隐形2回合。"
+  },
+  {
+    "name": "暗杀",
+    "key": "U",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+DEX 黯蚀伤害。"
+  }
+]

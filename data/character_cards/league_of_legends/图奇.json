@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1889",
+  "card_id": "league_of_legends:图奇",
+  "legacy_card_id": "LEA-1021",
   "hero": {
     "name": "图奇",
     "name_en": "Twitch",
@@ -17,6 +18,7 @@
   "source": "",
   "difficulty": 2,
   "playstyle_tags": [
+    "持续伤害",
     "持续输出",
     "核心",
     "远程"
@@ -108,32 +110,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能三",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "duration": 2,
-          "value": 15,
-          "desc": "速度+15尺",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
-    }
-  ]
+  }
 }

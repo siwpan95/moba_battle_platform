@@ -1,0 +1,125 @@
+[
+  {
+    "name": "三叉戟",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 1,
+        "desc": "海浪之力+2伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。波塞冬以三叉戟掀起狂澜，每击积蓄海洋之力。",
+    "approx": true
+  },
+  {
+    "name": "海啸冲击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "被巨浪击退15尺"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。波塞冬以三叉戟召唤海啸。击退+减速1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "海马冲锋",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "海马战车突进25尺"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。波塞冬驾驭海马战车冲锋陷阵。",
+    "approx": true
+  },
+  {
+    "name": "大地震撼者",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "大地震动"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。波塞冬以「大地震撼者」之名引发地震。眩晕1回合+破甲2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 12
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "伽马冲刺",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "雷霆掌",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d10+STR 闪电伤害。"
+  },
+  {
+    "name": "浩克砸",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "灭世者",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。"
+  }
+]

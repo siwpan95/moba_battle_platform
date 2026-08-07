@@ -1,0 +1,123 @@
+[
+  {
+    "name": "水天之锁",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "水天绳索缠绕",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "伐楼那掷出水天之锁——这绳索曾捆绑无数违背誓言者。1d8+INT 寒冷伤害，减速1回合。"
+  },
+  {
+    "name": "海狱",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "海水凝为囚笼",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伐楼那召唤海狱——他是海洋与水域的主宰，违背誓言者将在他的水下囚牢中受罚。AOE束缚1回合。2d6+INT 寒冷伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "正法之眼",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "正法加持",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "shield",
+        "desc": "水天护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伐楼那开启正法之眼——他是宇宙秩序(rta)的守护者，说谎者与背信者在他眼中无所遁形。增伤+护盾各2回合。"
+  },
+  {
+    "name": "宇宙之水",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "冻结",
+        "desc": "宇宙初开之时的原始之水冻结万物",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "背信者在水中溺毙",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "伐楼那释放宇宙之水——创世之初覆盖一切的原始海洋再现，足以淹没整个世界。AOE冻结，低血斩杀。4d6+INT 寒冷伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

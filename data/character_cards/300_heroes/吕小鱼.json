@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1007",
+  "card_id": "300_heroes:吕小鱼",
   "hero": {
     "name": "吕小鱼",
     "name_en": "",
@@ -109,88 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "奥术飞弹",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "奥术飞弹（Q）：三发飞弹。造成 1d10+INT 力场伤害。"
-    },
-    {
-      "name": "能量护盾",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "护盾",
-          "duration": 2,
-          "desc": "获得护盾吸收伤害。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "能量护盾（W）：法伤护盾。获得护盾吸收伤害。"
-    },
-    {
-      "name": "时空扭曲",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 2,
-          "desc": "移动速度降低。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 4,
-      "description": "时空扭曲（E）：范围减速。移动速度降低。"
-    },
-    {
-      "name": "黑洞",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "黑洞（R）：牵引爆炸。造成 3d12+INT 黯蚀伤害。"
-    }
-  ]
+  "legacy_card_id": "300-1007"
 }

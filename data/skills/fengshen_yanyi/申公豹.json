@@ -1,0 +1,128 @@
+[
+  {
+    "name": "飞头术",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "飞头术——头颅离体盘旋攻击，1d8+INT 力场伤害，减速1回合。"
+  },
+  {
+    "name": "道友请留步",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "束缚"
+      },
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 1,
+    "description": "一句「道友请留步」送了多少同门上榜！2d6+INT 力场范围伤害，束缚+易伤1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "阐教叛徒",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "遁走"
+      }
+    ],
+    "cooldown": 2,
+    "description": "背弃阐教遁入截教，一身奇术。速度翻倍2回合并短暂遁形。"
+  },
+  {
+    "name": "万仙阵",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "混乱"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "1d6法术"
+      }
+    ],
+    "cooldown": 4,
+    "description": "召唤万仙阵围困敌军！4d6+INT 力场范围伤害，混乱1回合，法术持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "name": "圣火",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 火焰伤害。赫斯提亚以永不熄灭的圣火温暖地灼烧敌人。",
+    "approx": true
+  },
+  {
+    "name": "炉边治愈",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "炉火之暖回复2d8+WIS",
+        "value": "2d8+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 火焰伤害。赫斯提亚以炉灶女神的温暖治愈友方。回复2d8+WIS。",
+    "approx": true
+  },
+  {
+    "name": "家宅庇护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "家宅之盾",
+        "value": "1d10+WIS"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "duration": 0,
+        "desc": "清除负面"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 火焰伤害。赫斯提亚以家宅女神之力庇护友方。护盾2回合+净化。",
+    "approx": true
+  },
+  {
+    "name": "奥林匹斯圣火",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "圣火回复3d8+WIS",
+        "value": "3d8+WIS"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体攻击+3"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 火焰伤害。赫斯提亚释放奥林匹斯中心永恒的圣火。全体回复3d8+WIS+增益2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,7 +1,7 @@
 {
   "game": "The Three-Body Problem",
   "name_cn": "三体",
-  "total": 14,
+  "total": 24,
   "heroes": [
     {
       "name": "叶文洁",
@@ -99,6 +99,76 @@
       "name_cn": "关一帆",
       "name_en": "Guan Yifan",
       "role": "宇宙学家 (Cosmologist)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "庄颜",
+      "name_cn": "庄颜",
+      "name_en": "Zhuang Yan",
+      "role": "罗辑之妻/灵感缪斯 (Luo Ji Wife/Muse)",
+      "universal_role": "support"
+    },
+    {
+      "name": "常伟思",
+      "name_cn": "常伟思",
+      "name_en": "Chang Weisi",
+      "role": "太空军中将/战术家 (Space Force General/Tactician)",
+      "universal_role": "tank"
+    },
+    {
+      "name": "褚岩",
+      "name_cn": "褚岩",
+      "name_en": "Chu Yan",
+      "role": "蓝色空间号舰长/星舰文明 (Blue Space Captain/Star Civilization)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "东方延绪",
+      "name_cn": "东方延绪",
+      "name_en": "Dongfang Yanxu",
+      "role": "自然选择号舰长 (Natural Selection Captain)",
+      "universal_role": "marksman"
+    },
+    {
+      "name": "歌者",
+      "name_cn": "歌者",
+      "name_en": "Singer",
+      "role": "清理员/二向箔使用者 (Cleaner/Dual-Vector Foil)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "艾AA",
+      "name_cn": "艾AA",
+      "name_en": "Ai AA",
+      "role": "星环CEO/天文学家 (Stellar Ring CEO/Astronomer)",
+      "universal_role": "support"
+    },
+    {
+      "name": "山杉惠子",
+      "name_cn": "山杉惠子",
+      "name_en": "Shan Shan Huizi",
+      "role": "破壁人/脑科学家 (Wallbreaker/Neuroscientist)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "潘寒",
+      "name_cn": "潘寒",
+      "name_en": "Pan Han",
+      "role": "ETO降临派/生物学家 (ETO Adventist/Biologist)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "麦克·伊文斯",
+      "name_cn": "麦克·伊文斯",
+      "name_en": "Mike Evans",
+      "role": "ETO创建者/审判日号船主 (ETO Founder/Judgment Day Owner)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "归零者",
+      "name_cn": "归零者",
+      "name_en": "Zero-Homer",
+      "role": "宇宙回归运动发起者 (Universal Return Movement)",
       "universal_role": "mage"
     }
   ]

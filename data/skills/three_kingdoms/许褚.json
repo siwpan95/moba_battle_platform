@@ -1,0 +1,117 @@
+[
+  {
+    "name": "虎痴锤",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "护甲降低"
+      }
+    ],
+    "cooldown": 0,
+    "description": "虎痴许褚的巨锤，1d10+STR 钝击伤害，破甲1回合。"
+  },
+  {
+    "name": "裸衣战",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 1,
+    "description": "裸衣大战马超！受伤减半2回合，同时增伤2回合。"
+  },
+  {
+    "name": "虎卫护主",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "击退"
+      }
+    ],
+    "cooldown": 2,
+    "description": "虎卫军护主心切！1d8+STR 钝击范围伤害，击退范围内敌人。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "虎痴之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "大幅破甲"
+      }
+    ],
+    "cooldown": 4,
+    "description": "虎痴暴怒，无人能挡！2d8+STR 钝击范围伤害，自身减伤2回合，大幅破甲2回合。",
+    "aoe_radius": 20
+  }
+]

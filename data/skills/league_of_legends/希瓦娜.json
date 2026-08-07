@@ -1,0 +1,133 @@
+[
+  {
+    "name": "龙牙突袭",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "下次攻击附带额外伤害并施加标记",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "烈火燎原",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "烈焰光环持续灼烧周围敌人",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "烈焰中移速提升",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。",
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "烈焰吐息",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "火球穿透降低护甲",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "vuln",
+        "desc": "标记目标增伤",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "魔龙降世",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "化身魔龙，体型增大属性飙升",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "龙翼冲击击退路径敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+STR 挥砍伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

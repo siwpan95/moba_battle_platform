@@ -1,0 +1,122 @@
+[
+  {
+    "name": "谷物之镰",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "得墨忒尔挥动镰刀——丰收女神的镰刀既是收割粮食的工具，也是收割生命的武器。1d8+INT 挥砍伤害。"
+  },
+  {
+    "name": "饥荒",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "大地荒芜，万物枯萎",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "dot",
+        "desc": "饥饿侵蚀",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "得墨忒尔降下饥荒——当珀尔塞福涅被掳走时，她让整片大地寸草不生。AOE减速+dot各2回合。2d6+INT 黯蚀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "大地丰收",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "丰收之力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d6+INT"
+      },
+      {
+        "type": "buff",
+        "desc": "大地母亲的祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "得墨忒尔呼唤丰收——当她微笑时，麦田疯长、果树压弯枝头。回复3d6+INT+增伤2回合。"
+  },
+  {
+    "name": "大地之母的诅咒",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "冬之诅咒冻结大地",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "大地吞噬生命",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "得墨忒尔降下终极诅咒——如果她的女儿不能归来，整个世界将陷入永恒的寒冬。AOE冻结+低血斩杀。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

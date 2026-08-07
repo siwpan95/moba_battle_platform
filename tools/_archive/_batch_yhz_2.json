@@ -1,0 +1,167 @@
+{
+  "夏提雅": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "范海辛": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "vuln"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "苍影": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "金蟾童子": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "夏铃": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "北落师门": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "超核神兵": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "三藏禅师": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "cleanse"
+      ]
+    }
+  },
+  "玄穹天帝": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "时光守护者": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "E": [
+        "heal"
+      ]
+    }
+  },
+  "圣枪使": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "vuln"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "狂蝠女王": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "龙影": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "accel"
+      ]
+    }
+  },
+  "潮汐守望者": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "幻水仙灵": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  }
+}

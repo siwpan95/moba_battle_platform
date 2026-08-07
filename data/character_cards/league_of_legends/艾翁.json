@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-2000",
+  "card_id": "league_of_legends:艾翁",
+  "legacy_card_id": "LEA-1132",
   "hero": {
     "name": "艾翁",
     "name_en": "Ivern",
@@ -108,30 +109,5 @@
     "hp": 60,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "大招",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
-        "type": "光耀"
-      },
-      "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 4,
-      "description": "48+WIS 范围伤害。DEX豁免减半。冷却4回合。"
-    }
-  ]
+  }
 }

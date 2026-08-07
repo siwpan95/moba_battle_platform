@@ -30,6 +30,7 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 # 游戏注册表 / 汉化表 / 平衡参数 单一真相，从 core.config 导入，避免与本地重复定义漂移
 from core.config import GAME_NAME_CN, REGISTRY_BY_DISPLAY, REGISTRY_BY_ID, HP_SCALE
+from core import schema
 
 INPUT_JSON = os.path.join(PROJECT_ROOT, "data", "analysis", "all_heroes_unified.json")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "character_cards")
@@ -193,10 +194,30 @@ def _skill_file_stem(game: str) -> str:
 
 
 def _load_skill_json(game: str) -> dict:
-    """按需加载单个游戏的技能数据（按 game_id 定位 skills/<game_id>.json）"""
+    """按需加载单个游戏的技能数据。
+
+    优先从技能池目录 data/skills/<game_id>/ 读取（每英雄一个文件），
+    合并为 {英雄名: skills} 返回；若该游戏尚未迁移为池，则回退旧大文件
+    data/skills/<game_id>.json。
+    """
     if game in _skill_cache:
         return _skill_cache[game]
     stem = _skill_file_stem(game)
+    # 优先技能池目录
+    pool = os.path.join(SKILLS_DIR, stem)
+    if os.path.isdir(pool):
+        data = {}
+        for fn in os.listdir(pool):
+            if fn.endswith(".json"):
+                fp = os.path.join(pool, fn)
+                try:
+                    with open(fp, "r", encoding="utf-8") as f:
+                        data[fn[:-5]] = json.load(f)
+                except (json.JSONDecodeError, OSError):
+                    continue
+        _skill_cache[game] = data
+        return data
+    # 回退旧大文件
     filepath = os.path.join(SKILLS_DIR, f"{stem}.json")
     if not os.path.exists(filepath):
         _skill_cache[game] = {}
@@ -226,8 +247,48 @@ def _load_templates() -> dict:
 # get_skills() 作为统一入口，按 game_id 取详细数据，缺失则回退通用模板
 # ==========================================
 
+def _build_placeholder_skill(slot: int) -> dict:
+    """构建一个占位技能（用于模板不足4个时的补齐）。"""
+    key = ["Q", "W", "E", "R"][slot]
+    return {
+        "name": f"技能{['一','二','三','四'][slot]}",
+        "key": key,
+        "type": "物理",
+        "action": "动作",
+        "range": "近战",
+        "target": "单体",
+        "damage": {"dice_count": 1, "dice_size": 6, "bonus_attr": "STR", "type": "钝击"},
+        "effects": [],
+        "cooldown": slot + 1 if slot > 0 else 0,
+        "description": f"占位技能{slot+1}（待补录真实技能数据）",
+        "approx": True,
+    }
+
+
+def _flatten_templates(templates: list) -> list:
+    """展平 _templates.json 中混合的 [dict, dict, ..., [dict,...]] 结构为纯 skill dict 列表。
+
+    _templates.json 的 role 条目形状：
+      - 前 4 个元素通常是独立 skill dict（Q/W/E/R）
+      - 第 5+ 个元素是子列表（QWER×3 的重复捆绑）
+    此函数将其全部展平为单个 skill dict 的 list。
+    """
+    flat: list = []
+    for item in templates:
+        if isinstance(item, dict):
+            flat.append(item)
+        elif isinstance(item, list):
+            for sub in item:
+                if isinstance(sub, dict):
+                    flat.append(sub)
+    return flat
+
+
 def get_skills(hero_name: str, hero_name_en: str, game: str, role: str) -> list:
-    """获取英雄技能，优先级：详细数据库 > 通用模板"""
+    """获取英雄技能，优先级：详细数据库 > 通用模板。
+
+    返回契约：list[Skill]，长度恒为 4（ADR-001 / ADR-005）。
+    """
     names_to_try = [hero_name, hero_name_en]
 
     # 精确匹配：按 game_id 加载对应技能文件
@@ -243,13 +304,42 @@ def get_skills(hero_name: str, hero_name_en: str, game: str, role: str) -> list:
     if skill_db:
         for name in names_to_try:
             if name in skill_db:
-                return skill_db[name]
+                skills = skill_db[name]
+                if isinstance(skills, list):
+                    return skills
+                # 技能库内存储为单 dict 等异常格式时，仍然回退模板
+                break
 
     # 回退到通用模板（占位游戏 skills={} 也会落到这里，属预期，不报错）
     templates = _load_templates().get(role, [])
     if not templates:
-        templates = [["Q:普攻", "W:技能一", "E:技能二", "R:大招"]]
-    return random.choice(templates)
+        # 无模板：生成 4 个纯占位技能
+        return [_build_placeholder_skill(i) for i in range(4)]
+
+    flat = _flatten_templates(templates)
+    if len(flat) < 4:
+        selected = flat.copy()
+        while len(selected) < 4:
+            selected.append(_build_placeholder_skill(len(selected)))
+    else:
+        # ADR-005 C2: 基于英雄名的确定性多样化选择（替代 random.sample）
+        # hash(hero_name) 保证：同英雄每次同结果（幂等），不同英雄不同组合（多样化）
+        seed = hash(hero_name) % len(flat) if len(flat) > 0 else 0
+        selected = []
+        for i in range(4):
+            idx = (seed + i) % len(flat)
+            selected.append(flat[idx])
+
+    # 按 key 重新分配 Q/W/E/R + CD 对齐引擎节奏
+    # G-2: 槽0 CD=0, 平均≤3.0, 最大≤5
+    key_cd = {"Q": 0, "W": 1, "E": 2, "R": 4}
+    for i, skill in enumerate(selected):
+        key = ["Q", "W", "E", "R"][i]
+        skill["key"] = key
+        skill["cooldown"] = key_cd[key]
+        # ADR-005 C3: 模板占位标记（Wave 1 真技能替换时区分"已精修"和"待精修"）
+        skill["approx"] = True
+    return selected
 
 
 def calc_combat_stats(scores: dict, role: str, level: int) -> dict:
@@ -362,7 +452,11 @@ def assign_playstyle(role: str, hero_name: str, skills: list) -> list:
 
 
 def generate_character_card(hero: dict, rng_seed: int) -> dict:
-    """为单个英雄生成完整角色卡"""
+    """为单个英雄生成完整角色卡。
+
+    ADR-005: card_id 语义从"生成序号"改为 <game_id>:<hero_slug>，
+    与物理路径同构、局部生成幂等。旧 card_id 保留为 legacy_card_id。
+    """
     random.seed(rng_seed)
     
     name_raw = hero.get("name", "未知")
@@ -398,9 +492,16 @@ def generate_character_card(hero: dict, rng_seed: int) -> dict:
     # 4. 标签
     playstyle = assign_playstyle(universal_role, name, skills)
     
-    # 5. 组装角色卡
+    # 5. card_id: ADR-005 稳定标识 = <game_id>:<hero_slug>
+    game_id = REGISTRY_BY_DISPLAY.get(game, _slugify(game))
+    hero_slug = name.replace("/", "_").replace(" ", "_").replace(":", "")
+    # TODO: 旧 card_id 过渡期结束后移除 legacy_card_id
+    legacy_card_id = f"{game[:3].upper()}-{rng_seed:04d}"
+    
+    # 6. 组装角色卡
     card = {
-        "card_id": f"{game[:3].upper()}-{rng_seed:04d}",
+        "card_id": f"{game_id}:{hero_slug}",
+        "legacy_card_id": legacy_card_id,
         "hero": {
             "name": name,
             "name_en": name_en,
@@ -473,6 +574,14 @@ def main():
         count = 0
         for idx, hero in enumerate(game_heroes):
             card = generate_character_card(hero, total + idx + 1000)
+
+            # 契约校验：fail-fast，拒绝写盘（ADR-005）
+            violations = schema.validate_card(card)
+            if violations:
+                hero_name = hero.get("name", f"hero_{idx}")
+                print(f"  ✗ 契约校验失败 [{game_name}] {hero_name}: {'; '.join(violations)}", file=sys.stderr)
+                print(f"    拒绝写盘，跳过该英雄。请检查 get_skills() 返回值或模板数据。", file=sys.stderr)
+                continue
             
             # 文件名：安全化英雄名
             hero_filename = hero.get("name", f"hero_{idx}")

@@ -1,0 +1,116 @@
+[
+  {
+    "name": "毒碗之滴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 黯蚀伤害。西格恩将接住的蛇毒碗中毒液滴向敌人。",
+    "approx": true
+  },
+  {
+    "name": "忠诚守护",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 0,
+        "desc": "忠诚之盾",
+        "value": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。西格恩以对洛基的无限忠诚化为护盾。友方获得2d6+WIS护盾。",
+    "approx": true
+  },
+  {
+    "name": "苦难分担",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "分担伤害-30%"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "持续回复1d4+WIS/回合",
+        "value": "1d4+WIS"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 黯蚀伤害。西格恩分担友方的苦难。减伤30%+持续回复2回合。",
+    "approx": true
+  },
+  {
+    "name": "永恒守望",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 3,
+        "desc": "永恒守望护盾",
+        "value": "3d6+WIS"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "duration": 0,
+        "desc": "清除全体负面"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。西格恩如陪伴被缚洛基般永恒守望。全体大护盾3回合+净化。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

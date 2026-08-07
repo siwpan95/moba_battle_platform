@@ -1,0 +1,117 @@
+[
+  {
+    "name": "智慧之矛",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。雅典娜以智慧指引每一矛刺向要害。",
+    "approx": true
+  },
+  {
+    "name": "埃癸斯之盾",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 1,
+        "desc": "埃癸斯神盾-30%伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。雅典娜以埃癸斯神盾格挡并反击。自身减伤30%持续1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "胜利女神之翼",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "女神之翼突进20尺"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 1,
+        "desc": "胜利加持攻击+3"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。雅典娜以胜利女神尼刻之翼冲锋。增益1回合。",
+    "approx": true
+  },
+  {
+    "name": "帕特农裁决",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "智慧裁决"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击力+5"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。雅典娜以帕特农神庙的智慧之光裁决敌人。眩晕1回合+增益2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  }
+]

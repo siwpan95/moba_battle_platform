@@ -1,5 +1,5 @@
 {
-  "card_id": "DAW-1305",
+  "card_id": "shuguang_heroes:嫦娥",
   "hero": {
     "name": "嫦娥",
     "name_en": "",
@@ -110,81 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "穿刺箭",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "穿刺箭（Q）：穿透伤害。造成 1d8+DEX 穿刺伤害。"
-    },
-    {
-      "name": "箭雨",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 2,
-          "desc": "移动速度降低。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 2,
-      "description": "箭雨（W）：范围减速。造成 2d8+DEX 穿刺伤害。移动速度降低。"
-    },
-    {
-      "name": "后跳",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "后跳（E）：位移。造成 1d10+DEX 挥砍伤害。"
-    },
-    {
-      "name": "狙击",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "DEX",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "狙击（R）：超远程射击。造成 2d12+DEX 钝击伤害。"
-    }
-  ]
+  "legacy_card_id": "DAW-1305"
 }

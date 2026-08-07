@@ -1,0 +1,112 @@
+[
+  {
+    "name": "强能冲拳",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "蓄力后向前冲刺20尺",
+        "target": "自身"
+      },
+      {
+        "type": "控制",
+        "desc": "击退命中的第一个敌人",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "蓄力后向前猛冲20尺，以海克斯铁拳轰击路径上的敌人。造成1d10+STR挥砍伤害并击退首个命中的目标。蓄力越长，伤害与冲刺距离越高（最多翻倍）。"
+  },
+  {
+    "name": "爆弹重拳",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "目标护甲降低20%",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "攻击速度+30%",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "连续的铁拳轰击撕裂目标的防御。造成2d8+STR挥砍伤害。每第三次对同一目标的攻击触发爆弹效果：目标护甲降低20%，自身攻击速度+30%，持续2回合。"
+  },
+  {
+    "name": "透体之劲",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "aoe",
+        "desc": "冲击波穿透目标对后方敌人造成半额伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "拳力透体而出，释放一道锥形冲击波穿透目标。造成1d8+STR挥砍伤害，并对目标身后15尺锥形范围内的敌人造成半额伤害。最多储存2层充能。"
+  },
+  {
+    "name": "天霸横空烈轰",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "将目标击飞至空中并压制",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "不可阻挡地冲向目标",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "锁定一名敌人，不可阻挡地冲破一切阻拦冲向目标——击飞路径上所有敌人。造成2d10+STR挥砍伤害，并将主目标压制于地面1回合。沿途被撞到的敌人受到半额伤害并被击退。"
+  }
+]

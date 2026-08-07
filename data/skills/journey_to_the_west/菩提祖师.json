@@ -1,0 +1,128 @@
+[
+  {
+    "name": "灵台方寸",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "灵台方寸山的仙法妙谛，1d8+WIS 光耀伤害，目标易伤1回合。"
+  },
+  {
+    "name": "妙法真传",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体伤害+30%"
+      },
+      {
+        "type": "cleanse",
+        "target": "自身",
+        "duration": 1,
+        "desc": "解除负面"
+      }
+    ],
+    "cooldown": 1,
+    "description": "菩提祖师传道授业。全体增伤2回合并解除负面效果。"
+  },
+  {
+    "name": "斜月三星",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复2d6生命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "斜月三星洞的玄妙仙术。获得护盾2回合并回复生命。"
+  },
+  {
+    "name": "须菩提道",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体伤害+50%"
+      },
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体护盾"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "恐惧"
+      }
+    ],
+    "cooldown": 4,
+    "description": "菩提祖师显化大道真意！3d8+WIS 光耀范围伤害，全体增伤+护盾2回合，未通过WIS豁免者恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

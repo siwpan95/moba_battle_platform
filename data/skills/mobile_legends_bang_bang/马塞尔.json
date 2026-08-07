@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Savage Throw",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。标记目标，后续攻击增伤3回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "desc": "标记目标，后续攻击增伤",
+        "target": "敌方",
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "name": "Pack Hunt",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。向目标方向移动30尺。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "向目标方向移动30尺",
+        "target": "自身",
+        "value": 30
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "Alpha's Roar",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 2,
+    "description": "1d6+WIS 力场伤害。攻击速度+30%2回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "攻速强化",
+        "desc": "攻击速度+30%",
+        "target": "自身",
+        "duration": 2,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "Full Moon Rage",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。变身为强化形态3回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "变身",
+        "desc": "变身为强化形态",
+        "target": "敌方",
+        "duration": 3
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

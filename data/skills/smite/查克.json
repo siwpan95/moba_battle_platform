@@ -1,0 +1,116 @@
+[
+  {
+    "name": "雷斧",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "恰克挥动雷斧——玛雅雨神的石斧劈开云层。1d10+STR 闪电伤害。"
+  },
+  {
+    "name": "暴雨",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "暴雨倾盆",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "恰克召来暴雨——他用石斧敲击云层，甘霖或洪水随之而来。AOE减速2回合。2d8+STR 寒冷伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "雨神之跃",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "雷云中的跳跃",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "heal",
+        "desc": "雨水滋润",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+STR"
+      }
+    ],
+    "cooldown": 2,
+    "description": "恰克跃入雷云——作为四大方位之一的雨神，他随时可以在云层间穿梭。加速2回合+回复。"
+  },
+  {
+    "name": "闪电风暴",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "闪电劈杀",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "雷火",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "恰克引发闪电风暴——暴雨、雷电、狂风在他头顶的云层中同时炸裂。低血斩杀+dot。2d10+STR 闪电伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

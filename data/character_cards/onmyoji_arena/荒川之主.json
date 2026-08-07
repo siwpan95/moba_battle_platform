@@ -1,5 +1,5 @@
 {
-  "card_id": "ONM-2299",
+  "card_id": "onmyoji_arena:荒川之主",
   "hero": {
     "name": "荒川之主",
     "name_en": "",
@@ -111,21 +111,125 @@
   },
   "skills": [
     {
-      "name": "技能二",
-      "key": "W",
+      "name": "战士·旋风斩",
+      "key": "Q",
       "type": "物理",
-      "action": "动作",
+      "action": "环绕横扫多个敌人",
       "range": "近战",
-      "target": "范围",
+      "target": "区域",
       "damage": {
         "dice_count": 2,
-        "dice_size": 8,
+        "dice_size": 6,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d8+STR 挥砍伤害。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "战士·冲锋",
+      "key": "W",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "knockback",
+          "duration": 1,
+          "desc": "击退",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
       "cooldown": 1,
-      "description": "28+STR 伤害。冷却1回合。"
+      "description": "1d12+STR 钝击伤害。击退",
+      "approx": true
+    },
+    {
+      "name": "战士·破甲击",
+      "key": "E",
+      "type": "物理",
+      "action": "削弱目标防御",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "sunder",
+          "duration": 1,
+          "desc": "降防",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "2d6+STR 穿刺伤害。降防",
+      "approx": true
+    },
+    {
+      "name": "战士·战吼",
+      "key": "R",
+      "type": "混合",
+      "action": "鼓舞自身与队友",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "buff",
+          "duration": 1,
+          "desc": "攻击提升",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CHA",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "1d6+CHA 能量伤害。攻击提升",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "ONM-2299"
 }

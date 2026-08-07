@@ -1,0 +1,156 @@
+{
+  "Shiro": {
+    "role": "assassin",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Mirage": {
+    "role": "mage",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "invis"
+      ]
+    }
+  },
+  "Golem": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Sylvan": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "Drago": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "Vex": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "W": [
+        "control"
+      ]
+    }
+  },
+  "Blitz": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Seraph": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "heal"
+      ]
+    }
+  },
+  "Frost": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Blaze": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "Storm": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "Void": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Aegis": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "Sage": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "cleanse"
+      ]
+    }
+  }
+}

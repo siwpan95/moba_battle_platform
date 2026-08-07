@@ -1,0 +1,113 @@
+[
+  {
+    "name": "妖精之风",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ]
+  },
+  {
+    "name": "月亮之力",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。目标陷入魅惑2回合。",
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "目标陷入魅惑",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": "WIS"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "吸取之吻",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。伤害转化为生命2回合。",
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "伤害转化为生命",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "妖精旋律",
+    "key": "U",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。目标陷入魅惑2回合。",
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "目标陷入魅惑",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": "WIS"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

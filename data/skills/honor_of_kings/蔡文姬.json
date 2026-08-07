@@ -1,0 +1,93 @@
+[
+  {
+    "name": "思无邪",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "神圣的光芒如晨曦绽放，蔡文姬引导着治愈之力。1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "胡笳乐",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 1,
+        "value": 8,
+        "desc": "获得8点临时护盾，持续1轮"
+      }
+    ],
+    "cooldown": 1,
+    "description": "圣言诵出，蔡文姬的祝福化为护盾笼罩盟友。2d6+WIS 光耀伤害。 获得8点临时护盾，持续1轮。"
+  },
+  {
+    "name": "长歌行",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "value": 5,
+        "desc": "获得5点临时护盾，持续2轮"
+      }
+    ],
+    "cooldown": 2,
+    "description": "纯净的祝福之光从蔡文姬手中流淌而出。1d8+WIS 光耀伤害。 获得5点临时护盾，持续2轮。"
+  },
+  {
+    "name": "忘忧曲",
+    "key": "P",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "value": 12,
+        "desc": "恢复12点生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "神迹降临！蔡文姬呼唤至高之力庇佑全队。3d8+WIS 光耀伤害。 恢复12点生命值。"
+  }
+]

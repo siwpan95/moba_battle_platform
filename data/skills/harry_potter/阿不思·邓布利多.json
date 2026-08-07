@@ -1,0 +1,104 @@
+[
+  {
+    "name": "火焰熊熊",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d6+INT 火焰伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "统统石化",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "duration": 2,
+        "desc": "目标无法行动",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "1d8+INT 力场伤害，石化目标 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "凤凰福克斯",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "duration": 1,
+        "desc": "恢复生命并净化负面",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "治疗自身并净化负面状态。",
+    "approx": true
+  },
+  {
+    "name": "老魔杖之力",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "终极魔法冲击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+INT 力场伤害，覆盖大片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

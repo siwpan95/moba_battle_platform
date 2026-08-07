@@ -1,0 +1,156 @@
+{
+  "Spectre": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Forge": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Mystic": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "slow"
+      ]
+    }
+  },
+  "Ronin": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Oracle": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "Warden": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "Shade": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "invis"
+      ]
+    }
+  },
+  "Ember": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "Gale": {
+    "role": "marksman",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "Terra": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "E": [
+        "control"
+      ]
+    }
+  },
+  "Shimmer": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "R": [
+        "cleanse"
+      ]
+    }
+  },
+  "Pyre": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "Zephyra": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "Obsidian": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  }
+}

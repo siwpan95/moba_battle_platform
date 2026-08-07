@@ -1,0 +1,104 @@
+[
+  {
+    "name": "闪电链",
+    "key": "Q",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "麻痹",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "目标被麻痹，无法行动"
+      },
+      {
+        "type": "麻痹",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "闪电麻痹"
+      }
+    ],
+    "cooldown": 1,
+    "description": "闪电链（Q）：弹跳伤害。造成 1d10+INT 雷鸣伤害。"
+  },
+  {
+    "name": "暴风雪",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "冰霜减速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "暴风雪（W）：持续冰伤。"
+  },
+  {
+    "name": "法力涌动",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "奥术穿透"
+      }
+    ],
+    "cooldown": 3,
+    "description": "法力涌动（E）：回蓝。"
+  },
+  {
+    "name": "元素风暴",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "巨大冲击击退"
+      }
+    ],
+    "cooldown": 5,
+    "description": "元素风暴（R）：混合伤害。造成 3d12+INT 力场伤害。（范围效果）"
+  }
+]

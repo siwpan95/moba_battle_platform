@@ -1,0 +1,103 @@
+[
+  {
+    "name": "除你武器",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "魔杖冲击击退"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害，尝试击落目标武器。",
+    "approx": true
+  },
+  {
+    "name": "盔甲护身",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 1,
+        "desc": "获得一层护盾，抵消下次伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "获得一层护盾，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "昏昏倒地",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "desc": "目标陷入眩晕",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害，并眩晕目标 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "呼神护卫",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "驱散",
+        "duration": 2,
+        "desc": "驱散范围内黑暗生物与负面效果",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+INT 光耀伤害，驱散范围内黑暗生物。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

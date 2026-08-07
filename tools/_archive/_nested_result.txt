@@ -1,0 +1,10 @@
+=== 加载过程 ===
+  [_load_skills_db] game_dir='test_ip' -> 查找 test_ip.json -> 命中
+  [_load_skills_db] game_dir='test_ip_nested\\season1' -> 查找 season1.json -> 不存在
+
+=== 结果 ===
+  game_dir='test_ip'                        技能数=4
+  game_dir='test_ip_nested\\season1'        技能数=0
+
+结论：嵌套目录卡片被 iter_card_files 扫描到（ADR-005 递归生效），
+      但 game_dir 含路径分隔符导致 skills DB 查找必然落空 -> 0 技能。

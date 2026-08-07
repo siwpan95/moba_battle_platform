@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2598",
+  "card_id": "three_body:关一帆",
+  "legacy_card_id": "THE-1013",
   "hero": {
     "name": "关一帆",
     "name_en": "Guan Yifan",
@@ -123,7 +124,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "空间扭曲减速"
+        }
+      ],
       "cooldown": 0,
       "description": "2d6+INT 力场伤害。",
       "approx": true
@@ -166,7 +174,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "空间扭曲减速"
+        }
+      ],
       "cooldown": 2,
       "description": "2d8+INT 力场伤害，覆盖一片区域。",
       "approx": true,
@@ -185,7 +200,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "空间扭曲减速"
+        }
+      ],
       "cooldown": 4,
       "description": "3d10+INT 力场伤害，覆盖大片区域。",
       "approx": true,

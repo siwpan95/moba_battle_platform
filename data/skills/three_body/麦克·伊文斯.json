@@ -1,0 +1,125 @@
+[
+  {
+    "name": "审判日号·船炮齐射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "巨轮炮火震退目标"
+      }
+    ],
+    "cooldown": 0,
+    "description": "ETO实际创建者伊文斯——以审判日号的火力碾压敌人。2d10+INT 穿刺伤害，击退10尺。",
+    "approx": true
+  },
+  {
+    "name": "物种共产主义·生态武器",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "aoe_radius": 12,
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "以自然之力报复人类"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊文斯以物种共产主义的名义——释放生态武器惩罚破坏环境者。2d8+INT 毒素伤害，12尺范围。中毒2回合。",
+    "approx": true
+  },
+  {
+    "name": "第二红岸基地·通讯",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 3,
+        "desc": "接收三体文明指令"
+      },
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 3,
+        "value_formula": "3*LVL+INT",
+        "desc": "三体技术的保护"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊文斯启动第二红岸基地——与三体文明通讯获取技术支持。获得3×LVL+INT护盾，全属性+3。持续3回合。冷却2回合。",
+    "approx": true
+  },
+  {
+    "name": "古筝行动·最终抵抗",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "挥砍"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "即死",
+        "target": "敌方",
+        "dc_attr": "DEX",
+        "threshold": "HP<25%",
+        "desc": "纳米丝切割无可幸免"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "古筝行动的恐怖收割"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "伊文斯在审判日号上的最后时刻——古筝行动中纳米丝的恐怖收割。5d10+INT 挥砍伤害，25尺范围。HP<25%即死(纳米丝切割)。WIS豁免失败恐惧2回合。冷却4回合。",
+    "approx": true
+  }
+]

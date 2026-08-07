@@ -1,0 +1,105 @@
+[
+  {
+    "name": "角斗士之剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "角斗场本能：低血量伤害翻倍"
+      }
+    ],
+    "cooldown": 0,
+    "description": "角斗士的生存本能！1d10+STR 挥砍伤害。若目标生命低于一半，伤害翻倍——竞技场教会他的唯一法则。"
+  },
+  {
+    "name": "奴隶起义",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "lifesteal",
+        "target": "自身",
+        "duration": 2,
+        "desc": "自由之怒：攻击吸血"
+      }
+    ],
+    "cooldown": 1,
+    "description": "为自由而战的奴隶们奋起！2d8+STR 挥砍伤害。自由之怒使攻击获得吸血效果2回合。"
+  },
+  {
+    "name": "维苏威突围",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "绝境突围，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "如维苏威火山突围般绝境求生！1d8+STR 钝击伤害。斯巴达克斯绝境冲锋，速度翻倍2回合。"
+  },
+  {
+    "name": "不屈的自由",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "自由之魂：伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "压迫者必诛：低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "I am Spartacus！2d10+STR 挥砍范围伤害。自由之魂觉醒增伤2回合，对所有压迫者低血量伤害翻倍。"
+  }
+]

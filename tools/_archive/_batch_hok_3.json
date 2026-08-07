@@ -1,0 +1,167 @@
+{
+  "霍去病": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "卫青": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "岳飞": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "戚继光": {
+    "role": "fighter",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "穆桂英": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "Q": [
+        "sunder"
+      ]
+    }
+  },
+  "樊梨花": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "秦琼": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "E": [
+        "control"
+      ]
+    }
+  },
+  "尉迟恭": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "薛仁贵": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "vuln"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "狄青": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "孙武": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "李广": {
+    "role": "marksman",
+    "signature": {
+      "Q": [
+        "vuln"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "养由基": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "王翦": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "蒙毅": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  }
+}

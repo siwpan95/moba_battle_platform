@@ -1,0 +1,125 @@
+[
+  {
+    "name": "利爪撕裂",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<25%增伤75%"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 挥砍伤害。深潜者以带蹼的利爪撕裂猎物。",
+    "approx": true
+  },
+  {
+    "name": "深渊投矛",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被深海骨矛刺中"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。深潜者掷出深海骨矛。减速1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "两栖潜行",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "水陆两栖突进25尺"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "深渊毒素"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。深潜者以两栖之躯在任意地形潜行。中毒1回合。",
+    "approx": true
+  },
+  {
+    "name": "印斯茅斯之影",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 2,
+        "desc": ""
+      },
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 2,
+        "desc": ""
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+DEX 穿刺伤害。深潜者召唤印斯茅斯的阴影。隐身2回合+加速2回合+恐惧1回合。",
+    "approx": true
+  }
+]

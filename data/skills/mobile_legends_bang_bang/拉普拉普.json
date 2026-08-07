@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Land Shaker",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+STR 挥砍伤害。目标被击飞，失去动作1回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Jungle Warrior",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "aoe_radius": 5
+  },
+  {
+    "name": "Brave Stance",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "向目标方向移动30尺。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "向目标方向移动30尺",
+        "target": "自身",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "Ancestral Blade",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d8+STR 挥砍伤害。目标被击飞，失去动作1回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  }
+]

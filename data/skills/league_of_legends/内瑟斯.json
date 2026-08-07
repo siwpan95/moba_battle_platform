@@ -1,0 +1,120 @@
+[
+  {
+    "name": "汲魂痛击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "击杀敌人永久增加此技能伤害+1（英雄/大型单位+3）",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "将沙漠死神的神力注入权杖，下一击造成1d10+STR挥砍伤害。以此技能击杀敌人后，永久汲取其灵魂精华，增加此技能伤害+1（击杀英雄或大型单位则+3）。"
+  },
+  {
+    "name": "枯萎",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度与攻击速度减半，效果随时间递增",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "description": "以古老的时光诅咒侵蚀目标的灵魂，使其迅速衰老。造成1d6+STR黯蚀伤害，目标移动速度和攻击速度减半并持续恶化，持续2回合。CON豁免成功则减速效果减半。"
+  },
+  {
+    "name": "灵魂烈焰",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "护甲减半",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "每回合额外受到1d4灼烧伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "description": "在目标区域降下紫色的灵魂烈焰，造成2d6+STR火焰伤害。烈焰持续焚烧大地2回合，站在其中的敌人护甲减半，且每回合受到1d4灼烧伤害。DEX豁免成功则初始伤害减半。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "死神降临",
+    "key": "R",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "生命上限+50%",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "dot",
+        "desc": "周围敌人每回合受到黯蚀伤害并转化为自身生命",
+        "duration": 3,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "化身沙漠死神本尊，体型暴增，生命上限提升50%并获得额外护甲与魔法抗性，持续3回合。周身环绕的死亡沙暴每回合对附近敌人造成3d8+STR黯蚀伤害，并将造成伤害的30%转化为自身生命值。"
+  }
+]

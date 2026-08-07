@@ -1,0 +1,113 @@
+[
+  {
+    "name": "嘲讽打击",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 0,
+    "description": "以盾牌/重武器猛击敌人，附加控制效果。坦克的控场起手式。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "使目标眩晕，失去行动能力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "坚韧护盾",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 1,
+    "description": "激活防御技能，大幅提升伤害减免/生成护盾。坦克的生存核心。",
+    "range": "自身",
+    "target": "自身",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "生成临时伤害吸收护盾",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "巨石投掷",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 2,
+    "description": "猛击地面造成范围冲击，削弱周围敌人。坦克的群体压制技。",
+    "range": "近战",
+    "target": "范围",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "使目标眩晕，失去行动能力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "山崩地裂",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 4,
+    "description": "释放全部防御/控制潜能，化身不可撼动的堡垒。坦克的终极团战技。",
+    "range": "近战",
+    "target": "范围",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "使目标眩晕，失去行动能力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

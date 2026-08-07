@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1766",
+  "card_id": "honor_of_kings:盾山",
   "hero": {
     "name": "盾山",
     "name_en": "",
@@ -109,74 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "一夫当关",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "万夫莫开",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "不动如山",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "天地化盾",
-      "key": "P",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "HON-1766"
 }

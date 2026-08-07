@@ -1,0 +1,120 @@
+[
+  {
+    "name": "黑暗祭祀",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "击杀单位永久提升法强",
+        "duration": 99,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "黑暗物质",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "陨星坠落延迟打击",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。",
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "扭曲空间",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "魔法牢笼边缘眩晕触碰者",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "能量爆裂",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "目标生命越低伤害越高",
+        "threshold": 33,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

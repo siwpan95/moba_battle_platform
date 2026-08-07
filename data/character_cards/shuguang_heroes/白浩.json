@@ -1,5 +1,5 @@
 {
-  "card_id": "DAW-1287",
+  "card_id": "shuguang_heroes:白浩",
   "hero": {
     "name": "白浩",
     "name_en": "",
@@ -110,94 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "挑衅怒吼",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "挑衅怒吼（Q）：强制嘲讽。造成 1d8+STR 挥砍伤害。属性全面提升。"
-    },
-    {
-      "name": "荆棘护体",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "荆棘护体（W）：反弹伤害。造成 2d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "山崩地裂",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "type": "眩晕",
-          "duration": 1,
-          "desc": "目标被眩晕，无法行动。",
-          "target": "敌方"
-        },
-        {
-          "type": "致盲",
-          "duration": 1,
-          "desc": "攻击有几率落空。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 4,
-      "description": "山崩地裂（E）：范围眩晕。造成 1d10+STR 钝击伤害。目标被眩晕，无法行动。攻击有几率落空。"
-    },
-    {
-      "name": "不朽意志",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "不朽意志（R）：短暂无敌。造成 2d12+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "DAW-1287"
 }

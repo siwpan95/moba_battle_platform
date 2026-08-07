@@ -1,0 +1,128 @@
+[
+  {
+    "name": "雷缚印",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "手里剑施加雷缚标记",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "电子脉冲",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "释放雷电脉冲打击标记目标",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "雷铠",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "化身闪电获得极速",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "shield",
+        "desc": "闪电护甲",
+        "duration": 1,
+        "value": 20,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "秘奥义!万雷天牢引",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "召唤雷暴环绕持续雷击",
+        "duration": 3,
+        "target": "敌方"
+      },
+      {
+        "type": "control",
+        "desc": "三层雷缚触发眩晕",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

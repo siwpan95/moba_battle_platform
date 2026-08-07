@@ -1,0 +1,128 @@
+[
+  {
+    "name": "盛开花种",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "花种绽放可重复触发",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。",
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "两生花影",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "短暂隐身并制造分身迷惑敌人",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "分身期间移速提升",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。"
+  },
+  {
+    "name": "缠结倒刺",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "魔法漩涡禁锢路径敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "怒放",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "引导期间获得护盾",
+        "duration": 1,
+        "value": 40,
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "跃起落地造成范围眩晕",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

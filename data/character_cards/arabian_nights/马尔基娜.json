@@ -1,0 +1,240 @@
+{
+  "card_id": "arabian_nights:马尔基娜",
+  "legacy_card_id": "ONE-8694",
+  "hero": {
+    "name": "马尔基娜",
+    "name_en": "Morgiana",
+    "alias": "",
+    "title": "Morgiana"
+  },
+  "game": {
+    "name": "One Thousand and One Nights",
+    "name_cn": "一千零一夜",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "一千零一夜",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "护盾",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "巧手轻抚",
+      "key": "Q",
+      "type": "法术",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "cooldown": 0,
+      "description": "发射圣光弹幕攻击敌人。辅助的基础远程骚扰手段。",
+      "range": "远程",
+      "target": "单体",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "治疗",
+          "desc": "恢复生命值",
+          "duration": 0,
+          "target": "自身",
+          "value": "2d6+WIS"
+        }
+      ]
+    },
+    {
+      "name": "慧心庇佑",
+      "key": "W",
+      "type": "法术",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "cooldown": 1,
+      "description": "吟唱治疗祷言/释放护盾，为盟友提供生命恢复或伤害吸收。",
+      "range": "远程",
+      "target": "单体",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "治疗",
+          "desc": "恢复生命值",
+          "duration": 0,
+          "target": "自身",
+          "value": "3d8+WIS"
+        },
+        {
+          "type": "护盾",
+          "desc": "生成临时伤害吸收护盾",
+          "duration": 2,
+          "target": "自身",
+          "value": "2d8+CHA"
+        }
+      ]
+    },
+    {
+      "name": "匕舞赐福",
+      "key": "E",
+      "type": "法术",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "cooldown": 2,
+      "description": "施加祝福/净化，强化盟友属性或清除负面效果。辅助的增益核心。",
+      "range": "远程",
+      "target": "单体",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "护盾",
+          "desc": "生成临时伤害吸收护盾",
+          "duration": 2,
+          "target": "自身",
+          "value": "2d10+CHA"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "沸油奇计",
+      "key": "R",
+      "type": "法术",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "cooldown": 4,
+      "description": "召唤神圣领域/天使庇护，为大范围盟友提供强力保护与治疗。",
+      "range": "远程",
+      "target": "范围",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "治疗",
+          "desc": "恢复生命值",
+          "duration": 0,
+          "target": "自身",
+          "value": "4d10+WIS"
+        },
+        {
+          "type": "护盾",
+          "desc": "生成临时伤害吸收护盾",
+          "duration": 2,
+          "target": "自身",
+          "value": "3d10+CHA"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

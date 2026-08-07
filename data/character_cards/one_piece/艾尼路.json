@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2277",
+  "card_id": "one_piece:艾尼路",
   "hero": {
     "name": "艾尼路",
     "name_en": "Enel",
@@ -108,87 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "雷指",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "雷鸣"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d10+INT 雷鸣伤害。",
-      "approx": true
-    },
-    {
-      "name": "电光缠绕",
-      "key": "W",
-      "type": "法术",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "雷鸣"
-      },
-      "effects": [
-        {
-          "type": "附魔",
-          "duration": 2,
-          "desc": "攻击附带雷电",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "雷电缠绕全身，攻击附魔，持续 2 回合。",
-      "approx": true
-    },
-    {
-      "name": "雷兽",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "雷鸣"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d10+INT 雷鸣伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 10
-    },
-    {
-      "name": "雷迎",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "INT",
-        "type": "雷鸣"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d12+INT 雷鸣伤害，覆盖大片区域。",
-      "approx": true,
-      "aoe_radius": 15
-    }
-  ]
+  "legacy_card_id": "ONE-2277"
 }

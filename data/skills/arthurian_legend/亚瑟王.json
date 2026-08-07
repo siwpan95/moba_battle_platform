@@ -1,0 +1,108 @@
+[
+  {
+    "name": "王剑斩",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 0,
+    "description": "挥舞武器发动沉重打击。战士的近身搏杀之本。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "破甲",
+        "desc": "降低目标防御力",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ]
+  },
+  {
+    "name": "卡美洛垒",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 1,
+    "description": "摆出防御姿态，提升自身韧性。战斗中的生存之道。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "处决",
+        "desc": "对低血量目标造成额外伤害",
+        "duration": 0,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "王权号令",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 2,
+    "description": "向目标发起冲锋/跳跃。战士切入战场的突进技。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "增益",
+        "desc": "提升自身攻击力",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "阿瓦隆圣光",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 4,
+    "description": "激发全部战意，进入狂暴/强化状态。战士的终极战斗形态。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命值",
+        "duration": 0,
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

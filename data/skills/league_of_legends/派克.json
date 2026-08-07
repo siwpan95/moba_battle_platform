@@ -1,0 +1,148 @@
+[
+  {
+    "name": "透骨尖钉",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "鱼叉钩拽拉近目标",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "蓄力减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "幽潭潜行",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "潜入幽潭隐身",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "潜行中移速飙升",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "heal",
+        "desc": "潜行回复近期受伤生命",
+        "duration": 2,
+        "value": 15,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "魅影浪洄",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "暗影冲刺",
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "暗影返回时眩晕穿过敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 挥砍伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "涌泉之恨",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "X形处决低血量目标，击杀刷新",
+        "threshold": 25,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "处决成功可再次施放",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+DEX 挥砍伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "name": "骨刃刺",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "cooldown": 0,
+    "description": "以迅雷之势发动近战打击。在阴影中淬炼的利刃直取要害。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "灼烧",
+        "desc": "持续受到火焰伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ]
+  },
+  {
+    "name": "不死匿踪",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 1,
+    "description": "投掷淬毒暗器，精准命中远方目标。暗杀者的远程绝技。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "降低目标移动速度",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "幽魂疾步",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "cooldown": 2,
+    "description": "身形一闪，化作暗影穿行于战场。刺客赖以生存的位移身法。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "提升移动和攻击速度",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "藏魂之针",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "cooldown": 4,
+    "description": "锁定猎物，释放致命连击。暗影之力凝于一点，一击必杀。",
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "提升移动和攻击速度",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  }
+]

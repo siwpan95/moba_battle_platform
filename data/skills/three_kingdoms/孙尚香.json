@@ -1,0 +1,103 @@
+[
+  {
+    "name": "弓腰姬",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "弓腰姬孙尚香，1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "红莲箭",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧1d4"
+      }
+    ],
+    "cooldown": 1,
+    "description": "附带火焰的利箭！2d6+DEX 穿刺伤害，灼烧2回合。"
+  },
+  {
+    "name": "巾帼不让",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "巾帼不让须眉！速度翻倍2回合，增伤1回合。"
+  },
+  {
+    "name": "郡主神射",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "易伤"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血翻倍"
+      }
+    ],
+    "cooldown": 4,
+    "description": "东吴郡主的致命神射！3d8+DEX 穿刺伤害，易伤2回合，低血翻倍。"
+  }
+]

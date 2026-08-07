@@ -1,0 +1,104 @@
+[
+  {
+    "name": "甜甜甘风",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "duration": 1,
+        "desc": "目标被石化",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+CHA 心灵伤害，石化目标。",
+    "approx": true
+  },
+  {
+    "name": "虏之箭",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被爱之箭束缚"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+CHA 力场伤害。",
+    "approx": true
+  },
+  {
+    "name": "魅惑之吻",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "duration": 2,
+        "desc": "友方增益/敌方混乱",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+CHA 心灵伤害，扰乱敌人增益友方。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "爱的践踏",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "践踏眩晕"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+CHA 心灵伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "name": "笑家掌法·笑里藏刀",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "value": 2,
+        "desc": "掌中藏杀招二段追击",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "笑三少的独门掌法——看似一笑实藏杀机！1d10+DEX 钝击伤害，二段连击。"
+  },
+  {
+    "name": "笑家腿法·笑傲江湖",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "20尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击倒",
+        "duration": 1,
+        "dc_attr": "DEX",
+        "desc": "潇洒腿法扫倒目标",
+        "target": "敌方"
+      },
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "连环腿劲震晕对手",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "笑三少的掌腿双绝——腿法如风笑傲江湖！2d8+DEX 钝击伤害，20尺突进。DEX豁免失败击倒+CON豁免失败眩晕1回合。冷却1回合。"
+  },
+  {
+    "name": "百家武学·兼收并蓄",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "全属性强化",
+        "duration": 3,
+        "value": "PROF",
+        "desc": "百家武学融会贯通",
+        "target": "自身"
+      },
+      {
+        "type": "加速",
+        "duration": 3,
+        "value": 25,
+        "desc": "身法灵动如飞燕",
+        "target": "自身"
+      },
+      {
+        "type": "净化",
+        "desc": "博学多才化解一切异常",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "笑三少以博学之才融会百家武学——兼收并蓄化为己用。全属性+PROF，速度+25尺，解除所有负面状态。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "终极·笑尽英雄",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "一笑倾人城二笑倾人国",
+        "target": "敌方"
+      },
+      {
+        "type": "缴械",
+        "duration": 2,
+        "dc_attr": "DEX",
+        "desc": "掌腿齐出令敌兵器尽失",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "笑三少掌腿双绝终极一击——笑尽天下英雄！5d8+DEX 力场伤害，25尺范围。WIS豁免失败眩晕2回合。DEX豁免失败缴械2回合。冷却4回合。"
+  }
+]

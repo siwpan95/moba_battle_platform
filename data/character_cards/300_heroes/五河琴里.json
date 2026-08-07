@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1041",
+  "card_id": "300_heroes:五河琴里",
   "hero": {
     "name": "五河琴里",
     "name_en": "",
@@ -110,95 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "旋风斩",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "旋风斩（Q）：范围伤害。造成 1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "战斗怒吼",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "战斗怒吼（W）：强化普攻。属性全面提升。"
-    },
-    {
-      "name": "突刺",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 3,
-      "description": "突刺（E）：位移强化。造成 1d10+STR 穿刺伤害。属性全面提升。"
-    },
-    {
-      "name": "狂暴之力",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "STR",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 5,
-      "description": "狂暴之力（R）：全面提升。属性全面提升。"
-    }
-  ]
+  "legacy_card_id": "300-1041"
 }

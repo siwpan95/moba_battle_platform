@@ -1,0 +1,117 @@
+[
+  {
+    "name": "象头撞击",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "象神之力震撼大地",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "伽内什以象头撞击——他是湿婆之子，被父亲误斩头颅后换上了大象的头，力量无穷。1d10+STR 钝击伤害，减速1回合。"
+  },
+  {
+    "name": "除障",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "智慧之光化为屏障",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "cleanse",
+        "desc": "拔除一切障碍",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 1,
+    "description": "伽内什施展除障之力——作为障碍之神，他能移除一切阻碍，亦能为敌人设置天堑。护盾2回合+净化。"
+  },
+  {
+    "name": "智慧之杵",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "智慧找出防御中的裂隙",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伽内什挥出智慧之杵——他用折断的象牙抄写了整部《摩诃婆罗多》，智慧能洞穿一切。破甲2回合。1d8+STR 力场伤害。"
+  },
+  {
+    "name": "象神之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "象神踏地，万物倾倒",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "减伤",
+        "desc": "象皮如铁，刀枪不入",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "伽内什释放象神之怒——当他真正愤怒时，连群山也要低头。AOE击倒+减伤2回合。2d8+STR 钝击伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

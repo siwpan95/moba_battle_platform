@@ -1,0 +1,110 @@
+[
+  {
+    "name": "预言织梭",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 力场伤害。弗丽嘉以命运织梭穿透时间之线攻击。",
+    "approx": true
+  },
+  {
+    "name": "天后祝福",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "回复2d8+WIS",
+        "value": "2d8+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。弗丽嘉以众神之后的名义祝福友方。回复2d8+WIS生命。",
+    "approx": true
+  },
+  {
+    "name": "万物誓言",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "万物不伤之盾",
+        "value": "1d10+WIS"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。弗丽嘉曾让万物发誓不伤巴德尔。护盾2回合。",
+    "approx": true
+  },
+  {
+    "name": "命运帷幕",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "全体回复3d6+WIS",
+        "value": "3d6+WIS"
+      },
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "全体免疫控制"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 力场伤害。弗丽嘉掀开命运帷幕的一角。全体回复+免疫控制1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

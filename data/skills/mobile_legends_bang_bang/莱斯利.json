@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Master of Camouflage",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+DEX 穿刺伤害。变为隐形2回合。暴击率提升2回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "隐形",
+        "desc": "变为隐形",
+        "target": "自身",
+        "duration": 2
+      },
+      {
+        "type": "暴击强化",
+        "desc": "暴击率提升",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "PROF*5"
+      }
+    ]
+  },
+  {
+    "name": "Tactical Grenade",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。目标被推开10尺1回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Lethal Shot",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "Lethal Shot。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    }
+  },
+  {
+    "name": "Ultimate Snipe",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "5d6+DEX 穿刺伤害。目标生命<30%时伤害翻倍。影响整个战场。",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "desc": "目标生命<30%时伤害翻倍",
+        "target": "敌方",
+        "threshold": 30
+      },
+      {
+        "type": "全图",
+        "desc": "影响整个战场",
+        "target": "敌方"
+      }
+    ]
+  }
+]

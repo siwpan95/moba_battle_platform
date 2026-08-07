@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1993",
+  "card_id": "league_of_legends:塔姆",
+  "legacy_card_id": "LEA-1125",
   "hero": {
     "name": "塔姆",
     "name_en": "Tahm Kench",
@@ -108,75 +109,5 @@
     "hp": 100,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "巨舌鞭笞",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "大快朵颐",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "厚实表皮",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "深渊潜航",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  }
 }

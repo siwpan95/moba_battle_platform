@@ -1,0 +1,109 @@
+[
+  {
+    "name": "毁灭之舞",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "四臂同时挥砍，伤口深可见骨",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "迦梨开始她的毁灭之舞——四臂各持弯刀与头颅，每一步踏下大地都在震颤。她的舞蹈是时间的终结本身。1d10+DEX 挥砍伤害，流血2回合。"
+  },
+  {
+    "name": "嗜血狂暴",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "lifesteal",
+        "desc": "舔舐敌人的鲜血，回复自身",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "进入嗜血状态，伤害提升",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "迦梨进入狂暴——她曾击倒湿婆后仍不停舞，被杀戮的快感彻底吞噬。每次攻击吸取生命，短时间内伤害提升。2d8+DEX 挥砍伤害，吸血+增伤。"
+  },
+  {
+    "name": "血舌舔舐",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "舔舐血液后更加强大",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "迦梨伸出长舌舔舐鲜血——在对抗恶魔罗刹毗阇时，她用舌头接住每一滴血，阻止新恶魔诞生。获得加速2回合。1d8+DEX 黯蚀伤害。"
+  },
+  {
+    "name": "迦梨时代",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "终结之舞——弱者当场毙命",
+        "target": "敌方"
+      },
+      {
+        "type": "恐惧",
+        "desc": "时间女神的面容让所有生灵胆寒",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "迦梨宣告末日的降临——她是时间与死亡的女神，头戴骷髅项链，腰缠断臂之裙，踏在湿婆的身上起舞。对低生命敌人斩杀，全场恐惧。4d6+DEX 黯蚀伤害，AOE。",
+    "aoe_radius": 25
+  }
+]

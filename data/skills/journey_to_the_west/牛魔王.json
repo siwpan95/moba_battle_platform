@@ -1,0 +1,129 @@
+[
+  {
+    "name": "混铁棍",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "护甲降低"
+      }
+    ],
+    "cooldown": 0,
+    "description": "混铁棍重逾千钧，1d10+STR 钝击伤害，破甲1回合。"
+  },
+  {
+    "name": "大力牛魔",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 1,
+    "description": "牛魔真身，力大无穷！受伤减半2回合并增伤2回合。"
+  },
+  {
+    "name": "牛虱大军",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "减速"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "1d4钝击"
+      }
+    ],
+    "cooldown": 2,
+    "description": "抖落满身牛虱化为小妖！1d8+STR 钝击范围伤害，减速2回合并持续伤害1回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "平天大圣",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "大幅减伤"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "大幅破甲"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "击退"
+      }
+    ],
+    "cooldown": 4,
+    "description": "七大圣之首，平天大圣的伟力！2d8+STR 钝击范围伤害，大幅减伤+破甲2回合，击退1回合。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

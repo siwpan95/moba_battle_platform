@@ -1,0 +1,116 @@
+[
+  {
+    "name": "猴神之拳",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "哈奴曼挥出猴神铁拳——他的拳头能开山裂石，曾经一拳击碎恶魔的头颅。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "风神之子",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "风神之子如风飞驰",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "buff",
+        "desc": "猴神战意燃烧",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "哈奴曼唤起风神血脉——他的父亲是风神伐由，自幼便能飞跃海洋。加速2回合+增伤1回合。"
+  },
+  {
+    "name": "金刚不坏",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "金刚不坏之身",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "刀枪不入",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "哈奴曼施展金刚不坏——诸神赐福使他刀枪不入，连因陀罗的金刚杵也只能在他身上留下淤青。护盾+减伤各2回合。"
+  },
+  {
+    "name": "搬山",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "山压弱者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "控制",
+        "desc": "整座山峰砸下",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "哈奴曼搬起整座山峰——当年为寻找治伤仙草，他将喜马拉雅山连根拔起。AOE击倒+低血斩杀。2d10+STR 钝击伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

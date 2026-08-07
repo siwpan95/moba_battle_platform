@@ -1,0 +1,122 @@
+[
+  {
+    "name": "阿尔法突袭",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "化为不可选中状态斩击多名敌人",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 挥砍伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "冥想",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "引导回复大量生命",
+        "duration": 1,
+        "value": 30,
+        "target": "自身"
+      },
+      {
+        "type": "reduce",
+        "desc": "引导期间受到伤害减半",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 挥砍伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "无极剑道",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "每次攻击附带额外真实伤害",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "高原血统",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "移速攻速大幅提升",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "immune",
+        "desc": "免疫减速效果",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+DEX 挥砍伤害。"
+  }
+]

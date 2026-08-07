@@ -1,0 +1,127 @@
+[
+  {
+    "name": "罗马军团盾",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "盾墙推进，击退"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "罗马军团重盾推进！1d10+STR 钝击伤害。STR豁免无效则击退。击败汉尼拔之人以此盾守住罗马。"
+  },
+  {
+    "name": "铁壁防御",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "龟甲阵：获得临时生命"
+      },
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "罗马之壁：受伤减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "扎马之战的无敌防御！2d6+STR 钝击伤害。西庇阿施展龟甲阵，获得护盾且受伤减半2回合。"
+  },
+  {
+    "name": "反汉尼拔战术",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "战术反制：护甲降低"
+      }
+    ],
+    "cooldown": 2,
+    "aoe_radius": 10,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "description": "克制汉尼拔的战术阵法！1d8+STR 钝击范围伤害，CON豁免半伤。西庇阿的战术反制使敌军护甲降低2回合。"
+  },
+  {
+    "name": "非洲征服者",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "阿非利加努斯：伤害+60%"
+      },
+      {
+        "type": "控制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "扎马合围：范围眩晕"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "description": "Africanus——非洲征服者之名！2d8+STR 钝击范围伤害，CON豁免半伤。西庇阿进入征服者姿态增伤2回合，扎马式合围眩晕敌军。"
+  }
+]

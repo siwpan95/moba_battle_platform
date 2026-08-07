@@ -1,0 +1,8500 @@
+[
+  {
+    "ip": "300_heroes",
+    "en_name": "C.C.",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Aegis",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "埃癸斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Airi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "爱里"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Aleister",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿莱斯特"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Alice",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "爱丽丝"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Allain",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "艾兰"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Amily",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "艾蜜莉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Annette",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "安奈特"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Aoi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "星葵"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Arduin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿杜恩"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ares",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿瑞斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Arthur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莫托斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Arum",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "艾瑞"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Astrid",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "艾翠丝"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ata",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿塔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Atlas Prime",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿特拉斯·普莱姆"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Aya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "芽芽"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "AzzenKa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿兹卡"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Baldum",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伯顿"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Bijan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "碧阳"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Billow",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "碧涛"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Biron",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "拜隆"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Blaze",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布雷兹"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Blitz",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "闪电侠"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Bolt Baron",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雷霆男爵"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Bonnie",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "邦妮"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Bright",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "布莱特"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Brunhilda",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "布伦希尔德"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Butterfly",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "刀锋宝贝"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Capheny",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡芬妮"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Celica",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赛莉卡"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Charlotte",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "夏洛特"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Chaugnar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "查戈纳尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Cresht",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克莱斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Darcy",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "达尔西"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Dextra",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "黛克斯特拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Diaochan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "貂蝉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Dirak",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "狄拉克"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Dolia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "朵莉亚"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Drago",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德拉戈"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Dyadia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "迪亚迪亚"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Echo",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾可"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Edras",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "埃德拉斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Elandorr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "兰铎"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Elsu",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "苏"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ember",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "恩贝尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Enzo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "恩佐"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Erin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾琳"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Errol",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "埃罗尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Fennik",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "菲尼克"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Florentino",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "弗洛伦"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Flowborn",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "流裔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Forge",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "弗吉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Frost",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "弗洛斯特"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Gaia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "盖亚"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Gale",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "盖尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Gildur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "哥德尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Golem",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "魔像"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Goverra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "戈薇拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Grakk",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "夸克"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Hayate",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "亥犽"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Heino",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海诺"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Helen",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "海伦"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Helios",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赫利俄斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Iggy",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊姬"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ignis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊耿士"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ilumia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卢蜜亚"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ishar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊莎尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Jinnar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "金纳"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Kahlii",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡莉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Kaine",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "凯恩"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Keera",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "绮拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "KilGroth",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "凯格路士"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Kriknak",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "科里纳卡"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Krixi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克里希"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Krizzix",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡瑞兹"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Kronos",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "克洛诺斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Lauriel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "萝儿"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Laville",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉维尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Liliana",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莉莉安"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Lindis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "琳蒂"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Lorion",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "洛里昂"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Lu Bu",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "吕布"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Lumburr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "朗博"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Luna",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "露娜"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Maloch",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "马洛斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Marja",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛迦"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Max",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "麦克思"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Mganga",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "穆加爵"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Mina",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "美娜"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ming",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "明"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Mirage",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "米拉吉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Moren",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "摩恩"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Murad",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莫拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Mystic",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "秘术师"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Nakroth",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "纳克罗斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Natalya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "娜塔亚"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Nova",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "诺娃"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Nyx",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "妮克丝"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Obsidian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑曜石"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Obsidio",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑曜守护"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Omega",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "欧米茄"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Omen",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "夜叉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Oracle",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "神谕者"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Orion",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "俄里翁"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ormarr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "渥马尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Paine",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "潘因"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Phoenix",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "菲尼克斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Preyta",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "普雷塔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Pyre",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "派尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Qi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "筱清"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Quillen",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奎伦"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Raven",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "瑞文"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Raz",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉兹"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Riktor",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "瑞克"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ronin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "浪人"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Rouie",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "若伊"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Rourke",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "洛克"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Roxie",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "诺可西"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ryoma",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "龙马"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Sage",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "贤者"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Selene",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塞勒涅"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Sephera",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赛芙拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Seraph",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "炽天使"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Shade",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黯影"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Shimmer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "微光"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Shiro",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "白"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Sinestrea",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "辛斯特雷亚"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Skud",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "司科德"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Slimz",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "史兰兹"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Spectre",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "幽灵"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Storm",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "风暴"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Stuart",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "斯图尔特"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Superman",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "超人"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Sylvan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "森林之灵"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Taara",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "塔拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Tachi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "太刀"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Tamyn",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塔敏"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "TeeMee",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "提米"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Teeri",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "蒂莉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "TelAnnas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "特尔安娜斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Terra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "泰拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Thane",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "萨尼"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "The Flash",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "闪电侠"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Thorne",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "索恩"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Titan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "泰坦"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Toro",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "牛魔王"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Tulen",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "图伦"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Valhein",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "凡恩"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Veera",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "薇菈"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Veres",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "绯泪"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Vex",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "维克斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Violet",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "堇"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Void",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "虚空"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Volkath",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "沃尔卡斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Warden",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "守望者"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Wiro",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "维罗"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Wisp",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "灵灵"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Wonder Woman",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "神力女超人"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Wukong",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "悟空"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Xeniel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赞尼尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Yan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "焱"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Ybneth",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "古木"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Yorn",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "勇"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Yue",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "月"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zanis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赵云"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zata",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "飒枷"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zephyr",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "泽菲尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zephyra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "泽菲拉"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zephys",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "瑟斐斯"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zill",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "齐尔"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zip",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "齐普"
+  },
+  {
+    "ip": "arena_of_valor",
+    "en_name": "Zuka",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "祖卡"
+  },
+  {
+    "ip": "dota2",
+    "en_name": "Roshan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "肉山"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Abathur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿巴瑟"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Aidan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾丹"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Akama",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿卡玛"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Alarak",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿拉纳克"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Alexstrasza",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿莱克丝塔萨"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Algalon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥尔加隆"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Alleria",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥蕾莉亚"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Amazon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亚马逊"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Ana",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "安娜"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Andariel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "安达利尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Anduin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "安度因"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Antonidas",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "安东尼达斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Anub'arak",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿努巴拉克"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Archimonde",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿克蒙德"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "ArcturusMengsk",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿克图尔斯·蒙斯克"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Artanis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿塔尼斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Arthas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿尔萨斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Assassin_D2",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗黑刺客"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Auriel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥莉尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Azmodan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿兹莫丹"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Azshara",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾萨拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Baal",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Baptiste",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴蒂斯特"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Belial",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "彼列"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Blackthorne",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑色荆棘"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Blaze",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "爆焰"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Brann",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布莱恩"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Brightwing",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "光明之翼"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Brigitte",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布丽吉塔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Bwonsamdi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "邦桑迪"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Cassia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡西娅"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Cenarius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塞纳留斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Chen",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "陈"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Cho",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "古"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Chromie",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克罗米"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Cydea",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赛迪亚"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "D.Va",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Deathwing",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "死亡之翼"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Deckard",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "迪卡德"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Dehaka",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "德哈卡"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Diablo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "迪亚波罗"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Doomfist",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "末日铁拳"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "DrekThar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德雷克塔尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Druid",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德鲁伊"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Duriel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "都瑞尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "E.T.C.",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "精英牛头人酋长"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Echo",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "回声"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Falstad",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "弗斯塔德"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Fenix",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "菲尼克斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Gall",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "加尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Gallywix",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "加里维克斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Garona",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "迦罗娜"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Garrosh",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "加尔鲁什"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Gazlowe",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "加兹鲁维"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Genji",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "源氏"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Greymane",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "格雷迈恩"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Grommash",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格罗玛什"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Gul'dan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "古尔丹"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Hakkar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哈卡"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Hanson",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "汉森"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Hanzo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "半藏"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Hogger",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "霍格"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Hybrid",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "混源体"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Illari",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊拉锐"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Illidan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊利丹"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Imperius",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "英普瑞斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Inarius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊纳瑞斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Izual",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "衣卒尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Jaina",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "吉安娜"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Johanna",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "乔汉娜"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "JunkerQueen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "渣客女王"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Junkrat",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "狂鼠"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kael'thas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "凯尔萨斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kargath",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡加斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kel'Thuzad",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克尔苏加德"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kerrigan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "凯瑞甘"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Khadgar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡德加"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kharazim",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡拉辛姆"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kiljaeden",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "基尔加丹"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kiriko",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雾子"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Kronan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "克罗南"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "LadyVashj",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "瓦丝琪女士"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Leoric",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "李奥瑞克"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Li Li",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "丽丽"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Li-Ming",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "李敏"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Lifeweaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "生命之梭"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Lilith",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "莉莉丝"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Lt. Morales",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莫拉莉斯中尉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Lucio",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卢西奥"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Lunara",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "露娜拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Maghda",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "麦格妲"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Maiev",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛维"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Mal'Ganis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛尔加尼斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Malfurion",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛法里奥"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Malthael",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "马萨伊尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Mannoroth",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "玛诺洛斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Mauga",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "毛加"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Medivh",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "麦迪文"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Medivh_Guardian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "守护者麦迪文"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Mei",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "美"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Mekkatorque",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "梅卡托克"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Mephisto",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "墨菲斯托"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Moira",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "莫伊拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "MoiraBronzebeard",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "茉艾拉·铜须"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Muradin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "穆拉丁"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Murky",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奔波尔霸"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Nazeebo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "纳兹波"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Necromancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "死灵法师"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Nerzhul",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "耐奥祖"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Nova",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "诺娃"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Onyxia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥妮克希亚"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Orphea",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥菲娅"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Overmind",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "主宰"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Paladin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "圣骑士"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Pharah",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "法老之鹰"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Probius",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "普罗比斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Qhira",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "琪拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Ragnaros",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉格纳罗斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Rakanoth",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "拉卡诺斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Ramattra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "拉玛刹"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Raynor",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "雷诺"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Reaper",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "死神"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Rehgar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "雷加尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Reinhardt",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "莱因哈特"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Rexxar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "雷克萨"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "RocknRollRacer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "摇滚赛车手"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Samuro",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "萨穆罗"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sargeras",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "萨格拉斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Selendis",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赛兰迪丝"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sgt. Hammer",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "重锤军士"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sigma",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "西格玛"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "SnakeSanders",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蛇油桑德斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sojourn",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "索杰恩"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sonya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "桑娅"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sorceress",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "女巫"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Stitches",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "缝合怪"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Stukov",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "斯托科夫"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Sylvanas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "希尔瓦娜斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Symmetra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "秩序之光"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Talanji",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塔兰吉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tassadar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "塔萨达尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "TeronGorefiend",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塔隆·血魔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "The Butcher",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "屠夫"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "The Lost Vikings",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "失落的维京人"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Thrall",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "萨尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tomator",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "托马托"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tosh",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "托什"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tracer",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "猎空"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Turalyon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "图拉扬"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tychus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泰凯斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tyrael",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泰瑞尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Tyrande",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泰兰德"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Uther",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "乌瑟尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Valeera",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "瓦莉拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Valerian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "瓦伦里安"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Valla",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "维拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Varian",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "瓦里安"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Velen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "维伦"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Voljin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "沃金"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Warfield",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "沃菲尔德"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Whitemane",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "怀特迈恩"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Winston",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "温斯顿"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Xavius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "萨维斯"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Xul",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "祖尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "YoggSaron",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "尤格-萨隆"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Yrel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊瑞尔"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Zagara",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "扎加拉"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Zarya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "查莉娅"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Zeratul",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泽拉图"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "ZoltunKulle",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "佐敦·库勒"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Zul'jin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "祖尔金"
+  },
+  {
+    "ip": "heroes_of_the_storm",
+    "en_name": "Zurvan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "祖尔文"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Abomination",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "憎恶"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Adam Warlock",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亚当术士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "America Chavez",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "美国小姐"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ancient One",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "古一"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Angel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "天使"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Annihilus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "歼灭者"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ant-Man",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蚁人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Apocalypse",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "天启"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ares_Marvel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿瑞斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Armor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铠甲"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Banshee",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "女妖"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Beast",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "野兽"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ben Reilly",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "本·莱利"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Bishop",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "毕肖普"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Black Bolt",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑蝠王"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Black Cat",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑猫"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Black Knight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑骑士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Black Panther",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑豹"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Blade",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "刀锋战士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Blastaar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "爆破王"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Bullseye",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "靶眼"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Cable",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "电索"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Carnage",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "屠杀"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Chase Stein",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "切斯·斯坦"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Cloak",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斗篷"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Cloak & Dagger",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斗篷与匕首"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Colossus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "钢力士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Corvus Glaive",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亡刃将军"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Crystal",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "水晶"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Cull Obsidian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑矮星"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Cyclops",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "镭射眼"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Dagger",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "匕首"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Daredevil",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "夜魔侠"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Dazzler",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "炫光"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Deadpool",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "死侍"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Death_Marvel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "死亡"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Doctor Octopus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "章鱼博士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Domino",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "多米诺"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Doom",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "毁灭博士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Dormammu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "多玛姆"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ebony Maw",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "乌木喉"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Electro",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "电光人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Elektra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾丽卡"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Elsa Bloodstone",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾尔莎·血石"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Emma Frost",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "白皇后"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Eon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "永恒"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Eternity",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "永恒"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Executioner",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "刽子手"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Falcon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "猎鹰"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Forge",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "锻造者"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Galacta",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伽拉忒亚"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Galactus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "行星吞噬者"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Gambit",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "牌皇"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Gert Yorkes",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格特·约克斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ghost",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "幽灵"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ghost Rider",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "恶灵骑士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Gladiator",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斗剑"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Gorgon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "戈尔贡"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Green Goblin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "绿魔"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Groot",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格鲁特"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Gwenpool",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格温侍"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Havok",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "浩劫"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Hawkeye",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "鹰眼"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Heimdall",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海姆达尔"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Hela",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海拉"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Hercules_Marvel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赫拉克勒斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Human Torch",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "霹雳火"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Iceman",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "冰人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ikaris",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊卡瑞斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Infinity",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "无限"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Invisible Woman",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "隐形女侠"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Iron Fist",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铁拳"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Jean Grey",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "琴·葛蕾"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Jessica Jones",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "杰西卡·琼斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Jubilee",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "朱比莉"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Juggernaut",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "红坦克"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Kaine",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "凯恩"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Kang",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "康"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Karnak",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡尔耐克"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Karolina Dean",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡罗琳娜·迪恩"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Kate Bishop",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "凯特·毕肖普"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Kingpin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "金并"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Kraven",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "克莱文"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Lady Sif",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "希芙女士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Living Tribunal",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "生命法庭"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Lizard",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蜥蜴博士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Lockjaw",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "锁齿狗"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Loki",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "洛基"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Luke Cage",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卢克·凯奇"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Luna Snow",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "露娜·雪"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Magik",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "秘客"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Magneto",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "万磁王"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Man-Thing",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "类人体"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mantis",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "螳螂女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Medusa",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "美杜莎"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mephisto",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "墨菲斯托"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mockingbird",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "仿声鸟"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "MODOK",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "魔多客"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Molly Hayes",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "莫莉·海耶斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Moon Knight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "月光骑士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Moondragon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "月龙"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Moonstar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "月星"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mr. Fantastic",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "神奇先生"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mr. Sinister",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "惊恶先生"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ms. Marvel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "惊奇女士"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mysterio",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "神秘客"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Mystique",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "魔形女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Namor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "纳摩"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Nico Minoru",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "妮可·米诺鲁"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Nightcrawler",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "夜行者"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Nova",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "新星"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Oblivion",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "湮灭"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Old Lace",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "老蕾丝"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Omega Red",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "红色欧米伽"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Phoenix",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "凤凰"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Phyla-Vell",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "菲拉-维尔"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Pixie",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "小精灵"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Polaris",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "北极星"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Professor X",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "X教授"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Proxima Midnight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗夜比邻星"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Psylocke",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "灵蝶"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Punisher",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "惩罚者"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Quasar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "类星体"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Quicksilver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "快银"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Red Skull",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "红骷髅"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Rocket Raccoon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "火箭浣熊"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Rogue",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "罗刹女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ronan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "罗南"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Sabretooth",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "剑齿虎"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Sandman",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "沙人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Scarlet Witch",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "猩红女巫"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Sentry",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哨兵"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Sersi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "瑟西"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Shang-Chi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "尚气"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "She-Hulk",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "女浩克"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Shuma-Gorath",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "舒玛-哥拉斯"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Silk",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蛛丝"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Silver Surfer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "银影侠"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Spider-Gwen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蜘蛛格温"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Spider-Man",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蜘蛛侠"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Spider-Man 2099",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蜘蛛侠2099"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Spider-Woman",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蜘蛛女侠"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Squirrel Girl",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "松鼠女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Star-Lord",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "星爵"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Storm",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暴风女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Sunfire",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阳炎"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Super-Skrull",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "超级斯克鲁人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Taskmaster",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "模仿大师"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "The Thing",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "石头人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Thena",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蒂娜"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Thing",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "石头人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Tigra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "虎女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Ultron",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥创"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Vision",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "幻视"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "War Machine",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "战争机器"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "War Tiger",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "战虎"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Wasp",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黄蜂女"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Wave",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海浪"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Wenwu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "文武"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Werewolf by Night",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗夜狼人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Winter Soldier",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "冬兵"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Wolverine",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "金刚狼"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Wonder Man",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "神力人"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "X-23",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "marvel_super_war",
+    "en_name": "Yondu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "勇度"
+  },
+  {
+    "ip": "mcu",
+    "en_name": "B-15",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Aamon",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "亚蒙"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Akai",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿凯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Aldous",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥德斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Alice",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "爱丽丝"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Alpha",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿尔法"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Alucard",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿鲁卡多"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Angela",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "安琪拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Arawn",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿劳恩"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Argus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿格斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Arlott",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿洛特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Asura",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿修罗"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Atlas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿特拉斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Aulus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥鲁斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Aurora",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥罗拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Azrael",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿兹瑞尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Badang",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "巴当"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Balmond",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "巴尔蒙德"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Bane",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "贝恩"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Barats",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "巴拉特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Baxia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "霸下"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Beatrix",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "贝娅特丽克丝"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Belerick",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "布拉瑞克"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Benedetta",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "贝内黛塔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Boreas",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "玻瑞阿斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Brody",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "布罗迪"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Bruno",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "布鲁诺"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Carmilla",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡蜜拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Cecilion",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "塞西利昂"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Celestia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塞莱斯蒂亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Chang'e",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "嫦娥"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Chip",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奇普"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Chou",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "周"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Cici",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "茜茜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Cinder",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "辛德"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Claude",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克劳德"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Clint",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克林特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Cyclops",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "独眼巨人"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Dagon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "达贡"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Diggie",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "迪吉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Draven",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德莱文"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Dyrroth",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "迪亚斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Edith",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊迪丝"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Elara",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾拉拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Erebus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "厄瑞玻斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Esmeralda",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "艾丝美拉达"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Estes",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "埃斯特斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Eudora",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "尤朵拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Fanny",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "梵妮"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Faramis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "法拉米斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Fenris",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "芬里斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Fiera",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "菲艾拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Floryn",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "芙洛琳"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Franco",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "佛朗哥"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Fredrinn",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "弗雷德里克"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Freya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "芙蕾雅"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Gareth",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "加雷斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Gatotkaca",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "迦多铎卡伽"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Gloo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "格鲁"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Gord",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "戈尔德"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Granger",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "格兰杰"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Grock",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "格罗克"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Gryphon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格里芬"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Guinevere",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "桂妮薇儿"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Gusion",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "古辛"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Hanabi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "花火"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Hanzo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "半藏"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Harith",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "哈里特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Harley",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "哈利"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Hayabusa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "隼"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Helcurt",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "哈卡特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Hikari",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "光"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Hilda",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "希尔达"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Hylos",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "海洛斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Igneous",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "火成"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Irithel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊瑞瑟尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Ishara",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊莎拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Ixia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊克西亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Jade",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "翡翠"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Jawhead",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "大铁罐"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Johnson",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "强森"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Jorah",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "乔拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Joy",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "乔伊"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Julian",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "尤利恩"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kadita",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡迪塔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kagura",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "神乐"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kaida",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "凯达"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kaja",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡伽"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kalea",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡莉亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Karina",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡琳娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Karrie",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡丽"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kenshin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "剑心"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Khaleed",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡利德"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Khufra",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "库夫拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kimmy",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "基米"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Kylin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "麒麟"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lancelot",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "兰斯洛特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lapu-Lapu",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉普拉普"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Layla",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "蕾拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Leomord",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "利奥蒙德"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lesley",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莱斯丽"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Levi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "利维"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Ling",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "翎"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lolita",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "洛丽塔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lukas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卢卡斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lunox",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "露诺克斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Luo Yi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "罗毅"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lylia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莉莉娅"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Lyria",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "莉瑞亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Marcel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "马塞尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Martis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛尔蒂斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Masha",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛莎"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Mathilda",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛蒂尔达"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Melissa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "梅莉莎"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Minotaur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "米诺陶"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Minsitthar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "敏希萨"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Miya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "米娅"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Mizu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "水"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Morax",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "摩拉克斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Moskov",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "莫斯可夫"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Nana",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "娜娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Natalia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "娜塔莉亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Natan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "纳坦"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Nolan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "诺兰"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Novaria",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "诺瓦莉亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Nyxus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "尼克瑟斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Obsidia",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥布西迪亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Odette",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥黛特"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Oriana",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥莉安娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Paquito",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "帕奎托"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Pharsa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "法尔莎"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Phoveus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "弗维厄斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Popol and Kupa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "波波尔与库帕"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Pyrrhus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "皮洛士"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Quorra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "科拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Rafaela",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉斐拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Riven",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "锐雯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Roger",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "罗杰"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Ruby",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "鲁比"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Saber",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "剑锋"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Selena",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "塞莱娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Shiroe",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "白枝"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Silvanna",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "希尔瓦娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Sora",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "索拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Sun",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "孙悟空"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Suyou",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "素游"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Sylas",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赛拉斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Talon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "泰隆"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Tenma",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "天马"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Terizla",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泰瑞兹拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Thamuz",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "萨姆斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Tigreal",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泰格瑞尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Umbra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗影"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Uranus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "乌拉诺斯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Vale",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "维尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Valentina",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "瓦伦蒂娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Valir",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "瓦利尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Vexana",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "薇克萨娜"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Vexia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "薇克西亚"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Wanwan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "婉婉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Wraith",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "魂灵"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "X.Borg",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Xavier",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "泽维尔"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Yi Sun-shin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "李舜臣"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Yin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "寅"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Yu Zhong",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "翀"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Yurei",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "幽灵"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Yve",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊芙"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Zara",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "扎拉"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Zetian",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "武则天"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Zhask",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "扎斯克"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Zhuxin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "朱芯"
+  },
+  {
+    "ip": "mobile_legends_bang_bang",
+    "en_name": "Zilong",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "子龙"
+  },
+  {
+    "ip": "one_piece",
+    "en_name": "JoyBoy",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "乔伊波伊"
+  },
+  {
+    "ip": "overwatch2",
+    "en_name": "D.Va",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "overwatch2",
+    "en_name": "OR14",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Absol",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿勃梭鲁"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Aegislash",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "坚盾剑怪"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Alolan Ninetales",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿罗拉九尾"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Azumarill",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玛力露丽"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Blastoise",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "水箭龟"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Blaziken",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "火焰鸡"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Blissey",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "幸福蛋"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Buzzwole",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "爆肌蚊"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Ceruledge",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "红莲铠骑"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Chandelure",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "水晶灯火灵"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Cinderace",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "闪焰王牌"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Clefable",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "皮可西"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Comfey",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "花疗环环"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Cramorant",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "古月鸟"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Crustle",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "岩殿居蟹"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Decidueye",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "狙射树枭"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Delphox",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "妖火红狐"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Dodrio",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "嘟嘟利"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Dragapult",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "多龙巴鲁托"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Dragonite",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "快龙"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Duraludon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铝钢龙"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Eldegoss",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "白蓬蓬"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Espeon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "太阳伊布"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Falinks",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "列阵兵"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Garchomp",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "烈咬陆鲨"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Gardevoir",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "沙奈朵"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Glaceon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "冰伊布"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Goodra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黏美龙"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Greedent",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "藏饱栗鼠"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Gyarados",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "暴鲤龙"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Hoopa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "胡帕"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Inteleon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "千面避役"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Lapras",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉普拉斯"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Leafeon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "叶伊布"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Machamp",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "怪力"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Mamoswine",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "象牙猪"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Meowscarada",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "魔幻假面喵"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Metagross",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巨金怪"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Mew",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "梦幻"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Mimikyu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "谜拟丘"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Mr. Mime",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "魔墙人偶"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Psyduck",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "可达鸭"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Sableye",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "勾魂眼"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Scizor",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "巨钳螳螂"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Scyther",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "飞天螳螂"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Slowbro",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "呆壳兽"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Snorlax",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡比兽"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Sylveon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "仙子伊布"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Talonflame",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "烈箭鹰"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Trevenant",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "朽木妖"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Tsareena",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "甜冷美后"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Tyranitar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "班基拉斯"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Umbreon",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "月亮伊布"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Urshifu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "武道熊师"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Venusaur",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "妙蛙花"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Wigglytuff",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "胖可丁"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Zacian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "苍响"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Zeraora",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "捷拉奥拉"
+  },
+  {
+    "ip": "pokemon_unite",
+    "en_name": "Zoroark",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "索罗亚克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Achilles",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿喀琉斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Aengus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "安格斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Agni",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿耆尼"
+  },
+  {
+    "ip": "smite",
+    "en_name": "AhMuzenCab",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿缪森卡布"
+  },
+  {
+    "ip": "smite",
+    "en_name": "AhPuch",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿普切"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Amaterasu",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "天照"
+  },
+  {
+    "ip": "smite",
+    "en_name": "AmeNoUzume",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "天钿女命"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Anhur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "安赫"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Anubis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿努比斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "AoKuang",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "敖广"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Aphrodite",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿芙洛狄忒"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Apollo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿波罗"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Arachne",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿拉克涅"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ares",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿瑞斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Artemis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿尔忒弥斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Artio",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿尔提奥"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Athena",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "雅典娜"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Atlas",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿特拉斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Awilix",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "阿维利克斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Bakasura",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "巴卡苏拉"
+  },
+  {
+    "ip": "smite",
+    "en_name": "BakeKujira",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "化鲸"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Baldr",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴德尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Balor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴罗尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Bastet",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "芭丝特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Benzaiten",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "弁财天"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Bragi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布拉吉"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Brigid",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布里吉德"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Brunhild",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布伦希尔德"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Cabrakan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡布拉坎"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Camazotz",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡玛佐兹"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Cerberus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "刻耳柏洛斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Cernunnos",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "科尔努诺斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Chaac",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "查克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Change",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "嫦娥"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Charon",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡戎"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Charybdis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "卡律布狄斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Chiron",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "喀戎"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Chronos",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "柯罗诺斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Cliodhna",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克莉奥娜"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Cronus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "克洛诺斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Cthulhu",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "克苏鲁"
+  },
+  {
+    "ip": "smite",
+    "en_name": "CuChulainn",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "库·丘林"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Dagda",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "达格达"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Daji",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "妲己"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Danzaburou",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "团三郎"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Demeter",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "得墨忒耳"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Dionysus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "狄俄尼索斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "DragonKing",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "龙王"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ebisu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "惠比寿"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Eos",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "厄俄斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Epona",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾波娜"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Eris",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "厄里斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "ErlangShen",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "二郎神"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Fafnir",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "法夫纳"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Fenrir",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "芬里尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Freya",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "芙蕾雅"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Freyr",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "弗雷"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Frigg",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "弗丽嘉"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Fujin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "风神"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Fuxi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伏羲"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ganesha",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "象头神"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Geb",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "盖布"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Gilgamesh",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "吉尔伽美什"
+  },
+  {
+    "ip": "smite",
+    "en_name": "GuanYu",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "关羽"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hachiman",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "八幡"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hades",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "哈迪斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hanuman",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哈奴曼"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hathor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哈托尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "HeBo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "河伯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hecate",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赫卡忒"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Heimdall",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海姆达尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赫尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Helios",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赫利俄斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hephaestus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赫菲斯托斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hera",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赫拉"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hercules",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赫拉克勒斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Horus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "荷鲁斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "HouYi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "后羿"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hunahpu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "胡纳赫普"
+  },
+  {
+    "ip": "smite",
+    "en_name": "HunBatz",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "胡恩·巴茨"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Hypnos",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "许普诺斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Idun",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊登"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Indra",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "因陀罗"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ishtar",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊什塔尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Isis",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊西斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Itzamna",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊察姆纳"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ixchel",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "伊什切尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ixtab",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊什塔布"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Izanagi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊邪那岐"
+  },
+  {
+    "ip": "smite",
+    "en_name": "JadeEmperor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "玉皇大帝"
+  },
+  {
+    "ip": "smite",
+    "en_name": "JingWei",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "精卫"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Jormungandr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "耶梦加得"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Kali",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "迦梨"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Khepri",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "凯普里"
+  },
+  {
+    "ip": "smite",
+    "en_name": "KingArthur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "亚瑟王"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Kukulkan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "库库尔坎"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Kumbhakarna",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "鸠姆婆迦哩纳"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Kuzenbo",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "九千坊"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Lakshmi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "拉克什米"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Lancelot",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "兰斯洛特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "LeiGong",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雷公"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Loki",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "洛基"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Lugh",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "鲁格"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Maat",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "玛亚特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Manannan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "马纳南"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Martichoras",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "蝎尾狮"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Medusa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "美杜莎"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Menshen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "门神"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Merlin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "梅林"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Mictlantecuhtli",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "米克特兰提库特利"
+  },
+  {
+    "ip": "smite",
+    "en_name": "MorganLeFay",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "摩根·勒菲"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Morrigan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "莫瑞甘"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Mulan",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "花木兰"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Neith",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奈斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nemesis",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "涅墨西斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nephthys",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奈芙蒂斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nezha",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "哪吒"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nidhogg",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "尼德霍格"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nike",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "尼刻"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nuada",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "努阿达"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nut",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "努特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Nuwa",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "女娲"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Odin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥丁"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Okuninushi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "大国主"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Osiris",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "奥西里斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Pan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "潘"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Persephone",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "珀耳塞福涅"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Poseidon",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "波塞冬"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ptah",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "普塔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ra",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Raijin",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "雷神"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Rama",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "罗摩"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ratatoskr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "拉塔托斯克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ravana",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "罗波那"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Saraswati",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "萨拉斯瓦蒂"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Scathach",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斯卡哈"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Scylla",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "斯库拉"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Sekhmet",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塞赫迈特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Selene",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塞勒涅"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Serqet",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "塞尔凯特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Set",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "赛特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Shiva",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "湿婆"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Shu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "舒"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Sif",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "希芙"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Skadi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "斯卡蒂"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Skoll",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斯科尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Sobek",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "索贝克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Sol",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "索尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "SunWukong",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "孙悟空"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Surtr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "苏尔特尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Susano",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "须佐之男"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Takemikazuchi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "建御雷"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Tefnut",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "泰芙努特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Thanatos",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "塔纳托斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Thor",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "托尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Thoth",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "托特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Tiamat",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "提亚马特"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Tlaloc",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "特拉洛克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Tsukuyomi",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "月读"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Tyr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "提尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ullr",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "乌勒尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Vamana",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "筏摩那"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Varuna",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伐楼那"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Xbalanque",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "希巴兰克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "XingTian",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "刑天"
+  },
+  {
+    "ip": "smite",
+    "en_name": "XipeTotec",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "希佩托特克"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Xiwangmu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "西王母"
+  },
+  {
+    "ip": "smite",
+    "en_name": "YamataNoOrochi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "八岐大蛇"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Ymir",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "尤弥尔"
+  },
+  {
+    "ip": "smite",
+    "en_name": "YuHuang",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "玉皇"
+  },
+  {
+    "ip": "smite",
+    "en_name": "YumKaax",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "尤姆·卡克斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "Zeus",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "宙斯"
+  },
+  {
+    "ip": "smite",
+    "en_name": "ZhongKui",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "钟馗"
+  },
+  {
+    "ip": "three_body",
+    "en_name": "AA",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "three_body",
+    "en_name": "DX3906",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "three_body",
+    "en_name": "M31",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "three_body",
+    "en_name": "M78",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "three_body",
+    "en_name": "M87",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "英文名保留（无需汉化）"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Aegis_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "神盾"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Amael",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿玛尔"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Anka",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "安卡"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Arcanist",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥术师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Assassin_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "刺客"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "AstralMage",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "星界法师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Beastmaster",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "兽王"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "BladeDancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "剑舞者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Blightcaller",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "枯萎召唤者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Brightwing",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "光翼"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Celestial_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "天界者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "ChaosKnight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "混沌骑士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Cinderkin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "余烬之子"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Corsair",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海贼"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "CrystalKnight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "水晶骑士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "CrystalMage_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "水晶法师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Darkmoor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗沼"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Darktide",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗潮"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Dawnweaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "织晓者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "DeathKnight_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "死亡骑士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Doombringer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "末日使者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Dreadmaw",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "恐惧之喉"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Dreadnought",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "无畏战舰"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "DreamWeaver_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "织梦者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Druid_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德鲁伊"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Duskwalker",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暮行者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "EarthGuardian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "大地守护者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Earthshaker",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "撼地者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "ElderDragon_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "古龙"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Elderwood",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "古木灵"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "FateBinder",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "命运缚者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "FireMage_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "火焰法师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Flamecaller",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "唤焰者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "FlameDancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "焰舞者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Flameheart",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "焰心"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Flamekin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "焰嗣"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "FrostDancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "霜舞者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Frostfang",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "霜牙"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "FrostGiant",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "霜巨人"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "FrostWarden",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "霜卫"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Frostweaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "织霜者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Gladiator_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "角斗士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Goldtooth",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "金牙"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Gravewalker",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "墓行者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Gythia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "吉希亚"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Ironclad",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铁甲"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Ironfang",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铁牙"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Ironheart",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铁心"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Ironmaw",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铁喉"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Ironweaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铸铁者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "JadeGolem",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "玉魔像"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "LifeWarden",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "生命守望者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Lightbearer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "光明使者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Lorelei",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "罗蕾莱"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Mechanist",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "机械师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Moonclaw",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "月爪"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "MoonPriestess",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "月之女祭司"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "NetherBeast",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "炼狱兽"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Netherknight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "炼狱骑士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Nightmare_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "梦魇"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Nightshade",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "夜影"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "OrderMage",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "秩序法师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "PeaceKeeper",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "维和者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Phoenix_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "凤凰"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "PlagueDoctor",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "瘟疫医生"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "RealityShaper",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "现实塑者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Riftwalker",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "裂隙行者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Rockjaw",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "石颚"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Runeforger",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "符文锻造者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "RuneKnight",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "符文骑士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "SeaSerpent",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海蛇"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Seeker_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "追寻者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Shadowblade",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗影之刃"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "ShadowDancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "影舞者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Shadowkin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "影裔"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Shadowmancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗影术士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Shadowveil",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "暗影面纱"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Shin",
+    "has_card": false,
+    "has_skill": true,
+    "cn_name": "心"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Skyguard",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "天卫"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "SkyHunter",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "猎天者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Sorceress_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "女术士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Soulreaper",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "夺魂者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "SpaceWarden",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "太空守望者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Spellbinder",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "缚法者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "SpiritFox",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "灵狐"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Spiritwalker",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "灵魂行者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Starcaller",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "唤星者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Starforger",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "铸星者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "StarSeeker_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "追星者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Stonewarden",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "石卫"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Stormcaller",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "唤雷者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "StormDancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雷舞者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Stormguard",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "风暴卫士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Stormlash",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雷鞭"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "StormQueen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "风暴女王"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Stormrider",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "驭雷者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Stormweaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "织雷者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "SunChampion",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "太阳斗士"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Sunforge",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "日铸"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Sunstone",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "日石"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Sunweaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "织日者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Swiftblade",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "疾风之刃"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Technologist",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "技术专家"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Thunderbird",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雷鸟"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Thunderlord",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "雷霆领主"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Tidecaller",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "唤潮者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "TimeKeeper_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "时守者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Venomancer",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "毒术师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Verdant",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "翠绿"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Vindicator",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "守护者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Voidforged",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "虚空铸造"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "VoidHunter",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "虚空猎手"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Voidreaver",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "虚空掠夺者"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Warlord_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "军阀"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "WarMage_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "战争法师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Wildkin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "野性之嗣"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "WindMage_VG",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "风之法师"
+  },
+  {
+    "ip": "vainglory",
+    "en_name": "Windwalker",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "御风者"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Admiral Yi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "李舜臣"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Aetius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "埃提乌斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Agesilaus II",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿格西劳斯二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Akbar the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿克巴大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Alaric",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿拉里克"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Alcibiades",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亚西比德"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Alexander the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亚历山大大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Alfred the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿尔弗雷德大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Artemisia I",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿尔特米西亚一世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Ashurbanipal",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亚述巴尼拔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Askia Muhammad",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿斯基亚·穆罕默德"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Attila the Hun",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "阿提拉"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Augustus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥古斯都"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Aurangzeb",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥朗则布"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Aurelian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "奥勒良"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Babur",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴布尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Baldwin IV of Jerusalem",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "鲍德温四世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Belisarius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "贝利撒留"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Bohemond I",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "博希蒙德一世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Boudica",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布狄卡"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Brian Boru",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布莱恩·博鲁"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Cao Cao",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "曹操"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Catherine the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "叶卡捷琳娜大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Chandragupta Maurya",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "旃陀罗笈多"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Charlemagne",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "查理曼大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Charles de Gaulle",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "戴高乐"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Che Guevara",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "切·格瓦拉"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Cochise",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "科奇斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Constantine the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "君士坦丁大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Crazy Horse",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "疯马"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Cyrus the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "居鲁士大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Darius the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "大流士大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Date Masamune",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊达政宗"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Diocletian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "戴克里先"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Douglas MacArthur",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "麦克阿瑟"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Duke of Wellington",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "威灵顿公爵"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Dwight Eisenhower",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "艾森豪威尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Edward the Black Prince",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "黑太子爱德华"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "El Cid",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "熙德"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Elizabeth I",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊丽莎白一世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Epaminondas",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊巴密浓达"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Erwin Rommel",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "隆美尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Francis Drake",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德雷克"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Frederick Barbarossa",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "腓特烈·巴巴罗萨"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Frederick the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "腓特烈大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Gaius Marius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "盖乌斯·马略"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Genghis Khan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "成吉思汗"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "George S. Patton",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴顿"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "George Washington",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "华盛顿"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Georgy Zhukov",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "朱可夫"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Germanicus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "日耳曼尼库斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Geronimo",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "杰罗尼莫"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Gilgamesh_Historical",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "吉尔伽美什"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Giuseppe Garibaldi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "加里波第"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Godfrey of Bouillon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "布永的戈弗雷"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Granuaile",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格兰纽爱尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Guan Yu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "关羽"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Gustavus Adolphus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "古斯塔夫·阿道夫"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Gwanggaeto the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "广开土大王"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Hadrian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哈德良"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Haile Selassie",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "海尔·塞拉西"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Hammurabi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "汉谟拉比"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Hangaku Gozen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "坂额御前"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Hannibal Barca",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "汉尼拔·巴卡"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Harold Godwinson",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哈罗德·戈德温森"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Henry the Navigator",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "航海家亨利"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Henry V",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "亨利五世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Honda Tadakatsu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "本多忠胜"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Horatio Nelson",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "纳尔逊"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Hua Mulan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "花木兰"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Hulagu Khan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "旭烈兀"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Idris Alooma",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊德里斯·阿鲁玛"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Isabella I of Castile",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊莎贝拉一世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Ivan the Terrible",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伊凡雷帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Jan Žižka",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "扬·杰式卡"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Joan of Arc",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "圣女贞德"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "José de San Martín",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "圣马丁"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Julius Caesar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "凯撒"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Kahina",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "卡希娜"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Khalid ibn al-Walid",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "哈立德·本·瓦利德"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "King Arthur",
+    "has_card": true,
+    "has_skill": false,
+    "cn_name": "亚瑟王"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Kublai Khan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "忽必烈"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Lakshmibai",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "章西女王"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Leo Africanus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "利奥·阿非利加努斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Leonidas",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "列奥尼达"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Leonidas I",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "列奥尼达一世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Liu Bei",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "刘备"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Lozen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "洛珍"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Lü Bu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "吕布"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Majorian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "马约里安"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Mansa Musa",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "曼萨·穆萨"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Marcus Aurelius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "马可·奥勒留"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Mark Antony",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "马克·安东尼"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Matilda of Tuscany",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "托斯卡纳的玛蒂尔达"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Mehmed II",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "穆罕默德二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Menelik II",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "孟尼利克二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Miltiades",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "米太亚德"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Minamoto no Yoshitsune",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "源义经"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Miyamoto Musashi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "宫本武藏"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Montezuma II",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "蒙特祖马二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Mōri Motonari",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "毛利元就"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Nakano Takeko",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "中野竹子"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Napoleon Bonaparte",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "拿破仑"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Nebuchadnezzar II",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "尼布甲尼撒二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Nzinga",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "恩津加"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Oda Nobunaga",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "织田信长"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Oliver Cromwell",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "克伦威尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Otto von Bismarck",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "俾斯麦"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Pachacuti",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "帕查库特克"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Pelopidas",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "佩洛皮达斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Pericles",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "伯里克利"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Peter the Great",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "彼得大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Philip II of Macedon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "腓力二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Pompey",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "庞培"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Pyrrhus of Epirus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "皮洛士"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Qin Shi Huang",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "秦始皇"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Ramesses II",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "拉美西斯二世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Rani of Jhansi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "章西女王"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Richard the Lionheart",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "狮心王理查"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Robert E. Lee",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "罗伯特·李"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Robert the Bruce",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "罗伯特·布鲁斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Roland",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "罗兰"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Saladin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "萨拉丁"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Samori Ture",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "萨摩里·杜尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sanada Yukimura",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "真田幸村"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sargon of Akkad",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "萨尔贡"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Scipio Africanus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "西庇阿"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sennacherib",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "辛那赫里布"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Septimius Severus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "塞维鲁"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Shah Jahan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "沙贾汗"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Shaka Zulu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "恰卡·祖鲁"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Simón Bolívar",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "玻利瓦尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sitting Bull",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "坐牛"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Skanderbeg",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斯坎德培"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Spartacus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斯巴达克斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Stilicho",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "斯提里科"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Stonewall Jackson",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "石墙杰克逊"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Subutai",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "速不台"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Suleiman the Magnificent",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "苏莱曼大帝"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sulla",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "苏拉"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sun Tzu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "孙子"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Sundiata Keita",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "松迪亚塔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Takeda Shingen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "武田信玄"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Tamerlane",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "帖木儿"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Tecumseh",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "特库姆塞"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Themistocles",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "地米斯托克利"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Theodosius",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "狄奥多西"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Thutmose III",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "图特摩斯三世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Tiglath-Pileser III",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "提格拉特帕拉沙尔三世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Timur",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "帖木儿"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Titus",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "提图斯"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Tokugawa",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德川"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Tokugawa Ieyasu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "德川家康"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Tomoe Gozen",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "巴御前"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Toyotomi Hideyoshi",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "丰臣秀吉"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Trajan",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "图拉真"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Trieu Thi Trinh",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "赵氏贞"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Uesugi Kenshin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "上杉谦信"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Ulysses S. Grant",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "格兰特"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Vasco da Gama",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "达·伽马"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Vespasian",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "韦斯巴芗"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Vlad the Impaler",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "弗拉德三世"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "William the Conqueror",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "征服者威廉"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "William Wallace",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "威廉·华莱士"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Winston Churchill",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "丘吉尔"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Xenophon",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "色诺芬"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Xiang Yu",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "项羽"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Yi Sun-sin",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "李舜臣"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Yuenü",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "越女"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Zenobia",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "芝诺比娅"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Zheng He",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "郑和"
+  },
+  {
+    "ip": "world_generals",
+    "en_name": "Zhuge Liang",
+    "has_card": true,
+    "has_skill": true,
+    "cn_name": "诸葛亮"
+  }
+]

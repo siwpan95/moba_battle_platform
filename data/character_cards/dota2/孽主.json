@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1457",
+  "card_id": "dota2:孽主",
   "hero": {
     "name": "孽主",
     "name_en": "Underlord",
@@ -112,14 +112,14 @@
   "skills": [
     {
       "name": "技能三",
-      "key": "E",
+      "key": "Q",
       "type": "物理",
       "action": "附赠动作",
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
+        "dice_count": 1,
+        "dice_size": 12,
         "bonus_attr": "CON",
         "type": "力场"
       },
@@ -132,8 +132,94 @@
           "target": "自身"
         }
       ],
+      "cooldown": 0,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "410+STR 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
+    },
+    {
+      "name": "坦克·岩盾守护",
+      "key": "E",
+      "type": "真实",
+      "action": "展开护盾抵御伤害",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "获得临时生命",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
       "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "description": "2d12+CON 钝击伤害。获得临时生命",
+      "approx": true
+    },
+    {
+      "name": "坦克·震荡猛击",
+      "key": "R",
+      "type": "物理",
+      "action": "重击前方敌人",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "prone",
+          "duration": 1,
+          "desc": "击倒",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d12+STR 钝击伤害。击倒",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1457"
 }

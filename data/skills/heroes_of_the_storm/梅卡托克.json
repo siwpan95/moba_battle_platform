@@ -1,0 +1,118 @@
+[
+  {
+    "name": "机械装甲",
+    "key": "Q",
+    "type": "法术",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "奥术能量减缓目标移速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "凝聚纯粹的奥术能量化为飞弹，精准轰击目标。即使未命中，冲击波仍会波及敌人。"
+  },
+  {
+    "name": "火箭飞拳",
+    "key": "W",
+    "type": "法术",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "冻结周围敌人1回合",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "range": "近战",
+    "target": "范围",
+    "action": "动作",
+    "description": "以自身为中心爆发极寒之力，冰晶瞬间凝结，将周围敌人封入冰棺。"
+  },
+  {
+    "name": "工程学奇迹",
+    "key": "E",
+    "type": "法术",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "烈焰灼烧造成每回合1d6伤害，持续2回合",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "range": "远程",
+    "target": "范围",
+    "action": "动作",
+    "description": "指定区域燃起魔法烈焰，火焰如风暴般旋转不息。踏入者将被灼烧至骨。"
+  },
+  {
+    "name": "侏儒之王",
+    "key": "R",
+    "type": "法术",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "陨星冲击造成击倒",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "range": "远程",
+    "target": "范围",
+    "action": "动作",
+    "description": "召唤天外陨星坠落战场，巨大的冲击波席卷大地，无人能在此等天威下全身而退。"
+  }
+]

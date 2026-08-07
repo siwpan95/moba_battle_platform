@@ -1,0 +1,103 @@
+[
+  {
+    "name": "强袭",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "强袭冲击"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d10+STR 钝击伤害。",
+    "approx": true
+  },
+  {
+    "name": "光速飞船推进",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "duration": 1,
+        "desc": "获得位移与冲锋",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "获得位移与冲锋，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "绝对理性",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "duration": 2,
+        "desc": "下次攻击必暴击",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "进入绝对理性，下次攻击暴击，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "前进,不择手段",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "强袭冲击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+STR 钝击伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

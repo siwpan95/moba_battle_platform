@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1836",
+  "card_id": "honor_of_kings:上官婉儿",
   "hero": {
     "name": "上官婉儿",
     "name_en": "",
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "篆法疾势",
-      "key": "1",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "飞白藏锋",
-      "key": "2",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 力场伤害。"
-    },
-    {
-      "name": "章草横鳞",
-      "key": "3",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "笔阵",
-      "key": "P",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  "legacy_card_id": "HON-1836"
 }

@@ -1,0 +1,103 @@
+[
+  {
+    "name": "灵魂审判",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "奥西里斯举起权杖——冥界之主的审判落在每一个灵魂之上，如真理之羽般不可逃避。1d10+STR 黯蚀伤害。"
+  },
+  {
+    "name": "冥界裁决",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "真理之羽衡量灵魂，判处有罪者防御崩毁",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "奥西里斯在双重真理之厅中召唤玛亚特的天平——任何不洁之心都将被真理之羽压倒。敌方的防御在神圣裁决下崩解。2d6+STR 黯蚀伤害，破甲2回合。"
+  },
+  {
+    "name": "尼罗河复苏",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "尼罗河的洪水带来重生之力",
+        "value_formula": "2d8+STR",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "desc": "木乃伊之躯坚不可摧",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "奥西里斯召唤尼罗河的复苏之力——正如他本人在被肢解后由伊西斯复活，大河的洪水年复一年带来新的生命。回复2d8+STR生命，获得减伤2回合。1d8+STR 力场伤害。"
+  },
+  {
+    "name": "亡灵大军",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "冥界的无数亡魂同时涌出",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "奥西里斯打开冥界之门——无数受他庇护的亡灵从地下涌出，遮天蔽日。他是所有亡者的王，被分尸又重生之神，生者在他的大军面前只有恐惧。2d8+STR 黯蚀伤害，AOE恐惧。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

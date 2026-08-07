@@ -1,0 +1,104 @@
+[
+  {
+    "name": "霸王枪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "江东小霸王的凌厉枪法，1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "横扫千军",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "护甲降低"
+      }
+    ],
+    "cooldown": 1,
+    "description": "一枪横扫，千军辟易。2d8+STR 挥砍范围伤害，破甲1回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "锐不可当",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "霸王锐气不可阻挡！1d8+STR 挥砍伤害，加速2回合并增伤1回合。"
+  },
+  {
+    "name": "小霸王之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血翻倍"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "大幅破甲"
+      }
+    ],
+    "cooldown": 4,
+    "description": "江东小霸王一怒，天地变色！2d10+STR 挥砍伤害，大幅破甲2回合，低血量斩杀。"
+  }
+]

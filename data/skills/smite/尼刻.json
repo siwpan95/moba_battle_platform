@@ -1,0 +1,119 @@
+[
+  {
+    "name": "胜利之翼",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "胜利女神展翅",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "尼刻展开双翼——胜利女神所到之处，胜负便已注定。1d8+WIS 光耀伤害，加速1回合。"
+  },
+  {
+    "name": "桂冠",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "胜利桂冠加身",
+        "target": "自身",
+        "duration": "3"
+      },
+      {
+        "type": "heal",
+        "desc": "胜利的喜悦",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "尼刻献上桂冠——戴上这位女神编织的桂冠，凡人也能媲美英雄。增伤3回合+回复。"
+  },
+  {
+    "name": "凯旋",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "凯旋的号角",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "失败的气息压倒敌人",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "尼刻吹响凯旋号角——每当希腊军队得胜归来，第一个听到的就是她的号角声。自身增伤+AOE减速各2回合。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "无敌之翼",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "胜利女神判定败者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "buff",
+        "desc": "无敌光环",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "尼刻展现无敌之翼——在胜利女神的注视下，一切失败都是不可接受的。低血斩杀+增伤。3d8+WIS 光耀伤害，AOE。",
+    "aoe_radius": 30
+  }
+]

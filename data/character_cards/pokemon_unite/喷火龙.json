@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2387",
+  "card_id": "pokemon_unite:喷火龙",
   "hero": {
     "name": "喷火龙",
     "name_en": "Charizard",
@@ -109,74 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "喷射火焰",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+STR 火焰伤害。"
-    },
-    {
-      "name": "火焰拳/闪焰冲锋",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+STR 火焰伤害。"
-    },
-    {
-      "name": "大字爆",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "地震重击",
-      "key": "U",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "POK-2387"
 }

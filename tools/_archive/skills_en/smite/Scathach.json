@@ -1,0 +1,104 @@
+[
+  {
+    "name": "影之国",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "斯卡哈从影之国刺出——这位传奇女战士统治着亡者的国度。1d10+DEX 挥砍伤害。"
+  },
+  {
+    "name": "武艺",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "破解一切武艺的弱点",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "斯卡哈施展无双武艺——她是库丘林的导师，教给了他盖伊博尔格的用法。破甲2回合。2d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "暗影步",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "影之国的暗影",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "无声的刺客",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "斯卡哈踏入暗影——她来自亡者之地，在生与死的边界上行走。隐身+加速各2回合。"
+  },
+  {
+    "name": "影之国的女王",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "影之国收割",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "亡者军团",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "斯卡哈召唤影之国——整个亡灵国度的战士从她的身后浮现，那是她亲手训练的不死军团。低血斩杀+AOE恐惧。4d6+DEX 黯蚀伤害。",
+    "aoe_radius": 25
+  }
+]

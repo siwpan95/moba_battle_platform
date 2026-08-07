@@ -1,0 +1,127 @@
+[
+  {
+    "name": "杀破狼·狼杀",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "流血",
+        "duration": 1,
+        "dmg_per_turn": "1d4",
+        "desc": "狼牙般的刀锋撕裂皮肉",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "破军杀破狼之狼杀——贪狼剑与天刃刀如饿狼扑食。1d10+STR 挥砍伤害，附带1回合流血(1d4)。"
+  },
+  {
+    "name": "刑凶罡气·万剑朝皇",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "缴械",
+        "duration": 1,
+        "dc_attr": "DEX",
+        "desc": "剑气如潮打落敌兵器",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "破军以刑凶罡气催动万剑朝皇——万千剑气铺天盖地。2d8+DEX 穿刺伤害，15尺范围。DEX豁免失败缴械1回合。冷却1回合。"
+  },
+  {
+    "name": "舍心印·狂战",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "duration": 3,
+        "desc": "舍去理智换无尽战力，攻速+60%",
+        "target": "自身"
+      },
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*8",
+        "desc": "凶星杀意提升暴击",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "破军以舍心印舍去杂念——化身纯粹的杀戮机器。攻速+60%，暴击率+PROF×8%。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "杀破狼·破军命格",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "破军凶星命格压垮众生",
+        "target": "敌方"
+      },
+      {
+        "type": "即死",
+        "dc_attr": "CON",
+        "threshold": "HP<20%",
+        "desc": "破军星现，命数已尽",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "破军以自身凶星命格引动天地杀机——杀破狼三星齐聚！5d8+STR 黯蚀伤害，25尺范围。WIS豁免失败恐惧2回合。HP<20%目标CON豁免失败即死。冷却4回合。"
+  }
+]

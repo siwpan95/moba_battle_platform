@@ -1,0 +1,127 @@
+[
+  {
+    "name": "快刀乱剪",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "中心区真实伤害",
+        "threshold": 50,
+        "target": "敌方"
+      },
+      {
+        "type": "sunder",
+        "desc": "剪刀撕裂护甲",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "圣霭",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "immune",
+        "desc": "霭外敌人无法选中格温",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "shield",
+        "desc": "圣霭护体",
+        "duration": 2,
+        "value": 30,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "断续疾走",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "短距冲刺并提升攻速",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "穿针引线",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "圣针穿透持续伤害",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "针线回收治疗",
+        "value": 15,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "name": "彩虹",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "彩虹的治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d6+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "伊什切尔画出彩虹——月之女神的彩虹连接天与地。1d8+WIS 光耀伤害，微回复。"
+  },
+  {
+    "name": "月亮之舞",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "月光下的舞蹈",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "月神祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊什切尔在月光下起舞——她是医药、纺织与生育的女神。AOE魅惑+增伤。2d6+WIS 光耀伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "医药",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "医药女神的神术",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d6+WIS"
+      },
+      {
+        "type": "cleanse",
+        "desc": "驱散疾病与诅咒",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊什切尔施展医药之术——所有玛雅医者都在她的庇护下行医。回复3d6+WIS+净化。"
+  },
+  {
+    "name": "织女之网",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "命运之网",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "生命之线",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "伊什切尔展开织女之网——她用月光纺纱，用彩虹染色，将整片战场纳入她的织机之中。AOE束缚+大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

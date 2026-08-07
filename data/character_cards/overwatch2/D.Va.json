@@ -1,7 +1,7 @@
 {
-  "card_id": "OVE-2377",
+  "card_id": "overwatch2:D.Va",
   "hero": {
-    "name": "宋哈娜",
+    "name": "D.Va",
     "name_en": "D.Va",
     "alias": "",
     "title": "D.Va"
@@ -9,18 +9,13 @@
   "game": {
     "name": "Overwatch 2",
     "name_cn": "守望先锋2",
-    "native_role": "坦克",
-    "universal_role": "tank",
-    "role_name": "坦克",
-    "role_dnd_class": "野蛮人"
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
   },
-  "source": "守望先锋2",
-  "difficulty": 2,
-  "playstyle_tags": [
-    "先手",
-    "前排",
-    "承伤"
-  ],
+  "source": "",
+  "difficulty": 3,
+  "playstyle_tags": [],
   "attributes": {
     "STR": {
       "score": 17,
@@ -33,17 +28,17 @@
       "name_cn": "敏捷"
     },
     "CON": {
-      "score": 16,
-      "modifier": 3,
+      "score": 15,
+      "modifier": 2,
       "name_cn": "体质"
     },
     "INT": {
-      "score": 8,
-      "modifier": -1,
+      "score": 10,
+      "modifier": 0,
       "name_cn": "智力"
     },
     "WIS": {
-      "score": 13,
+      "score": 12,
       "modifier": 1,
       "name_cn": "感知"
     },
@@ -53,158 +48,24 @@
       "name_cn": "魅力"
     }
   },
-  "primary_abilities": [
-    "STR",
-    "CON"
-  ],
-  "hit_die": 12,
+  "primary_abilities": {
+    "STR": 17,
+    "DEX": 12
+  },
+  "hit_die": 10,
   "stats_lv1": {
-    "level": 1,
-    "hp": 150,
-    "hp_dnd_raw": 15,
-    "ac": 13,
-    "physical_atk": 51,
-    "magic_power": 23,
-    "prof_bonus": 2,
-    "atk_speed_pct": 1.0,
-    "crit_chance": 12.0,
-    "crit_damage": 155.0,
-    "cdr_pct": 1.0,
-    "heal_bonus_pct": 0.0,
-    "cc_resist_pct": 1.0,
-    "save_bonuses": {
-      "STR": 5,
-      "DEX": 1,
-      "CON": 5,
-      "INT": -1,
-      "WIS": 1,
-      "CHA": 0
-    }
+    "hp": 12,
+    "ac": 11,
+    "atk": 17,
+    "ap": 12
   },
   "stats_lv18": {
-    "level": 18,
-    "hp": 1850,
-    "hp_dnd_raw": 185,
-    "ac": 13,
-    "physical_atk": 63,
-    "magic_power": 31,
-    "prof_bonus": 6,
-    "atk_speed_pct": 1.0,
-    "crit_chance": 12.0,
-    "crit_damage": 155.0,
-    "cdr_pct": 1.0,
-    "heal_bonus_pct": 0.0,
-    "cc_resist_pct": 1.0,
-    "save_bonuses": {
-      "STR": 9,
-      "DEX": 1,
-      "CON": 9,
-      "INT": -1,
-      "WIS": 1,
-      "CHA": 0
-    }
+    "hp": 120,
+    "ac": 13
   },
   "growth_per_level": {
-    "hp": 100,
-    "atk": 2.5,
-    "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "D.Va·震荡猛击",
-      "key": "Q",
-      "type": "物理",
-      "action": "重击前方敌人",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "prone",
-          "desc": "击倒"
-        }
-      ],
-      "cooldown": 4,
-      "description": "重击前方敌人（单体）。击倒",
-      "approx": true
-    },
-    {
-      "name": "D.Va·地裂践踏",
-      "key": "W",
-      "type": "物理",
-      "action": "践踏地面造成范围震荡",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "slow",
-          "desc": "减速"
-        }
-      ],
-      "cooldown": 8,
-      "description": "践踏地面造成范围震荡（区域）。减速",
-      "approx": true
-    },
-    {
-      "name": "D.Va·荆棘反甲",
-      "key": "E",
-      "type": "物理",
-      "action": "反弹近战伤害",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "CON",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "reflect",
-          "desc": "反伤"
-        }
-      ],
-      "cooldown": 6,
-      "description": "反弹近战伤害（自身）。反伤",
-      "approx": true
-    },
-    {
-      "name": "D.Va·巨石投掷",
-      "key": "R",
-      "type": "物理",
-      "action": "投掷巨石轰击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "knockback",
-          "desc": "击退"
-        }
-      ],
-      "cooldown": 5,
-      "description": "投掷巨石轰击（单体）。击退",
-      "approx": true
-    }
-  ]
+    "hp": 6,
+    "atk": 1,
+    "ap": 1
+  }
 }

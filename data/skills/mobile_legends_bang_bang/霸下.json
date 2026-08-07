@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Baxia's Unity",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。目标速度减半2回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "name": "Shield of the Just",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d10+STR 钝击伤害。获得临时生命2回合。受到伤害减半2回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA"
+      },
+      {
+        "type": "减伤",
+        "desc": "受到伤害减半",
+        "target": "自身",
+        "duration": 2,
+        "value": 50
+      }
+    ],
+    "aoe_radius": 5
+  },
+  {
+    "name": "Tortoise Charge",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "目标被推开10尺1回合。向目标方向移动30尺。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      },
+      {
+        "type": "位移",
+        "desc": "向目标方向移动30尺",
+        "target": "自身",
+        "value": 30
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Guardian Spirit",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d10+STR 钝击伤害。获得临时生命2回合。受到伤害减半2回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA"
+      },
+      {
+        "type": "减伤",
+        "desc": "受到伤害减半",
+        "target": "自身",
+        "duration": 2,
+        "value": 50
+      }
+    ],
+    "aoe_radius": 15
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1978",
+  "card_id": "league_of_legends:奎因",
+  "legacy_card_id": "LEA-1110",
   "hero": {
     "name": "奎因",
     "name_en": "Quinn",
@@ -107,24 +108,5 @@
     "hp": 60,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "暗杀",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d6+DEX 穿刺伤害。若目标生命低于一半，伤害翻倍。"
-    }
-  ]
+  }
 }

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "马其顿方阵",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "阵型压制，敌方护甲降低"
+      }
+    ],
+    "cooldown": 0,
+    "description": "马其顿长矛方阵推进！1d10+STR 穿刺伤害，阵型压制使目标护甲降低1回合。"
+  },
+  {
+    "name": "征服者之怒",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "bleed",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "每回合1d4流血"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "亚历山大大帝之怒如雷霆万钧！2d8+STR 挥砍伤害，目标需通过CON豁免否则流血2回合。"
+  },
+  {
+    "name": "布西法尔冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "骑兵冲锋加速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "骑乘爱马布西法尔发起骑兵冲锋！1d8+STR 钝击伤害，自身获得加速突进。"
+  },
+  {
+    "name": "高加米拉之锤",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体增援，伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "如高加米拉战役般决定性的锤击！2d10+STR 挥砍范围伤害，自身增伤2回合，低血量目标伤害翻倍。"
+  }
+]

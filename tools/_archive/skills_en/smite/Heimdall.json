@@ -1,0 +1,115 @@
+[
+  {
+    "name": "加拉尔号角",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "海姆达尔吹响加拉尔号角——警觉之声回荡九界。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "九界之眼",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "全视之眼发现一切弱点",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "海姆达尔睁开九界之眼——他能看见千里外的蚂蚁，听见草木生长的声音。标记易伤2回合。2d6+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "彩虹桥",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "彩虹桥瞬移",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "shield",
+        "desc": "阿斯加德之光护体",
+        "target": "自身",
+        "duration": "1",
+        "value_formula": "1d8+DEX"
+      }
+    ],
+    "cooldown": 2,
+    "description": "海姆达尔开启彩虹桥——比弗罗斯特的光芒贯穿九界。加速2回合+护盾1回合。"
+  },
+  {
+    "name": "诸神黄昏的号角",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "末日号角响起",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "守护神的最后之力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "海姆达尔吹响末日号角——当他吹响加拉尔的那一刻，诸神黄昏正式开始。AOE恐惧+增伤。3d8+DEX 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

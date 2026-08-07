@@ -3,7 +3,7 @@
 """对战平台 UI —— tkinter GUI 主窗口"""
 
 import tkinter as tk
-from tkinter import ttk, font as tkfont
+from tkinter import ttk, font as tkfont, filedialog
 import random
 import sys
 import os
@@ -37,6 +37,7 @@ class BattlePlatform:
         self.line_height = 32
         self.simulator = None
         self.all_logs = []
+        self.log_lines = []  # 已显示日志的纯文本缓存（供复制/分享）
 
         # 筛选状态
         self.game_filter_var = tk.StringVar(value="全部游戏")
@@ -71,6 +72,7 @@ class BattlePlatform:
         font_files = {
             "simhei.ttf": "SimHei",
             "simkai.ttf": "KaiTi",
+            "HanChanGaoHeiTi-2.otf": "Chill G Sans Medium",
         }
 
         for filename, family_name in font_files.items():
@@ -120,9 +122,9 @@ class BattlePlatform:
         self.heroes_dict = HeroLoader.build_hero_dict(heroes)
         games_set = []
         for card in self.heroes_dict.values():
-            game_cn = game_cn(card)
-            if game_cn not in games_set:
-                games_set.append(game_cn)
+            game_name = game_cn(card)
+            if game_name not in games_set:
+                games_set.append(game_name)
         self.available_games = sorted(games_set)
 
     # ── 界面构建 ──────────────────────────────
@@ -296,6 +298,20 @@ class BattlePlatform:
             relief=tk.FLAT, padx=20, pady=6, cursor="hand2"
         )
         self.btn_clear.pack(side=tk.RIGHT, padx=5)
+
+        self.btn_copy = tk.Button(
+            btn_frame, text="📋 复制日志", command=self._copy_log,
+            font=self.default_font, bg="#21262d", fg="#f0f6fc",
+            relief=tk.FLAT, padx=16, pady=6, cursor="hand2"
+        )
+        self.btn_copy.pack(side=tk.RIGHT, padx=5)
+
+        self.btn_save = tk.Button(
+            btn_frame, text="💾 保存日志", command=self._save_log,
+            font=self.default_font, bg="#21262d", fg="#f0f6fc",
+            relief=tk.FLAT, padx=16, pady=6, cursor="hand2"
+        )
+        self.btn_save.pack(side=tk.RIGHT, padx=5)
 
         # 速度控制
         tk.Label(btn_frame, text="速度:", font=self.subtitle_font,
@@ -565,6 +581,7 @@ class BattlePlatform:
 
     def _add_log(self, text: str, color: str = "#c9d1d9"):
         """Canvas 添加日志行"""
+        self.log_lines.append(text)
         self.canvas.create_text(
             10, self.log_y, anchor="nw", text=text,
             fill=color, font=self.default_font
@@ -588,9 +605,47 @@ class BattlePlatform:
         self.canvas.delete("all")
         self.log_y = 10
         self.all_logs = []
+        self.log_lines = []
         self.current_line = 0
         self.log_count = 0
         self.log_count_label.config(text="")
 
     def _on_mousewheel(self, event):
         self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    # ── 日志复制 / 分享 ──────────────────────
+
+    def _copy_log(self):
+        """复制全部日志文本到剪贴板"""
+        if not self.log_lines:
+            self._add_log("⚠️ 暂无日志可复制", "#f85149")
+            return
+        text = "\n".join(self.log_lines)
+        try:
+            self.root.clipboard_clear()
+            self.root.clipboard_append(text)
+            self._add_log(f"📋 已复制 {len(self.log_lines)} 行日志到剪贴板", "#7ee787")
+        except Exception as e:
+            self._add_log(f"⚠️ 复制失败: {e}", "#f85149")
+
+    def _save_log(self):
+        """将日志保存为文本文件（分享用）"""
+        if not self.log_lines:
+            self._add_log("⚠️ 暂无日志可保存", "#f85149")
+            return
+        from datetime import datetime
+        default_name = f"battle_log_{datetime.now():%Y%m%d_%H%M%S}.txt"
+        path = filedialog.asksaveasfilename(
+            defaultextension=".txt",
+            filetypes=[("文本文件", "*.txt"), ("全部文件", "*.*")],
+            initialfile=default_name,
+            title="保存战斗日志",
+        )
+        if not path:
+            return
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("\n".join(self.log_lines))
+            self._add_log(f"💾 日志已保存: {path}", "#7ee787")
+        except Exception as e:
+            self._add_log(f"⚠️ 保存失败: {e}", "#f85149")

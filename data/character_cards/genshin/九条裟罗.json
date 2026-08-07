@@ -1,0 +1,71 @@
+{
+  "card_id": "genshin:九条裟罗",
+  "hero": {
+    "name": "九条裟罗",
+    "name_en": "九条裟罗",
+    "alias": "",
+    "title": "九条裟罗"
+  },
+  "game": {
+    "name": "Genshin Impact",
+    "name_cn": "原神",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "辅助"
+  },
+  "source": "",
+  "difficulty": 3,
+  "playstyle_tags": [],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 14,
+      "modifier": 2,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": {
+    "STR": 10,
+    "DEX": 12
+  },
+  "hit_die": 8,
+  "stats_lv1": {
+    "hp": 12,
+    "ac": 11,
+    "atk": 10,
+    "ap": 17
+  },
+  "stats_lv18": {
+    "hp": 120,
+    "ac": 13
+  },
+  "growth_per_level": {
+    "hp": 6,
+    "atk": 1,
+    "ap": 1
+  }
+}

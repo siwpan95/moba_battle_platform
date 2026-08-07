@@ -1,5 +1,5 @@
 {
-  "card_id": "ONM-2317",
+  "card_id": "onmyoji_arena:铃鹿御前",
   "hero": {
     "name": "铃鹿御前",
     "name_en": "",
@@ -110,27 +110,125 @@
   },
   "skills": [
     {
-      "name": "大招",
+      "name": "法师·雷霆之矛",
+      "key": "Q",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "type": "stun",
+          "duration": 1,
+          "desc": "麻痹",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d8+INT 雷电伤害。麻痹",
+      "approx": true
+    },
+    {
+      "name": "法师·奥术护盾",
+      "key": "W",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "护盾",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "1d10+INT 法术伤害。护盾",
+      "approx": true
+    },
+    {
+      "name": "法师·奥能飞弹",
+      "key": "E",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "force",
+          "duration": 1,
+          "desc": "力场伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "3d6+INT 法术伤害。力场伤害",
+      "approx": true
+    },
+    {
+      "name": "法师·元素风暴",
       "key": "R",
       "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
+        "dice_count": 3,
+        "dice_size": 4,
         "bonus_attr": "INT",
-        "type": "火焰"
+        "type": "法术"
       },
-      "effects": [],
-      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围伤害",
+          "target": "敌方"
+        }
+      ],
       "saving_throw": {
-        "attr": "DEX",
+        "attr": "INT",
         "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
+        "on_save": "无效"
       },
       "cooldown": 4,
-      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。"
+      "description": "3d8+INT 法术伤害。范围伤害",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "ONM-2317"
 }

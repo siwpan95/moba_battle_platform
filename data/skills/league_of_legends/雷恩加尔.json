@@ -1,0 +1,124 @@
+[
+  {
+    "name": "残忍无情",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "下次攻击必定暴击",
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "攻击速度+40%",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "以野兽般的狂暴猛击目标。造成1d10+DEX挥砍伤害。强化时：下次攻击必定暴击，且攻击速度+40%持续2回合。"
+  },
+  {
+    "name": "战争咆哮",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "回复最近2回合所受伤害的50%",
+        "target": "自身"
+      },
+      {
+        "type": "cleanse",
+        "desc": "移除所有控制效果",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "发出震耳欲聋的战吼，造成2d8+DEX挥砍伤害。回复最近2回合内所受伤害的50%。强化时：额外移除所有控制与负面效果。"
+  },
+  {
+    "name": "套索打击",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "投掷一记浸毒的流星索。造成1d8+DEX挥砍伤害并减速2回合。强化时：改为束缚目标，使其完全无法移动。DEX豁免成功则免疫束缚/减速。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "狩猎律动",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "进入伪装状态",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "移动速度+40尺",
+        "duration": 3,
+        "value": 40,
+        "target": "自身"
+      },
+      {
+        "type": "vuln",
+        "desc": "获得最近敌人的真实视野",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "进入终极狩猎姿态——伪装潜行、感知周围所有敌人的位置。造成4d6+DEX挥砍伤害（跃向目标的破隐一击）。持续3回合或发动攻击后显形。自动标记距离最近的敌人。"
+  }
+]

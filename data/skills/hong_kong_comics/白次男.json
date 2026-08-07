@@ -1,0 +1,137 @@
+[
+  {
+    "name": "磁场转动·次男爆破拳",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "爆破拳劲轰飞目标",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 0,
+    "description": "白次男的招牌绝技——磁场转动推动下的毁灭一拳。2d10+STR 钝击伤害，STR豁免失败击退15尺。"
+  },
+  {
+    "name": "磁场转动·电流推动",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "麻痹",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "高压电流麻痹目标",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "白次男以磁场转动产生高压电流——电流推动！2d8+CON 闪电伤害，CON豁免失败麻痹1回合。冷却1回合。"
+  },
+  {
+    "name": "磁场转动·修罗道",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*8",
+        "desc": "修罗杀意提升暴击",
+        "target": "自身"
+      },
+      {
+        "type": "狂暴",
+        "duration": 3,
+        "desc": "攻速+50%，每次攻击额外1d4黯蚀伤害",
+        "target": "自身"
+      },
+      {
+        "type": "自伤",
+        "duration": 3,
+        "dmg_per_turn": "1d4",
+        "desc": "修罗之力反噬自身",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "白次男进入修罗道——以伤痛换取力量。暴击率+PROF×8%，攻速+50%附加1d4黯蚀，但每回合自伤1d4。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "终极·地狱战神",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 35,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "地狱战神降临的恐怖威压",
+        "target": "敌方"
+      },
+      {
+        "type": "吸血",
+        "value": 50,
+        "desc": "战神之力吸取生命",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "白次男磁场转动的终极形态——召唤地狱战神附体！6d8+CON 黯蚀伤害，35尺范围。WIS豁免失败恐惧2回合。造成伤害50%转化为治疗。冷却4回合。"
+  }
+]

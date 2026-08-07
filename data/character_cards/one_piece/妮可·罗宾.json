@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2265",
+  "card_id": "one_piece:妮可·罗宾",
   "hero": {
     "name": "妮可·罗宾",
     "name_en": "Nico Robin",
@@ -108,80 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "绞刑",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d8+INT 力场（环绕手臂）伤害。",
-      "approx": true
-    },
-    {
-      "name": "二棵大树",
-      "key": "W",
-      "type": "法术",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d6+INT 力场伤害。",
-      "approx": true
-    },
-    {
-      "name": "百花缭乱·大飞燕草",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d8+INT 力场伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 8
-    },
-    {
-      "name": "万轮花开",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d10+INT 力场伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 12
-    }
-  ]
+  "legacy_card_id": "ONE-2265"
 }

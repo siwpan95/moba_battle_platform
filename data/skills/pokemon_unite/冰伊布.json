@@ -1,0 +1,114 @@
+[
+  {
+    "name": "冰砾",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ]
+  },
+  {
+    "name": "冰冻之风",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。目标被冻结，无法行动1回合。",
+    "effects": [
+      {
+        "type": "麻痹",
+        "desc": "目标被冻结，无法行动",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "冰雹",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "暴风雪",
+    "key": "U",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。目标被冻结，无法行动1回合。",
+    "effects": [
+      {
+        "type": "麻痹",
+        "desc": "目标被冻结，无法行动",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

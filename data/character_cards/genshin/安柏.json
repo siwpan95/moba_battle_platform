@@ -1,5 +1,5 @@
 {
-  "card_id": "GEN-1515",
+  "card_id": "genshin:安柏",
   "hero": {
     "name": "安柏",
     "name_en": "Amber",
@@ -111,102 +111,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "安柏·穿甲弹",
-      "key": "Q",
-      "type": "物理",
-      "action": "贯穿多重目标",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "pierce",
-          "desc": "穿透"
-        }
-      ],
-      "cooldown": 6,
-      "description": "贯穿多重目标（单体）。穿透",
-      "approx": true
-    },
-    {
-      "name": "安柏·战术翻滚",
-      "key": "W",
-      "type": "物理",
-      "action": "拉开距离",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 4,
-        "bonus_attr": "DEX",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "target": "自身",
-          "kind": "dash",
-          "desc": "位移"
-        }
-      ],
-      "cooldown": 4,
-      "description": "拉开距离（自身）。位移",
-      "approx": true
-    },
-    {
-      "name": "安柏·爆头狙击",
-      "key": "E",
-      "type": "物理",
-      "action": "蓄力重击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "crit",
-          "desc": "重伤"
-        }
-      ],
-      "cooldown": 8,
-      "description": "蓄力重击（单体）。重伤",
-      "approx": true
-    },
-    {
-      "name": "安柏·压制火力",
-      "key": "R",
-      "type": "物理",
-      "action": "限制走位",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "slow",
-          "desc": "减速"
-        }
-      ],
-      "cooldown": 6,
-      "description": "限制走位（区域）。减速",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "GEN-1515"
 }

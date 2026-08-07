@@ -1,0 +1,111 @@
+[
+  {
+    "name": "锦帆刀",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "锦帆贼的快刀，1d10+DEX 挥砍伤害，获得短暂加速。"
+  },
+  {
+    "name": "百骑劫营",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      },
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐匿突袭"
+      }
+    ],
+    "cooldown": 1,
+    "description": "百骑劫曹营！2d8+DEX 挥砍伤害，低血量额外伤害，自身获得短暂隐匿。"
+  },
+  {
+    "name": "铃铛威慑",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "腰间铃铛响，敌将心胆寒！自身速度翻倍2回合。"
+  },
+  {
+    "name": "锦帆破浪",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血翻倍"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      }
+    ],
+    "cooldown": 4,
+    "description": "锦帆贼首领的致命一击！4d6+DEX 挥砍范围伤害，低血翻倍，加速2回合。",
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "name": "穿刺",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "长矛刺入叠加",
+        "duration": 3,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "投掷后向指定方向跳跃",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "哨兵",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "哨兵巡逻标记目标",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 穿刺伤害。"
+  },
+  {
+    "name": "撕裂",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "拔出所有矛，每根矛额外伤害",
+        "threshold": 10,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "撕裂减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "命运的召唤",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "召回契约者并击飞路径敌人",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "immune",
+        "desc": "契约者变为不可选中",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+DEX 穿刺伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

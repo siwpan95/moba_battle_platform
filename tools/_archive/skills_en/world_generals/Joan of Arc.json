@@ -1,0 +1,105 @@
+[
+  {
+    "name": "圣旗引导",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "神启：下次攻击+2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "举起圣旗，追随神启！1d10+STR 挥砍伤害。圣女的神启鼓舞自身下次攻击+2。"
+  },
+  {
+    "name": "奥尔良之围",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "信仰之力，回复1d8生命"
+      }
+    ],
+    "cooldown": 1,
+    "description": "解救奥尔良的圣女之剑！2d8+STR 挥砍伤害。信仰之力回复1d8生命。"
+  },
+  {
+    "name": "圣女冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "白甲冲锋，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "身披白甲，率军冲锋！1d8+STR 钝击伤害。圣女骑马冲锋，速度翻倍2回合。"
+  },
+  {
+    "name": "殉道者之焰",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "圣焰附体：伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "审判：低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "烈火中升起的圣洁之魂！2d10+STR 挥砍范围伤害。圣焰附体增伤2回合，对低血量目标触发神之审判斩杀。"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "name": "神枪佩利翁",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。阿喀琉斯以喀戎所赠的佩利翁之枪刺击。",
+    "approx": true
+  },
+  {
+    "name": "破敌猛击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲-3"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。阿喀琉斯以无人能挡的猛击破开敌阵。破甲2回合+减速1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "无敌冲锋",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "全速冲锋30尺"
+      },
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "除脚踵外免疫伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。阿喀琉斯以无敌之姿冲锋。突进+免疫伤害1回合（仅在脚踵处可被破）。",
+    "approx": true
+  },
+  {
+    "name": "特洛伊之怒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 3,
+        "desc": "赫克托尔追杀者攻击+7"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。阿喀琉斯释放特洛伊战场上的全部怒火。增益3回合+恐惧1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  }
+]

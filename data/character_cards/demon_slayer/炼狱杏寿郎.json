@@ -1,5 +1,6 @@
 {
-  "card_id": "DEM-1343",
+  "card_id": "demon_slayer:炼狱杏寿郎",
+  "legacy_card_id": "DEM-1006",
   "hero": {
     "name": "炼狱杏寿郎",
     "name_en": "Kyojuro Rengoku",
@@ -123,7 +124,20 @@
         "bonus_attr": "STR",
         "type": "火焰"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "持续受到火焰伤害"
+        },
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "火焰持续灼烧"
+        }
+      ],
       "cooldown": 0,
       "description": "2d10+STR 火焰伤害。",
       "approx": true
@@ -141,7 +155,20 @@
         "bonus_attr": "STR",
         "type": "火焰"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "持续受到火焰伤害"
+        },
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "火焰持续灼烧"
+        }
+      ],
       "cooldown": 1,
       "description": "2d6+STR 火焰伤害。",
       "approx": true
@@ -159,7 +186,20 @@
         "bonus_attr": "STR",
         "type": "火焰"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "持续受到火焰伤害"
+        },
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "火焰持续灼烧"
+        }
+      ],
       "cooldown": 2,
       "description": "2d10+STR 火焰伤害，覆盖一片区域。",
       "approx": true,
@@ -178,7 +218,20 @@
         "bonus_attr": "STR",
         "type": "火焰"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "持续受到火焰伤害"
+        },
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "持续受到火焰伤害"
+        }
+      ],
       "cooldown": 4,
       "description": "3d12+STR 火焰伤害，覆盖一片区域。",
       "approx": true,

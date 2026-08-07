@@ -1,0 +1,121 @@
+[
+  {
+    "name": "琴音术",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "「曲有误，周郎顾。」1d8+INT 力场伤害，减速1回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "火攻令",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧1d6"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赤壁火攻的军令！2d6+INT 火焰范围伤害，灼烧2回合。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "反间计",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "混乱"
+      }
+    ],
+    "cooldown": 2,
+    "description": "群英会蒋干中计。目标需通过WIS豁免否则混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "火烧赤壁",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧2d6"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 4,
+    "description": "东风不与周郎便，铜雀春深锁二乔！4d6+INT 火焰大范围伤害，灼烧2回合、破甲2回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 25
+  }
+]

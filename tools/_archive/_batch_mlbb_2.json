@@ -1,0 +1,145 @@
+{
+  "Quorra": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "invis"
+      ]
+    }
+  },
+  "Riven": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Sylas": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "Talon": {
+    "role": "assassin",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "E": [
+        "invis"
+      ]
+    }
+  },
+  "Umbra": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Vexia": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "Wraith": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Yurei": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "Zara": {
+    "role": "marksman",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "Arawn": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "Kenshin": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "accel"
+      ]
+    }
+  },
+  "Shiroe": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "Tenma": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  }
+}

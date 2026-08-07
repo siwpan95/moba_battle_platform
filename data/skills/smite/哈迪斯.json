@@ -1,0 +1,108 @@
+[
+  {
+    "name": "灵魂收割",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "哈迪斯伸出权杖，从生者体内撕扯出灵魂碎片。作为冥界之主，每一缕亡魂都是他的合法贡品。1d8+INT 黯蚀伤害。"
+  },
+  {
+    "name": "黑暗之盔",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "戴上独眼巨人锻造的黑暗之盔，从一切感知中消失",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "哈迪斯戴上黑暗之盔——独眼巨人为他锻造的至宝，连诸神也无法洞穿其下的真身。在阴影中，他无声接近猎物。获得隐形2回合。2d6+INT 黯蚀伤害。"
+  },
+  {
+    "name": "冥河之触",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "斯提克斯河的寒流渗入骨髓，持续侵蚀生命",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "冥河之水令肢体僵硬迟缓",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "哈迪斯召唤斯提克斯河的冥水——那冰冷黑水触碰到的一切都将凋零衰败。寒流附骨，持续侵蚀并减速目标。2d6+INT 黯蚀伤害，dot 2回合，slow 1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "刻耳柏洛斯之怒",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "三头犬的咆哮震慑灵魂，使敌人陷入恐惧",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "哈迪斯释放冥界守门犬刻耳柏洛斯——三颗头颅同时发出撕裂灵魂的咆哮，任何胆敢直视它的凡人都会在恐惧中石化。4d6+INT 黯蚀伤害，AOE，恐惧1回合。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

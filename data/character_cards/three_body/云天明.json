@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2590",
+  "card_id": "three_body:云天明",
+  "legacy_card_id": "THE-1005",
   "hero": {
     "name": "云天明",
     "name_en": "Yun Tianming",
@@ -199,7 +200,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "治疗",
+          "target": "友方",
+          "duration": 2,
+          "desc": "群体治疗友方"
+        }
+      ],
       "cooldown": 4,
       "description": "3d6+INT 力场伤害，覆盖一片区域。",
       "approx": true,

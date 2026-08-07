@@ -1,0 +1,131 @@
+[
+  {
+    "name": "恩托打击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "钝器重击减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "开路先锋",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "desc": "举盾防御姿态伤害减半",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "盾击击退",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "大步驰援",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "冲锋至友军身旁提供护盾",
+        "target": "自身"
+      },
+      {
+        "type": "shield",
+        "desc": "友军获得护盾",
+        "duration": 1,
+        "value": 25,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "全力以赴",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "全力形态：失去部分防御换取攻击力飙升",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "将目标撞过地形并眩晕",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+STR 钝击伤害。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Elapsed Daytime",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+DEX 穿刺伤害。向目标方向移动30尺。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "向目标方向移动30尺",
+        "target": "自身",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "An Eye for an Eye",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    }
+  },
+  {
+    "name": "Shadow Slash",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "Shadow Slash。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    }
+  },
+  {
+    "name": "Moonlit Dance",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "5d6+DEX 穿刺伤害。免疫控制效果1回合。短距离传送/移动。",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "免疫控制",
+        "desc": "免疫控制效果",
+        "target": "自身",
+        "duration": 1
+      },
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      }
+    ]
+  }
+]

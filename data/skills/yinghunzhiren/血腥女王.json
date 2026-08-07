@@ -1,0 +1,112 @@
+[
+  {
+    "name": "血之盛宴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+INT 火焰伤害。造成伤害的30%转化为治疗。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "鲜血转换",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "3d6+INT 寒冷伤害。造成伤害的30%转化为治疗。",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "血池",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "目标无法移动1回合。目标速度减半2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "目标无法移动",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      },
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "血之狂暴",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "6d6+INT 闪电伤害。造成伤害的30%转化为治疗。",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

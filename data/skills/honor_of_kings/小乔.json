@@ -1,0 +1,91 @@
+[
+  {
+    "name": "绽放之舞",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。"
+  },
+  {
+    "name": "甜蜜恋风",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "duration": 1,
+        "dc_attr": "STR",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。目标被击飞，失去动作1回合。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "星华缭乱",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。"
+  },
+  {
+    "name": "治愈微笑",
+    "key": "P",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "duration": 2,
+        "value": 15,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+INT 力场伤害。速度+15尺2回合。"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "女武神之矛",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "布伦希尔德刺出长矛——瓦尔基里中最著名的一位，她的矛尖指向谁，谁就将归于英灵殿。1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "火焰之环",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "火焰之环焚烧",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "布伦希尔德点燃火焰之环——奥丁将她困在火圈之中，只有最勇敢的英雄才能穿越。AOE火焰dot。2d8+STR 火焰伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "英灵指引",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "女武神之翼",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "buff",
+        "desc": "英灵殿的祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "布伦希尔德接受英灵殿指引——瓦尔哈拉的战魂将力量注入她的体内。加速+增伤各2回合。"
+  },
+  {
+    "name": "瓦尔基里之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "将弱者引渡至英灵殿",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "女武神的战吼",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "布伦希尔德发起瓦尔基里冲锋——她率领所有女武神从天空中俯冲而下，马蹄踏碎云层。低血斩杀+AOE恐惧。2d10+STR 穿刺伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

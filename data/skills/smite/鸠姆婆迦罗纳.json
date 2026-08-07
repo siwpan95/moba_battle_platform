@@ -1,0 +1,129 @@
+[
+  {
+    "name": "盾击猛撞",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "击退目标",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "举起巨盾猛撞敌人，将其击退数步。即使是最大体型的生物也难以站稳脚跟。"
+  },
+  {
+    "name": "钢铁壁垒",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "获得护盾值等于2d8+CON",
+        "target": "自身"
+      },
+      {
+        "type": "reduce",
+        "desc": "受到的伤害减半",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "range": "自身",
+    "target": "自身",
+    "action": "附赠动作",
+    "description": "全身被钢铁般的光芒笼罩，化身为不可撼动的壁垒。敌人的攻击如同挠痒。"
+  },
+  {
+    "name": "地裂践踏",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "地面震动降低周围敌人护甲",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "地面裂缝造成减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "range": "近战",
+    "target": "范围",
+    "action": "动作",
+    "description": "奋力践踏地面，裂缝从脚下蔓延。大地颤抖，敌人立足不稳。"
+  },
+  {
+    "name": "沉睡巨人",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "陷入沉睡后全场地震击倒",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "shield",
+        "desc": "沉睡时获得巨额护盾",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "range": "近战",
+    "target": "范围",
+    "action": "动作",
+    "description": "你化身不灭的守护者，以怒吼挑衅所有敌人。在他们的攻击下，你巍然不动。"
+  }
+]

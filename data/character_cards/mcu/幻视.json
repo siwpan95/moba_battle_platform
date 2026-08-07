@@ -1,5 +1,5 @@
 {
-  "card_id": "MAR-2055",
+  "card_id": "mcu:幻视",
   "hero": {
     "name": "幻视",
     "name_en": "Vision",
@@ -109,102 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "幻视·破甲击",
-      "key": "Q",
-      "type": "物理",
-      "action": "削弱目标防御",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "sunder",
-          "desc": "降防"
-        }
-      ],
-      "cooldown": 4,
-      "description": "削弱目标防御（单体）。降防",
-      "approx": true
-    },
-    {
-      "name": "幻视·战吼",
-      "key": "W",
-      "type": "混合",
-      "action": "鼓舞自身与队友",
-      "range": "自身",
-      "target": "友方",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "CHA",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "target": "友方",
-          "kind": "buff",
-          "desc": "攻击提升"
-        }
-      ],
-      "cooldown": 8,
-      "description": "鼓舞自身与队友（友方）。攻击提升",
-      "approx": true
-    },
-    {
-      "name": "幻视·致命连击",
-      "key": "E",
-      "type": "物理",
-      "action": "高速连斩",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "bleed",
-          "desc": "流血"
-        }
-      ],
-      "cooldown": 7,
-      "description": "高速连斩（单体）。流血",
-      "approx": true
-    },
-    {
-      "name": "幻视·烈斩",
-      "key": "R",
-      "type": "物理",
-      "action": "强力近战斩击",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "bleed",
-          "desc": "流血"
-        }
-      ],
-      "cooldown": 3,
-      "description": "强力近战斩击（单体）。流血",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "MAR-2055"
 }

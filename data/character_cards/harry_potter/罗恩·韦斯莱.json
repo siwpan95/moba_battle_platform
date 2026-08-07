@@ -1,5 +1,5 @@
 {
-  "card_id": "HAR-1537",
+  "card_id": "harry_potter:罗恩·韦斯莱",
   "hero": {
     "name": "罗恩·韦斯莱",
     "name_en": "Ron Weasley",
@@ -110,100 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "软弱咒",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 1,
-          "desc": "目标移动力下降",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 0,
-      "description": "1d6+WIS 力场伤害，减速目标。",
-      "approx": true
-    },
-    {
-      "name": "棋步指挥",
-      "key": "W",
-      "type": "法术",
-      "action": "附赠动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "攻击增益",
-          "duration": 2,
-          "desc": "友方下次攻击伤害提升",
-          "target": "友方"
-        }
-      ],
-      "cooldown": 1,
-      "description": "为友方提供攻击增益，持续 2 回合。",
-      "approx": true
-    },
-    {
-      "name": "群体护盾",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "WIS",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "护盾",
-          "duration": 2,
-          "desc": "范围内友方获得护盾",
-          "target": "友方"
-        }
-      ],
-      "cooldown": 2,
-      "description": "为范围内友方提供护盾，持续 2 回合。",
-      "approx": true,
-      "aoe_radius": 10
-    },
-    {
-      "name": "摧毁魂器",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "WIS",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d6+WIS 黯蚀伤害，对黑暗造物额外有效。",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "HAR-1537"
 }

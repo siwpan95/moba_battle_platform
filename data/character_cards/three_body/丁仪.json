@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2593",
+  "card_id": "three_body:丁仪",
+  "legacy_card_id": "THE-1008",
   "hero": {
     "name": "丁仪",
     "name_en": "Ding Yi",
@@ -122,7 +123,20 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "击退",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "目标被击退"
+        },
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "物理法则穿透防御"
+        }
+      ],
       "cooldown": 0,
       "description": "2d8+INT 力场伤害。",
       "approx": true
@@ -140,7 +154,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "物理法则穿透防御"
+        }
+      ],
       "cooldown": 1,
       "description": "2d6+INT 力场伤害。",
       "approx": true
@@ -183,7 +204,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "物理法则穿透防御"
+        }
+      ],
       "cooldown": 4,
       "description": "3d10+INT 力场伤害，覆盖一片区域。",
       "approx": true,

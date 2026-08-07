@@ -1,0 +1,109 @@
+[
+  {
+    "name": "熊形态",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "下次攻击获得1d4加值",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "以全身之力挥出一击，力量从脚跟传递至剑尖，势不可挡。"
+  },
+  {
+    "name": "月火术",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "旋风造成减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "旋转武器形成旋风，撕裂一切靠近之物。敌人被卷入其中，步履蹒跚。"
+  },
+  {
+    "name": "野性冲锋",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "冲锋至目标位置",
+        "target": "自身"
+      },
+      {
+        "type": "sunder",
+        "desc": "冲锋撞击降低目标护甲",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "架起武器向前猛冲，以万钧之势撞向敌人。护甲在此冲击下形同虚设。"
+  },
+  {
+    "name": "自然之怒",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "攻击力与护甲大幅提升",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "lifesteal",
+        "desc": "造成伤害的50%转化为生命",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "战神之力灌注全身，双目赤红，每一次挥砍都汲取敌人生机。"
+  }
+]

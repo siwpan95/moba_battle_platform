@@ -1,0 +1,123 @@
+[
+  {
+    "name": "基因病毒弹",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "1d4",
+        "desc": "基因病毒持续伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "降临派核心潘寒——以生物武器清除人类叛徒。2d8+DEX 毒素伤害，中毒2回合(每回合1d4)。",
+    "approx": true
+  },
+  {
+    "name": "中华田园·生态封锁",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "生态封锁限制行动"
+      }
+    ],
+    "cooldown": 1,
+    "description": "潘寒创建实验社会「中华田园」的经验——以生态手段封锁战场。2d6+INT 力场伤害，15尺范围。减速2回合。",
+    "approx": true
+  },
+  {
+    "name": "降临派宣言",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "target": "自身",
+        "duration": 3,
+        "value_formula": "PROF*10",
+        "desc": "降临信念强化杀意"
+      },
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 3,
+        "desc": "消灭人类暴政的决心"
+      }
+    ],
+    "cooldown": 2,
+    "description": "「消灭人类暴政，世界属于三体！」——降临派的信仰之力。暴击率+PROF×10%，攻击附加2d4额外伤害。持续3回合。冷却2回合。",
+    "approx": true
+  },
+  {
+    "name": "三体降临·审判",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 20,
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "三体降临的审判"
+      },
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对ETO叛徒额外双倍伤害"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "潘寒召唤三体文明之力——审判所有不服从降临派的人类。4d10+INT 黯蚀伤害，20尺范围。WIS豁免失败恐惧2回合。对拯救派目标双倍伤害。冷却4回合。",
+    "approx": true
+  }
+]

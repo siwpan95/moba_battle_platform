@@ -1,0 +1,108 @@
+[
+  {
+    "name": "破甲弹",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "拉满弓弦/瞄准镜，射出一发精准的远距离打击。射手的核心输出技。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "标记",
+        "desc": "标记目标，使其受到额外伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ]
+  },
+  {
+    "name": "陷阱布置",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 1,
+    "description": "在脚下布置陷阱/束缚装置。踩中的敌人将寸步难行。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "降低目标移动速度",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "翻滚闪避",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "快速后撤/翻滚，与敌人拉开距离。射手赖以生存的保命位移。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "提升移动和攻击速度",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "终极瞄准",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "锁定目标，射出决定性的一击/弹幕。射手的最强终结技。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "处决",
+        "desc": "对低血量目标造成额外伤害",
+        "duration": 0,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

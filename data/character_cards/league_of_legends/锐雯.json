@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1950",
+  "card_id": "league_of_legends:锐雯",
+  "legacy_card_id": "LEA-1082",
   "hero": {
     "name": "锐雯",
     "name_en": "Riven",
@@ -108,88 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "折翼之舞",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "震魂怒吼",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "眩晕",
-          "desc": "目标失去动作",
-          "duration": 1,
-          "dc_attr": "CON",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 1,
-      "description": "2d8+STR 挥砍伤害。目标失去动作1回合。",
-      "saving_throw": {
-        "attr": "CON",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      }
-    },
-    {
-      "name": "勇往直前",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "放逐之锋",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  }
 }

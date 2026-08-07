@@ -1,0 +1,126 @@
+[
+  {
+    "name": "幽影之蜕",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。变身为强化形态3回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "变身",
+        "desc": "变身为强化形态",
+        "target": "敌方",
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "name": "暗夜蛛毒",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。目标速度减半2回合。每回合受到毒素伤害3回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      },
+      {
+        "type": "持续伤害",
+        "desc": "每回合受到毒素伤害",
+        "target": "敌方",
+        "duration": 3,
+        "dmg_per_turn": "1d4"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "猎物锁定",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "目标失去动作1回合。目标无法移动1回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "束缚",
+        "desc": "目标无法移动",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "女皇神威",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "150尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "4d8+DEX 穿刺伤害。造成伤害的30%转化为治疗。攻击速度+30%2回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      },
+      {
+        "type": "攻速强化",
+        "desc": "攻击速度+30%",
+        "target": "自身",
+        "duration": 2,
+        "value": 30
+      }
+    ]
+  }
+]

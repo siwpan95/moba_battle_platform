@@ -1,0 +1,111 @@
+[
+  {
+    "name": "九头噬",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "1d4中毒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "九颗头颅轮流噬咬，1d10+STR 穿刺伤害，中毒1回合。"
+  },
+  {
+    "name": "九头齐攻",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "1d6中毒"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "九头齐出咬向四方！2d8+STR 穿刺范围伤害，中毒2回合，破甲1回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "妖风遁",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "碧波潭驸马乘风遁走。速度翻倍2回合。"
+  },
+  {
+    "name": "九头驸马",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量伤害翻倍"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "2d4中毒"
+      }
+    ],
+    "cooldown": 4,
+    "description": "九头虫现出真身吞噬一切！2d10+STR 穿刺伤害，低血量翻倍，剧毒2回合。"
+  }
+]

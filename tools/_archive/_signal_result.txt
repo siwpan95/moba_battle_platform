@@ -1,0 +1,13 @@
+=== loader 运行时信号 ===
+stdout 行数 = 3
+  OUT| [契约警告] C:\Users\13122\AppData\Local\Temp\doc_signal_wzauupbl\character_cards\rootcard.json — skills 为空 list
+  OUT| [信息] 已归一化 1 张 dict 格式角色卡为 list[skill]（防御性兼容，详见 ADR-001）
+  OUT| [信息] 1 张卡存在契约告警（详见上方），建议用 tools/migrate_skills_format.py 修复或 CI 拦截
+stderr 行数 = 0
+加载卡数 = 1, 技能数 = [0]
+
+=== 门禁 A（check_cards / validate_card）对同一张卡的判定 ===
+磁盘态 skills = None
+validate_card(磁盘态) = []  <- 空=通过
+运行时态 skills = []
+validate_card(运行时态) = ['skills 为空 list']

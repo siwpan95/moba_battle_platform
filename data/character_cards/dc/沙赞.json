@@ -1,5 +1,5 @@
 {
-  "card_id": "DC -1272",
+  "card_id": "dc:沙赞",
   "hero": {
     "name": "沙赞",
     "name_en": "Shazam",
@@ -109,102 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "沙赞·冲锋",
-      "key": "Q",
-      "type": "物理",
-      "action": "突进并撞击",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "knockback",
-          "desc": "击退"
-        }
-      ],
-      "cooldown": 5,
-      "description": "突进并撞击（单体）。击退",
-      "approx": true
-    },
-    {
-      "name": "沙赞·破甲击",
-      "key": "W",
-      "type": "物理",
-      "action": "削弱目标防御",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "sunder",
-          "desc": "降防"
-        }
-      ],
-      "cooldown": 4,
-      "description": "削弱目标防御（单体）。降防",
-      "approx": true
-    },
-    {
-      "name": "沙赞·战吼",
-      "key": "E",
-      "type": "混合",
-      "action": "鼓舞自身与队友",
-      "range": "自身",
-      "target": "友方",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "CHA",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "target": "友方",
-          "kind": "buff",
-          "desc": "攻击提升"
-        }
-      ],
-      "cooldown": 8,
-      "description": "鼓舞自身与队友（友方）。攻击提升",
-      "approx": true
-    },
-    {
-      "name": "沙赞·致命连击",
-      "key": "R",
-      "type": "物理",
-      "action": "高速连斩",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "bleed",
-          "desc": "流血"
-        }
-      ],
-      "cooldown": 7,
-      "description": "高速连斩（单体）。流血",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "DC -1272"
 }

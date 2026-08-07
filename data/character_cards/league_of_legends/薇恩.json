@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1943",
+  "card_id": "league_of_legends:薇恩",
+  "legacy_card_id": "LEA-1075",
   "hero": {
     "name": "薇恩",
     "name_en": "Vayne",
@@ -107,75 +108,5 @@
     "hp": 60,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "闪避突袭",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d6+DEX 挥砍伤害。"
-    },
-    {
-      "name": "圣银弩箭",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d6+DEX 穿刺伤害。"
-    },
-    {
-      "name": "恶魔审判",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d6+DEX 挥砍伤害。"
-    },
-    {
-      "name": "终极时刻",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d8+DEX 挥砍伤害。"
-    }
-  ]
+  }
 }

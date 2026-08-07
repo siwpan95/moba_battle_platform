@@ -1,0 +1,70 @@
+[
+  {
+    "name": "潮汐冲击",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。"
+  },
+  {
+    "name": "三叉戟",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。"
+  },
+  {
+    "name": "漩涡",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。"
+  },
+  {
+    "name": "释放海怪",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+INT 力场伤害。"
+  }
+]

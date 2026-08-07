@@ -1,0 +1,115 @@
+[
+  {
+    "name": "巨人铁拳",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "巴罗尔挥出巨拳——弗摩尔族的巨人王一拳可碎城墙。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "毁灭凝视",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "魔眼灼烧",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "巴罗尔睁开毁灭之眼——他那只独眼需要四个人才能用铁钩撑开眼皮，一旦睁开便能毁灭万物。dot 2回合。2d8+STR 黯蚀伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "巨人步伐",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "巨人皮糙肉厚",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "弗摩尔族的不死之躯",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "巴罗尔迈开巨人步伐——他的每一步都引发地震。护盾+减伤各2回合。"
+  },
+  {
+    "name": "魔眼全开",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "魔眼毁灭一切",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "毁灭之眼的恐怖",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "巴罗尔完全睁开魔眼——那只巨眼的光线足以蒸发湖泊、熔化山峦。低血斩杀+AOE恐惧。2d10+STR 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

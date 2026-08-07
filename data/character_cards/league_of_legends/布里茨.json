@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1899",
+  "card_id": "league_of_legends:布里茨",
+  "legacy_card_id": "LEA-1031",
   "hero": {
     "name": "布里茨",
     "name_en": "Blitzcrank",
@@ -108,24 +109,5 @@
     "hp": 100,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能二",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "210+STR 伤害。冷却1回合。"
-    }
-  ]
+  }
 }

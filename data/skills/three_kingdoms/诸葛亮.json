@@ -1,0 +1,127 @@
+[
+  {
+    "name": "借东风",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "呼风唤雨，1d8+INT 力场伤害，目标减速1回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "奇门遁甲",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "束缚/混乱"
+      }
+    ],
+    "cooldown": 1,
+    "description": "奇门遁甲困敌军！2d6+INT 力场范围伤害，未通过WIS豁免者束缚1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "空城计",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐匿"
+      },
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 2,
+    "description": "空城一曲退司马。获得隐匿与减伤1回合。"
+  },
+  {
+    "name": "八阵图",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "眩晕/束缚"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 4,
+    "description": "功盖三分国，名成八阵图！4d6+INT 力场大范围伤害，眩晕2回合、破甲2回合。",
+    "saving_throw": {
+      "attr": "INT",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 25
+  }
+]

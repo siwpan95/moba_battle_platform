@@ -1,0 +1,117 @@
+[
+  {
+    "name": "蝎尾针",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "蝎毒入体",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "塞尔凯特刺出蝎尾——蝎子女神的毒针一击致命。1d10+DEX 穿刺伤害，dot 2回合。"
+  },
+  {
+    "name": "毒雾",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "蝎毒弥漫",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "塞尔凯特释放毒雾——她原本被派去毒杀荷鲁斯，却转而成为他的保护者。AOE dot 2回合。2d8+DEX 黯蚀伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "蝎行无声",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "沙漠蝎子的潜行",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "沙上疾行",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "塞尔凯特遁入沙中——如同沙漠中的蝎子，她的行踪不可捉摸。隐身+加速各2回合。"
+  },
+  {
+    "name": "守护之毒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "剧毒收割",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "万蝎之母的威压",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "塞尔凯特释放万蝎之毒——她是守护亡者的女神，也是毒杀敌人的刺客。低血斩杀+AOE恐惧。4d6+DEX 黯蚀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

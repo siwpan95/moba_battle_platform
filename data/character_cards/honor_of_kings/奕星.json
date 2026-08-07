@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1833",
+  "card_id": "honor_of_kings:奕星",
   "hero": {
     "name": "奕星",
     "name_en": "",
@@ -111,160 +111,15 @@
   },
   "skills": [
     {
-      "name": "法师·奥能飞弹",
-      "key": "Q",
-      "type": "法术",
-      "action": "发射魔法飞弹",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "type": "force",
-          "duration": 1,
-          "desc": "力场伤害",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 3,
-      "description": "3d6+INT 法术伤害。力场伤害"
-    },
-    {
-      "name": "法师·元素风暴",
-      "key": "W",
-      "type": "法术",
-      "action": "召唤元素席卷",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "type": "aoe",
-          "duration": 1,
-          "desc": "范围伤害",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 7,
-      "description": "3d8+INT 法术伤害。范围伤害"
-    },
-    {
-      "name": "法师·时空禁锢",
-      "key": "E",
-      "type": "法术",
-      "action": "定身目标",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "寒冰"
-      },
-      "effects": [
-        {
-          "type": "hold",
-          "duration": 1,
-          "desc": "定身",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "1d8+INT 寒冰伤害。定身"
-    },
-    {
-      "name": "法师·焰爆术",
-      "key": "R",
-      "type": "法术",
-      "action": "引爆烈焰",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [
-        {
-          "type": "burn",
-          "duration": 1,
-          "desc": "灼烧",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 5,
-      "description": "2d10+INT 火焰伤害。灼烧"
-    },
-    {
-      "name": "法师·雷霆之矛",
-      "key": "Q",
-      "type": "法术",
-      "action": "降下闪电",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "雷电"
-      },
-      "effects": [
-        {
-          "type": "stun",
-          "duration": 1,
-          "desc": "麻痹",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "2d8+INT 雷电伤害。麻痹"
-    },
-    {
       "name": "法师·奥术护盾",
-      "key": "W",
+      "key": "Q",
       "type": "法术",
       "action": "凝结护盾",
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
+        "dice_count": 3,
+        "dice_size": 4,
         "bonus_attr": "INT",
         "type": "法术"
       },
@@ -281,19 +136,20 @@
         "dc_formula": "8+PROF+INT",
         "on_save": "无效"
       },
-      "cooldown": 4,
-      "description": "1d10+INT 法术伤害。护盾"
+      "cooldown": 0,
+      "description": "1d10+INT 法术伤害。护盾",
+      "approx": true
     },
     {
       "name": "法师·奥能飞弹",
-      "key": "E",
+      "key": "W",
       "type": "法术",
       "action": "发射魔法飞弹",
       "range": "远程",
       "target": "单体",
       "damage": {
         "dice_count": 3,
-        "dice_size": 6,
+        "dice_size": 4,
         "bonus_attr": "INT",
         "type": "法术"
       },
@@ -310,19 +166,20 @@
         "dc_formula": "8+PROF+INT",
         "on_save": "无效"
       },
-      "cooldown": 3,
-      "description": "3d6+INT 法术伤害。力场伤害"
+      "cooldown": 1,
+      "description": "3d6+INT 法术伤害。力场伤害",
+      "approx": true
     },
     {
       "name": "法师·元素风暴",
-      "key": "R",
+      "key": "E",
       "type": "法术",
       "action": "召唤元素席卷",
       "range": "远程",
       "target": "区域",
       "damage": {
         "dice_count": 3,
-        "dice_size": 8,
+        "dice_size": 4,
         "bonus_attr": "INT",
         "type": "法术"
       },
@@ -339,19 +196,20 @@
         "dc_formula": "8+PROF+INT",
         "on_save": "无效"
       },
-      "cooldown": 7,
-      "description": "3d8+INT 法术伤害。范围伤害"
+      "cooldown": 2,
+      "description": "3d8+INT 法术伤害。范围伤害",
+      "approx": true
     },
     {
       "name": "法师·时空禁锢",
-      "key": "Q",
+      "key": "R",
       "type": "法术",
       "action": "定身目标",
       "range": "远程",
       "target": "单体",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
+        "dice_count": 3,
+        "dice_size": 4,
         "bonus_attr": "INT",
         "type": "寒冰"
       },
@@ -368,95 +226,10 @@
         "dc_formula": "8+PROF+INT",
         "on_save": "无效"
       },
-      "cooldown": 6,
-      "description": "1d8+INT 寒冰伤害。定身"
-    },
-    {
-      "name": "法师·焰爆术",
-      "key": "W",
-      "type": "法术",
-      "action": "引爆烈焰",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [
-        {
-          "type": "burn",
-          "duration": 1,
-          "desc": "灼烧",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 5,
-      "description": "2d10+INT 火焰伤害。灼烧"
-    },
-    {
-      "name": "法师·雷霆之矛",
-      "key": "E",
-      "type": "法术",
-      "action": "降下闪电",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "雷电"
-      },
-      "effects": [
-        {
-          "type": "stun",
-          "duration": 1,
-          "desc": "麻痹",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "2d8+INT 雷电伤害。麻痹"
-    },
-    {
-      "name": "法师·奥术护盾",
-      "key": "R",
-      "type": "法术",
-      "action": "凝结护盾",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "type": "shield",
-          "duration": 1,
-          "desc": "护盾",
-          "target": "自身"
-        }
-      ],
-      "saving_throw": {
-        "attr": "INT",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      },
       "cooldown": 4,
-      "description": "1d10+INT 法术伤害。护盾"
+      "description": "1d8+INT 寒冰伤害。定身",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1833"
 }

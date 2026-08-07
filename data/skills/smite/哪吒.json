@@ -1,0 +1,103 @@
+[
+  {
+    "name": "乾坤圈",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "哪吒掷出乾坤圈——这件法宝能大能小、能远能近，击中即回，不落虚空。1d10+DEX 钝击伤害。"
+  },
+  {
+    "name": "风火轮",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "风火双轮踏于足下，日行万里",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "哪吒踏上风火轮——双轮生风喷火，来去如电。当年大闹东海时连龙王太子也追不上他。获得加速2回合。2d8+DEX 钝击伤害。"
+  },
+  {
+    "name": "混天绫",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "混天绫缠绕，令敌人动弹不得",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "哪吒甩出混天绫——七尺红绫能搅动江河，束仙缚妖。1d8+DEX 力场伤害，束缚1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "三头六臂",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "化身三头六臂，战力倍增",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "六臂齐出，攻势如潮",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "哪吒现出三头六臂法相——每只手持一件法宝，铺天盖地砸向敌军。当年莲花化身后，太乙真人赐此神通。AOE，增伤+加速。4d6+DEX 钝击伤害。",
+    "aoe_radius": 25
+  }
+]

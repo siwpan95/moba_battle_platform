@@ -1,0 +1,113 @@
+[
+  {
+    "name": "碧波之牢",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "将敌人困在水泡中，无法移动或行动",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "向目标区域掷出一个巨大的气泡水牢。造成1d6+WIS光耀伤害，命中的敌人被囚禁在水泡中1回合。DEX豁免成功则免疫囚禁。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "冲击之潮",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "治疗友方或伤害敌方，在目标之间弹跳",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "释放一道潮汐能量流，在友方与敌方之间交替弹跳。对友方回复2d6+WIS生命值，对敌方造成等量光耀伤害。每次弹跳效果递减15%。最多弹跳3次。"
+  },
+  {
+    "name": "唤潮之佑",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "强化友方：接下来3次攻击附加额外光耀伤害与减速",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "召唤潮汐之力祝福一名友方英雄。造成1d6+WIS光耀伤害。目标的接下来3次攻击附加额外1d4光耀伤害并使目标减速1回合。持续2回合。"
+  },
+  {
+    "name": "怒涛之啸",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "巨浪击飞路径上所有敌人",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "被巨浪波及的敌人减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "召唤一道横跨战场的滔天巨浪，击飞路径上所有敌人并造成3d6+WIS光耀伤害。友方被巨浪触及则获得双倍唤潮之佑效果。巨浪距离越远速度越快。STR豁免成功则不被击飞但仍被减速。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

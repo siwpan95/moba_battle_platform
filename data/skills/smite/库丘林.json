@@ -1,0 +1,117 @@
+[
+  {
+    "name": "盖伊博尔格",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "倒刺长矛撕裂内脏",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "库丘林掷出盖伊博尔格——这柄魔枪由海兽的骨骼打造，刺入体内后倒刺全开。1d10+STR 穿刺伤害，dot 2回合。"
+  },
+  {
+    "name": "扭曲",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "扭曲变形后的恐怖面容",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "库丘林进入扭曲状态——他的身体从内部翻转，一只眼缩入头颅，另一只突出如碗口，头发根根竖立如铁刺。AOE恐惧。2d8+STR 挥砍伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "光之子的跳跃",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "光之子的敏捷",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "buff",
+        "desc": "战意燃烧",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "库丘林如鲑鱼般跳跃——传说他的跳跃能在矛尖上站立。加速2回合+增伤1回合。"
+  },
+  {
+    "name": "最后的盖伊博尔格",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "必杀的一击",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "内脏倒刺",
+        "target": "敌方",
+        "duration": "3"
+      }
+    ],
+    "cooldown": 4,
+    "description": "库丘林踢出盖伊博尔格——用脚踢出的必杀一击刺穿敌人身躯，三十根倒刺同时炸开。低血斩杀+dot 3回合。2d10+STR 穿刺伤害。",
+    "aoe_radius": 25
+  }
+]

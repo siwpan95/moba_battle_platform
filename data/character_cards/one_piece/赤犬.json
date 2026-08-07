@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2278",
+  "card_id": "one_piece:赤犬",
   "hero": {
     "name": "赤犬",
     "name_en": "Sakazuki",
@@ -109,79 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "大喷火",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d10+STR 火焰伤害。",
-      "approx": true
-    },
-    {
-      "name": "狗咬红莲",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+STR 火焰伤害。",
-      "approx": true
-    },
-    {
-      "name": "灰烬飞舞",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d10+STR 火焰伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 8
-    },
-    {
-      "name": "冥狗",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d12+STR 火焰伤害。",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "ONE-2278"
 }

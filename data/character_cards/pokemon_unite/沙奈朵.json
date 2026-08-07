@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2415",
+  "card_id": "pokemon_unite:沙奈朵",
   "hero": {
     "name": "沙奈朵",
     "name_en": "Gardevoir",
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "念力",
-      "key": "1",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "精神强念/月亮之力",
-      "key": "2",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 力场伤害。"
-    },
-    {
-      "name": "预知未来",
-      "key": "3",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "妖精奇点",
-      "key": "U",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  "legacy_card_id": "POK-2415"
 }

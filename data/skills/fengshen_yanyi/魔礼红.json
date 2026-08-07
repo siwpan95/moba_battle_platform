@@ -1,0 +1,122 @@
+[
+  {
+    "name": "混元伞",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "混元伞展开，日月无光。1d8+WIS 光耀伤害，减速1回合。"
+  },
+  {
+    "name": "伞收万物",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得大量护盾"
+      },
+      {
+        "type": "reflect",
+        "target": "自身",
+        "duration": 2,
+        "desc": "反弹伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "混元伞一收，收起敌军法宝兵器！获得护盾并反弹伤害2回合。"
+  },
+  {
+    "name": "广目护佑",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体伤害+20%"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复2d6"
+      }
+    ],
+    "cooldown": 2,
+    "description": "广目天王护佑众生。全体增伤2回合并回复生命。"
+  },
+  {
+    "name": "四大天王",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体护盾"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "震慑"
+      }
+    ],
+    "cooldown": 4,
+    "description": "四大天王联手降魔！3d8+WIS 光耀范围伤害，全体获得护盾2回合，震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

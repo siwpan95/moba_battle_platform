@@ -1,0 +1,116 @@
+[
+  {
+    "name": "排箫",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "潘吹响排箫——牧神之声穿过森林与山谷。1d8+WIS 力场伤害。"
+  },
+  {
+    "name": "潘神之惧",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "潘神的尖叫令人魂飞魄散",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "潘发出潘神之惧——他的尖叫声能让整支军队在恐慌中溃散，「panic」一词正源于此。AOE恐惧1回合。2d6+WIS 力场伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "牧神之舞",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "牧神之笛治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      },
+      {
+        "type": "accel",
+        "desc": "羊蹄跳跃",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "潘踏出牧神之舞——羊蹄在石头上踢踏，每一声都敲击出生命的节奏。回复2d6+WIS+加速2回合。"
+  },
+  {
+    "name": "荒野交响",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "荒野之音令人沉醉",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "万物之声共鸣",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "潘指挥荒野交响——风、水、鸟、兽同时发出同一个音符，整个自然界都在为他伴奏。AOE魅惑+增伤。3d8+WIS 力场伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

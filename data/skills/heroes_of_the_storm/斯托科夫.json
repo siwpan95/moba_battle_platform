@@ -1,0 +1,114 @@
+[
+  {
+    "name": "治疗病原体",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。恢复生命1回合。",
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "value_formula": "1d8+WIS",
+        "target": "友方",
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "name": "潜伏手臂",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "生化爆发",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d6+WIS 力场伤害。目标被推开10尺1回合。",
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "巨力猛推",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。目标被击飞1回合。",
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

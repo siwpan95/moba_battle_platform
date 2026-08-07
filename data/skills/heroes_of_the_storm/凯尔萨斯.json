@@ -1,0 +1,84 @@
+[
+  {
+    "name": "烈焰风暴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "活体炸弹",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。"
+  },
+  {
+    "name": "重力流失",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "dc_attr": "CON",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。目标失去动作1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "凤凰",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+INT 力场伤害。"
+  }
+]

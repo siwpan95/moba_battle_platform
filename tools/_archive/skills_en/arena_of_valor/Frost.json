@@ -1,0 +1,118 @@
+[
+  {
+    "name": "暗影弹",
+    "key": "Q",
+    "type": "法术",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "凝聚元素之力，向前方发射魔法弹幕。基础但致命的法术攻击。",
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "降低目标移动速度",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "元素牢笼",
+    "key": "W",
+    "type": "法术",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "在目标区域引发元素爆发，将敌人禁锢于魔法牢笼之中。",
+    "range": "近战",
+    "target": "范围",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "使目标眩晕，失去行动能力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "闪现术",
+    "key": "E",
+    "type": "法术",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "以魔力扭曲空间，瞬间转移自身位置。法师的保命位移法术。",
+    "range": "远程",
+    "target": "范围",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "降低目标移动速度",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "暴风雪",
+    "key": "R",
+    "type": "法术",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "召唤天外陨石/暴风雪/元素风暴，对广大区域造成毁灭性打击。",
+    "range": "远程",
+    "target": "范围",
+    "action": "动作",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "使目标眩晕，失去行动能力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

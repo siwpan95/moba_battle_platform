@@ -1,0 +1,28 @@
+=== 输出类别名 是否被自身别名表接受 ===
+   type='control'    -> categorize_effect = 'flavor'   <<< 自身类别名不被接受
+   type='slow'       -> categorize_effect = 'slow'     OK
+   type='shield'     -> categorize_effect = 'shield'   OK
+   type='reduce'     -> categorize_effect = 'flavor'   <<< 自身类别名不被接受
+   type='heal'       -> categorize_effect = 'heal'     OK
+   type='lifesteal'  -> categorize_effect = 'lifesteal' OK
+   type='dot'        -> categorize_effect = 'dot'      OK
+   type='execute'    -> categorize_effect = 'execute'  OK
+   type='true_dmg'   -> categorize_effect = 'flavor'   <<< 自身类别名不被接受
+   type='buff'       -> categorize_effect = 'buff'     OK
+   type='accel'      -> categorize_effect = 'accel'    OK
+   type='sunder'     -> categorize_effect = 'sunder'   OK
+   type='vuln'       -> categorize_effect = 'vuln'     OK
+   type='crit'       -> categorize_effect = 'crit'     OK
+   type='reflect'    -> categorize_effect = 'reflect'  OK
+   type='immune'     -> categorize_effect = 'immune'   OK
+   type='invis'      -> categorize_effect = 'invis'    OK
+   type='cleanse'    -> categorize_effect = 'cleanse'  OK
+   type='revive'     -> categorize_effect = 'revive'   OK
+   type='aoe'        -> categorize_effect = 'aoe'      OK
+
+自身类别名不被接受的类别 = ['control', 'reduce', 'true_dmg']
+
+对应别名表内容:
+   control    = ['hold', 'knockback', 'prone', 'stun', '倒地', '冻结', '击退', '击飞', '制服', '压制', '干扰', '恐惧', '控制', '暗示', '束缚', '沉默', '混乱', '眩晕', '石化', '禁锢', '震慑', '魅惑', '麻痹']
+   reduce     = ['减伤', '防御']
+   true_dmg   = ['pierce', 'true_damage', '真实伤害', '穿透']

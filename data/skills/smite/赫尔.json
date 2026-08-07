@@ -1,0 +1,121 @@
+[
+  {
+    "name": "半身诅咒",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "死亡之触让血肉腐烂",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "海拉伸出她尸色的一半手掌——她身体的一半是鲜活的美人，另一半是腐烂的亡骸。被触碰者开始从内而外腐朽。1d8+INT 黯蚀伤害，dot 2回合。"
+  },
+  {
+    "name": "亡灵之拥",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "亡者的手从地下伸出抓住脚踝",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "海拉召唤赫尔海姆的亡灵——无数死于疾病和老迈的灵魂从地底伸出手臂，抓住生者的脚踝。2d6+INT 黯蚀伤害，减速2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "生死轮转",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "从死亡中汲取生命",
+        "value_formula": "2d6+INT",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "半生半死的状态赋予力量",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "海拉切换她的两面——一半赐予死亡，一半赐予生命。从赫尔海姆的深邃黑暗中汲取力量。回复2d6+INT生命，获得增伤2回合。"
+  },
+  {
+    "name": "赫尔海姆之门",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "冥界之门的景象让生者胆寒",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "减速",
+        "desc": "踏入冥界者永远步履缓慢",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "海拉打开赫尔海姆的大门——门槛名为「绊脚石」，盘碟名为「饥饿」，卧榻名为「病床」。任何活着窥见这景象的人都会在恐惧中失去一切斗志。AOE恐惧与减速。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

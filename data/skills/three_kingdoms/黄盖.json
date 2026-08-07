@@ -1,0 +1,117 @@
+[
+  {
+    "name": "铁索连环",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "束缚"
+      }
+    ],
+    "cooldown": 0,
+    "description": "铁索缠身，1d10+STR 钝击伤害，目标减速2回合。"
+  },
+  {
+    "name": "苦肉计",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "愿打愿挨，忍辱负重！获得护盾2回合，受伤减半1回合。"
+  },
+  {
+    "name": "火攻先锋",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧1d4"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赤壁火攻的先锋！1d8+STR 火焰范围伤害，范围内目标灼烧2回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "赤壁火攻",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧2d4"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "混乱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "火烧赤壁，烈焰滔天！2d8+STR 火焰范围伤害，灼烧2回合，混乱1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

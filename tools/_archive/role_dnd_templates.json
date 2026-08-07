@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "created": "2026-08-06",
+    "author": "文策渊 (design-strategist)",
+    "description": "6 role 的 D&D 5e 技能映射模板，用于 LoL 全量英雄技能批量生成。基于 pilot 5 英雄（丽桑卓/凯特琳/卡兹克/内瑟斯/吉格斯）校准。",
+    "gdd_ref": "design/gdd/content-expansion.md §3.2 骰值预算规则",
+    "cd_default": [0, 1, 2, 4],
+    "dc_formula_format": "8+PROF+<主属性>",
+    "effects_alias_ref": "core/mechanics.py categorize_effect 别名表"
+  },
+
+  "assassin": {
+    "label": "刺客",
+    "description": "高爆发近战/中距，依赖隐身/位移/孤立击杀。低 HP 换高骰期望。",
+    "primary_attr": "DEX",
+    "secondary_attr": "STR",
+    "damage_type_default": "挥砍",
+    "dice_expectancy_target": [32, 34],
+    "range_default": "近战",
+    "action_default": "动作",
+    "common_effects": ["invis", "accel", "execute", "dot", "slow"],
+    "saving_throw_attr_default": "DEX",
+    "saving_throw_coverage": "≥50%",
+    "slots": {
+      "Q": {
+        "damage": { "dice_count": 1, "dice_size": 10, "bonus_attr": "DEX", "type": "挥砍" },
+        "cooldown": 0,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "可选：execute（孤立增伤）",
+        "saving_throw_hint": "通常无"
+      },
+      "W": {
+        "damage": { "dice_count": 2, "dice_size": 8, "bonus_attr": "DEX", "type": "穿刺" },
+        "cooldown": 1,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "可选：slow / dot / 远程poke",
+        "saving_throw_hint": "DEX 豁免半伤"
+      },
+      "E": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "DEX", "type": "挥砍" },
+        "cooldown": 2,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "必选：accel（位移/跳跃/闪避）",
+        "saving_throw_hint": "通常无"
+      },
+      "R": {
+        "damage": { "dice_count": 4, "dice_size": 6, "bonus_attr": "DEX", "type": "挥砍" },
+        "cooldown": 4,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "必选：invis + accel + buff 中 2-3 个",
+        "saving_throw_hint": "通常无"
+      }
+    },
+    "dice_expectancy_calc": "Q=1×5.5 + W=2×4.5 + E=1×4.5 + R=4×3.5 = 5.5+9+4.5+14 = 33.0",
+    "reference_heroes": ["卡兹克", "劫", "阿卡丽", "艾克"]
+  },
+
+  "mage": {
+    "label": "法师",
+    "description": "远程法术伤害，依赖范围/AOE+豁免半伤机制。高骰期望但到手套现打折。",
+    "primary_attr": "INT",
+    "secondary_attr": "WIS",
+    "damage_type_default": "力场",
+    "dice_expectancy_target": [30, 33],
+    "range_default": "远程",
+    "action_default": "动作",
+    "common_effects": ["control", "slow", "dot", "accel", "sunder"],
+    "saving_throw_attr_default": "DEX",
+    "saving_throw_coverage": "≥70%",
+    "slots": {
+      "Q": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "INT", "type": "力场" },
+        "cooldown": 0,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "可选：slow / dot",
+        "saving_throw_hint": "DEX 豁免半伤（推荐）"
+      },
+      "W": {
+        "damage": { "dice_count": 2, "dice_size": 6, "bonus_attr": "INT", "type": "力场" },
+        "cooldown": 1,
+        "range": "近战",
+        "target": "范围",
+        "effects_hint": "必选：control（眩晕/冻结/束缚）",
+        "saving_throw_hint": "CON 豁免无效（推荐）"
+      },
+      "E": {
+        "damage": { "dice_count": 2, "dice_size": 6, "bonus_attr": "INT", "type": "力场" },
+        "cooldown": 2,
+        "range": "远程",
+        "target": "范围",
+        "effects_hint": "可选：accel（位移）/ slow / dot",
+        "saving_throw_hint": "DEX 豁免半伤（推荐）"
+      },
+      "R": {
+        "damage": { "dice_count": 4, "dice_size": 6, "bonus_attr": "INT", "type": "力场" },
+        "cooldown": 4,
+        "range": "远程",
+        "target": "范围",
+        "effects_hint": "可选：control / aoe / 特殊",
+        "saving_throw_hint": "DEX/CON 豁免半伤"
+      }
+    },
+    "dice_expectancy_calc": "Q=1×4.5 + W=2×3.5 + E=2×3.5 + R=4×3.5 = 4.5+7+7+14 = 32.5",
+    "reference_heroes": ["丽桑卓", "吉格斯", "辛德拉", "拉克丝"]
+  },
+
+  "marksman": {
+    "label": "射手",
+    "description": "远程物理持续输出，依赖穿刺伤害与位移保命。",
+    "primary_attr": "DEX",
+    "secondary_attr": "STR",
+    "damage_type_default": "穿刺",
+    "dice_expectancy_target": [29, 32],
+    "range_default": "远程",
+    "action_default": "动作",
+    "common_effects": ["slow", "control", "accel", "vuln", "accel"],
+    "saving_throw_attr_default": "DEX",
+    "saving_throw_coverage": "≥30%",
+    "slots": {
+      "Q": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "DEX", "type": "穿刺" },
+        "cooldown": 0,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "可选：穿透/弹射（仅风味描述）",
+        "saving_throw_hint": "通常无"
+      },
+      "W": {
+        "damage": { "dice_count": 2, "dice_size": 6, "bonus_attr": "DEX", "type": "穿刺" },
+        "cooldown": 1,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "必选：control（陷阱/束缚）或 slow",
+        "saving_throw_hint": "DEX 豁免无效"
+      },
+      "E": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "DEX", "type": "穿刺" },
+        "cooldown": 2,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "必选：accel（位移/后跳）或 slow",
+        "saving_throw_hint": "通常无"
+      },
+      "R": {
+        "damage": { "dice_count": 3, "dice_size": 8, "bonus_attr": "DEX", "type": "穿刺" },
+        "cooldown": 4,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "必选：vuln（锁定/标记）或 aoe",
+        "saving_throw_hint": "DEX 豁免半伤"
+      }
+    },
+    "dice_expectancy_calc": "Q=1×4.5 + W=2×3.5 + E=1×4.5 + R=3×4.5 = 4.5+7+4.5+13.5 = 29.5",
+    "reference_heroes": ["凯特琳", "薇恩", "金克丝", "卢锡安"]
+  },
+
+  "fighter": {
+    "label": "战士",
+    "description": "近战均衡型，有坦度有输出。骰期望中等，靠持续作战。",
+    "primary_attr": "STR",
+    "secondary_attr": "CON",
+    "damage_type_default": "挥砍",
+    "dice_expectancy_target": [27, 30],
+    "range_default": "近战",
+    "action_default": "动作",
+    "common_effects": ["buff", "heal", "lifesteal", "slow", "sunder", "execute"],
+    "saving_throw_attr_default": "CON",
+    "saving_throw_coverage": "≥30%",
+    "slots": {
+      "Q": {
+        "damage": { "dice_count": 1, "dice_size": 10, "bonus_attr": "STR", "type": "挥砍" },
+        "cooldown": 0,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "可选：buff（增伤/叠加）/ execute",
+        "saving_throw_hint": "通常无"
+      },
+      "W": {
+        "damage": { "dice_count": 2, "dice_size": 8, "bonus_attr": "STR", "type": "挥砍" },
+        "cooldown": 1,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "可选：slow / reduce / 防御姿态",
+        "saving_throw_hint": "可选 CON 豁免"
+      },
+      "E": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "STR", "type": "挥砍" },
+        "cooldown": 2,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "可选：accel（突进/冲锋）/ heal / lifesteal",
+        "saving_throw_hint": "通常无"
+      },
+      "R": {
+        "damage": { "dice_count": 2, "dice_size": 10, "bonus_attr": "STR", "type": "挥砍" },
+        "cooldown": 4,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "可选：buff（变身/强化）/ execute / control",
+        "saving_throw_hint": "可选 CON 豁免"
+      }
+    },
+    "dice_expectancy_calc": "Q=1×5.5 + W=2×4.5 + E=1×4.5 + R=2×5.5 = 5.5+9+4.5+11 = 30.0",
+    "reference_heroes": ["盖伦", "亚索", "内瑟斯", "锐雯"]
+  },
+
+  "tank": {
+    "label": "坦克",
+    "description": "高 HP/AC，低骰期望，靠控制与减伤弥补输出。",
+    "primary_attr": "STR",
+    "secondary_attr": "CON",
+    "damage_type_default": "钝击",
+    "dice_expectancy_target": [24, 27],
+    "range_default": "近战",
+    "action_default": "动作",
+    "common_effects": ["control", "reduce", "shield", "slow", "sunder", "reflect"],
+    "saving_throw_attr_default": "CON",
+    "saving_throw_coverage": "≥50%",
+    "slots": {
+      "Q": {
+        "damage": { "dice_count": 1, "dice_size": 10, "bonus_attr": "STR", "type": "钝击" },
+        "cooldown": 0,
+        "range": "近战",
+        "target": "单体",
+        "effects_hint": "必选：control（钩拽/眩晕/击退）或 slow",
+        "saving_throw_hint": "CON/DEX 豁免无效"
+      },
+      "W": {
+        "damage": { "dice_count": 2, "dice_size": 6, "bonus_attr": "STR", "type": "钝击" },
+        "cooldown": 1,
+        "range": "自身",
+        "target": "自身",
+        "effects_hint": "必选：reduce（减伤）或 shield（护盾）",
+        "saving_throw_hint": "通常无"
+      },
+      "E": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "STR", "type": "钝击" },
+        "cooldown": 2,
+        "range": "近战",
+        "target": "范围",
+        "effects_hint": "可选：sunder（破甲）/ slow / control",
+        "saving_throw_hint": "可选 CON 豁免"
+      },
+      "R": {
+        "damage": { "dice_count": 2, "dice_size": 8, "bonus_attr": "STR", "type": "钝击" },
+        "cooldown": 4,
+        "range": "近战",
+        "target": "范围",
+        "effects_hint": "必选：control（大范围控制）或 buff（变身）",
+        "saving_throw_hint": "CON 豁免无效/半伤"
+      }
+    },
+    "dice_expectancy_calc": "Q=1×5.5 + W=2×3.5 + E=1×4.5 + R=2×4.5 = 5.5+7+4.5+9 = 26.0",
+    "reference_heroes": ["锤石", "阿木木", "石头人", "牛头"]
+  },
+
+  "support": {
+    "label": "辅助",
+    "description": "低骰期望，靠治疗/护盾/增益补偿。",
+    "primary_attr": "WIS",
+    "secondary_attr": "CHA",
+    "damage_type_default": "光耀",
+    "dice_expectancy_target": [24, 27],
+    "range_default": "远程",
+    "action_default": "动作",
+    "common_effects": ["heal", "shield", "buff", "cleanse", "slow", "control", "vuln"],
+    "saving_throw_attr_default": "WIS",
+    "saving_throw_coverage": "≥50%",
+    "slots": {
+      "Q": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "WIS", "type": "光耀" },
+        "cooldown": 0,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "可选：slow / vuln（标记）",
+        "saving_throw_hint": "通常无"
+      },
+      "W": {
+        "damage": { "dice_count": 2, "dice_size": 6, "bonus_attr": "WIS", "type": "光耀" },
+        "cooldown": 1,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "必选：heal（治疗）或 shield（护盾）",
+        "saving_throw_hint": "通常无"
+      },
+      "E": {
+        "damage": { "dice_count": 1, "dice_size": 8, "bonus_attr": "WIS", "type": "光耀" },
+        "cooldown": 2,
+        "range": "远程",
+        "target": "单体",
+        "effects_hint": "必选：buff（增益）/ cleanse（净化）/ shield",
+        "saving_throw_hint": "可选 WIS 豁免"
+      },
+      "R": {
+        "damage": { "dice_count": 3, "dice_size": 8, "bonus_attr": "WIS", "type": "光耀" },
+        "cooldown": 4,
+        "range": "远程",
+        "target": "范围",
+        "effects_hint": "必选：heal + shield 或 control（大范围）",
+        "saving_throw_hint": "WIS 豁免无效/半伤"
+      }
+    },
+    "dice_expectancy_calc": "Q=1×4.5 + W=2×3.5 + E=1×4.5 + R=3×4.5 = 4.5+7+4.5+13.5 = 29.5",
+    "_note": "support 骰期望计算偏高，实际通过 effects（heal/shield）和非伤害性能力补偿。纯伤害面可与 tank 共用 24-27 带。",
+    "reference_heroes": ["巴德"]
+  },
+
+  "_batch_mapping_guidelines": {
+    "step_1": "读取角色卡 role 字段确定模板",
+    "step_2": "套用模板默认 dice/attr/range/cd",
+    "step_3": "为每个英雄的 1-2 个 signature 技能定制 effect（基于 LoL 技能机制）",
+    "step_4": "校验骰期望落入 §3.2 配额带",
+    "step_5": "校验 effects.type 命中 mechanics.py 别名表",
+    "step_6": "描述用 D&D 风味改写，禁止逐字复制 wiki",
+    "cd_check": "槽0 CD==0，平均CD≤3.0，最大CD≤5",
+    "effects_per_skill_max": 3,
+    "effects_per_hero_max": 8,
+    "control_duration_per_hero_max": 4,
+    "on_save_invalid_per_hero_max": 1
+  }
+}

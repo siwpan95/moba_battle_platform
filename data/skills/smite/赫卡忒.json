@@ -1,0 +1,127 @@
+[
+  {
+    "name": "冥月",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "月下的诅咒",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "赫卡忒举起火炬——三岔路口的女神在黑夜中照亮一切秘密。1d8+INT 黯蚀伤害，dot 1回合。"
+  },
+  {
+    "name": "巫术",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "巫术标记",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "诅咒令肢体沉重",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赫卡忒施展巫术——她是魔法女神，连宙斯都敬畏她三分。标记易伤2回合+减速1回合。2d6+INT 黯蚀伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "三岔路",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "遁入三岔路的阴影",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "穿越世界的缝隙",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赫卡忒踏入三岔路——在所有世界的交叉点上，她可以在任何地方出现或消失。隐身+加速各2回合。"
+  },
+  {
+    "name": "地狱犬之群",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "地狱犬群的咆哮",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "被撕碎的命运",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "赫卡忒召唤地狱犬群——成群的黑色猎犬从幽冥中涌出，她的到来总有犬吠为先兆。AOE恐惧+低血斩杀。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1948",
+  "card_id": "league_of_legends:斯卡纳",
+  "legacy_card_id": "LEA-1080",
   "hero": {
     "name": "斯卡纳",
     "name_en": "Skarner",
@@ -19,7 +20,8 @@
   "playstyle_tags": [
     "先手",
     "前排",
-    "承伤"
+    "承伤",
+    "持续伤害"
   ],
   "attributes": {
     "STR": {
@@ -108,30 +110,5 @@
     "hp": 100,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "大招",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 4,
-      "description": "410+STR 范围伤害。DEX豁免减半。冷却4回合。"
-    }
-  ]
+  }
 }

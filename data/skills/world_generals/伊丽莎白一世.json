@@ -1,0 +1,117 @@
+[
+  {
+    "name": "荣光之令",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "女王敕令：目标易伤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "我虽为弱女子，却有王者之心！1d8+WIS 光耀伤害。女王敕令使目标陷入易伤1回合。"
+  },
+  {
+    "name": "黄金时代",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "黄金时代繁荣，回复2d8生命"
+      },
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "皇家海军庇护，获得护盾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊丽莎白黄金时代的繁荣！2d6+WIS 光耀伤害。女王回复2d8生命并获得皇家海军护盾2回合。"
+  },
+  {
+    "name": "童贞女王庇护",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "女王加护：友方攻击+20%"
+      },
+      {
+        "type": "cleanse",
+        "target": "友方",
+        "duration": 1,
+        "desc": "净化负面效果"
+      }
+    ],
+    "cooldown": 2,
+    "description": "童贞女王的加护！1d8+WIS 光耀伤害。伊丽莎白赐予友方攻击增益2回合并净化负面效果。"
+  },
+  {
+    "name": "大英帝国舰队",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "帝国荣光：全队回复3d6生命"
+      },
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "无敌舰队：全队攻击+30%"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 20,
+    "description": "击败西班牙无敌舰队的荣光！3d8+WIS 光耀范围伤害。帝国荣光全队回复3d6生命并获得攻击增益2回合。"
+  }
+]

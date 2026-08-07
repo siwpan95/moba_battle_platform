@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1015",
+  "card_id": "300_heroes:桐人",
   "hero": {
     "name": "桐人",
     "name_en": "",
@@ -111,81 +111,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "致命一击",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "致命一击（Q）：低血斩杀。造成 1d8+DEX 挥砍伤害。"
-    },
-    {
-      "name": "暗影步",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "暗影步（W）：移位。"
-    },
-    {
-      "name": "淬毒",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "毒素"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 2,
-          "desc": "移动速度降低。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 4,
-      "description": "淬毒（E）：减速毒。移动速度降低。"
-    },
-    {
-      "name": "影分身",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "影分身（R）：召唤分身。造成 3d12+INT 黯蚀伤害。"
-    }
-  ]
+  "legacy_card_id": "300-1015"
 }

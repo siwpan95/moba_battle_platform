@@ -1,0 +1,107 @@
+[
+  {
+    "name": "炮兵轰击",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "炮兵之王下令开火！1d8+DEX 穿刺伤害。拿破仑的炮兵精准打击。"
+  },
+  {
+    "name": "大陆封锁",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "经济封锁，目标被束缚"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "大陆封锁令生效！2d6+DEX 穿刺伤害，DEX豁免无效。目标被经济封锁束缚1回合。"
+  },
+  {
+    "name": "战略机动",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "内线机动，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "拿破仑式内线战略机动！1d8+DEX 穿刺伤害。大军迅速转移，速度翻倍2回合。"
+  },
+  {
+    "name": "奥斯特里茨太阳",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "太阳升起，敌军暴露易伤"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "溃败，速度减半"
+      }
+    ],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "description": "奥斯特里茨的太阳升起！3d8+DEX 穿刺伤害，DEX豁免半伤。如三皇会战般的辉煌胜利，目标易伤2回合且减速。"
+  }
+]

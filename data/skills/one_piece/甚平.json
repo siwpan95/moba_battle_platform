@@ -1,0 +1,104 @@
+[
+  {
+    "name": "鱼人空手道·唐草瓦正拳",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "空手道冲击击退"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d10+CON 钝击伤害。",
+    "approx": true
+  },
+  {
+    "name": "海水流",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "闪避",
+        "duration": 1,
+        "desc": "化水获得闪避",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "化为水流，获得闪避，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "鱼人空手道·鲛瓦正拳",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "空手道冲击击退"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d10+CON 钝击伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "几千鲤鱼·寝宝塔",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "空手道冲击击退"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+CON 钝击伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

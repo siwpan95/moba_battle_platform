@@ -1,0 +1,127 @@
+[
+  {
+    "name": "虹吸能量",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "获得护盾",
+        "duration": 1,
+        "value_formula": "2*LVL+INT",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "下次普通攻击附加额外闪电伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "以机械臂发射一道能量虹吸射线，造成1d8+INT闪电伤害。获得护盾，持续1回合。强化：护盾量+60%，之后获得移动速度加成。"
+  },
+  {
+    "name": "重力场",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "力场内的敌人持续减速",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "控制",
+        "desc": "在力场内停留1回合以上的敌人被眩晕",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "部署一个持续3回合的重力禁锢装置，对进入区域的敌人造成2d6+INT闪电伤害并减速。区域内停留超过1回合的敌人被眩晕1回合。CON豁免成功则免疫眩晕。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "死亡射线",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "射线经过的地面灼烧2回合",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "从第三只机械臂发射一道可自由调整角度的毁灭射线，切割战场。造成2d6+INT火焰伤害。强化：射线在地面留下灼烧轨迹，站在上面的敌人每回合受到1d4火焰伤害。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "混乱风暴",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "风暴持续3回合，每回合对范围内敌人造成伤害",
+        "duration": 3,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "召唤一团由纯粹奥术能量构成的奇异点雷暴。造成4d6+INT闪电伤害。风暴持续3回合，每回合对范围内敌人造成2d6闪电伤害。维克托可用附赠动作移动风暴位置。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

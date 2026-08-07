@@ -1,0 +1,124 @@
+[
+  {
+    "name": "寒冰碎片",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半，持续1回合",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "掷出一枚寒冰碎片，穿透首个目标后碎裂溅射。造成1d8+INT寒冷伤害并使目标减速1回合。DEX豁免成功则伤害减半。碎片穿透后可对后方敌人造成等量伤害。"
+  },
+  {
+    "name": "冰霜之环",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "冻结束缚，目标失去下回合行动",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "description": "以自身为中心爆发一道冰霜之环，冻结周围一切敌人。造成2d6+INT寒冷伤害，被冻结的敌人失去下回合行动。CON豁免成功则免疫冻结但仍受全额伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "冰川之径",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "可立即传送到冰爪当前位置",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "释放一道沿直线蔓延的冰川裂隙，对路径上所有敌人造成2d6+INT寒冷伤害。可在冰爪行进途中再次激活，瞬间传送到冰爪所在位置。DEX豁免成功则伤害减半。"
+  },
+  {
+    "name": "冰封陵墓",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "冻结眩晕，目标失去行动",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "对自身施放时治疗2d6生命值并免疫伤害1回合",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "以永冻之冰封印一名敌人——或将自己封入黑冰之中。对敌：造成4d6+INT寒冷伤害并眩晕1回合；对己：获得2d6治疗并在本回合免疫一切伤害。CON豁免成功则伤害减半且免疫眩晕。"
+  }
+]

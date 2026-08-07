@@ -1,0 +1,109 @@
+[
+  {
+    "name": "月牙戟",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "月牙戟横扫千军，1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "威震逍遥津",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲降低"
+      },
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "速度减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "以八百破十万的威名！2d8+STR 挥砍伤害，破甲2回合，目标减速1回合。"
+  },
+  {
+    "name": "突骑冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "骑兵突击，锐不可当！1d8+STR 穿刺伤害，自身获得加速2回合。"
+  },
+  {
+    "name": "止啼将军",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量斩杀"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "恐惧"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「张辽止啼」的传说再现！2d10+STR 挥砍范围伤害，低血量斩杀，未通过WIS豁免者恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  }
+]

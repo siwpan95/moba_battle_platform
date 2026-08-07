@@ -1,0 +1,133 @@
+[
+  {
+    "name": "奸雄之策",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "宁教我负天下人！1d8+INT 力场伤害，目标易伤1回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "横槊赋诗",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "「对酒当歌，人生几何！」2d6+INT 力场范围伤害，破甲2回合。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "挟天子",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "束缚"
+      },
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 2,
+    "description": "挟天子以令诸侯！目标需通过WIS豁免否则束缚1回合并易伤。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "魏武挥鞭",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "恐惧"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "大幅破甲"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "增伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「魏武挥鞭，东临碣石有遗篇！」4d6+INT 力场大范围伤害，恐惧1回合、破甲2回合、增伤2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 25
+  }
+]

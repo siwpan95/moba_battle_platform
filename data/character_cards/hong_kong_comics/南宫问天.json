@@ -1,0 +1,247 @@
+{
+  "card_id": "hong_kong_comics:南宫问天",
+  "legacy_card_id": "港漫群-1032",
+  "hero": {
+    "name": "南宫问天",
+    "name_en": "Nangong Wentian",
+    "alias": "天晶传人·武林盟主",
+    "title": "天晶传人·武林盟主"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "战士/剑客",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "神兵玄奇",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "护盾",
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "天晶剑诀·光耀众生",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "致盲",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "天晶之光耀眼夺目",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "武林盟主南宫问天以天晶神剑施展——光耀众生！1d10+STR 光耀伤害。CON豁免失败致盲1回合。"
+    },
+    {
+      "name": "天晶剑诀·电闪雷轰",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "30尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "闪电"
+      },
+      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "麻痹",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "天晶雷电麻痹目标",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "南宫问天以天晶催动雷霆之力——电闪雷轰！2d8+STR 闪电伤害，15尺范围。CON豁免失败麻痹1回合。冷却1回合。"
+    },
+    {
+      "name": "菩提证法神功·四方如来",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "duration": 3,
+          "value_formula": "3*LVL+WIS",
+          "desc": "四方如来护体佛光",
+          "target": "自身"
+        },
+        {
+          "type": "全属性强化",
+          "duration": 3,
+          "value": "PROF",
+          "desc": "菩提证法提升修为",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "南宫问天运转菩提证法神功——四方如来气无量！获得3×LVL+WIS护盾，全属性+PROF。持续3回合。冷却2回合。"
+    },
+    {
+      "name": "天心剑势·天仁剑极",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 2,
+          "dc_attr": "WIS",
+          "desc": "天仁剑极感化万物",
+          "target": "敌方"
+        },
+        {
+          "type": "治疗",
+          "value_formula": "2d8+WIS",
+          "desc": "仁者之剑修复友方",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "南宫问天以天仁剑极之境界——以仁爱之心催动的终极一剑！5d8+STR 光耀伤害，25尺范围。WIS豁免失败眩晕2回合。自身恢复2d8+WIS生命。冷却4回合。"
+    }
+  ]
+}

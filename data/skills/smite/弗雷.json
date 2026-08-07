@@ -1,0 +1,106 @@
+[
+  {
+    "name": "胜利之剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "弗雷挥动胜利之剑——这把剑能自行战斗，不需主人操控。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "金鬃野猪",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "金鬃野猪冲锋",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "弗雷骑乘金鬃野猪古林博斯帝——这头矮人锻造的黄金野猪在战场上横冲直撞。AOE减速。2d8+STR 穿刺伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "精灵王",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "精灵王的光环",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "精灵之翼",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "弗雷召唤精灵之力——他是阿尔夫海姆的精灵王，光之精灵的祝福使他更加迅捷强大。增伤+加速各2回合。"
+  },
+  {
+    "name": "丰饶之角",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "丰饶之力治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "buff",
+        "desc": "大地祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "弗雷吹响丰饶之角——他是掌管丰收与和平的华纳神族，号角声中大地复苏、敌人溃败。AOE，回复+增伤。2d10+STR 钝击伤害。",
+    "aoe_radius": 25
+  }
+]

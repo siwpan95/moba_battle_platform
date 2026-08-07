@@ -1,0 +1,103 @@
+[
+  {
+    "name": "核弹投掷",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "核爆炸持续灼烧"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d10+DEX 火焰伤害。",
+    "approx": true
+  },
+  {
+    "name": "恒星级掩体",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "duration": 2,
+        "desc": "受到的伤害大幅降低",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "获得减伤，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "掩体工程",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "单体",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 2,
+        "desc": "为友方提供护盾",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "为友方提供护盾，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "水星蒸发计划",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "核爆炸持续灼烧"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d10+DEX 火焰伤害，覆盖大片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

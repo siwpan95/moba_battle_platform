@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1907",
+  "card_id": "league_of_legends:萨科",
+  "legacy_card_id": "LEA-1039",
   "hero": {
     "name": "萨科",
     "name_en": "Shaco",
@@ -18,6 +19,7 @@
   "difficulty": 4,
   "playstyle_tags": [
     "切入",
+    "持续伤害",
     "收割",
     "爆发"
   ],
@@ -107,24 +109,5 @@
     "hp": 60,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能二",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "26+DEX 伤害。冷却1回合。"
-    }
-  ]
+  }
 }

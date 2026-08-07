@@ -1,0 +1,122 @@
+[
+  {
+    "name": "曼舞手雷",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "aoe",
+        "desc": "手雷在敌人之间弹跳，每次弹跳伤害+35%",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "投掷一颗精密计算弹道的手雷，在敌人之间优雅弹跳。造成1d8+DEX火焰伤害。最多弹跳4次，每次弹跳伤害+35%。若手雷击杀目标，后续弹跳伤害翻倍。"
+  },
+  {
+    "name": "致命华彩",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "禁锢被标记的敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "射出一发超远程的精准弹丸。造成2d6+DEX穿刺伤害。若目标已被烬或友军的攻击标记，则额外禁锢1回合。DEX豁免成功则免疫禁锢。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "万众倾倒",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "踩中陷阱的敌人减速",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "陷阱爆炸后绽放莲花持续造成伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "放置一朵隐形的莲花陷阱，敌人踩中后减速2回合并在短暂延迟后爆炸，对周围敌人造成1d8+DEX火焰伤害。击杀敌方英雄后，在其尸体上自动绽放一朵莲花陷阱。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "完美谢幕",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "被子弹命中的敌人减速",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "execute",
+        "desc": "第四发子弹必定暴击且对低生命目标伤害翻倍",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "架起名为「低语」的传奇狙击步枪，展开一张扇形杀戮地带。共4发子弹，每发造成3d8+DEX穿刺伤害，命中的敌人减速1回合。第四发——也是最后一发——必定暴击，且目标生命越低伤害越高（最高翻倍）。DEX豁免成功则伤害减半（第四发不减半）。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

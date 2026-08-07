@@ -1,0 +1,251 @@
+{
+  "card_id": "hong_kong_comics:笑三少",
+  "legacy_card_id": "港漫群-1039",
+  "hero": {
+    "name": "笑三少",
+    "name_en": "Xiao Sanshao",
+    "alias": "掌腿双绝·风流侠客",
+    "title": "掌腿双绝·风流侠客"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "刺客/侠客",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "刀剑笑",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "收割",
+    "爆发",
+    "硬控制"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "笑家掌法·笑里藏刀",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "连击",
+          "value": 2,
+          "desc": "掌中藏杀招二段追击",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "笑三少的独门掌法——看似一笑实藏杀机！1d10+DEX 钝击伤害，二段连击。"
+    },
+    {
+      "name": "笑家腿法·笑傲江湖",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "20尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "击倒",
+          "duration": 1,
+          "dc_attr": "DEX",
+          "desc": "潇洒腿法扫倒目标",
+          "target": "敌方"
+        },
+        {
+          "type": "眩晕",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "连环腿劲震晕对手",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "笑三少的掌腿双绝——腿法如风笑傲江湖！2d8+DEX 钝击伤害，20尺突进。DEX豁免失败击倒+CON豁免失败眩晕1回合。冷却1回合。"
+    },
+    {
+      "name": "百家武学·兼收并蓄",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "全属性强化",
+          "duration": 3,
+          "value": "PROF",
+          "desc": "百家武学融会贯通",
+          "target": "自身"
+        },
+        {
+          "type": "加速",
+          "duration": 3,
+          "value": 25,
+          "desc": "身法灵动如飞燕",
+          "target": "自身"
+        },
+        {
+          "type": "净化",
+          "desc": "博学多才化解一切异常",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "笑三少以博学之才融会百家武学——兼收并蓄化为己用。全属性+PROF，速度+25尺，解除所有负面状态。持续3回合。冷却2回合。"
+    },
+    {
+      "name": "终极·笑尽英雄",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "力场"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 2,
+          "dc_attr": "WIS",
+          "desc": "一笑倾人城二笑倾人国",
+          "target": "敌方"
+        },
+        {
+          "type": "缴械",
+          "duration": 2,
+          "dc_attr": "DEX",
+          "desc": "掌腿齐出令敌兵器尽失",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "笑三少掌腿双绝终极一击——笑尽天下英雄！5d8+DEX 力场伤害，25尺范围。WIS豁免失败眩晕2回合。DEX豁免失败缴械2回合。冷却4回合。"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "card_id": "three_body:归零者",
+  "legacy_card_id": "THE-1023",
+  "hero": {
+    "name": "归零者",
+    "name_en": "Zero-Homer",
+    "alias": "",
+    "title": "Zero-Homer"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "宇宙回归运动发起者 (Universal Return Movement)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "三体",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "宇宙社会学·观测",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "观测即标记宇宙坐标"
+        }
+      ],
+      "cooldown": 0,
+      "description": "归零者从宇宙尽头观测——黑暗森林中坐标即命运。2d8+INT 心灵伤害，标记目标2回合(坐标暴露)。",
+      "approx": true
+    },
+    {
+      "name": "维度调节",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "相位",
+          "target": "自身",
+          "duration": 1,
+          "desc": "升维闪避三维攻击"
+        }
+      ],
+      "cooldown": 1,
+      "description": "归零者随意调节空间维度——短暂升维闪避一切三维攻击。获得一回合无敌。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "回归运动·广播",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "aoe_radius": 20,
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "回归运动广播干扰维度"
+        },
+        {
+          "type": "干扰",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "超膜广播扰乱技能"
+        }
+      ],
+      "cooldown": 2,
+      "description": "归零者向全宇宙广播回归运动——号召各文明归还质量。2d10+INT 力场伤害，20尺范围。减速2回合+技能CD+2。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "宇宙归零·热寂",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 6,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "aoe_radius": 35,
+      "effects": [
+        {
+          "type": "即死",
+          "target": "敌方",
+          "dc_attr": "CON",
+          "threshold": "HP<40%",
+          "desc": "归零之力抹除一切"
+        },
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 3,
+          "dc_attr": "WIS",
+          "desc": "热寂中一切归于沉寂"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "归零者的终极目标——让宇宙回到零维重新开始。6d10+INT 力场伤害，35尺超大范围。HP<40%即死。WIS豁免失败沉默3回合。冷却4回合。",
+      "approx": true
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "name": "黑缨枪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "护甲降低"
+      }
+    ],
+    "cooldown": 0,
+    "description": "黑缨枪沉重一刺，1d10+STR 穿刺伤害，破甲1回合。"
+  },
+  {
+    "name": "熊罴之体",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "黑熊精皮糙肉厚，刀枪不入。获得护盾并减伤2回合。"
+  },
+  {
+    "name": "黑风卷",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "黑风山黑风洞的妖风！1d8+STR 钝击范围伤害，范围内敌方减速1回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "守山大神",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "大幅减伤"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "破甲"
+      },
+      {
+        "type": "reflect",
+        "target": "自身",
+        "duration": 2,
+        "desc": "反弹伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "观音菩萨座下守山大神之威！2d8+STR 钝击范围伤害，大幅减伤+破甲+反弹2回合。",
+    "aoe_radius": 20
+  }
+]

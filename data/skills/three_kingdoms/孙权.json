@@ -1,0 +1,128 @@
+[
+  {
+    "name": "制衡之策",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 1,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 0,
+    "description": "权衡利弊，稳如磐石。1d8+WIS 光耀伤害，友方获得护盾。"
+  },
+  {
+    "name": "生子当如孙仲谋",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "伤害+30%"
+      },
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 2,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "曹操叹道：「生子当如孙仲谋！」友方增伤与护盾各2回合。"
+  },
+  {
+    "name": "江东基业",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "友方",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 1,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "继承父兄基业。友方减伤2回合并获得护盾。"
+  },
+  {
+    "name": "碧眼紫髯",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "大幅增伤"
+      },
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 2,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "震慑"
+      }
+    ],
+    "cooldown": 4,
+    "description": "碧眼紫髯的王者之气！3d8+WIS 光耀范围伤害，友方增伤与护盾2回合，敌方震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

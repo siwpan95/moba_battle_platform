@@ -1,0 +1,109 @@
+[
+  {
+    "name": "雷锤",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "雷公抡起雷锤砸向天鼓——轰隆一声，电光劈裂长空。1d8+INT 闪电伤害。"
+  },
+  {
+    "name": "雷鼓",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "雷声震耳欲聋，令人目眩",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "雷公连敲天鼓——鼓声如千雷齐鸣，整片战场被白色电光吞没。AOE致盲1回合。2d6+INT 闪电伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "电母",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "电母的镜光标记弱点",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "雷公与电母合力——电母高举照妖镜，镜光所至，雷电必中。标记易伤2回合。2d6+INT 闪电伤害。"
+  },
+  {
+    "name": "五雷轰顶",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "天雷劈下，罪无可赦者当场毙命",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "雷火灼烧不熄",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "雷公祭出五雷正法——金木水火土五雷齐落，专诛大奸大恶。AOE，对低血斩杀，dot 2回合。4d6+INT 闪电伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

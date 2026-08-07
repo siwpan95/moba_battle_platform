@@ -1,0 +1,108 @@
+[
+  {
+    "name": "镜像维度",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。召唤一个镜像分身3回合。",
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "duration": 3,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "传送门",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。短距离传送/移动1回合。",
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "value": 20,
+        "target": "自身",
+        "duration": 1
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "时间宝石",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "古一之怒",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。目标失去动作1回合。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "name": "急速射击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "攻速大幅提升",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "火箭跳跃",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "火箭跳远距离位移",
+        "target": "自身"
+      },
+      {
+        "type": "slow",
+        "desc": "落地减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 力场伤害。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "爆炸火花",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "炸弹附着，攻击叠加引爆",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 力场伤害。"
+  },
+  {
+    "name": "毁灭射击",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "巨型加农炮击退目标",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

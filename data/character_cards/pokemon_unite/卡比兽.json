@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2400",
+  "card_id": "pokemon_unite:卡比兽",
   "hero": {
     "name": "卡比兽",
     "name_en": "Snorlax",
@@ -109,74 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "重磅冲撞",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "挡路/哈欠",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "睡觉",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "强力午睡",
-      "key": "U",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "POK-2400"
 }

@@ -1,0 +1,118 @@
+[
+  {
+    "name": "毒息",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "尘世巨蟒的毒液",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "耶梦加得吐出毒息——环绕世界的巨蛇，毒液足以杀死任何神明。1d10+STR 黯蚀伤害，dot 2回合。"
+  },
+  {
+    "name": "环绕世界",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "蛇躯收缩，压迫万物",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "耶梦加得收缩蛇躯——在深海中环绕中庭的巨蟒，每一次扭动都引发海啸。AOE减速2回合。2d6+STR 钝击伤害。",
+    "aoe_radius": 25
+  },
+  {
+    "name": "深海鳞甲",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "深海巨鳞",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "蛇鳞坚不可摧",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "耶梦加得盘起蛇躯——亿万片的鳞片层层堆叠，形成不可穿透的屏障。护盾+减伤各2回合。"
+  },
+  {
+    "name": "诸神黄昏之毒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "致命毒雾笼罩",
+        "target": "敌方",
+        "duration": "3"
+      },
+      {
+        "type": "execute",
+        "desc": "毒毙弱者",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "耶梦加得喷吐末日毒雾——诸神黄昏中他将毒杀雷神索尔，九步之后连索尔也要倒下。AOE dot 3回合+低血斩杀。2d8+STR 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

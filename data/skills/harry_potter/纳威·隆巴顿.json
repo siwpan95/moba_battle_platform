@@ -1,0 +1,103 @@
+[
+  {
+    "name": "格兰芬多宝剑斩",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "宝剑处决"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+STR 挥砍伤害（格兰芬多宝剑）。",
+    "approx": true
+  },
+  {
+    "name": "毒触手缠绕",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "duration": 2,
+        "desc": "目标持续中毒",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "1d8+STR 毒素伤害，使目标中毒。",
+    "approx": true
+  },
+  {
+    "name": "曼德拉草尖叫",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "desc": "范围内敌人眩晕",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+CON 心灵（音波）伤害，眩晕范围敌人。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "斩杀魂器巨蛇",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "duration": 0,
+        "desc": "对黑暗造物造成额外伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+STR 挥砍伤害，对黑暗造物额外有效。",
+    "approx": true
+  }
+]

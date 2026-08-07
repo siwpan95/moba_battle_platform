@@ -1,0 +1,78 @@
+[
+  {
+    "name": "暗影形态",
+    "key": "A",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。每回合受到额外火焰伤害2回合。",
+    "effects": [
+      {
+        "type": "灼烧",
+        "desc": "每回合受到额外火焰伤害",
+        "duration": 2,
+        "target": "敌方",
+        "dmg_per_turn": "1d4"
+      }
+    ]
+  },
+  {
+    "name": "光明形态",
+    "key": "B",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "光暗转换",
+    "key": "U",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。变身为强化形态3回合。",
+    "effects": [
+      {
+        "type": "变身",
+        "desc": "变身为强化形态",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "name": "月轮",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "托特举起月轮——智慧之神的头上悬浮着银色的月亮。1d8+INT 光耀伤害。"
+  },
+  {
+    "name": "神圣文字",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "圣书体破解一切防御",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "托特书写神圣文字——他是象形文字的发明者，每一个符号都蕴含着创世的力量。AOE破甲2回合。2d6+INT 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "魔法之书",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "托特之书增强魔力",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "shield",
+        "desc": "魔法文字护身",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "托特翻开魔法之书——书中记载了连众神也畏惧的咒语。增伤+护盾各2回合。"
+  },
+  {
+    "name": "真理之厅",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "托特的裁决令敌人无法动弹",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "记录罪行的羽毛笔",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "托特召唤真理之厅——在双重真理之厅中，他记录着每一个灵魂的善与恶。AOE控制+低血斩杀。4d6+INT 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

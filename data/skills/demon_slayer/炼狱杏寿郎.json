@@ -1,0 +1,128 @@
+[
+  {
+    "name": "炎之呼吸·壹之型 不知火",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      },
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "火焰持续灼烧"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d10+STR 火焰伤害。",
+    "approx": true
+  },
+  {
+    "name": "炎之呼吸·伍之型 炎虎",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      },
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "火焰持续灼烧"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 火焰伤害。",
+    "approx": true
+  },
+  {
+    "name": "炎之呼吸·肆之型 盛艳之炉",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      },
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "火焰持续灼烧"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d10+STR 火焰伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "炎之呼吸·玖之型 炼狱",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      },
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+STR 火焰伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

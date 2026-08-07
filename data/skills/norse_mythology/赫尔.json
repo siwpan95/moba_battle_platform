@@ -1,0 +1,116 @@
+[
+  {
+    "name": "冥界之触",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 黯蚀伤害。赫尔以半生半死之手触碰生者。",
+    "approx": true
+  },
+  {
+    "name": "亡灵侍奉",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "回复2d6+WIS",
+        "value": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 黯蚀伤害。赫尔驱使冥界亡灵为友方输送生命之力。回复2d6+WIS。",
+    "approx": true
+  },
+  {
+    "name": "生死之门",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "生死之门护盾",
+        "value": "1d8+WIS"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 黯蚀伤害。赫尔半开生死之门。友方得护盾2回合+敌方减速1回合。",
+    "approx": true
+  },
+  {
+    "name": "冥界女王的裁决",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "全体回复2d8+WIS",
+        "value": "2d8+WIS"
+      },
+      {
+        "type": "复活",
+        "target": "自身",
+        "duration": 0,
+        "desc": "复活一名阵亡友方至50%HP"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 黯蚀伤害。赫尔行使冥界女王权柄。全体回复2d8+WIS+复活一名阵亡友方。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 12
+  }
+]

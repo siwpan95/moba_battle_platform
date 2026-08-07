@@ -1,0 +1,132 @@
+[
+  {
+    "name": "天晶剑诀·光耀众生",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "天晶之光耀眼夺目",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "武林盟主南宫问天以天晶神剑施展——光耀众生！1d10+STR 光耀伤害。CON豁免失败致盲1回合。"
+  },
+  {
+    "name": "天晶剑诀·电闪雷轰",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "麻痹",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "天晶雷电麻痹目标",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "南宫问天以天晶催动雷霆之力——电闪雷轰！2d8+STR 闪电伤害，15尺范围。CON豁免失败麻痹1回合。冷却1回合。"
+  },
+  {
+    "name": "菩提证法神功·四方如来",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "3*LVL+WIS",
+        "desc": "四方如来护体佛光",
+        "target": "自身"
+      },
+      {
+        "type": "全属性强化",
+        "duration": 3,
+        "value": "PROF",
+        "desc": "菩提证法提升修为",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "南宫问天运转菩提证法神功——四方如来气无量！获得3×LVL+WIS护盾，全属性+PROF。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "天心剑势·天仁剑极",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "天仁剑极感化万物",
+        "target": "敌方"
+      },
+      {
+        "type": "治疗",
+        "value_formula": "2d8+WIS",
+        "desc": "仁者之剑修复友方",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "南宫问天以天仁剑极之境界——以仁爱之心催动的终极一剑！5d8+STR 光耀伤害，25尺范围。WIS豁免失败眩晕2回合。自身恢复2d8+WIS生命。冷却4回合。"
+  }
+]

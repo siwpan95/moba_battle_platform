@@ -1,5 +1,5 @@
 {
-  "card_id": "DC -1274",
+  "card_id": "dc:蝙蝠女",
   "hero": {
     "name": "蝙蝠女",
     "name_en": "Batgirl",
@@ -111,102 +111,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "蝙蝠女·影分身",
-      "key": "Q",
-      "type": "物理",
-      "action": "制造分身扰乱",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "confuse",
-          "desc": "混乱"
-        }
-      ],
-      "cooldown": 7,
-      "description": "制造分身扰乱（区域）。混乱",
-      "approx": true
-    },
-    {
-      "name": "蝙蝠女·处决",
-      "key": "W",
-      "type": "真实",
-      "action": "对低血目标斩杀",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "execute",
-          "desc": "斩杀"
-        }
-      ],
-      "cooldown": 9,
-      "description": "对低血目标斩杀（单体）。斩杀",
-      "approx": true
-    },
-    {
-      "name": "蝙蝠女·暗影突袭",
-      "key": "E",
-      "type": "物理",
-      "action": "从暗处突进刺杀",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "vuln",
-          "desc": "易伤"
-        }
-      ],
-      "cooldown": 3,
-      "description": "从暗处突进刺杀（单体）。易伤",
-      "approx": true
-    },
-    {
-      "name": "蝙蝠女·淬毒刃",
-      "key": "R",
-      "type": "物理",
-      "action": "涂抹剧毒",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "poison",
-          "desc": "中毒"
-        }
-      ],
-      "cooldown": 4,
-      "description": "涂抹剧毒（单体）。中毒",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "DC -1274"
 }

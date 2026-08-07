@@ -1,0 +1,104 @@
+[
+  {
+    "name": "月影",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "月读在月光中现身——他的剑在月下无形无影，只有倒下的尸首证明他来过。1d10+DEX 挥砍伤害。"
+  },
+  {
+    "name": "幻月",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "幻月之光迷惑神智",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "月读投出幻月——月光所照之处，真假难辨、方向迷失。致盲1回合。2d8+DEX 黯蚀伤害。"
+  },
+  {
+    "name": "月读命",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "月读命隐于无月之夜",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "月影步法，瞬息无声",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "月读发动月读命——掌控黑夜的神明能将自身完全融入月光之中。隐身2回合+加速1回合。1d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "月夜见",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "月夜见的真容让凡人发疯",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "在月读的领域中刺杀弱者",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "月读展示月夜见的本相——他曾一刀斩杀保食神，月光凝聚成无边的杀意笼罩战场。AOE恐惧，低血斩杀。4d6+DEX 黯蚀伤害。",
+    "aoe_radius": 25
+  }
+]

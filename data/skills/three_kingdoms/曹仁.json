@@ -1,0 +1,117 @@
+[
+  {
+    "name": "铁壁",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 0,
+    "description": "铁壁将军的守御，1d10+STR 钝击伤害，自身受伤减半1回合。"
+  },
+  {
+    "name": "固若金汤",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得大量护盾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "守城名将的防御姿态。获得等同于2d6+STR的护盾，持续2回合。"
+  },
+  {
+    "name": "南郡守御",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "南郡之战以一敌众！1d8+STR 钝击范围伤害，减伤2回合，敌方减速1回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "八门金锁",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "束缚/混乱"
+      },
+      {
+        "type": "reflect",
+        "target": "自身",
+        "duration": 2,
+        "desc": "反弹伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "八门金锁阵困敌！2d8+STR 钝击范围伤害，控制2回合，反弹伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

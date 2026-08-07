@@ -1,0 +1,208 @@
+{
+  "card_id": "mobile_legends_bang_bang:弗洛琳",
+  "hero": {
+    "name": "弗洛琳",
+    "name_en": "Floryn",
+    "alias": "",
+    "title": "Floryn"
+  },
+  "game": {
+    "name": "Mobile Legends: Bang Bang",
+    "name_cn": "无尽对决",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "治疗波",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "30尺",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "value_formula": "1d8+WIS",
+          "desc": "恢复生命",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 0,
+      "description": "恢复1d8+WIS生命值。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "30尺",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "28+WIS 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "48+WIS 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
+    }
+  ],
+  "legacy_card_id": "MOB-2166"
+}

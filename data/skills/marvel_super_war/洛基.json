@@ -1,0 +1,107 @@
+[
+  {
+    "name": "幻象",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。召唤一个镜像分身3回合。",
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "duration": 3,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "背刺",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。每回合受到流血伤害2回合。",
+    "effects": [
+      {
+        "type": "流血",
+        "desc": "每回合受到流血伤害",
+        "duration": 2,
+        "target": "敌方",
+        "dmg_per_turn": "1d4"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "诡计",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。变为隐形2回合。",
+    "effects": [
+      {
+        "type": "隐身",
+        "desc": "变为隐形",
+        "duration": 2,
+        "target": "自身"
+      }
+    ]
+  },
+  {
+    "name": "恶作剧之神",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "cooldown": 4,
+    "description": "4d8+INT 力场伤害。目标陷入魅惑2回合。",
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "目标陷入魅惑",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": "WIS"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

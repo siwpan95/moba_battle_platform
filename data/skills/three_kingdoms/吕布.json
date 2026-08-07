@@ -1,0 +1,116 @@
+[
+  {
+    "name": "方天画戟",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "方天画戟，天下无双！1d10+STR 挥砍伤害，低血量额外伤害。"
+  },
+  {
+    "name": "辕门射戟",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "辕门射戟，百步穿杨！2d8+DEX 远程穿刺伤害，低血量额外伤害。"
+  },
+  {
+    "name": "赤兔冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赤兔马日行千里！自身速度翻倍2回合，增伤1回合。"
+  },
+  {
+    "name": "天下无双",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血翻倍"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "大幅破甲"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「人中吕布，马中赤兔！」4d6+STR 挥砍伤害，低血翻倍，大幅破甲2回合。"
+  }
+]

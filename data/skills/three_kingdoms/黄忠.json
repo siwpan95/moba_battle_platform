@@ -1,0 +1,108 @@
+[
+  {
+    "name": "百步穿杨",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "老将黄忠箭无虚发，1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "定军山",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "易伤/标记"
+      }
+    ],
+    "cooldown": 1,
+    "description": "定军山斩夏侯渊的神射！2d6+DEX 穿刺伤害，目标被标记2回合（易伤）。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "老当益壮",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "「老骥伏枥，志在千里！」自身增伤2回合，加速1回合。"
+  },
+  {
+    "name": "烈弓绝杀",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血翻倍"
+      },
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "黄忠最后的绝命一箭！3d8+DEX 穿刺伤害，低血翻倍，标记易伤2回合。"
+  }
+]

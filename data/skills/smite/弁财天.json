@@ -1,0 +1,116 @@
+[
+  {
+    "name": "妙音琵琶",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "弁才天拨动琵琶——每一声弦音都在空气中激起魔力涟漪。1d8+INT 力场伤害。"
+  },
+  {
+    "name": "流水之音",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "流水之音冻结敌人的行动",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "弁才天弹奏流水之章——琵琶声如清泉流淌，却在敌人脚下凝结为冰。AOE减速2回合。2d6+INT 寒冷伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "辩才无碍",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "言灵强化",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "shield",
+        "desc": "音波形成护体结界",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "弁才天施展辩才无碍——她是七福神中唯一的女性，掌握一切语言与音乐的力量。增伤+护盾各2回合。"
+  },
+  {
+    "name": "八音齐奏",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "八音齐鸣，万物静止",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "音波穿透一切防御",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "弁才天同时拨动天地间八种音律——万物在绝对的音乐中失去自我，连钢铁也会被音波震碎。AOE控制+破甲2回合。4d6+INT 力场伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

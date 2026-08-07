@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1934",
+  "card_id": "league_of_legends:凯特琳",
+  "legacy_card_id": "LEA-1066",
   "hero": {
     "name": "凯特琳",
     "name_en": "Caitlyn",
@@ -19,7 +20,8 @@
   "playstyle_tags": [
     "持续输出",
     "核心",
-    "远程"
+    "远程",
+    "钩子"
   ],
   "attributes": {
     "STR": {
@@ -108,32 +110,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能三",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "duration": 2,
-          "value": 15,
-          "desc": "速度+15尺",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
-    }
-  ]
+  }
 }

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "凤雏术",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "凤雏庞统的玄术，1d8+INT 力场伤害，目标易伤1回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "铁索连环",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "束缚"
+      }
+    ],
+    "cooldown": 1,
+    "description": "连环计困住曹操水军！2d6+INT 力场范围伤害，束缚2回合。CON豁免无效。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "落凤坡",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "剧毒1d6"
+      },
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "落凤坡的悲壮！2d6+INT 力场范围伤害，中毒并减速2回合。DEX豁免半伤。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "凤雏涅槃",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧2d6"
+      },
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「卧龙凤雏，得一人可安天下！」4d6+INT 火焰范围伤害，灼烧2回合、易伤2回合。",
+    "aoe_radius": 25
+  }
+]

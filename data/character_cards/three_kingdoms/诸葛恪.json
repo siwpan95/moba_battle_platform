@@ -1,0 +1,71 @@
+{
+  "card_id": "three_kingdoms:诸葛恪",
+  "hero": {
+    "name": "诸葛恪",
+    "name_en": "诸葛恪",
+    "alias": "",
+    "title": "诸葛恪"
+  },
+  "game": {
+    "name": "Romance of the Three Kingdoms",
+    "name_cn": "三国演义",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "",
+  "difficulty": 3,
+  "playstyle_tags": [],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": {
+    "STR": 17,
+    "DEX": 12
+  },
+  "hit_die": 10,
+  "stats_lv1": {
+    "hp": 12,
+    "ac": 11,
+    "atk": 17,
+    "ap": 12
+  },
+  "stats_lv18": {
+    "hp": 120,
+    "ac": 13
+  },
+  "growth_per_level": {
+    "hp": 6,
+    "atk": 1,
+    "ap": 1
+  }
+}

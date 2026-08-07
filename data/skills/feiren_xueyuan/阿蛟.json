@@ -1,0 +1,110 @@
+[
+  {
+    "name": "护盾猛击",
+    "key": "Q",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "duration": 2,
+        "desc": "移动速度降低。",
+        "target": "敌方"
+      },
+      {
+        "type": "护盾",
+        "duration": 2,
+        "desc": "获得护盾吸收伤害。",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "护盾猛击（Q）：冲锋减速。造成 1d8+STR 钝击伤害。移动速度降低。获得护盾吸收伤害。"
+  },
+  {
+    "name": "钢筋铁骨",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "duration": 2,
+        "desc": "受到伤害降低。",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "钢筋铁骨（W）：减伤韧性。受到伤害降低。"
+  },
+  {
+    "name": "震地一击",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "目标被眩晕，无法行动"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      }
+    ],
+    "cooldown": 3,
+    "description": "震地一击（E）：范围击飞。造成 1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "不灭之盾",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 2,
+        "desc": "获得护盾吸收伤害。",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 5,
+    "description": "不灭之盾（R）：群体护盾。获得护盾吸收伤害。（范围效果）"
+  }
+]

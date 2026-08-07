@@ -1,0 +1,117 @@
+[
+  {
+    "name": "奎木狼爪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "1d4流血"
+      }
+    ],
+    "cooldown": 0,
+    "description": "奎木狼星君的利爪，1d10+STR 挥砍伤害，流血1回合。"
+  },
+  {
+    "name": "黄袍加身",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      },
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "黄袍加身，星宿之力觉醒！2d8+STR 挥砍伤害，增伤2回合并减伤1回合。"
+  },
+  {
+    "name": "宝象国威",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 2,
+    "description": "宝象国的驸马之威。速度翻倍2回合，破甲1回合。"
+  },
+  {
+    "name": "二十八宿",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+50%"
+      }
+    ],
+    "cooldown": 4,
+    "description": "二十八宿奎木狼星君之力！2d10+STR 挥砍范围伤害，低血量翻倍，增伤2回合。",
+    "aoe_radius": 15
+  }
+]

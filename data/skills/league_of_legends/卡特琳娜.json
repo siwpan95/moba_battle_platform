@@ -1,0 +1,96 @@
+[
+  {
+    "name": "弹射之刃",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "标记目标2回合，攻击被标记目标造成额外伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "投掷一柄淬毒匕首，在敌人之间弹射。造成1d10+DEX穿刺伤害并标记目标。匕首每次弹射伤害递减10%，最多弹射3次。攻击被标记目标消耗标记并造成额外1d6伤害。"
+  },
+  {
+    "name": "伺机待发",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "向空中抛出一柄匕首，移动速度+30尺",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "向空中抛出一柄匕首，获得短暂爆发性移速加成。造成2d8+DEX挥砍伤害。匕首2回合后掉落至地面，对周围敌人造成伤害。拾起匕首可刷新此技能冷却。"
+  },
+  {
+    "name": "瞬步",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "瞬间闪现到目标身旁",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "化为一道残影，瞬间闪现到目标身旁发动突刺。造成1d8+DEX挥砍伤害。若目标是敌方匕首，拾起匕首并对此技能冷却减半。"
+  },
+  {
+    "name": "死亡莲华",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "aoe",
+        "desc": "高速旋转向周围所有敌人投掷匕首",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "化身死亡旋风，以不可思议的速度向周围所有敌人投掷淬毒匕首。造成4d6+DEX挥砍伤害，持续2回合。每回合最多命中3个目标。施放期间无法移动，但可随时中断。"
+  }
+]

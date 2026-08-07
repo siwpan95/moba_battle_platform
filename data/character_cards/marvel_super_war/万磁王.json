@@ -1,8 +1,8 @@
 {
-  "card_id": "MAR-2106",
+  "card_id": "marvel_super_war:万磁王",
   "hero": {
     "name": "万磁王",
-    "name_en": "",
+    "name_en": "Magneto",
     "alias": "",
     "title": ""
   },
@@ -110,27 +110,107 @@
   },
   "skills": [
     {
-      "name": "大招",
+      "name": "法师·雷霆之矛",
+      "key": "Q",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "type": "stun",
+          "duration": 1,
+          "desc": "麻痹",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d8+INT 雷电伤害。麻痹",
+      "approx": true
+    },
+    {
+      "name": "法师·奥术护盾",
+      "key": "W",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "护盾",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "1d10+INT 法术伤害。护盾",
+      "approx": true
+    },
+    {
+      "name": "火球术",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 10,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 2,
+      "description": "2d6+INT 火焰伤害，10尺半径范围。DEX豁免减半。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
       "key": "R",
       "type": "法术",
       "action": "动作",
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
+        "dice_count": 3,
+        "dice_size": 4,
         "bonus_attr": "INT",
         "type": "火焰"
       },
       "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
       "cooldown": 4,
-      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。"
+      "description": "26+INT 伤害。冷却1回合。",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "MAR-2106"
 }

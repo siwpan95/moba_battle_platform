@@ -1,0 +1,114 @@
+[
+  {
+    "name": "蛇发噬咬",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "蛇发毒液渗入血液",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "美杜莎满头毒蛇齐齐噬咬——每条蛇的毒液都足以致命，而她的头颅上盘踞着数十条。毒液在血管中燃烧，持续腐蚀生命。1d10+DEX 穿刺伤害，dot 2回合。"
+  },
+  {
+    "name": "石化凝视",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "desc": "目光所及，血肉化为顽石",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "美杜莎睁开双眼——那是雅典娜诅咒的恐怖礼物。任何直视她眼眸的生物都将从血肉之躯化作冰冷石像。2d8+DEX 力场伤害，石化1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "戈尔贡突袭",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "戈尔贡的金翼展开，疾速俯冲",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "美杜莎展开金色双翼——那是戈尔贡一族与生俱来的力量，青铜般的羽翼能让她如猛禽般俯冲扑杀。获得加速1回合。1d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "石化诅咒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "desc": "全力释放石化诅咒，广域石化",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "execute",
+        "desc": "对被石化的目标造成致命一击",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "美杜莎摘下蒙眼布条，将雅典娜的诅咒全力释放——方圆数十尺内，空气凝固为大理石的灰白色。连诸神的雕像都在这一眼中颤抖。对石化的敌人造成斩杀伤害。4d6+DEX 力场伤害，AOE石化。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

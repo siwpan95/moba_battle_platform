@@ -1,0 +1,131 @@
+[
+  {
+    "name": "寒冬之咬",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "vuln",
+        "desc": "施加一层震荡冰封标记",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "从盾牌中喷出一股弗雷尔卓德冻气。造成1d10+STR寒冷伤害，减速2回合并施加一层震荡冰封。任何友方的攻击可叠加此标记；叠满4层后目标被冻结1回合。CON豁免成功则免疫减速。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "挺身而出",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "跃向友方，为双方提供护甲与魔抗加成",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "desc": "自身与目标友方护甲+魔抗提升",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "跃向一名友方英雄，以巨盾庇护彼此。造成2d6+STR钝击伤害。自身与目标友方护甲与魔抗提升，持续2回合。"
+  },
+  {
+    "name": "坚不可摧",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "desc": "举盾方向受到的伤害减少80%",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "immune",
+        "desc": "完全格挡首个命中盾牌的飞行技能",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "举起不可摧毁的远古冰盾，朝向指定方向。造成1d8+STR钝击伤害。来自举盾方向的所有伤害减少80%，且首个命中盾牌的投射物技能被完全格挡。持续2回合。举盾期间可缓慢移动。"
+  },
+  {
+    "name": "冰川裂隙",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "击飞路径上所有敌人",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "裂隙区域持续减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "以巨盾猛击地面，撕开一道深不见底的冰川裂隙。造成2d8+STR寒冷伤害，击飞路径上所有敌人。裂隙持续3回合，站在上面的敌人减速。首个被击中的敌人被击飞最高。STR豁免成功则不被击飞。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 30
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "name": "如意金箍棒",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "孙悟空挥动如意金箍棒——这根定海神针重一万三千五百斤，随心变化大小，迎风一晃碗口粗细。寻常妖魔一棒便粉身碎骨。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "七十二变",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "化身飞虫遁入虚空",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "变化之速令敌人无从反应",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "孙悟空施展地煞七十二变——可化为飞禽走兽、草木鱼虫，甚至一阵清风。消失于敌人眼前，再度现身时已在其身后。获得隐形与加速各1回合。2d8+STR 钝击伤害。"
+  },
+  {
+    "name": "筋斗云",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "一个筋斗十万八千里",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "孙悟空驾起筋斗云——一个翻身便是十万八千里，连天兵天将的箭矢都追不上他的影子。获得加速2回合。1d8+STR 钝击伤害。"
+  },
+  {
+    "name": "分身千万",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "千钧一击，对弱者斩尽杀绝",
+        "target": "敌方"
+      },
+      {
+        "type": "buff",
+        "desc": "毫毛分身助战，战力倍增",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "孙悟空拔下一撮毫毛，迎风一吹——变出千百个持棒的大圣，铺天盖地砸向敌人。这便是大闹天宫时连二郎神都难以招架的绝技。对低生命敌人造成斩杀，自身增伤。2d10+STR 钝击伤害，AOE。",
+    "aoe_radius": 25
+  }
+]

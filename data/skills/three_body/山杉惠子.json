@@ -1,0 +1,134 @@
+[
+  {
+    "name": "思想探测",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "洞察",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "破壁人洞悉目标意图"
+      }
+    ],
+    "cooldown": 0,
+    "description": "破壁人山杉惠子以脑科学研究成果探测思想——看穿敌方下一步行动。2d6+INT 心灵伤害，揭示目标下回合意图。",
+    "approx": true
+  },
+  {
+    "name": "神经干预",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "神经信号被篡改导致混乱"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "山杉惠子以神经科学手段干预目标大脑——篡改神经信号。1d8+INT 心灵伤害，WIS豁免失败混乱1回合。冷却1回合。",
+    "approx": true
+  },
+  {
+    "name": "破壁·真相揭露",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "value": 10,
+        "desc": "揭露真相令敌防御崩溃"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "面壁者被破壁的恐惧"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "部分"
+    },
+    "cooldown": 2,
+    "description": "「面壁者比尔·希恩斯，我是你的破壁人」——真相如利刃刺穿心灵。2d10+INT 心灵伤害，护甲-10持续2回合。WIS豁免失败恐惧1回合。",
+    "approx": true
+  },
+  {
+    "name": "剖腹·终极献祭",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 3,
+        "dc_attr": "WIS",
+        "desc": "以死明志的终极震撼"
+      },
+      {
+        "type": "增益",
+        "target": "友方",
+        "duration": 3,
+        "desc": "牺牲精神激励全军"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "山杉惠子在联合国静室石案上以日本刀剖腹——以死揭露真相。5d8+INT 心灵伤害，25尺范围。敌方WIS豁免失败恐惧3回合。友方全属性+5持续3回合。自身HP降至1。冷却4回合。",
+    "approx": true
+  }
+]

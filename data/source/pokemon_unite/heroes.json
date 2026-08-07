@@ -1,0 +1,419 @@
+[
+  {
+    "name": "Absol"
+  },
+  {
+    "name": "Aegislash"
+  },
+  {
+    "name": "Alolan Ninetales"
+  },
+  {
+    "name": "Azumarill"
+  },
+  {
+    "name": "Blastoise"
+  },
+  {
+    "name": "Blaziken"
+  },
+  {
+    "name": "Blissey"
+  },
+  {
+    "name": "Buzzwole"
+  },
+  {
+    "name": "Ceruledge"
+  },
+  {
+    "name": "Chandelure"
+  },
+  {
+    "name": "Cinderace"
+  },
+  {
+    "name": "Clefable"
+  },
+  {
+    "name": "Comfey"
+  },
+  {
+    "name": "Cramorant"
+  },
+  {
+    "name": "Crustle"
+  },
+  {
+    "name": "Decidueye"
+  },
+  {
+    "name": "Delphox"
+  },
+  {
+    "name": "Dodrio"
+  },
+  {
+    "name": "Dragapult"
+  },
+  {
+    "name": "Dragonite"
+  },
+  {
+    "name": "Duraludon"
+  },
+  {
+    "name": "Eldegoss"
+  },
+  {
+    "name": "Espeon"
+  },
+  {
+    "name": "Falinks"
+  },
+  {
+    "name": "Garchomp"
+  },
+  {
+    "name": "Gardevoir"
+  },
+  {
+    "name": "Glaceon"
+  },
+  {
+    "name": "Goodra"
+  },
+  {
+    "name": "Greedent"
+  },
+  {
+    "name": "Gyarados"
+  },
+  {
+    "name": "Hoopa"
+  },
+  {
+    "name": "Inteleon"
+  },
+  {
+    "name": "Lapras"
+  },
+  {
+    "name": "Leafeon"
+  },
+  {
+    "name": "Machamp"
+  },
+  {
+    "name": "Mamoswine"
+  },
+  {
+    "name": "Meowscarada"
+  },
+  {
+    "name": "Metagross"
+  },
+  {
+    "name": "Mew"
+  },
+  {
+    "name": "Mimikyu"
+  },
+  {
+    "name": "Mr. Mime"
+  },
+  {
+    "name": "Psyduck"
+  },
+  {
+    "name": "Sableye"
+  },
+  {
+    "name": "Scizor"
+  },
+  {
+    "name": "Scyther"
+  },
+  {
+    "name": "Slowbro"
+  },
+  {
+    "name": "Snorlax"
+  },
+  {
+    "name": "Sylveon"
+  },
+  {
+    "name": "Talonflame"
+  },
+  {
+    "name": "Trevenant"
+  },
+  {
+    "name": "Tsareena"
+  },
+  {
+    "name": "Tyranitar"
+  },
+  {
+    "name": "Umbreon"
+  },
+  {
+    "name": "Urshifu"
+  },
+  {
+    "name": "Venusaur"
+  },
+  {
+    "name": "Wigglytuff"
+  },
+  {
+    "name": "Zacian"
+  },
+  {
+    "name": "Zeraora"
+  },
+  {
+    "name": "Zoroark"
+  },
+  {
+    "name": "三地鼠"
+  },
+  {
+    "name": "三首恶龙"
+  },
+  {
+    "name": "九尾"
+  },
+  {
+    "name": "仆刀将军"
+  },
+  {
+    "name": "伊裴尔塔尔"
+  },
+  {
+    "name": "伦琴猫"
+  },
+  {
+    "name": "厄诡椪"
+  },
+  {
+    "name": "叉字蝠"
+  },
+  {
+    "name": "君主蛇"
+  },
+  {
+    "name": "咚咚鼠"
+  },
+  {
+    "name": "哲尔尼亚斯"
+  },
+  {
+    "name": "固拉多"
+  },
+  {
+    "name": "基拉祈"
+  },
+  {
+    "name": "基格尔德"
+  },
+  {
+    "name": "大剑鬼"
+  },
+  {
+    "name": "大针蜂"
+  },
+  {
+    "name": "太乐巴戈斯"
+  },
+  {
+    "name": "妙蛙种子"
+  },
+  {
+    "name": "小火龙"
+  },
+  {
+    "name": "尼多后"
+  },
+  {
+    "name": "尼多王"
+  },
+  {
+    "name": "巨沼怪"
+  },
+  {
+    "name": "巨锻匠"
+  },
+  {
+    "name": "巴大蝶"
+  },
+  {
+    "name": "巴布土拨"
+  },
+  {
+    "name": "帕路奇亚"
+  },
+  {
+    "name": "帝牙卢卡"
+  },
+  {
+    "name": "帝王拿波"
+  },
+  {
+    "name": "忍者蛙"
+  },
+  {
+    "name": "战槌龙"
+  },
+  {
+    "name": "拉达"
+  },
+  {
+    "name": "拉鲁拉丝"
+  },
+  {
+    "name": "捷克罗姆"
+  },
+  {
+    "name": "摔角鹰人"
+  },
+  {
+    "name": "故勒顿"
+  },
+  {
+    "name": "无极汰那"
+  },
+  {
+    "name": "暴飞龙"
+  },
+  {
+    "name": "月伊布"
+  },
+  {
+    "name": "杖尾鳞甲龙"
+  },
+  {
+    "name": "杰尼龟"
+  },
+  {
+    "name": "桃歹郎"
+  },
+  {
+    "name": "比雕"
+  },
+  {
+    "name": "海豚侠"
+  },
+  {
+    "name": "炎武王"
+  },
+  {
+    "name": "炽焰咆哮虎"
+  },
+  {
+    "name": "烈空坐"
+  },
+  {
+    "name": "狂欢浪舞鸭"
+  },
+  {
+    "name": "猫老大"
+  },
+  {
+    "name": "玛夏多"
+  },
+  {
+    "name": "玛机雅娜"
+  },
+  {
+    "name": "玛纳霏"
+  },
+  {
+    "name": "电蜘蛛"
+  },
+  {
+    "name": "电龙"
+  },
+  {
+    "name": "盖欧卡"
+  },
+  {
+    "name": "穿山王"
+  },
+  {
+    "name": "索尔迦雷欧"
+  },
+  {
+    "name": "绿毛虫"
+  },
+  {
+    "name": "胖丁"
+  },
+  {
+    "name": "莱希拉姆"
+  },
+  {
+    "name": "蒂安希"
+  },
+  {
+    "name": "蕾冠王"
+  },
+  {
+    "name": "藏玛然特"
+  },
+  {
+    "name": "蜥蜴王"
+  },
+  {
+    "name": "西狮海壬"
+  },
+  {
+    "name": "谢米"
+  },
+  {
+    "name": "赛富豪"
+  },
+  {
+    "name": "赫拉克罗斯"
+  },
+  {
+    "name": "轰擂金刚猩"
+  },
+  {
+    "name": "酋雷姆"
+  },
+  {
+    "name": "钢铠鸦"
+  },
+  {
+    "name": "阿尔宙斯"
+  },
+  {
+    "name": "阿柏怪"
+  },
+  {
+    "name": "雷丘"
+  },
+  {
+    "name": "露奈雅拉"
+  },
+  {
+    "name": "霸王花"
+  },
+  {
+    "name": "风速狗"
+  },
+  {
+    "name": "骑拉帝纳"
+  },
+  {
+    "name": "鬃岩狼人"
+  },
+  {
+    "name": "黑暗鸦"
+  },
+  {
+    "name": "黑鲁加"
+  }
+]

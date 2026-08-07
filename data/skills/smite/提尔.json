@@ -1,0 +1,109 @@
+[
+  {
+    "name": "勇气之剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "提尔举起勇气之剑——他曾为束缚芬里尔而将右手伸入狼口，是北欧最勇敢的战神。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "正义裁决",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "正义之剑无坚不摧",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "提尔挥下正义之剑——作为誓约与正义之神，他的剑就是最终的审判。破甲2回合。2d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "独臂之誓",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "牺牲带来力量",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "immune",
+        "desc": "誓约护体，百邪不侵",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "提尔以独臂起誓——失去右手的牺牲换来的是诸神对他的绝对信任。增伤2回合+免疫控制1回合。"
+  },
+  {
+    "name": "诸神黄昏之剑",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "战神收割弱者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "战神之威",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "提尔挥舞诸神黄昏之剑——传说中他将与地狱犬加姆同归于尽，但在此之前，他会斩杀无数巨人。低血斩杀+AOE恐惧。2d10+STR 挥砍伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

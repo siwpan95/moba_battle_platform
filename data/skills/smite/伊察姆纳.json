@@ -1,0 +1,116 @@
+[
+  {
+    "name": "太阳之笔",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "伊察姆纳挥动太阳之笔——玛雅创世神书写了宇宙的法律。1d8+INT 光耀伤害。"
+  },
+  {
+    "name": "文字之力",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "圣书文字瓦解造物",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊察姆纳书写神圣文字——他是文字的发明者，每一个符号都是创世的碎片。AOE破甲2回合。2d6+INT 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "天空之屋",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "太阳宫",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "buff",
+        "desc": "创世之神的智慧",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊察姆纳建造天空之屋——他是众神中最智慧的长者。护盾+增伤各2回合。"
+  },
+  {
+    "name": "创世之笔",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "创世之笔定下命运",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "被书写出存在",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "伊察姆纳挥下创世之笔——他能将万物写入存在，也能将万物从故事中抹去。AOE控制+低血斩杀。4d6+INT 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

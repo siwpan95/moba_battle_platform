@@ -1,0 +1,101 @@
+[
+  {
+    "name": "粘稠鼻液",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+STR 挥砍伤害。目标速度减半2回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "name": "刺针扫射",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "aoe_radius": 5
+  },
+  {
+    "name": "钢毛后背",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "受到伤害减半2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "desc": "受到伤害减半",
+        "target": "自身",
+        "duration": 2,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "战意",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d8+STR 挥砍伤害。速度+15尺2回合。攻击速度+30%2回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "desc": "速度+15尺",
+        "target": "自身",
+        "duration": 2,
+        "value": 15
+      },
+      {
+        "type": "攻速强化",
+        "desc": "攻击速度+30%",
+        "target": "自身",
+        "duration": 2,
+        "value": 30
+      }
+    ],
+    "aoe_radius": 10
+  }
+]

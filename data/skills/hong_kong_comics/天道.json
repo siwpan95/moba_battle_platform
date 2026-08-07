@@ -1,0 +1,126 @@
+[
+  {
+    "name": "磁场转动·天武杀道",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "value": 3,
+        "desc": "天武杀道三连击",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "天道以磁场推动的战场杀戮武术——连环三击如暴风骤雨。2d8+STR 钝击伤害，三段连击。"
+  },
+  {
+    "name": "磁场转动·断神霹雳",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "麻痹",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "磁暴霹雳麻痹目标",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "天道磁场转动化为断神霹雳——电磁脉冲轰击！2d10+CON 闪电伤害，CON豁免失败麻痹1回合。冷却1回合。"
+  },
+  {
+    "name": "磁场转动·天道循环",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "duration": 3,
+        "value": 30,
+        "desc": "磁场推动极速移动",
+        "target": "自身"
+      },
+      {
+        "type": "治疗",
+        "duration": 3,
+        "value_formula": "1d6+CON",
+        "desc": "天道循环生生不息",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "天道以磁场转动激发身体循环——速度+30尺，每回合恢复1d6+CON生命。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "终极·天道破碎",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "80尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "天道破碎之力粉碎心智",
+        "target": "敌方"
+      },
+      {
+        "type": "破甲",
+        "duration": 3,
+        "value": 10,
+        "desc": "磁场撕裂一切防御",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "天道磁场转动的终极一击——以自身磁场撕裂空间。5d10+CON 力场伤害，30尺范围。CON豁免失败眩晕2回合+护甲-10。冷却4回合。"
+  }
+]

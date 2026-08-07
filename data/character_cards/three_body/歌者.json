@@ -1,0 +1,243 @@
+{
+  "card_id": "three_body:歌者",
+  "legacy_card_id": "THE-1018",
+  "hero": {
+    "name": "歌者",
+    "name_en": "Singer",
+    "alias": "",
+    "title": "Singer"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "清理员/二向箔使用者 (Cleaner/Dual-Vector Foil)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "三体",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "护盾",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "质量点打击",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "desc": "接近光速的质量点无视防御"
+        }
+      ],
+      "cooldown": 0,
+      "description": "歌者以质量点发起打击——接近光速的质量点贯穿一切。2d10+INT 力场伤害，无视护甲和护盾。",
+      "approx": true
+    },
+    {
+      "name": "二向箔·展开",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 3,
+          "desc": "二维化力场持续拖拽"
+        },
+        {
+          "type": "持续伤害",
+          "target": "敌方",
+          "duration": 3,
+          "dmg_per_turn": "1d8",
+          "desc": "逐渐被降维"
+        }
+      ],
+      "cooldown": 1,
+      "description": "歌者从口袋里掏出二向箔——宇宙规律武器开始二维化展开。3d6+INT 力场伤害，15尺范围。减速3回合+每回合1d8降维伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "清理员装备·短膜",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "闪避",
+          "target": "自身",
+          "duration": 2,
+          "value": 60,
+          "desc": "短膜广播遮蔽踪迹"
+        },
+        {
+          "type": "洞察",
+          "target": "自身",
+          "duration": 2,
+          "desc": "清理员扫描视野"
+        }
+      ],
+      "cooldown": 2,
+      "description": "歌者启动清理员装备——短膜广播隐藏自身坐标，扫描战场。闪避率+60%，感知范围内所有隐蔽目标。持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "归零广播·二维化",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 6,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "aoe_radius": 30,
+      "effects": [
+        {
+          "type": "即死",
+          "target": "敌方",
+          "dc_attr": "CON",
+          "threshold": "HP<30%",
+          "desc": "二向箔完全展开降维打击"
+        },
+        {
+          "type": "禁锢",
+          "target": "敌方",
+          "duration": 2,
+          "dc_attr": "STR",
+          "desc": "二维化力场锁定"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "歌者投出二向箔——宇宙规律武器完全展开，一切跌入二维。6d8+INT 力场伤害，30尺范围。HP<30%即死。STR豁免失败禁锢2回合。冷却4回合。",
+      "approx": true
+    }
+  ]
+}

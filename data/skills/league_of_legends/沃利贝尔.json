@@ -1,0 +1,145 @@
+[
+  {
+    "name": "擂首一击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "熊掌拍击眩晕",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "冲刺加速",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "暴怒撕咬",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "撕咬伤口回复生命",
+        "duration": 1,
+        "value": 15,
+        "target": "自身"
+      },
+      {
+        "type": "vuln",
+        "desc": "标记伤口增伤",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "霹天雳地",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "雷霆轰击减速",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "shield",
+        "desc": "雷霆中自身获得护盾",
+        "duration": 1,
+        "value": 30,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 力场伤害。",
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "天声震落",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "跃起化身巨熊砸地，范围内敌人眩晕",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "buff",
+        "desc": "巨熊形态体型增大属性飙升",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+STR 挥砍伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

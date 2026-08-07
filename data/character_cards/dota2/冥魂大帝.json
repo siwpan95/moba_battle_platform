@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1391",
+  "card_id": "dota2:冥魂大帝",
   "hero": {
     "name": "冥魂大帝",
     "name_en": "Wraith King",
@@ -111,7 +111,37 @@
   },
   "skills": [
     {
-      "name": "技能二",
+      "name": "战士·致命连击",
+      "key": "Q",
+      "type": "物理",
+      "action": "高速连斩",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "bleed",
+          "duration": 1,
+          "desc": "流血",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "3d6+DEX 挥砍伤害。流血",
+      "approx": true
+    },
+    {
+      "name": "旋风斩",
       "key": "W",
       "type": "物理",
       "action": "动作",
@@ -119,13 +149,60 @@
       "target": "范围",
       "damage": {
         "dice_count": 2,
-        "dice_size": 8,
+        "dice_size": 6,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
       "effects": [],
+      "aoe_radius": 5,
       "cooldown": 1,
-      "description": "28+STR 伤害。冷却1回合。"
+      "description": "1d8+STR 挥砍伤害，命中5尺内所有敌人。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "28+STR 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能三",
+      "key": "R",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 4,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1391"
 }

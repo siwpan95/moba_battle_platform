@@ -1,0 +1,248 @@
+{
+  "card_id": "hong_kong_comics:东方无敌",
+  "legacy_card_id": "港漫群-1031",
+  "hero": {
+    "name": "东方无敌",
+    "name_en": "Dongfang Wudi",
+    "alias": "白莲教主·九阳神功",
+    "title": "白莲教主·九阳神功"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "战士/武道宗师",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "龙虎门",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "护盾",
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "九阳神功·烈日拳",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "type": "灼烧",
+          "duration": 1,
+          "dmg_per_turn": "1d4",
+          "desc": "九阳真火灼烧",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "白莲教主东方无敌以九阳神功催动的至阳一拳——拳出如烈日灼天。2d6+STR 火焰伤害，附带1回合灼烧(1d4)。"
+    },
+    {
+      "name": "九阳神功·九阳大霹雳",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "40尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "CHA",
+        "type": "火焰"
+      },
+      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "击飞",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "霹雳阳劲轰飞敌人",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "东方无敌将九阳神功压缩为霹雳一击——九阳合一，霹雳裂空！3d6+CHA 火焰伤害，15尺范围。STR豁免失败击飞15尺。冷却1回合。"
+    },
+    {
+      "name": "九阳神功·护体纯阳",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "duration": 3,
+          "value_formula": "2*LVL+CON",
+          "desc": "九阳真气护体",
+          "target": "自身"
+        },
+        {
+          "type": "治疗",
+          "value_formula": "1d8+CON",
+          "desc": "九阳生生不息自行疗伤",
+          "target": "自身"
+        },
+        {
+          "type": "免疫控制",
+          "duration": 2,
+          "desc": "纯阳之体不受邪祟",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "东方无敌运转九阳神功——纯阳之气护体！获得2×LVL+CON护盾，恢复1d8+CON生命，免疫控制2回合。持续3回合。冷却2回合。"
+    },
+    {
+      "name": "九阳神功·十阳·蓝焰焚天",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 8,
+        "bonus_attr": "CHA",
+        "type": "火焰"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "灼烧",
+          "duration": 3,
+          "dmg_per_turn": "2d6",
+          "desc": "十阳蓝焰焚尽万物",
+          "target": "敌方"
+        },
+        {
+          "type": "眩晕",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "十阳之力震晕群敌",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "东方无敌九阳神功突破至十阳境界——蓝焰降临焚尽八荒！5d8+CHA 火焰伤害，25尺范围。后续3回合每回合2d6灼烧。CON豁免失败眩晕1回合。冷却4回合。"
+    }
+  ]
+}

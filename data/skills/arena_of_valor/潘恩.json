@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Shadow Strike",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "如暗影中的利刃，Paine的突袭无声无息。1d10+DEX 挥砍伤害。"
+  },
+  {
+    "name": "Venom Blade",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "目标移动速度减半，持续1轮"
+      }
+    ],
+    "cooldown": 1,
+    "description": "诡诈的战术——Paine从阴影中掷出飞刃。2d8+DEX 穿刺伤害。 目标移动速度减半，持续1轮。"
+  },
+  {
+    "name": "Flicker Step",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "desc": "获得额外移动力，本回合可穿越敌人"
+      }
+    ],
+    "cooldown": 2,
+    "description": "身形一闪，Paine已出现在敌人身后。1d8+DEX 挥砍伤害。 获得额外移动力，本回合可穿越敌人。"
+  },
+  {
+    "name": "Death Mark",
+    "key": "P",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "desc": "对HP<50%目标额外2d6伤害"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "desc": "获得额外移动力，本回合可穿越敌人"
+      }
+    ],
+    "cooldown": 4,
+    "description": "死亡的华尔兹开始——Paine的终极暗杀术。4d6+DEX 挥砍伤害。 对HP<50%目标额外2d6伤害；获得额外移动力，本回合可穿越敌人。"
+  }
+]

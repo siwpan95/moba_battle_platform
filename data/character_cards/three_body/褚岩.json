@@ -1,0 +1,226 @@
+{
+  "card_id": "three_body:褚岩",
+  "legacy_card_id": "THE-1016",
+  "hero": {
+    "name": "褚岩",
+    "name_en": "Chu Yan",
+    "alias": "",
+    "title": "Chu Yan"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "蓝色空间号舰长/星舰文明 (Blue Space Captain/Star Civilization)",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "三体",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "蓝色空间突袭",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "desc": "蓝色空间号的主炮穿透"
+        }
+      ],
+      "cooldown": 0,
+      "description": "星舰地球奠基者——褚岩指挥蓝色空间号主炮轰击。2d8+INT 力场伤害，穿透2点护甲。",
+      "approx": true
+    },
+    {
+      "name": "四维空间穿越",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "相位",
+          "target": "自身",
+          "duration": 1,
+          "desc": "进入四维空间闪避一切"
+        }
+      ],
+      "cooldown": 1,
+      "description": "褚岩带领蓝色空间号进入四维空间碎片——短暂脱离三维战场。获得一回合无敌(无法被选中)。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "黑暗战役·先发制人",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "对孤立目标造成双倍伤害"
+        },
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "先发制人压制行动"
+        }
+      ],
+      "cooldown": 2,
+      "description": "褚岩在黑暗战役中先发制人——星舰文明的铁血法则。3d8+INT 力场伤害，对孤立目标双倍伤害。减速1回合。",
+      "approx": true
+    },
+    {
+      "name": "星舰地球·文明火种",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "治疗",
+          "target": "友方",
+          "value_formula": "2d10+INT",
+          "desc": "文明火种延续"
+        },
+        {
+          "type": "增益",
+          "target": "友方",
+          "duration": 3,
+          "desc": "星舰文明的集体觉醒全属性+3"
+        }
+      ],
+      "cooldown": 4,
+      "description": "褚岩点燃星舰文明的火种——人类在宇宙中的第二家园。4d10+INT 力场伤害，25尺范围。友方恢复2d10+INT生命，全属性+3持续3回合。冷却4回合。",
+      "approx": true
+    }
+  ]
+}

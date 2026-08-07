@@ -1,0 +1,77 @@
+[
+  {
+    "name": "秘术射击",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。"
+  },
+  {
+    "name": "精华跃动",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。"
+  },
+  {
+    "name": "奥术跃迁",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "传送至可见位置",
+        "value": 60,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。传送至可见位置。"
+  },
+  {
+    "name": "精准弹幕",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d10+INT 力场伤害。"
+  }
+]

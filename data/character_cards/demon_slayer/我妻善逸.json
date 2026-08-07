@@ -1,5 +1,6 @@
 {
-  "card_id": "DEM-1339",
+  "card_id": "demon_slayer:我妻善逸",
+  "legacy_card_id": "DEM-1002",
   "hero": {
     "name": "我妻善逸",
     "name_en": "Zenitsu Agatsuma",
@@ -122,7 +123,14 @@
         "bonus_attr": "DEX",
         "type": "雷鸣"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "麻痹",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "雷击麻痹目标"
+        }
+      ],
       "cooldown": 0,
       "description": "2d8+DEX 雷鸣伤害。",
       "approx": true
@@ -140,7 +148,14 @@
         "bonus_attr": "DEX",
         "type": "雷鸣"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "麻痹",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "雷击麻痹目标"
+        }
+      ],
       "cooldown": 1,
       "description": "2d6+DEX 雷鸣伤害。",
       "approx": true
@@ -158,7 +173,14 @@
         "bonus_attr": "DEX",
         "type": "雷鸣"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "麻痹",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "雷击麻痹目标"
+        }
+      ],
       "cooldown": 2,
       "description": "2d10+DEX 雷鸣伤害。",
       "approx": true

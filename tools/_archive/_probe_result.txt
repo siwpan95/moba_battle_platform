@@ -1,0 +1,17 @@
+game_dir 取值数 = 31
+嵌套 game_dir 数 = 0 []
+skills DB 文件数 = 32
+有卡目录但无 skills DB 的 IP = 0
+
+注入命中 = 5781
+DB 存在但英雄名未命中 = 145
+该 IP 无 DB 文件 = 0
+未命中样本 (game_dir, hero.name, 磁盘 skills 类型):
+    ('arena_of_valor', '伊兰多尔', 'list')
+    ('arena_of_valor', '伊布尼斯', 'list')
+    ('arena_of_valor', '叶娜', 'list')
+    ('arena_of_valor', '基尔格罗斯', 'list')
+    ('arena_of_valor', '特尔安娜丝', 'list')
+    ('arena_of_valor', '达西', 'list')
+    ('honor_of_kings', '亚连', 'list')
+    ('honor_of_kings', '奕星', 'list')

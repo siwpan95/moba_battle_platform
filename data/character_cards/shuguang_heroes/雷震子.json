@@ -1,5 +1,5 @@
 {
-  "card_id": "DAW-1303",
+  "card_id": "shuguang_heroes:雷震子",
   "hero": {
     "name": "雷震子",
     "name_en": "",
@@ -110,81 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "双枪连射",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "双枪连射（Q）：攻速爆发。造成 1d8+DEX 穿刺伤害。"
-    },
-    {
-      "name": "闪光弹",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "WIS",
-        "type": "雷鸣"
-      },
-      "effects": [
-        {
-          "type": "致盲",
-          "duration": 1,
-          "desc": "攻击有几率落空。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 3,
-      "description": "闪光弹（W）：致盲。造成 2d10+WIS 雷鸣伤害。攻击有几率落空。"
-    },
-    {
-      "name": "翻滚",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "翻滚（E）：位移装弹。造成 1d10+DEX 挥砍伤害。"
-    },
-    {
-      "name": "弹幕时间",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "弹幕时间（R）：倾泻子弹。造成 2d12+DEX 挥砍伤害。（范围效果）"
-    }
-  ]
+  "legacy_card_id": "DAW-1303"
 }

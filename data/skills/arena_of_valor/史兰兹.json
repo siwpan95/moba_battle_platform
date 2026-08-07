@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Piercing Shot",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "弓弦嗡鸣，一支利箭破空而出。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "Hunters Trap",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "目标移动速度减半，持续2轮"
+      }
+    ],
+    "cooldown": 1,
+    "description": "Slimz设下致命的陷阱，猎物已无处可逃。2d6+DEX 穿刺伤害。 目标移动速度减半，持续2轮。"
+  },
+  {
+    "name": "Evasive Roll",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "desc": "获得额外移动力，本回合可穿越敌人"
+      }
+    ],
+    "cooldown": 2,
+    "description": "轻盈的后跳拉开距离，Slimz的箭矢始终锁定目标。1d8+DEX 穿刺伤害。 获得额外移动力，本回合可穿越敌人。"
+  },
+  {
+    "name": "Barrage",
+    "key": "P",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "标记目标，下次攻击优势"
+      }
+    ],
+    "cooldown": 4,
+    "description": "终极狙击——Slimz的箭矢如流星般贯穿战场。3d8+DEX 穿刺伤害。 标记目标，下次攻击优势。"
+  }
+]

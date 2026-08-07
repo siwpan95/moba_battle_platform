@@ -1,7 +1,7 @@
 {
   "game": "Demon Slayer",
   "name_cn": "鬼灭之刃",
-  "total": 14,
+  "total": 24,
   "heroes": [
     {
       "name": "灶门炭治郎",
@@ -100,6 +100,76 @@
       "name_en": "Tamayo",
       "role": "医疗鬼/医师 (Healing Demon/Doctor)",
       "universal_role": "support"
+    },
+    {
+      "name": "不死川实弥",
+      "name_cn": "不死川实弥",
+      "name_en": "Sanemi Shinazugawa",
+      "role": "风柱 (Wind Hashira)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "猗窝座",
+      "name_cn": "猗窝座",
+      "name_en": "Akaza",
+      "role": "上弦之参/破坏杀 (Upper Three/Destructive Death)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "童磨",
+      "name_cn": "童磨",
+      "name_en": "Doma",
+      "role": "上弦之贰/冰之血鬼术 (Upper Two/Ice Demon Art)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "黑死牟",
+      "name_cn": "黑死牟",
+      "name_en": "Kokushibo",
+      "role": "上弦之壹/月之呼吸 (Upper One/Moon Breathing)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "栗花落香奈乎",
+      "name_cn": "栗花落香奈乎",
+      "name_en": "Kanao Tsuyuri",
+      "role": "花之呼吸 (Flower Breathing)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "不死川玄弥",
+      "name_cn": "不死川玄弥",
+      "name_en": "Genya Shinazugawa",
+      "role": "鬼喰战士 (Demon Eater)",
+      "universal_role": "fighter"
+    },
+    {
+      "name": "半天狗",
+      "name_cn": "半天狗",
+      "name_en": "Hantengu",
+      "role": "上弦之肆/情绪分身 (Upper Four/Emotion Clones)",
+      "universal_role": "mage"
+    },
+    {
+      "name": "堕姬·妓夫太郎",
+      "name_cn": "堕姬·妓夫太郎",
+      "name_en": "Daki & Gyutaro",
+      "role": "上弦之陆/兄妹鬼 (Upper Six/Sibling Demons)",
+      "universal_role": "assassin"
+    },
+    {
+      "name": "愈史郎",
+      "name_cn": "愈史郎",
+      "name_en": "Yushiro",
+      "role": "鬼/幻惑血鬼术 (Demon/Illusion Art)",
+      "universal_role": "support"
+    },
+    {
+      "name": "继国缘壹",
+      "name_cn": "继国缘壹",
+      "name_en": "Yoriichi Tsugikuni",
+      "role": "日之呼吸/最强剑士 (Sun Breathing/Legendary Swordsman)",
+      "universal_role": "fighter"
     }
   ]
 }

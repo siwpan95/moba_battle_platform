@@ -1,0 +1,125 @@
+[
+  {
+    "name": "福钓",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "惠比寿洒下祝福",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d6+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "惠比寿挥动钓竿——七福神之一，每一次挥竿都会钓起好运。1d8+WIS 光耀伤害，微回复。"
+  },
+  {
+    "name": "海幸",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "惠比寿的祝福提升全员战力",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "heal",
+        "desc": "海洋的馈赠",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "惠比寿撒下海幸——作为渔业的守护神，他将海洋的丰饶化作战场上的力量。增伤2回合+回复。"
+  },
+  {
+    "name": "大笑",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "惠比寿招牌大笑令人失神",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "slow",
+        "desc": "笑到直不起腰",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "惠比寿放声大笑——他的笑声是七福神中最具感染力的，连最凶恶的敌人都忍不住跟着笑起来。魅惑+减速各1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "七福降临",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "七福神的集体祝福",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "4d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "七福齐聚，鸿运当头",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "惠比寿召唤七福神之力——大黑天、毗沙门天、弁才天、福禄寿、寿老人、布袋和尚与他本人，七福齐聚无敌不克。AOE，大量回复+增伤。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30
+  }
+]

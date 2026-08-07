@@ -1,0 +1,114 @@
+[
+  {
+    "name": "冬弓",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "乌勒尔拉开冬弓——这把紫杉木长弓在冬天最为致命。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "滑雪追击",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "冰雪箭冻结血脉",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "乌勒尔射出冰箭——他是滑雪与冬猎之神，在雪地中无人能逃脱他的追猎。减速2回合。2d6+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "冬之步伐",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "在雪原上飞驰",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "invis",
+        "desc": "融入风雪",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "乌勒尔在风雪中穿行——他穿越冬季森林的速度连狼群也追不上。加速2回合+隐身1回合。"
+  },
+  {
+    "name": "狩猎之王的箭雨",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "冬猎之王收割猎物",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "vuln",
+        "desc": "标记为猎物",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "乌勒尔释放狩猎之王的箭雨——当他举起冬弓，整个森林的野兽都会静止。低血斩杀+标记易伤。3d8+DEX 穿刺伤害，AOE。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

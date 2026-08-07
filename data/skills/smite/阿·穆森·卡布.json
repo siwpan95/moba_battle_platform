@@ -1,0 +1,119 @@
+[
+  {
+    "name": "蜂群出击",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "蜂毒每回合1d6",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "屏息凝神，一箭穿心。这一箭凝聚了你全部的专注与技艺。"
+  },
+  {
+    "name": "蜜蜡陷阱",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "陷阱束缚目标1回合",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "布下精巧的机关陷阱，触发的瞬间钢索收紧，将目标牢牢束缚。"
+  },
+  {
+    "name": "蜂翼疾行",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "向后跳跃拉开距离",
+        "target": "自身"
+      },
+      {
+        "type": "slow",
+        "desc": "箭矢附带减速效果",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "range": "远程",
+    "target": "单体",
+    "action": "附赠动作",
+    "description": "向后空翻的同时射出箭矢，既拉开距离又保持火力压制。"
+  },
+  {
+    "name": "蜂神之怒",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "蜂群覆盖全场造成混乱",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "蜂毒大范围伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "漫天箭雨从天而降，将目标区域化为死亡之地。被标记的猎物无处可逃。"
+  }
+]

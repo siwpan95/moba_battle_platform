@@ -1,0 +1,117 @@
+[
+  {
+    "name": "暴虐鞭",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "暴君的残酷一击，1d10+STR 钝击伤害，目标减速1回合。"
+  },
+  {
+    "name": "酒池肉林",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复生命"
+      },
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "沉湎酒色中恢复。回复生命并获得减伤1回合。"
+  },
+  {
+    "name": "焚城",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灼烧1d6"
+      }
+    ],
+    "cooldown": 2,
+    "description": "火烧洛阳之暴行！1d8+STR 火焰范围伤害，灼烧2回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "魔王降世",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "恐惧"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 4,
+    "description": "董卓的暴虐之气慑服众人！2d8+STR 钝击范围伤害，恐惧2回合，破甲2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "name": "摸鱼飞弹",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "飞弹减速",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "execute",
+        "desc": "飞弹飞行越久伤害越高",
+        "threshold": 0,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "悠米出动",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "附身友军变为不可选中",
+        "duration": 99,
+        "target": "自身"
+      },
+      {
+        "type": "heal",
+        "desc": "附身时治疗友军",
+        "duration": 1,
+        "value": 15,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。"
+  },
+  {
+    "name": "旺盛精力",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "治疗自身或附身友军",
+        "duration": 1,
+        "value": 20,
+        "target": "自身"
+      },
+      {
+        "type": "accel",
+        "desc": "附身友军移速攻速提升",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "魔典终章",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "魔典波纹持续伤害",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "control",
+        "desc": "被多道波纹命中禁锢",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "name": "金钟罩·大力金刚掌",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "金刚掌力震退敌手",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "金罗汉以金钟罩第十一关功力催动大力金刚掌——掌出如佛怒。2d6+STR 钝击伤害，STR豁免失败击退10尺。"
+  },
+  {
+    "name": "金钟罩·铁壁铜墙",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "4*LVL+CON",
+        "desc": "金钟罩第十一关·铜墙铁壁",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 50,
+        "desc": "金钟护体，万刃难伤",
+        "target": "自身"
+      },
+      {
+        "type": "反伤",
+        "duration": 3,
+        "value": "1d6",
+        "desc": "金钟反震攻击者",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "金罗汉运转金钟罩第十一关——周身如覆金刚铁壁！获得4×LVL+CON护盾，减伤50%，反弹1d6伤害。持续3回合。冷却1回合。"
+  },
+  {
+    "name": "如来千佛手",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "value": 3,
+        "desc": "千手齐出三段连击",
+        "target": "敌方"
+      },
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "千手印法震晕目标",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 2,
+    "description": "金罗汉的佛门至强掌法——如来千佛手！掌影重重如千手观音降世。2d10+STR 光耀伤害，三段连击。CON豁免失败眩晕1回合。冷却2回合。"
+  },
+  {
+    "name": "逆练金钟罩·金刚破灭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "aoe_radius": 20,
+    "effects": [
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "逆练金钟之力爆发",
+        "target": "敌方"
+      },
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "金刚破灭震晕群敌",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "金罗汉逆练金钟罩的终极奥义——以自毁之势释放堪比十二关的破灭之力！4d10+STR 力场伤害，20尺范围。STR豁免失败击飞20尺+CON豁免失败眩晕1回合。冷却4回合。"
+  }
+]

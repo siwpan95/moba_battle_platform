@@ -1,0 +1,121 @@
+[
+  {
+    "name": "狐爪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "1d4中毒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "九尾妖狐的利爪撕裂，1d10+DEX 穿刺伤害，附带中毒1回合。"
+  },
+  {
+    "name": "魅惑众生",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "魅惑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "妲己一笑百媚生，六宫粉黛无颜色！2d8+DEX 力场伤害，未通过WIS豁免者魅惑2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "妖狐幻影",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐形"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "化为一阵香风消失无形。隐形1回合，速度翻倍2回合。"
+  },
+  {
+    "name": "倾国倾城",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "混乱"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "description": "倾国倾城的魅惑之力笼罩全场！4d6+DEX 力场范围伤害，混乱1回合，低血量斩杀。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  }
+]

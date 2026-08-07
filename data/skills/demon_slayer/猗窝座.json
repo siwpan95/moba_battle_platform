@@ -1,0 +1,128 @@
+[
+  {
+    "name": "破坏杀·罗针",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "罗针锁定目标弱点"
+      }
+    ],
+    "cooldown": 0,
+    "description": "猗窝座的破坏杀·罗针——感知对手斗气罗盘般锁定弱点。2d8+STR 钝击伤害，标记目标2回合(后续攻击对其+2命中)。",
+    "approx": true
+  },
+  {
+    "name": "破坏杀·空式",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "target": "敌方",
+        "value": 6,
+        "desc": "空式六连击如暴风骤雨"
+      }
+    ],
+    "cooldown": 1,
+    "description": "猗窝座以拳代刀的空式连打——六连拳击快如闪电。2d6+STR 钝击伤害，六段连击。",
+    "approx": true
+  },
+  {
+    "name": "破坏杀·鬼芯八重芯",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "aoe_radius": 10,
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "八重冲击波震退群敌"
+      },
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "冲击震荡眩晕"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 2,
+    "description": "猗窝座以破坏杀阵展开八重拳劲——冲击波层层叠加。3d8+STR 钝击伤害，10尺范围。CON豁免失败眩晕1回合。",
+    "approx": true
+  },
+  {
+    "name": "破坏杀·终式·青银乱残光",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "aoe_radius": 20,
+    "effects": [
+      {
+        "type": "即死",
+        "target": "敌方",
+        "dc_attr": "CON",
+        "threshold": "HP<20%",
+        "desc": "终极破坏粉碎濒死之敌"
+      },
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "毁灭之光轰飞一切"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "上弦之叁猗窝座的终极破坏杀——青色银光如修罗降世。4d12+STR 力场伤害，20尺范围。HP<20%目标CON豁免失败即死。冷却4回合。",
+    "approx": true
+  }
+]

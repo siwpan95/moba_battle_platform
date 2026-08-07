@@ -1,0 +1,97 @@
+[
+  {
+    "name": "天候棒·雷云",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "麻痹",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "雷击麻痹目标"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+INT 雷鸣伤害。",
+    "approx": true
+  },
+  {
+    "name": "幻雾",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "duration": 1,
+        "desc": "获得位移与闪避",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "制造幻雾，获得位移与闪避，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "风之回旋",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "2d8+INT 寒冷（风雪）伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "雷光枪",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "麻痹",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "雷击麻痹目标"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+INT 雷鸣伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 12
+  }
+]

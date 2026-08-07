@@ -1,0 +1,97 @@
+[
+  {
+    "name": "羁绊",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。恢复生命。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "target": "自身",
+        "value_formula": "1d8+WIS"
+      }
+    ]
+  },
+  {
+    "name": "幽魂",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "过载",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 2,
+    "description": "1d6+WIS 力场伤害。目标速度减半2回合。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "name": "降临",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。短距离传送/移动。影响整个战场。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      },
+      {
+        "type": "全图",
+        "desc": "影响整个战场",
+        "target": "敌方"
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

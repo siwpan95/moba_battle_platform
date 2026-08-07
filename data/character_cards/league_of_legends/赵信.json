@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1922",
+  "card_id": "league_of_legends:赵信",
+  "legacy_card_id": "LEA-1054",
   "hero": {
     "name": "赵信",
     "name_en": "Xin Zhao",
@@ -108,82 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "三重爪击",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "风斩电刺",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "闪电"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+STR 闪电伤害。"
-    },
-    {
-      "name": "无畏冲锋",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "位移",
-          "desc": "向目标方向移动30尺",
-          "value": 30,
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "1d8+STR 挥砍伤害。向目标方向移动30尺。"
-    },
-    {
-      "name": "新月护卫",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  }
 }

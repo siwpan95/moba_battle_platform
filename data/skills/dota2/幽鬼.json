@@ -1,0 +1,117 @@
+[
+  {
+    "name": "幽鬼之刃",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。目标速度减半2回合。短距离传送/移动。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "target": "敌方",
+        "duration": 2
+      },
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "target": "自身",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "name": "荒芜",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。暴击率提升2回合。无视护甲和魔抗。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "desc": "暴击率提升",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "PROF*5"
+      },
+      {
+        "type": "真实伤害",
+        "desc": "无视护甲和魔抗",
+        "target": "敌方"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "折射",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "受到伤害减半2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "desc": "受到伤害减半",
+        "target": "自身",
+        "duration": 2,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "鬼影重重",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "150尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "4d8+DEX 穿刺伤害。召唤一个镜像分身3回合。影响整个战场。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "target": "敌方",
+        "duration": 3
+      },
+      {
+        "type": "全图",
+        "desc": "影响整个战场",
+        "target": "敌方"
+      }
+    ]
+  }
+]

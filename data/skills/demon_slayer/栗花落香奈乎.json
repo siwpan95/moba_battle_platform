@@ -1,0 +1,116 @@
+[
+  {
+    "name": "花之呼吸·贰之型 御影梅",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "target": "敌方",
+        "value": 3,
+        "desc": "梅花三弄般的三段突刺"
+      }
+    ],
+    "cooldown": 0,
+    "description": "花之呼吸·御影梅——刀如梅花纷落的三连突刺。2d8+DEX 挥砍伤害，三段连击。",
+    "approx": true
+  },
+  {
+    "name": "花之呼吸·肆之型 红花衣",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 2,
+        "value": 20,
+        "desc": "花舞身法加速"
+      }
+    ],
+    "cooldown": 1,
+    "description": "栗花落香奈乎身着红衣般的弧形斩击——身如花瓣飘舞。2d6+DEX 挥砍伤害，速度+20尺持续2回合。",
+    "approx": true
+  },
+  {
+    "name": "花之呼吸·陆之型 涡桃",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "aoe_radius": 10,
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "涡旋斩击令敌眩晕"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "cooldown": 2,
+    "description": "涡桃——如桃花漩涡般的回旋斩。2d10+DEX 挥砍伤害，10尺范围。CON豁免失败眩晕1回合。",
+    "approx": true
+  },
+  {
+    "name": "花之呼吸·终之型 彼岸朱眼",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "朱眼捕捉要害一击必杀"
+      },
+      {
+        "type": "暴击强化",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "PROF*10",
+        "desc": "朱眼洞察力大幅提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "栗花落香奈乎开启彼岸朱眼——极限动态视力捕捉一切破绽。4d10+DEX 穿刺伤害，必定暴击，后续2回合暴击率+PROF×10%。冷却4回合。",
+    "approx": true
+  }
+]

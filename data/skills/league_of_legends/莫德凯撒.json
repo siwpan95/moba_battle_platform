@@ -1,0 +1,113 @@
+[
+  {
+    "name": "破灭之锤",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "命中单体敌人时伤害+50%",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "将夜陨巨锤砸向地面，迸发黯蚀能量。造成1d10+STR黯蚀伤害。若只命中一个目标，伤害提升50%。"
+  },
+  {
+    "name": "不坏之身",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "获得伤害吸收护盾",
+        "duration": 2,
+        "value_formula": "2*LVL+STR",
+        "target": "自身"
+      },
+      {
+        "type": "heal",
+        "desc": "护盾剩余量转化为生命值",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "将所受伤害的40%储存为亡灵护盾。造成2d8+STR挥砍伤害。激活护盾吸收伤害，持续2回合；再次激活可将剩余护盾量转化为生命值。"
+  },
+  {
+    "name": "断魂一扼",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "将敌人拖向自己15尺",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "从地底伸出幽冥铁爪，将范围内敌人拖向自己。造成1d8+STR黯蚀伤害。无视地形与护甲。STR豁免成功则不被拖拽。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "轮回绝境",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "将目标拖入死亡领域孤立1v1",
+        "duration": 3,
+        "target": "敌方"
+      },
+      {
+        "type": "buff",
+        "desc": "窃取目标10%核心属性",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "将一名敌人放逐至死亡领域，与外界完全隔绝。造成2d10+STR黯蚀伤害。领域内只有你与目标可以互相影响，持续3回合。领域持续期间窃取目标10%的核心属性。若在领域内击杀目标，永久保留窃取的属性。"
+  }
+]

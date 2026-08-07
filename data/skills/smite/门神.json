@@ -1,0 +1,124 @@
+[
+  {
+    "name": "镇宅",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "门神威严让邪祟胆寒却步",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "门神将手中钢鞭往地上一顿——轰然巨响中邪魔退散。1d10+STR 钝击伤害，减速1回合。"
+  },
+  {
+    "name": "神荼郁垒",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "门神双将合体护身",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "金甲护体刀枪不入",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "神荼郁垒二将合体——大唐名将化为门神，左持金锏右擎银鞭，百鬼莫近。护盾+减伤各2回合。"
+  },
+  {
+    "name": "驱邪",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "门神之威击碎邪祟防御",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "cleanse",
+        "desc": "正气凛然，驱散自身诅咒",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "门神挥鞭驱邪——桃木板上的朱砂符咒化作金光横扫战场。AOE破甲+自身净化。1d8+STR 光耀伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "万邪不侵",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "门神真身降临，邪魔望风而逃",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "immune",
+        "desc": "正气护体，免疫一切控制",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "门神显现真身——高达百丈的金甲神将，一脚踏下便令鬼门关为之震颤。AOE恐惧，免疫控制2回合。2d8+STR 光耀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

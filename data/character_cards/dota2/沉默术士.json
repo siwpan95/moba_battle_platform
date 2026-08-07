@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1424",
+  "card_id": "dota2:沉默术士",
   "hero": {
     "name": "沉默术士",
     "name_en": "Silencer",
@@ -111,28 +111,115 @@
   },
   "skills": [
     {
-      "name": "治疗波",
+      "name": "技能三",
       "key": "Q",
       "type": "法术",
-      "action": "动作",
-      "range": "30尺",
+      "action": "附赠动作",
+      "range": "自身",
       "target": "自身",
       "damage": {
         "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
-        "type": "光耀"
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "力场"
       },
       "effects": [
         {
-          "type": "治疗",
-          "value_formula": "1d8+WIS",
-          "desc": "恢复生命",
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
           "target": "自身"
         }
       ],
       "cooldown": 0,
-      "description": "恢复1d8+WIS生命值。"
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "48+WIS 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
+    },
+    {
+      "name": "辅助·治愈之光",
+      "key": "E",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "duration": 1,
+          "desc": "治疗",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "2d8+WIS 能量伤害。治疗",
+      "approx": true
+    },
+    {
+      "name": "辅助·守护结界",
+      "key": "R",
+      "type": "法术",
+      "action": "提供护盾",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "护盾",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "1d10+WIS 法术伤害。护盾",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1424"
 }

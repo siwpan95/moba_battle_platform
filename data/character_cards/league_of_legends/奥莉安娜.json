@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1944",
+  "card_id": "league_of_legends:奥莉安娜",
+  "legacy_card_id": "LEA-1076",
   "hero": {
     "name": "奥莉安娜",
     "name_en": "Orianna",
@@ -18,6 +19,7 @@
   "difficulty": 3,
   "playstyle_tags": [
     "AOE",
+    "护盾",
     "控制",
     "远程"
   ],
@@ -110,16 +112,102 @@
   },
   "skills": [
     {
-      "name": "火球术",
+      "name": "法师·焰爆术",
       "key": "Q",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "type": "burn",
+          "duration": 1,
+          "desc": "灼烧",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d10+INT 火焰伤害。灼烧",
+      "approx": true
+    },
+    {
+      "name": "法师·雷霆之矛",
+      "key": "W",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "type": "stun",
+          "duration": 1,
+          "desc": "麻痹",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "2d8+INT 雷电伤害。麻痹",
+      "approx": true
+    },
+    {
+      "name": "法师·奥术护盾",
+      "key": "E",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "护盾",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "1d10+INT 法术伤害。护盾",
+      "approx": true
+    },
+    {
+      "name": "火球术",
+      "key": "R",
       "type": "法术",
       "action": "动作",
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
+        "dice_count": 3,
+        "dice_size": 4,
         "type": "火焰"
       },
       "effects": [],
@@ -129,8 +217,9 @@
         "dc_formula": "8+PROF+INT",
         "on_save": "半伤"
       },
-      "cooldown": 0,
-      "description": "2d6+INT 火焰伤害，10尺半径范围。DEX豁免减半。"
+      "cooldown": 4,
+      "description": "2d6+INT 火焰伤害，10尺半径范围。DEX豁免减半。",
+      "approx": true
     }
   ]
 }

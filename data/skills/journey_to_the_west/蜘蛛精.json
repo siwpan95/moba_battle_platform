@@ -1,0 +1,127 @@
+[
+  {
+    "name": "蛛丝缠",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "蛛丝喷射缠绕，1d10+DEX 穿刺伤害，目标减速1回合。"
+  },
+  {
+    "name": "盘丝洞毒",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "1d6中毒"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "束缚"
+      }
+    ],
+    "cooldown": 1,
+    "description": "盘丝洞的剧毒蛛网！2d8+DEX 穿刺伤害，中毒2回合，未通过CON豁免者束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "七姐妹舞",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "短暂隐形"
+      }
+    ],
+    "cooldown": 2,
+    "description": "七姐妹的幻舞迷踪。速度翻倍2回合，短暂隐形1回合。"
+  },
+  {
+    "name": "蛛网大阵",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "束缚"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "2d4中毒"
+      }
+    ],
+    "cooldown": 4,
+    "description": "巨大蛛网笼罩全场！4d6+DEX 穿刺范围伤害，束缚2回合，中毒2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

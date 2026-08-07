@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2594",
+  "card_id": "three_body:智子",
+  "legacy_card_id": "THE-1009",
   "hero": {
     "name": "智子",
     "name_en": "Sophon",
@@ -190,7 +191,14 @@
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "量子态穿透防御"
+        }
+      ],
       "cooldown": 4,
       "description": "3d8+INT 力场伤害，覆盖一片区域。",
       "approx": true,

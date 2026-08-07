@@ -1,0 +1,120 @@
+[
+  {
+    "name": "命运之矢",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "目标移动速度减半，持续2轮"
+      }
+    ],
+    "cooldown": 0,
+    "description": "奥术能量在指尖凝聚，海诺释放出一枚魔法飞弹。1d8+INT 力场伤害。 目标移动速度减半，持续2轮。"
+  },
+  {
+    "name": "命定之途",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "desc": "使目标石化1轮（DEX豁免 DC=8+PROF+INT，豁免无效）"
+      }
+    ],
+    "cooldown": 1,
+    "description": "咒语的符文在空中闪烁，一道魔法阵轰然展开。2d6+INT 火焰伤害。 使目标石化1轮（DEX豁免 DC=8+PROF+INT，豁免无效）。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "命运轮转",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 3,
+        "value": 6,
+        "desc": "目标每回合6点持续伤害，持续3轮"
+      }
+    ],
+    "cooldown": 2,
+    "description": "空间扭曲，海诺的身影在奥术光辉中消失又重现。2d6+INT 光耀伤害。 目标每回合6点持续伤害，持续3轮。"
+  },
+  {
+    "name": "命定之终",
+    "key": "P",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "saving_throw": {
+          "attr": "DEX",
+          "dc_formula": "8+PROF+INT",
+          "on_save": "无效"
+        },
+        "desc": "使目标石化1轮（DEX豁免 DC=8+PROF+INT，豁免无效）"
+      }
+    ],
+    "cooldown": 4,
+    "description": "禁忌的咒文被咏唱，海诺释放出毁灭性的魔力洪流。4d6+INT 光耀伤害。 使目标石化1轮（DEX豁免 DC=8+PROF+INT，豁免无效）。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

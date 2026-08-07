@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2587",
+  "card_id": "three_body:史强",
+  "legacy_card_id": "THE-1002",
   "hero": {
     "name": "史强",
     "name_en": "Shi Qiang",
@@ -124,7 +125,20 @@
         "bonus_attr": "CON",
         "type": "钝击"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "制服",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "目标被制服"
+        },
+        {
+          "type": "制服",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "铁拳制服目标"
+        }
+      ],
       "cooldown": 0,
       "description": "2d10+CON 钝击伤害。",
       "approx": true
@@ -193,7 +207,20 @@
         "bonus_attr": "CON",
         "type": "钝击"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "制服",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "目标被制服"
+        },
+        {
+          "type": "眩晕",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "压制眩晕"
+        }
+      ],
       "cooldown": 4,
       "description": "3d10+CON 钝击伤害，覆盖一片区域。",
       "approx": true,

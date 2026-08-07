@@ -1,0 +1,103 @@
+[
+  {
+    "name": "钻心咒",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "duration": 1,
+        "desc": "目标受苦并减弱",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d6+INT 黯蚀伤害，使目标痛苦。",
+    "approx": true
+  },
+  {
+    "name": "魔杖连刺",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "魔杖冲击击退"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 穿刺伤害。",
+    "approx": true
+  },
+  {
+    "name": "狂笑突进",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "疯狂扰乱目标"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d8+DEX 穿刺伤害。",
+    "approx": true
+  },
+  {
+    "name": "癫狂风暴",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "终极魔法冲击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+INT 黯蚀伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

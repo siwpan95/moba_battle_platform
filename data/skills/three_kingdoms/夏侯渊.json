@@ -1,0 +1,122 @@
+[
+  {
+    "name": "神速箭",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "「典军校尉夏侯渊，三日五百，六日一千！」1d8+DEX 穿刺伤害，获得加速。"
+  },
+  {
+    "name": "三日五百",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "神速行军，出其不意！2d6+DEX 穿刺伤害，加速并破甲。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "妙才急袭",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "夏侯妙才的急行军！速度翻倍2回合，增伤1回合。"
+  },
+  {
+    "name": "虎步关右",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「虎步关右，所向无前！」3d8+DEX 穿刺范围伤害，加速2回合，低血额外伤害。",
+    "aoe_radius": 15
+  }
+]

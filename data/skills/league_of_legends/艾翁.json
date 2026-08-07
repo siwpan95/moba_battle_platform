@@ -1,0 +1,127 @@
+[
+  {
+    "name": "根深敌固",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "藤蔓缠绕禁锢",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "友军可点击突进至目标",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "揠苗助长",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "种下草丛创造视野遮蔽",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。"
+  },
+  {
+    "name": "种豆得瓜",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "种子护盾保护友军",
+        "duration": 2,
+        "value": 30,
+        "target": "自身"
+      },
+      {
+        "type": "slow",
+        "desc": "护盾到期爆炸减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "小菊!",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "召唤石像哨兵黛西协同作战",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "黛西第三击击飞",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。",
+    "aoe_radius": 15
+  }
+]

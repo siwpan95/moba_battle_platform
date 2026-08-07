@@ -1,0 +1,119 @@
+[
+  {
+    "name": "光明之触",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "光明滋润",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d6+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "巴德尔洒下光明——他是最受爱戴的光明之神，他的微笑本身就是治愈。1d8+WIS 光耀伤害，微回复。"
+  },
+  {
+    "name": "不死之身",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "万物皆发誓不伤害巴德尔",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "减伤",
+        "desc": "不死之身",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "巴德尔唤起不死之身——弗丽格让世间万物发誓不伤害他，除了那株不起眼的槲寄生。护盾+减伤各2回合。"
+  },
+  {
+    "name": "槲寄生之忆",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "槲寄生——唯一的弱点也成了武器",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "巴德尔掷出槲寄生之箭——那曾是他唯一的弱点，如今他将这弱点化为刺向敌人的矛。标记易伤2回合。1d8+WIS 穿刺伤害。"
+  },
+  {
+    "name": "光明重生",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "光明复活",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      },
+      {
+        "type": "致盲",
+        "desc": "巴德尔之光令敌人目不能视",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "巴德尔释放光明的全部力量——诸神黄昏后他将从冥界归来，带领幸存者开创崭新的世界。AOE致盲+大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

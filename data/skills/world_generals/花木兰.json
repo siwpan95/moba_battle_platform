@@ -1,0 +1,105 @@
+[
+  {
+    "name": "巾帼不让须眉",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "巾帼之勇：下次攻击+2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "谁说女子不如男！1d10+STR 挥砍伤害。花木兰以巾帼之勇鼓舞自身，下次攻击+2。"
+  },
+  {
+    "name": "万里赴戎机",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "bleed",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "每回合1d4流血"
+      }
+    ],
+    "cooldown": 1,
+    "description": "万里赴戎机，关山度若飞。2d8+STR 穿刺伤害，枪尖带血使目标流血2回合。"
+  },
+  {
+    "name": "关山度若飞",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "轻骑突进，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "朔气传金柝，寒光照铁衣。1d8+STR 钝击伤害。花木兰轻骑突进，速度翻倍2回合。"
+  },
+  {
+    "name": "将军百战死",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "百战之躯：伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "将军百战死，壮士十年归！2d10+STR 挥砍范围伤害。百战之躯增伤2回合，低血量目标伤害翻倍。"
+  }
+]

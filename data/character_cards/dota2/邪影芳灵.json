@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1464",
+  "card_id": "dota2:邪影芳灵",
   "hero": {
     "name": "邪影芳灵",
     "name_en": "Dark Willow",
@@ -111,29 +111,125 @@
   },
   "skills": [
     {
-      "name": "技能三",
-      "key": "E",
+      "name": "辅助·净化术",
+      "key": "Q",
       "type": "法术",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
+      "action": "移除负面",
+      "range": "远程",
+      "target": "友方",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
-        "type": "力场"
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "法术"
       },
       "effects": [
         {
-          "type": "加速",
-          "duration": 2,
-          "value": 15,
-          "desc": "速度+15尺",
-          "target": "自身"
+          "type": "cleanse",
+          "duration": 1,
+          "desc": "净化",
+          "target": "友方"
         }
       ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "1d4+WIS 法术伤害。净化",
+      "approx": true
+    },
+    {
+      "name": "辅助·群体治疗",
+      "key": "W",
+      "type": "混合",
+      "action": "治疗多人",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "duration": 1,
+          "desc": "群疗",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "2d6+WIS 能量伤害。群疗",
+      "approx": true
+    },
+    {
+      "name": "辅助·复活祈愿",
+      "key": "E",
+      "type": "法术",
+      "action": "复活倒下队友",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CHA",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "revive",
+          "duration": 1,
+          "desc": "复活",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CHA",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "无效"
+      },
       "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "description": "1d12+CHA 法术伤害。复活",
+      "approx": true
+    },
+    {
+      "name": "辅助·治愈之光",
+      "key": "R",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "duration": 1,
+          "desc": "治疗",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d8+WIS 能量伤害。治疗",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1464"
 }

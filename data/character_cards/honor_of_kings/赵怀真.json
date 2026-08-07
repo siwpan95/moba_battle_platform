@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1793",
+  "card_id": "honor_of_kings:赵怀真",
   "hero": {
     "name": "赵怀真",
     "name_en": "",
@@ -111,22 +111,125 @@
   },
   "skills": [
     {
-      "name": "旋风斩",
+      "name": "战士·致命连击",
       "key": "Q",
       "type": "物理",
-      "action": "动作",
+      "action": "高速连斩",
       "range": "近战",
-      "target": "范围",
+      "target": "单体",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "bleed",
+          "duration": 1,
+          "desc": "流血",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "3d6+DEX 挥砍伤害。流血",
+      "approx": true
+    },
+    {
+      "name": "战士·烈斩",
+      "key": "W",
+      "type": "物理",
+      "action": "强力近战斩击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
-      "aoe_radius": 5,
-      "cooldown": 0,
-      "description": "1d8+STR 挥砍伤害，命中5尺内所有敌人。"
+      "effects": [
+        {
+          "type": "bleed",
+          "duration": 1,
+          "desc": "流血",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "2d10+STR 挥砍伤害。流血",
+      "approx": true
+    },
+    {
+      "name": "战士·旋风斩",
+      "key": "E",
+      "type": "物理",
+      "action": "环绕横扫多个敌人",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "2d8+STR 挥砍伤害。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "战士·冲锋",
+      "key": "R",
+      "type": "物理",
+      "action": "突进并撞击",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "knockback",
+          "duration": 1,
+          "desc": "击退",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "1d12+STR 钝击伤害。击退",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1793"
 }

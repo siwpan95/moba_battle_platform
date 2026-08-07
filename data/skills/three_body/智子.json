@@ -1,0 +1,96 @@
+[
+  {
+    "name": "锁死科技",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "duration": 2,
+        "desc": "目标技能被干扰",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害，干扰目标。",
+    "approx": true
+  },
+  {
+    "name": "量子纠缠突袭",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。",
+    "approx": true
+  },
+  {
+    "name": "全视之眼",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "洞察",
+        "duration": 2,
+        "desc": "洞察战场并提升暴击",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "获得洞察，提升暴击，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "监视者暴临",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "量子态穿透防御"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+INT 力场伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

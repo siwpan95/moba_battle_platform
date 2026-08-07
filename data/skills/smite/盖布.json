@@ -1,0 +1,117 @@
+[
+  {
+    "name": "大地之拳",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "盖布挥出大地之拳——大地之神的拳头就是整片大陆的重量。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "地震",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "地震令敌人跌倒在地",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "盖布引发地震——他的笑声能让大地裂开，他的愤怒就是板块的碰撞。AOE击倒1回合。2d6+STR 钝击伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "绿洲",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "大地之力滋养",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "shield",
+        "desc": "岩层护甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+STR"
+      }
+    ],
+    "cooldown": 2,
+    "description": "盖布创造绿洲——他是大地的化身，尼罗河的肥沃来自他的祝福。回复+护盾。"
+  },
+  {
+    "name": "地裂",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "大地裂开直达冥界",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "被大地吞噬",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "盖布撕开大地——裂缝直达杜阿特冥界，任何坠入其中的生灵都再无归路。AOE恐惧+低血斩杀。2d8+STR 钝击伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

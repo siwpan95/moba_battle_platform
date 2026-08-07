@@ -1,0 +1,108 @@
+[
+  {
+    "name": "薙刀一闪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "巴御前的薙刀如风！1d8+DEX 穿刺伤害。女武者的薙刀远程挥斩精准无比。"
+  },
+  {
+    "name": "流鏑馬",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "流镝马精准射击，目标被束缚"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "流鏑馬——骑射之术！2d6+DEX 穿刺伤害，DEX豁免无效。马上精准射击使目标被束缚。"
+  },
+  {
+    "name": "女武者疾走",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "女武者骑射，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "女武者如风般疾走！1d8+DEX 穿刺伤害。巴御前展现骑射机动，速度翻倍2回合。"
+  },
+  {
+    "name": "宇治川の女傑",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "女傑之标：目标易伤"
+      },
+      {
+        "type": "aoe",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "宇治川箭岚：范围轰击"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "description": "宇治川的女傑降临！3d8+DEX 穿刺范围伤害，DEX豁免半伤。目标被标记为易伤2回合，箭岚席卷战场。"
+  }
+]

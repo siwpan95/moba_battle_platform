@@ -1,0 +1,124 @@
+[
+  {
+    "name": "噬根",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "毒龙之牙",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "尼德霍格啃噬世界树之根——无数岁月中他用毒牙咬噬着宇宙的根基。1d10+STR 穿刺伤害，dot 2回合。"
+  },
+  {
+    "name": "毒龙吐息",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "腐败毒息",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "毒雾弥漫",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "尼德霍格喷吐毒息——他的气息腐蚀万物，连世界树的根须也在他的吐息中腐朽。AOE毒伤+减速。2d6+STR 黯蚀伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "龙鳞",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "尼德霍格的鳞甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "万年老龙的坚韧",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "尼德霍格蜷缩龙躯——万年的龙鳞层层叠加，他的身躯本身就是最坚固的堡垒。护盾+减伤各2回合。"
+  },
+  {
+    "name": "诸神黄昏之翼",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "末日之龙的降临",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "腐蚀之触瓦解防御",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "尼德霍格展开末日之翼——诸神黄昏后他将从尼福尔海姆飞出，载着死者的尸骸覆盖天空。AOE恐惧+破甲2回合。2d8+STR 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

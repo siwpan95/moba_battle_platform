@@ -1,0 +1,113 @@
+[
+  {
+    "name": "钢拳",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。目标被推开10尺1回合。",
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "金属皮肤",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 1,
+    "description": "2d10+STR 钝击伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 15
+  },
+  {
+    "name": "地震打击",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d10+STR 力场伤害。目标被击飞1回合。",
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "钢力士",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 4,
+    "description": "4d10+STR 钝击伤害。免疫控制效果2回合。",
+    "effects": [
+      {
+        "type": "免疫控制",
+        "desc": "免疫控制效果",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 15
+  }
+]

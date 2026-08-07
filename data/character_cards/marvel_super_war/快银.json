@@ -1,8 +1,8 @@
 {
-  "card_id": "MAR-2112",
+  "card_id": "marvel_super_war:快银",
   "hero": {
     "name": "快银",
-    "name_en": "",
+    "name_en": "Quicksilver",
     "alias": "",
     "title": ""
   },
@@ -110,21 +110,125 @@
   },
   "skills": [
     {
-      "name": "暗杀",
+      "name": "刺客·影分身",
       "key": "Q",
       "type": "物理",
-      "action": "动作",
+      "action": "制造分身扰乱",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "confuse",
+          "duration": 1,
+          "desc": "混乱",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d6+DEX 挥砍伤害。混乱",
+      "approx": true
+    },
+    {
+      "name": "刺客·处决",
+      "key": "W",
+      "type": "真实",
+      "action": "对低血目标斩杀",
       "range": "近战",
       "target": "单体",
       "damage": {
         "dice_count": 2,
-        "dice_size": 6,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "execute",
+          "duration": 1,
+          "desc": "斩杀",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "3d8+DEX 挥砍伤害。斩杀",
+      "approx": true
+    },
+    {
+      "name": "刺客·暗影突袭",
+      "key": "E",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d6+DEX 穿刺伤害。若目标生命低于一半，伤害翻倍。"
+      "effects": [
+        {
+          "type": "vuln",
+          "duration": 1,
+          "desc": "易伤",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "2d8+DEX 穿刺伤害。易伤",
+      "approx": true
+    },
+    {
+      "name": "刺客·淬毒刃",
+      "key": "R",
+      "type": "物理",
+      "action": "涂抹剧毒",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "poison",
+          "duration": 1,
+          "desc": "中毒",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "1d6+DEX 穿刺伤害。中毒",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "MAR-2112"
 }

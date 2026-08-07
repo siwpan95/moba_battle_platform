@@ -1,0 +1,112 @@
+[
+  {
+    "name": "和平使者",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "架起海克斯步枪射出一发高速穿刺弹，对直线上的首个目标造成1d8+DEX穿刺伤害。子弹穿透后绽开为扇形弹幕，对后方敌人造成半额伤害。"
+  },
+  {
+    "name": "约德尔诱捕器",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "束缚禁锢，目标无法移动",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "vuln",
+        "desc": "被标记显形，下次对其攻击获得优势",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "description": "在战场上布置一个精密的约德尔捕兽夹。踩中的敌人被锁链束缚1回合，受到2d6+DEX穿刺伤害并被标记显形——下次对目标的攻击获得优势。DEX豁免成功则挣脱束缚但仍被标记。"
+  },
+  {
+    "name": "90口径绳网",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "强大的后座力使自身向后弹开15尺",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "发射一张重型绳网，命中后造成1d8+DEX穿刺伤害并使目标减速1回合。强大的后座力将凯特琳向后弹开15尺，可用于跨越地形或拉开距离。"
+  },
+  {
+    "name": "让子弹飞",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "锁定目标，获得真实视野",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "description": "锁定一名远距离的敌人，屏息凝神后射出一发完美的狙击弹，造成3d8+DEX穿刺伤害。此射击极难闪避，但其他敌人可以挺身而出替目标承受此伤害。DEX豁免成功则伤害减半。"
+  }
+]

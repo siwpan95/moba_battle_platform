@@ -1,0 +1,110 @@
+[
+  {
+    "name": "天威",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "玉皇大帝口宣天宪——一言即为天条，一字即为律法。1d8+INT 光耀伤害。"
+  },
+  {
+    "name": "天兵天将",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "天罗地网困住敌军",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "玉帝敕令天兵天将——十万天兵自南天门涌出，遮天蔽日。AOE减速1回合。2d6+INT 力场伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "金旨",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "玉帝御旨加身",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "immune",
+        "desc": "金旨护体，万法不侵",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "玉帝颁下金旨——天界最高权威的敕令，诸神莫敢不从。增伤2回合+免疫控制1回合。"
+  },
+  {
+    "name": "凌霄宝殿",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "凌霄宝殿的威严令一切臣服",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "天罚之下一切防御皆为虚妄",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "玉帝降临凌霄宝殿——天庭正中、三界之巅，一切生灵在此威严下唯有匍匐。AOE恐惧，破甲2回合。4d6+INT 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

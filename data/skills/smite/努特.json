@@ -1,0 +1,117 @@
+[
+  {
+    "name": "星空之躯",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "努特展开星空之躯——天空女神的身躯就是整片星海。1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "天穹庇护",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "天穹为盾",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "星辰祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "努特降下天穹庇护——她的身躯拱起在天与地之间，是万物最古老的保护伞。护盾+增伤各2回合。"
+  },
+  {
+    "name": "流星雨",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "流星坠落的伤痕",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "努特洒下流星雨——每天黄昏她吞噬太阳，每天黎明她又将太阳重生。AOE dot 2回合。2d6+WIS 光耀伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "银河降临",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "银河之美令人沉醉",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "星辰之力治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "努特召唤银河降临——亿万星辰从天穹之躯上抖落，铺成一道跨越战场的光河。AOE魅惑+大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "name": "青囊术",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 1,
+        "desc": "回复生命"
+      }
+    ],
+    "cooldown": 0,
+    "description": "青囊书中的医术，1d8+WIS 光耀伤害，回复友方生命。"
+  },
+  {
+    "name": "五禽戏",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 2,
+        "desc": "持续回复"
+      },
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 1,
+        "desc": "伤害+20%"
+      }
+    ],
+    "cooldown": 1,
+    "description": "五禽戏强身健体！2d6+WIS 光耀伤害，友方持续回复2回合并增伤。"
+  },
+  {
+    "name": "麻沸散",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "target": "友方",
+        "duration": 1,
+        "desc": "净化所有负面"
+      },
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 1,
+        "desc": "大量回复"
+      }
+    ],
+    "cooldown": 2,
+    "description": "麻沸散麻醉后救治。净化友方所有负面效果并大量回复生命。"
+  },
+  {
+    "name": "神医济世",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 2,
+        "desc": "巨量回复"
+      },
+      {
+        "type": "cleanse",
+        "target": "友方",
+        "duration": 1,
+        "desc": "净化"
+      },
+      {
+        "type": "reduce",
+        "target": "友方",
+        "duration": 2,
+        "desc": "减伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「华佗再世，妙手回春！」3d8+WIS 光耀范围伤害，友方巨量回复、净化、减伤2回合。",
+    "aoe_radius": 20
+  }
+]

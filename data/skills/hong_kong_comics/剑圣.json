@@ -1,0 +1,125 @@
+[
+  {
+    "name": "圣灵剑法·剑一",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 12,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "desc": "圣灵剑气无坚不摧，无视2点护甲",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "圣灵剑法起手式——一剑破万法。1d12+DEX 挥砍伤害，无视2点护甲加值。"
+  },
+  {
+    "name": "圣灵剑法·剑十八·无情剑",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "20尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "流血",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "无情剑气造成的伤口极难愈合",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "圣灵剑法第十八式——无情之剑，斩断七情。2d10+DEX 挥砍伤害，20尺剑气外放。DEX豁免失败流血2回合(每回合1d6)。冷却1回合。"
+  },
+  {
+    "name": "元神出窍·剑意领域",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 2,
+        "value_formula": "PROF*12",
+        "desc": "剑意通天，暴击率大幅提升",
+        "target": "自身"
+      },
+      {
+        "type": "减速",
+        "duration": 1,
+        "desc": "剑意领域内敌人行动迟缓",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "剑圣以元神出窍展开剑意领域——15尺内化为剑之世界。暴击率+PROF×12%，领域内敌人减速1回合。持续2回合。冷却2回合。"
+  },
+  {
+    "name": "剑廿三·时空凝滞",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "麻痹",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "时空凝滞——元神一剑冻结万物",
+        "target": "敌方"
+      },
+      {
+        "type": "即死",
+        "dc_attr": "CON",
+        "threshold": "HP<25%",
+        "desc": "剑廿三直斩灵魂，濒死之敌魂飞魄散",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "剑圣毕生剑道之极致——元神出窍、时空为之凝滞的终极一剑！5d10+DEX 力场伤害，25尺范围。WIS豁免失败麻痹2回合。HP<25%目标CON豁免失败即死。冷却4回合。"
+  }
+]

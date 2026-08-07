@@ -1,0 +1,124 @@
+[
+  {
+    "name": "吞噬",
+    "key": "Q",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "吞噬获得攻击力叠加",
+        "target": "自身"
+      },
+      {
+        "type": "lifesteal",
+        "desc": "吞噬回复生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "你如暗影般突袭目标，匕首精准刺向要害。若目标孤立无援，刀刃将寻得致命破绽。"
+  },
+  {
+    "name": "淬毒飞刃",
+    "key": "W",
+    "type": "物理",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "毒素造成每回合1d6持续伤害，持续2回合",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "毒素减缓目标行动",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "你掷出淬毒的飞刃，毒素沿伤口蔓延。目标若体质不够强韧，将持续受到腐蚀。"
+  },
+  {
+    "name": "暴食突进",
+    "key": "E",
+    "type": "物理",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "位移至目标身后",
+        "target": "自身"
+      },
+      {
+        "type": "invis",
+        "desc": "攻击后短暂隐形",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "range": "远程",
+    "target": "单体",
+    "action": "附赠动作",
+    "description": "你的身影一闪即逝，再次出现时已至目标身后。残影迷惑敌人，为你争取片刻隐匿。"
+  },
+  {
+    "name": "饿鬼道",
+    "key": "R",
+    "type": "物理",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "暴食形态：攻击力翻倍",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "dot",
+        "desc": "胃酸喷溅造成腐蚀",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "range": "近战",
+    "target": "单体",
+    "action": "动作",
+    "description": "你展开死亡莲华，刀刃如花瓣般环绕飞舞。敌人只看到残影，而你已消失在暗影之中。"
+  }
+]

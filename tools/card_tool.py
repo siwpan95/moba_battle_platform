@@ -44,6 +44,8 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 # 游戏注册表 / 共享工具（单一真相）从 core.config 导入
 from core.config import REGISTRY_BY_ID, REGISTRY_BY_DISPLAY, detect_hero_file
+from core import schema
+from core.loader import iter_card_files
 
 INPUT_JSON = os.path.join(PROJECT_ROOT, "data", "analysis", "all_heroes_unified.json")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "character_cards")
@@ -61,10 +63,16 @@ def safe_filename(name: str) -> str:
 
 
 def _skill_entry_count(game_id: str) -> int:
-    """返回 skills/<game_id>.json 的英雄技能条目数；无文件/解析失败返回 -1。
+    """返回某游戏技能条目数；优先统计技能池目录 data/skills/<game_id>/ 的文件数，
+    若不存在则回退旧大文件 skills/<game_id>.json。无数据返回 -1。
 
     占位游戏技能文件为 {}（空），返回 0 —— 运行时回退通用模板，属预期。
     """
+    # 优先技能池目录
+    pool = os.path.join(SKILLS_DIR, game_id)
+    if os.path.isdir(pool):
+        return len([fn for fn in os.listdir(pool) if fn.endswith(".json")])
+    # 回退旧大文件
     p = os.path.join(SKILLS_DIR, f"{game_id}.json")
     if not os.path.exists(p):
         return -1
@@ -97,23 +105,17 @@ def load_unified_heroes() -> list:
 
 
 def load_existing_cards() -> Dict[str, list]:
-    """加载已有角色卡，按游戏分组返回"""
+    """加载已有角色卡，按游戏分组返回（统一使用 core.loader.iter_card_files）。"""
     cards_by_game = defaultdict(list)
     if not os.path.isdir(OUTPUT_DIR):
         return cards_by_game
-    for game_dir in os.listdir(OUTPUT_DIR):
-        game_path = os.path.join(OUTPUT_DIR, game_dir)
-        if not os.path.isdir(game_path) or game_dir.startswith("_"):
+    for filepath, game_dir, _stem in iter_card_files(OUTPUT_DIR):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                card = json.load(f)
+            cards_by_game[game_dir].append(card)
+        except Exception:
             continue
-        for filename in os.listdir(game_path):
-            if filename.endswith(".json"):
-                filepath = os.path.join(game_path, filename)
-                try:
-                    with open(filepath, "r", encoding="utf-8") as f:
-                        card = json.load(f)
-                    cards_by_game[game_dir].append(card)
-                except Exception:
-                    continue
     return cards_by_game
 
 
@@ -289,6 +291,15 @@ def cmd_generate(game_filter: Optional[str] = None):
         count = 0
         for idx, hero in enumerate(game_heroes):
             card = generate_character_card(hero, total + idx + 1000)
+
+            # 契约校验：fail-fast，拒绝写盘（ADR-005）
+            violations = schema.validate_card(card)
+            if violations:
+                hero_name = hero.get("name", f"hero_{idx}")
+                print(f"  ✗ 契约校验失败 [{game_name}] {hero_name}: {'; '.join(violations)}", file=sys.stderr)
+                print(f"    拒绝写盘，跳过该英雄。请检查 get_skills() 返回值或模板数据。", file=sys.stderr)
+                continue
+
             hero_filename = safe_filename(hero.get("name", f"hero_{idx}"))
             filepath = os.path.join(game_dir, f"{hero_filename}.json")
             with open(filepath, "w", encoding="utf-8") as f:

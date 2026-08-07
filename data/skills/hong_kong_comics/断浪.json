@@ -1,0 +1,125 @@
+[
+  {
+    "name": "火麟剑·邪火焚天",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "duration": 2,
+        "dmg_per_turn": "1d4",
+        "desc": "火麟剑邪焰持续灼烧伤口",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "南麟剑首断家祖传——火麟剑出鞘邪火焚天。1d10+DEX 火焰伤害，后续2回合每回合1d4灼烧伤害。"
+  },
+  {
+    "name": "蚀日剑法·暗无天日",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "蚀日剑气遮蔽视野，目标攻击命中取劣势",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "断浪独创蚀日剑法——黑日降临万象俱寂。2d8+DEX 黯蚀伤害，CON豁免失败致盲1回合（攻击取劣势）。冷却1回合。"
+  },
+  {
+    "name": "火麟劲·血邪共鸣",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*10",
+        "desc": "火麟邪力灌注，暴击率飙升",
+        "target": "自身"
+      },
+      {
+        "type": "狂暴",
+        "duration": 3,
+        "desc": "攻速+50%，每次攻击附加1d6火焰伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "断浪与火麟剑心血共鸣——剑即是人，人即是剑。暴击率+PROF×10%，攻速+50%附加1d6火焰。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "双龙元·破神诀",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "双龙元之力轰飞一切",
+        "target": "敌方"
+      },
+      {
+        "type": "吸血",
+        "value": 40,
+        "desc": "邪恶魔力吸取生命",
+        "target": "自身"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "断浪吞服两颗龙元后的终极形态——半人半魔的破神之力。5d10+DEX 黯蚀伤害，25尺范围。STR豁免失败击飞20尺。造成伤害40%转化为治疗。冷却4回合。"
+  }
+]

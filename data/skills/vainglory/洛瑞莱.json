@@ -1,0 +1,84 @@
+[
+  {
+    "name": "水之祝福",
+    "key": "A",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。恢复生命1回合。",
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "value_formula": "1d8+WIS",
+        "target": "友方",
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "name": "水墙",
+    "key": "B",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。获得临时生命2回合。",
+    "effects": [
+      {
+        "type": "护盾",
+        "desc": "获得临时生命",
+        "duration": 2,
+        "value_formula": "2*LVL+CHA",
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "深渊",
+    "key": "U",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。目标失去动作1回合。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

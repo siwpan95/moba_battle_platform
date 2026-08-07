@@ -1,0 +1,118 @@
+[
+  {
+    "name": "雷神之锤",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 1,
+        "desc": "下次攻击+2伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。托尔挥动妙尔尼尔，每次命中积蓄雷电之力，下回合增伤。",
+    "approx": true
+  },
+  {
+    "name": "闪电猛击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被闪电麻痹"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 雷鸣伤害。托尔以妙尔尼尔召唤闪电从天而降，减速目标1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "战车冲锋",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "直线突进20尺"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。托尔驾驭由山羊拉动的战车冲锋，突进并撞击目标。",
+    "approx": true
+  },
+  {
+    "name": "阿斯加德之怒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被雷霆震慑"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲-3"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 雷鸣伤害。托尔释放全部神力，雷霆万钧。眩晕1回合+破甲2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  }
+]

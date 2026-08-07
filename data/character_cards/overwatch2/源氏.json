@@ -1,5 +1,5 @@
 {
-  "card_id": "OVE-2366",
+  "card_id": "overwatch2:源氏",
   "hero": {
     "name": "源氏",
     "name_en": "Genji",
@@ -111,102 +111,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "源氏·烟雾遁走",
-      "key": "Q",
-      "type": "混合",
-      "action": "释放烟雾消失",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 4,
-        "bonus_attr": "DEX",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "target": "自身",
-          "kind": "invis",
-          "desc": "隐身"
-        }
-      ],
-      "cooldown": 8,
-      "description": "释放烟雾消失（自身）。隐身",
-      "approx": true
-    },
-    {
-      "name": "源氏·致命标记",
-      "key": "W",
-      "type": "物理",
-      "action": "标记目标增伤",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "mark",
-          "desc": "标记"
-        }
-      ],
-      "cooldown": 5,
-      "description": "标记目标增伤（单体）。标记",
-      "approx": true
-    },
-    {
-      "name": "源氏·影分身",
-      "key": "E",
-      "type": "物理",
-      "action": "制造分身扰乱",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "confuse",
-          "desc": "混乱"
-        }
-      ],
-      "cooldown": 7,
-      "description": "制造分身扰乱（区域）。混乱",
-      "approx": true
-    },
-    {
-      "name": "源氏·处决",
-      "key": "R",
-      "type": "真实",
-      "action": "对低血目标斩杀",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "execute",
-          "desc": "斩杀"
-        }
-      ],
-      "cooldown": 9,
-      "description": "对低血目标斩杀（单体）。斩杀",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "OVE-2366"
 }

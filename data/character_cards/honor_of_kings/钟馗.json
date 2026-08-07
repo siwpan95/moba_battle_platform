@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1827",
+  "card_id": "honor_of_kings:钟馗",
   "hero": {
     "name": "钟馗",
     "name_en": "",
@@ -110,29 +110,125 @@
   },
   "skills": [
     {
-      "name": "技能三",
-      "key": "E",
+      "name": "法师·焰爆术",
+      "key": "Q",
       "type": "法术",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
-        "type": "力场"
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
       },
       "effects": [
         {
-          "type": "加速",
-          "duration": 2,
-          "value": 15,
-          "desc": "速度+15尺",
+          "type": "burn",
+          "duration": 1,
+          "desc": "灼烧",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d10+INT 火焰伤害。灼烧",
+      "approx": true
+    },
+    {
+      "name": "法师·雷霆之矛",
+      "key": "W",
+      "type": "法术",
+      "action": "降下闪电",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "雷电"
+      },
+      "effects": [
+        {
+          "type": "stun",
+          "duration": 1,
+          "desc": "麻痹",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "2d8+INT 雷电伤害。麻痹",
+      "approx": true
+    },
+    {
+      "name": "法师·奥术护盾",
+      "key": "E",
+      "type": "法术",
+      "action": "凝结护盾",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "护盾",
           "target": "自身"
         }
       ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
       "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "description": "1d10+INT 法术伤害。护盾",
+      "approx": true
+    },
+    {
+      "name": "法师·奥能飞弹",
+      "key": "R",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "force",
+          "duration": 1,
+          "desc": "力场伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "3d6+INT 法术伤害。力场伤害",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1827"
 }

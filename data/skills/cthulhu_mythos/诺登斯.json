@@ -1,0 +1,116 @@
+[
+  {
+    "name": "深渊之光",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。诺登斯以深渊之主的光辉驱散黑暗。",
+    "approx": true
+  },
+  {
+    "name": "梦境治愈",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "梦境回复2d8+WIS",
+        "value": "2d8+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。诺登斯以幻梦境之主的力量治愈友方。回复2d8+WIS。",
+    "approx": true
+  },
+  {
+    "name": "夜魇驱散",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "夜魇屏障",
+        "value": "1d10+WIS"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "duration": 0,
+        "desc": "驱散负面"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。诺登斯驱散奈亚拉托提普的夜魇。护盾2回合+净化。",
+    "approx": true
+  },
+  {
+    "name": "幻梦境之主",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "全体回复3d8+WIS",
+        "value": "3d8+WIS"
+      },
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 2,
+        "desc": "免疫恐惧与控制"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。诺登斯以幻梦境之主的全能力量庇护众生。全体回复+免疫恐惧与控制2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

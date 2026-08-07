@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1981",
+  "card_id": "league_of_legends:亚托克斯",
+  "legacy_card_id": "LEA-1113",
   "hero": {
     "name": "亚托克斯",
     "name_en": "Aatrox",
@@ -108,24 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能二",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "28+STR 伤害。冷却1回合。"
-    }
-  ]
+  }
 }

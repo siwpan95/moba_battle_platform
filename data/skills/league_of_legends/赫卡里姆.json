@@ -1,0 +1,132 @@
+[
+  {
+    "name": "暴走",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "连续使用伤害叠加",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "恐惧之灵",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "灵焰光环灼烧周围敌人",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "吸取生命回复自身",
+        "value": 10,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。",
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "毁灭冲锋",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "蓄力冲锋速度飙升",
+        "target": "自身"
+      },
+      {
+        "type": "control",
+        "desc": "撞击击退敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "暗影冲击",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "幽灵骑兵冲锋恐惧所有路径敌人",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "率领幽灵骑兵长距离冲锋",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "name": "因幡白兔",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "大国主召唤因幡白兔——这只神话中的白兔曾为他牵线搭桥，如今它跳跃间带起神秘之力。1d8+WIS 力场伤害。"
+  },
+  {
+    "name": "建国之力",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "大国主筑起护国壁垒",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "建国之志鼓舞全军",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "大国主以建国之力守护己身——这位出云国的缔造者将整片国土的灵气凝聚为壁垒。护盾+增伤各2回合。"
+  },
+  {
+    "name": "医疗之术",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "大国主的医疗神术",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d6+WIS"
+      },
+      {
+        "type": "cleanse",
+        "desc": "驱散伤病与诅咒",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "大国主施展医疗之术——他曾在稻羽救治受伤的白兔，医术神妙通神。回复3d6+WIS+净化。"
+  },
+  {
+    "name": "出云大社",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "出云大社的神圣灵气",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      },
+      {
+        "type": "束缚",
+        "desc": "八百万神在此聚会，无人可逃",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "大国主召唤出云大社降临——每年十月八百万神齐聚此处，任何妖邪在神社前都无处遁形。AOE束缚，大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

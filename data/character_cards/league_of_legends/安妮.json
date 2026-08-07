@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1869",
+  "card_id": "league_of_legends:安妮",
+  "legacy_card_id": "LEA-1001",
   "hero": {
     "name": "安妮",
     "name_en": "Annie",
@@ -108,76 +109,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "碎裂之火",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 火焰伤害。"
-    },
-    {
-      "name": "焚烧",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 火焰伤害。",
-      "aoe_radius": 15
-    },
-    {
-      "name": "熔岩护盾",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "提伯斯之怒",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  }
 }

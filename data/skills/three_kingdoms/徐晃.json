@@ -1,0 +1,111 @@
+[
+  {
+    "name": "长驱直入",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "长驱直入，势不可挡！1d8+DEX 穿刺伤害，获得加速。"
+  },
+  {
+    "name": "破围箭",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "解樊城之围的精准射击！2d6+DEX 穿刺伤害，破甲1回合。"
+  },
+  {
+    "name": "周亚夫之风",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 1,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "受伤减半"
+      }
+    ],
+    "cooldown": 2,
+    "description": "曹操赞其有「周亚夫之风」。获得护盾与减伤各1回合。"
+  },
+  {
+    "name": "大斧将军",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "大幅破甲"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "徐晃持大斧亲临前线！3d8+DEX 挥砍范围伤害，大幅破甲2回合，低血额外伤害。",
+    "aoe_radius": 15
+  }
+]

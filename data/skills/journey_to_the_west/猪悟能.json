@@ -1,0 +1,112 @@
+[
+  {
+    "name": "九齿钉耙",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "九齿钉耙沉重一击，1d10+STR 挥砍伤害，目标减速1回合。"
+  },
+  {
+    "name": "天蓬护体",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复生命"
+      }
+    ],
+    "cooldown": 1,
+    "description": "昔日天蓬元帅的仙体护身。获得护盾2回合，并回复生命。"
+  },
+  {
+    "name": "倒打一耙",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reflect",
+        "target": "自身",
+        "duration": 2,
+        "desc": "反弹伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "看似逃跑，实则反击！1d8+STR 钝击范围伤害，反弹伤害2回合。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "净坛使者",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 2,
+        "desc": "持续回复"
+      }
+    ],
+    "cooldown": 4,
+    "description": "净坛使者的饕餮之力！2d8+STR 钝击范围伤害，减伤2回合并持续回复。",
+    "aoe_radius": 15
+  }
+]

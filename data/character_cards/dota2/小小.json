@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1369",
+  "card_id": "dota2:小小",
   "hero": {
     "name": "小小",
     "name_en": "Tiny",
@@ -111,73 +111,15 @@
   },
   "skills": [
     {
-      "name": "战士·烈斩",
-      "key": "Q",
-      "type": "物理",
-      "action": "强力近战斩击",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "bleed",
-          "duration": 1,
-          "desc": "流血",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 3,
-      "description": "2d10+STR 挥砍伤害。流血"
-    },
-    {
-      "name": "战士·旋风斩",
-      "key": "W",
-      "type": "物理",
-      "action": "环绕横扫多个敌人",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "aoe",
-          "duration": 1,
-          "desc": "范围伤害",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "2d8+STR 挥砍伤害。范围伤害"
-    },
-    {
       "name": "战士·冲锋",
-      "key": "E",
+      "key": "Q",
       "type": "物理",
       "action": "突进并撞击",
       "range": "近战",
       "target": "单体",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 12,
+        "dice_count": 2,
+        "dice_size": 6,
         "bonus_attr": "STR",
         "type": "钝击"
       },
@@ -194,182 +136,9 @@
         "dc_formula": "8+PROF+STR",
         "on_save": "无效"
       },
-      "cooldown": 5,
-      "description": "1d12+STR 钝击伤害。击退"
-    },
-    {
-      "name": "战士·破甲击",
-      "key": "R",
-      "type": "物理",
-      "action": "削弱目标防御",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "sunder",
-          "duration": 1,
-          "desc": "降防",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 4,
-      "description": "2d6+STR 穿刺伤害。降防"
-    },
-    {
-      "name": "战士·战吼",
-      "key": "Q",
-      "type": "混合",
-      "action": "鼓舞自身与队友",
-      "range": "自身",
-      "target": "友方",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "CHA",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "type": "buff",
-          "duration": 1,
-          "desc": "攻击提升",
-          "target": "友方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "CHA",
-        "dc_formula": "8+PROF+CHA",
-        "on_save": "无效"
-      },
-      "cooldown": 8,
-      "description": "1d6+CHA 能量伤害。攻击提升"
-    },
-    {
-      "name": "战士·致命连击",
-      "key": "W",
-      "type": "物理",
-      "action": "高速连斩",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "bleed",
-          "duration": 1,
-          "desc": "流血",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 7,
-      "description": "3d6+DEX 挥砍伤害。流血"
-    },
-    {
-      "name": "战士·烈斩",
-      "key": "E",
-      "type": "物理",
-      "action": "强力近战斩击",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "bleed",
-          "duration": 1,
-          "desc": "流血",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 3,
-      "description": "2d10+STR 挥砍伤害。流血"
-    },
-    {
-      "name": "战士·旋风斩",
-      "key": "R",
-      "type": "物理",
-      "action": "环绕横扫多个敌人",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "aoe",
-          "duration": 1,
-          "desc": "范围伤害",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "2d8+STR 挥砍伤害。范围伤害"
-    },
-    {
-      "name": "战士·冲锋",
-      "key": "Q",
-      "type": "物理",
-      "action": "突进并撞击",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "type": "knockback",
-          "duration": 1,
-          "desc": "击退",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 5,
-      "description": "1d12+STR 钝击伤害。击退"
+      "cooldown": 0,
+      "description": "1d12+STR 钝击伤害。击退",
+      "approx": true
     },
     {
       "name": "战士·破甲击",
@@ -397,8 +166,9 @@
         "dc_formula": "8+PROF+STR",
         "on_save": "无效"
       },
-      "cooldown": 4,
-      "description": "2d6+STR 穿刺伤害。降防"
+      "cooldown": 1,
+      "description": "2d6+STR 穿刺伤害。降防",
+      "approx": true
     },
     {
       "name": "战士·战吼",
@@ -408,7 +178,7 @@
       "range": "自身",
       "target": "友方",
       "damage": {
-        "dice_count": 1,
+        "dice_count": 2,
         "dice_size": 6,
         "bonus_attr": "CHA",
         "type": "能量"
@@ -426,8 +196,9 @@
         "dc_formula": "8+PROF+CHA",
         "on_save": "无效"
       },
-      "cooldown": 8,
-      "description": "1d6+CHA 能量伤害。攻击提升"
+      "cooldown": 2,
+      "description": "1d6+CHA 能量伤害。攻击提升",
+      "approx": true
     },
     {
       "name": "战士·致命连击",
@@ -437,7 +208,7 @@
       "range": "近战",
       "target": "单体",
       "damage": {
-        "dice_count": 3,
+        "dice_count": 2,
         "dice_size": 6,
         "bonus_attr": "DEX",
         "type": "挥砍"
@@ -455,8 +226,10 @@
         "dc_formula": "8+PROF+DEX",
         "on_save": "无效"
       },
-      "cooldown": 7,
-      "description": "3d6+DEX 挥砍伤害。流血"
+      "cooldown": 4,
+      "description": "3d6+DEX 挥砍伤害。流血",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1369"
 }

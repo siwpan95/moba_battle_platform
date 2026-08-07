@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2422",
+  "card_id": "pokemon_unite:路卡利欧",
   "hero": {
     "name": "路卡利欧",
     "name_en": "Lucario",
@@ -109,74 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "彗星拳",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+STR 钝击伤害。"
-    },
-    {
-      "name": "增强拳/骨棒",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+STR 钝击伤害。"
-    },
-    {
-      "name": "近身战",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "波导弹",
-      "key": "U",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "POK-2422"
 }

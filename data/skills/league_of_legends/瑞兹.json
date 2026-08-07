@@ -1,0 +1,121 @@
+[
+  {
+    "name": "超负荷",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "消耗全部符文充能，每层+1d4伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "发射一道纯粹的奥术脉冲，造成1d8+INT闪电伤害。消耗所有符文充能层数，每层额外+1d4伤害。符文充能由W/E技能叠加，最多2层。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "符文禁锢",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "禁锢目标，无法移动",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "buff",
+        "desc": "获得一层符文充能",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "以奥术符文瞬间禁锢一名敌人。造成2d6+INT闪电伤害，目标无法移动1回合。获得一层符文充能。CON豁免成功则免疫禁锢。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "法术涌动",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "标记目标，使其受到的下次技能伤害翻倍",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "buff",
+        "desc": "获得一层符文充能",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "释放一道弹射的奥术能量球，在敌人之间传播。造成2d6+INT闪电伤害。获得一层符文充能。被标记的目标受到的下一个技能伤害翻倍并扩散法术涌动至周围敌人。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "曲境折跃",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "开启传送门，将自身及周围友军传送至远处",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "展开一道通往远方的奥术传送门，引导1回合后将自身及15尺内所有友军传送至目标位置。造成4d6+INT闪电伤害（对传送落点周围敌人）。引导期间受硬控即中断。"
+  }
+]

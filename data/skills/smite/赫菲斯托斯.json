@@ -1,0 +1,123 @@
+[
+  {
+    "name": "神匠之锤",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "锻造之火灼烧",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "赫菲斯托斯挥动神匠之锤——奥林匹斯的铁匠之神，他的每一锤都迸出火山熔岩。1d8+INT 火焰伤害，dot 1回合。"
+  },
+  {
+    "name": "火山之怒",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "岩浆喷涌",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赫菲斯托斯唤醒火山——埃特纳火山在他的怒火中喷发，熔岩流吞没一切。AOE dot 2回合。2d6+INT 火焰伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "神造武装",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "锻造之神亲手打造的盔甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "buff",
+        "desc": "神器加持",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赫菲斯托斯穿上神造武装——他为诸神打造的铠甲连宙斯的雷霆也无法击穿。护盾+增伤各2回合。"
+  },
+  {
+    "name": "泰坦之笼",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "黄金囚笼锁住一切",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "烈焰熔化防御",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "赫菲斯托斯掷出黄金囚笼——他曾用一张金网将阿瑞斯与阿佛洛狄忒赤身裸体地困住示众。AOE束缚+破甲。4d6+INT 火焰伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

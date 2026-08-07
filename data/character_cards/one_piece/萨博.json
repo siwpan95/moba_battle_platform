@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2270",
+  "card_id": "one_piece:萨博",
   "hero": {
     "name": "萨博",
     "name_en": "Sabo",
@@ -109,80 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "龙爪拳·熊",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d10+STR 挥砍伤害。",
-      "approx": true
-    },
-    {
-      "name": "龙爪拳·狼",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+STR 挥砍伤害。",
-      "approx": true
-    },
-    {
-      "name": "燃烧之龙",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d10+STR 火焰伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 8
-    },
-    {
-      "name": "龙之爪·升龙",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d12+STR 挥砍伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 10
-    }
-  ]
+  "legacy_card_id": "ONE-2270"
 }

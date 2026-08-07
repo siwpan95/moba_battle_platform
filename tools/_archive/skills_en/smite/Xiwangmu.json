@@ -1,0 +1,126 @@
+[
+  {
+    "name": "蟠桃",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "蟠桃香气沁人心脾",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d6+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "西王母摘下一枚蟠桃——三千年一熟的仙果，闻香即可延年。1d8+WIS 光耀伤害，回复1d6+WIS。"
+  },
+  {
+    "name": "仙鹤",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "仙鹤衔来不死药",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "cleanse",
+        "desc": "仙气洗涤，百毒不侵",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 1,
+    "description": "西王母召来青鸾仙鹤——这些灵禽从瑶池衔来不死仙药与甘露。回复2d8+WIS+净化。"
+  },
+  {
+    "name": "长生诀",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "长生不老之气护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "瑶池仙气增强灵力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "西王母运转长生诀——她是掌管不死药的至高女神，周身仙气流转。护盾+增伤各2回合。"
+  },
+  {
+    "name": "瑶池仙境",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "瑶池圣水治愈一切",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "4d8+WIS"
+      },
+      {
+        "type": "魅惑",
+        "desc": "仙境美景令敌人乐不思战",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "西王母召唤瑶池仙境——琼浆玉液化作漫天甘露洒落，令敌人迷失在永恒的美好幻境中。AOE魅惑，大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

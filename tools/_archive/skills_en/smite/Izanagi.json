@@ -1,0 +1,111 @@
+[
+  {
+    "name": "天沼矛",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "伊邪那岐举起天沼矛——他用这把神矛搅动原始海洋，创造了日本列岛。1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "国生み",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "大地隆起，敌人站不稳",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊邪那岐重演创世之举——天沼矛落下，大地从混沌中升起，敌人被震得东倒西歪。AOE减速。2d8+STR 力场伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "黄泉归来",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "从黄泉归来，死而复生",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "cleanse",
+        "desc": "黄泉比良坂的污秽被祓除",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊邪那岐从黄泉归来——他曾深入冥界追寻亡妻，又在千引石后洗净污秽。回复2d8+STR+净化。"
+  },
+  {
+    "name": "三贵子降诞",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "天照·月读·须佐之力汇聚",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "恐惧",
+        "desc": "三贵子之神威震慑全场",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "伊邪那岐召唤三贵子之力——天照、月读、须佐之男，日本神道三大主神皆自他而生。AOE恐惧，增伤2回合。2d10+STR 光耀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

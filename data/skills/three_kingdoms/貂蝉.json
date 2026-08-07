@@ -1,0 +1,115 @@
+[
+  {
+    "name": "倾城舞",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "舞姿倾城，暗藏杀机。1d10+DEX 穿刺伤害，目标减速1回合。"
+  },
+  {
+    "name": "离间计",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "魅惑/混乱"
+      }
+    ],
+    "cooldown": 1,
+    "description": "离间董卓与吕布的美人计！目标需通过WIS豁免否则混乱2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "闭月羞花",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐匿"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "闭月之貌使人目眩。获得隐匿与加速1回合。"
+  },
+  {
+    "name": "连环美人计",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "魅惑"
+      }
+    ],
+    "cooldown": 4,
+    "description": "王允连环计的核心——貂蝉！4d6+CHA 力场范围伤害，范围内目标需通过WIS豁免否则魅惑2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "name": "易筋经·黑级浮屠",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "黑级浮屠的邪气震慑心魄",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "易筋经最高境界黑级浮屠——黑气弥漫邪威凛然。2d8+CHA 黯蚀伤害。WIS豁免失败则恐惧1回合。"
+  },
+  {
+    "name": "火云掌·烈焰焚天",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "火焰"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "灼烧",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "邪神之火持续灼烧",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "罗刹教教主独门掌法——火光滔天焚尽八荒。2d8+CHA 火焰伤害，15尺范围。后续2回合每回合1d6灼烧。DEX豁免减半。冷却1回合。"
+  },
+  {
+    "name": "邪神气场·罗刹领域",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "aoe_radius": 20,
+    "effects": [
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 30,
+        "desc": "邪神气场护体",
+        "target": "自身"
+      },
+      {
+        "type": "减速",
+        "duration": 2,
+        "desc": "罗刹领域内敌人移速减半",
+        "target": "敌方"
+      },
+      {
+        "type": "持续伤害",
+        "duration": 2,
+        "dmg_per_turn": "1d4",
+        "desc": "邪气侵蚀入体",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "火云邪神释放滔天邪气——20尺内化为罗刹炼狱。自身减伤30%，领域内敌人减速+每回合1d4黯蚀伤害。持续2-3回合。冷却2回合。"
+  },
+  {
+    "name": "天佛降世·万佛朝宗",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "CHA",
+      "type": "光耀"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "万佛之力震慑灵魂",
+        "target": "敌方"
+      },
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "天佛掌力轰飞一切",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "火云邪神融合易筋经与天佛掌的终极奥义——漫天佛光化为毁灭之力。5d10+CHA 光耀伤害，30尺超大范围。WIS豁免失败眩晕2回合+击飞25尺。冷却4回合。"
+  }
+]

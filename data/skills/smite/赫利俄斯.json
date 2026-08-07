@@ -1,0 +1,121 @@
+[
+  {
+    "name": "日冕",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "日冕之火",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "赫利俄斯凝视敌人——太阳神的双目就是两颗燃烧的恒星。1d8+INT 光耀伤害，dot 1回合。"
+  },
+  {
+    "name": "太阳战车",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "太阳战车碾压",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赫利俄斯驾太阳战车碾过——四匹天马的蹄声如雷，车轮碾过之处烈焰焚天。AOE dot 2回合。2d6+INT 火焰伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "全视之日",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "太阳之力",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "vuln",
+        "desc": "太阳的目光揭露一切秘密",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赫利俄斯睁开全视之日——他每天穿越天空，目睹大地上发生的一切，没有任何秘密能逃过他的眼睛。增伤2回合+标记易伤。"
+  },
+  {
+    "name": "太阳风暴",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "desc": "太阳耀斑",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "在烈日下蒸发",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "赫利俄斯引发太阳风暴——太阳表面的烈焰喷涌而出，足以将整片大地烧成玻璃。AOE致盲+低血斩杀。4d6+INT 火焰伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

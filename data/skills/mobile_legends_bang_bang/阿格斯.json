@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Demonic Grip",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "1d8+STR 挥砍伤害。目标失去动作1回合。将目标拉向自己。",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON"
+      },
+      {
+        "type": "钩拽",
+        "desc": "将目标拉向自己",
+        "target": "敌方",
+        "dc_attr": "DEX"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Meteoric Sword",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。目标被击飞，失去动作1回合。向目标方向移动30尺。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞，失去动作",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "STR"
+      },
+      {
+        "type": "位移",
+        "desc": "向目标方向移动30尺",
+        "target": "自身",
+        "value": 30
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 5
+  },
+  {
+    "name": "Eternal Evil",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "造成伤害的30%转化为治疗。攻击速度+30%2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "造成伤害的30%转化为治疗",
+        "target": "自身",
+        "value": 30
+      },
+      {
+        "type": "攻速强化",
+        "desc": "攻击速度+30%",
+        "target": "自身",
+        "duration": 2,
+        "value": 30
+      }
+    ]
+  },
+  {
+    "name": "Metamorphosis",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "cooldown": 4,
+    "description": "4d8+STR 挥砍伤害。免疫控制效果1回合。目标生命<30%时伤害翻倍。变身为强化形态3回合。",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "免疫控制",
+        "desc": "免疫控制效果",
+        "target": "自身",
+        "duration": 1
+      },
+      {
+        "type": "斩杀",
+        "desc": "目标生命<30%时伤害翻倍",
+        "target": "敌方",
+        "threshold": 30
+      },
+      {
+        "type": "变身",
+        "desc": "变身为强化形态",
+        "target": "敌方",
+        "duration": 3
+      }
+    ],
+    "aoe_radius": 10
+  }
+]

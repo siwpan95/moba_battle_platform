@@ -1,0 +1,133 @@
+[
+  {
+    "name": "海虎爆破拳·战神怒吼",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "战神拳劲推飞敌手",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "第270代海虎武神白愁——白家武学继承者轰出的霸道一拳。2d8+STR 钝击伤害，STR豁免失败击退10尺。"
+  },
+  {
+    "name": "磁场转动·白家不灭体",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "value_formula": "2d8+CON",
+        "desc": "白家血统极速恢复",
+        "target": "自身"
+      },
+      {
+        "type": "护盾",
+        "duration": 2,
+        "value_formula": "2*LVL+CON",
+        "desc": "不灭之体护身",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "白愁以白家皇族血统催动不灭之体——磁场转动重组细胞。恢复2d8+CON生命，获得2×LVL+CON护盾。持续2回合。冷却1回合。"
+  },
+  {
+    "name": "武神战意·皇者领域",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "全属性强化",
+        "duration": 3,
+        "value": "PROF+1",
+        "desc": "皇者领域全面提升战力",
+        "target": "自身"
+      },
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*8",
+        "desc": "战意高昂暴击飙升",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "白愁进入武神战意——白家皇者气场笼罩战场。全属性+PROF+1，暴击率+PROF×8%。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "终极·白家灭世拳",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "aoe_radius": 30,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "灭世拳劲震碎心脉",
+        "target": "敌方"
+      },
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "白家最强一拳席卷四方",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "白愁——第270代海虎武神的终极一拳：集白家五千年武学精华的灭世之力！5d10+STR 力场伤害，30尺范围。CON豁免失败眩晕2回合+击飞25尺。冷却4回合。"
+  }
+]

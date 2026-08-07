@@ -1,0 +1,103 @@
+[
+  {
+    "name": "投掷飞镖",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 0,
+    "description": "2d6+DEX 穿刺伤害。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    }
+  },
+  {
+    "name": "暗影步",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "cooldown": 1,
+    "description": "2d6+DEX 挥砍伤害。变为隐形2回合。暴击率提升2回合。",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "隐形",
+        "desc": "变为隐形",
+        "target": "自身",
+        "duration": 2
+      },
+      {
+        "type": "暴击强化",
+        "desc": "暴击率提升",
+        "target": "自身",
+        "duration": 2,
+        "value_formula": "PROF*5"
+      }
+    ]
+  },
+  {
+    "name": "疾风步",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "cooldown": 2,
+    "description": "变为隐形2回合。",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐形",
+        "desc": "变为隐形",
+        "target": "自身",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "name": "追踪术",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "cooldown": 4,
+    "description": "5d6+DEX 穿刺伤害。标记目标，后续攻击增伤3回合。获得区域视野5回合。",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "desc": "标记目标，后续攻击增伤",
+        "target": "敌方",
+        "duration": 3
+      },
+      {
+        "type": "侦查",
+        "desc": "获得区域视野",
+        "target": "敌方",
+        "duration": 5
+      }
+    ]
+  }
+]

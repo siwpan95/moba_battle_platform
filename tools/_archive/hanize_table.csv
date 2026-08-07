@@ -1,0 +1,1215 @@
+﻿ip,en_name,has_card,has_skill,cn_name
+300_heroes,C.C.,True,True,英文名保留（无需汉化）
+arena_of_valor,Aegis,True,True,埃癸斯
+arena_of_valor,Airi,True,False,爱里
+arena_of_valor,Aleister,True,False,阿莱斯特
+arena_of_valor,Alice,True,False,爱丽丝
+arena_of_valor,Allain,True,False,艾兰
+arena_of_valor,Amily,True,False,艾蜜莉
+arena_of_valor,Annette,True,False,安奈特
+arena_of_valor,Aoi,True,False,星葵
+arena_of_valor,Arduin,True,False,阿杜恩
+arena_of_valor,Ares,True,True,阿瑞斯
+arena_of_valor,Arthur,True,False,莫托斯
+arena_of_valor,Arum,True,False,艾瑞
+arena_of_valor,Astrid,True,False,艾翠丝
+arena_of_valor,Ata,True,False,阿塔
+arena_of_valor,Atlas Prime,True,True,阿特拉斯·普莱姆
+arena_of_valor,Aya,True,False,芽芽
+arena_of_valor,AzzenKa,True,False,阿兹卡
+arena_of_valor,Baldum,True,False,伯顿
+arena_of_valor,Bijan,True,False,碧阳
+arena_of_valor,Billow,True,True,碧涛
+arena_of_valor,Biron,True,True,拜隆
+arena_of_valor,Blaze,True,True,布雷兹
+arena_of_valor,Blitz,True,True,闪电侠
+arena_of_valor,Bolt Baron,True,True,雷霆男爵
+arena_of_valor,Bonnie,True,False,邦妮
+arena_of_valor,Bright,True,False,布莱特
+arena_of_valor,Brunhilda,True,False,布伦希尔德
+arena_of_valor,Butterfly,True,False,刀锋宝贝
+arena_of_valor,Capheny,True,False,卡芬妮
+arena_of_valor,Celica,True,True,赛莉卡
+arena_of_valor,Charlotte,True,True,夏洛特
+arena_of_valor,Chaugnar,True,False,查戈纳尔
+arena_of_valor,Cresht,True,False,克莱斯
+arena_of_valor,Darcy,True,False,达尔西
+arena_of_valor,Dextra,True,False,黛克斯特拉
+arena_of_valor,Diaochan,True,False,貂蝉
+arena_of_valor,Dirak,True,False,狄拉克
+arena_of_valor,Dolia,True,True,朵莉亚
+arena_of_valor,Drago,True,True,德拉戈
+arena_of_valor,Dyadia,True,True,迪亚迪亚
+arena_of_valor,Echo,True,True,艾可
+arena_of_valor,Edras,True,True,埃德拉斯
+arena_of_valor,Elandorr,True,False,兰铎
+arena_of_valor,Elsu,True,False,苏
+arena_of_valor,Ember,True,True,恩贝尔
+arena_of_valor,Enzo,True,False,恩佐
+arena_of_valor,Erin,True,True,艾琳
+arena_of_valor,Errol,True,False,埃罗尔
+arena_of_valor,Fennik,True,False,菲尼克
+arena_of_valor,Florentino,True,False,弗洛伦
+arena_of_valor,Flowborn,True,True,流裔
+arena_of_valor,Forge,True,True,弗吉
+arena_of_valor,Frost,True,True,弗洛斯特
+arena_of_valor,Gaia,True,True,盖亚
+arena_of_valor,Gale,True,True,盖尔
+arena_of_valor,Gildur,True,False,哥德尔
+arena_of_valor,Golem,True,True,魔像
+arena_of_valor,Goverra,True,True,戈薇拉
+arena_of_valor,Grakk,True,False,夸克
+arena_of_valor,Hayate,True,False,亥犽
+arena_of_valor,Heino,True,True,海诺
+arena_of_valor,Helen,True,False,海伦
+arena_of_valor,Helios,True,True,赫利俄斯
+arena_of_valor,Iggy,True,False,伊姬
+arena_of_valor,Ignis,True,False,伊耿士
+arena_of_valor,Ilumia,True,False,卢蜜亚
+arena_of_valor,Ishar,True,False,伊莎尔
+arena_of_valor,Jinnar,True,False,金纳
+arena_of_valor,Kahlii,True,True,卡莉
+arena_of_valor,Kaine,True,False,凯恩
+arena_of_valor,Keera,True,False,绮拉
+arena_of_valor,KilGroth,True,False,凯格路士
+arena_of_valor,Kriknak,True,False,科里纳卡
+arena_of_valor,Krixi,True,False,克里希
+arena_of_valor,Krizzix,True,False,卡瑞兹
+arena_of_valor,Kronos,True,True,克洛诺斯
+arena_of_valor,Lauriel,True,False,萝儿
+arena_of_valor,Laville,True,False,拉维尔
+arena_of_valor,Liliana,True,False,莉莉安
+arena_of_valor,Lindis,True,False,琳蒂
+arena_of_valor,Lorion,True,False,洛里昂
+arena_of_valor,Lu Bu,True,False,吕布
+arena_of_valor,Lumburr,True,False,朗博
+arena_of_valor,Luna,True,True,露娜
+arena_of_valor,Maloch,True,False,马洛斯
+arena_of_valor,Marja,True,False,玛迦
+arena_of_valor,Max,True,False,麦克思
+arena_of_valor,Mganga,True,False,穆加爵
+arena_of_valor,Mina,True,False,美娜
+arena_of_valor,Ming,True,False,明
+arena_of_valor,Mirage,True,True,米拉吉
+arena_of_valor,Moren,True,False,摩恩
+arena_of_valor,Murad,True,False,莫拉
+arena_of_valor,Mystic,True,True,秘术师
+arena_of_valor,Nakroth,True,False,纳克罗斯
+arena_of_valor,Natalya,True,False,娜塔亚
+arena_of_valor,Nova,True,True,诺娃
+arena_of_valor,Nyx,True,True,妮克丝
+arena_of_valor,Obsidian,True,True,黑曜石
+arena_of_valor,Obsidio,True,True,黑曜守护
+arena_of_valor,Omega,True,False,欧米茄
+arena_of_valor,Omen,True,False,夜叉
+arena_of_valor,Oracle,True,True,神谕者
+arena_of_valor,Orion,True,True,俄里翁
+arena_of_valor,Ormarr,True,False,渥马尔
+arena_of_valor,Paine,True,False,潘因
+arena_of_valor,Phoenix,True,True,菲尼克斯
+arena_of_valor,Preyta,True,False,普雷塔
+arena_of_valor,Pyre,True,True,派尔
+arena_of_valor,Qi,True,False,筱清
+arena_of_valor,Quillen,True,False,奎伦
+arena_of_valor,Raven,True,True,瑞文
+arena_of_valor,Raz,True,False,拉兹
+arena_of_valor,Riktor,True,False,瑞克
+arena_of_valor,Ronin,True,True,浪人
+arena_of_valor,Rouie,True,False,若伊
+arena_of_valor,Rourke,True,False,洛克
+arena_of_valor,Roxie,True,False,诺可西
+arena_of_valor,Ryoma,True,False,龙马
+arena_of_valor,Sage,True,True,贤者
+arena_of_valor,Selene,True,True,塞勒涅
+arena_of_valor,Sephera,True,False,赛芙拉
+arena_of_valor,Seraph,True,True,炽天使
+arena_of_valor,Shade,True,True,黯影
+arena_of_valor,Shimmer,True,True,微光
+arena_of_valor,Shiro,True,True,白
+arena_of_valor,Sinestrea,True,False,辛斯特雷亚
+arena_of_valor,Skud,True,False,司科德
+arena_of_valor,Slimz,True,False,史兰兹
+arena_of_valor,Spectre,True,True,幽灵
+arena_of_valor,Storm,True,True,风暴
+arena_of_valor,Stuart,True,False,斯图尔特
+arena_of_valor,Superman,True,False,超人
+arena_of_valor,Sylvan,True,True,森林之灵
+arena_of_valor,Taara,True,False,塔拉
+arena_of_valor,Tachi,True,False,太刀
+arena_of_valor,Tamyn,True,True,塔敏
+arena_of_valor,TeeMee,True,False,提米
+arena_of_valor,Teeri,True,False,蒂莉
+arena_of_valor,TelAnnas,True,False,特尔安娜斯
+arena_of_valor,Terra,True,True,泰拉
+arena_of_valor,Thane,True,False,萨尼
+arena_of_valor,The Flash,True,False,闪电侠
+arena_of_valor,Thorne,True,False,索恩
+arena_of_valor,Titan,True,True,泰坦
+arena_of_valor,Toro,True,False,牛魔王
+arena_of_valor,Tulen,True,False,图伦
+arena_of_valor,Valhein,True,False,凡恩
+arena_of_valor,Veera,True,False,薇菈
+arena_of_valor,Veres,True,False,绯泪
+arena_of_valor,Vex,True,True,维克斯
+arena_of_valor,Violet,True,False,堇
+arena_of_valor,Void,True,True,虚空
+arena_of_valor,Volkath,True,False,沃尔卡斯
+arena_of_valor,Warden,True,True,守望者
+arena_of_valor,Wiro,True,False,维罗
+arena_of_valor,Wisp,True,False,灵灵
+arena_of_valor,Wonder Woman,True,False,神力女超人
+arena_of_valor,Wukong,True,False,悟空
+arena_of_valor,Xeniel,True,False,赞尼尔
+arena_of_valor,Yan,True,False,焱
+arena_of_valor,Ybneth,True,False,古木
+arena_of_valor,Yorn,True,False,勇
+arena_of_valor,Yue,True,False,月
+arena_of_valor,Zanis,True,False,赵云
+arena_of_valor,Zata,True,False,飒枷
+arena_of_valor,Zephyr,True,True,泽菲尔
+arena_of_valor,Zephyra,True,True,泽菲拉
+arena_of_valor,Zephys,True,False,瑟斐斯
+arena_of_valor,Zill,True,False,齐尔
+arena_of_valor,Zip,True,False,齐普
+arena_of_valor,Zuka,True,False,祖卡
+dota2,Roshan,True,True,肉山
+heroes_of_the_storm,Abathur,True,False,阿巴瑟
+heroes_of_the_storm,Aidan,True,True,艾丹
+heroes_of_the_storm,Akama,True,True,阿卡玛
+heroes_of_the_storm,Alarak,True,False,阿拉纳克
+heroes_of_the_storm,Alexstrasza,True,False,阿莱克丝塔萨
+heroes_of_the_storm,Algalon,True,True,奥尔加隆
+heroes_of_the_storm,Alleria,True,True,奥蕾莉亚
+heroes_of_the_storm,Amazon,True,True,亚马逊
+heroes_of_the_storm,Ana,True,False,安娜
+heroes_of_the_storm,Andariel,True,True,安达利尔
+heroes_of_the_storm,Anduin,True,False,安度因
+heroes_of_the_storm,Antonidas,True,True,安东尼达斯
+heroes_of_the_storm,Anub'arak,True,False,阿努巴拉克
+heroes_of_the_storm,Archimonde,True,True,阿克蒙德
+heroes_of_the_storm,ArcturusMengsk,True,True,阿克图尔斯·蒙斯克
+heroes_of_the_storm,Artanis,True,False,阿塔尼斯
+heroes_of_the_storm,Arthas,True,False,阿尔萨斯
+heroes_of_the_storm,Assassin_D2,True,True,暗黑刺客
+heroes_of_the_storm,Auriel,True,False,奥莉尔
+heroes_of_the_storm,Azmodan,True,False,阿兹莫丹
+heroes_of_the_storm,Azshara,True,True,艾萨拉
+heroes_of_the_storm,Baal,True,True,巴尔
+heroes_of_the_storm,Baptiste,True,True,巴蒂斯特
+heroes_of_the_storm,Belial,True,True,彼列
+heroes_of_the_storm,Blackthorne,True,True,黑色荆棘
+heroes_of_the_storm,Blaze,True,False,爆焰
+heroes_of_the_storm,Brann,True,True,布莱恩
+heroes_of_the_storm,Brightwing,True,False,光明之翼
+heroes_of_the_storm,Brigitte,True,True,布丽吉塔
+heroes_of_the_storm,Bwonsamdi,True,True,邦桑迪
+heroes_of_the_storm,Cassia,True,False,卡西娅
+heroes_of_the_storm,Cenarius,True,True,塞纳留斯
+heroes_of_the_storm,Chen,True,False,陈
+heroes_of_the_storm,Cho,True,False,古
+heroes_of_the_storm,Chromie,True,False,克罗米
+heroes_of_the_storm,Cydea,True,True,赛迪亚
+heroes_of_the_storm,D.Va,True,False,英文名保留（无需汉化）
+heroes_of_the_storm,Deathwing,True,False,死亡之翼
+heroes_of_the_storm,Deckard,True,False,迪卡德
+heroes_of_the_storm,Dehaka,True,False,德哈卡
+heroes_of_the_storm,Diablo,True,False,迪亚波罗
+heroes_of_the_storm,Doomfist,True,True,末日铁拳
+heroes_of_the_storm,DrekThar,True,True,德雷克塔尔
+heroes_of_the_storm,Druid,True,True,德鲁伊
+heroes_of_the_storm,Duriel,True,True,都瑞尔
+heroes_of_the_storm,E.T.C.,True,False,精英牛头人酋长
+heroes_of_the_storm,Echo,True,True,回声
+heroes_of_the_storm,Falstad,True,False,弗斯塔德
+heroes_of_the_storm,Fenix,True,False,菲尼克斯
+heroes_of_the_storm,Gall,True,False,加尔
+heroes_of_the_storm,Gallywix,True,True,加里维克斯
+heroes_of_the_storm,Garona,True,True,迦罗娜
+heroes_of_the_storm,Garrosh,True,False,加尔鲁什
+heroes_of_the_storm,Gazlowe,True,False,加兹鲁维
+heroes_of_the_storm,Genji,True,False,源氏
+heroes_of_the_storm,Greymane,True,False,格雷迈恩
+heroes_of_the_storm,Grommash,True,True,格罗玛什
+heroes_of_the_storm,Gul'dan,True,False,古尔丹
+heroes_of_the_storm,Hakkar,True,True,哈卡
+heroes_of_the_storm,Hanson,True,True,汉森
+heroes_of_the_storm,Hanzo,True,False,半藏
+heroes_of_the_storm,Hogger,True,False,霍格
+heroes_of_the_storm,Hybrid,True,True,混源体
+heroes_of_the_storm,Illari,True,True,伊拉锐
+heroes_of_the_storm,Illidan,True,False,伊利丹
+heroes_of_the_storm,Imperius,True,False,英普瑞斯
+heroes_of_the_storm,Inarius,True,True,伊纳瑞斯
+heroes_of_the_storm,Izual,True,True,衣卒尔
+heroes_of_the_storm,Jaina,True,False,吉安娜
+heroes_of_the_storm,Johanna,True,False,乔汉娜
+heroes_of_the_storm,JunkerQueen,True,True,渣客女王
+heroes_of_the_storm,Junkrat,True,False,狂鼠
+heroes_of_the_storm,Kael'thas,True,False,凯尔萨斯
+heroes_of_the_storm,Kargath,True,True,卡加斯
+heroes_of_the_storm,Kel'Thuzad,True,False,克尔苏加德
+heroes_of_the_storm,Kerrigan,True,False,凯瑞甘
+heroes_of_the_storm,Khadgar,True,True,卡德加
+heroes_of_the_storm,Kharazim,True,False,卡拉辛姆
+heroes_of_the_storm,Kiljaeden,True,True,基尔加丹
+heroes_of_the_storm,Kiriko,True,True,雾子
+heroes_of_the_storm,Kronan,True,True,克罗南
+heroes_of_the_storm,LadyVashj,True,True,瓦丝琪女士
+heroes_of_the_storm,Leoric,True,False,李奥瑞克
+heroes_of_the_storm,Li Li,True,False,丽丽
+heroes_of_the_storm,Li-Ming,True,False,李敏
+heroes_of_the_storm,Lifeweaver,True,True,生命之梭
+heroes_of_the_storm,Lilith,True,True,莉莉丝
+heroes_of_the_storm,Lt. Morales,True,False,莫拉莉斯中尉
+heroes_of_the_storm,Lucio,True,False,卢西奥
+heroes_of_the_storm,Lunara,True,False,露娜拉
+heroes_of_the_storm,Maghda,True,True,麦格妲
+heroes_of_the_storm,Maiev,True,False,玛维
+heroes_of_the_storm,Mal'Ganis,True,False,玛尔加尼斯
+heroes_of_the_storm,Malfurion,True,False,玛法里奥
+heroes_of_the_storm,Malthael,True,False,马萨伊尔
+heroes_of_the_storm,Mannoroth,True,True,玛诺洛斯
+heroes_of_the_storm,Mauga,True,True,毛加
+heroes_of_the_storm,Medivh,True,False,麦迪文
+heroes_of_the_storm,Medivh_Guardian,True,True,守护者麦迪文
+heroes_of_the_storm,Mei,True,False,美
+heroes_of_the_storm,Mekkatorque,True,True,梅卡托克
+heroes_of_the_storm,Mephisto,True,False,墨菲斯托
+heroes_of_the_storm,Moira,True,True,莫伊拉
+heroes_of_the_storm,MoiraBronzebeard,True,True,茉艾拉·铜须
+heroes_of_the_storm,Muradin,True,False,穆拉丁
+heroes_of_the_storm,Murky,True,False,奔波尔霸
+heroes_of_the_storm,Nazeebo,True,False,纳兹波
+heroes_of_the_storm,Necromancer,True,True,死灵法师
+heroes_of_the_storm,Nerzhul,True,True,耐奥祖
+heroes_of_the_storm,Nova,True,False,诺娃
+heroes_of_the_storm,Onyxia,True,True,奥妮克希亚
+heroes_of_the_storm,Orphea,True,False,奥菲娅
+heroes_of_the_storm,Overmind,True,True,主宰
+heroes_of_the_storm,Paladin,True,True,圣骑士
+heroes_of_the_storm,Pharah,True,True,法老之鹰
+heroes_of_the_storm,Probius,True,False,普罗比斯
+heroes_of_the_storm,Qhira,True,False,琪拉
+heroes_of_the_storm,Ragnaros,True,False,拉格纳罗斯
+heroes_of_the_storm,Rakanoth,True,True,拉卡诺斯
+heroes_of_the_storm,Ramattra,True,True,拉玛刹
+heroes_of_the_storm,Raynor,True,False,雷诺
+heroes_of_the_storm,Reaper,True,True,死神
+heroes_of_the_storm,Rehgar,True,False,雷加尔
+heroes_of_the_storm,Reinhardt,True,True,莱因哈特
+heroes_of_the_storm,Rexxar,True,False,雷克萨
+heroes_of_the_storm,RocknRollRacer,True,True,摇滚赛车手
+heroes_of_the_storm,Samuro,True,False,萨穆罗
+heroes_of_the_storm,Sargeras,True,True,萨格拉斯
+heroes_of_the_storm,Selendis,True,True,赛兰迪丝
+heroes_of_the_storm,Sgt. Hammer,True,False,重锤军士
+heroes_of_the_storm,Sigma,True,True,西格玛
+heroes_of_the_storm,SnakeSanders,True,True,蛇油桑德斯
+heroes_of_the_storm,Sojourn,True,True,索杰恩
+heroes_of_the_storm,Sonya,True,False,桑娅
+heroes_of_the_storm,Sorceress,True,True,女巫
+heroes_of_the_storm,Stitches,True,False,缝合怪
+heroes_of_the_storm,Stukov,True,False,斯托科夫
+heroes_of_the_storm,Sylvanas,True,False,希尔瓦娜斯
+heroes_of_the_storm,Symmetra,True,True,秩序之光
+heroes_of_the_storm,Talanji,True,True,塔兰吉
+heroes_of_the_storm,Tassadar,True,False,塔萨达尔
+heroes_of_the_storm,TeronGorefiend,True,True,塔隆·血魔
+heroes_of_the_storm,The Butcher,True,False,屠夫
+heroes_of_the_storm,The Lost Vikings,True,False,失落的维京人
+heroes_of_the_storm,Thrall,True,False,萨尔
+heroes_of_the_storm,Tomator,True,True,托马托
+heroes_of_the_storm,Tosh,True,True,托什
+heroes_of_the_storm,Tracer,True,False,猎空
+heroes_of_the_storm,Turalyon,True,True,图拉扬
+heroes_of_the_storm,Tychus,True,False,泰凯斯
+heroes_of_the_storm,Tyrael,True,False,泰瑞尔
+heroes_of_the_storm,Tyrande,True,False,泰兰德
+heroes_of_the_storm,Uther,True,False,乌瑟尔
+heroes_of_the_storm,Valeera,True,False,瓦莉拉
+heroes_of_the_storm,Valerian,True,True,瓦伦里安
+heroes_of_the_storm,Valla,True,False,维拉
+heroes_of_the_storm,Varian,True,False,瓦里安
+heroes_of_the_storm,Velen,True,True,维伦
+heroes_of_the_storm,Voljin,True,True,沃金
+heroes_of_the_storm,Warfield,True,True,沃菲尔德
+heroes_of_the_storm,Whitemane,True,False,怀特迈恩
+heroes_of_the_storm,Winston,True,True,温斯顿
+heroes_of_the_storm,Xavius,True,True,萨维斯
+heroes_of_the_storm,Xul,True,False,祖尔
+heroes_of_the_storm,YoggSaron,True,True,尤格-萨隆
+heroes_of_the_storm,Yrel,True,False,伊瑞尔
+heroes_of_the_storm,Zagara,True,False,扎加拉
+heroes_of_the_storm,Zarya,True,False,查莉娅
+heroes_of_the_storm,Zeratul,True,False,泽拉图
+heroes_of_the_storm,ZoltunKulle,True,True,佐敦·库勒
+heroes_of_the_storm,Zul'jin,True,False,祖尔金
+heroes_of_the_storm,Zurvan,True,True,祖尔文
+marvel_super_war,Abomination,True,True,憎恶
+marvel_super_war,Adam Warlock,True,True,亚当术士
+marvel_super_war,America Chavez,True,True,美国小姐
+marvel_super_war,Ancient One,True,True,古一
+marvel_super_war,Angel,True,True,天使
+marvel_super_war,Annihilus,True,True,歼灭者
+marvel_super_war,Ant-Man,True,True,蚁人
+marvel_super_war,Apocalypse,True,True,天启
+marvel_super_war,Ares_Marvel,True,True,阿瑞斯
+marvel_super_war,Armor,True,True,铠甲
+marvel_super_war,Banshee,True,True,女妖
+marvel_super_war,Beast,True,True,野兽
+marvel_super_war,Ben Reilly,True,True,本·莱利
+marvel_super_war,Bishop,True,True,毕肖普
+marvel_super_war,Black Bolt,True,True,黑蝠王
+marvel_super_war,Black Cat,True,True,黑猫
+marvel_super_war,Black Knight,True,True,黑骑士
+marvel_super_war,Black Panther,True,True,黑豹
+marvel_super_war,Blade,True,True,刀锋战士
+marvel_super_war,Blastaar,True,True,爆破王
+marvel_super_war,Bullseye,True,True,靶眼
+marvel_super_war,Cable,True,True,电索
+marvel_super_war,Carnage,True,True,屠杀
+marvel_super_war,Chase Stein,True,True,切斯·斯坦
+marvel_super_war,Cloak,True,True,斗篷
+marvel_super_war,Cloak & Dagger,True,True,斗篷与匕首
+marvel_super_war,Colossus,True,True,钢力士
+marvel_super_war,Corvus Glaive,True,True,亡刃将军
+marvel_super_war,Crystal,True,True,水晶
+marvel_super_war,Cull Obsidian,True,True,黑矮星
+marvel_super_war,Cyclops,True,True,镭射眼
+marvel_super_war,Dagger,True,True,匕首
+marvel_super_war,Daredevil,True,True,夜魔侠
+marvel_super_war,Dazzler,True,True,炫光
+marvel_super_war,Deadpool,True,True,死侍
+marvel_super_war,Death_Marvel,True,True,死亡
+marvel_super_war,Doctor Octopus,True,True,章鱼博士
+marvel_super_war,Domino,True,True,多米诺
+marvel_super_war,Doom,True,True,毁灭博士
+marvel_super_war,Dormammu,True,True,多玛姆
+marvel_super_war,Ebony Maw,True,True,乌木喉
+marvel_super_war,Electro,True,True,电光人
+marvel_super_war,Elektra,True,True,艾丽卡
+marvel_super_war,Elsa Bloodstone,True,True,艾尔莎·血石
+marvel_super_war,Emma Frost,True,True,白皇后
+marvel_super_war,Eon,True,True,永恒
+marvel_super_war,Eternity,True,True,永恒
+marvel_super_war,Executioner,True,True,刽子手
+marvel_super_war,Falcon,True,True,猎鹰
+marvel_super_war,Forge,True,True,锻造者
+marvel_super_war,Galacta,True,True,伽拉忒亚
+marvel_super_war,Galactus,True,True,行星吞噬者
+marvel_super_war,Gambit,True,True,牌皇
+marvel_super_war,Gert Yorkes,True,True,格特·约克斯
+marvel_super_war,Ghost,True,True,幽灵
+marvel_super_war,Ghost Rider,True,True,恶灵骑士
+marvel_super_war,Gladiator,True,True,斗剑
+marvel_super_war,Gorgon,True,True,戈尔贡
+marvel_super_war,Green Goblin,True,True,绿魔
+marvel_super_war,Groot,True,True,格鲁特
+marvel_super_war,Gwenpool,True,True,格温侍
+marvel_super_war,Havok,True,True,浩劫
+marvel_super_war,Hawkeye,True,True,鹰眼
+marvel_super_war,Heimdall,True,True,海姆达尔
+marvel_super_war,Hela,True,True,海拉
+marvel_super_war,Hercules_Marvel,True,True,赫拉克勒斯
+marvel_super_war,Human Torch,True,True,霹雳火
+marvel_super_war,Iceman,True,True,冰人
+marvel_super_war,Ikaris,True,True,伊卡瑞斯
+marvel_super_war,Infinity,True,True,无限
+marvel_super_war,Invisible Woman,True,True,隐形女侠
+marvel_super_war,Iron Fist,True,True,铁拳
+marvel_super_war,Jean Grey,True,True,琴·葛蕾
+marvel_super_war,Jessica Jones,True,True,杰西卡·琼斯
+marvel_super_war,Jubilee,True,True,朱比莉
+marvel_super_war,Juggernaut,True,True,红坦克
+marvel_super_war,Kaine,True,True,凯恩
+marvel_super_war,Kang,True,True,康
+marvel_super_war,Karnak,True,True,卡尔耐克
+marvel_super_war,Karolina Dean,True,True,卡罗琳娜·迪恩
+marvel_super_war,Kate Bishop,True,True,凯特·毕肖普
+marvel_super_war,Kingpin,True,True,金并
+marvel_super_war,Kraven,True,True,克莱文
+marvel_super_war,Lady Sif,True,True,希芙女士
+marvel_super_war,Living Tribunal,True,True,生命法庭
+marvel_super_war,Lizard,True,True,蜥蜴博士
+marvel_super_war,Lockjaw,True,True,锁齿狗
+marvel_super_war,Loki,True,True,洛基
+marvel_super_war,Luke Cage,True,True,卢克·凯奇
+marvel_super_war,Luna Snow,True,True,露娜·雪
+marvel_super_war,Magik,True,True,秘客
+marvel_super_war,Magneto,True,True,万磁王
+marvel_super_war,Man-Thing,True,True,类人体
+marvel_super_war,Mantis,True,True,螳螂女
+marvel_super_war,Medusa,True,True,美杜莎
+marvel_super_war,Mephisto,True,True,墨菲斯托
+marvel_super_war,Mockingbird,True,True,仿声鸟
+marvel_super_war,MODOK,True,True,魔多客
+marvel_super_war,Molly Hayes,True,True,莫莉·海耶斯
+marvel_super_war,Moon Knight,True,True,月光骑士
+marvel_super_war,Moondragon,True,True,月龙
+marvel_super_war,Moonstar,True,True,月星
+marvel_super_war,Mr. Fantastic,True,True,神奇先生
+marvel_super_war,Mr. Sinister,True,True,惊恶先生
+marvel_super_war,Ms. Marvel,True,True,惊奇女士
+marvel_super_war,Mysterio,True,True,神秘客
+marvel_super_war,Mystique,True,True,魔形女
+marvel_super_war,Namor,True,True,纳摩
+marvel_super_war,Nico Minoru,True,True,妮可·米诺鲁
+marvel_super_war,Nightcrawler,True,True,夜行者
+marvel_super_war,Nova,True,True,新星
+marvel_super_war,Oblivion,True,True,湮灭
+marvel_super_war,Old Lace,True,True,老蕾丝
+marvel_super_war,Omega Red,True,True,红色欧米伽
+marvel_super_war,Phoenix,True,True,凤凰
+marvel_super_war,Phyla-Vell,True,True,菲拉-维尔
+marvel_super_war,Pixie,True,True,小精灵
+marvel_super_war,Polaris,True,True,北极星
+marvel_super_war,Professor X,True,True,X教授
+marvel_super_war,Proxima Midnight,True,True,暗夜比邻星
+marvel_super_war,Psylocke,True,True,灵蝶
+marvel_super_war,Punisher,True,True,惩罚者
+marvel_super_war,Quasar,True,True,类星体
+marvel_super_war,Quicksilver,True,True,快银
+marvel_super_war,Red Skull,True,True,红骷髅
+marvel_super_war,Rocket Raccoon,True,True,火箭浣熊
+marvel_super_war,Rogue,True,True,罗刹女
+marvel_super_war,Ronan,True,True,罗南
+marvel_super_war,Sabretooth,True,True,剑齿虎
+marvel_super_war,Sandman,True,True,沙人
+marvel_super_war,Scarlet Witch,True,True,猩红女巫
+marvel_super_war,Sentry,True,True,哨兵
+marvel_super_war,Sersi,True,True,瑟西
+marvel_super_war,Shang-Chi,True,True,尚气
+marvel_super_war,She-Hulk,True,True,女浩克
+marvel_super_war,Shuma-Gorath,True,True,舒玛-哥拉斯
+marvel_super_war,Silk,True,True,蛛丝
+marvel_super_war,Silver Surfer,True,True,银影侠
+marvel_super_war,Spider-Gwen,True,True,蜘蛛格温
+marvel_super_war,Spider-Man,True,True,蜘蛛侠
+marvel_super_war,Spider-Man 2099,True,True,蜘蛛侠2099
+marvel_super_war,Spider-Woman,True,True,蜘蛛女侠
+marvel_super_war,Squirrel Girl,True,True,松鼠女
+marvel_super_war,Star-Lord,True,True,星爵
+marvel_super_war,Storm,True,True,暴风女
+marvel_super_war,Sunfire,True,True,阳炎
+marvel_super_war,Super-Skrull,True,True,超级斯克鲁人
+marvel_super_war,Taskmaster,True,True,模仿大师
+marvel_super_war,The Thing,True,True,石头人
+marvel_super_war,Thena,True,True,蒂娜
+marvel_super_war,Thing,True,True,石头人
+marvel_super_war,Tigra,True,True,虎女
+marvel_super_war,Ultron,True,True,奥创
+marvel_super_war,Vision,True,True,幻视
+marvel_super_war,War Machine,True,True,战争机器
+marvel_super_war,War Tiger,True,True,战虎
+marvel_super_war,Wasp,True,True,黄蜂女
+marvel_super_war,Wave,True,True,海浪
+marvel_super_war,Wenwu,True,True,文武
+marvel_super_war,Werewolf by Night,True,True,暗夜狼人
+marvel_super_war,Winter Soldier,True,True,冬兵
+marvel_super_war,Wolverine,True,True,金刚狼
+marvel_super_war,Wonder Man,True,True,神力人
+marvel_super_war,X-23,True,True,英文名保留（无需汉化）
+marvel_super_war,Yondu,True,True,勇度
+mcu,B-15,True,True,英文名保留（无需汉化）
+mobile_legends_bang_bang,Aamon,True,False,亚蒙
+mobile_legends_bang_bang,Akai,True,False,阿凯
+mobile_legends_bang_bang,Aldous,True,False,奥德斯
+mobile_legends_bang_bang,Alice,True,False,爱丽丝
+mobile_legends_bang_bang,Alpha,True,False,阿尔法
+mobile_legends_bang_bang,Alucard,True,False,阿鲁卡多
+mobile_legends_bang_bang,Angela,True,False,安琪拉
+mobile_legends_bang_bang,Arawn,True,True,阿劳恩
+mobile_legends_bang_bang,Argus,True,False,阿格斯
+mobile_legends_bang_bang,Arlott,True,False,阿洛特
+mobile_legends_bang_bang,Asura,True,True,阿修罗
+mobile_legends_bang_bang,Atlas,True,False,阿特拉斯
+mobile_legends_bang_bang,Aulus,True,False,奥鲁斯
+mobile_legends_bang_bang,Aurora,True,False,奥罗拉
+mobile_legends_bang_bang,Azrael,True,True,阿兹瑞尔
+mobile_legends_bang_bang,Badang,True,False,巴当
+mobile_legends_bang_bang,Balmond,True,False,巴尔蒙德
+mobile_legends_bang_bang,Bane,True,False,贝恩
+mobile_legends_bang_bang,Barats,True,False,巴拉特
+mobile_legends_bang_bang,Baxia,True,False,霸下
+mobile_legends_bang_bang,Beatrix,True,False,贝娅特丽克丝
+mobile_legends_bang_bang,Belerick,True,False,布拉瑞克
+mobile_legends_bang_bang,Benedetta,True,False,贝内黛塔
+mobile_legends_bang_bang,Boreas,True,True,玻瑞阿斯
+mobile_legends_bang_bang,Brody,True,False,布罗迪
+mobile_legends_bang_bang,Bruno,True,False,布鲁诺
+mobile_legends_bang_bang,Carmilla,True,False,卡蜜拉
+mobile_legends_bang_bang,Cecilion,True,False,塞西利昂
+mobile_legends_bang_bang,Celestia,True,True,塞莱斯蒂亚
+mobile_legends_bang_bang,Chang'e,True,False,嫦娥
+mobile_legends_bang_bang,Chip,True,False,奇普
+mobile_legends_bang_bang,Chou,True,False,周
+mobile_legends_bang_bang,Cici,True,False,茜茜
+mobile_legends_bang_bang,Cinder,True,True,辛德
+mobile_legends_bang_bang,Claude,True,False,克劳德
+mobile_legends_bang_bang,Clint,True,False,克林特
+mobile_legends_bang_bang,Cyclops,True,False,独眼巨人
+mobile_legends_bang_bang,Dagon,True,True,达贡
+mobile_legends_bang_bang,Diggie,True,False,迪吉
+mobile_legends_bang_bang,Draven,True,True,德莱文
+mobile_legends_bang_bang,Dyrroth,True,False,迪亚斯
+mobile_legends_bang_bang,Edith,True,False,伊迪丝
+mobile_legends_bang_bang,Elara,True,True,艾拉拉
+mobile_legends_bang_bang,Erebus,True,True,厄瑞玻斯
+mobile_legends_bang_bang,Esmeralda,True,False,艾丝美拉达
+mobile_legends_bang_bang,Estes,True,False,埃斯特斯
+mobile_legends_bang_bang,Eudora,True,False,尤朵拉
+mobile_legends_bang_bang,Fanny,True,False,梵妮
+mobile_legends_bang_bang,Faramis,True,False,法拉米斯
+mobile_legends_bang_bang,Fenris,True,True,芬里斯
+mobile_legends_bang_bang,Fiera,True,True,菲艾拉
+mobile_legends_bang_bang,Floryn,True,False,芙洛琳
+mobile_legends_bang_bang,Franco,True,False,佛朗哥
+mobile_legends_bang_bang,Fredrinn,True,False,弗雷德里克
+mobile_legends_bang_bang,Freya,True,False,芙蕾雅
+mobile_legends_bang_bang,Gareth,True,True,加雷斯
+mobile_legends_bang_bang,Gatotkaca,True,False,迦多铎卡伽
+mobile_legends_bang_bang,Gloo,True,False,格鲁
+mobile_legends_bang_bang,Gord,True,False,戈尔德
+mobile_legends_bang_bang,Granger,True,False,格兰杰
+mobile_legends_bang_bang,Grock,True,False,格罗克
+mobile_legends_bang_bang,Gryphon,True,True,格里芬
+mobile_legends_bang_bang,Guinevere,True,False,桂妮薇儿
+mobile_legends_bang_bang,Gusion,True,False,古辛
+mobile_legends_bang_bang,Hanabi,True,False,花火
+mobile_legends_bang_bang,Hanzo,True,False,半藏
+mobile_legends_bang_bang,Harith,True,False,哈里特
+mobile_legends_bang_bang,Harley,True,False,哈利
+mobile_legends_bang_bang,Hayabusa,True,False,隼
+mobile_legends_bang_bang,Helcurt,True,False,哈卡特
+mobile_legends_bang_bang,Hikari,True,True,光
+mobile_legends_bang_bang,Hilda,True,False,希尔达
+mobile_legends_bang_bang,Hylos,True,False,海洛斯
+mobile_legends_bang_bang,Igneous,True,True,火成
+mobile_legends_bang_bang,Irithel,True,False,伊瑞瑟尔
+mobile_legends_bang_bang,Ishara,True,True,伊莎拉
+mobile_legends_bang_bang,Ixia,True,False,伊克西亚
+mobile_legends_bang_bang,Jade,True,True,翡翠
+mobile_legends_bang_bang,Jawhead,True,False,大铁罐
+mobile_legends_bang_bang,Johnson,True,False,强森
+mobile_legends_bang_bang,Jorah,True,True,乔拉
+mobile_legends_bang_bang,Joy,True,False,乔伊
+mobile_legends_bang_bang,Julian,True,False,尤利恩
+mobile_legends_bang_bang,Kadita,True,False,卡迪塔
+mobile_legends_bang_bang,Kagura,True,False,神乐
+mobile_legends_bang_bang,Kaida,True,True,凯达
+mobile_legends_bang_bang,Kaja,True,False,卡伽
+mobile_legends_bang_bang,Kalea,True,False,卡莉亚
+mobile_legends_bang_bang,Karina,True,False,卡琳娜
+mobile_legends_bang_bang,Karrie,True,False,卡丽
+mobile_legends_bang_bang,Kenshin,True,True,剑心
+mobile_legends_bang_bang,Khaleed,True,False,卡利德
+mobile_legends_bang_bang,Khufra,True,False,库夫拉
+mobile_legends_bang_bang,Kimmy,True,False,基米
+mobile_legends_bang_bang,Kylin,True,True,麒麟
+mobile_legends_bang_bang,Lancelot,True,False,兰斯洛特
+mobile_legends_bang_bang,Lapu-Lapu,True,False,拉普拉普
+mobile_legends_bang_bang,Layla,True,False,蕾拉
+mobile_legends_bang_bang,Leomord,True,False,利奥蒙德
+mobile_legends_bang_bang,Lesley,True,False,莱斯丽
+mobile_legends_bang_bang,Levi,True,True,利维
+mobile_legends_bang_bang,Ling,True,False,翎
+mobile_legends_bang_bang,Lolita,True,False,洛丽塔
+mobile_legends_bang_bang,Lukas,True,False,卢卡斯
+mobile_legends_bang_bang,Lunox,True,False,露诺克斯
+mobile_legends_bang_bang,Luo Yi,True,False,罗毅
+mobile_legends_bang_bang,Lylia,True,False,莉莉娅
+mobile_legends_bang_bang,Lyria,True,True,莉瑞亚
+mobile_legends_bang_bang,Marcel,True,False,马塞尔
+mobile_legends_bang_bang,Martis,True,False,玛尔蒂斯
+mobile_legends_bang_bang,Masha,True,False,玛莎
+mobile_legends_bang_bang,Mathilda,True,False,玛蒂尔达
+mobile_legends_bang_bang,Melissa,True,False,梅莉莎
+mobile_legends_bang_bang,Minotaur,True,False,米诺陶
+mobile_legends_bang_bang,Minsitthar,True,False,敏希萨
+mobile_legends_bang_bang,Miya,True,False,米娅
+mobile_legends_bang_bang,Mizu,True,True,水
+mobile_legends_bang_bang,Morax,True,True,摩拉克斯
+mobile_legends_bang_bang,Moskov,True,False,莫斯可夫
+mobile_legends_bang_bang,Nana,True,False,娜娜
+mobile_legends_bang_bang,Natalia,True,False,娜塔莉亚
+mobile_legends_bang_bang,Natan,True,False,纳坦
+mobile_legends_bang_bang,Nolan,True,False,诺兰
+mobile_legends_bang_bang,Novaria,True,False,诺瓦莉亚
+mobile_legends_bang_bang,Nyxus,True,True,尼克瑟斯
+mobile_legends_bang_bang,Obsidia,True,False,奥布西迪亚
+mobile_legends_bang_bang,Odette,True,False,奥黛特
+mobile_legends_bang_bang,Oriana,True,True,奥莉安娜
+mobile_legends_bang_bang,Paquito,True,False,帕奎托
+mobile_legends_bang_bang,Pharsa,True,False,法尔莎
+mobile_legends_bang_bang,Phoveus,True,False,弗维厄斯
+mobile_legends_bang_bang,Popol and Kupa,True,False,波波尔与库帕
+mobile_legends_bang_bang,Pyrrhus,True,True,皮洛士
+mobile_legends_bang_bang,Quorra,True,True,科拉
+mobile_legends_bang_bang,Rafaela,True,False,拉斐拉
+mobile_legends_bang_bang,Riven,True,True,锐雯
+mobile_legends_bang_bang,Roger,True,False,罗杰
+mobile_legends_bang_bang,Ruby,True,False,鲁比
+mobile_legends_bang_bang,Saber,True,False,剑锋
+mobile_legends_bang_bang,Selena,True,False,塞莱娜
+mobile_legends_bang_bang,Shiroe,True,True,白枝
+mobile_legends_bang_bang,Silvanna,True,False,希尔瓦娜
+mobile_legends_bang_bang,Sora,True,False,索拉
+mobile_legends_bang_bang,Sun,True,False,孙悟空
+mobile_legends_bang_bang,Suyou,True,False,素游
+mobile_legends_bang_bang,Sylas,True,True,赛拉斯
+mobile_legends_bang_bang,Talon,True,True,泰隆
+mobile_legends_bang_bang,Tenma,True,True,天马
+mobile_legends_bang_bang,Terizla,True,False,泰瑞兹拉
+mobile_legends_bang_bang,Thamuz,True,False,萨姆斯
+mobile_legends_bang_bang,Tigreal,True,False,泰格瑞尔
+mobile_legends_bang_bang,Umbra,True,True,暗影
+mobile_legends_bang_bang,Uranus,True,False,乌拉诺斯
+mobile_legends_bang_bang,Vale,True,False,维尔
+mobile_legends_bang_bang,Valentina,True,False,瓦伦蒂娜
+mobile_legends_bang_bang,Valir,True,False,瓦利尔
+mobile_legends_bang_bang,Vexana,True,False,薇克萨娜
+mobile_legends_bang_bang,Vexia,True,True,薇克西亚
+mobile_legends_bang_bang,Wanwan,True,False,婉婉
+mobile_legends_bang_bang,Wraith,True,True,魂灵
+mobile_legends_bang_bang,X.Borg,True,False,英文名保留（无需汉化）
+mobile_legends_bang_bang,Xavier,True,False,泽维尔
+mobile_legends_bang_bang,Yi Sun-shin,True,False,李舜臣
+mobile_legends_bang_bang,Yin,True,False,寅
+mobile_legends_bang_bang,Yu Zhong,True,False,翀
+mobile_legends_bang_bang,Yurei,True,True,幽灵
+mobile_legends_bang_bang,Yve,True,False,伊芙
+mobile_legends_bang_bang,Zara,True,True,扎拉
+mobile_legends_bang_bang,Zetian,True,False,武则天
+mobile_legends_bang_bang,Zhask,True,False,扎斯克
+mobile_legends_bang_bang,Zhuxin,True,False,朱芯
+mobile_legends_bang_bang,Zilong,True,False,子龙
+one_piece,JoyBoy,True,True,乔伊波伊
+overwatch2,D.Va,True,False,英文名保留（无需汉化）
+overwatch2,OR14,True,True,英文名保留（无需汉化）
+pokemon_unite,Absol,True,True,阿勃梭鲁
+pokemon_unite,Aegislash,True,False,坚盾剑怪
+pokemon_unite,Alolan Ninetales,True,False,阿罗拉九尾
+pokemon_unite,Azumarill,True,False,玛力露丽
+pokemon_unite,Blastoise,True,True,水箭龟
+pokemon_unite,Blaziken,True,False,火焰鸡
+pokemon_unite,Blissey,True,False,幸福蛋
+pokemon_unite,Buzzwole,True,False,爆肌蚊
+pokemon_unite,Ceruledge,True,False,红莲铠骑
+pokemon_unite,Chandelure,True,True,水晶灯火灵
+pokemon_unite,Cinderace,True,True,闪焰王牌
+pokemon_unite,Clefable,True,True,皮可西
+pokemon_unite,Comfey,True,False,花疗环环
+pokemon_unite,Cramorant,True,False,古月鸟
+pokemon_unite,Crustle,True,False,岩殿居蟹
+pokemon_unite,Decidueye,True,True,狙射树枭
+pokemon_unite,Delphox,True,True,妖火红狐
+pokemon_unite,Dodrio,True,False,嘟嘟利
+pokemon_unite,Dragapult,True,True,多龙巴鲁托
+pokemon_unite,Dragonite,True,True,快龙
+pokemon_unite,Duraludon,True,True,铝钢龙
+pokemon_unite,Eldegoss,True,False,白蓬蓬
+pokemon_unite,Espeon,True,True,太阳伊布
+pokemon_unite,Falinks,True,True,列阵兵
+pokemon_unite,Garchomp,True,False,烈咬陆鲨
+pokemon_unite,Gardevoir,True,True,沙奈朵
+pokemon_unite,Glaceon,True,True,冰伊布
+pokemon_unite,Goodra,True,True,黏美龙
+pokemon_unite,Greedent,True,False,藏饱栗鼠
+pokemon_unite,Gyarados,True,False,暴鲤龙
+pokemon_unite,Hoopa,True,False,胡帕
+pokemon_unite,Inteleon,True,True,千面避役
+pokemon_unite,Lapras,True,False,拉普拉斯
+pokemon_unite,Leafeon,True,True,叶伊布
+pokemon_unite,Machamp,True,False,怪力
+pokemon_unite,Mamoswine,True,False,象牙猪
+pokemon_unite,Meowscarada,True,True,魔幻假面喵
+pokemon_unite,Metagross,True,True,巨金怪
+pokemon_unite,Mew,True,False,梦幻
+pokemon_unite,Mimikyu,True,True,谜拟丘
+pokemon_unite,Mr. Mime,True,False,魔墙人偶
+pokemon_unite,Psyduck,True,True,可达鸭
+pokemon_unite,Sableye,True,False,勾魂眼
+pokemon_unite,Scizor,True,False,巨钳螳螂
+pokemon_unite,Scyther,True,True,飞天螳螂
+pokemon_unite,Slowbro,True,False,呆壳兽
+pokemon_unite,Snorlax,True,True,卡比兽
+pokemon_unite,Sylveon,True,True,仙子伊布
+pokemon_unite,Talonflame,True,False,烈箭鹰
+pokemon_unite,Trevenant,True,False,朽木妖
+pokemon_unite,Tsareena,True,False,甜冷美后
+pokemon_unite,Tyranitar,True,False,班基拉斯
+pokemon_unite,Umbreon,True,False,月亮伊布
+pokemon_unite,Urshifu,True,True,武道熊师
+pokemon_unite,Venusaur,True,True,妙蛙花
+pokemon_unite,Wigglytuff,True,False,胖可丁
+pokemon_unite,Zacian,True,True,苍响
+pokemon_unite,Zeraora,True,False,捷拉奥拉
+pokemon_unite,Zoroark,True,True,索罗亚克
+smite,Achilles,True,False,阿喀琉斯
+smite,Aengus,True,True,安格斯
+smite,Agni,True,False,阿耆尼
+smite,AhMuzenCab,True,False,阿缪森卡布
+smite,AhPuch,True,False,阿普切
+smite,Amaterasu,True,False,天照
+smite,AmeNoUzume,True,True,天钿女命
+smite,Anhur,True,False,安赫
+smite,Anubis,True,False,阿努比斯
+smite,AoKuang,True,False,敖广
+smite,Aphrodite,True,False,阿芙洛狄忒
+smite,Apollo,True,False,阿波罗
+smite,Arachne,True,False,阿拉克涅
+smite,Ares,True,False,阿瑞斯
+smite,Artemis,True,False,阿尔忒弥斯
+smite,Artio,True,False,阿尔提奥
+smite,Athena,True,False,雅典娜
+smite,Atlas,True,False,阿特拉斯
+smite,Awilix,True,False,阿维利克斯
+smite,Bakasura,True,False,巴卡苏拉
+smite,BakeKujira,True,False,化鲸
+smite,Baldr,True,True,巴德尔
+smite,Balor,True,True,巴罗尔
+smite,Bastet,True,False,芭丝特
+smite,Benzaiten,True,True,弁财天
+smite,Bragi,True,True,布拉吉
+smite,Brigid,True,True,布里吉德
+smite,Brunhild,True,True,布伦希尔德
+smite,Cabrakan,True,False,卡布拉坎
+smite,Camazotz,True,False,卡玛佐兹
+smite,Cerberus,True,False,刻耳柏洛斯
+smite,Cernunnos,True,False,科尔努诺斯
+smite,Chaac,True,False,查克
+smite,Change,True,False,嫦娥
+smite,Charon,True,False,卡戎
+smite,Charybdis,True,False,卡律布狄斯
+smite,Chiron,True,False,喀戎
+smite,Chronos,True,False,柯罗诺斯
+smite,Cliodhna,True,False,克莉奥娜
+smite,Cronus,True,True,克洛诺斯
+smite,Cthulhu,True,False,克苏鲁
+smite,CuChulainn,True,False,库·丘林
+smite,Dagda,True,True,达格达
+smite,Daji,True,False,妲己
+smite,Danzaburou,True,False,团三郎
+smite,Demeter,True,True,得墨忒耳
+smite,Dionysus,True,True,狄俄尼索斯
+smite,DragonKing,True,True,龙王
+smite,Ebisu,True,True,惠比寿
+smite,Eos,True,True,厄俄斯
+smite,Epona,True,True,艾波娜
+smite,Eris,True,True,厄里斯
+smite,ErlangShen,True,False,二郎神
+smite,Fafnir,True,False,法夫纳
+smite,Fenrir,True,False,芬里尔
+smite,Freya,True,False,芙蕾雅
+smite,Freyr,True,True,弗雷
+smite,Frigg,True,True,弗丽嘉
+smite,Fujin,True,True,风神
+smite,Fuxi,True,True,伏羲
+smite,Ganesha,True,False,象头神
+smite,Geb,True,False,盖布
+smite,Gilgamesh,True,False,吉尔伽美什
+smite,GuanYu,True,False,关羽
+smite,Hachiman,True,False,八幡
+smite,Hades,True,False,哈迪斯
+smite,Hanuman,True,True,哈奴曼
+smite,Hathor,True,True,哈托尔
+smite,HeBo,True,False,河伯
+smite,Hecate,True,True,赫卡忒
+smite,Heimdall,True,True,海姆达尔
+smite,Hel,True,False,赫尔
+smite,Helios,True,True,赫利俄斯
+smite,Hephaestus,True,True,赫菲斯托斯
+smite,Hera,True,False,赫拉
+smite,Hercules,True,False,赫拉克勒斯
+smite,Horus,True,False,荷鲁斯
+smite,HouYi,True,False,后羿
+smite,Hunahpu,True,True,胡纳赫普
+smite,HunBatz,True,False,胡恩·巴茨
+smite,Hypnos,True,True,许普诺斯
+smite,Idun,True,True,伊登
+smite,Indra,True,True,因陀罗
+smite,Ishtar,True,False,伊什塔尔
+smite,Isis,True,True,伊西斯
+smite,Itzamna,True,True,伊察姆纳
+smite,Ixchel,True,False,伊什切尔
+smite,Ixtab,True,True,伊什塔布
+smite,Izanagi,True,True,伊邪那岐
+smite,JadeEmperor,True,True,玉皇大帝
+smite,JingWei,True,False,精卫
+smite,Jormungandr,True,False,耶梦加得
+smite,Kali,True,False,迦梨
+smite,Khepri,True,False,凯普里
+smite,KingArthur,True,False,亚瑟王
+smite,Kukulkan,True,False,库库尔坎
+smite,Kumbhakarna,True,False,鸠姆婆迦哩纳
+smite,Kuzenbo,True,False,九千坊
+smite,Lakshmi,True,True,拉克什米
+smite,Lancelot,True,False,兰斯洛特
+smite,LeiGong,True,True,雷公
+smite,Loki,True,False,洛基
+smite,Lugh,True,True,鲁格
+smite,Maat,True,True,玛亚特
+smite,Manannan,True,True,马纳南
+smite,Martichoras,True,False,蝎尾狮
+smite,Medusa,True,False,美杜莎
+smite,Menshen,True,True,门神
+smite,Merlin,True,False,梅林
+smite,Mictlantecuhtli,True,True,米克特兰提库特利
+smite,MorganLeFay,True,False,摩根·勒菲
+smite,Morrigan,True,True,莫瑞甘
+smite,Mulan,True,False,花木兰
+smite,Neith,True,False,奈斯
+smite,Nemesis,True,False,涅墨西斯
+smite,Nephthys,True,True,奈芙蒂斯
+smite,Nezha,True,False,哪吒
+smite,Nidhogg,True,True,尼德霍格
+smite,Nike,True,False,尼刻
+smite,Nuada,True,True,努阿达
+smite,Nut,True,False,努特
+smite,Nuwa,True,False,女娲
+smite,Odin,True,False,奥丁
+smite,Okuninushi,True,True,大国主
+smite,Osiris,True,False,奥西里斯
+smite,Pan,True,True,潘
+smite,Persephone,True,False,珀耳塞福涅
+smite,Poseidon,True,False,波塞冬
+smite,Ptah,True,True,普塔
+smite,Ra,True,False,拉
+smite,Raijin,True,False,雷神
+smite,Rama,True,False,罗摩
+smite,Ratatoskr,True,False,拉塔托斯克
+smite,Ravana,True,False,罗波那
+smite,Saraswati,True,True,萨拉斯瓦蒂
+smite,Scathach,True,True,斯卡哈
+smite,Scylla,True,False,斯库拉
+smite,Sekhmet,True,True,塞赫迈特
+smite,Selene,True,True,塞勒涅
+smite,Serqet,True,False,塞尔凯特
+smite,Set,True,False,赛特
+smite,Shiva,True,False,湿婆
+smite,Shu,True,True,舒
+smite,Sif,True,True,希芙
+smite,Skadi,True,False,斯卡蒂
+smite,Skoll,True,True,斯科尔
+smite,Sobek,True,False,索贝克
+smite,Sol,True,False,索尔
+smite,SunWukong,True,False,孙悟空
+smite,Surtr,True,False,苏尔特尔
+smite,Susano,True,False,须佐之男
+smite,Takemikazuchi,True,True,建御雷
+smite,Tefnut,True,True,泰芙努特
+smite,Thanatos,True,False,塔纳托斯
+smite,Thor,True,False,托尔
+smite,Thoth,True,False,托特
+smite,Tiamat,True,False,提亚马特
+smite,Tlaloc,True,True,特拉洛克
+smite,Tsukuyomi,True,False,月读
+smite,Tyr,True,False,提尔
+smite,Ullr,True,False,乌勒尔
+smite,Vamana,True,False,筏摩那
+smite,Varuna,True,True,伐楼那
+smite,Xbalanque,True,False,希巴兰克
+smite,XingTian,True,False,刑天
+smite,XipeTotec,True,True,希佩托特克
+smite,Xiwangmu,True,True,西王母
+smite,YamataNoOrochi,True,True,八岐大蛇
+smite,Ymir,True,False,尤弥尔
+smite,YuHuang,True,False,玉皇
+smite,YumKaax,True,True,尤姆·卡克斯
+smite,Zeus,True,False,宙斯
+smite,ZhongKui,True,False,钟馗
+three_body,AA,True,True,英文名保留（无需汉化）
+three_body,DX3906,True,True,英文名保留（无需汉化）
+three_body,M31,True,True,英文名保留（无需汉化）
+three_body,M78,True,True,英文名保留（无需汉化）
+three_body,M87,True,True,英文名保留（无需汉化）
+vainglory,Aegis_VG,True,True,神盾
+vainglory,Amael,True,True,阿玛尔
+vainglory,Anka,True,True,安卡
+vainglory,Arcanist,True,True,奥术师
+vainglory,Assassin_VG,True,True,刺客
+vainglory,AstralMage,True,True,星界法师
+vainglory,Beastmaster,True,True,兽王
+vainglory,BladeDancer,True,True,剑舞者
+vainglory,Blightcaller,True,True,枯萎召唤者
+vainglory,Brightwing,True,True,光翼
+vainglory,Celestial_VG,True,True,天界者
+vainglory,ChaosKnight,True,True,混沌骑士
+vainglory,Cinderkin,True,True,余烬之子
+vainglory,Corsair,True,True,海贼
+vainglory,CrystalKnight,True,True,水晶骑士
+vainglory,CrystalMage_VG,True,True,水晶法师
+vainglory,Darkmoor,True,True,暗沼
+vainglory,Darktide,True,True,暗潮
+vainglory,Dawnweaver,True,True,织晓者
+vainglory,DeathKnight_VG,True,True,死亡骑士
+vainglory,Doombringer,True,True,末日使者
+vainglory,Dreadmaw,True,True,恐惧之喉
+vainglory,Dreadnought,True,True,无畏战舰
+vainglory,DreamWeaver_VG,True,True,织梦者
+vainglory,Druid_VG,True,True,德鲁伊
+vainglory,Duskwalker,True,True,暮行者
+vainglory,EarthGuardian,True,True,大地守护者
+vainglory,Earthshaker,True,True,撼地者
+vainglory,ElderDragon_VG,True,True,古龙
+vainglory,Elderwood,True,True,古木灵
+vainglory,FateBinder,True,True,命运缚者
+vainglory,FireMage_VG,True,True,火焰法师
+vainglory,Flamecaller,True,True,唤焰者
+vainglory,FlameDancer,True,True,焰舞者
+vainglory,Flameheart,True,True,焰心
+vainglory,Flamekin,True,True,焰嗣
+vainglory,FrostDancer,True,True,霜舞者
+vainglory,Frostfang,True,True,霜牙
+vainglory,FrostGiant,True,True,霜巨人
+vainglory,FrostWarden,True,True,霜卫
+vainglory,Frostweaver,True,True,织霜者
+vainglory,Gladiator_VG,True,True,角斗士
+vainglory,Goldtooth,True,True,金牙
+vainglory,Gravewalker,True,True,墓行者
+vainglory,Gythia,True,True,吉希亚
+vainglory,Ironclad,True,True,铁甲
+vainglory,Ironfang,True,True,铁牙
+vainglory,Ironheart,True,True,铁心
+vainglory,Ironmaw,True,True,铁喉
+vainglory,Ironweaver,True,True,铸铁者
+vainglory,JadeGolem,True,True,玉魔像
+vainglory,LifeWarden,True,True,生命守望者
+vainglory,Lightbearer,True,True,光明使者
+vainglory,Lorelei,True,True,罗蕾莱
+vainglory,Mechanist,True,True,机械师
+vainglory,Moonclaw,True,True,月爪
+vainglory,MoonPriestess,True,True,月之女祭司
+vainglory,NetherBeast,True,True,炼狱兽
+vainglory,Netherknight,True,True,炼狱骑士
+vainglory,Nightmare_VG,True,True,梦魇
+vainglory,Nightshade,True,True,夜影
+vainglory,OrderMage,True,True,秩序法师
+vainglory,PeaceKeeper,True,True,维和者
+vainglory,Phoenix_VG,True,True,凤凰
+vainglory,PlagueDoctor,True,True,瘟疫医生
+vainglory,RealityShaper,True,True,现实塑者
+vainglory,Riftwalker,True,True,裂隙行者
+vainglory,Rockjaw,True,True,石颚
+vainglory,Runeforger,True,True,符文锻造者
+vainglory,RuneKnight,True,True,符文骑士
+vainglory,SeaSerpent,True,True,海蛇
+vainglory,Seeker_VG,True,True,追寻者
+vainglory,Shadowblade,True,True,暗影之刃
+vainglory,ShadowDancer,True,True,影舞者
+vainglory,Shadowkin,True,True,影裔
+vainglory,Shadowmancer,True,True,暗影术士
+vainglory,Shadowveil,True,True,暗影面纱
+vainglory,Shin,False,True,心
+vainglory,Skyguard,True,True,天卫
+vainglory,SkyHunter,True,True,猎天者
+vainglory,Sorceress_VG,True,True,女术士
+vainglory,Soulreaper,True,True,夺魂者
+vainglory,SpaceWarden,True,True,太空守望者
+vainglory,Spellbinder,True,True,缚法者
+vainglory,SpiritFox,True,True,灵狐
+vainglory,Spiritwalker,True,True,灵魂行者
+vainglory,Starcaller,True,True,唤星者
+vainglory,Starforger,True,True,铸星者
+vainglory,StarSeeker_VG,True,True,追星者
+vainglory,Stonewarden,True,True,石卫
+vainglory,Stormcaller,True,True,唤雷者
+vainglory,StormDancer,True,True,雷舞者
+vainglory,Stormguard,True,True,风暴卫士
+vainglory,Stormlash,True,True,雷鞭
+vainglory,StormQueen,True,True,风暴女王
+vainglory,Stormrider,True,True,驭雷者
+vainglory,Stormweaver,True,True,织雷者
+vainglory,SunChampion,True,True,太阳斗士
+vainglory,Sunforge,True,True,日铸
+vainglory,Sunstone,True,True,日石
+vainglory,Sunweaver,True,True,织日者
+vainglory,Swiftblade,True,True,疾风之刃
+vainglory,Technologist,True,True,技术专家
+vainglory,Thunderbird,True,True,雷鸟
+vainglory,Thunderlord,True,True,雷霆领主
+vainglory,Tidecaller,True,True,唤潮者
+vainglory,TimeKeeper_VG,True,True,时守者
+vainglory,Venomancer,True,True,毒术师
+vainglory,Verdant,True,True,翠绿
+vainglory,Vindicator,True,True,守护者
+vainglory,Voidforged,True,True,虚空铸造
+vainglory,VoidHunter,True,True,虚空猎手
+vainglory,Voidreaver,True,True,虚空掠夺者
+vainglory,Warlord_VG,True,True,军阀
+vainglory,WarMage_VG,True,True,战争法师
+vainglory,Wildkin,True,True,野性之嗣
+vainglory,WindMage_VG,True,True,风之法师
+vainglory,Windwalker,True,True,御风者
+world_generals,Admiral Yi,True,True,李舜臣
+world_generals,Aetius,True,True,埃提乌斯
+world_generals,Agesilaus II,True,True,阿格西劳斯二世
+world_generals,Akbar the Great,True,True,阿克巴大帝
+world_generals,Alaric,True,True,阿拉里克
+world_generals,Alcibiades,True,True,亚西比德
+world_generals,Alexander the Great,True,True,亚历山大大帝
+world_generals,Alfred the Great,True,True,阿尔弗雷德大帝
+world_generals,Artemisia I,True,True,阿尔特米西亚一世
+world_generals,Ashurbanipal,True,True,亚述巴尼拔
+world_generals,Askia Muhammad,True,True,阿斯基亚·穆罕默德
+world_generals,Attila the Hun,True,True,阿提拉
+world_generals,Augustus,True,True,奥古斯都
+world_generals,Aurangzeb,True,True,奥朗则布
+world_generals,Aurelian,True,True,奥勒良
+world_generals,Babur,True,True,巴布尔
+world_generals,Baldwin IV of Jerusalem,True,True,鲍德温四世
+world_generals,Belisarius,True,True,贝利撒留
+world_generals,Bohemond I,True,True,博希蒙德一世
+world_generals,Boudica,True,True,布狄卡
+world_generals,Brian Boru,True,True,布莱恩·博鲁
+world_generals,Cao Cao,True,True,曹操
+world_generals,Catherine the Great,True,True,叶卡捷琳娜大帝
+world_generals,Chandragupta Maurya,True,True,旃陀罗笈多
+world_generals,Charlemagne,True,True,查理曼大帝
+world_generals,Charles de Gaulle,True,True,戴高乐
+world_generals,Che Guevara,True,True,切·格瓦拉
+world_generals,Cochise,True,True,科奇斯
+world_generals,Constantine the Great,True,True,君士坦丁大帝
+world_generals,Crazy Horse,True,True,疯马
+world_generals,Cyrus the Great,True,True,居鲁士大帝
+world_generals,Darius the Great,True,True,大流士大帝
+world_generals,Date Masamune,True,True,伊达政宗
+world_generals,Diocletian,True,True,戴克里先
+world_generals,Douglas MacArthur,True,True,麦克阿瑟
+world_generals,Duke of Wellington,True,True,威灵顿公爵
+world_generals,Dwight Eisenhower,True,True,艾森豪威尔
+world_generals,Edward the Black Prince,True,True,黑太子爱德华
+world_generals,El Cid,True,True,熙德
+world_generals,Elizabeth I,True,True,伊丽莎白一世
+world_generals,Epaminondas,True,True,伊巴密浓达
+world_generals,Erwin Rommel,True,True,隆美尔
+world_generals,Francis Drake,True,True,德雷克
+world_generals,Frederick Barbarossa,True,True,腓特烈·巴巴罗萨
+world_generals,Frederick the Great,True,True,腓特烈大帝
+world_generals,Gaius Marius,True,True,盖乌斯·马略
+world_generals,Genghis Khan,True,True,成吉思汗
+world_generals,George S. Patton,True,True,巴顿
+world_generals,George Washington,True,True,华盛顿
+world_generals,Georgy Zhukov,True,True,朱可夫
+world_generals,Germanicus,True,True,日耳曼尼库斯
+world_generals,Geronimo,True,True,杰罗尼莫
+world_generals,Gilgamesh_Historical,True,True,吉尔伽美什
+world_generals,Giuseppe Garibaldi,True,True,加里波第
+world_generals,Godfrey of Bouillon,True,True,布永的戈弗雷
+world_generals,Granuaile,True,True,格兰纽爱尔
+world_generals,Guan Yu,True,True,关羽
+world_generals,Gustavus Adolphus,True,True,古斯塔夫·阿道夫
+world_generals,Gwanggaeto the Great,True,True,广开土大王
+world_generals,Hadrian,True,True,哈德良
+world_generals,Haile Selassie,True,True,海尔·塞拉西
+world_generals,Hammurabi,True,True,汉谟拉比
+world_generals,Hangaku Gozen,True,True,坂额御前
+world_generals,Hannibal Barca,True,True,汉尼拔·巴卡
+world_generals,Harold Godwinson,True,True,哈罗德·戈德温森
+world_generals,Henry the Navigator,True,True,航海家亨利
+world_generals,Henry V,True,True,亨利五世
+world_generals,Honda Tadakatsu,True,True,本多忠胜
+world_generals,Horatio Nelson,True,True,纳尔逊
+world_generals,Hua Mulan,True,True,花木兰
+world_generals,Hulagu Khan,True,True,旭烈兀
+world_generals,Idris Alooma,True,True,伊德里斯·阿鲁玛
+world_generals,Isabella I of Castile,True,True,伊莎贝拉一世
+world_generals,Ivan the Terrible,True,True,伊凡雷帝
+world_generals,Jan Žižka,True,True,扬·杰式卡
+world_generals,Joan of Arc,True,True,圣女贞德
+world_generals,José de San Martín,True,True,圣马丁
+world_generals,Julius Caesar,True,True,凯撒
+world_generals,Kahina,True,True,卡希娜
+world_generals,Khalid ibn al-Walid,True,True,哈立德·本·瓦利德
+world_generals,King Arthur,True,False,亚瑟王
+world_generals,Kublai Khan,True,True,忽必烈
+world_generals,Lakshmibai,True,True,章西女王
+world_generals,Leo Africanus,True,True,利奥·阿非利加努斯
+world_generals,Leonidas,True,True,列奥尼达
+world_generals,Leonidas I,True,True,列奥尼达一世
+world_generals,Liu Bei,True,True,刘备
+world_generals,Lozen,True,True,洛珍
+world_generals,Lü Bu,True,True,吕布
+world_generals,Majorian,True,True,马约里安
+world_generals,Mansa Musa,True,True,曼萨·穆萨
+world_generals,Marcus Aurelius,True,True,马可·奥勒留
+world_generals,Mark Antony,True,True,马克·安东尼
+world_generals,Matilda of Tuscany,True,True,托斯卡纳的玛蒂尔达
+world_generals,Mehmed II,True,True,穆罕默德二世
+world_generals,Menelik II,True,True,孟尼利克二世
+world_generals,Miltiades,True,True,米太亚德
+world_generals,Minamoto no Yoshitsune,True,True,源义经
+world_generals,Miyamoto Musashi,True,True,宫本武藏
+world_generals,Montezuma II,True,True,蒙特祖马二世
+world_generals,Mōri Motonari,True,True,毛利元就
+world_generals,Nakano Takeko,True,True,中野竹子
+world_generals,Napoleon Bonaparte,True,True,拿破仑
+world_generals,Nebuchadnezzar II,True,True,尼布甲尼撒二世
+world_generals,Nzinga,True,True,恩津加
+world_generals,Oda Nobunaga,True,True,织田信长
+world_generals,Oliver Cromwell,True,True,克伦威尔
+world_generals,Otto von Bismarck,True,True,俾斯麦
+world_generals,Pachacuti,True,True,帕查库特克
+world_generals,Pelopidas,True,True,佩洛皮达斯
+world_generals,Pericles,True,True,伯里克利
+world_generals,Peter the Great,True,True,彼得大帝
+world_generals,Philip II of Macedon,True,True,腓力二世
+world_generals,Pompey,True,True,庞培
+world_generals,Pyrrhus of Epirus,True,True,皮洛士
+world_generals,Qin Shi Huang,True,True,秦始皇
+world_generals,Ramesses II,True,True,拉美西斯二世
+world_generals,Rani of Jhansi,True,True,章西女王
+world_generals,Richard the Lionheart,True,True,狮心王理查
+world_generals,Robert E. Lee,True,True,罗伯特·李
+world_generals,Robert the Bruce,True,True,罗伯特·布鲁斯
+world_generals,Roland,True,True,罗兰
+world_generals,Saladin,True,True,萨拉丁
+world_generals,Samori Ture,True,True,萨摩里·杜尔
+world_generals,Sanada Yukimura,True,True,真田幸村
+world_generals,Sargon of Akkad,True,True,萨尔贡
+world_generals,Scipio Africanus,True,True,西庇阿
+world_generals,Sennacherib,True,True,辛那赫里布
+world_generals,Septimius Severus,True,True,塞维鲁
+world_generals,Shah Jahan,True,True,沙贾汗
+world_generals,Shaka Zulu,True,True,恰卡·祖鲁
+world_generals,Simón Bolívar,True,True,玻利瓦尔
+world_generals,Sitting Bull,True,True,坐牛
+world_generals,Skanderbeg,True,True,斯坎德培
+world_generals,Spartacus,True,True,斯巴达克斯
+world_generals,Stilicho,True,True,斯提里科
+world_generals,Stonewall Jackson,True,True,石墙杰克逊
+world_generals,Subutai,True,True,速不台
+world_generals,Suleiman the Magnificent,True,True,苏莱曼大帝
+world_generals,Sulla,True,True,苏拉
+world_generals,Sun Tzu,True,True,孙子
+world_generals,Sundiata Keita,True,True,松迪亚塔
+world_generals,Takeda Shingen,True,True,武田信玄
+world_generals,Tamerlane,True,True,帖木儿
+world_generals,Tecumseh,True,True,特库姆塞
+world_generals,Themistocles,True,True,地米斯托克利
+world_generals,Theodosius,True,True,狄奥多西
+world_generals,Thutmose III,True,True,图特摩斯三世
+world_generals,Tiglath-Pileser III,True,True,提格拉特帕拉沙尔三世
+world_generals,Timur,True,True,帖木儿
+world_generals,Titus,True,True,提图斯
+world_generals,Tokugawa,True,True,德川
+world_generals,Tokugawa Ieyasu,True,True,德川家康
+world_generals,Tomoe Gozen,True,True,巴御前
+world_generals,Toyotomi Hideyoshi,True,True,丰臣秀吉
+world_generals,Trajan,True,True,图拉真
+world_generals,Trieu Thi Trinh,True,True,赵氏贞
+world_generals,Uesugi Kenshin,True,True,上杉谦信
+world_generals,Ulysses S. Grant,True,True,格兰特
+world_generals,Vasco da Gama,True,True,达·伽马
+world_generals,Vespasian,True,True,韦斯巴芗
+world_generals,Vlad the Impaler,True,True,弗拉德三世
+world_generals,William the Conqueror,True,True,征服者威廉
+world_generals,William Wallace,True,True,威廉·华莱士
+world_generals,Winston Churchill,True,True,丘吉尔
+world_generals,Xenophon,True,True,色诺芬
+world_generals,Xiang Yu,True,True,项羽
+world_generals,Yi Sun-sin,True,True,李舜臣
+world_generals,Yuenü,True,True,越女
+world_generals,Zenobia,True,True,芝诺比娅
+world_generals,Zheng He,True,True,郑和
+world_generals,Zhuge Liang,True,True,诸葛亮

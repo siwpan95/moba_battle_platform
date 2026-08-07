@@ -1,0 +1,123 @@
+[
+  {
+    "name": "青云剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "青云剑寒光凛冽，黑烟烈焰随剑而生。1d10+STR 挥砍伤害，减速1回合。"
+  },
+  {
+    "name": "万千戈矛",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "护甲降低"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "1d4黑烟"
+      }
+    ],
+    "cooldown": 1,
+    "description": "青云剑一挥，万千戈矛齐出！2d8+STR 穿刺范围伤害，破甲1回合，黑烟持续伤害。",
+    "aoe_radius": 10
+  },
+  {
+    "name": "魔力护体",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "魔家四将的魔体护身。减伤2回合并增伤1回合。"
+  },
+  {
+    "name": "天王降世",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "击退"
+      }
+    ],
+    "cooldown": 4,
+    "description": "增长天王魔礼青擎青云剑降世！2d10+STR 挥砍范围伤害，低血量翻倍，击退1回合。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  }
+]

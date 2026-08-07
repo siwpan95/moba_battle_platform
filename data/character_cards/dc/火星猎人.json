@@ -1,5 +1,5 @@
 {
-  "card_id": "DC -1271",
+  "card_id": "dc:火星猎人",
   "hero": {
     "name": "火星猎人",
     "name_en": "Martian Manhunter",
@@ -108,102 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "火星猎人·元素风暴",
-      "key": "Q",
-      "type": "法术",
-      "action": "召唤元素席卷",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "法术"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "aoe",
-          "desc": "范围伤害"
-        }
-      ],
-      "cooldown": 7,
-      "description": "召唤元素席卷（区域）。范围伤害",
-      "approx": true
-    },
-    {
-      "name": "火星猎人·时空禁锢",
-      "key": "W",
-      "type": "法术",
-      "action": "定身目标",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "寒冰"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "hold",
-          "desc": "定身"
-        }
-      ],
-      "cooldown": 6,
-      "description": "定身目标（单体）。定身",
-      "approx": true
-    },
-    {
-      "name": "火星猎人·焰爆术",
-      "key": "E",
-      "type": "法术",
-      "action": "引爆烈焰",
-      "range": "近战",
-      "target": "区域",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "burn",
-          "desc": "灼烧"
-        }
-      ],
-      "cooldown": 5,
-      "description": "引爆烈焰（区域）。灼烧",
-      "approx": true
-    },
-    {
-      "name": "火星猎人·雷霆之矛",
-      "key": "R",
-      "type": "法术",
-      "action": "降下闪电",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "雷电"
-      },
-      "effects": [
-        {
-          "target": "敌方",
-          "kind": "stun",
-          "desc": "麻痹"
-        }
-      ],
-      "cooldown": 6,
-      "description": "降下闪电（单体）。麻痹",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "DC -1271"
 }

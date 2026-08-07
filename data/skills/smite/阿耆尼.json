@@ -1,0 +1,122 @@
+[
+  {
+    "name": "圣火",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "圣火永不熄灭",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "阿耆尼掷出圣火——作为火神，他存在于每一次献祭的火焰之中。1d8+INT 火焰伤害，dot 1回合。"
+  },
+  {
+    "name": "火祭",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "祭火焚烧一切不洁",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "阿耆尼点燃献祭之火——他是在天界与人间传递祭品的使者，火焰就是他的语言。AOE dot 2回合。2d6+INT 火焰伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "三头火",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "三头之火同时燃烧",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "火焰之舌喷射推进",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "阿耆尼显现三头——他的三个头分别吞吐天火、空火、地火，三界一切火焰的源头。增伤2回合+加速1回合。"
+  },
+  {
+    "name": "焚天",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "火焰吞噬一切弱者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "焚天之火万世不灭",
+        "target": "敌方",
+        "duration": "3"
+      }
+    ],
+    "cooldown": 4,
+    "description": "阿耆尼释放焚天烈焰——那是足以吞噬宇宙本身的火焰，在每一次劫末清洗整个世界。低血斩杀+dot 3回合。4d6+INT 火焰伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

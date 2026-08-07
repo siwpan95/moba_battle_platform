@@ -1,0 +1,119 @@
+[
+  {
+    "name": "息壤",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "女娲洒出息壤——这抔黄土能自我生长、无穷无尽，曾用来造人和治水。1d8+WIS 力场伤害。"
+  },
+  {
+    "name": "抟土造人",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "抟土造人的生命力回流",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "shield",
+        "desc": "泥土化为护体铠甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "女娲以抟土之术重塑身躯——她曾用黄土造出人类，如今这份生命力为己所用。回复2d8+WIS生命，护盾2回合。"
+  },
+  {
+    "name": "补天",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "补天余晖照耀，战力提升",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "cleanse",
+        "desc": "五色石光净化一切",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "女娲熔炼五色石补天——那场浩劫中她撑起崩塌的天空，熔岩与星光同在她的指尖流淌。增伤2回合+净化。2d6+WIS 光耀伤害，AOE。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "五色石天罚",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "desc": "五色石光将敌人凝固为石",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "补天余力滋润万物",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "女娲降下五色石天罚——当年补天余下的神石化作流星雨，触及之物化为顽石。AOE石化，回复3d8+WIS。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

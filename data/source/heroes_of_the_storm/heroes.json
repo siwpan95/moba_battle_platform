@@ -1,547 +1,518 @@
-{
-  "game": "Heroes of the Storm",
-  "name_cn": "风暴英雄",
-  "total": 90,
-  "heroes": [
-    {
-      "name": "Abathur",
-      "role": "辅助/专家",
-      "universe": "星际争霸",
-      "universal_role": "support"
-    },
-    {
-      "name": "Alarak",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Alexstrasza",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Ana",
-      "role": "辅助",
-      "universe": "守望先锋",
-      "universal_role": "support"
-    },
-    {
-      "name": "Anduin",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Anub'arak",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Artanis",
-      "role": "斗士",
-      "universe": "星际争霸",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Arthas",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Auriel",
-      "role": "辅助",
-      "universe": "暗黑破坏神",
-      "universal_role": "support"
-    },
-    {
-      "name": "Azmodan",
-      "role": "法师",
-      "universe": "暗黑破坏神",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Blaze",
-      "role": "坦克",
-      "universe": "星际争霸",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Brightwing",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Cassia",
-      "role": "刺客",
-      "universe": "暗黑破坏神",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Chen",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Cho",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Chromie",
-      "role": "法师",
-      "universe": "魔兽",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Deathwing",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Deckard",
-      "role": "辅助",
-      "universe": "暗黑破坏神",
-      "universal_role": "support"
-    },
-    {
-      "name": "Dehaka",
-      "role": "斗士",
-      "universe": "星际争霸",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Diablo",
-      "role": "坦克",
-      "universe": "暗黑破坏神",
-      "universal_role": "tank"
-    },
-    {
-      "name": "D.Va",
-      "role": "斗士",
-      "universe": "守望先锋",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "E.T.C.",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Falstad",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Fenix",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Gall",
-      "role": "法师",
-      "universe": "魔兽",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Garrosh",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Gazlowe",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Genji",
-      "role": "刺客",
-      "universe": "守望先锋",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Greymane",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Gul'dan",
-      "role": "法师",
-      "universe": "魔兽",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Hanzo",
-      "role": "刺客",
-      "universe": "守望先锋",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Hogger",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Illidan",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Imperius",
-      "role": "斗士",
-      "universe": "暗黑破坏神",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Jaina",
-      "role": "法师",
-      "universe": "魔兽",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Johanna",
-      "role": "坦克",
-      "universe": "暗黑破坏神",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Junkrat",
-      "role": "刺客",
-      "universe": "守望先锋",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Kael'thas",
-      "role": "法师",
-      "universe": "魔兽",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Kel'Thuzad",
-      "role": "法师",
-      "universe": "魔兽",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Kerrigan",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Kharazim",
-      "role": "辅助",
-      "universe": "暗黑破坏神",
-      "universal_role": "support"
-    },
-    {
-      "name": "Leoric",
-      "role": "斗士",
-      "universe": "暗黑破坏神",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Li Li",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Li-Ming",
-      "role": "法师",
-      "universe": "暗黑破坏神",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Lt. Morales",
-      "role": "辅助",
-      "universe": "星际争霸",
-      "universal_role": "support"
-    },
-    {
-      "name": "Lunara",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Lucio",
-      "role": "辅助",
-      "universe": "守望先锋",
-      "universal_role": "support"
-    },
-    {
-      "name": "Maiev",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Mal'Ganis",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Malfurion",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Malthael",
-      "role": "斗士",
-      "universe": "暗黑破坏神",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Medivh",
-      "role": "辅助/专家",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Mei",
-      "role": "坦克",
-      "universe": "守望先锋",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Mephisto",
-      "role": "法师",
-      "universe": "暗黑破坏神",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Muradin",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Murky",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Nazeebo",
-      "role": "法师",
-      "universe": "暗黑破坏神",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Nova",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Orphea",
-      "role": "法师",
-      "universe": "风暴英雄原创",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Probius",
-      "role": "法师/专家",
-      "universe": "星际争霸",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Qhira",
-      "role": "刺客",
-      "universe": "风暴英雄原创",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Ragnaros",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Raynor",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Rehgar",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Rexxar",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Samuro",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Sgt. Hammer",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Sonya",
-      "role": "斗士",
-      "universe": "暗黑破坏神",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Stitches",
-      "role": "坦克",
-      "universe": "魔兽",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Stukov",
-      "role": "辅助",
-      "universe": "星际争霸",
-      "universal_role": "support"
-    },
-    {
-      "name": "Sylvanas",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Tassadar",
-      "role": "法师",
-      "universe": "星际争霸",
-      "universal_role": "mage"
-    },
-    {
-      "name": "The Butcher",
-      "role": "刺客",
-      "universe": "暗黑破坏神",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "The Lost Vikings",
-      "role": "辅助/专家",
-      "universe": "经典游戏",
-      "universal_role": "support"
-    },
-    {
-      "name": "Thrall",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Tracer",
-      "role": "刺客",
-      "universe": "守望先锋",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Tychus",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Tyrael",
-      "role": "坦克",
-      "universe": "暗黑破坏神",
-      "universal_role": "tank"
-    },
-    {
-      "name": "Tyrande",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Uther",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Valeera",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Valla",
-      "role": "刺客",
-      "universe": "暗黑破坏神",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Varian",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Whitemane",
-      "role": "辅助",
-      "universe": "魔兽",
-      "universal_role": "support"
-    },
-    {
-      "name": "Xul",
-      "role": "斗士",
-      "universe": "暗黑破坏神",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Yrel",
-      "role": "斗士",
-      "universe": "魔兽",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Zagara",
-      "role": "法师/专家",
-      "universe": "星际争霸",
-      "universal_role": "mage"
-    },
-    {
-      "name": "Zarya",
-      "role": "辅助/斗士",
-      "universe": "守望先锋",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "Zeratul",
-      "role": "刺客",
-      "universe": "星际争霸",
-      "universal_role": "assassin"
-    },
-    {
-      "name": "Zul'jin",
-      "role": "刺客",
-      "universe": "魔兽",
-      "universal_role": "assassin"
-    }
-  ]
-}
+[
+  {
+    "name": "Abathur"
+  },
+  {
+    "name": "Aidan"
+  },
+  {
+    "name": "Akama"
+  },
+  {
+    "name": "Alarak"
+  },
+  {
+    "name": "Alexstrasza"
+  },
+  {
+    "name": "Algalon"
+  },
+  {
+    "name": "Alleria"
+  },
+  {
+    "name": "Amazon"
+  },
+  {
+    "name": "Ana"
+  },
+  {
+    "name": "Andariel"
+  },
+  {
+    "name": "Anduin"
+  },
+  {
+    "name": "Antonidas"
+  },
+  {
+    "name": "Anub'arak"
+  },
+  {
+    "name": "Archimonde"
+  },
+  {
+    "name": "ArcturusMengsk"
+  },
+  {
+    "name": "Artanis"
+  },
+  {
+    "name": "Arthas"
+  },
+  {
+    "name": "Assassin_D2"
+  },
+  {
+    "name": "Auriel"
+  },
+  {
+    "name": "Azmodan"
+  },
+  {
+    "name": "Azshara"
+  },
+  {
+    "name": "Baal"
+  },
+  {
+    "name": "Baptiste"
+  },
+  {
+    "name": "Belial"
+  },
+  {
+    "name": "Blackthorne"
+  },
+  {
+    "name": "Blaze"
+  },
+  {
+    "name": "Brann"
+  },
+  {
+    "name": "Brightwing"
+  },
+  {
+    "name": "Brigitte"
+  },
+  {
+    "name": "Bwonsamdi"
+  },
+  {
+    "name": "Cassia"
+  },
+  {
+    "name": "Cenarius"
+  },
+  {
+    "name": "Chen"
+  },
+  {
+    "name": "Cho"
+  },
+  {
+    "name": "Chromie"
+  },
+  {
+    "name": "Cydea"
+  },
+  {
+    "name": "D.Va"
+  },
+  {
+    "name": "Deathwing"
+  },
+  {
+    "name": "Deckard"
+  },
+  {
+    "name": "Dehaka"
+  },
+  {
+    "name": "Diablo"
+  },
+  {
+    "name": "Doomfist"
+  },
+  {
+    "name": "DrekThar"
+  },
+  {
+    "name": "Druid"
+  },
+  {
+    "name": "Duriel"
+  },
+  {
+    "name": "E.T.C."
+  },
+  {
+    "name": "Echo"
+  },
+  {
+    "name": "Falstad"
+  },
+  {
+    "name": "Fenix"
+  },
+  {
+    "name": "Gall"
+  },
+  {
+    "name": "Gallywix"
+  },
+  {
+    "name": "Garona"
+  },
+  {
+    "name": "Garrosh"
+  },
+  {
+    "name": "Gazlowe"
+  },
+  {
+    "name": "Genji"
+  },
+  {
+    "name": "Greymane"
+  },
+  {
+    "name": "Grommash"
+  },
+  {
+    "name": "Gul'dan"
+  },
+  {
+    "name": "Hakkar"
+  },
+  {
+    "name": "Hanson"
+  },
+  {
+    "name": "Hanzo"
+  },
+  {
+    "name": "Hogger"
+  },
+  {
+    "name": "Hybrid"
+  },
+  {
+    "name": "Illari"
+  },
+  {
+    "name": "Illidan"
+  },
+  {
+    "name": "Imperius"
+  },
+  {
+    "name": "Inarius"
+  },
+  {
+    "name": "Izual"
+  },
+  {
+    "name": "Jaina"
+  },
+  {
+    "name": "Johanna"
+  },
+  {
+    "name": "JunkerQueen"
+  },
+  {
+    "name": "Junkrat"
+  },
+  {
+    "name": "Kael'thas"
+  },
+  {
+    "name": "Kargath"
+  },
+  {
+    "name": "Kel'Thuzad"
+  },
+  {
+    "name": "Kerrigan"
+  },
+  {
+    "name": "Khadgar"
+  },
+  {
+    "name": "Kharazim"
+  },
+  {
+    "name": "Kiljaeden"
+  },
+  {
+    "name": "Kiriko"
+  },
+  {
+    "name": "Kronan"
+  },
+  {
+    "name": "LadyVashj"
+  },
+  {
+    "name": "Leoric"
+  },
+  {
+    "name": "Li Li"
+  },
+  {
+    "name": "Li-Ming"
+  },
+  {
+    "name": "Lifeweaver"
+  },
+  {
+    "name": "Lilith"
+  },
+  {
+    "name": "Lt. Morales"
+  },
+  {
+    "name": "Lucio"
+  },
+  {
+    "name": "Lunara"
+  },
+  {
+    "name": "Maghda"
+  },
+  {
+    "name": "Maiev"
+  },
+  {
+    "name": "Mal'Ganis"
+  },
+  {
+    "name": "Malfurion"
+  },
+  {
+    "name": "Malthael"
+  },
+  {
+    "name": "Mannoroth"
+  },
+  {
+    "name": "Mauga"
+  },
+  {
+    "name": "Medivh"
+  },
+  {
+    "name": "Medivh_Guardian"
+  },
+  {
+    "name": "Mei"
+  },
+  {
+    "name": "Mekkatorque"
+  },
+  {
+    "name": "Mephisto"
+  },
+  {
+    "name": "Moira"
+  },
+  {
+    "name": "MoiraBronzebeard"
+  },
+  {
+    "name": "Muradin"
+  },
+  {
+    "name": "Murky"
+  },
+  {
+    "name": "Nazeebo"
+  },
+  {
+    "name": "Necromancer"
+  },
+  {
+    "name": "Nerzhul"
+  },
+  {
+    "name": "Nova"
+  },
+  {
+    "name": "Onyxia"
+  },
+  {
+    "name": "Orphea"
+  },
+  {
+    "name": "Overmind"
+  },
+  {
+    "name": "Paladin"
+  },
+  {
+    "name": "Pharah"
+  },
+  {
+    "name": "Probius"
+  },
+  {
+    "name": "Qhira"
+  },
+  {
+    "name": "Ragnaros"
+  },
+  {
+    "name": "Rakanoth"
+  },
+  {
+    "name": "Ramattra"
+  },
+  {
+    "name": "Raynor"
+  },
+  {
+    "name": "Reaper"
+  },
+  {
+    "name": "Rehgar"
+  },
+  {
+    "name": "Reinhardt"
+  },
+  {
+    "name": "Rexxar"
+  },
+  {
+    "name": "RocknRollRacer"
+  },
+  {
+    "name": "Samuro"
+  },
+  {
+    "name": "Sargeras"
+  },
+  {
+    "name": "Selendis"
+  },
+  {
+    "name": "Sgt. Hammer"
+  },
+  {
+    "name": "Sigma"
+  },
+  {
+    "name": "SnakeSanders"
+  },
+  {
+    "name": "Sojourn"
+  },
+  {
+    "name": "Sonya"
+  },
+  {
+    "name": "Sorceress"
+  },
+  {
+    "name": "Stitches"
+  },
+  {
+    "name": "Stukov"
+  },
+  {
+    "name": "Sylvanas"
+  },
+  {
+    "name": "Symmetra"
+  },
+  {
+    "name": "Talanji"
+  },
+  {
+    "name": "Tassadar"
+  },
+  {
+    "name": "TeronGorefiend"
+  },
+  {
+    "name": "The Butcher"
+  },
+  {
+    "name": "The Lost Vikings"
+  },
+  {
+    "name": "Thrall"
+  },
+  {
+    "name": "Tomator"
+  },
+  {
+    "name": "Tosh"
+  },
+  {
+    "name": "Tracer"
+  },
+  {
+    "name": "Turalyon"
+  },
+  {
+    "name": "Tychus"
+  },
+  {
+    "name": "Tyrael"
+  },
+  {
+    "name": "Tyrande"
+  },
+  {
+    "name": "Uther"
+  },
+  {
+    "name": "Valeera"
+  },
+  {
+    "name": "Valerian"
+  },
+  {
+    "name": "Valla"
+  },
+  {
+    "name": "Varian"
+  },
+  {
+    "name": "Velen"
+  },
+  {
+    "name": "Voljin"
+  },
+  {
+    "name": "Warfield"
+  },
+  {
+    "name": "Whitemane"
+  },
+  {
+    "name": "Winston"
+  },
+  {
+    "name": "Xavius"
+  },
+  {
+    "name": "Xul"
+  },
+  {
+    "name": "YoggSaron"
+  },
+  {
+    "name": "Yrel"
+  },
+  {
+    "name": "Zagara"
+  },
+  {
+    "name": "Zarya"
+  },
+  {
+    "name": "Zeratul"
+  },
+  {
+    "name": "ZoltunKulle"
+  },
+  {
+    "name": "Zul'jin"
+  },
+  {
+    "name": "Zurvan"
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "name": "莲花",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "莲花清香治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d6+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "拉克什米从莲花中诞生——她站在千瓣莲花之上，每一瓣都是一份祝福。1d8+WIS 光耀伤害，微回复。"
+  },
+  {
+    "name": "财富之雨",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "金雨滋润众生",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "财富与幸运降临",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "拉克什米洒下财富之雨——吉祥天女的金币与莲花瓣同时从天空中飘落。回复2d8+WIS+增伤2回合。"
+  },
+  {
+    "name": "吉祥天",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "吉祥之光护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+WIS"
+      },
+      {
+        "type": "cleanse",
+        "desc": "吉祥之力洗去一切不祥",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "拉克什米召来吉祥天福——她的每一次降临都意味着好运与繁荣。护盾2回合+净化。"
+  },
+  {
+    "name": "福佑众生",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "福佑之光普照",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "4d8+WIS"
+      },
+      {
+        "type": "魅惑",
+        "desc": "至福之景令敌人放弃战斗",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "拉克什米释放福佑之光——连最凶恶的阿修罗在她的光芒下也会放下武器，享受片刻的极乐。AOE魅惑，大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

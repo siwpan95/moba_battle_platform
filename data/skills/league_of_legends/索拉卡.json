@@ -1,0 +1,123 @@
+[
+  {
+    "name": "流星坠落",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "命中敌方英雄时回复自身生命",
+        "target": "自身"
+      },
+      {
+        "type": "slow",
+        "desc": "被流星击中的敌人减速",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "召唤星辰碎片坠落于目标区域。造成1d6+WIS光耀伤害并减速1回合。命中敌方英雄时自身回复1d8生命值。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "星之灌注",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "为友方目标回复大量生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "引导星辰之力灌注一名友方单位，为其回复2d6+WIS生命值。索拉卡自身消耗少量生命值施放此技能。若自身处于流星坠落回复状态，则消耗减半。"
+  },
+  {
+    "name": "星体结界",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "desc": "结界内的敌人无法施法",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "控制",
+        "desc": "结界消失时仍在其中的敌人被禁锢",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "在目标区域布下一片星辰结界。造成1d6+WIS光耀伤害。结界持续2回合，区域内的敌人被沉默（无法使用法术技能）。结界消失时仍在其中的敌人被禁锢1回合。WIS豁免成功则无视禁锢效果。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "祈愿",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "为战场上所有友方英雄回复大量生命",
+        "target": "自身"
+      },
+      {
+        "type": "cleanse",
+        "desc": "移除所有友方英雄的重伤效果",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "向星空发出最虔诚的祈祷——战场上所有友方英雄回复3d6+WIS生命值。友方生命低于40%时治疗效果+50%。同时移除所有友方英雄身上的重伤效果。无视距离与视野。"
+  }
+]

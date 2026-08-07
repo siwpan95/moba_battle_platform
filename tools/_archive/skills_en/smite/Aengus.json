@@ -1,0 +1,123 @@
+[
+  {
+    "name": "爱之箭",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "安格斯射出爱之箭——凯尔特的爱神一箭便让凡人与女神坠入爱河。1d8+INT 力场伤害。"
+  },
+  {
+    "name": "青春之歌",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "爱神的歌声",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "青春活力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "安格斯唱起青春之歌——他是永恒的青春化身，他的歌声让万物焕发生机。AOE魅惑+增伤。2d6+INT 光耀伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "梦中之吻",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "爱的治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "invis",
+        "desc": "化为梦境",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "安格斯化为梦境——正如他在梦中与凯尔女神相遇，他能穿梭于现实与梦境之间。回复2d6+INT+隐身1回合。"
+  },
+  {
+    "name": "永恒的青春",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "青春之力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+INT"
+      },
+      {
+        "type": "魅惑",
+        "desc": "永恒的美丽",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "安格斯释放永恒的青春——他的身边四季如春、时光不老。AOE魅惑+大量回复。3d8+INT 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

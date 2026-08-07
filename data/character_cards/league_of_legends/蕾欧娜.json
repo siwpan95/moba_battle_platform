@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1946",
+  "card_id": "league_of_legends:蕾欧娜",
+  "legacy_card_id": "LEA-1078",
   "hero": {
     "name": "蕾欧娜",
     "name_en": "Leona",
@@ -19,7 +20,8 @@
   "playstyle_tags": [
     "先手",
     "前排",
-    "承伤"
+    "承伤",
+    "硬控制"
   ],
   "attributes": {
     "STR": {
@@ -108,24 +110,5 @@
     "hp": 100,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能二",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "210+STR 伤害。冷却1回合。"
-    }
-  ]
+  }
 }

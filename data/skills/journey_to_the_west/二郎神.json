@@ -1,0 +1,127 @@
+[
+  {
+    "name": "三尖两刃刀",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "三尖两刃刀凌厉一击，1d10+STR 挥砍伤害，低血量额外伤害。"
+  },
+  {
+    "name": "天眼通",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "额间天眼洞悉万物弱点！2d8+WIS 光耀伤害，目标易伤+破甲1回合。"
+  },
+  {
+    "name": "八九玄功",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "运转八九玄功，化形万千。自身加速+增伤2回合。"
+  },
+  {
+    "name": "劈山救母",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量伤害翻倍"
+      },
+      {
+        "type": "true_dmg",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "穿透减伤"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "震慑"
+      }
+    ],
+    "cooldown": 4,
+    "description": "劈开桃山的神力再现！2d10+STR 挥砍伤害，无视减伤，低血量翻倍，震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

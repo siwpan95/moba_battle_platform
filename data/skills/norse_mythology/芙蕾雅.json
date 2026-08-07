@@ -1,0 +1,110 @@
+[
+  {
+    "name": "春之泪",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。芙蕾雅滴落的金色泪水化为琥珀击向敌人。",
+    "approx": true
+  },
+  {
+    "name": "治愈之歌",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "回复2d6+WIS生命",
+        "value": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。芙蕾雅吟唱治愈之歌，为友方回复2d6+WIS生命。",
+    "approx": true
+  },
+  {
+    "name": "鹰羽庇护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "鹰羽护盾吸收伤害",
+        "value": "1d8+WIS"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。芙蕾雅借鹰羽斗篷为友方施加护盾2回合。",
+    "approx": true
+  },
+  {
+    "name": "爱之女神",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "全体回复3d6+WIS",
+        "value": "3d6+WIS"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体攻击力+3"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 光耀伤害。芙蕾雅释放爱与美的神力。全体友方回复3d6+WIS生命+增益2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

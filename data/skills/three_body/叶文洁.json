@@ -1,0 +1,105 @@
+[
+  {
+    "name": "红岸发射",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "信号干扰敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d6+INT 雷鸣（无线电波）伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "三体劝降",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "心灵"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "duration": 1,
+        "desc": "目标被说服/短暂受控",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "1d8+INT 心灵伤害，尝试说服目标。",
+    "approx": true
+  },
+  {
+    "name": "恒星闪烁信号",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "雷鸣"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "信号干扰敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+INT 雷鸣伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 12
+  },
+  {
+    "name": "降临派召唤",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "召唤降临派增援"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+INT 力场伤害，覆盖大片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

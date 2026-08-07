@@ -1,0 +1,124 @@
+[
+  {
+    "name": "八首噬咬",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "八首毒牙留下八种毒素",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "八岐大蛇的八颗头颅同时噬咬——每颗头的毒液各不相同，混合后无药可解。1d10+STR 穿刺伤害，dot 2回合。"
+  },
+  {
+    "name": "毒息",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "剧毒吐息污染大地",
+        "target": "敌方",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "毒雾之中寸步难行",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "八岐大蛇喷吐毒息——毒雾过处草木枯萎、河水变血。AOE毒伤+减速。2d6+STR 黯蚀伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "蛇鳞铁壁",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "钢铁般的蛇鳞覆盖全身",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "减伤",
+        "desc": "八首蛇身的恢复力惊人",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "八岐大蛇蜷曲蛇躯——钢铁般的鳞片层层重叠，刀剑难伤。护盾+减伤各2回合。"
+  },
+  {
+    "name": "八岐之灾",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "八岐大蛇的全貌令人崩溃",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "sunder",
+        "desc": "八首齐撞粉碎城墙",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "八岐大蛇展开全部身躯——横跨八座山峰、十六条河流的太古巨兽，仅仅是出现就足以毁灭王国。AOE恐惧+破甲2回合。2d8+STR 钝击伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

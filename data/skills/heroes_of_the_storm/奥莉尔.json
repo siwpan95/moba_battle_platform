@@ -1,0 +1,113 @@
+[
+  {
+    "name": "神圣扫击",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。目标被推开10尺1回合。",
+    "effects": [
+      {
+        "type": "击退",
+        "desc": "目标被推开10尺",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "希望之光",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "30尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。恢复生命1回合。",
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "value_formula": "1d8+WIS",
+        "target": "友方",
+        "duration": 1
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "束缚",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d6+WIS 力场伤害。目标无法移动1回合。",
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "目标无法移动",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "复活",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "60尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "cooldown": 4,
+    "description": "4d6+WIS 光耀伤害。复活一名队友1回合。",
+    "effects": [
+      {
+        "type": "复活",
+        "desc": "复活一名队友",
+        "target": "友方",
+        "duration": 1
+      }
+    ],
+    "aoe_radius": 20
+  }
+]

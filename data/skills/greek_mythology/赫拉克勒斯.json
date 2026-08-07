@@ -1,0 +1,119 @@
+[
+  {
+    "name": "狮皮重击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 1,
+        "desc": "神力+2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。赫拉克勒斯披着涅墨亚猛狮的皮，每一击都有万钧之力。",
+    "approx": true
+  },
+  {
+    "name": "九头蛇毒箭",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "许德拉蛇毒每回合1d4"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。赫拉克勒斯以浸染九头蛇毒的箭矢攻击。中毒2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "十二功绩",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "奋起冲锋25尺"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 1,
+        "desc": "狮皮-30%伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。赫拉克勒斯以完成十二功绩的毅力冲锋。突进+减伤1回合。",
+    "approx": true
+  },
+  {
+    "name": "奥林匹斯之力",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 3,
+        "desc": "神力化身攻击力+8"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<30%伤害翻倍"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。赫拉克勒斯释放半神之力。增益3回合+对HP<30%目标斩杀。",
+    "approx": true
+  }
+]

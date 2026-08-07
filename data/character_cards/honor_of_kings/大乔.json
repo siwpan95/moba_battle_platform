@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1861",
+  "card_id": "honor_of_kings:大乔",
   "hero": {
     "name": "大乔",
     "name_en": "",
@@ -109,100 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "鲤跃之潮",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "击退",
-          "desc": "目标被推开10尺",
-          "duration": 1,
-          "dc_attr": "STR",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 0,
-      "description": "1d6+STR 挥砍伤害。目标被推开10尺1回合。",
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      }
-    },
-    {
-      "name": "宿命之海",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d6+STR 挥砍伤害。"
-    },
-    {
-      "name": "决断之桥",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "沉默",
-          "desc": "目标无法施法/使用法术技能",
-          "duration": 1,
-          "dc_attr": "CON",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 2,
-      "description": "1d6+STR 挥砍伤害。目标无法施法/使用法术技能1回合。",
-      "saving_throw": {
-        "attr": "CON",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      }
-    },
-    {
-      "name": "漩涡之门",
-      "key": "4",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d8+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "HON-1861"
 }

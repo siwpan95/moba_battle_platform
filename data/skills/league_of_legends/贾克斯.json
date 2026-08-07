@@ -1,0 +1,108 @@
+[
+  {
+    "name": "跳斩",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "跃向目标，跨越地形与敌人",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "纵身跃向一名可见的敌人，以武器重击其头部。造成1d10+STR挥砍伤害。可对友方单位施放以作位移。"
+  },
+  {
+    "name": "蓄力一击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "下次普通攻击附加额外闪电伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "将内息注入武器，下一击附带雷霆之威。造成2d8+STR闪电伤害，并使下一次普通攻击附加额外1d6闪电伤害。"
+  },
+  {
+    "name": "反击风暴",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "眩晕周围所有敌人",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "减伤",
+        "desc": "闪避所有普通攻击",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "进入防御姿态，旋转灯柱弹开所有来袭的普通攻击，持续1回合。结束时猛击地面，对周围敌人造成1d8+STR挥砍伤害并眩晕1回合。每闪避一次攻击，反击伤害+20%。CON豁免成功则免疫眩晕。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  },
+  {
+    "name": "宗师之威",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "护甲与魔抗大幅提升",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "释放灯柱中蕴藏的远古力量。造成2d10+STR挥砍伤害。护甲与魔法抗性大幅提升，持续3回合。被动：每第三次攻击附加额外1d8闪电伤害。"
+  }
+]

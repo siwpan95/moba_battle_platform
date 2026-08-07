@@ -1,0 +1,122 @@
+[
+  {
+    "name": "迷魂之吻",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "被爱神之吻迷惑，攻击意志涣散",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "阿佛洛狄忒送出一记飞吻——她的容颜连战神阿瑞斯都无法抗拒。被迷惑的敌人失去战意，短时间内伤害减半。1d8+WIS 光耀伤害，slow 1回合。"
+  },
+  {
+    "name": "爱之拥",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "爱的力量治愈创伤",
+        "value_formula": "2d8+WIS",
+        "target": "自身"
+      },
+      {
+        "type": "shield",
+        "desc": "美神的祝福化作金色护盾",
+        "value_formula": "1d8+WIS",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "阿佛洛狄忒以爱的力量拥抱自己——玫瑰花瓣环绕周身，每一片都承载着治愈的神力。回复2d8+WIS生命，并获得护盾2回合。"
+  },
+  {
+    "name": "美神赐福",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "美神的祝福提升战力",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "cleanse",
+        "desc": "爱之光辉净化一切诅咒与负面效果",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "阿佛洛狄忒召唤奥林匹斯山巅的玫瑰色晨曦——她的祝福能令最丑陋的灵魂也焕发光彩。获得伤害增幅2回合，并净化身上所有负面效果。1d6+WIS 光耀伤害。"
+  },
+  {
+    "name": "不朽之美",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "至美之力治愈一切",
+        "value_formula": "3d8+WIS",
+        "target": "自身"
+      },
+      {
+        "type": "魅惑",
+        "desc": "终极之美让敌人目眩神迷，丧失行动能力",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "阿佛洛狄忒展露她的真容——那是连宙斯都为之屏息的美，足以终结战争、颠覆王权。周围的敌人陷入目眩，自身获得大量治疗。2d8+WIS 光耀伤害，AOE，魅惑1回合，回复3d8+WIS生命。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+=== Q1: data/character_cards/ 根目录直属 .json ===
+根目录全部 .json 文件（含 _ 前缀） = 1: ['_index.json']
+iter_card_files 产出 game_dir=='.' 的卡片数 = 0
+
+结论 Q1: 潜伏问题（根目录当前无直属卡，定级维持潜伏）
+
+=== Q2: game_dir=='.' 时 _load_skills_db 的拼接结果 ===
+拼接路径 = ...\data\skills\..json
+os.path.isfile 该路径 = False
+basename 字面量 = '..json'   （即 '..json'）
+
+=== Q3: 沙箱端到端（根目录直属卡 vs 正常 IP 目录卡）===
+  [_load_skills_db] game_dir='.' -> 查找 '..json' -> 不存在
+  [_load_skills_db] game_dir='test_ip' -> 查找 'test_ip.json' -> 命中
+
+  game_dir='.'          filename='rootcard'   技能数=0
+  game_dir='test_ip'    filename='hero'       技能数=4
+
+=== Q4: _SKILLS_DB_CACHE 跨用例污染实证 ===
+沙箱结束时缓存键 = ['.', 'test_ip']
+其中值为空 dict 的键 = ['.']
+  ^ 这些空值会被后续用例复用，即使那时 DB 实际存在 —— 必须用 fixture 清理

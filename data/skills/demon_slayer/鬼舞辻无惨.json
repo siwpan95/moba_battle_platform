@@ -1,0 +1,104 @@
+[
+  {
+    "name": "血鬼术·鞭",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "血鬼术持续伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+INT 毒素伤害。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·散桩",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "血鬼术持续伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 毒素伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "血鬼术·刺鞭",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "血鬼术持续伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d8+INT 穿刺伤害。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·千鞭乱舞",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "剧毒",
+        "duration": 0,
+        "desc": "对范围内目标施加剧毒",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+INT 毒素伤害，覆盖大片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

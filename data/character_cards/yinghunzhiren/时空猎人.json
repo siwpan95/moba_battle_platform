@@ -1,5 +1,5 @@
 {
-  "card_id": "HER-1637",
+  "card_id": "yinghunzhiren:时空猎人",
   "hero": {
     "name": "时空猎人",
     "name_en": "",
@@ -110,6 +110,48 @@
   },
   "skills": [
     {
+      "name": "火球术",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 10,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 0,
+      "description": "2d6+INT 火焰伤害，10尺半径范围。DEX豁免减半。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "26+INT 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
       "name": "技能三",
       "key": "E",
       "type": "法术",
@@ -117,8 +159,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
+        "dice_count": 3,
+        "dice_size": 4,
         "bonus_attr": "CON",
         "type": "力场"
       },
@@ -132,7 +174,33 @@
         }
       ],
       "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HER-1637"
 }

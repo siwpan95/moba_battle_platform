@@ -1,0 +1,102 @@
+[
+  {
+    "name": "冥弓",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。每回合受到额外火焰伤害2回合。",
+    "effects": [
+      {
+        "type": "灼烧",
+        "desc": "每回合受到额外火焰伤害",
+        "duration": 2,
+        "target": "敌方",
+        "dmg_per_turn": "1d4"
+      }
+    ]
+  },
+  {
+    "name": "魂矢",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "120尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "幽步",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d6+DEX 力场伤害。短距离传送/移动1回合。",
+    "effects": [
+      {
+        "type": "位移",
+        "desc": "短距离传送/移动",
+        "value": 20,
+        "target": "自身",
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "name": "百鬼射",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "150尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "4d8+DEX 穿刺伤害。范围伤害1回合。",
+    "effects": [
+      {
+        "type": "范围",
+        "desc": "范围伤害",
+        "target": "敌方",
+        "duration": 1
+      }
+    ]
+  }
+]

@@ -26,24 +26,51 @@ SLOT_KEYS = ["Q", "W", "E", "R"]
 _VALID_TYPES = ("物理", "法术", "混合", "真实")
 
 
+# 已知字段默认值（ADR-005：_to_skill_dict 改为 {**defaults, **raw} 语义，未知字段透传）
+_KNOWN_SKILL_FIELDS = frozenset({
+    "name", "key", "type", "cooldown", "description",
+    "damage", "effects", "aoe_radius", "saving_throw",
+    "action", "range", "target",
+})
+
+
 def _to_skill_dict(raw: Any, slot: int) -> dict:
-    """把一个任意技能元素规范化为引擎消费的 dict。"""
+    """把一个任意技能元素规范化为引擎消费的 dict。
+
+    ADR-005：改为 {**defaults, **raw} 语义 —— 已知字段补默认值，未知字段透传不丢弃。
+    """
     if not isinstance(raw, dict):
         raw = {}
-    return {
-        "name": str(raw.get("name", f"技能{SLOT_KEYS[slot]}")),
-        "key": str(raw.get("key", SLOT_KEYS[slot])),
-        "type": str(raw.get("type", "物理")),
-        "cooldown": int(raw.get("cooldown", 0) or 0),
-        "description": str(raw.get("description", "")),
-        "damage": raw.get("damage") or {},
-        "effects": raw.get("effects"),
-        "aoe_radius": raw.get("aoe_radius"),
-        "saving_throw": raw.get("saving_throw"),
-        "action": str(raw.get("action", "")),
-        "range": raw.get("range"),
-        "target": raw.get("target"),
+    defaults = {
+        "name": f"技能{SLOT_KEYS[slot]}",
+        "key": SLOT_KEYS[slot],
+        "type": "物理",
+        "cooldown": 0,
+        "description": "",
     }
+    # 从 raw 合并：raw 中的值覆盖 defaults，未知字段一并带入
+    merged = {**defaults, **raw}
+    # 确保 int/str 类型约束对已知字段生效
+    merged["cooldown"] = int(merged.get("cooldown", 0) or 0)
+    return merged
+
+
+def report_unknown_fields(skills: list) -> dict:
+    """汇总所有技能中的未知字段（不在已知契约白名单内的键）。
+
+    ADR-005：供 CI 观测使用，帮助发现 schema 演进需求。
+    返回 {field_name: occurrence_count}。
+    """
+    unknown: dict = {}
+    if not isinstance(skills, list):
+        return unknown
+    for s in skills:
+        if not isinstance(s, dict):
+            continue
+        for key in s:
+            if key not in _KNOWN_SKILL_FIELDS:
+                unknown[key] = unknown.get(key, 0) + 1
+    return unknown
 
 
 def normalize_skills(skills: Any) -> tuple[list, list]:
@@ -87,7 +114,10 @@ def validate_card(card: Any) -> list:
         return ["card 非 dict"]
     problems: list = []
     skills = card.get("skills")
-    if not isinstance(skills, list):
+    # ADR-005 技能分离：卡 JSON 可省略 skills（由 loader 从 data/skills/ 注入）
+    if skills is None:
+        pass  # 合法：技能由运行时注入
+    elif not isinstance(skills, list):
         problems.append("skills 不是 list（契约要求 list[Skill]）")
     else:
         if len(skills) == 0:

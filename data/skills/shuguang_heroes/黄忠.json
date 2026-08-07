@@ -1,0 +1,98 @@
+[
+  {
+    "name": "爆头",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "瞄准要害提升暴击"
+      }
+    ],
+    "cooldown": 2,
+    "description": "爆头（Q）：概率暴击。造成 1d8+DEX 钝击伤害。"
+  },
+  {
+    "name": "弹射",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "弹射穿透"
+      }
+    ],
+    "cooldown": 3,
+    "description": "弹射（W）：弹跳伤害。造成 2d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "陷阱",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "陷阱减速目标"
+      }
+    ],
+    "cooldown": 4,
+    "description": "陷阱（E）：放置陷阱。造成 1d10+DEX 挥砍伤害。"
+  },
+  {
+    "name": "全弹发射",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 12,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "火力压制击退"
+      }
+    ],
+    "cooldown": 5,
+    "description": "全弹发射（R）：全屏弹幕。造成 2d12+DEX 穿刺伤害。（范围效果）"
+  }
+]

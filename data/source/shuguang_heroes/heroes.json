@@ -1,262 +1,365 @@
-{
-  "game": "Dawn Heroes",
-  "name_cn": "曙光英雄",
-  "total": 47,
-  "heroes": [
-    {
-      "name": "鲁智深",
-      "role": "坦克/战士",
-      "universal_role": "tank"
-    },
-    {
-      "name": "白浩",
-      "role": "坦克/战士",
-      "universal_role": "tank"
-    },
-    {
-      "name": "尉迟炎",
-      "role": "坦克/辅助",
-      "universal_role": "tank"
-    },
-    {
-      "name": "许诸",
-      "role": "坦克",
-      "universal_role": "tank"
-    },
-    {
-      "name": "张飞",
-      "role": "坦克/辅助",
-      "universal_role": "tank"
-    },
-    {
-      "name": "鲁班",
-      "role": "坦克/辅助",
-      "universal_role": "tank"
-    },
-    {
-      "name": "牛魔王",
-      "role": "坦克/战士",
-      "universal_role": "tank"
-    },
-    {
-      "name": "欧治子",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "猪八戒",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "展昭",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "关羽",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "托尔",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "曹操",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "阿尔弗雷德",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "杨玉环",
-      "role": "战士",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "残影",
-      "role": "游侠",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "吕洞宾",
-      "role": "游侠/法师",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "雷震子",
-      "role": "游侠",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "缪桂英",
-      "role": "战士/游侠",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "嫦娥",
-      "role": "游侠/法师",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "特斯拉",
-      "role": "游侠/法师",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "西施",
-      "role": "游侠",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "杨戬",
-      "role": "战士/游侠",
-      "universal_role": "fighter"
-    },
-    {
-      "name": "貂蝉",
-      "role": "游侠",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "赵云",
-      "role": "游侠",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "西王母",
-      "role": "法师/射手",
-      "universal_role": "mage"
-    },
-    {
-      "name": "羲和",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "望舒",
-      "role": "法师/辅助",
-      "universal_role": "mage"
-    },
-    {
-      "name": "祝融",
-      "role": "法师/射手",
-      "universal_role": "mage"
-    },
-    {
-      "name": "梅朵",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "乌雅",
-      "role": "法师/射手",
-      "universal_role": "mage"
-    },
-    {
-      "name": "孙武",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "张角",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "爱丽丝",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "黄泉",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "火莲",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "鳗鳗",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "图塔卡蒙",
-      "role": "法师",
-      "universal_role": "mage"
-    },
-    {
-      "name": "阿尔忒弥斯",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "黄月英",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "帕提多",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "美杜莎",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "花荣",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "精卫",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "黄忠",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "青木",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "飞廉",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "王昭君",
-      "role": "射手",
-      "universal_role": "marksman"
-    },
-    {
-      "name": "铁扇公主",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "桑榆",
-      "role": "辅助",
-      "universal_role": "support"
-    },
-    {
-      "name": "华佗",
-      "role": "辅助",
-      "universal_role": "support"
-    }
-  ]
-}
+[
+  {
+    "name": "丁奉"
+  },
+  {
+    "name": "东方朔"
+  },
+  {
+    "name": "全琮"
+  },
+  {
+    "name": "公孙胜"
+  },
+  {
+    "name": "关兴"
+  },
+  {
+    "name": "关平"
+  },
+  {
+    "name": "典韦"
+  },
+  {
+    "name": "凌统"
+  },
+  {
+    "name": "刘备"
+  },
+  {
+    "name": "刘禅"
+  },
+  {
+    "name": "刘邦"
+  },
+  {
+    "name": "卢俊义"
+  },
+  {
+    "name": "卫青"
+  },
+  {
+    "name": "史进"
+  },
+  {
+    "name": "司马师"
+  },
+  {
+    "name": "司马懿"
+  },
+  {
+    "name": "司马昭"
+  },
+  {
+    "name": "吕布"
+  },
+  {
+    "name": "吴用"
+  },
+  {
+    "name": "周泰"
+  },
+  {
+    "name": "周瑜"
+  },
+  {
+    "name": "呼延灼"
+  },
+  {
+    "name": "夏侯渊"
+  },
+  {
+    "name": "夏侯霸"
+  },
+  {
+    "name": "大乔"
+  },
+  {
+    "name": "姜维"
+  },
+  {
+    "name": "孙二娘"
+  },
+  {
+    "name": "孙坚"
+  },
+  {
+    "name": "孙尚香"
+  },
+  {
+    "name": "孙皓"
+  },
+  {
+    "name": "孙鲁班"
+  },
+  {
+    "name": "孟获"
+  },
+  {
+    "name": "安道全"
+  },
+  {
+    "name": "尉迟恭"
+  },
+  {
+    "name": "小乔"
+  },
+  {
+    "name": "岳飞"
+  },
+  {
+    "name": "庞统"
+  },
+  {
+    "name": "廖化"
+  },
+  {
+    "name": "张良"
+  },
+  {
+    "name": "张苞"
+  },
+  {
+    "name": "张郃"
+  },
+  {
+    "name": "张顺"
+  },
+  {
+    "name": "张骞"
+  },
+  {
+    "name": "彭越"
+  },
+  {
+    "name": "徐晃"
+  },
+  {
+    "name": "徐盛"
+  },
+  {
+    "name": "徐福"
+  },
+  {
+    "name": "戴宗"
+  },
+  {
+    "name": "扈三娘"
+  },
+  {
+    "name": "文鸯"
+  },
+  {
+    "name": "曹丕"
+  },
+  {
+    "name": "曹仁"
+  },
+  {
+    "name": "曹髦"
+  },
+  {
+    "name": "朱武"
+  },
+  {
+    "name": "朱然"
+  },
+  {
+    "name": "李世民"
+  },
+  {
+    "name": "李俊"
+  },
+  {
+    "name": "李广"
+  },
+  {
+    "name": "李白"
+  },
+  {
+    "name": "李逵"
+  },
+  {
+    "name": "李靖"
+  },
+  {
+    "name": "杜甫"
+  },
+  {
+    "name": "杜预"
+  },
+  {
+    "name": "杨志"
+  },
+  {
+    "name": "林冲"
+  },
+  {
+    "name": "柴进"
+  },
+  {
+    "name": "梁红玉"
+  },
+  {
+    "name": "樊哙"
+  },
+  {
+    "name": "樊梨花"
+  },
+  {
+    "name": "武则天"
+  },
+  {
+    "name": "武松"
+  },
+  {
+    "name": "毌丘俭"
+  },
+  {
+    "name": "法正"
+  },
+  {
+    "name": "燕青"
+  },
+  {
+    "name": "狄仁杰"
+  },
+  {
+    "name": "王元姬"
+  },
+  {
+    "name": "王平"
+  },
+  {
+    "name": "王濬"
+  },
+  {
+    "name": "班超"
+  },
+  {
+    "name": "甄姬"
+  },
+  {
+    "name": "甘宁"
+  },
+  {
+    "name": "白居易"
+  },
+  {
+    "name": "石秀"
+  },
+  {
+    "name": "秦琼"
+  },
+  {
+    "name": "程咬金"
+  },
+  {
+    "name": "程普"
+  },
+  {
+    "name": "穆桂英"
+  },
+  {
+    "name": "羊祜"
+  },
+  {
+    "name": "花木兰"
+  },
+  {
+    "name": "苏武"
+  },
+  {
+    "name": "英布"
+  },
+  {
+    "name": "范增"
+  },
+  {
+    "name": "荀彧"
+  },
+  {
+    "name": "萧何"
+  },
+  {
+    "name": "董卓"
+  },
+  {
+    "name": "蔡文姬"
+  },
+  {
+    "name": "薛仁贵"
+  },
+  {
+    "name": "虞姬"
+  },
+  {
+    "name": "袁绍"
+  },
+  {
+    "name": "许褚"
+  },
+  {
+    "name": "诸葛亮"
+  },
+  {
+    "name": "诸葛恪"
+  },
+  {
+    "name": "诸葛诞"
+  },
+  {
+    "name": "贾充"
+  },
+  {
+    "name": "贾诩"
+  },
+  {
+    "name": "邓艾"
+  },
+  {
+    "name": "郑和"
+  },
+  {
+    "name": "郭嘉"
+  },
+  {
+    "name": "钟会"
+  },
+  {
+    "name": "阮小七"
+  },
+  {
+    "name": "陆逊"
+  },
+  {
+    "name": "陈泰"
+  },
+  {
+    "name": "霍去病"
+  },
+  {
+    "name": "韩信"
+  },
+  {
+    "name": "韩当"
+  },
+  {
+    "name": "项羽"
+  },
+  {
+    "name": "马岱"
+  },
+  {
+    "name": "马谡"
+  },
+  {
+    "name": "魏延"
+  },
+  {
+    "name": "鲁肃"
+  },
+  {
+    "name": "黄盖"
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "name": "霸者天神·裂海拳",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "霸拳裂海之力",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 0,
+    "description": "巨鲨以霸者天神之力轰出的裂海一拳——拳未到，海已分。2d8+STR 钝击伤害，STR豁免失败击退10尺。"
+  },
+  {
+    "name": "磁场转动·霸者天锁",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "4*LVL+CON",
+        "desc": "霸者天神之躯刀枪不入",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 45,
+        "desc": "天王级磁场护体",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "巨鲨以霸者天神的不灭之躯构筑绝对防御——天王级磁场护体！获得4×LVL+CON护盾，减伤45%。持续3回合。冷却1回合。"
+  },
+  {
+    "name": "蓝国天王·嗜血狂鲨",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "duration": 3,
+        "desc": "鲨性觉醒，攻速+50%，攻击附带1d6撕裂",
+        "target": "自身"
+      },
+      {
+        "type": "吸血",
+        "duration": 3,
+        "value": 30,
+        "desc": "狂鲨嗜血，攻击回复生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "巨鲨释放蓝国天王的嗜血本性——化身海中霸主狂鲨！攻速+50%，附加1d6撕裂伤害，30%生命偷取。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "霸者天神·吞天噬地",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "霸者之力吞噬一切",
+        "target": "敌方"
+      },
+      {
+        "type": "破甲",
+        "duration": 3,
+        "value": 8,
+        "desc": "天王拳劲粉碎护甲",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "巨鲨霸者天神的终极姿态——吞天噬地令万物俯首！4d12+STR 钝击伤害，25尺范围。CON豁免失败眩晕2回合+护甲-8。冷却4回合。"
+  }
+]

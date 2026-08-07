@@ -1,0 +1,98 @@
+[
+  {
+    "name": "草薙剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "须佐之男挥动草薙剑——这把从八岐大蛇尾中取出的神剑，锋刃所及之处万物两断。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "暴风之怒",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "狂风暴雨让敌人寸步难行",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "须佐之男释放暴风——作为风暴之神，他的愤怒足以搅动天界、毁灭稻田。狂风裹挟暴雨席卷战场，减速敌人。2d8+STR 挥砍伤害，AOE减速。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "海神之跃",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "风暴之神的脚步无人能及",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "须佐之男如暴风般突进——他从天界被放逐后降落于出云国，那一次降临撼动了整片海洋。获得加速2回合。1d8+STR 挥砍伤害。"
+  },
+  {
+    "name": "八岐大蛇斩",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "草薙剑对重伤者一击毙命",
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "八岐大蛇的毒血侵蚀伤口",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "须佐之男再现斩杀八岐大蛇的传奇一击——当年他用计灌醉八头八尾的巨蛇，一剑斩下其全部头颅，从蛇尾中取出草薙剑。对低生命斩杀，毒血2回合。2d10+STR 挥砍伤害，AOE。",
+    "aoe_radius": 25
+  }
+]

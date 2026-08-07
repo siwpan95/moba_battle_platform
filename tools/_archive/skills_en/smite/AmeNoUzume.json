@@ -1,0 +1,117 @@
+[
+  {
+    "name": "神乐铃",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "天鈿女命摇响神乐铃——清脆的铃音中蕴含太阳之力。1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "天岩户之舞",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "神乐舞蹈鼓舞士气",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "heal",
+        "desc": "欢笑声治愈心灵",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "天鈿女命重现天岩户之舞——当年她在倒扣的木桶上放浪起舞，引得八百万神哄堂大笑，终于让天照大神从岩洞中探出头来。增伤+回复。"
+  },
+  {
+    "name": "招魂",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "神乐之音魅惑心神",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "slow",
+        "desc": "舞步迷离，敌人恍惚",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "天鈿女命起舞招魂——她的舞蹈能沟通生死两界，也能让活人神魂颠倒。魅惑+减速各1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "八百万神乐",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "八百万神共鸣治愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "众神赐福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "天鈿女命召唤八百万神共舞——高天原众神的狂欢化作无边的神力涌向战场。AOE，大量回复+增伤。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30
+  }
+]

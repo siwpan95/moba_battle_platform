@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1890",
+  "card_id": "league_of_legends:卡尔萨斯",
+  "legacy_card_id": "LEA-1022",
   "hero": {
     "name": "卡尔萨斯",
     "name_en": "Karthus",
@@ -107,30 +108,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "大招",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 4,
-      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。"
-    }
-  ]
+  }
 }

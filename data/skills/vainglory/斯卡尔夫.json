@@ -1,0 +1,54 @@
+[
+  {
+    "name": "喷火",
+    "key": "A",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+INT 火焰伤害。"
+  },
+  {
+    "name": "黏胶",
+    "key": "B",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d8+INT 力场伤害。"
+  },
+  {
+    "name": "龙息",
+    "key": "U",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 2,
+    "description": "1d8+INT 力场伤害。",
+    "aoe_radius": 15
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1966",
+  "card_id": "league_of_legends:德莱文",
+  "legacy_card_id": "LEA-1098",
   "hero": {
     "name": "德莱文",
     "name_en": "Draven",
@@ -108,24 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "穿刺箭",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "120尺",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+DEX 穿刺伤害，射程120尺。"
-    }
-  ]
+  }
 }

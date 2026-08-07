@@ -1,0 +1,239 @@
+{
+  "card_id": "hong_kong_comics:玄天邪帝",
+  "legacy_card_id": "港漫群-1033",
+  "hero": {
+    "name": "玄天邪帝",
+    "name_en": "Xuantian Xiedi",
+    "alias": "独孤星夜·天魔分身",
+    "title": "独孤星夜·天魔分身"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "刺客/刀剑双绝",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "神兵玄奇",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "分身",
+    "切入",
+    "收割",
+    "爆发"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "玄邪罡·魔眼洞悉",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "破甲",
+          "desc": "魔眼洞悉敌方破绽，无视3点护甲",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "玄天邪帝以天魔魔眼洞察敌之弱点——一击贯穿破绽！1d10+DEX 黯蚀伤害，无视3点护甲加值。"
+    },
+    {
+      "name": "天刀邪诀·星宿劫",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "40尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "力场"
+      },
+      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "恐惧",
+          "duration": 1,
+          "dc_attr": "WIS",
+          "desc": "星宿劫之力令敌人崩溃",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "玄天邪帝以魔兵星宿劫催动的邪诀——星辰变劫，命运改写！2d8+DEX 力场伤害，15尺范围。WIS豁免失败恐惧1回合。冷却1回合。"
+    },
+    {
+      "name": "天魔分身·邪帝领域",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CHA",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "暴击强化",
+          "duration": 3,
+          "value_formula": "PROF*10",
+          "desc": "天魔之力灌注暴击飙升",
+          "target": "自身"
+        },
+        {
+          "type": "加速",
+          "duration": 3,
+          "value": 30,
+          "desc": "邪帝之影迅如鬼魅",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "玄天邪帝释放天魔分身之力——邪气领域笼罩全身。暴击率+PROF×10%，速度+30尺。持续3回合。冷却2回合。"
+    },
+    {
+      "name": "三刀三剑三神技·纷纷扰扰断风云",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "麻痹",
+          "duration": 2,
+          "dc_attr": "CON",
+          "desc": "三神技·风云为之变色",
+          "target": "敌方"
+        },
+        {
+          "type": "即死",
+          "dc_attr": "CON",
+          "threshold": "HP<25%",
+          "desc": "纷纷扰扰断风云，斩断命数",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "玄天邪帝刀剑双绝的终极奥义——三刀三剑三神技！纷纷扰扰断风云！5d8+DEX 黯蚀伤害，25尺范围。CON豁免失败麻痹2回合。HP<25%目标CON豁免失败即死。冷却4回合。"
+    }
+  ]
+}

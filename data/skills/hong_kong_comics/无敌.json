@@ -1,0 +1,136 @@
+[
+  {
+    "name": "御剑飞行·诛神一式",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "40尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "desc": "飞剑无视部分护甲",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "无敌以气御剑——飞剑破空而至，千里之外取敌首级。2d8+DEX 穿刺伤害，无视2点护甲加值。"
+  },
+  {
+    "name": "九死邪功·白骨爪",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "value": 30,
+        "desc": "邪功吸取生命之力",
+        "target": "自身"
+      },
+      {
+        "type": "中毒",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "尸毒入体",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "九死邪功——死而复生者的诅咒之力。2d10+STR 黯蚀伤害，30%生命偷取。CON豁免失败则中毒2回合(每回合1d6)。冷却1回合。"
+  },
+  {
+    "name": "穹苍宝鉴·护体神光",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "3*LVL+CON",
+        "desc": "穹苍之力化作护体光罩",
+        "target": "自身"
+      },
+      {
+        "type": "免疫控制",
+        "duration": 2,
+        "desc": "飞升之体不受凡俗束缚",
+        "target": "自身"
+      },
+      {
+        "type": "治疗",
+        "value_formula": "2d6+CON",
+        "desc": "宝鉴生生不息",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "无敌运转穹苍宝鉴——天地灵气汇聚护体。获得3×LVL+CON护盾，免疫控制2回合，恢复2d6+CON生命。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "飞升诀·灭神三式",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "50尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "即死",
+        "dc_attr": "CON",
+        "threshold": "HP<25%",
+        "desc": "灭神之力斩杀濒死之敌",
+        "target": "敌方"
+      },
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "飞升之力震飞群敌",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "无敌融合三大神功的终极一击——飞升之力灭神诛仙。5d8+DEX 力场伤害，25尺范围。HP低于25%的目标CON豁免失败则即死。其余STR豁免失败击飞20尺。冷却4回合。"
+  }
+]

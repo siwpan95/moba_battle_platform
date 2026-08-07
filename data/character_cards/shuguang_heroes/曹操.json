@@ -1,5 +1,5 @@
 {
-  "card_id": "DAW-1298",
+  "card_id": "shuguang_heroes:曹操",
   "hero": {
     "name": "曹操",
     "name_en": "",
@@ -109,81 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "重击",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "重击（Q）：蓄力一击。造成 1d8+STR 力场伤害。"
-    },
-    {
-      "name": "战吼",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "战吼（W）：全队加攻。造成 2d8+STR 挥砍伤害。"
-    },
-    {
-      "name": "跃击",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "跃击（E）：跳斩。造成 1d10+STR 挥砍伤害。"
-    },
-    {
-      "name": "决斗姿态",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "强化",
-          "duration": 3,
-          "desc": "属性全面提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 5,
-      "description": "决斗姿态（R）：单挑增伤。造成 2d12+STR 挥砍伤害。属性全面提升。"
-    }
-  ]
+  "legacy_card_id": "DAW-1298"
 }

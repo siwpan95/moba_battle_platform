@@ -1,5 +1,5 @@
 {
-  "card_id": "HER-1610",
+  "card_id": "yinghunzhiren:后羿",
   "hero": {
     "name": "后羿",
     "name_en": "",
@@ -109,82 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "落日箭",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+DEX 穿刺伤害。"
-    },
-    {
-      "name": "逐日",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "desc": "速度+15尺",
-          "duration": 2,
-          "value": 15,
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "2d8+DEX 挥砍伤害。速度+15尺2回合。"
-    },
-    {
-      "name": "射日",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+DEX 挥砍伤害。"
-    },
-    {
-      "name": "九日耀天",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+DEX 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "HER-1610"
 }

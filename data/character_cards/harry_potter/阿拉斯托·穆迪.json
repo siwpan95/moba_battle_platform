@@ -1,5 +1,5 @@
 {
-  "card_id": "HAR-1546",
+  "card_id": "harry_potter:阿拉斯托·穆迪",
   "hero": {
     "name": "阿拉斯托·穆迪",
     "name_en": "Alastor Moody",
@@ -109,99 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "除你武器",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d10+DEX 穿刺伤害，尝试缴械。",
-      "approx": true
-    },
-    {
-      "name": "魔眼洞察",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "暴击",
-          "duration": 2,
-          "desc": "下次攻击必中且暴击",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "获得洞察，下次攻击暴击，持续 2 回合。",
-      "approx": true
-    },
-    {
-      "name": "障碍重重",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 1,
-          "desc": "目标移动力下降",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 2,
-      "description": "1d8+DEX 力场伤害，减速目标。",
-      "approx": true
-    },
-    {
-      "name": "傲罗逮捕",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "制服",
-          "duration": 0,
-          "desc": "对低生命目标附加制服",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 4,
-      "description": "3d10+DEX 穿刺伤害。",
-      "approx": true
-    }
-  ]
+  "legacy_card_id": "HAR-1546"
 }

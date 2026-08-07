@@ -1,0 +1,122 @@
+[
+  {
+    "name": "判官笔",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "钟馗挥动判官笔——只消在生死簿上轻轻一勾，千军万马也要魂归地府。1d8+INT 黯蚀伤害。"
+  },
+  {
+    "name": "捉鬼",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "捉鬼天罗地网",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "slow",
+        "desc": "鬼气森森令人胆寒",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "钟馗掷出捉鬼符箓——他是唐玄宗御封的驱魔真君，万鬼见之丧胆。束缚+减速各1回合。2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "镇魂符",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "钟馗神威驱散邪气护体",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "shield",
+        "desc": "镇魂符咒凝为护体金光",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "钟馗画下镇魂符——符成之时金光大作，百邪不侵。回复2d6+INT生命，获得护盾2回合。"
+  },
+  {
+    "name": "鬼王降世",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "鬼王之相震慑万灵",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "鬼王亲自勾魂摄魄",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "钟馗现出本相——赤面獠牙、黑袍乌帽，鬼王之威让万鬼伏首、妖魔胆裂。AOE恐惧，对低血斩杀。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

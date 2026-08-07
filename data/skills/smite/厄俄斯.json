@@ -1,0 +1,122 @@
+[
+  {
+    "name": "黎明曙光",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "厄俄斯展开玫瑰色的黎明——她每天清晨打开天门，让太阳马车驶出。1d8+INT 光耀伤害。"
+  },
+  {
+    "name": "朝霞",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "desc": "朝霞的万丈光芒",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "黎明的希望",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "厄俄斯铺开朝霞——玫瑰色的天空令人无法直视，同时也点燃心中的希望。AOE致盲+自身增伤。2d6+INT 光耀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "玫瑰手指",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "清晨露珠滋养",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "accel",
+        "desc": "乘风而行",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "厄俄斯伸出玫瑰色的手指——荷马史诗中无数次出现的黎明女神，她的手指能拂去一切黑暗。回复2d6+INT+加速2回合。"
+  },
+  {
+    "name": "曙光女神之怒",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "日光审判",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "紫外线灼烧",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "厄俄斯释放全部曙光——当黎明的女神不再温柔，她的光芒足以灼烧大地。低血斩杀+dot 2回合。4d6+INT 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

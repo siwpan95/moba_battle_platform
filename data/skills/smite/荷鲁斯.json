@@ -1,0 +1,111 @@
+[
+  {
+    "name": "鹰眼",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "荷鲁斯睁开鹰眼——天空之神的视力能穿越千里沙漠。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "复仇之翼",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "鹰翼掀起沙尘暴",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "荷鲁斯展开鹰翼——他的双翅遮天蔽日，每一次扇动都是对杀父仇人赛特的复仇。AOE减速。2d8+DEX 挥砍伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "荷鲁斯之眼",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "荷鲁斯之眼——最强大的护身符",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+DEX"
+      },
+      {
+        "type": "buff",
+        "desc": "天空之神的祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "荷鲁斯召唤荷鲁斯之眼——这枚护身符象征愈合与保护，是古埃及最神圣的符号。护盾+增伤各2回合。"
+  },
+  {
+    "name": "天空之王",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "天空之王的复仇",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "恐惧",
+        "desc": "神鹰的怒视",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "荷鲁斯以天空之王之姿降临——他将赛特逐出埃及、统一上下埃及，是法老们的神圣庇护者。低血斩杀+AOE恐惧。3d8+DEX 穿刺伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "荒芜",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "命中单体敌人时伤害翻倍",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "在目标脚下引爆一枚亡灵地雷。造成1d8+INT黯蚀伤害。若只命中一个敌人，伤害翻倍。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "痛苦之墙",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "穿越墙体的敌人移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "sunder",
+        "desc": "穿越墙体的敌人魔抗降低",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "竖起一道幽魂哀嚎之墙，穿过墙体的敌人受到2d6+INT黯蚀伤害，移动速度减半且魔抗降低，持续2回合。墙体持续3回合。"
+  },
+  {
+    "name": "污染",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "周围的敌人每回合受到黯蚀伤害",
+        "duration": 3,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "开启亡灵光环——以自身为中心散发亵渎能量场。造成2d6+INT黯蚀伤害，且每回合对范围内敌人造成1d6黯蚀伤害。关闭污染时返还部分法力。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "安魂曲",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "true_damage",
+        "desc": "无视距离，对场上所有敌方英雄降下死亡",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "吟唱死亡颂歌——3回合引导后，对战场上所有敌方英雄同时降下死亡裁决。造成4d6+INT黯蚀伤害。无视距离与视野限制。WIS豁免成功则伤害减半。引导期间可被硬控打断。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 999
+  }
+]

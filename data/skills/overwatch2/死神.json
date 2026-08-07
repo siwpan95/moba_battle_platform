@@ -1,0 +1,98 @@
+[
+  {
+    "name": "死神·处决",
+    "key": "Q",
+    "type": "真实",
+    "action": "对低血目标斩杀",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "target": "敌方",
+        "kind": "execute",
+        "desc": "斩杀"
+      }
+    ],
+    "cooldown": 9,
+    "description": "对低血目标斩杀（单体）。斩杀",
+    "approx": true
+  },
+  {
+    "name": "死神·暗影突袭",
+    "key": "W",
+    "type": "物理",
+    "action": "从暗处突进刺杀",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "target": "敌方",
+        "kind": "vuln",
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 3,
+    "description": "从暗处突进刺杀（单体）。易伤",
+    "approx": true
+  },
+  {
+    "name": "死神·淬毒刃",
+    "key": "E",
+    "type": "物理",
+    "action": "涂抹剧毒",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "target": "敌方",
+        "kind": "poison",
+        "desc": "中毒"
+      }
+    ],
+    "cooldown": 4,
+    "description": "涂抹剧毒（单体）。中毒",
+    "approx": true
+  },
+  {
+    "name": "死神·烟雾遁走",
+    "key": "R",
+    "type": "混合",
+    "action": "释放烟雾消失",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 4,
+      "bonus_attr": "DEX",
+      "type": "能量"
+    },
+    "effects": [
+      {
+        "target": "自身",
+        "kind": "invis",
+        "desc": "隐身"
+      }
+    ],
+    "cooldown": 8,
+    "description": "释放烟雾消失（自身）。隐身",
+    "approx": true
+  }
+]

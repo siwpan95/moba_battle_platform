@@ -1,0 +1,130 @@
+[
+  {
+    "name": "血鬼术·莲叶冰",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "冰晶莲花冻结关节"
+      }
+    ],
+    "cooldown": 0,
+    "description": "童磨的血鬼术——冰晶莲花在掌心绽放射出寒气。2d8+INT 寒冷伤害，减速2回合(移速减半)。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·散莲华",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "冻结",
+        "target": "敌方",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "冰莲绽放冻结周围一切"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "童磨周身绽放冰晶莲花——寒气冰封周围一切。2d6+INT 寒冷伤害，15尺范围。CON豁免失败冻结1回合。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·结晶之御子",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "召唤",
+        "target": "自身",
+        "duration": 3,
+        "desc": "召唤冰晶分身协助战斗"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 3,
+        "value": 25,
+        "desc": "冰晶护甲"
+      }
+    ],
+    "cooldown": 2,
+    "description": "童磨召唤冰晶御子——冰之小分身协助作战。召唤2个冰晶分身(各有1/4属性)，自身减伤25%。持续3回合。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·雾冰·睡莲菩萨",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "aoe_radius": 20,
+    "effects": [
+      {
+        "type": "麻痹",
+        "target": "敌方",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "睡莲菩萨令敌如坠冰窟"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "2d4",
+        "desc": "冰雾暗藏剧毒"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "上弦之贰童磨的至高血鬼术——冰雾之中睡莲菩萨降临。4d10+INT 寒冷伤害，20尺范围。CON豁免失败麻痹2回合+每回合2d4毒伤。冷却4回合。",
+    "approx": true
+  }
+]

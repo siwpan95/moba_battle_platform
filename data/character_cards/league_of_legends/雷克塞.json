@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1990",
+  "card_id": "league_of_legends:雷克塞",
+  "legacy_card_id": "LEA-1122",
   "hero": {
     "name": "雷克塞",
     "name_en": "Rek'Sai",
@@ -108,25 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "旋风斩",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "aoe_radius": 5,
-      "cooldown": 0,
-      "description": "1d8+STR 挥砍伤害，命中5尺内所有敌人。"
-    }
-  ]
+  }
 }

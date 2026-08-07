@@ -3,7 +3,7 @@
 ============================================================
 
 
-[300 Heroes] (18位)
+[300英雄] (18位)
   • 十六夜咲夜
   • 芙兰朵露
   • 桐人
@@ -23,7 +23,7 @@
   • DIO
   • 伊利丹
 
-[Arena of Valor] (13位)
+[传说对决] (13位)
   • Aoi
   • Butterfly
   • Nakroth
@@ -38,7 +38,7 @@
   • Sinestrea
   • Kaine
 
-[Dota 2] (11位)
+[刀塔2] (11位)
   • 米拉娜
   • 风行者
   • 力丸
@@ -51,11 +51,11 @@
   • 灰烬之灵
   • 齐天大圣
 
-[Extraordinary Ones] (2位)
+[非人学园] (2位)
   • 白骨精
   • 雷姆
 
-[Heroes of the Storm] (25位)
+[风暴英雄] (25位)
   • Alarak
   • Cassia
   • Falstad
@@ -82,7 +82,7 @@
   • Zeratul
   • Zul'jin
 
-[Honor of Kings] (15位)
+[王者荣耀] (15位)
   • 韩信
   • 阿轲
   • 兰陵王
@@ -99,7 +99,7 @@
   • 澜
   • 暃
 
-[League of Legends] (23位)
+[英雄联盟] (23位)
   • 易
   • 伊芙琳
   • 卡萨丁
@@ -124,7 +124,7 @@
   • 阿克尚
   • 纳亚菲利
 
-[Marvel Super War] (9位)
+[漫威超级战争] (9位)
   • 幽灵
   • 夜魔侠
   • 黑寡妇
@@ -135,7 +135,7 @@
   • 秘客
   • 灵蝶
 
-[Mobile Legends: Bang Bang] (27位)
+[无尽对决] (27位)
   • Aamon
   • Alucard
   • Arlott
@@ -164,7 +164,7 @@
   • Yin
   • Zilong
 
-[Onmyoji Arena] (10位)
+[决战！平安京] (10位)
   • 以津真天
   • 骨女
   • 夜叉
@@ -176,7 +176,7 @@
   • 一反木绵
   • 大岳丸
 
-[Pokemon UNITE] (10位)
+[宝可梦大集结] (10位)
   • 嘟嘟利
   • 耿鬼
   • 阿勃梭鲁
@@ -188,7 +188,7 @@
   • 捷拉奥拉
   • 魔幻假面喵
 
-[SMITE] (25位)
+[神之浩劫] (25位)
   • Ao Kuang
   • Arachne
   • Awilix
@@ -215,7 +215,7 @@
   • Thor
   • Tsukuyomi
 
-[Vainglory] (6位)
+[虚荣] (6位)
   • Blackfeather
   • Idris
   • Koshka

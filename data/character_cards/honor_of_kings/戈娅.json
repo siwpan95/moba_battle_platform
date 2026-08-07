@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1855",
+  "card_id": "honor_of_kings:戈娅",
   "hero": {
     "name": "戈娅",
     "name_en": "",
@@ -111,29 +111,125 @@
   },
   "skills": [
     {
-      "name": "技能三",
-      "key": "E",
+      "name": "射手·精准射击",
+      "key": "Q",
       "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
+      "action": "远程精准打击",
+      "range": "远程",
+      "target": "单体",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
-        "type": "力场"
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
       },
       "effects": [
         {
-          "type": "加速",
-          "duration": 2,
-          "value": 15,
-          "desc": "速度+15尺",
+          "type": "crit",
+          "duration": 1,
+          "desc": "暴击",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d8+DEX 穿刺伤害。暴击",
+      "approx": true
+    },
+    {
+      "name": "射手·速射连射",
+      "key": "W",
+      "type": "物理",
+      "action": "快速倾泻弹幕",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "3d6+DEX 穿刺伤害。范围",
+      "approx": true
+    },
+    {
+      "name": "射手·穿甲弹",
+      "key": "E",
+      "type": "物理",
+      "action": "贯穿多重目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "pierce",
+          "duration": 1,
+          "desc": "穿透",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "2d10+DEX 穿刺伤害。穿透",
+      "approx": true
+    },
+    {
+      "name": "射手·战术翻滚",
+      "key": "R",
+      "type": "物理",
+      "action": "拉开距离",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "dash",
+          "duration": 1,
+          "desc": "位移",
           "target": "自身"
         }
       ],
-      "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "1d4+DEX 能量伤害。位移",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1855"
 }

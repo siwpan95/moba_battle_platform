@@ -1,5 +1,6 @@
 {
-  "card_id": "DEM-1345",
+  "card_id": "demon_slayer:甘露寺蜜璃",
+  "legacy_card_id": "DEM-1008",
   "hero": {
     "name": "甘露寺蜜璃",
     "name_en": "Mitsuri Kanroji",
@@ -123,7 +124,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "攻击速度提升"
+        }
+      ],
       "cooldown": 0,
       "description": "2d8+STR 挥砍伤害。",
       "approx": true
@@ -141,7 +149,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "攻击速度提升"
+        }
+      ],
       "cooldown": 1,
       "description": "2d6+STR 挥砍伤害。",
       "approx": true
@@ -159,7 +174,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "攻击速度提升"
+        }
+      ],
       "cooldown": 2,
       "description": "2d8+STR 挥砍伤害，覆盖一片区域。",
       "approx": true,
@@ -178,7 +200,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "攻击速度提升"
+        }
+      ],
       "cooldown": 4,
       "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
       "approx": true,

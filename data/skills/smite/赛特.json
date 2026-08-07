@@ -1,0 +1,103 @@
+[
+  {
+    "name": "沙漠风暴",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "沙尘侵入伤口，持续侵蚀",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "赛特召唤沙漠之风——作为红土地之主，每一粒黄沙都是他的武器。沙尘如刀片般刮过，渗入伤口持续侵蚀。1d10+DEX 穿刺伤害，dot 2回合。"
+  },
+  {
+    "name": "混沌裂隙",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "混沌之力撕裂秩序",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赛特撕开混沌裂隙——作为伊赛菲特（混沌）的化身，他能瓦解一切秩序与防御。2d8+DEX 挥砍伤害，破甲2回合。"
+  },
+  {
+    "name": "沙暴匿踪",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "沙暴之中目不能视",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赛特化为漫天黄沙——他的本体从来无法被捕捉，如同沙漠永远在变幻。获得隐形2回合。1d8+DEX 挥砍伤害。"
+  },
+  {
+    "name": "阿波菲斯之矛",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "混沌之神对濒死者的收割",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "赛特投出斩杀混沌巨蛇阿波菲斯的长矛——尽管他是混乱之神，但在拉神的太阳船上，他是唯一能刺穿阿波菲斯的存在。对低生命斩杀。4d6+DEX 穿刺伤害，AOE。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

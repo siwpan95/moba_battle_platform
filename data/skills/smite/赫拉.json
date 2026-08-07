@@ -1,0 +1,109 @@
+[
+  {
+    "name": "天后之怒",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "赫拉挥出权杖——奥林匹斯天后的一声呵斥便能令星辰颤抖。1d8+INT 力场伤害。"
+  },
+  {
+    "name": "百眼巨人",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "百眼巨人的凝视揭露一切弱点",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "赫拉召唤阿尔戈斯——百眼巨人即使入睡也有半数眼睛睁着，任何秘密都无法逃过他的凝视。标记弱点，敌人所受伤害加深2回合。2d6+INT 力场伤害。"
+  },
+  {
+    "name": "天后威严",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "奥林匹斯天后的权威无可置疑",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "immune",
+        "desc": "天后的威严使一切控制效果失效",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赫拉彰显天后威严——她是众神之母，连宙斯也不敢轻视她的愤怒。获得增伤2回合与免疫控制1回合。2d6+INT 力场伤害。"
+  },
+  {
+    "name": "诸神之母的诅咒",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "赫拉的诅咒如附骨之疽",
+        "duration": 3,
+        "target": "敌方"
+      },
+      {
+        "type": "恐惧",
+        "desc": "天后之怒令万物匍匐",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "赫拉降下诸神之母的诅咒——她曾让赫拉克勒斯疯狂弑子，让宙斯的情人化为母牛，她的诅咒从不落空、从不宽恕。持久侵蚀并恐惧敌人。4d6+INT 力场伤害，AOE，dot 3回合，恐惧1回合。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

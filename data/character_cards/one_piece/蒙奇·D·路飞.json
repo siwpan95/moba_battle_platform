@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2259",
+  "card_id": "one_piece:蒙奇·D·路飞",
   "hero": {
     "name": "蒙奇·D·路飞",
     "name_en": "Monkey D. Luffy",
@@ -109,86 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "橡胶橡胶·手枪",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d8+STR 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "橡胶橡胶·火箭炮",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+STR 钝击伤害。",
-      "approx": true
-    },
-    {
-      "name": "二档",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "duration": 2,
-          "desc": "攻速与移动力提升",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "进入二档，提升攻速与移动，持续 2 回合。",
-      "approx": true
-    },
-    {
-      "name": "橡胶橡胶·大猿王枪",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d12+STR 钝击伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 10
-    }
-  ]
+  "legacy_card_id": "ONE-2259"
 }

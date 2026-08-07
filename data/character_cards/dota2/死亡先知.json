@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1392",
+  "card_id": "dota2:死亡先知",
   "hero": {
     "name": "死亡先知",
     "name_en": "Death Prophet",
@@ -111,14 +111,14 @@
   "skills": [
     {
       "name": "技能三",
-      "key": "E",
+      "key": "Q",
       "type": "法术",
       "action": "附赠动作",
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
+        "dice_count": 3,
+        "dice_size": 4,
         "bonus_attr": "CON",
         "type": "力场"
       },
@@ -131,8 +131,94 @@
           "target": "自身"
         }
       ],
+      "cooldown": 0,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "46+INT 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
+    },
+    {
+      "name": "法师·奥能飞弹",
+      "key": "E",
+      "type": "法术",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "force",
+          "duration": 1,
+          "desc": "力场伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
       "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "description": "3d6+INT 法术伤害。力场伤害",
+      "approx": true
+    },
+    {
+      "name": "法师·元素风暴",
+      "key": "R",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "3d8+INT 法术伤害。范围伤害",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1392"
 }

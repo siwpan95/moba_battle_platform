@@ -1,0 +1,125 @@
+[
+  {
+    "name": "圣火",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "圣火不灭",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "布丽吉德点燃圣火——三重女神之火在基尔代尔永燃不熄。1d8+WIS 火焰伤害，dot 1回合。"
+  },
+  {
+    "name": "锻冶",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "女神锻造的铠甲",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "锻冶之神的赐福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "布丽吉德施展锻冶之术——她是铁匠、诗人和医者的守护女神。护盾+增伤各2回合。"
+  },
+  {
+    "name": "诗歌",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "诗歌之美令敌人沉醉",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "诗歌治愈创伤",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 2,
+    "description": "布丽吉德吟诵诗歌——她的诗句就是最温柔的治愈和最锋利的武器。魅惑1回合+回复。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "三重女神之光",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "三重女神的恩泽",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "三重祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "布丽吉德展现三重女神之姿——锻冶、诗歌、医疗三道光柱同时升起。AOE，大量回复+增伤。3d8+WIS 火焰伤害。",
+    "aoe_radius": 30
+  }
+]

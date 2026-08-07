@@ -1,0 +1,115 @@
+[
+  {
+    "name": "魔盒之触",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d8+WIS 黯蚀伤害。潘多拉从魔盒中释放一丝灾厄触碰敌人。",
+    "approx": true
+  },
+  {
+    "name": "希望之光",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "希望回复2d8+WIS",
+        "value": "2d8+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。潘多拉从盒底取出最后的希望。友方回复2d8+WIS生命。",
+    "approx": true
+  },
+  {
+    "name": "好奇之心",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "好奇心攻击力+3"
+      },
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被好奇心标记"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。潘多拉以不可抑制的好奇心揭开敌人的秘密。友方增益2回合+敌方易伤1回合。",
+    "approx": true
+  },
+  {
+    "name": "魔盒开启",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "duration": 0,
+        "desc": "希望之力回复3d6+WIS",
+        "value": "3d6+WIS"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灾厄每回合1d6"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+WIS 黯蚀伤害。潘多拉再次打开魔盒。友方全体回复3d6+WIS+敌方全体中毒2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 12
+  }
+]

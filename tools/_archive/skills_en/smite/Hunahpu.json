@@ -1,0 +1,117 @@
+[
+  {
+    "name": "吹箭",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "毒吹箭",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "胡纳库吹出毒箭——英雄孪生兄弟的吹箭无声致命。1d8+DEX 穿刺伤害，dot 1回合。"
+  },
+  {
+    "name": "球赛",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "球赛中的致命一击",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "胡纳库发起球赛攻势——玛雅球赛是生与死的较量，败者将被献祭。标记易伤2回合。2d6+DEX 钝击伤害。"
+  },
+  {
+    "name": "孪生之力",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "孪生兄弟的默契",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "shield",
+        "desc": "英雄光环",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+DEX"
+      }
+    ],
+    "cooldown": 2,
+    "description": "胡纳库唤起孪生之力——他与兄弟希巴兰奎一同征服了西巴尔巴冥界。加速2回合+护盾2回合。"
+  },
+  {
+    "name": "冥界征服者",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "战胜冥界之主的力量",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "buff",
+        "desc": "英雄的荣光",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "胡纳库展现冥界征服者的姿态——他曾击败冥界诸神，从死亡中重生为太阳。低血斩杀+增伤。3d8+DEX 光耀伤害，AOE。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

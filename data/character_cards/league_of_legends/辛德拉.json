@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1971",
+  "card_id": "league_of_legends:辛德拉",
+  "legacy_card_id": "LEA-1103",
   "hero": {
     "name": "辛德拉",
     "name_en": "Syndra",
@@ -107,75 +108,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "暗黑法球",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 黯蚀伤害。"
-    },
-    {
-      "name": "驱使念力",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 力场伤害。"
-    },
-    {
-      "name": "弱者退散",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "能量倾泻",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  }
 }

@@ -1,0 +1,105 @@
+[
+  {
+    "name": "凯撒之剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 1,
+        "desc": "罗马军团纪律：下次攻击+2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "Veni, Vidi, Vici！1d10+STR 挥砍伤害。罗马军团纪律使下次攻击获得+2加值。"
+  },
+  {
+    "name": "第十军团",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "军团鼓舞，回复1d8生命"
+      }
+    ],
+    "cooldown": 1,
+    "description": "第十忠诚军团奋力一击！2d8+STR 穿刺伤害。凯撒鼓舞军团，自身回复1d8生命。"
+  },
+  {
+    "name": "渡过卢比孔",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "决断冲锋，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "骰子已掷出！1d8+STR 挥砍伤害。凯撒决断冲锋，自身速度翻倍2回合。"
+  },
+  {
+    "name": "我来我见我征服",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "征服者姿态：伤害+50%"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "全军突击，敌方护甲大幅降低"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "Veni, Vidi, Vici！2d10+STR 挥砍范围伤害。凯撒进入征服者姿态增伤2回合，敌方护甲大幅降低2回合。"
+  }
+]

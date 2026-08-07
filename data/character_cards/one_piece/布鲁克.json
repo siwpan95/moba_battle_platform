@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2267",
+  "card_id": "one_piece:布鲁克",
   "hero": {
     "name": "布鲁克",
     "name_en": "Brook",
@@ -108,87 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "鼻歌·夜明曲",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d8+INT 寒冷伤害。",
-      "approx": true
-    },
-    {
-      "name": "灵魂出窍",
-      "key": "W",
-      "type": "法术",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [
-        {
-          "type": "闪避",
-          "duration": 1,
-          "desc": "灵魂离体获得闪避",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "灵魂出窍，获得闪避，持续 1 回合。",
-      "approx": true
-    },
-    {
-      "name": "冷冻剑",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d8+INT 寒冷伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 8
-    },
-    {
-      "name": "黄泉相击",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d10+INT 寒冷伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 12
-    }
-  ]
+  "legacy_card_id": "ONE-2267"
 }

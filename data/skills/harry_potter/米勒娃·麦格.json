@@ -1,0 +1,110 @@
+[
+  {
+    "name": "变形之击",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      },
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "变形束缚目标"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d6+INT 力场伤害。",
+    "approx": true
+  },
+  {
+    "name": "阿尼马格斯·猫",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "闪避",
+        "duration": 2,
+        "desc": "闪避与移动力提升",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "化为猫形，提升闪避，持续 2 回合。",
+    "approx": true
+  },
+  {
+    "name": "石墩出动",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "duration": 2,
+        "desc": "召唤石像协助友方",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+INT 钝击伤害，并召唤石像增援。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "猛烈变形",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "终极魔法冲击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+INT 力场伤害，覆盖大片区域。",
+    "approx": true,
+    "aoe_radius": 15
+  }
+]

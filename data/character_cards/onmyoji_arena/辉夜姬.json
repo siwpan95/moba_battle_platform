@@ -1,5 +1,5 @@
 {
-  "card_id": "ONM-2350",
+  "card_id": "onmyoji_arena:辉夜姬",
   "hero": {
     "name": "辉夜姬",
     "name_en": "",
@@ -109,82 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "蓬莱玉枝",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d6+STR 挥砍伤害。"
-    },
-    {
-      "name": "月光叠影",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "光耀"
-      },
-      "effects": [
-        {
-          "type": "标记",
-          "desc": "标记目标，后续攻击增伤",
-          "duration": 3,
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 1,
-      "description": "2d6+STR 光耀伤害。标记目标，后续攻击增伤3回合。"
-    },
-    {
-      "name": "龙首之玉",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d6+STR 挥砍伤害。"
-    },
-    {
-      "name": "万象之海",
-      "key": "4",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d8+STR 挥砍伤害。",
-      "aoe_radius": 15
-    }
-  ]
+  "legacy_card_id": "ONM-2350"
 }

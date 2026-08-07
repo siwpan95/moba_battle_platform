@@ -1,0 +1,113 @@
+[
+  {
+    "name": "月光",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "塞勒涅洒下月光——月神驾着银车穿越夜空。1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "月车",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "月光如水般清凉",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "塞勒涅驾驶月车——银色的双马拉着月车在夜空中飞驰，月光洒落如霜。AOE减速2回合。2d6+WIS 寒冷伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "新月之吻",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "月光疗愈",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "shield",
+        "desc": "月光纱衣",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+WIS"
+      }
+    ],
+    "cooldown": 2,
+    "description": "塞勒涅献上新月的初吻——在古希腊，恋人们在月下发誓，月光是爱情的见证。回复2d8+WIS+护盾2回合。"
+  },
+  {
+    "name": "满月降临",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "满月令人痴狂",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "满月的祝福",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "塞勒涅召唤满月——圆月当空，整个战场沐浴在银色的光辉中。AOE魅惑+大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

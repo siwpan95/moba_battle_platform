@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2396",
+  "card_id": "pokemon_unite:耿鬼",
   "hero": {
     "name": "耿鬼",
     "name_en": "Gengar",
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "暗影球",
-      "key": "1",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d6+DEX 黯蚀伤害。"
-    },
-    {
-      "name": "污泥炸弹/祸不单行",
-      "key": "2",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d6+DEX 挥砍伤害。"
-    },
-    {
-      "name": "食梦",
-      "key": "3",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d6+DEX 挥砍伤害。"
-    },
-    {
-      "name": "幽灵伏击",
-      "key": "U",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d8+DEX 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "POK-2396"
 }

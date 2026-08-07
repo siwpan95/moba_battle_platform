@@ -1,0 +1,104 @@
+[
+  {
+    "name": "三尖两刃刀",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "二郎神挥动三尖两刃刀——这柄神兵三面开刃，一挥之下万军辟易。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "天眼",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "天眼洞穿一切伪装与弱点",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "二郎神睁开额上第三只天眼——七十二变、隐身遁形在此眼神光下无所遁形。目标被标记易伤2回合。2d8+STR 光耀伤害。"
+  },
+  {
+    "name": "八九玄功",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "七十二变化身万千",
+        "target": "自身",
+        "duration": "1"
+      },
+      {
+        "type": "invis",
+        "desc": "化作清风无形无踪",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "二郎神施展八九玄功——七十二般变化随心所欲，孙悟空也曾在他手下吃过苦头。获得隐身+加速各1回合。1d8+STR 力场伤害。"
+  },
+  {
+    "name": "哮天犬",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "哮天犬扑咬重伤者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "dot",
+        "desc": "神犬牙毒入骨",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "二郎神放出哮天犬——这头神犬吞月追风，连齐天大圣都被它咬住腿脚。对低血斩杀，毒伤2回合。2d10+STR 穿刺伤害，AOE。",
+    "aoe_radius": 20
+  }
+]

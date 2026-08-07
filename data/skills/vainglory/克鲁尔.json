@@ -1,0 +1,77 @@
+[
+  {
+    "name": "死亡之握",
+    "key": "A",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ]
+  },
+  {
+    "name": "亡灵大军",
+    "key": "B",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 1,
+    "description": "2d10+STR 挥砍伤害。召唤一个镜像分身3回合。",
+    "effects": [
+      {
+        "type": "分身",
+        "desc": "召唤一个镜像分身",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "亡灵复苏",
+    "key": "U",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 4,
+    "description": "4d10+STR 挥砍伤害。伤害转化为生命2回合。",
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "伤害转化为生命",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 15
+  }
+]

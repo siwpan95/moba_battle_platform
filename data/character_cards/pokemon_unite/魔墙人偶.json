@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2397",
+  "card_id": "pokemon_unite:魔墙人偶",
   "hero": {
     "name": "魔墙人偶",
     "name_en": "Mr. Mime",
@@ -111,15 +111,75 @@
   },
   "skills": [
     {
-      "name": "治疗波",
+      "name": "辅助·群体治疗",
       "key": "Q",
+      "type": "混合",
+      "action": "治疗多人",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "duration": 1,
+          "desc": "群疗",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d6+WIS 能量伤害。群疗",
+      "approx": true
+    },
+    {
+      "name": "辅助·复活祈愿",
+      "key": "W",
+      "type": "法术",
+      "action": "复活倒下队友",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CHA",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "revive",
+          "duration": 1,
+          "desc": "复活",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CHA",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "1d12+CHA 法术伤害。复活",
+      "approx": true
+    },
+    {
+      "name": "治疗波",
+      "key": "E",
       "type": "法术",
       "action": "动作",
       "range": "30尺",
       "target": "自身",
       "damage": {
         "dice_count": 1,
-        "dice_size": 8,
+        "dice_size": 12,
         "bonus_attr": "WIS",
         "type": "光耀"
       },
@@ -131,8 +191,28 @@
           "target": "自身"
         }
       ],
-      "cooldown": 0,
-      "description": "恢复1d8+WIS生命值。"
+      "cooldown": 2,
+      "description": "恢复1d8+WIS生命值。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "30尺",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [],
+      "cooldown": 4,
+      "description": "28+WIS 伤害。冷却1回合。",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "POK-2397"
 }

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "圣甲虫",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "凯布利滚动太阳——圣甲虫之神每天清晨将太阳推上天空。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "黎明之球",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "desc": "初升太阳的光芒",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "凯布利举起黎明之球——每一个清晨都是他的杰作。AOE致盲1回合。2d6+STR 光耀伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "重生",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "圣甲虫的再生之力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+STR"
+      },
+      {
+        "type": "shield",
+        "desc": "甲虫壳护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+STR"
+      }
+    ],
+    "cooldown": 2,
+    "description": "凯布利发动重生之力——圣甲虫从粪球中诞生的意象，象征着永不熄灭的再生与复活。回复+护盾。"
+  },
+  {
+    "name": "太阳重生",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "太阳之力巅峰",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "execute",
+        "desc": "光芒灼烧一切黑暗",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "凯布利将太阳推向正午——当圣甲虫将日轮推到最高点时，一切阴影都无处遁形。增伤+低血斩杀。2d8+STR 光耀伤害，AOE。",
+    "aoe_radius": 25
+  }
+]

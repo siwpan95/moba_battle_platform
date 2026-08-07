@@ -1,0 +1,112 @@
+[
+  {
+    "name": "星光之触",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "星光治疗友军",
+        "duration": 1,
+        "value": 20,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "坚毅壁垒",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "链接友军共享护甲",
+        "duration": 3,
+        "value": 25,
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "链接友军的技能也会从塔里克位置施放",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。"
+  },
+  {
+    "name": "炫光",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "星光眩晕路径敌人",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "宇宙之辉",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "immune",
+        "desc": "延迟后友军无敌",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "无直接伤害。",
+    "aoe_radius": 20
+  }
+]

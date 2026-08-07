@@ -1,5 +1,5 @@
 {
-  "card_id": "HER-1588",
+  "card_id": "yinghunzhiren:狼蛛",
   "hero": {
     "name": "狼蛛",
     "name_en": "",
@@ -112,73 +112,15 @@
   },
   "skills": [
     {
-      "name": "射手·精准射击",
-      "key": "Q",
-      "type": "物理",
-      "action": "远程精准打击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "crit",
-          "duration": 1,
-          "desc": "暴击",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 2,
-      "description": "2d8+DEX 穿刺伤害。暴击"
-    },
-    {
-      "name": "射手·速射连射",
-      "key": "W",
-      "type": "物理",
-      "action": "快速倾泻弹幕",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "aoe",
-          "duration": 1,
-          "desc": "范围",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 5,
-      "description": "3d6+DEX 穿刺伤害。范围"
-    },
-    {
       "name": "射手·穿甲弹",
-      "key": "E",
+      "key": "Q",
       "type": "物理",
       "action": "贯穿多重目标",
       "range": "远程",
       "target": "单体",
       "damage": {
         "dice_count": 2,
-        "dice_size": 10,
+        "dice_size": 6,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
@@ -195,19 +137,20 @@
         "dc_formula": "8+PROF+DEX",
         "on_save": "无效"
       },
-      "cooldown": 6,
-      "description": "2d10+DEX 穿刺伤害。穿透"
+      "cooldown": 0,
+      "description": "2d10+DEX 穿刺伤害。穿透",
+      "approx": true
     },
     {
       "name": "射手·战术翻滚",
-      "key": "R",
+      "key": "W",
       "type": "物理",
       "action": "拉开距离",
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 4,
+        "dice_count": 2,
+        "dice_size": 6,
         "bonus_attr": "DEX",
         "type": "能量"
       },
@@ -224,45 +167,17 @@
         "dc_formula": "8+PROF+DEX",
         "on_save": "无效"
       },
-      "cooldown": 4,
-      "description": "1d4+DEX 能量伤害。位移"
+      "cooldown": 1,
+      "description": "1d4+DEX 能量伤害。位移",
+      "approx": true
     },
     {
       "name": "射手·爆头狙击",
-      "key": "Q",
+      "key": "E",
       "type": "物理",
       "action": "蓄力重击",
       "range": "远程",
       "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "crit",
-          "duration": 1,
-          "desc": "重伤",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 8,
-      "description": "3d10+DEX 穿刺伤害。重伤"
-    },
-    {
-      "name": "射手·压制火力",
-      "key": "W",
-      "type": "物理",
-      "action": "限制走位",
-      "range": "远程",
-      "target": "区域",
       "damage": {
         "dice_count": 2,
         "dice_size": 6,
@@ -271,38 +186,9 @@
       },
       "effects": [
         {
-          "type": "slow",
-          "duration": 1,
-          "desc": "减速",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "2d6+DEX 穿刺伤害。减速"
-    },
-    {
-      "name": "射手·精准射击",
-      "key": "E",
-      "type": "物理",
-      "action": "远程精准打击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
           "type": "crit",
           "duration": 1,
-          "desc": "暴击",
+          "desc": "重伤",
           "target": "敌方"
         }
       ],
@@ -312,123 +198,8 @@
         "on_save": "无效"
       },
       "cooldown": 2,
-      "description": "2d8+DEX 穿刺伤害。暴击"
-    },
-    {
-      "name": "射手·速射连射",
-      "key": "R",
-      "type": "物理",
-      "action": "快速倾泻弹幕",
-      "range": "远程",
-      "target": "区域",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "aoe",
-          "duration": 1,
-          "desc": "范围",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 5,
-      "description": "3d6+DEX 穿刺伤害。范围"
-    },
-    {
-      "name": "射手·穿甲弹",
-      "key": "Q",
-      "type": "物理",
-      "action": "贯穿多重目标",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "pierce",
-          "duration": 1,
-          "desc": "穿透",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 6,
-      "description": "2d10+DEX 穿刺伤害。穿透"
-    },
-    {
-      "name": "射手·战术翻滚",
-      "key": "W",
-      "type": "物理",
-      "action": "拉开距离",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 4,
-        "bonus_attr": "DEX",
-        "type": "能量"
-      },
-      "effects": [
-        {
-          "type": "dash",
-          "duration": 1,
-          "desc": "位移",
-          "target": "自身"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 4,
-      "description": "1d4+DEX 能量伤害。位移"
-    },
-    {
-      "name": "射手·爆头狙击",
-      "key": "E",
-      "type": "物理",
-      "action": "蓄力重击",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "crit",
-          "duration": 1,
-          "desc": "重伤",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "无效"
-      },
-      "cooldown": 8,
-      "description": "3d10+DEX 穿刺伤害。重伤"
+      "description": "3d10+DEX 穿刺伤害。重伤",
+      "approx": true
     },
     {
       "name": "射手·压制火力",
@@ -456,8 +227,10 @@
         "dc_formula": "8+PROF+DEX",
         "on_save": "无效"
       },
-      "cooldown": 6,
-      "description": "2d6+DEX 穿刺伤害。减速"
+      "cooldown": 4,
+      "description": "2d6+DEX 穿刺伤害。减速",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HER-1588"
 }

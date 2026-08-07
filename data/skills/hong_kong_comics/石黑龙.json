@@ -1,0 +1,131 @@
+[
+  {
+    "name": "十字追魂棍",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "value": 2,
+        "desc": "双节棍左右开弓二段追击",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "石黑龙以双节棍使出的至强棍法——十字交叉追魂索命。1d10+STR 钝击伤害，二段连击。"
+  },
+  {
+    "name": "金钟罩·铁壁铜墙",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "duration": 3,
+        "value_formula": "2*LVL+CON",
+        "desc": "金钟护体刀枪不入",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 40,
+        "desc": "金钟罩第十一关半的防御力",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "金钟罩第十一关半——石黑龙护体神功运转，周身如覆金钟。获得2×LVL+CON护盾，受到伤害减40%。持续3回合。冷却1回合。"
+  },
+  {
+    "name": "摧心锥",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿甲",
+        "desc": "无视目标AC加值的锥心一击",
+        "target": "敌方"
+      },
+      {
+        "type": "内伤",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "锥劲透体造成内伤",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 2,
+    "description": "北海家族的阴毒绝技——锥形劲力直透心脉。2d10+STR 穿刺伤害，无视护甲加值。CON豁免失败则2回合内伤(每回合1d6)。冷却2回合。"
+  },
+  {
+    "name": "盘古开天拳",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "开天辟地般的拳劲轰飞群敌",
+        "target": "敌方"
+      },
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "拳威震慑令敌眩晕",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "石黑龙融合金钟罩与盘古天殛震的至高一拳——仿若盘古开天辟地。4d10+STR 钝击伤害，25尺范围。STR豁免失败击飞20尺+CON豁免失败眩晕1回合。冷却4回合。"
+  }
+]

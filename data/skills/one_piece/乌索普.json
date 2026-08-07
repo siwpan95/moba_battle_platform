@@ -1,0 +1,109 @@
+[
+  {
+    "name": "铅星",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "弹药持续伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+DEX 穿刺伤害。",
+    "approx": true
+  },
+  {
+    "name": "火鸟星",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      },
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "弹药持续伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 火焰伤害。",
+    "approx": true
+  },
+  {
+    "name": "绿星·魔鬼",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "弹药持续伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d8+DEX 毒素伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "黑光星",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 12,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "duration": 0,
+        "desc": "对低生命目标附加破甲",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d12+DEX 穿刺伤害。",
+    "approx": true
+  }
+]

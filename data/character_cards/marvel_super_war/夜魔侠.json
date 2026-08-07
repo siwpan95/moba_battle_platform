@@ -1,8 +1,8 @@
 {
-  "card_id": "MAR-2084",
+  "card_id": "marvel_super_war:夜魔侠",
   "hero": {
     "name": "夜魔侠",
-    "name_en": "",
+    "name_en": "Daredevil",
     "alias": "",
     "title": ""
   },
@@ -110,15 +110,59 @@
   },
   "skills": [
     {
+      "name": "技能二",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [],
+      "cooldown": 0,
+      "description": "26+DEX 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能三",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
       "name": "大招",
-      "key": "R",
+      "key": "E",
       "type": "物理",
       "action": "动作",
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
+        "dice_count": 2,
+        "dice_size": 8,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
@@ -129,8 +173,40 @@
         "dc_formula": "8+PROF+INT",
         "on_save": "半伤"
       },
+      "cooldown": 2,
+      "description": "46+DEX 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
+    },
+    {
+      "name": "刺客·暗影突袭",
+      "key": "R",
+      "type": "物理",
+      "action": "从暗处突进刺杀",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "vuln",
+          "duration": 1,
+          "desc": "易伤",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
       "cooldown": 4,
-      "description": "46+DEX 范围伤害。DEX豁免减半。冷却4回合。"
+      "description": "2d8+DEX 穿刺伤害。易伤",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "MAR-2084"
 }

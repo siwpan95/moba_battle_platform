@@ -1,0 +1,116 @@
+[
+  {
+    "name": "弹跳炸弹",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "投掷一枚弹跳炸弹，在地面弹跳后于敌人脚下爆炸，对目标区域造成1d8+INT火焰伤害。炸弹可弹跳越过前排直击后排。DEX豁免成功则伤害减半。"
+  },
+  {
+    "name": "定点爆破",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "击退15尺",
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "自身被气浪弹开15尺，不受伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "投掷一个延时炸药包，可随时遥控引爆。爆炸对区域内敌人造成2d6+INT火焰伤害并击退15尺。吉格斯自身也被气浪弹开同等距离但不受伤害。DEX豁免成功则伤害减半且不被击退。"
+  },
+  {
+    "name": "海克斯爆破雷区",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "地雷区持续3回合，重复踩踏伤害递减",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "向地面撒布一片海克斯感应地雷，踩中的敌人受到2d6+INT火焰伤害并减速2回合。雷区持续封锁战场3回合，重复踩踏伤害递减。DEX豁免成功则伤害减半。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "科学的地狱火炮",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "向极远处投掷一颗巨型炼狱炸弹——吉格斯的终极造物。爆炸核心区域的所有敌人承受4d6+INT火焰伤害，外围区域伤害减半。DEX豁免成功则伤害减半。",
+    "aoe_radius": 30
+  }
+]

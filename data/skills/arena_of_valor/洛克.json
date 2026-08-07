@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Blade Rush",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "Rourke以战技之姿发起突刺，一击命中要害。1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "War Stomp",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "目标AC-2，持续2轮"
+      }
+    ],
+    "cooldown": 1,
+    "description": "蓄力一击，Rourke的战吼响彻战场。2d8+STR 挥砍伤害。 目标AC-2，持续2轮。"
+  },
+  {
+    "name": "Battle Spirit",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "lifesteal",
+        "target": "自身",
+        "desc": "造成伤害的50%转化为自身生命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "疾风般的步伐——Rourke突进至敌人身前。1d8+STR 挥砍伤害。 造成伤害的50%转化为自身生命。"
+  },
+  {
+    "name": "Final Stand",
+    "key": "P",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "desc": "对HP<50%目标额外2d6伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "终极武技——Rourke释放全部力量的最强一击。2d10+STR 挥砍伤害。 对HP<50%目标额外2d6伤害。"
+  }
+]

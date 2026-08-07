@@ -1,0 +1,138 @@
+[
+  {
+    "name": "魔刀·疯魔斩",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 12,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "出血",
+        "duration": 1,
+        "dmg_per_turn": "1d6",
+        "desc": "魔刀锋锐造成的伤口出血不止",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "第一邪皇独创的疯魔刀法——刀法诡谲狠辣，疯癫中暗藏杀机。1d12+DEX 黯蚀伤害，附带1回合出血(1d6)。"
+  },
+  {
+    "name": "魔刀·断情七绝·绝情斩",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "20尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "绝情之刀令人胆寒",
+        "target": "敌方"
+      },
+      {
+        "type": "穿甲",
+        "desc": "魔刀锋芒无视3点护甲",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "魔刀之断情七绝——以斩断七情为代价换来的究极一刀。2d10+DEX 挥砍伤害，无视3点护甲。WIS豁免失败恐惧1回合。冷却1回合。"
+  },
+  {
+    "name": "入魔·杀性觉醒",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "duration": 3,
+        "desc": "入魔后战力暴增，攻速+80%，攻击+5",
+        "target": "自身"
+      },
+      {
+        "type": "吸血",
+        "duration": 3,
+        "value": 25,
+        "desc": "魔性嗜血，攻击回复生命",
+        "target": "自身"
+      },
+      {
+        "type": "自伤",
+        "duration": 3,
+        "dmg_per_turn": "1d6",
+        "desc": "魔性反噬，每回合承受1d6伤害",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "第一邪皇激发体内魔性——入魔！攻速+80%，攻击+5，25%生命偷取。但每回合自伤1d6。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "魔刀·万魔出渊",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 2,
+        "dc_attr": "WIS",
+        "desc": "万魔齐出，众生惊惧",
+        "target": "敌方"
+      },
+      {
+        "type": "持续伤害",
+        "duration": 2,
+        "dmg_per_turn": "2d4",
+        "desc": "魔气侵蚀持续腐蚀灵魂",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "第一邪皇魔刀终极奥义——体内万千魔性尽数释放！5d8+DEX 黯蚀伤害，25尺范围。WIS豁免失败恐惧2回合+魔气腐蚀2回合(每回合2d4)。冷却4回合。"
+  }
+]

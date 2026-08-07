@@ -1,0 +1,97 @@
+[
+  {
+    "name": "立即清扫",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "神圣的光芒如晨曦绽放，鲁班大师引导着治愈之力。1d8+WIS 光耀伤害。"
+  },
+  {
+    "name": "助手驰援",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "value": 6,
+        "desc": "恢复6点生命值"
+      }
+    ],
+    "cooldown": 1,
+    "description": "圣言诵出，鲁班大师的祝福化为护盾笼罩盟友。2d6+WIS 光耀伤害。 恢复6点生命值。"
+  },
+  {
+    "name": "稷下科技",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击力+2，持续2轮"
+      }
+    ],
+    "cooldown": 2,
+    "description": "纯净的祝福之光从鲁班大师手中流淌而出。1d8+WIS 光耀伤害。 攻击力+2，持续2轮。"
+  },
+  {
+    "name": "强力收纳",
+    "key": "P",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 1,
+        "value": 10,
+        "desc": "获得10点临时护盾，持续1轮"
+      }
+    ],
+    "cooldown": 4,
+    "description": "神迹降临！鲁班大师呼唤至高之力庇佑全队。3d8+WIS 光耀伤害。 获得10点临时护盾，持续1轮。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

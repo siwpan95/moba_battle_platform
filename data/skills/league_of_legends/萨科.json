@@ -1,0 +1,127 @@
+[
+  {
+    "name": "欺诈魔术",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "闪现隐身",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "隐身期间下次攻击暴击",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 穿刺伤害。"
+  },
+  {
+    "name": "惊吓魔盒",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "desc": "魔盒恐惧周围敌人",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "魔盒持续射击",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "双面毒刃",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "飞刀减速",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "execute",
+        "desc": "背刺时额外伤害",
+        "threshold": 30,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "幻象",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "短暂消失后制造可控分身",
+        "duration": 1,
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "分身复制攻击并爆炸",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+DEX 挥砍伤害。"
+  }
+]

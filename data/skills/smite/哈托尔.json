@@ -1,0 +1,127 @@
+[
+  {
+    "name": "爱之铃",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "爱的祝福",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d6+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "哈托尔摇响爱之铃——美神与爱神之音宛如天籁。1d8+WIS 光耀伤害，微回复。"
+  },
+  {
+    "name": "欢乐之舞",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "欢乐令敌人沉迷",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "欢乐鼓舞士气",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "哈托尔跳起欢乐之舞——她是音乐、舞蹈与欢乐的女神，她的舞蹈能让最悲伤的人也露出笑容。AOE魅惑+增伤。2d6+WIS 光耀伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "母牛之角",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "母牛女神庇护",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+WIS"
+      },
+      {
+        "type": "heal",
+        "desc": "母性的滋养",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 2,
+    "description": "哈托尔显现母牛之角——她常以母牛形象出现，是所有法老的神圣母亲。护盾+回复。"
+  },
+  {
+    "name": "天女降临",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "天女之恩",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "4d8+WIS"
+      },
+      {
+        "type": "魅惑",
+        "desc": "天女之美令人失神",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "哈托尔以天女之姿降临——头顶日轮与牛角，她是古埃及最受爱戴的女神。AOE魅惑+超量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30
+  }
+]

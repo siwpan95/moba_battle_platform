@@ -1,0 +1,125 @@
+[
+  {
+    "name": "双蛇杖击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<30%增伤50%"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 钝击伤害。赫尔墨斯以双蛇杖神速出击，低血量目标伤害提升。",
+    "approx": true
+  },
+  {
+    "name": "飞鞋之袭",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被神速突袭打乱"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 钝击伤害。赫尔墨斯借飞鞋之神速远程突袭。减速1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "神使幻步",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "神速位移35尺"
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": ""
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 钝击伤害。赫尔墨斯以众神使者之速瞬间位移35尺。隐身1回合。",
+    "approx": true
+  },
+  {
+    "name": "灵魂引渡",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 2,
+        "desc": ""
+      },
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<30%即死"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+DEX 光耀伤害。赫尔墨斯引渡灵魂往返冥界。隐身2回合+加速2回合+HP<30%斩杀。",
+    "approx": true
+  }
+]

@@ -1,8 +1,8 @@
 {
-  "card_id": "MAR-2081",
+  "card_id": "marvel_super_war:奇异博士",
   "hero": {
     "name": "奇异博士",
-    "name_en": "",
+    "name_en": "Doctor Strange",
     "alias": "",
     "title": ""
   },
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "神秘术",
-      "key": "1",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "传送门",
-      "key": "2",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 力场伤害。"
-    },
-    {
-      "name": "时间宝石",
-      "key": "3",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "镜像维度",
-      "key": "4",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  "legacy_card_id": "MAR-2081"
 }

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "兽之呼吸·壹之型 齿",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "撕裂伤口持续受伤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+STR 挥砍伤害。",
+    "approx": true
+  },
+  {
+    "name": "兽之呼吸·贰之型 头突",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "撕裂伤口持续受伤"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。",
+    "approx": true
+  },
+  {
+    "name": "兽之呼吸·肆之型 狂牙",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "撕裂伤口持续受伤"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d8+STR 挥砍伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "兽之呼吸·拾之型 空间把握·无序",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "撕裂伤口持续受伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

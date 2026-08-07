@@ -1,0 +1,246 @@
+{
+  "card_id": "three_body:山杉惠子",
+  "legacy_card_id": "THE-1020",
+  "hero": {
+    "name": "山杉惠子",
+    "name_en": "Shan Shan Huizi",
+    "alias": "",
+    "title": "Shan Shan Huizi"
+  },
+  "game": {
+    "name": "The Three-Body Problem",
+    "name_cn": "三体",
+    "native_role": "破壁人/脑科学家 (Wallbreaker/Neuroscientist)",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "三体",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "思想探测",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "洞察",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "破壁人洞悉目标意图"
+        }
+      ],
+      "cooldown": 0,
+      "description": "破壁人山杉惠子以脑科学研究成果探测思想——看穿敌方下一步行动。2d6+INT 心灵伤害，揭示目标下回合意图。",
+      "approx": true
+    },
+    {
+      "name": "神经干预",
+      "key": "W",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "混乱",
+          "target": "敌方",
+          "duration": 1,
+          "dc_attr": "WIS",
+          "desc": "神经信号被篡改导致混乱"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "山杉惠子以神经科学手段干预目标大脑——篡改神经信号。1d8+INT 心灵伤害，WIS豁免失败混乱1回合。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "破壁·真相揭露",
+      "key": "E",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "effects": [
+        {
+          "type": "破甲",
+          "target": "敌方",
+          "duration": 2,
+          "value": 10,
+          "desc": "揭露真相令敌防御崩溃"
+        },
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "dc_attr": "WIS",
+          "desc": "面壁者被破壁的恐惧"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "部分"
+      },
+      "cooldown": 2,
+      "description": "「面壁者比尔·希恩斯，我是你的破壁人」——真相如利刃刺穿心灵。2d10+INT 心灵伤害，护甲-10持续2回合。WIS豁免失败恐惧1回合。",
+      "approx": true
+    },
+    {
+      "name": "剖腹·终极献祭",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "心灵"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 3,
+          "dc_attr": "WIS",
+          "desc": "以死明志的终极震撼"
+        },
+        {
+          "type": "增益",
+          "target": "友方",
+          "duration": 3,
+          "desc": "牺牲精神激励全军"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "山杉惠子在联合国静室石案上以日本刀剖腹——以死揭露真相。5d8+INT 心灵伤害，25尺范围。敌方WIS豁免失败恐惧3回合。友方全属性+5持续3回合。自身HP降至1。冷却4回合。",
+      "approx": true
+    }
+  ]
+}

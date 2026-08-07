@@ -1,0 +1,111 @@
+[
+  {
+    "name": "女武神之矛",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。布伦希尔德以女武神之矛刺向敌人。",
+    "approx": true
+  },
+  {
+    "name": "火焰之环",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "每回合1d4火焰"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 火焰伤害。布伦希尔德被奥丁罚睡于火焰之环中，如今她驾驭这火焰灼烧敌人2回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "飞马突袭",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "飞马俯冲30尺"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。布伦希尔德骑乘飞马从天而降，俯冲突袭。",
+    "approx": true
+  },
+  {
+    "name": "英灵召唤",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击力+5"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "击退15尺"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。布伦希尔德召唤英灵殿勇士助战。增益2回合+击退。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  }
+]

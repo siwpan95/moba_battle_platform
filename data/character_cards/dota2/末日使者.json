@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1418",
+  "card_id": "dota2:末日使者",
   "hero": {
     "name": "末日使者",
     "name_en": "Doom",
@@ -119,7 +119,7 @@
       "target": "单体",
       "damage": {
         "dice_count": 1,
-        "dice_size": 10,
+        "dice_size": 12,
         "bonus_attr": "STR",
         "type": "钝击"
       },
@@ -137,7 +137,77 @@
         "on_save": "无效"
       },
       "cooldown": 0,
-      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。"
+      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 1,
+      "description": "210+STR 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能三",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 2,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
+    },
+    {
+      "name": "大招",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "aoe_radius": 15,
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "410+STR 范围伤害。DEX豁免减半。冷却4回合。",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "DOT-1418"
 }

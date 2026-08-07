@@ -1,0 +1,114 @@
+[
+  {
+    "name": "白马",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "艾波娜策马踏来——女神与白马合为一体。1d10+STR 钝击伤害。"
+  },
+  {
+    "name": "丰饶之角",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "丰饶之角洒下谷物与果实",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "大地的祝福",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "艾波娜高举丰饶之角——她是马匹、丰饶与大地的女神。回复2d8+WIS+增伤2回合。"
+  },
+  {
+    "name": "马群冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "万马奔腾",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "slow",
+        "desc": "马群践踏",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "艾波娜召唤马群冲锋——她身后浮现出万千白马的幻影，如洪水般席卷战场。自身加速+AOE减速。1d8+STR 钝击伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "女神的马厩",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "马厩中的治愈之力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      },
+      {
+        "type": "shield",
+        "desc": "白马之魂护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "艾波娜敞开女神马厩——那里是所有马匹的归宿，也是无尽治愈的源泉。AOE，大量回复+护盾。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30
+  }
+]

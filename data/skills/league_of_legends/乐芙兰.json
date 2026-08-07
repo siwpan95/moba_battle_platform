@@ -1,0 +1,100 @@
+[
+  {
+    "name": "恶意魔印",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "标记目标，下次技能消耗标记造成额外伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "向目标投射一枚恶意魔印，造成1d10+DEX力场伤害并施加标记。若目标身上已有标记，消耗标记造成双倍伤害并使目标沉默1回合。"
+  },
+  {
+    "name": "魔影迷踪",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "冲刺至目标位置，可在2回合内再次激活返回原位",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "化为一道魔影向前冲刺，对落点周围敌人造成2d8+DEX力场伤害。2回合内可再次激活此技能，瞬间返回起始位置。"
+  },
+  {
+    "name": "幻影锁链",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "锁链束缚目标，无法移动",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "掷出一道以太锁链链接目标。造成1d8+DEX力场伤害。若目标在下一回合结束时仍未脱离锁链范围，则被束缚1回合并再次受到伤害。DEX豁免成功则挣脱锁链。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "故技重施",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "复制上一个施放的技能，伤害与效果翻倍",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "完美复现上一个施放的技能——但威力更盛。造成4d6+DEX力场伤害（若复制恶意魔印）或对应技能翻倍效果。复制的魔影迷踪可用于返回更远的原位。"
+  }
+]

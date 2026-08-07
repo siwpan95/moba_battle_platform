@@ -1,0 +1,110 @@
+[
+  {
+    "name": "广寒清辉",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "嫦娥挥袖洒出广寒宫的月光——每一缕清辉都携着月球表面亘古不变的寒意，触碰之物瞬间凝霜。1d8+INT 寒冷伤害。"
+  },
+  {
+    "name": "玉兔灵药",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "玉兔捣制的长生不老药治愈伤势",
+        "value_formula": "2d6+INT",
+        "target": "自身"
+      },
+      {
+        "type": "shield",
+        "desc": "月华凝结为护体冰晶",
+        "value_formula": "1d8+INT",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "嫦娥取出玉兔千年捣制的灵药——那药香便是闻上一闻也能延年益寿。月光凝结为护体冰晶，同时治愈内伤。回复2d6+INT生命，获得护盾2回合。"
+  },
+  {
+    "name": "月宫流风",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "月宫寒气冻结血脉",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "嫦娥在月宫独舞——衣袂飘动带起凛冽寒流，那是广寒宫亿万年的孤寂凝结成的冷彻之风。被波及者血脉冻结、行动迟缓。2d6+INT 寒冷伤害，AOE，slow 2回合。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "奔月",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "冻结",
+        "desc": "满月之力冻结时空",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "嫦娥吞下不死灵药飞升奔月——那一瞬间爆发的不朽之力足以令日月无光、江河倒流。满月降临战场中心，冻结范围内一切生灵。4d6+INT 寒冷伤害，AOE，冻结1回合。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

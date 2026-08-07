@@ -1,0 +1,122 @@
+[
+  {
+    "name": "拂尘净世",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "拂尘轻挥，仙光净化。1d8+WIS 光耀伤害，目标减速1回合。"
+  },
+  {
+    "name": "仙丹赐福",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复2d8生命"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+20%"
+      }
+    ],
+    "cooldown": 1,
+    "description": "太白金星的仙丹灵药。回复2d8生命，增伤2回合。"
+  },
+  {
+    "name": "招安令",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "队友伤害+20%"
+      },
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 1,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "天庭招安的天命！全体队友增伤2回合，自身获得护盾1回合。"
+  },
+  {
+    "name": "天庭敕令",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "全体回复3d8"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "束缚"
+      }
+    ],
+    "cooldown": 4,
+    "description": "天庭玉帝敕令降下！3d8+WIS 光耀范围伤害，全体回复3d8，未通过WIS豁免者束缚1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

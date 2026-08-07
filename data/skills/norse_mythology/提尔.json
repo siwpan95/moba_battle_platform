@@ -1,0 +1,112 @@
+[
+  {
+    "name": "正义之剑",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。提尔以独臂挥动正义之剑，每一击充满战神的威严。",
+    "approx": true
+  },
+  {
+    "name": "锁链拘束",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被提尔的锁链缠绕"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。提尔掷出锁链束缚目标1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "无畏突进",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "无畏冲锋20尺"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 1,
+        "desc": "防御姿态"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。提尔以战神之勇无畏冲锋，同时进入防御姿态减伤1回合。",
+    "approx": true
+  },
+  {
+    "name": "诸神法庭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "HP<25%时伤害翻倍"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。提尔以战神的名义宣判。对HP<25%目标伤害翻倍+破甲2回合。",
+    "approx": true
+  }
+]

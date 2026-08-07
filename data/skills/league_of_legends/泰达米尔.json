@@ -1,0 +1,112 @@
+[
+  {
+    "name": "嗜血杀戮",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "消耗怒气回复生命",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "每损失5%生命+1物理攻击",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "将沸腾的战意转化为生命力，消耗全部怒气回复生命。造成1d10+STR挥砍伤害。被动：每损失5%最大生命值，物理攻击力+1。"
+  },
+  {
+    "name": "蔑视",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "转身逃跑的敌人移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "sunder",
+        "desc": "转身逃跑的敌人攻击力下降",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "发出一声蛮族战吼，令周围敌人心生畏惧。造成2d8+STR挥砍伤害。背对你的敌人移动速度减半、攻击力下降，持续2回合。WIS豁免成功则免疫减益。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "旋风斩",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "旋转冲锋穿越战场30尺",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "化身旋风旋转冲锋30尺，所过之处利刃翻飞。造成1d8+STR挥砍伤害。暴击时此技能冷却减少1回合。"
+  },
+  {
+    "name": "无尽怒火",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "immune",
+        "desc": "生命值不会降至1以下，免疫一切伤害",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "释放蛮王的终极战意——即使死神也无法夺走他的怒火。造成2d10+STR挥砍伤害。生命值不会降至1以下，免疫一切伤害和控制效果，持续2回合。可在被控制时激活。"
+  }
+]

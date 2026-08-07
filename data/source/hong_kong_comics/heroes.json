@@ -1,54 +1,398 @@
-{
-  "game": "港漫群英",
-  "game_name_cn": "港漫群英",
-  "heroes": [
-    {
-      "name": "步惊云",
-      "name_en": "Bu Jingyun",
-      "alias": "不哭死神",
-      "native_role": "战士/剑客",
-      "universal_role": "fighter",
-      "source": "风云"
-    },
-    {
-      "name": "聂风",
-      "name_en": "Nie Feng",
-      "alias": "风中之神",
-      "native_role": "战士/刀客",
-      "universal_role": "fighter",
-      "source": "风云"
-    },
-    {
-      "name": "华英雄",
-      "name_en": "Hua Yingxiong",
-      "alias": "天煞孤星",
-      "native_role": "剑客/侠客",
-      "universal_role": "fighter",
-      "source": "中华英雄"
-    },
-    {
-      "name": "王小虎",
-      "name_en": "Wang Xiaohu",
-      "alias": "龙虎三皇",
-      "native_role": "战士/拳师",
-      "universal_role": "fighter",
-      "source": "龙虎门"
-    },
-    {
-      "name": "海虎",
-      "name_en": "Seahorse",
-      "alias": "磁场强者",
-      "native_role": "战士/超能者",
-      "universal_role": "fighter",
-      "source": "海虎"
-    },
-    {
-      "name": "地狱",
-      "name_en": "Hell",
-      "alias": "地狱大统领",
-      "native_role": "战士/超能者",
-      "universal_role": "fighter",
-      "source": "海虎"
-    }
-  ]
-}
+[
+  {
+    "name": "一忧子"
+  },
+  {
+    "name": "丁鹏_HK"
+  },
+  {
+    "name": "东方雄"
+  },
+  {
+    "name": "傅红雪_HK"
+  },
+  {
+    "name": "关羽_HK"
+  },
+  {
+    "name": "刀皇"
+  },
+  {
+    "name": "刀神"
+  },
+  {
+    "name": "刹亚"
+  },
+  {
+    "name": "剑帝"
+  },
+  {
+    "name": "剑晨"
+  },
+  {
+    "name": "剑雄"
+  },
+  {
+    "name": "北冥正"
+  },
+  {
+    "name": "卫悲回_HK"
+  },
+  {
+    "name": "叶孤城_HK"
+  },
+  {
+    "name": "叶问_HK"
+  },
+  {
+    "name": "吕布_HK"
+  },
+  {
+    "name": "哪吒_HK"
+  },
+  {
+    "name": "圣王"
+  },
+  {
+    "name": "大刀"
+  },
+  {
+    "name": "大刀王五"
+  },
+  {
+    "name": "天地盟主"
+  },
+  {
+    "name": "天女"
+  },
+  {
+    "name": "天尊"
+  },
+  {
+    "name": "天武"
+  },
+  {
+    "name": "天皇"
+  },
+  {
+    "name": "太平"
+  },
+  {
+    "name": "夺命书生"
+  },
+  {
+    "name": "女娲_HK"
+  },
+  {
+    "name": "如来"
+  },
+  {
+    "name": "如来_HK"
+  },
+  {
+    "name": "妲己_HK"
+  },
+  {
+    "name": "姜子牙_HK"
+  },
+  {
+    "name": "姬昌"
+  },
+  {
+    "name": "寒冰_HK"
+  },
+  {
+    "name": "少林武僧_HK"
+  },
+  {
+    "name": "展昭_HK"
+  },
+  {
+    "name": "巨灵"
+  },
+  {
+    "name": "帝辛"
+  },
+  {
+    "name": "快活王"
+  },
+  {
+    "name": "怀灭"
+  },
+  {
+    "name": "怀空"
+  },
+  {
+    "name": "惊天"
+  },
+  {
+    "name": "慕容映雪"
+  },
+  {
+    "name": "战狂"
+  },
+  {
+    "name": "拳道神"
+  },
+  {
+    "name": "方世玉"
+  },
+  {
+    "name": "方歌吟_HK"
+  },
+  {
+    "name": "无相王"
+  },
+  {
+    "name": "易筋经"
+  },
+  {
+    "name": "杀意"
+  },
+  {
+    "name": "李寻欢_HK"
+  },
+  {
+    "name": "李布衣"
+  },
+  {
+    "name": "杨戬_HK"
+  },
+  {
+    "name": "柳残阳"
+  },
+  {
+    "name": "楚楚"
+  },
+  {
+    "name": "楚留香_HK"
+  },
+  {
+    "name": "次男"
+  },
+  {
+    "name": "武神"
+  },
+  {
+    "name": "毒蛇帮主"
+  },
+  {
+    "name": "比干"
+  },
+  {
+    "name": "沈胜衣"
+  },
+  {
+    "name": "洪熙官"
+  },
+  {
+    "name": "流星"
+  },
+  {
+    "name": "火云邪神传"
+  },
+  {
+    "name": "火凤凰"
+  },
+  {
+    "name": "烈焰_HK"
+  },
+  {
+    "name": "燕十三_HK"
+  },
+  {
+    "name": "燕子李三"
+  },
+  {
+    "name": "燕王"
+  },
+  {
+    "name": "狂刀"
+  },
+  {
+    "name": "独孤梦"
+  },
+  {
+    "name": "生奴"
+  },
+  {
+    "name": "申公豹_HK"
+  },
+  {
+    "name": "白发魔女_HK"
+  },
+  {
+    "name": "白玉堂"
+  },
+  {
+    "name": "白玉川"
+  },
+  {
+    "name": "白莲"
+  },
+  {
+    "name": "破梦"
+  },
+  {
+    "name": "神农"
+  },
+  {
+    "name": "神医"
+  },
+  {
+    "name": "秦霜"
+  },
+  {
+    "name": "笑三笑"
+  },
+  {
+    "name": "第二梦"
+  },
+  {
+    "name": "罗汉"
+  },
+  {
+    "name": "老妖"
+  },
+  {
+    "name": "苏乞儿"
+  },
+  {
+    "name": "萧秋水_HK"
+  },
+  {
+    "name": "虎剑飞"
+  },
+  {
+    "name": "虎魄"
+  },
+  {
+    "name": "蚩尤"
+  },
+  {
+    "name": "蝴蝶"
+  },
+  {
+    "name": "血霸王"
+  },
+  {
+    "name": "血魔"
+  },
+  {
+    "name": "西城秀树"
+  },
+  {
+    "name": "西门吹雪_HK"
+  },
+  {
+    "name": "观月瞳"
+  },
+  {
+    "name": "谢晓峰_HK"
+  },
+  {
+    "name": "赖药儿"
+  },
+  {
+    "name": "追风"
+  },
+  {
+    "name": "邪帝"
+  },
+  {
+    "name": "醉拳王"
+  },
+  {
+    "name": "金圣"
+  },
+  {
+    "name": "铁圣"
+  },
+  {
+    "name": "铁将军"
+  },
+  {
+    "name": "铁拳"
+  },
+  {
+    "name": "铁木真_HK"
+  },
+  {
+    "name": "铁狂屠"
+  },
+  {
+    "name": "铜圣"
+  },
+  {
+    "name": "银圣"
+  },
+  {
+    "name": "问天"
+  },
+  {
+    "name": "闻仲_HK"
+  },
+  {
+    "name": "阴阳使"
+  },
+  {
+    "name": "陆小凤_HK"
+  },
+  {
+    "name": "陈真"
+  },
+  {
+    "name": "隼人天隐"
+  },
+  {
+    "name": "雷震子_HK"
+  },
+  {
+    "name": "霍元甲"
+  },
+  {
+    "name": "韦陀"
+  },
+  {
+    "name": "顾长风"
+  },
+  {
+    "name": "风雷"
+  },
+  {
+    "name": "飞惊"
+  },
+  {
+    "name": "首男"
+  },
+  {
+    "name": "马永贞"
+  },
+  {
+    "name": "鬼仆"
+  },
+  {
+    "name": "鬼王_HK"
+  },
+  {
+    "name": "魔君_HK"
+  },
+  {
+    "name": "魔礼海"
+  },
+  {
+    "name": "黄飞鸿_HK"
+  },
+  {
+    "name": "黑暗雷奥"
+  },
+  {
+    "name": "黑豹"
+  },
+  {
+    "name": "龙剑飞"
+  },
+  {
+    "name": "龙王"
+  }
+]

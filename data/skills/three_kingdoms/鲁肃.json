@@ -1,0 +1,117 @@
+[
+  {
+    "name": "斡旋术",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "以和为贵的斡旋之术，1d8+WIS 光耀伤害，减速1回合。"
+  },
+  {
+    "name": "慷慨借粮",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 2,
+        "desc": "持续回复"
+      },
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 1,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "鲁肃慷慨借粮于周瑜！2d6+WIS 光耀伤害，友方持续回复2回合并获得护盾。"
+  },
+  {
+    "name": "榻上策",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "增伤30%"
+      },
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 2,
+    "description": "榻上与孙权论天下大势！友方增伤2回合，敌方易伤1回合。"
+  },
+  {
+    "name": "江东柱石",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "大幅增伤"
+      },
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 2,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "江东柱石，国之栋梁！3d8+WIS 光耀范围伤害，友方大幅增伤与护盾各2回合。",
+    "aoe_radius": 20
+  }
+]

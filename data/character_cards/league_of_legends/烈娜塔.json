@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-2026",
+  "card_id": "league_of_legends:烈娜塔",
+  "legacy_card_id": "LEA-1158",
   "hero": {
     "name": "烈娜塔",
     "name_en": "Renata Glasc",
@@ -108,31 +109,5 @@
     "hp": 60,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "治疗波",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "30尺",
-      "target": "自身",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
-        "type": "光耀"
-      },
-      "effects": [
-        {
-          "type": "治疗",
-          "value_formula": "1d8+WIS",
-          "desc": "恢复生命",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 0,
-      "description": "恢复1d8+WIS生命值。"
-    }
-  ]
+  }
 }

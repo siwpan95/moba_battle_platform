@@ -1,0 +1,108 @@
+[
+  {
+    "name": "罗摩弓",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "罗摩拉开神弓——这把弓曾是湿婆的武器，弓弦一响便有星辰坠落。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "梵天之矢",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "梵天法宝锁定目标",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "罗摩搭上梵天赐福的箭矢——这支箭一旦瞄准就绝不落空，连魔王罗波那也躲不开。标记易伤2回合。2d6+DEX 穿刺伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "哈奴曼之跃",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "神猴之力赋予跳跃之力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "罗摩借哈奴曼之力跳跃——神猴曾一步跨过海峡找到悉多，如今这力量为罗摩所用。加速2回合。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "毗湿奴化身",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "对邪恶之徒降下神罚",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "buff",
+        "desc": "毗湿奴之力灌注",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "罗摩展露毗湿奴化身的真容——他是维护之神的第七化身，专为铲除魔王罗波那而降世。低血斩杀+增伤。3d8+DEX 光耀伤害，AOE。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

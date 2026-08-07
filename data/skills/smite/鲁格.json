@@ -1,0 +1,110 @@
+[
+  {
+    "name": "光之矛",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "鲁格投出光之矛——全能之神的长矛从不失手。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "多艺",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "全能的鲁格标记弱点",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "鲁格展现多艺——当他来到达努神族的宫殿，守卫问他会什么，他回答：我什么都会。标记易伤2回合。2d6+DEX 穿刺伤害。",
+    "aoe_radius": 20
+  },
+  {
+    "name": "太阳之眼",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "太阳之子的步伐",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "buff",
+        "desc": "全知全能",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "鲁格睁开太阳之眼——他是太阳神与工匠神的后代，集所有天赋于一身。加速+增伤各2回合。"
+  },
+  {
+    "name": "巴罗尔之眼",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "击穿魔眼的一击",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "致盲",
+        "desc": "光之暴雨",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "鲁格掷出致命一击——他用弹弓将魔眼巴罗尔的独眼击穿，从而终结了弗摩尔族的统治。低血斩杀+AOE致盲。3d8+DEX 穿刺伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

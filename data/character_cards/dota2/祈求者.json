@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1423",
+  "card_id": "dota2:祈求者",
   "hero": {
     "name": "祈求者",
     "name_en": "Invoker",
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "冰",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 寒冷伤害。"
-    },
-    {
-      "name": "雷",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "闪电"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 闪电伤害。"
-    },
-    {
-      "name": "火",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 火焰伤害。"
-    },
-    {
-      "name": "元素祈唤",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  "legacy_card_id": "DOT-1423"
 }

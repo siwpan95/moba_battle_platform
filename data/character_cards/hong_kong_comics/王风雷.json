@@ -1,0 +1,247 @@
+{
+  "card_id": "hong_kong_comics:王风雷",
+  "legacy_card_id": "港漫群-1010",
+  "hero": {
+    "name": "王风雷",
+    "name_en": "Wang Fenglei",
+    "alias": "邪拳魔王",
+    "title": "邪拳魔王"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "战士/拳师",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "龙虎门",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "冰火螳螂拳·寒冰式",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "duration": 1,
+          "desc": "寒气冻结关节",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "冰火螳螂拳·寒冰式——拳出如螳螂捕蝉，寒气透骨。1d10+STR 寒冷伤害，目标移速减半1回合。"
+    },
+    {
+      "name": "雷火拳",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "闪电"
+      },
+      "effects": [
+        {
+          "type": "麻痹",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "雷火交加麻痹目标",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "冰火七重天催动的雷火之拳——拳出雷动！2d8+STR 闪电伤害，CON豁免失败则麻痹1回合。冷却1回合。"
+    },
+    {
+      "name": "冰火七重天·双极护体",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 0,
+        "dice_size": 0,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "暴击强化",
+          "duration": 3,
+          "value_formula": "PROF*5",
+          "desc": "冰火之力提升战意",
+          "target": "自身"
+        },
+        {
+          "type": "减伤",
+          "duration": 3,
+          "value": 25,
+          "desc": "冰火双极护体",
+          "target": "自身"
+        },
+        {
+          "type": "反伤",
+          "duration": 3,
+          "value": "1d4",
+          "desc": "冰火劲反震攻击者",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 2,
+      "description": "冰火七重天第七重——冰火双极在体内形成完美循环。暴击率+PROF×5%，减伤25%，对攻击者反弹1d4冰火伤害。持续3回合。冷却2回合。"
+    },
+    {
+      "name": "极限冰火七重天·破灭",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "火焰"
+      },
+      "aoe_radius": 20,
+      "effects": [
+        {
+          "type": "冻结",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "冰劲冻结目标",
+          "target": "敌方"
+        },
+        {
+          "type": "灼烧",
+          "duration": 2,
+          "dmg_per_turn": "2d4",
+          "desc": "火劲持续焚烧",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "王风雷突破极限——冰火七重天同时释放冰火两极。4d10+STR 火焰伤害(含冰劲)，20尺范围。CON豁免失败冻结1回合+灼烧2回合(每回合2d4)。冷却4回合。"
+    }
+  ]
+}

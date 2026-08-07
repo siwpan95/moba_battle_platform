@@ -1,0 +1,113 @@
+[
+  {
+    "name": "裂地斩",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。目标速度减半2回合。",
+    "effects": [
+      {
+        "type": "减速",
+        "desc": "目标速度减半",
+        "duration": 2,
+        "target": "敌方",
+        "dc_attr": null
+      }
+    ]
+  },
+  {
+    "name": "嗜血",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 1,
+    "description": "2d10+STR 钝击伤害。伤害转化为生命2回合。",
+    "effects": [
+      {
+        "type": "吸血",
+        "desc": "伤害转化为生命",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "aoe_radius": 15
+  },
+  {
+    "name": "投掷",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "cooldown": 2,
+    "description": "1d10+STR 力场伤害。目标被击飞1回合。",
+    "effects": [
+      {
+        "type": "击飞",
+        "desc": "目标被击飞",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "STR"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "督军挑战",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "cooldown": 4,
+    "description": "4d10+STR 钝击伤害。目标必须攻击施法者1回合。",
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "目标必须攻击施法者",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "WIS"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  }
+]

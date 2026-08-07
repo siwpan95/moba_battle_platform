@@ -1,5 +1,5 @@
 {
-  "card_id": "DAW-1292",
+  "card_id": "shuguang_heroes:牛魔王",
   "hero": {
     "name": "牛魔王",
     "name_en": "",
@@ -109,102 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "冲撞",
-      "key": "Q",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "duration": 2,
-          "desc": "移动与攻速提升。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "冲撞（Q）：突进击退。造成 1d8+STR 钝击伤害。移动与攻速提升。"
-    },
-    {
-      "name": "防御结界",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "光耀"
-      },
-      "effects": [
-        {
-          "type": "减伤",
-          "duration": 2,
-          "desc": "受到伤害降低。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 3,
-      "description": "防御结界（W）：减伤光环。受到伤害降低。（范围效果）"
-    },
-    {
-      "name": "大地震颤",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 2,
-          "desc": "移动速度降低。",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 3,
-      "description": "大地震颤（E）：减速。造成 1d10+STR 挥砍伤害。移动速度降低。（范围效果）"
-    },
-    {
-      "name": "绝对防御",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "减伤",
-          "duration": 2,
-          "desc": "受到伤害降低。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 5,
-      "description": "绝对防御（R）：超高减伤。造成 2d12+STR 挥砍伤害。受到伤害降低。"
-    }
-  ]
+  "legacy_card_id": "DAW-1292"
 }

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "破晓之盾",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "下次攻击眩晕目标",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "以曙光圣盾猛击目标，造成1d10+STR钝击伤害并眩晕1回合。此攻击重置普通攻击计时。CON豁免成功则免疫眩晕。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "日蚀",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "desc": "护甲与魔抗翻倍",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "dot",
+        "desc": "护盾爆炸对周围敌人造成伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "以太阳之力包裹自身，护甲与魔抗翻倍，持续2回合。造成2d6+STR钝击伤害。持续时间结束后圣盾爆炸，对周围敌人造成额外伤害。"
+  },
+  {
+    "name": "天顶之刃",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "突进至最后一个命中的敌人身旁并将其禁锢",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "以曙光之刃刺出一道日光束，造成1d8+STR钝击伤害。蕾欧娜突进至最后一个被命中的敌人身旁，并将其短暂禁锢0.5回合。DEX豁免成功则不被禁锢。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "日炎耀斑",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "中心区域敌人眩晕，外围敌人减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "召唤一道太阳耀斑轰击战场。中心区域敌人受到2d8+STR光耀伤害并眩晕2回合；外围敌人受到半额伤害并减速2回合。CON豁免成功则免疫眩晕但减速照常。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 25
+  }
+]

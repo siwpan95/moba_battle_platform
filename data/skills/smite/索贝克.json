@@ -1,0 +1,104 @@
+[
+  {
+    "name": "鳄神噬咬",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "索贝克张开巨鳄之口——尼罗河霸主的咬合力连河马的头骨也能粉碎。1d10+STR 穿刺伤害。"
+  },
+  {
+    "name": "尼罗守护",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "尼罗河之水凝为鳞片护盾",
+        "value_formula": "2d8+STR",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "desc": "鳄鱼鳞甲坚不可摧",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "索贝克呼召尼罗河——古埃及人相信鳄神是尼罗河的保护者，他的鳞甲即为最坚固的壁垒。获得护盾与减伤。"
+  },
+  {
+    "name": "死亡翻滚",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "desc": "鳄鱼的死亡翻滚碾碎一切防御",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "索贝克施展鳄鱼的猎杀绝技——咬住猎物后猛烈翻滚，肢体与甲胄一同粉碎。1d8+STR 钝击伤害，破甲1回合。"
+  },
+  {
+    "name": "尼罗河之怒",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "desc": "洪水席卷，将敌人冲倒",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "索贝克召唤尼罗河泛滥——每年洪水冲刷两岸、孕育生命，但在鳄神手中，它就是毁灭性的武器。巨浪吞噬战场，敌人被冲倒。2d8+STR 钝击伤害，AOE击倒。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  }
+]

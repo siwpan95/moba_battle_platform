@@ -1,0 +1,259 @@
+{
+  "card_id": "hong_kong_comics:王小龙",
+  "legacy_card_id": "港漫群-1006",
+  "hero": {
+    "name": "王小龙",
+    "name_en": "Wang Xiaolong",
+    "alias": "龙虎三皇·降龙掌传人",
+    "title": "龙虎三皇·降龙掌传人"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "战士/掌法宗师",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "龙虎门",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续伤害",
+    "持续输出",
+    "硬控制",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "降龙十八掌·亢龙有悔",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "击退",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "至刚至猛的掌力震退敌手",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 0,
+      "description": "降龙十八掌第一式——左腿微屈右臂内弯划圆，掌力排山倒海而出。2d8+STR 钝击伤害，STR豁免失败则被震退10尺。"
+    },
+    {
+      "name": "九阴真经·白骨阴风爪",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "15尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "duration": 2,
+          "desc": "阴寒之气渗入骨髓，目标移速减半",
+          "target": "敌方"
+        },
+        {
+          "type": "持续伤害",
+          "duration": 2,
+          "dmg_per_turn": "1d4",
+          "desc": "阴毒蚀骨",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 1,
+      "description": "九阴真经所载阴毒爪法——五指如白骨透体而过。2d8+DEX 黯蚀伤害，CON豁免失败则减速2回合+每回合1d4阴毒伤害。冷却1回合。"
+    },
+    {
+      "name": "打狗棒法·天下无狗",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "缴械",
+          "duration": 1,
+          "dc_attr": "DEX",
+          "desc": "棒影如雨打落兵器",
+          "target": "敌方"
+        },
+        {
+          "type": "倒地",
+          "duration": 1,
+          "dc_attr": "DEX",
+          "desc": "绊字诀令敌倒地",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "cooldown": 2,
+      "description": "丐帮镇帮绝学——棒影重重如天罗地网。3d6+DEX 钝击伤害，15尺范围。DEX豁免失败则缴械+倒地1回合。冷却2回合。"
+    },
+    {
+      "name": "九阴大霹雳",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "40尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "力场"
+      },
+      "aoe_radius": 20,
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "阴阳交泰之力震晕敌群",
+          "target": "敌方"
+        },
+        {
+          "type": "击飞",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "霹雳之威轰飞一切",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "九阴真经至高境界——阴阳交汇化为雷霆一击。5d8+STR 力场伤害，20尺范围。CON豁免失败眩晕1回合+击飞15尺。冷却4回合。"
+    }
+  ]
+}

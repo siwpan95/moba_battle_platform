@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2596",
+  "card_id": "three_body:希恩斯",
+  "legacy_card_id": "THE-1011",
   "hero": {
     "name": "希恩斯",
     "name_en": "Hines",
@@ -199,7 +200,14 @@
         "bonus_attr": "INT",
         "type": "心灵"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "增益",
+          "target": "友方",
+          "duration": 2,
+          "desc": "精神鼓舞增益"
+        }
+      ],
       "cooldown": 4,
       "description": "3d8+INT 心灵伤害，覆盖一片区域。",
       "approx": true,

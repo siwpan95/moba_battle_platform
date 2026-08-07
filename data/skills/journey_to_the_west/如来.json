@@ -1,0 +1,122 @@
+[
+  {
+    "name": "佛光普照",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "万丈佛光普照十方，1d8+INT 光耀伤害，目标减速1回合。"
+  },
+  {
+    "name": "五指山",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "压制"
+      }
+    ],
+    "cooldown": 1,
+    "description": "五指化作五行山镇压妖魔！2d6+INT 力场范围伤害，未通过CON豁免者压制2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "佛法无边",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受伤减半"
+      },
+      {
+        "type": "reflect",
+        "target": "自身",
+        "duration": 2,
+        "desc": "反弹伤害"
+      }
+    ],
+    "cooldown": 2,
+    "description": "佛光护体，万法不侵。受伤减半2回合并反弹伤害2回合。"
+  },
+  {
+    "name": "万佛朝宗",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "震慑"
+      },
+      {
+        "type": "true_dmg",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "穿透减伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "西天万佛之力汇聚一掌！4d6+INT 光耀范围伤害，无视减伤，未通过WIS豁免者震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

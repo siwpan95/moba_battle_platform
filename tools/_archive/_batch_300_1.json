@@ -1,0 +1,134 @@
+{
+  "梅林": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "亚连沃克": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "芙蕾雅": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "琪露诺": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "slow"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "木更": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "电次": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "菈菈": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "风鸣翼": {
+    "role": "fighter",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "古明地恋": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "红美铃": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "结城友奈": {
+    "role": "fighter",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "食蜂操祈": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "shield"
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "水系仙法",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "天河弱水化为利刃，1d8+WIS 力场伤害，减速1回合。"
+  },
+  {
+    "name": "四海瓶",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复2d8生命"
+      },
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "四海瓶倾倒四海之水！回复2d8生命并获得护盾2回合。"
+  },
+  {
+    "name": "鸾飞凤舞",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体伤害+20%"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "昊天上帝之女乘青鸾起舞。全体增伤+加速2回合。"
+  },
+  {
+    "name": "九龙神火",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "全体回复3d8"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "1d6灼烧"
+      }
+    ],
+    "cooldown": 4,
+    "description": "九龙神火罩笼罩敌军！3d8+WIS 火焰范围伤害，全体回复3d8，灼烧2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

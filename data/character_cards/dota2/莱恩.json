@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1375",
+  "card_id": "dota2:莱恩",
   "hero": {
     "name": "莱恩",
     "name_en": "Lion",
@@ -109,74 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "裂地尖刺",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d6+STR 穿刺伤害。"
-    },
-    {
-      "name": "妖术",
-      "key": "W",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d6+STR 挥砍伤害。"
-    },
-    {
-      "name": "法力吸取",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 6,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d6+STR 挥砍伤害。"
-    },
-    {
-      "name": "死亡之指",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d8+STR 挥砍伤害。"
-    }
-  ]
+  "legacy_card_id": "DOT-1375"
 }

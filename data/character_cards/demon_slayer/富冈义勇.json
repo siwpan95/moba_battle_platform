@@ -1,5 +1,6 @@
 {
-  "card_id": "DEM-1341",
+  "card_id": "demon_slayer:富冈义勇",
+  "legacy_card_id": "DEM-1004",
   "hero": {
     "name": "富冈义勇",
     "name_en": "Giyu Tomioka",
@@ -123,7 +124,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "水流冲击减缓目标"
+        }
+      ],
       "cooldown": 0,
       "description": "2d10+STR 挥砍伤害。",
       "approx": true
@@ -141,7 +149,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "水流冲击减缓目标"
+        }
+      ],
       "cooldown": 1,
       "description": "2d6+STR 挥砍伤害。",
       "approx": true
@@ -159,7 +174,14 @@
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "水流冲击减缓目标"
+        }
+      ],
       "cooldown": 2,
       "description": "2d10+STR 挥砍伤害，覆盖一片区域。",
       "approx": true,

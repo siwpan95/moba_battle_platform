@@ -1,0 +1,618 @@
+[
+  {
+    "game": "World Generals",
+    "name": "Xiang Yu",
+    "name_en": "Xiang Yu",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "楚汉争霸"
+  },
+  {
+    "game": "World Generals",
+    "name": "Alexander the Great",
+    "name_en": "Alexander the Great",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "古希腊"
+  },
+  {
+    "game": "World Generals",
+    "name": "Julius Caesar",
+    "name_en": "Julius Caesar",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "古罗马"
+  },
+  {
+    "game": "World Generals",
+    "name": "Oda Nobunaga",
+    "name_en": "Oda Nobunaga",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "source": "日本战国"
+  },
+  {
+    "game": "World Generals",
+    "name": "Hua Mulan",
+    "name_en": "Hua Mulan",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "南北朝"
+  },
+  {
+    "game": "World Generals",
+    "name": "Genghis Khan",
+    "name_en": "Genghis Khan",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "source": "蒙古帝国"
+  },
+  {
+    "game": "World Generals",
+    "name": "Napoleon Bonaparte",
+    "name_en": "Napoleon Bonaparte",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "source": "法兰西第一帝国"
+  },
+  {
+    "game": "World Generals",
+    "name": "Joan of Arc",
+    "name_en": "Joan of Arc",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "百年战争"
+  },
+  {
+    "game": "World Generals",
+    "name": "King Arthur",
+    "name_en": "King Arthur",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "亚瑟王传说"
+  },
+  {
+    "game": "World Generals",
+    "name": "Spartacus",
+    "name_en": "Spartacus",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "古罗马"
+  },
+  {
+    "game": "World Generals",
+    "name": "Leonidas I",
+    "name_en": "Leonidas I",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "source": "古希腊"
+  },
+  {
+    "game": "World Generals",
+    "name": "Lü Bu",
+    "name_en": "Lü Bu",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "三国演义"
+  },
+  {
+    "game": "World Generals",
+    "name": "Hannibal Barca",
+    "name_en": "Hannibal Barca",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "迦太基"
+  },
+  {
+    "game": "World Generals",
+    "name": "Saladin",
+    "name_en": "Saladin",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "十字军东征"
+  },
+  {
+    "game": "World Generals",
+    "name": "William Wallace",
+    "name_en": "William Wallace",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "source": "苏格兰独立战争"
+  },
+  {
+    "game": "World Generals",
+    "name": "Minamoto no Yoshitsune",
+    "name_en": "Minamoto no Yoshitsune",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "source": "日本源平合战"
+  },
+  {
+    "game": "World Generals",
+    "name": "Tomoe Gozen",
+    "name_en": "Tomoe Gozen",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "source": "日本源平合战"
+  },
+  {
+    "game": "World Generals",
+    "name": "Mōri Motonari",
+    "name_en": "Mōri Motonari",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "source": "日本战国"
+  },
+  {
+    "game": "World Generals",
+    "name": "Elizabeth I",
+    "name_en": "Elizabeth I",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "source": "都铎王朝"
+  },
+  {
+    "game": "World Generals",
+    "name": "Scipio Africanus",
+    "name_en": "Scipio Africanus",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "source": "古罗马"
+  },
+  {
+    "name": "Admiral Yi"
+  },
+  {
+    "name": "Aetius"
+  },
+  {
+    "name": "Agesilaus II"
+  },
+  {
+    "name": "Akbar the Great"
+  },
+  {
+    "name": "Alaric"
+  },
+  {
+    "name": "Alcibiades"
+  },
+  {
+    "name": "Alfred the Great"
+  },
+  {
+    "name": "Artemisia I"
+  },
+  {
+    "name": "Ashurbanipal"
+  },
+  {
+    "name": "Askia Muhammad"
+  },
+  {
+    "name": "Attila the Hun"
+  },
+  {
+    "name": "Augustus"
+  },
+  {
+    "name": "Aurangzeb"
+  },
+  {
+    "name": "Aurelian"
+  },
+  {
+    "name": "Babur"
+  },
+  {
+    "name": "Baldwin IV of Jerusalem"
+  },
+  {
+    "name": "Belisarius"
+  },
+  {
+    "name": "Bohemond I"
+  },
+  {
+    "name": "Boudica"
+  },
+  {
+    "name": "Brian Boru"
+  },
+  {
+    "name": "Cao Cao"
+  },
+  {
+    "name": "Catherine the Great"
+  },
+  {
+    "name": "Chandragupta Maurya"
+  },
+  {
+    "name": "Charlemagne"
+  },
+  {
+    "name": "Charles de Gaulle"
+  },
+  {
+    "name": "Che Guevara"
+  },
+  {
+    "name": "Cochise"
+  },
+  {
+    "name": "Constantine the Great"
+  },
+  {
+    "name": "Crazy Horse"
+  },
+  {
+    "name": "Cyrus the Great"
+  },
+  {
+    "name": "Darius the Great"
+  },
+  {
+    "name": "Date Masamune"
+  },
+  {
+    "name": "Diocletian"
+  },
+  {
+    "name": "Douglas MacArthur"
+  },
+  {
+    "name": "Duke of Wellington"
+  },
+  {
+    "name": "Dwight Eisenhower"
+  },
+  {
+    "name": "Edward the Black Prince"
+  },
+  {
+    "name": "El Cid"
+  },
+  {
+    "name": "Epaminondas"
+  },
+  {
+    "name": "Erwin Rommel"
+  },
+  {
+    "name": "Francis Drake"
+  },
+  {
+    "name": "Frederick Barbarossa"
+  },
+  {
+    "name": "Frederick the Great"
+  },
+  {
+    "name": "Gaius Marius"
+  },
+  {
+    "name": "George S. Patton"
+  },
+  {
+    "name": "George Washington"
+  },
+  {
+    "name": "Georgy Zhukov"
+  },
+  {
+    "name": "Germanicus"
+  },
+  {
+    "name": "Geronimo"
+  },
+  {
+    "name": "Gilgamesh_Historical"
+  },
+  {
+    "name": "Giuseppe Garibaldi"
+  },
+  {
+    "name": "Godfrey of Bouillon"
+  },
+  {
+    "name": "Granuaile"
+  },
+  {
+    "name": "Guan Yu"
+  },
+  {
+    "name": "Gustavus Adolphus"
+  },
+  {
+    "name": "Gwanggaeto the Great"
+  },
+  {
+    "name": "Hadrian"
+  },
+  {
+    "name": "Haile Selassie"
+  },
+  {
+    "name": "Hammurabi"
+  },
+  {
+    "name": "Hangaku Gozen"
+  },
+  {
+    "name": "Harold Godwinson"
+  },
+  {
+    "name": "Henry V"
+  },
+  {
+    "name": "Henry the Navigator"
+  },
+  {
+    "name": "Honda Tadakatsu"
+  },
+  {
+    "name": "Horatio Nelson"
+  },
+  {
+    "name": "Hulagu Khan"
+  },
+  {
+    "name": "Idris Alooma"
+  },
+  {
+    "name": "Isabella I of Castile"
+  },
+  {
+    "name": "Ivan the Terrible"
+  },
+  {
+    "name": "Jan Žižka"
+  },
+  {
+    "name": "José de San Martín"
+  },
+  {
+    "name": "Kahina"
+  },
+  {
+    "name": "Khalid ibn al-Walid"
+  },
+  {
+    "name": "Kublai Khan"
+  },
+  {
+    "name": "Lakshmibai"
+  },
+  {
+    "name": "Leo Africanus"
+  },
+  {
+    "name": "Leonidas"
+  },
+  {
+    "name": "Liu Bei"
+  },
+  {
+    "name": "Lozen"
+  },
+  {
+    "name": "Majorian"
+  },
+  {
+    "name": "Mansa Musa"
+  },
+  {
+    "name": "Marcus Aurelius"
+  },
+  {
+    "name": "Mark Antony"
+  },
+  {
+    "name": "Matilda of Tuscany"
+  },
+  {
+    "name": "Mehmed II"
+  },
+  {
+    "name": "Menelik II"
+  },
+  {
+    "name": "Miltiades"
+  },
+  {
+    "name": "Miyamoto Musashi"
+  },
+  {
+    "name": "Montezuma II"
+  },
+  {
+    "name": "Nakano Takeko"
+  },
+  {
+    "name": "Nebuchadnezzar II"
+  },
+  {
+    "name": "Nzinga"
+  },
+  {
+    "name": "Oliver Cromwell"
+  },
+  {
+    "name": "Otto von Bismarck"
+  },
+  {
+    "name": "Pachacuti"
+  },
+  {
+    "name": "Pelopidas"
+  },
+  {
+    "name": "Pericles"
+  },
+  {
+    "name": "Peter the Great"
+  },
+  {
+    "name": "Philip II of Macedon"
+  },
+  {
+    "name": "Pompey"
+  },
+  {
+    "name": "Pyrrhus of Epirus"
+  },
+  {
+    "name": "Qin Shi Huang"
+  },
+  {
+    "name": "Ramesses II"
+  },
+  {
+    "name": "Rani of Jhansi"
+  },
+  {
+    "name": "Richard the Lionheart"
+  },
+  {
+    "name": "Robert E. Lee"
+  },
+  {
+    "name": "Robert the Bruce"
+  },
+  {
+    "name": "Roland"
+  },
+  {
+    "name": "Samori Ture"
+  },
+  {
+    "name": "Sanada Yukimura"
+  },
+  {
+    "name": "Sargon of Akkad"
+  },
+  {
+    "name": "Sennacherib"
+  },
+  {
+    "name": "Septimius Severus"
+  },
+  {
+    "name": "Shah Jahan"
+  },
+  {
+    "name": "Shaka Zulu"
+  },
+  {
+    "name": "Simón Bolívar"
+  },
+  {
+    "name": "Sitting Bull"
+  },
+  {
+    "name": "Skanderbeg"
+  },
+  {
+    "name": "Stilicho"
+  },
+  {
+    "name": "Stonewall Jackson"
+  },
+  {
+    "name": "Subutai"
+  },
+  {
+    "name": "Suleiman the Magnificent"
+  },
+  {
+    "name": "Sulla"
+  },
+  {
+    "name": "Sun Tzu"
+  },
+  {
+    "name": "Sundiata Keita"
+  },
+  {
+    "name": "Takeda Shingen"
+  },
+  {
+    "name": "Tamerlane"
+  },
+  {
+    "name": "Tecumseh"
+  },
+  {
+    "name": "Themistocles"
+  },
+  {
+    "name": "Theodosius"
+  },
+  {
+    "name": "Thutmose III"
+  },
+  {
+    "name": "Tiglath-Pileser III"
+  },
+  {
+    "name": "Timur"
+  },
+  {
+    "name": "Titus"
+  },
+  {
+    "name": "Tokugawa"
+  },
+  {
+    "name": "Tokugawa Ieyasu"
+  },
+  {
+    "name": "Toyotomi Hideyoshi"
+  },
+  {
+    "name": "Trajan"
+  },
+  {
+    "name": "Trieu Thi Trinh"
+  },
+  {
+    "name": "Uesugi Kenshin"
+  },
+  {
+    "name": "Ulysses S. Grant"
+  },
+  {
+    "name": "Vasco da Gama"
+  },
+  {
+    "name": "Vespasian"
+  },
+  {
+    "name": "Vlad the Impaler"
+  },
+  {
+    "name": "William the Conqueror"
+  },
+  {
+    "name": "Winston Churchill"
+  },
+  {
+    "name": "Xenophon"
+  },
+  {
+    "name": "Yi Sun-sin"
+  },
+  {
+    "name": "Yuenü"
+  },
+  {
+    "name": "Zenobia"
+  },
+  {
+    "name": "Zheng He"
+  },
+  {
+    "name": "Zhuge Liang"
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1900",
+  "card_id": "league_of_legends:蒙多医生",
+  "legacy_card_id": "LEA-1032",
   "hero": {
     "name": "蒙多医生",
     "name_en": "Dr. Mundo",
@@ -19,7 +20,8 @@
   "playstyle_tags": [
     "先手",
     "前排",
-    "承伤"
+    "承伤",
+    "持续伤害"
   ],
   "attributes": {
     "STR": {
@@ -108,36 +110,5 @@
     "hp": 100,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "护盾猛击",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "钝击"
-      },
-      "effects": [
-        {
-          "type": "减速",
-          "duration": 1,
-          "desc": "速度减半",
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "STR",
-        "dc_formula": "8+PROF+STR",
-        "on_save": "无效"
-      },
-      "cooldown": 0,
-      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。"
-    }
-  ]
+  }
 }

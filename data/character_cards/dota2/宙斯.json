@@ -1,5 +1,5 @@
 {
-  "card_id": "DOT-1372",
+  "card_id": "dota2:宙斯",
   "hero": {
     "name": "宙斯",
     "name_en": "Zeus",
@@ -108,75 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "弧形闪电",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "闪电"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 闪电伤害。",
-      "aoe_radius": 30
-    },
-    {
-      "name": "雷击",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "闪电"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 闪电伤害。"
-    },
-    {
-      "name": "静电场",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "闪电"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 闪电伤害。"
-    },
-    {
-      "name": "雷神之怒",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "闪电"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 闪电伤害。"
-    }
-  ]
+  "legacy_card_id": "DOT-1372"
 }

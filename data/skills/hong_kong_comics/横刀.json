@@ -1,0 +1,136 @@
+[
+  {
+    "name": "横刀诀·一刀两断",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "desc": "横刀之势无可阻挡，无视3点护甲",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "霸气刀客横刀——一刀之下万物两分。1d12+STR 挥砍伤害，无视3点护甲加值。"
+  },
+  {
+    "name": "横刀诀·刀霸天下",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "20尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "霸刀劲力轰飞目标",
+        "target": "敌方"
+      },
+      {
+        "type": "流血",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "霸道刀伤极难愈合",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "横刀霸绝天下的一刀——刀出如虎啸山林！2d10+STR 挥砍伤害，20尺刀气。STR豁免失败击飞15尺+流血2回合(每回合1d6)。冷却1回合。"
+  },
+  {
+    "name": "怒意·血战不休",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "duration": 3,
+        "desc": "怒意燃烧战力飙升至极限，攻速+60%",
+        "target": "自身"
+      },
+      {
+        "type": "治疗",
+        "value_formula": "1d8+CON",
+        "desc": "战意昂扬激发潜能",
+        "target": "自身"
+      },
+      {
+        "type": "免疫恐惧",
+        "duration": 3,
+        "desc": "血战之志无所畏惧",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "横刀燃起无尽战意——血战不休直至敌亡！攻速+60%，恢复1d8+CON生命，免疫恐惧。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "终极横刀诀·天崩地裂",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "天崩之威震晕群敌",
+        "target": "敌方"
+      },
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "地裂之力轰飞一切",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "横刀终极一刀——天崩地裂！刀势之猛仿若开天辟地。4d12+STR 挥砍伤害，25尺范围。CON豁免失败眩晕2回合+STR豁免失败击飞25尺。冷却4回合。"
+  }
+]

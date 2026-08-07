@@ -1,0 +1,167 @@
+{
+  "战斗女神": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "buff"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "潘多拉亚克特": {
+    "role": "mage",
+    "signature": {
+      "W": [
+        "control"
+      ],
+      "R": [
+        "dot"
+      ]
+    }
+  },
+  "神秘冒险家": {
+    "role": "marksman",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "暖心女仆": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "cleanse"
+      ]
+    }
+  },
+  "贝拉尔": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "艾多玛娜": {
+    "role": "mage",
+    "signature": {
+      "Q": [
+        "dot"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "金元素": {
+    "role": "tank",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "reflect"
+      ]
+    }
+  },
+  "木元素": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "heal"
+      ],
+      "E": [
+        "buff"
+      ]
+    }
+  },
+  "自然之灵": {
+    "role": "support",
+    "signature": {
+      "W": [
+        "shield"
+      ],
+      "R": [
+        "heal"
+      ]
+    }
+  },
+  "少年曹焱兵": {
+    "role": "fighter",
+    "signature": {
+      "Q": [
+        "sunder"
+      ],
+      "R": [
+        "buff"
+      ]
+    }
+  },
+  "莫莫瑞鼠": {
+    "role": "marksman",
+    "signature": {
+      "W": [
+        "slow"
+      ],
+      "R": [
+        "vuln"
+      ]
+    }
+  },
+  "九尾天狐": {
+    "role": "mage",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "control"
+      ]
+    }
+  },
+  "暗黑冥神": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "invis"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "凋零骑士": {
+    "role": "fighter",
+    "signature": {
+      "W": [
+        "reduce"
+      ],
+      "R": [
+        "execute"
+      ]
+    }
+  },
+  "时空猎手": {
+    "role": "assassin",
+    "signature": {
+      "E": [
+        "accel"
+      ],
+      "R": [
+        "invis"
+      ]
+    }
+  }
+}

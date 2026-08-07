@@ -1,5 +1,5 @@
 {
-  "card_id": "POK-2386",
+  "card_id": "pokemon_unite:妙蛙花",
   "hero": {
     "name": "妙蛙花",
     "name_en": "Venusaur",
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "飞叶快刀",
-      "key": "1",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "污泥炸弹/日光束",
-      "key": "2",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "光耀"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "2d8+INT 光耀伤害。"
-    },
-    {
-      "name": "花瓣舞",
-      "key": "3",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 力场伤害。"
-    },
-    {
-      "name": "翠绿怒火",
-      "key": "U",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 火焰伤害。"
-    }
-  ]
+  "legacy_card_id": "POK-2386"
 }

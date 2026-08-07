@@ -1,0 +1,117 @@
+[
+  {
+    "name": "闪电",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "闪电"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "特拉洛克掷出闪电——阿兹特克雨神的怒火化作劈裂天空的闪电。1d8+INT 闪电伤害。"
+  },
+  {
+    "name": "冰雹",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "冰雹砸击",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "特拉洛克降下冰雹——他的山顶居所特拉洛坎永远被暴风雨环绕。AOE减速2回合。2d6+INT 寒冷伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "山巅之水",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "圣山的水源",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+INT"
+      },
+      {
+        "type": "shield",
+        "desc": "云雾屏障",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "特拉洛克打开山巅水源——雨水从他居住的山巅流下，滋养阿兹特克的庄稼。回复+护盾。"
+  },
+  {
+    "name": "暴雨洪水",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "洪水冲走一切",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "溺毙",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "特拉洛克释放暴雨洪水——当他愤怒时，足以毁灭整个世界的洪水从天而降。AOE控制+低血斩杀。4d6+INT 寒冷伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

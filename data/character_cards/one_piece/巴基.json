@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2273",
+  "card_id": "one_piece:巴基",
   "hero": {
     "name": "巴基",
     "name_en": "Buggy",
@@ -110,87 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "四分五裂·飞刀",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d8+DEX 穿刺伤害。",
-      "approx": true
-    },
-    {
-      "name": "瞬间移动",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [
-        {
-          "type": "位移",
-          "duration": 1,
-          "desc": "身体分离获得位移闪避",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "身体分离，获得位移与闪避，持续 1 回合。",
-      "approx": true
-    },
-    {
-      "name": "分身突袭",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "2d8+DEX 穿刺伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 8
-    },
-    {
-      "name": "巴基弹",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d10+DEX 火焰伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 12
-    }
-  ]
+  "legacy_card_id": "ONE-2273"
 }

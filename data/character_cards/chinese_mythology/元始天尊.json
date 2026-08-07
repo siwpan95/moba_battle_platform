@@ -1,0 +1,231 @@
+{
+  "card_id": "chinese_mythology:元始天尊",
+  "legacy_card_id": "CHI-90177",
+  "hero": {
+    "name": "元始天尊",
+    "name_en": "Yuanshi Tianzun",
+    "alias": "",
+    "title": "Yuanshi Tianzun"
+  },
+  "game": {
+    "name": "Chinese Mythology",
+    "name_cn": "中国神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "中国神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程",
+    "高机动"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "玉清弹",
+      "key": "Q",
+      "type": "法术",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "cooldown": 0,
+      "description": "凝聚元素之力，向前方发射魔法弹幕。基础但致命的法术攻击。",
+      "range": "远程",
+      "target": "单体",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "灼烧",
+          "desc": "持续受到火焰伤害",
+          "duration": 2,
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "玉虚罩",
+      "key": "W",
+      "type": "法术",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "cooldown": 1,
+      "description": "在目标区域引发元素爆发，将敌人禁锢于魔法牢笼之中。",
+      "range": "近战",
+      "target": "范围",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "眩晕",
+          "desc": "使目标眩晕，失去行动能力",
+          "duration": 1,
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "天尊法旨",
+      "key": "E",
+      "type": "法术",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "cooldown": 2,
+      "description": "以魔力扭曲空间，瞬间转移自身位置。法师的保命位移法术。",
+      "range": "远程",
+      "target": "范围",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "破甲",
+          "desc": "降低目标防御力",
+          "duration": 2,
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "盘古幡展",
+      "key": "R",
+      "type": "法术",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "cooldown": 4,
+      "description": "召唤天外陨石/暴风雪/元素风暴，对广大区域造成毁灭性打击。",
+      "range": "远程",
+      "target": "范围",
+      "action": "动作",
+      "effects": [
+        {
+          "type": "眩晕",
+          "desc": "使目标眩晕，失去行动能力",
+          "duration": 1,
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

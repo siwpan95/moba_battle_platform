@@ -1,0 +1,54 @@
+=== Q1: effect_categories 当前口径（5926 卡运行时态）===
+总 effect 实例 = 30307   （§4.3 旧口径约 5000）
+分类计数（降序）:
+   slow         4426
+   flavor       4274
+   buff         3907
+   accel        2955
+   control      2134
+   dot          2103
+   shield       2049
+   heal         1959
+   sunder       1648
+   lifesteal    1168
+   invis        1078
+   execute      924
+   cleanse      801
+   vuln         324
+   reduce       160
+   true_dmg     94
+   crit         92
+   aoe          61
+   immune       60
+   reflect      55
+   revive       35
+
+§4.3 点名的四项对比（旧 -> 新）:
+   control      801 -> 2134
+   slow         365 -> 4426
+   flavor       657 -> 4274
+   lifesteal      1 -> 1168
+
+flavor 兜底的原始 type 分布 top10:
+   'control'      2555
+   'reduce'       446
+   '位移'           433
+   'None'         356
+   '流血'           113
+   '变身'           76
+   '分身'           60
+   '全图'           34
+   '换位'           22
+   'force'        21
+
+=== Q2: §4.2 字段丢弃机制是否仍存在 ===
+输入未知字段 = ['approx','charges','mana_cost','scaling']
+输出后被丢弃 = []   <- §4.2:255 声称这四个会被丢弃
+结论: 字段丢弃机制已不存在（ADR-005 已修）
+
+现网未知字段实际透传统计 = {'approx': 1496}
+
+=== Q3: 磁盘 skills=[] 后运行时是否仍可对战 ===
+磁盘态 skills = []  ->  运行时技能数 = 4
+门禁 validate_card(磁盘态 []) = ['skills 为空 list']
+结论: 运行时被 _inject_skills 覆盖救回；爆炸半径 = CI 红 + 设计推翻，非即时运行时故障

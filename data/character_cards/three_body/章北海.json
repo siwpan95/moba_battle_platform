@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2589",
+  "card_id": "three_body:章北海",
+  "legacy_card_id": "THE-1004",
   "hero": {
     "name": "章北海",
     "name_en": "Zhang Beihai",
@@ -123,7 +124,20 @@
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "击退",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "目标被击退"
+        },
+        {
+          "type": "处决",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "精准狙击要害"
+        }
+      ],
       "cooldown": 0,
       "description": "2d8+DEX 穿刺伤害。",
       "approx": true

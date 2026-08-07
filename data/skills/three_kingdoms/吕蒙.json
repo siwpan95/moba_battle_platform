@@ -1,0 +1,110 @@
+[
+  {
+    "name": "白衣潜行",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐匿"
+      }
+    ],
+    "cooldown": 0,
+    "description": "白衣渡江，悄然接近！1d10+DEX 穿刺伤害，自身获得短暂隐匿。"
+  },
+  {
+    "name": "渡江奇袭",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "白衣渡江的经典奇袭！2d8+DEX 穿刺伤害，低血量额外伤害。"
+  },
+  {
+    "name": "士别三日",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      },
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "加速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "「士别三日当刮目相待」。增伤2回合，加速1回合。"
+  },
+  {
+    "name": "吴下阿蒙",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐匿"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血翻倍"
+      }
+    ],
+    "cooldown": 4,
+    "description": "从吴下阿蒙到东吴大都督的蜕变！4d6+DEX 穿刺伤害，隐匿突袭，低血翻倍。"
+  }
+]

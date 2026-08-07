@@ -1,0 +1,137 @@
+[
+  {
+    "name": "瘟毒爆炸",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "中毒，每回合受到1d4毒素伤害",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "accel",
+        "desc": "命中英雄时移动速度+20尺",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "在目标脚下引爆一滩剧毒泥沼，造成1d8+INT毒素伤害。中毒目标每回合受到1d4毒素伤害，持续2回合。命中敌方英雄时自身移动速度+20尺，持续1回合。CON豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "剧毒迷雾",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "站在毒雾中的敌人移动速度减半且无法使用位移",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "每回合受到1d4毒素伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "喷吐一大片剧毒瘴气笼罩战场。造成2d6+INT毒素伤害。毒雾持续3回合，站在其中的敌人减速且被缚地（无法使用位移能力），每回合受到1d4毒素伤害。CON豁免成功则无视缚地效果。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  },
+  {
+    "name": "双生毒牙",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "攻击中毒目标时伤害+50%并回复生命",
+        "target": "敌方"
+      },
+      {
+        "type": "heal",
+        "desc": "命中中毒目标时回复1d6生命",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "以闪电般的速度咬向目标，注入蛇毒。造成2d6+INT毒素伤害。若目标正处于中毒状态，伤害+50%并为你回复1d6生命值。击杀目标后返还法力消耗。"
+  },
+  {
+    "name": "石化凝视",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "面向你的敌人被石化眩晕",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "背对你的敌人被减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "睁开通往异界的蛇瞳，释放一道锥形的石化魔光。造成4d6+INT毒素伤害。面向你的敌人被石化（完全无法行动）2回合；背对你的敌人减速2回合。CON豁免成功则免疫石化但仍被减速。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "aoe_radius": 30
+  }
+]

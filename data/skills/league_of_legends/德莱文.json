@@ -1,0 +1,106 @@
+[
+  {
+    "name": "旋转飞斧",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "下次攻击伤害+50%，斧头弹回空中可接住刷新",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "开始旋转一柄双手飞斧——荣耀行刑官的招牌技艺。造成1d8+DEX穿刺伤害，但下一击伤害+50%。斧头命中后弹向空中，移动至落点可接住飞斧，刷新此效果。最多同时持有2柄旋转飞斧。"
+  },
+  {
+    "name": "血性冲刺",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "移动速度+30尺，攻击速度+40%",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "肾上腺素飙升——移动速度+30尺，攻击速度+40%，持续2回合。造成2d6+DEX穿刺伤害。接住一柄旋转飞斧时刷新此技能冷却。"
+  },
+  {
+    "name": "开道利斧",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "击退目标15尺并减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "用力掷出两柄飞斧，将路径上的敌人推向两侧。造成1d8+DEX穿刺伤害，击退15尺并减速2回合。STR豁免成功则不被击退但仍被减速。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "冷血追命",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "斧头命中低生命目标时伤害提升",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "全力掷出两柄巨型回旋利斧，横跨整个战场。造成3d8+DEX穿刺伤害。利斧抵达地图尽头后折返，返程再次造成伤害。命中越多的敌人伤害越高。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1969",
+  "card_id": "league_of_legends:黛安娜",
+  "legacy_card_id": "LEA-1101",
   "hero": {
     "name": "黛安娜",
     "name_en": "Diana",
@@ -108,30 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "大招",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 4,
-      "description": "48+STR 范围伤害。DEX豁免减半。冷却4回合。"
-    }
-  ]
+  }
 }

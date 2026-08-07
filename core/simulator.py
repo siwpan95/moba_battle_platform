@@ -54,17 +54,28 @@ class BattleSimulator:
 
         self.turn = 1
         self.logs = []
+        self.winner = None  # 0|1|2，避免胜利后重复调用 execute_turn
+
+        # 超时判负：回合数硬上限，保证任何对局都必然终结（杜绝无限循环）。
+        # 需要更长/更短的对局可在构造后直接改写 sim.max_rounds。
+        self.max_rounds = 120
+        self.rounds = 0
 
         # A3 状态系统
         self.rng = rng or random.Random()
         self.timed1 = []
         self.timed2 = []
-        self.shield_val1 = 0
-        self.shield_val2 = 0
 
-        avg_level = (self.level1 + self.level2) / 2.0
-        # 等级成长系数（不含 DAMAGE_SCALE，避免与下方结算重复相乘）
-        self.active_damage_scale = 1.0 + (avg_level - 1) * 0.20
+        # 按攻击方自身等级缩放伤害（修跨级 avg_level 偏置）
+        self.damage_scale1 = 1.0 + (self.level1 - 1) * 0.20
+        self.damage_scale2 = 1.0 + (self.level2 - 1) * 0.20
+        # 随机先手（修 P1 恒先手偏置 63.3%）
+        self.first_mover = 1 if self.rng.random() < 0.5 else 2
+
+    @property
+    def is_over(self) -> bool:
+        """比赛是否已结束（与 winner 配套，替换中文日志解析）。"""
+        return self.winner is not None
 
     # ── 属性/状态辅助 ──
     @staticmethod
@@ -130,43 +141,32 @@ class BattleSimulator:
             {"kind": kind, "turns": max(1, int(turns or 1)), "value": value})
 
     def _add_shield(self, side, turns, value):
-        if side == 1:
-            self.shield_val1 += value
-        else:
-            self.shield_val2 += value
         self._add(side, "shield", turns, value)
 
     def _shield_pool(self, side):
-        return self.shield_val1 if side == 1 else self.shield_val2
+        return sum(t["value"] for t in self._timed(side) if t["kind"] == "shield")
 
     def _absorb_shield(self, side, amount):
         if amount <= 0:
             return
-        consumed = 0
         for t in self._timed(side):
             if t["kind"] == "shield" and amount > 0:
                 take = min(t["value"], amount)
                 t["value"] -= take
                 amount -= take
-                consumed += take
-        if side == 1:
-            self.shield_val1 = max(0, self.shield_val1 - consumed)
-        else:
-            self.shield_val2 = max(0, self.shield_val2 - consumed)
 
     def _decay_timed(self, side):
         tl = self._timed(side)
         for t in tl:
             t["turns"] -= 1
         self._timed(side)[:] = [t for t in tl if t["turns"] > 0]
-        if not self._has(side, "shield"):
-            if side == 1:
-                self.shield_val1 = 0
-            else:
-                self.shield_val2 = 0
 
     def _effect_value(self, eff, attrs, side):
         v = eff.get("value")
+        # 如果 value 是骰子表达式字符串（如 "2d8+WIS"），走 roll_dice_expr 解析
+        if isinstance(v, str):
+            from .mechanics import roll_dice_expr
+            v = roll_dice_expr(v, self._attr_mods(attrs), self.rng)
         if v is None:
             vf = eff.get("value_formula")
             if vf:
@@ -212,32 +212,97 @@ class BattleSimulator:
 
     # ── 回合流程 ──
     def execute_turn(self) -> list:
+        if self.winner is not None:
+            return []  # 比赛已结束，幂等返回
+        self.rounds += 1
         logs = []
         logs.extend(self._tick_dot(1))
         logs.extend(self._tick_dot(2))
         if self.hp2 <= 0:
+            self.winner = 1
             logs.append(f"💀 {self.hero2} 被击败！")
             logs.append(f"🏆 {self.hero1} 获得胜利！")
+            self._end_turn()
             return logs
         if self.hp1 <= 0:
+            self.winner = 2
             logs.append(f"💀 {self.hero1} 被击败！")
             logs.append(f"🏆 {self.hero2} 获得胜利！")
+            self._end_turn()
             return logs
 
-        logs.extend(self._hero_act(1, self.card1, self.stats1, self.attrs1,
-                                   self.skills1, self.cd1))
+        # 随机先手（修 P1 先手偏置 63.3%）
+        side_a, side_b = (1, 2) if self.first_mover == 1 else (2, 1)
+
+        logs.extend(self._hero_act(side_a, self.card1 if side_a == 1 else self.card2,
+                                   self.stats1 if side_a == 1 else self.stats2,
+                                   self.attrs1 if side_a == 1 else self.attrs2,
+                                   self.skills1 if side_a == 1 else self.skills2,
+                                   self.cd1 if side_a == 1 else self.cd2))
         if self.hp2 <= 0:
+            self.winner = 1
             logs.append(f"💀 {self.hero2} 被击败！")
             logs.append(f"🏆 {self.hero1} 获得胜利！")
+            self._end_turn()
             return logs
-
-        logs.extend(self._hero_act(2, self.card2, self.stats2, self.attrs2,
-                                   self.skills2, self.cd2))
         if self.hp1 <= 0:
+            self.winner = 2
             logs.append(f"💀 {self.hero1} 被击败！")
             logs.append(f"🏆 {self.hero2} 获得胜利！")
+            self._end_turn()
             return logs
 
+        logs.extend(self._hero_act(side_b, self.card2 if side_b == 2 else self.card1,
+                                   self.stats2 if side_b == 2 else self.stats1,
+                                   self.attrs2 if side_b == 2 else self.attrs1,
+                                   self.skills2 if side_b == 2 else self.skills1,
+                                   self.cd2 if side_b == 2 else self.cd1))
+        if self.hp1 <= 0:
+            self.winner = 2
+            logs.append(f"💀 {self.hero1} 被击败！")
+            logs.append(f"🏆 {self.hero2} 获得胜利！")
+            self._end_turn()
+            return logs
+        if self.hp2 <= 0:
+            self.winner = 1
+            logs.append(f"💀 {self.hero2} 被击败！")
+            logs.append(f"🏆 {self.hero1} 获得胜利！")
+            self._end_turn()
+            return logs
+
+        if self.winner is None and self.rounds >= self.max_rounds:
+            logs.extend(self._judge_timeout())
+
+        self._end_turn()
+        return logs
+
+    def _judge_timeout(self) -> list:
+        """超时判负：达到回合上限仍未分胜负时，按当前血量比例裁定胜方。
+
+        血量比例高者胜；完全相同则判平局（winner=0）。
+        存在此裁定后，execute_turn 最多被有效执行 max_rounds 次，
+        任何对局（含双辅助互奶的高治疗量对局）都不会无限循环。
+        """
+        r1 = (self.hp1 / self.max_hp1) if self.max_hp1 else 0.0
+        r2 = (self.hp2 / self.max_hp2) if self.max_hp2 else 0.0
+        logs = [
+            f"⏱️ 超时判负 | 达到回合上限 {self.max_rounds}，按血量比例裁定："
+            f"{self.hero1} {self.hp1}/{self.max_hp1}({r1:.1%}) vs "
+            f"{self.hero2} {self.hp2}/{self.max_hp2}({r2:.1%})"
+        ]
+        if r1 > r2:
+            self.winner = 1
+            logs.append(f"🏆 {self.hero1} 血量比例领先，超时判负获胜！")
+        elif r2 > r1:
+            self.winner = 2
+            logs.append(f"🏆 {self.hero2} 血量比例领先，超时判负获胜！")
+        else:
+            self.winner = 0
+            logs.append("🤝 双方血量比例相同，超时判负为平局！")
+        return logs
+
+    def _end_turn(self):
+        """回合收尾：CD递减、timed衰减、回合计数递增。"""
         for i in range(4):
             if self.cd1[i] > 0:
                 self.cd1[i] -= 1
@@ -246,7 +311,6 @@ class BattleSimulator:
         self._decay_timed(1)
         self._decay_timed(2)
         self.turn += 1
-        return logs
 
     def _tick_dot(self, side) -> list:
         logs = []
@@ -254,7 +318,7 @@ class BattleSimulator:
         for t in self._timed(side):
             if t["kind"] != "dot":
                 continue
-            d = max(1, int(t.get("per_turn", DOT_DEFAULT)))
+            d = max(1, int(t.get("value", DOT_DEFAULT)))  # _add 写入 key="value"，此处对齐
             if side == 1:
                 self.hp1 = max(0, self.hp1 - d)
             else:
@@ -284,7 +348,7 @@ class BattleSimulator:
             logs.append(f"第{self.turn}回合 | {hero_name}({role_cn}) 被控制，无法行动！")
             return logs
 
-        skill_idx = self._choose_skill(cds)
+        skill_idx = self._choose_skill(cds, len(skills))
         skill = self._get_skill(card, skill_idx)
         skill_name = self._skill_name(card, skill_idx)
         skill_desc = self._skill_desc(card, skill_idx)
@@ -309,14 +373,16 @@ class BattleSimulator:
 
         return logs
 
-    def _choose_skill(self, cds) -> int:
+    def _choose_skill(self, cds, n_skills: int = 4) -> int:
         """AI 选技能：优先大招(50%) → 按权重抽取可用技能。"""
-        available = [i for i in range(4) if cds[i] <= 0]
+        n = max(1, n_skills)
+        available = [i for i in range(n) if cds[i] <= 0]
         if not available:
             available = [0]
-        weights = {0: 40, 1: 30, 2: 20, 3: 10}
-        if 3 in available and self.rng.random() < 0.5:
-            return 3
+        weights = {0: 40, 1: 30, 2: 20}
+        ult = n - 1
+        if ult in available and self.rng.random() < 0.5:
+            return ult
         return self.rng.choices(
             available, weights=[weights.get(i, 20) for i in available])[0]
 
@@ -328,7 +394,14 @@ class BattleSimulator:
         for eff in ((skill or {}).get("effects") or []):
             cat = categorize_effect(eff)
             if cat == "execute":
-                execute_th = eff.get("threshold", 30)
+                raw = eff.get("threshold", 30)
+                try:
+                    execute_th = float(raw)
+                except (ValueError, TypeError):
+                    execute_th = 30
+                    # 非数值 threshold（如 "HP<20%"）告警但不崩溃
+                    if isinstance(raw, str):
+                        pass  # 静默回退，避免日志噪音
             elif cat == "true_dmg":
                 true_dmg = True
         return execute_th, true_dmg
@@ -355,7 +428,7 @@ class BattleSimulator:
             crit_mult = BattleEngine.crit_damage_multiplier(self._dex_mod(card))
             dm["final"] = round(dm["final"] * crit_mult, 1)
             crit_mark = "💥暴击! "
-        final = dm["final"] * DAMAGE_SCALE * self.active_damage_scale * DND_DAMAGE_SCALE
+        final = dm["final"] * DAMAGE_SCALE * (self.damage_scale1 if side == 1 else self.damage_scale2) * DND_DAMAGE_SCALE
         dmg = int(max(1, final))
 
         # 防御方豁免
@@ -491,6 +564,10 @@ class BattleSimulator:
                 logs.append(f"  ✨ {hero_name} 净化负面效果")
             elif cat == "revive":
                 logs.append(f"  💀 {hero_name} 触发复活效果（演练：记日志）")
+            elif cat == "slow":
+                self._add(enemy_side, "vuln", dur, VULN_BONUS_PCT)
+                tgt = self.hero2 if side == 1 else self.hero1
+                logs.append(f"  🐢 {tgt} 被减速（受伤+{VULN_BONUS_PCT}%）")
             else:  # aoe / invis / flavor
                 logs.append(f"  ✦ D&D效果：{eff.get('type')}（{eff.get('desc','')}）")
 

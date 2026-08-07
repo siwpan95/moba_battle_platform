@@ -1,0 +1,110 @@
+[
+  {
+    "name": "狼袭",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "巨力击退"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+STR 挥砍伤害。",
+    "approx": true
+  },
+  {
+    "name": "连环爪击",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "巨力击退"
+      }
+    ],
+    "cooldown": 1,
+    "description": "1d10+STR 挥砍伤害。",
+    "approx": true
+  },
+  {
+    "name": "守护神·狼",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "驱散",
+        "duration": 2,
+        "desc": "驱散范围内黑暗生物",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+WIS 光耀伤害，驱散黑暗。",
+    "approx": true,
+    "aoe_radius": 10
+  },
+  {
+    "name": "月圆狂化",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击力大幅提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

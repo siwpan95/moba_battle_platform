@@ -1,0 +1,119 @@
+[
+  {
+    "name": "魔法之翼",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "伊西斯展开双翼——那翅膀覆满星辰与咒文，每一次扇动都是古老魔法的咏唱。1d8+INT 光耀伤害。"
+  },
+  {
+    "name": "生命之符",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "安卡十字架的生命之光治愈创伤",
+        "value_formula": "2d8+INT",
+        "target": "自身"
+      },
+      {
+        "type": "cleanse",
+        "desc": "伊西斯驱散一切诅咒与邪术",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊西斯高举安卡——这生命之符曾使她将奥西里斯从死亡中唤醒。光明之力治愈创伤，驱散一切诅咒与邪术。回复2d8+INT生命，净化负面效果。"
+  },
+  {
+    "name": "魔法丝线",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "魔法编织的丝线将敌人牢牢捆缚",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "丝线缠绕令肢体迟缓",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊西斯释放魔法丝线——她用同样的魔法编织了奥西里斯被分尸的身躯，使他重获新生。丝线缠绕敌人，束缚与减速。2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "奥西里斯之复活",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "复活之力治愈自身",
+        "value_formula": "3d8+INT",
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "被伊西斯的神力灌注，战力大幅提升",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "伊西斯吟唱她最伟大的咒语——那曾将奥西里斯从十四块残骸中复活、让死亡本身为之退让的魔法。光芒笼罩战场，毁灭敌人的同时赐予自身新生。4d6+INT 光耀伤害，AOE，回复3d8+INT生命，增伤2回合。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

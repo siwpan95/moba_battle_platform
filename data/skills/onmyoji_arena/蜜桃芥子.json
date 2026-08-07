@@ -1,0 +1,107 @@
+[
+  {
+    "name": "蜜桃炸弹",
+    "key": "Q",
+    "type": "法术",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "圣光灼伤减缓移动",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "凝聚圣光之力化为箭矢，射向敌人。纯净的光芒灼伤邪恶，减缓其步伐。"
+  },
+  {
+    "name": "芥子冲锋",
+    "key": "W",
+    "type": "法术",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "恢复盟友2d8+WIS生命值",
+        "target": "友方"
+      }
+    ],
+    "cooldown": 1,
+    "range": "远程",
+    "target": "单体",
+    "action": "动作",
+    "description": "温暖的光芒笼罩盟友，伤口以肉眼可见的速度愈合。圣光永不抛弃虔信之人。"
+  },
+  {
+    "name": "双人舞",
+    "key": "E",
+    "type": "法术",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "desc": "移除所有负面效果",
+        "target": "友方"
+      },
+      {
+        "type": "buff",
+        "desc": "获得增益：下次攻击/法术+1d6",
+        "duration": 1,
+        "target": "友方"
+      }
+    ],
+    "cooldown": 2,
+    "range": "远程",
+    "target": "单体",
+    "action": "附赠动作",
+    "description": "以纯净之力驱散一切污秽，并赐予盟友神圣祝福。被净化者将获得暂时的力量提升。"
+  },
+  {
+    "name": "蜜桃&芥子",
+    "key": "R",
+    "type": "法术",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "大范围恢复所有盟友3d8生命",
+        "target": "友方"
+      },
+      {
+        "type": "shield",
+        "desc": "为所有盟友提供护盾",
+        "duration": 2,
+        "target": "友方"
+      }
+    ],
+    "cooldown": 4,
+    "range": "远程",
+    "target": "范围",
+    "action": "动作",
+    "description": "神圣之光从天而降，审判邪恶的同时庇护正义。光芒所至，盟友重获新生。"
+  }
+]

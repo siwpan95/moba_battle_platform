@@ -1,0 +1,521 @@
+[
+  {
+    "name": "Achilles"
+  },
+  {
+    "name": "Aengus"
+  },
+  {
+    "name": "Agni"
+  },
+  {
+    "name": "AhMuzenCab"
+  },
+  {
+    "name": "AhPuch"
+  },
+  {
+    "name": "Amaterasu"
+  },
+  {
+    "name": "AmeNoUzume"
+  },
+  {
+    "name": "Anhur"
+  },
+  {
+    "name": "Anubis"
+  },
+  {
+    "name": "AoKuang"
+  },
+  {
+    "name": "Aphrodite"
+  },
+  {
+    "name": "Apollo"
+  },
+  {
+    "name": "Arachne"
+  },
+  {
+    "name": "Ares"
+  },
+  {
+    "name": "Artemis"
+  },
+  {
+    "name": "Artio"
+  },
+  {
+    "name": "Athena"
+  },
+  {
+    "name": "Atlas"
+  },
+  {
+    "name": "Awilix"
+  },
+  {
+    "name": "Bakasura"
+  },
+  {
+    "name": "BakeKujira"
+  },
+  {
+    "name": "Baldr"
+  },
+  {
+    "name": "Balor"
+  },
+  {
+    "name": "Bastet"
+  },
+  {
+    "name": "Benzaiten"
+  },
+  {
+    "name": "Bragi"
+  },
+  {
+    "name": "Brigid"
+  },
+  {
+    "name": "Brunhild"
+  },
+  {
+    "name": "Cabrakan"
+  },
+  {
+    "name": "Camazotz"
+  },
+  {
+    "name": "Cerberus"
+  },
+  {
+    "name": "Cernunnos"
+  },
+  {
+    "name": "Chaac"
+  },
+  {
+    "name": "Change"
+  },
+  {
+    "name": "Charon"
+  },
+  {
+    "name": "Charybdis"
+  },
+  {
+    "name": "Chiron"
+  },
+  {
+    "name": "Chronos"
+  },
+  {
+    "name": "Cliodhna"
+  },
+  {
+    "name": "Cronus"
+  },
+  {
+    "name": "Cthulhu"
+  },
+  {
+    "name": "CuChulainn"
+  },
+  {
+    "name": "Dagda"
+  },
+  {
+    "name": "Daji"
+  },
+  {
+    "name": "Danzaburou"
+  },
+  {
+    "name": "Demeter"
+  },
+  {
+    "name": "Dionysus"
+  },
+  {
+    "name": "DragonKing"
+  },
+  {
+    "name": "Ebisu"
+  },
+  {
+    "name": "Eos"
+  },
+  {
+    "name": "Epona"
+  },
+  {
+    "name": "Eris"
+  },
+  {
+    "name": "ErlangShen"
+  },
+  {
+    "name": "Fafnir"
+  },
+  {
+    "name": "Fenrir"
+  },
+  {
+    "name": "Freya"
+  },
+  {
+    "name": "Freyr"
+  },
+  {
+    "name": "Frigg"
+  },
+  {
+    "name": "Fujin"
+  },
+  {
+    "name": "Fuxi"
+  },
+  {
+    "name": "Ganesha"
+  },
+  {
+    "name": "Geb"
+  },
+  {
+    "name": "Gilgamesh"
+  },
+  {
+    "name": "GuanYu"
+  },
+  {
+    "name": "Hachiman"
+  },
+  {
+    "name": "Hades"
+  },
+  {
+    "name": "Hanuman"
+  },
+  {
+    "name": "Hathor"
+  },
+  {
+    "name": "HeBo"
+  },
+  {
+    "name": "Hecate"
+  },
+  {
+    "name": "Heimdall"
+  },
+  {
+    "name": "Hel"
+  },
+  {
+    "name": "Helios"
+  },
+  {
+    "name": "Hephaestus"
+  },
+  {
+    "name": "Hera"
+  },
+  {
+    "name": "Hercules"
+  },
+  {
+    "name": "Horus"
+  },
+  {
+    "name": "HouYi"
+  },
+  {
+    "name": "HunBatz"
+  },
+  {
+    "name": "Hunahpu"
+  },
+  {
+    "name": "Hypnos"
+  },
+  {
+    "name": "Idun"
+  },
+  {
+    "name": "Indra"
+  },
+  {
+    "name": "Ishtar"
+  },
+  {
+    "name": "Isis"
+  },
+  {
+    "name": "Itzamna"
+  },
+  {
+    "name": "Ixchel"
+  },
+  {
+    "name": "Ixtab"
+  },
+  {
+    "name": "Izanagi"
+  },
+  {
+    "name": "JadeEmperor"
+  },
+  {
+    "name": "JingWei"
+  },
+  {
+    "name": "Jormungandr"
+  },
+  {
+    "name": "Kali"
+  },
+  {
+    "name": "Khepri"
+  },
+  {
+    "name": "KingArthur"
+  },
+  {
+    "name": "Kukulkan"
+  },
+  {
+    "name": "Kumbhakarna"
+  },
+  {
+    "name": "Kuzenbo"
+  },
+  {
+    "name": "Lakshmi"
+  },
+  {
+    "name": "Lancelot"
+  },
+  {
+    "name": "LeiGong"
+  },
+  {
+    "name": "Loki"
+  },
+  {
+    "name": "Lugh"
+  },
+  {
+    "name": "Maat"
+  },
+  {
+    "name": "Manannan"
+  },
+  {
+    "name": "Martichoras"
+  },
+  {
+    "name": "Medusa"
+  },
+  {
+    "name": "Menshen"
+  },
+  {
+    "name": "Merlin"
+  },
+  {
+    "name": "Mictlantecuhtli"
+  },
+  {
+    "name": "MorganLeFay"
+  },
+  {
+    "name": "Morrigan"
+  },
+  {
+    "name": "Mulan"
+  },
+  {
+    "name": "Neith"
+  },
+  {
+    "name": "Nemesis"
+  },
+  {
+    "name": "Nephthys"
+  },
+  {
+    "name": "Nezha"
+  },
+  {
+    "name": "Nidhogg"
+  },
+  {
+    "name": "Nike"
+  },
+  {
+    "name": "Nuada"
+  },
+  {
+    "name": "Nut"
+  },
+  {
+    "name": "Nuwa"
+  },
+  {
+    "name": "Odin"
+  },
+  {
+    "name": "Okuninushi"
+  },
+  {
+    "name": "Osiris"
+  },
+  {
+    "name": "Pan"
+  },
+  {
+    "name": "Persephone"
+  },
+  {
+    "name": "Poseidon"
+  },
+  {
+    "name": "Ptah"
+  },
+  {
+    "name": "Ra"
+  },
+  {
+    "name": "Raijin"
+  },
+  {
+    "name": "Rama"
+  },
+  {
+    "name": "Ratatoskr"
+  },
+  {
+    "name": "Ravana"
+  },
+  {
+    "name": "Saraswati"
+  },
+  {
+    "name": "Scathach"
+  },
+  {
+    "name": "Scylla"
+  },
+  {
+    "name": "Sekhmet"
+  },
+  {
+    "name": "Selene"
+  },
+  {
+    "name": "Serqet"
+  },
+  {
+    "name": "Set"
+  },
+  {
+    "name": "Shiva"
+  },
+  {
+    "name": "Shu"
+  },
+  {
+    "name": "Sif"
+  },
+  {
+    "name": "Skadi"
+  },
+  {
+    "name": "Skoll"
+  },
+  {
+    "name": "Sobek"
+  },
+  {
+    "name": "Sol"
+  },
+  {
+    "name": "SunWukong"
+  },
+  {
+    "name": "Surtr"
+  },
+  {
+    "name": "Susano"
+  },
+  {
+    "name": "Takemikazuchi"
+  },
+  {
+    "name": "Tefnut"
+  },
+  {
+    "name": "Thanatos"
+  },
+  {
+    "name": "Thor"
+  },
+  {
+    "name": "Thoth"
+  },
+  {
+    "name": "Tiamat"
+  },
+  {
+    "name": "Tlaloc"
+  },
+  {
+    "name": "Tsukuyomi"
+  },
+  {
+    "name": "Tyr"
+  },
+  {
+    "name": "Ullr"
+  },
+  {
+    "name": "Vamana"
+  },
+  {
+    "name": "Varuna"
+  },
+  {
+    "name": "Xbalanque"
+  },
+  {
+    "name": "XingTian"
+  },
+  {
+    "name": "XipeTotec"
+  },
+  {
+    "name": "Xiwangmu"
+  },
+  {
+    "name": "YamataNoOrochi"
+  },
+  {
+    "name": "Ymir"
+  },
+  {
+    "name": "YuHuang"
+  },
+  {
+    "name": "YumKaax"
+  },
+  {
+    "name": "Zeus"
+  },
+  {
+    "name": "ZhongKui"
+  }
+]

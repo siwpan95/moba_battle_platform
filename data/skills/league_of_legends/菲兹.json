@@ -1,0 +1,114 @@
+[
+  {
+    "name": "淘气打击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "穿过目标出现在其身后",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "以三叉戟为锋刃，穿过目标的身体出现在其身后。造成1d10+DEX穿刺伤害。此攻击附带所有武器特效。"
+  },
+  {
+    "name": "海石三叉戟",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "目标流血，每回合受到1d4额外伤害",
+        "duration": 2,
+        "target": "敌方"
+      },
+      {
+        "type": "execute",
+        "desc": "对生命低于20%的目标伤害+50%",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "以蕴含海洋魔力的三叉戟撕裂目标。造成2d8+DEX挥砍伤害，并使目标流血2回合。攻击生命低于20%的目标时伤害+50%。击杀目标后此技能冷却归零。"
+  },
+  {
+    "name": "古灵精怪",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "跳跃至空中免疫一切伤害与效果",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "以三叉戟撑地跃至空中，在此期间免疫一切伤害与效果。再次激活可提前落下，对周围敌人造成1d8+DEX挥砍伤害并减速1回合。"
+  },
+  {
+    "name": "巨鲨强袭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "巨鲨吞噬目标，击飞并眩晕",
+        "duration": 1,
+        "target": "敌方"
+      },
+      {
+        "type": "slow",
+        "desc": "鲨鱼游过的区域使敌人减速",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "投掷一只深海小鱼引诱巨鲨破土而出——鱼饵飞行距离越远，召唤的巨鲨越庞大。造成4d6+DEX穿刺伤害，击飞范围内所有敌人并眩晕1回合，随后鲨鱼游过的区域减速2回合。DEX豁免成功则伤害减半且免疫击飞。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 20
+  }
+]

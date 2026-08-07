@@ -1,0 +1,243 @@
+{
+  "card_id": "hong_kong_comics:雄霸",
+  "legacy_card_id": "港漫群-1011",
+  "hero": {
+    "name": "雄霸",
+    "name_en": "Xiong Ba",
+    "alias": "天下会帮主",
+    "title": "天下会帮主"
+  },
+  "game": {
+    "name": "港漫群英",
+    "name_cn": "港漫群英",
+    "native_role": "法师/武道宗师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "风云",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "硬控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "三分归元气·天霜拳",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "duration": 2,
+          "desc": "霜劲冻结血脉",
+          "target": "敌方"
+        }
+      ],
+      "cooldown": 0,
+      "description": "天霜拳——拳劲化为冰霜冻结一切。2d8+STR 寒冷伤害，减速2回合。"
+    },
+    {
+      "name": "三分归元气·排云掌",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "20尺",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "CHA",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "击退",
+          "duration": 1,
+          "dc_attr": "STR",
+          "desc": "排云掌力推开敌人",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "STR",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "排云掌——云气翻涌凝聚无俦掌力。2d10+CHA 力场伤害，20尺射程。STR豁免失败击退15尺。冷却1回合。"
+    },
+    {
+      "name": "三分归元气·风神腿",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "aoe_radius": 10,
+      "effects": [
+        {
+          "type": "位移",
+          "value": 30,
+          "desc": "风神腿带动身形突进30尺",
+          "target": "自身"
+        },
+        {
+          "type": "击倒",
+          "duration": 1,
+          "dc_attr": "DEX",
+          "desc": "腿风扫倒周围敌人",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "风神腿——身形如风卷残云突进30尺。路径上2d6+DEX 挥砍伤害，DEX豁免失败被扫倒。冷却2回合。"
+    },
+    {
+      "name": "三分神指·归元一击",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "60尺",
+      "target": "范围",
+      "damage": {
+        "dice_count": 5,
+        "dice_size": 10,
+        "bonus_attr": "CHA",
+        "type": "力场"
+      },
+      "aoe_radius": 25,
+      "effects": [
+        {
+          "type": "眩晕",
+          "duration": 2,
+          "dc_attr": "CON",
+          "desc": "三分归元气震晕一切",
+          "target": "敌方"
+        },
+        {
+          "type": "破甲",
+          "duration": 2,
+          "desc": "护甲值降低5点",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "半伤"
+      },
+      "cooldown": 4,
+      "description": "雄霸融合天霜拳·排云掌·风神腿的终极武学——三分归元！5d10+CHA 力场伤害，25尺范围。CON豁免失败眩晕2回合+护甲-5。冷却4回合。"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "name": "自由之剑",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "自由之怒：低血量伤害翻倍"
+      }
+    ],
+    "cooldown": 0,
+    "description": "他们可以夺走我们的生命，但夺不走我们的自由！1d10+STR 挥砍伤害。低血量目标伤害翻倍。"
+  },
+  {
+    "name": "斯特灵桥之战",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "lifesteal",
+        "target": "自身",
+        "duration": 2,
+        "desc": "苏格兰之怒：攻击吸血"
+      }
+    ],
+    "cooldown": 1,
+    "description": "斯特灵桥上的辉煌胜利！2d8+STR 挥砍伤害。苏格兰之怒使华莱士攻击获得吸血效果2回合。"
+  },
+  {
+    "name": "高地冲锋",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "高地勇士，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "苏格兰高地勇士的怒吼！1d8+STR 钝击伤害。华莱士率众冲锋，速度翻倍2回合。"
+  },
+  {
+    "name": "Freedom！",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "Freedom！伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "自由之裁决：低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "FREEDOM——！！2d10+STR 挥砍范围伤害。不屈的自由意志增伤2回合，对压迫者低血量斩杀。"
+  }
+]

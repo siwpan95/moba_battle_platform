@@ -1,0 +1,83 @@
+[
+  {
+    "name": "钩链",
+    "key": "A",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。与目标交换位置1回合。",
+    "effects": [
+      {
+        "type": "换位",
+        "desc": "与目标交换位置",
+        "target": "敌方",
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "name": "折磨",
+    "key": "B",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 1,
+    "description": "2d10+STR 挥砍伤害。每回合受到毒素伤害2回合。",
+    "effects": [
+      {
+        "type": "中毒",
+        "desc": "每回合受到毒素伤害",
+        "duration": 2,
+        "target": "敌方",
+        "dmg_per_turn": "1d4"
+      }
+    ],
+    "aoe_radius": 10
+  },
+  {
+    "name": "锁链风暴",
+    "key": "U",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "cooldown": 4,
+    "description": "4d10+STR 挥砍伤害。目标失去动作1回合。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "target": "敌方",
+        "dc_attr": "CON"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 15
+  }
+]

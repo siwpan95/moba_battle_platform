@@ -1,0 +1,119 @@
+[
+  {
+    "name": "火焰烙印",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "命中已点燃的目标时眩晕",
+        "duration": 1,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "射出一发浓缩的火焰飞弹，造成1d8+INT火焰伤害。若目标已被布兰德的技能点燃，则额外眩晕1回合。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "烈焰之柱",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "点燃目标，每回合受1d4火焰伤害",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "在目标脚下召唤一道冲天火柱，造成2d6+INT火焰伤害。点燃目标2回合。已点燃的目标受到额外25%伤害。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "烈火燃烧",
+    "key": "E",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "aoe",
+        "desc": "火焰扩散至目标周围所有敌人",
+        "target": "敌方"
+      },
+      {
+        "type": "dot",
+        "desc": "点燃所有被扩散命中的目标",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "对一名敌人释放纯粹的烈火冲击。造成2d6+INT火焰伤害。若目标已被点燃，火焰扩散至其周围15尺所有敌人，造成等量伤害并点燃。"
+  },
+  {
+    "name": "烈焰风暴",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "火焰在敌人之间反复弹跳",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "释放一颗在敌人之间疯狂弹跳的烈焰火种。造成4d6+INT火焰伤害，并在敌人之间弹跳最多5次。每次弹跳优先命中未被点燃的目标。同一目标可被多次弹跳命中（后续伤害递减30%）。DEX豁免成功则伤害减半。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

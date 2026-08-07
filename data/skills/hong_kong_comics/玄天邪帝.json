@@ -1,0 +1,126 @@
+[
+  {
+    "name": "玄邪罡·魔眼洞悉",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "desc": "魔眼洞悉敌方破绽，无视3点护甲",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "玄天邪帝以天魔魔眼洞察敌之弱点——一击贯穿破绽！1d10+DEX 黯蚀伤害，无视3点护甲加值。"
+  },
+  {
+    "name": "天刀邪诀·星宿劫",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "40尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "恐惧",
+        "duration": 1,
+        "dc_attr": "WIS",
+        "desc": "星宿劫之力令敌人崩溃",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "玄天邪帝以魔兵星宿劫催动的邪诀——星辰变劫，命运改写！2d8+DEX 力场伤害，15尺范围。WIS豁免失败恐惧1回合。冷却1回合。"
+  },
+  {
+    "name": "天魔分身·邪帝领域",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*10",
+        "desc": "天魔之力灌注暴击飙升",
+        "target": "自身"
+      },
+      {
+        "type": "加速",
+        "duration": 3,
+        "value": 30,
+        "desc": "邪帝之影迅如鬼魅",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "玄天邪帝释放天魔分身之力——邪气领域笼罩全身。暴击率+PROF×10%，速度+30尺。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "三刀三剑三神技·纷纷扰扰断风云",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "麻痹",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "三神技·风云为之变色",
+        "target": "敌方"
+      },
+      {
+        "type": "即死",
+        "dc_attr": "CON",
+        "threshold": "HP<25%",
+        "desc": "纷纷扰扰断风云，斩断命数",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "玄天邪帝刀剑双绝的终极奥义——三刀三剑三神技！纷纷扰扰断风云！5d8+DEX 黯蚀伤害，25尺范围。CON豁免失败麻痹2回合。HP<25%目标CON豁免失败即死。冷却4回合。"
+  }
+]

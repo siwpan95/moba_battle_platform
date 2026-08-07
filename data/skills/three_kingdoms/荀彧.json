@@ -1,0 +1,123 @@
+[
+  {
+    "name": "王佐策",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "易伤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "王佐之才的谋略，1d8+WIS 光耀伤害，目标易伤1回合。"
+  },
+  {
+    "name": "举贤令",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "增伤30%"
+      },
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 1,
+        "desc": "回复生命"
+      }
+    ],
+    "cooldown": 1,
+    "description": "举荐贤才，如郭嘉、荀攸！2d6+WIS 光耀伤害，友方增伤与回复。"
+  },
+  {
+    "name": "居中持重",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "target": "友方",
+        "duration": 1,
+        "desc": "净化负面"
+      },
+      {
+        "type": "shield",
+        "target": "友方",
+        "duration": 1,
+        "desc": "获得护盾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "坐镇后方，运筹帷幄。净化友方负面效果并获得护盾。"
+  },
+  {
+    "name": "王佐之才",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "友方",
+        "duration": 2,
+        "desc": "大幅增伤"
+      },
+      {
+        "type": "heal",
+        "target": "友方",
+        "duration": 2,
+        "desc": "大幅回复"
+      },
+      {
+        "type": "cleanse",
+        "target": "友方",
+        "duration": 1,
+        "desc": "净化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「吾之子房也！」3d8+WIS 光耀范围伤害，友方大幅增伤、回复2回合、净化1回合。",
+    "aoe_radius": 20
+  }
+]

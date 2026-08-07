@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-2003",
+  "card_id": "league_of_legends:霞",
+  "legacy_card_id": "LEA-1135",
   "hero": {
     "name": "霞",
     "name_en": "Xayah",
@@ -19,7 +20,8 @@
   "playstyle_tags": [
     "持续输出",
     "核心",
-    "远程"
+    "远程",
+    "钩子"
   ],
   "attributes": {
     "STR": {
@@ -108,24 +110,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "穿刺箭",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "120尺",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "1d8+DEX 穿刺伤害，射程120尺。"
-    }
-  ]
+  }
 }

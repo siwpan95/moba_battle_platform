@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1881",
+  "card_id": "league_of_legends:提莫",
+  "legacy_card_id": "LEA-1013",
   "hero": {
     "name": "提莫",
     "name_en": "Teemo",
@@ -108,96 +109,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "致盲吹箭",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "目盲",
-          "desc": "目标陷入目盲",
-          "duration": 1,
-          "dc_attr": "CON",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 0,
-      "description": "1d8+INT 力场伤害。目标陷入目盲1回合。",
-      "saving_throw": {
-        "attr": "CON",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "无效"
-      }
-    },
-    {
-      "name": "小莫快跑",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [
-        {
-          "type": "加速",
-          "desc": "速度+15尺",
-          "duration": 2,
-          "value": 15,
-          "target": "自身"
-        }
-      ],
-      "cooldown": 1,
-      "description": "2d8+INT 力场伤害。速度+15尺2回合。"
-    },
-    {
-      "name": "毒性射击",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "INT",
-        "type": "毒素"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "1d8+INT 毒素伤害。"
-    },
-    {
-      "name": "种蘑菇",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "2d10+INT 力场伤害。"
-    }
-  ]
+  }
 }

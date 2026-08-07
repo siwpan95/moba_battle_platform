@@ -1,0 +1,109 @@
+[
+  {
+    "name": "魔杖射击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "魔杖冲击击退"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 力场伤害。",
+    "approx": true
+  },
+  {
+    "name": "统统石化",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "duration": 1,
+        "desc": "目标无法行动",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "1d6+INT 力场伤害，束缚目标。",
+    "approx": true
+  },
+  {
+    "name": "展翅滑翔",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "位移",
+        "duration": 1,
+        "desc": "获得位移与闪避",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "获得位移与闪避，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "无路可退",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "终极魔法冲击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+DEX 力场伤害，封锁一片区域。",
+    "approx": true,
+    "aoe_radius": 12
+  }
+]

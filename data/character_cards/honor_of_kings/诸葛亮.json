@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1829",
+  "card_id": "honor_of_kings:诸葛亮",
   "hero": {
     "name": "诸葛亮",
     "name_en": "",
@@ -110,29 +110,125 @@
   },
   "skills": [
     {
-      "name": "技能三",
-      "key": "E",
+      "name": "法师·奥能飞弹",
+      "key": "Q",
       "type": "法术",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
+      "action": "发射魔法飞弹",
+      "range": "远程",
+      "target": "单体",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
-        "type": "力场"
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
       },
       "effects": [
         {
-          "type": "加速",
-          "duration": 2,
-          "value": 15,
-          "desc": "速度+15尺",
-          "target": "自身"
+          "type": "force",
+          "duration": 1,
+          "desc": "力场伤害",
+          "target": "敌方"
         }
       ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "3d6+INT 法术伤害。力场伤害",
+      "approx": true
+    },
+    {
+      "name": "法师·元素风暴",
+      "key": "W",
+      "type": "法术",
+      "action": "召唤元素席卷",
+      "range": "远程",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "aoe",
+          "duration": 1,
+          "desc": "范围伤害",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "3d8+INT 法术伤害。范围伤害",
+      "approx": true
+    },
+    {
+      "name": "法师·时空禁锢",
+      "key": "E",
+      "type": "法术",
+      "action": "定身目标",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "寒冰"
+      },
+      "effects": [
+        {
+          "type": "hold",
+          "duration": 1,
+          "desc": "定身",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
       "cooldown": 2,
-      "description": "自身速度+15尺，持续2回合。冷却2回合。"
+      "description": "1d8+INT 寒冰伤害。定身",
+      "approx": true
+    },
+    {
+      "name": "法师·焰爆术",
+      "key": "R",
+      "type": "法术",
+      "action": "引爆烈焰",
+      "range": "近战",
+      "target": "区域",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 4,
+        "bonus_attr": "INT",
+        "type": "火焰"
+      },
+      "effects": [
+        {
+          "type": "burn",
+          "duration": 1,
+          "desc": "灼烧",
+          "target": "敌方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "INT",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "无效"
+      },
+      "cooldown": 4,
+      "description": "2d10+INT 火焰伤害。灼烧",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1829"
 }

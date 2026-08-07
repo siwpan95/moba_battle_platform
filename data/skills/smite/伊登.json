@@ -1,0 +1,126 @@
+[
+  {
+    "name": "金苹果",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "金苹果的活力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "1d8+WIS"
+      }
+    ],
+    "cooldown": 0,
+    "description": "伊登递出金苹果——诸神赖此永葆青春，一口果肉便可延寿千年。1d8+WIS 光耀伤害，回复1d8+WIS。"
+  },
+  {
+    "name": "青春之泉",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "青春泉水浇灌",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d6+WIS"
+      },
+      {
+        "type": "cleanse",
+        "desc": "青春之力净化衰老与诅咒",
+        "target": "自身",
+        "duration": ""
+      }
+    ],
+    "cooldown": 1,
+    "description": "伊登打开青春之泉——那是她果园中的圣水，连衰老本身也会在泉水中溶解。大量回复+净化。"
+  },
+  {
+    "name": "果园庇护",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "金苹果树环绕",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+WIS"
+      },
+      {
+        "type": "buff",
+        "desc": "苹果花香增强灵力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "伊登召唤果园庇护——金苹果树围绕她生长，每一片叶子都是青春的守护者。护盾+增伤各2回合。"
+  },
+  {
+    "name": "永葆青春",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "永葆青春之力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "4d8+WIS"
+      },
+      {
+        "type": "魅惑",
+        "desc": "青春之美令人窒息",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "伊登释放永葆青春之力——当她的金苹果之光照耀战场，连垂死之人也能重新站起。AOE魅惑+超量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

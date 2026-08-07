@@ -1,0 +1,126 @@
+[
+  {
+    "name": "血鬼术·腰带鞭打",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "流血",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "1d4",
+        "desc": "腰带割裂皮肤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "堕姬以伸缩自如的腰带化为利刃——舞姬的杀意。2d8+DEX 穿刺伤害，流血2回合(每回合1d4)。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·血镰",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "aoe_radius": 10,
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "血镰含毒"
+      }
+    ],
+    "cooldown": 1,
+    "description": "妓夫太郎挥舞血镰——双生之鬼的血之斩击。2d6+DEX 挥砍伤害，10尺范围。中毒2回合(每回合1d6)。",
+    "approx": true
+  },
+  {
+    "name": "双生鬼·共斗",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "连击强化",
+        "target": "自身",
+        "duration": 3,
+        "desc": "兄妹共斗双重攻击"
+      },
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 3,
+        "value": 20,
+        "desc": "鬼之兄妹的默契速度"
+      }
+    ],
+    "cooldown": 2,
+    "description": "堕姬与妓夫太郎并肩作战——双生之鬼同时出击。每次攻击追加一次额外攻击(1d6)，速度+20尺。持续3回合。冷却2回合。",
+    "approx": true
+  },
+  {
+    "name": "血鬼术·兄妹共灭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "aoe_radius": 15,
+    "effects": [
+      {
+        "type": "即死",
+        "target": "敌方",
+        "dc_attr": "CON",
+        "threshold": "HP<15%",
+        "desc": "除非同时斩首"
+      },
+      {
+        "type": "剧毒",
+        "target": "敌方",
+        "duration": 2,
+        "dmg_per_turn": "2d6",
+        "desc": "兄妹之血的诅咒剧毒"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "上弦之陆堕姬与妓夫太郎的终极合击——只有同时斩断两人的首级才能阻止他们。4d8+DEX 黯蚀伤害，15尺范围。HP<15%即死。剧毒2回合(每回合2d6)。冷却4回合。",
+    "approx": true
+  }
+]

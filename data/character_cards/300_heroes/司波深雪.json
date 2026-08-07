@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1123",
+  "card_id": "300_heroes:司波深雪",
   "hero": {
     "name": "司波深雪",
     "name_en": "",
@@ -108,74 +108,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "闪电链",
-      "key": "Q",
-      "type": "法术",
-      "action": "附赠动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "雷鸣"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "闪电链（Q）：弹跳伤害。造成 1d10+INT 雷鸣伤害。"
-    },
-    {
-      "name": "暴风雪",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "寒冷"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "暴风雪（W）：持续冰伤。"
-    },
-    {
-      "name": "法力涌动",
-      "key": "E",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "单体",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 3,
-      "description": "法力涌动（E）：回蓝。"
-    },
-    {
-      "name": "元素风暴",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "远程",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "元素风暴（R）：混合伤害。造成 3d12+INT 力场伤害。（范围效果）"
-    }
-  ]
+  "legacy_card_id": "300-1123"
 }

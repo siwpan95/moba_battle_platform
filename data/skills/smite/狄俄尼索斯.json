@@ -1,0 +1,134 @@
+[
+  {
+    "name": "酒神之杯",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "微醺",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "狄俄尼索斯举起酒神之杯——美酒泼洒，连最清醒的战士也开始脚步踉跄。1d8+WIS 力场伤害，减速1回合。"
+  },
+  {
+    "name": "狂欢",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "酒神狂欢令人迷失",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "buff",
+        "desc": "醉意中的疯狂",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "狄俄尼索斯掀起狂欢——追随他的狂女们撕碎野兽，在酒神的迷醉中获得超凡的力量。AOE魅惑+增伤1回合。2d6+WIS 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "葡萄藤缠绕",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "葡萄藤疯狂生长缠绕",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "dot",
+        "desc": "藤蔓绞杀",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "狄俄尼索斯令葡萄藤疯长——从地底钻出的藤蔓将敌人死死缠住，越挣扎越紧。束缚+dot各1回合。",
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "酒神狂宴",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "酒神的狂宴令人癫狂",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "heal",
+        "desc": "美酒如甘露",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "狄俄尼索斯召开酒神狂宴——在他的盛宴上，理智崩塌、规则瓦解，只剩下原始的生命力。AOE恐惧+大量回复。3d8+WIS 力场伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  }
+]

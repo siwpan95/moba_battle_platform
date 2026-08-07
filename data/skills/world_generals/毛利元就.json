@@ -1,0 +1,133 @@
+[
+  {
+    "name": "三矢の教え",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "智略压制，速度减半"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 0,
+    "description": "一支箭易折，三支箭难断！1d8+INT 力场伤害，DEX豁免半伤。毛利元就的智略使目标速度减半。"
+  },
+  {
+    "name": "百万一心",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "百万一心：范围迷惑"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "aoe_radius": 10,
+    "description": "百万一心——团结之力！2d6+INT 力场范围伤害，CON豁免无效。元就以智谋迷惑敌军2回合。"
+  },
+  {
+    "name": "厳島の奇襲",
+    "key": "3",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "奇袭转移，速度翻倍"
+      },
+      {
+        "type": "dot",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "每回合1d4谋略伤害"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "cooldown": 2,
+    "aoe_radius": 10,
+    "description": "严岛奇袭！2d6+INT 力场范围伤害，DEX豁免半伤。元就施展奇谋转移加速2回合，敌军陷入谋略持续伤害2回合。"
+  },
+  {
+    "name": "謀神の一手",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "谋神陷阱：范围眩晕"
+      },
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "计略破阵：护甲降低"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "description": "谋神毛利元就的终极计略！4d6+INT 力场范围伤害，DEX豁免半伤。敌军陷入谋略陷阱眩晕2回合且护甲降低。"
+  }
+]

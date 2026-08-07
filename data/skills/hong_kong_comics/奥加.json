@@ -1,0 +1,131 @@
+[
+  {
+    "name": "磁场转动·杀鲸霸拳",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "霸拳之力震退敌手",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 0,
+    "description": "海虎元祖四强奥加的杀鲸霸拳——磁场转动九十万匹的一拳！2d10+STR 钝击伤害，STR豁免失败击退10尺。"
+  },
+  {
+    "name": "磁场转动·细胞重组",
+    "key": "W",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "value_formula": "2d8+CON",
+        "desc": "磁场力量重组受伤细胞",
+        "target": "自身"
+      },
+      {
+        "type": "净化",
+        "desc": "磁场驱散一切负面效果",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "以磁场转动重新排列自身细胞——恢复2d8+CON生命，解除所有负面状态。冷却1回合。"
+  },
+  {
+    "name": "磁场转动·皇极经世",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "全属性强化",
+        "duration": 3,
+        "value": "PROF",
+        "desc": "皇极经世全面提升战力",
+        "target": "自身"
+      },
+      {
+        "type": "减伤",
+        "duration": 3,
+        "value": 30,
+        "desc": "磁场护体",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "奥加运转皇极经世——磁场力量灌注全身。全属性+PROF，减伤30%。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "终极磁场转动·灭世",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "100尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 6,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "aoe_radius": 40,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "灭世磁场摧毁感官",
+        "target": "敌方"
+      },
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "磁场风暴席卷一切",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "奥加磁场转动的终极境界——九十九万匹以上的灭世之力！6d8+CON 力场伤害，40尺超大范围。CON豁免失败眩晕2回合+击飞30尺。冷却4回合。"
+  }
+]

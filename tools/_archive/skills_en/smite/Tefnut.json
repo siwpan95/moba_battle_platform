@@ -1,0 +1,117 @@
+[
+  {
+    "name": "雨露",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "泰芙努特洒下雨露——水气女神是尼罗河的第一滴水。1d8+INT 寒冷伤害。"
+  },
+  {
+    "name": "云雾",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "浓雾之中敌我难辨",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "泰芙努特吐纳云雾——她与舒是埃及的第一对神明，云雾是她的呼吸。AOE减速2回合。2d6+INT 寒冷伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "湿润之气",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "水气滋润",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+INT"
+      },
+      {
+        "type": "shield",
+        "desc": "露珠护罩",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "泰芙努特释放湿润之气——正是她与舒的结合带来了世间一切生命。回复2d8+INT+护盾2回合。"
+  },
+  {
+    "name": "洪水之源",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "冻结",
+        "desc": "洪水的源头冻结万物",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "dot",
+        "desc": "潮湿侵蚀骨髓",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 4,
+    "description": "泰芙努特打开洪水之源——尼罗河泛滥的源头在她手中，淹没一切或冻结一切只在一念之间。AOE冻结+dot。4d6+INT 寒冷伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

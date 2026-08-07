@@ -1,0 +1,127 @@
+[
+  {
+    "name": "惊寂刀·七式·破晓",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "流血",
+        "duration": 1,
+        "dmg_per_turn": "1d4",
+        "desc": "惊寂刀锋锐利无匹",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "东瀛第一刀客皇影，惊寂刀七式起手——破晓一刀惊艳天下。1d12+STR 挥砍伤害，附带1回合微量流血。"
+  },
+  {
+    "name": "惊寂刀·黄金刀气",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "30尺",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "击倒",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "黄金刀气如重锤轰击",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "皇影的惊寂刀黄金刀气——豪迈一刀如旭日东升。2d10+STR 光耀伤害，30尺刀气。STR豁免失败被击倒。冷却1回合。"
+  },
+  {
+    "name": "东瀛刀道·无我境界",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "暴击强化",
+        "duration": 3,
+        "value_formula": "PROF*8",
+        "desc": "无我刀境，人刀合一",
+        "target": "自身"
+      },
+      {
+        "type": "命中强化",
+        "duration": 3,
+        "value": 5,
+        "desc": "刀意锁定令攻击精准异常",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "皇影进入无我刀境——刀即是人，人即是刀。暴击率+PROF×8%，命中+5。持续3回合。冷却2回合。"
+  },
+  {
+    "name": "惊寂刀·七式合一·天地寂灭",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "40尺",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 12,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "aoe_radius": 20,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 1,
+        "dc_attr": "CON",
+        "desc": "七式合一，天地为之寂灭",
+        "target": "敌方"
+      },
+      {
+        "type": "流血",
+        "duration": 2,
+        "dmg_per_turn": "1d8",
+        "desc": "惊寂刀锋造成的创伤难以愈合",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "皇影惊寂刀终极奥义——七式合一，天地寂灭！4d12+STR 挥砍伤害，20尺范围。CON豁免失败眩晕1回合+流血2回合(每回合1d8)。冷却4回合。"
+  }
+]

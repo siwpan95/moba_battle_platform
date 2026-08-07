@@ -1,0 +1,92 @@
+[
+  {
+    "name": "猛将斩",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "河北猛将的刚猛一刀，1d10+STR 挥砍伤害。"
+  },
+  {
+    "name": "力劈华山",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "护甲降低"
+      }
+    ],
+    "cooldown": 1,
+    "description": "势大力沉的一击，2d8+STR 挥砍伤害，目标护甲降低1回合。"
+  },
+  {
+    "name": "河北之雄",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+30%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "河北名将的骄傲！自身获得增伤2回合。"
+  },
+  {
+    "name": "万人敌",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "万军之中取上将首级！2d10+STR 挥砍范围伤害，低血量额外伤害。",
+    "aoe_radius": 15
+  }
+]

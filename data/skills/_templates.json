@@ -9,8 +9,7 @@
       "target": "单体",
       "damage": {
         "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "STR",
+        "dice_size": 12,
         "type": "钝击"
       },
       "effects": [
@@ -37,9 +36,8 @@
       "range": "近战",
       "target": "单体",
       "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
+        "dice_count": 1,
+        "dice_size": 12,
         "type": "钝击"
       },
       "effects": [],
@@ -54,9 +52,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
+        "dice_count": 1,
+        "dice_size": 12,
         "type": "力场"
       },
       "effects": [
@@ -79,9 +76,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 10,
-        "bonus_attr": "STR",
+        "dice_count": 1,
+        "dice_size": 12,
         "type": "钝击"
       },
       "effects": [],
@@ -103,14 +99,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CON",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "获得临时生命",
             "target": "自身"
@@ -132,14 +127,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "STR",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "prone",
+            "type": "击倒",
             "duration": 1,
             "desc": "击倒",
             "target": "敌方"
@@ -150,7 +144,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "2d12+STR 钝击伤害。击倒"
       },
       {
@@ -161,14 +155,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -179,7 +172,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "3d10+STR 钝击伤害。减速"
       },
       {
@@ -191,13 +184,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "reflect",
+            "type": "反射",
             "duration": 1,
             "desc": "反伤",
             "target": "敌方"
@@ -208,7 +200,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 4,
         "description": "1d8+CON 穿刺伤害。反伤"
       },
       {
@@ -219,14 +211,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -237,7 +228,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 0,
         "description": "2d10+STR 钝击伤害。击退"
       },
       {
@@ -249,13 +240,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "immune",
+            "type": "免疫",
             "duration": 1,
             "desc": "免疫控制",
             "target": "自身"
@@ -266,7 +256,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 10,
+        "cooldown": 1,
         "description": "1d4+CON 能量伤害。免疫控制"
       },
       {
@@ -277,14 +267,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CON",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "获得临时生命",
             "target": "自身"
@@ -295,7 +284,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 0,
+        "cooldown": 2,
         "description": "2d12+CON 钝击伤害。获得临时生命"
       },
       {
@@ -306,14 +295,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "STR",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "prone",
+            "type": "击倒",
             "duration": 1,
             "desc": "击倒",
             "target": "敌方"
@@ -335,14 +323,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -353,7 +340,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "3d10+STR 钝击伤害。减速"
       },
       {
@@ -365,13 +352,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "reflect",
+            "type": "反射",
             "duration": 1,
             "desc": "反伤",
             "target": "敌方"
@@ -382,7 +368,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 1,
         "description": "1d8+CON 穿刺伤害。反伤"
       },
       {
@@ -393,14 +379,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -411,7 +396,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 2,
         "description": "2d10+STR 钝击伤害。击退"
       },
       {
@@ -423,13 +408,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "immune",
+            "type": "免疫",
             "duration": 1,
             "desc": "免疫控制",
             "target": "自身"
@@ -440,7 +424,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 10,
+        "cooldown": 4,
         "description": "1d4+CON 能量伤害。免疫控制"
       }
     ],
@@ -453,14 +437,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CON",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "获得临时生命",
             "target": "自身"
@@ -482,14 +465,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "STR",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "prone",
+            "type": "击倒",
             "duration": 1,
             "desc": "击倒",
             "target": "敌方"
@@ -500,7 +482,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "2d12+STR 钝击伤害。击倒"
       },
       {
@@ -511,14 +493,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -529,7 +510,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "3d10+STR 钝击伤害。减速"
       },
       {
@@ -541,13 +522,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "reflect",
+            "type": "反射",
             "duration": 1,
             "desc": "反伤",
             "target": "敌方"
@@ -558,7 +538,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 4,
         "description": "1d8+CON 穿刺伤害。反伤"
       },
       {
@@ -569,14 +549,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -587,7 +566,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 0,
         "description": "2d10+STR 钝击伤害。击退"
       },
       {
@@ -599,13 +578,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "immune",
+            "type": "免疫",
             "duration": 1,
             "desc": "免疫控制",
             "target": "自身"
@@ -616,7 +594,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 10,
+        "cooldown": 1,
         "description": "1d4+CON 能量伤害。免疫控制"
       },
       {
@@ -627,14 +605,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CON",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "获得临时生命",
             "target": "自身"
@@ -645,7 +622,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 0,
+        "cooldown": 2,
         "description": "2d12+CON 钝击伤害。获得临时生命"
       },
       {
@@ -656,14 +633,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
+          "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "STR",
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "prone",
+            "type": "击倒",
             "duration": 1,
             "desc": "击倒",
             "target": "敌方"
@@ -685,14 +661,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -703,7 +678,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "3d10+STR 钝击伤害。减速"
       },
       {
@@ -715,13 +690,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "reflect",
+            "type": "反射",
             "duration": 1,
             "desc": "反伤",
             "target": "敌方"
@@ -732,7 +706,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 1,
         "description": "1d8+CON 穿刺伤害。反伤"
       },
       {
@@ -743,14 +717,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -761,7 +734,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 2,
         "description": "2d10+STR 钝击伤害。击退"
       },
       {
@@ -773,13 +746,12 @@
         "target": "自身",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "CON",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "immune",
+            "type": "免疫",
             "duration": 1,
             "desc": "免疫控制",
             "target": "自身"
@@ -790,7 +762,7 @@
           "dc_formula": "8+PROF+CON",
           "on_save": "无效"
         },
-        "cooldown": 10,
+        "cooldown": 4,
         "description": "1d4+CON 能量伤害。免疫控制"
       }
     ]
@@ -804,9 +776,8 @@
       "range": "近战",
       "target": "范围",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "STR",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "挥砍"
       },
       "effects": [],
@@ -823,8 +794,7 @@
       "target": "范围",
       "damage": {
         "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "STR",
+        "dice_size": 6,
         "type": "挥砍"
       },
       "effects": [],
@@ -839,9 +809,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "力场"
       },
       "effects": [
@@ -864,9 +833,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "STR",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "挥砍"
       },
       "effects": [],
@@ -889,13 +857,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -906,7 +873,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "2d10+STR 挥砍伤害。流血"
       },
       {
@@ -918,13 +885,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -935,7 +901,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 1,
         "description": "2d8+STR 挥砍伤害。范围伤害"
       },
       {
@@ -946,14 +912,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 12,
-          "bonus_attr": "STR",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -964,7 +929,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 2,
         "description": "1d12+STR 钝击伤害。击退"
       },
       {
@@ -977,12 +942,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "STR",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "sunder",
+            "type": "破甲",
             "duration": 1,
             "desc": "降防",
             "target": "敌方"
@@ -1004,14 +968,13 @@
         "range": "自身",
         "target": "友方",
         "damage": {
-          "dice_count": 1,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "CHA",
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "攻击提升",
             "target": "友方"
@@ -1022,7 +985,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "1d6+CHA 能量伤害。攻击提升"
       },
       {
@@ -1033,14 +996,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1051,7 +1013,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 1,
         "description": "3d6+DEX 挥砍伤害。流血"
       },
       {
@@ -1063,13 +1025,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1080,7 +1041,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "2d10+STR 挥砍伤害。流血"
       },
       {
@@ -1092,13 +1053,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -1109,7 +1069,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 4,
         "description": "2d8+STR 挥砍伤害。范围伤害"
       },
       {
@@ -1120,14 +1080,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 12,
-          "bonus_attr": "STR",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -1138,7 +1097,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 0,
         "description": "1d12+STR 钝击伤害。击退"
       },
       {
@@ -1151,12 +1110,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "STR",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "sunder",
+            "type": "破甲",
             "duration": 1,
             "desc": "降防",
             "target": "敌方"
@@ -1167,7 +1125,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "2d6+STR 穿刺伤害。降防"
       },
       {
@@ -1178,14 +1136,13 @@
         "range": "自身",
         "target": "友方",
         "damage": {
-          "dice_count": 1,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "CHA",
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "攻击提升",
             "target": "友方"
@@ -1196,7 +1153,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "1d6+CHA 能量伤害。攻击提升"
       },
       {
@@ -1207,14 +1164,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1225,7 +1181,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 4,
         "description": "3d6+DEX 挥砍伤害。流血"
       }
     ],
@@ -1239,13 +1195,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1256,7 +1211,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "2d10+STR 挥砍伤害。流血"
       },
       {
@@ -1268,13 +1223,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -1285,7 +1239,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 1,
         "description": "2d8+STR 挥砍伤害。范围伤害"
       },
       {
@@ -1296,14 +1250,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 12,
-          "bonus_attr": "STR",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -1314,7 +1267,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 2,
         "description": "1d12+STR 钝击伤害。击退"
       },
       {
@@ -1327,12 +1280,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "STR",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "sunder",
+            "type": "破甲",
             "duration": 1,
             "desc": "降防",
             "target": "敌方"
@@ -1354,14 +1306,13 @@
         "range": "自身",
         "target": "友方",
         "damage": {
-          "dice_count": 1,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "CHA",
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "攻击提升",
             "target": "友方"
@@ -1372,7 +1323,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "1d6+CHA 能量伤害。攻击提升"
       },
       {
@@ -1383,14 +1334,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1401,7 +1351,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 1,
         "description": "3d6+DEX 挥砍伤害。流血"
       },
       {
@@ -1413,13 +1363,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1430,7 +1379,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "2d10+STR 挥砍伤害。流血"
       },
       {
@@ -1442,13 +1391,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "STR",
+          "dice_size": 6,
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -1459,7 +1407,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 4,
         "description": "2d8+STR 挥砍伤害。范围伤害"
       },
       {
@@ -1470,14 +1418,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 12,
-          "bonus_attr": "STR",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "钝击"
         },
         "effects": [
           {
-            "type": "knockback",
+            "type": "击退",
             "duration": 1,
             "desc": "击退",
             "target": "敌方"
@@ -1488,7 +1435,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 0,
         "description": "1d12+STR 钝击伤害。击退"
       },
       {
@@ -1501,12 +1448,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "STR",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "sunder",
+            "type": "破甲",
             "duration": 1,
             "desc": "降防",
             "target": "敌方"
@@ -1517,7 +1463,7 @@
           "dc_formula": "8+PROF+STR",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "2d6+STR 穿刺伤害。降防"
       },
       {
@@ -1528,14 +1474,13 @@
         "range": "自身",
         "target": "友方",
         "damage": {
-          "dice_count": 1,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "CHA",
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "攻击提升",
             "target": "友方"
@@ -1546,7 +1491,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "1d6+CHA 能量伤害。攻击提升"
       },
       {
@@ -1557,14 +1502,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "bleed",
+            "type": "流血",
             "duration": 1,
             "desc": "流血",
             "target": "敌方"
@@ -1575,7 +1519,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 4,
         "description": "3d6+DEX 挥砍伤害。流血"
       }
     ]
@@ -1590,8 +1534,7 @@
       "target": "单体",
       "damage": {
         "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
+        "dice_size": 8,
         "type": "穿刺"
       },
       "effects": [],
@@ -1607,8 +1550,7 @@
       "target": "单体",
       "damage": {
         "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
+        "dice_size": 8,
         "type": "穿刺"
       },
       "effects": [],
@@ -1623,9 +1565,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
+        "dice_count": 2,
+        "dice_size": 8,
         "type": "力场"
       },
       "effects": [
@@ -1648,9 +1589,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
+        "dice_count": 2,
+        "dice_size": 8,
         "type": "穿刺"
       },
       "effects": [],
@@ -1674,7 +1614,6 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
@@ -1690,7 +1629,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "2d8+DEX 穿刺伤害。易伤"
       },
       {
@@ -1701,14 +1640,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "poison",
+            "type": "中毒",
             "duration": 1,
             "desc": "中毒",
             "target": "敌方"
@@ -1719,7 +1657,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "1d6+DEX 穿刺伤害。中毒"
       },
       {
@@ -1730,14 +1668,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "invis",
+            "type": "隐身",
             "duration": 1,
             "desc": "隐身",
             "target": "自身"
@@ -1748,7 +1685,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "1d4+DEX 能量伤害。隐身"
       },
       {
@@ -1759,14 +1696,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "mark",
+            "type": "标记",
             "duration": 1,
             "desc": "标记",
             "target": "敌方"
@@ -1777,7 +1713,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "1d6+DEX 穿刺伤害。标记"
       },
       {
@@ -1789,8 +1725,7 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_size": 8,
           "type": "挥砍"
         },
         "effects": [
@@ -1806,7 +1741,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 0,
         "description": "2d6+DEX 挥砍伤害。混乱"
       },
       {
@@ -1817,14 +1752,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "execute",
+            "type": "斩杀",
             "duration": 1,
             "desc": "斩杀",
             "target": "敌方"
@@ -1835,7 +1769,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 9,
+        "cooldown": 1,
         "description": "3d8+DEX 挥砍伤害。斩杀"
       },
       {
@@ -1848,7 +1782,6 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
@@ -1864,7 +1797,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "2d8+DEX 穿刺伤害。易伤"
       },
       {
@@ -1875,14 +1808,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "poison",
+            "type": "中毒",
             "duration": 1,
             "desc": "中毒",
             "target": "敌方"
@@ -1904,14 +1836,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "invis",
+            "type": "隐身",
             "duration": 1,
             "desc": "隐身",
             "target": "自身"
@@ -1922,7 +1853,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "1d4+DEX 能量伤害。隐身"
       },
       {
@@ -1933,14 +1864,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "mark",
+            "type": "标记",
             "duration": 1,
             "desc": "标记",
             "target": "敌方"
@@ -1951,7 +1881,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "1d6+DEX 穿刺伤害。标记"
       },
       {
@@ -1963,8 +1893,7 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_size": 8,
           "type": "挥砍"
         },
         "effects": [
@@ -1980,7 +1909,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 2,
         "description": "2d6+DEX 挥砍伤害。混乱"
       },
       {
@@ -1991,14 +1920,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "execute",
+            "type": "斩杀",
             "duration": 1,
             "desc": "斩杀",
             "target": "敌方"
@@ -2009,7 +1937,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 9,
+        "cooldown": 4,
         "description": "3d8+DEX 挥砍伤害。斩杀"
       }
     ],
@@ -2024,7 +1952,6 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
@@ -2040,7 +1967,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "2d8+DEX 穿刺伤害。易伤"
       },
       {
@@ -2051,14 +1978,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "poison",
+            "type": "中毒",
             "duration": 1,
             "desc": "中毒",
             "target": "敌方"
@@ -2069,7 +1995,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "1d6+DEX 穿刺伤害。中毒"
       },
       {
@@ -2080,14 +2006,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "invis",
+            "type": "隐身",
             "duration": 1,
             "desc": "隐身",
             "target": "自身"
@@ -2098,7 +2023,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "1d4+DEX 能量伤害。隐身"
       },
       {
@@ -2109,14 +2034,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "mark",
+            "type": "标记",
             "duration": 1,
             "desc": "标记",
             "target": "敌方"
@@ -2127,7 +2051,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "1d6+DEX 穿刺伤害。标记"
       },
       {
@@ -2139,8 +2063,7 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_size": 8,
           "type": "挥砍"
         },
         "effects": [
@@ -2156,7 +2079,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 0,
         "description": "2d6+DEX 挥砍伤害。混乱"
       },
       {
@@ -2167,14 +2090,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "execute",
+            "type": "斩杀",
             "duration": 1,
             "desc": "斩杀",
             "target": "敌方"
@@ -2185,7 +2107,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 9,
+        "cooldown": 1,
         "description": "3d8+DEX 挥砍伤害。斩杀"
       },
       {
@@ -2198,7 +2120,6 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
@@ -2214,7 +2135,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "2d8+DEX 穿刺伤害。易伤"
       },
       {
@@ -2225,14 +2146,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "poison",
+            "type": "中毒",
             "duration": 1,
             "desc": "中毒",
             "target": "敌方"
@@ -2254,14 +2174,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "invis",
+            "type": "隐身",
             "duration": 1,
             "desc": "隐身",
             "target": "自身"
@@ -2272,7 +2191,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "1d4+DEX 能量伤害。隐身"
       },
       {
@@ -2283,14 +2202,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 8,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "mark",
+            "type": "标记",
             "duration": 1,
             "desc": "标记",
             "target": "敌方"
@@ -2301,7 +2219,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "1d6+DEX 穿刺伤害。标记"
       },
       {
@@ -2313,8 +2231,7 @@
         "target": "区域",
         "damage": {
           "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "DEX",
+          "dice_size": 8,
           "type": "挥砍"
         },
         "effects": [
@@ -2330,7 +2247,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 2,
         "description": "2d6+DEX 挥砍伤害。混乱"
       },
       {
@@ -2341,14 +2258,13 @@
         "range": "近战",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 8,
-          "bonus_attr": "DEX",
           "type": "挥砍"
         },
         "effects": [
           {
-            "type": "execute",
+            "type": "斩杀",
             "duration": 1,
             "desc": "斩杀",
             "target": "敌方"
@@ -2359,7 +2275,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 9,
+        "cooldown": 4,
         "description": "3d8+DEX 挥砍伤害。斩杀"
       }
     ]
@@ -2373,9 +2289,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
+        "dice_count": 3,
+        "dice_size": 4,
         "type": "火焰"
       },
       "effects": [],
@@ -2396,9 +2311,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
+        "dice_count": 3,
+        "dice_size": 4,
         "type": "火焰"
       },
       "effects": [],
@@ -2413,9 +2327,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
+        "dice_count": 3,
+        "dice_size": 4,
         "type": "力场"
       },
       "effects": [
@@ -2438,9 +2351,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
-        "bonus_attr": "INT",
+        "dice_count": 3,
+        "dice_size": 4,
         "type": "火焰"
       },
       "effects": [],
@@ -2463,13 +2375,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 3,
-          "dice_size": 6,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "force",
+            "type": "力场",
             "duration": 1,
             "desc": "力场伤害",
             "target": "敌方"
@@ -2480,7 +2391,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "3d6+INT 法术伤害。力场伤害"
       },
       {
@@ -2492,13 +2403,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 3,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -2509,7 +2419,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 1,
         "description": "3d8+INT 法术伤害。范围伤害"
       },
       {
@@ -2520,14 +2430,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "寒冰"
         },
         "effects": [
           {
-            "type": "hold",
+            "type": "定身",
             "duration": 1,
             "desc": "定身",
             "target": "敌方"
@@ -2538,7 +2447,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "1d8+INT 寒冰伤害。定身"
       },
       {
@@ -2549,14 +2458,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "火焰"
         },
         "effects": [
           {
-            "type": "burn",
+            "type": "灼烧",
             "duration": 1,
             "desc": "灼烧",
             "target": "敌方"
@@ -2567,7 +2475,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "2d10+INT 火焰伤害。灼烧"
       },
       {
@@ -2578,14 +2486,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "雷电"
         },
         "effects": [
           {
-            "type": "stun",
+            "type": "眩晕",
             "duration": 1,
             "desc": "麻痹",
             "target": "敌方"
@@ -2596,7 +2503,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "2d8+INT 雷电伤害。麻痹"
       },
       {
@@ -2607,14 +2514,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "自身"
@@ -2625,7 +2531,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "1d10+INT 法术伤害。护盾"
       },
       {
@@ -2637,13 +2543,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 3,
-          "dice_size": 6,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "force",
+            "type": "力场",
             "duration": 1,
             "desc": "力场伤害",
             "target": "敌方"
@@ -2654,7 +2559,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "3d6+INT 法术伤害。力场伤害"
       },
       {
@@ -2666,13 +2571,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 3,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -2683,7 +2587,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 4,
         "description": "3d8+INT 法术伤害。范围伤害"
       },
       {
@@ -2694,14 +2598,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "寒冰"
         },
         "effects": [
           {
-            "type": "hold",
+            "type": "定身",
             "duration": 1,
             "desc": "定身",
             "target": "敌方"
@@ -2712,7 +2615,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "1d8+INT 寒冰伤害。定身"
       },
       {
@@ -2723,14 +2626,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "火焰"
         },
         "effects": [
           {
-            "type": "burn",
+            "type": "灼烧",
             "duration": 1,
             "desc": "灼烧",
             "target": "敌方"
@@ -2741,7 +2643,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "2d10+INT 火焰伤害。灼烧"
       },
       {
@@ -2752,14 +2654,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "雷电"
         },
         "effects": [
           {
-            "type": "stun",
+            "type": "眩晕",
             "duration": 1,
             "desc": "麻痹",
             "target": "敌方"
@@ -2770,7 +2671,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "2d8+INT 雷电伤害。麻痹"
       },
       {
@@ -2781,14 +2682,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "自身"
@@ -2813,13 +2713,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 3,
-          "dice_size": 6,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "force",
+            "type": "力场",
             "duration": 1,
             "desc": "力场伤害",
             "target": "敌方"
@@ -2830,7 +2729,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "3d6+INT 法术伤害。力场伤害"
       },
       {
@@ -2842,13 +2741,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 3,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -2859,7 +2757,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 1,
         "description": "3d8+INT 法术伤害。范围伤害"
       },
       {
@@ -2870,14 +2768,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "寒冰"
         },
         "effects": [
           {
-            "type": "hold",
+            "type": "定身",
             "duration": 1,
             "desc": "定身",
             "target": "敌方"
@@ -2888,7 +2785,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "1d8+INT 寒冰伤害。定身"
       },
       {
@@ -2899,14 +2796,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "火焰"
         },
         "effects": [
           {
-            "type": "burn",
+            "type": "灼烧",
             "duration": 1,
             "desc": "灼烧",
             "target": "敌方"
@@ -2917,7 +2813,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "2d10+INT 火焰伤害。灼烧"
       },
       {
@@ -2928,14 +2824,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "雷电"
         },
         "effects": [
           {
-            "type": "stun",
+            "type": "眩晕",
             "duration": 1,
             "desc": "麻痹",
             "target": "敌方"
@@ -2946,7 +2841,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "2d8+INT 雷电伤害。麻痹"
       },
       {
@@ -2957,14 +2852,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "自身"
@@ -2975,7 +2869,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "1d10+INT 法术伤害。护盾"
       },
       {
@@ -2987,13 +2881,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 3,
-          "dice_size": 6,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "force",
+            "type": "力场",
             "duration": 1,
             "desc": "力场伤害",
             "target": "敌方"
@@ -3004,7 +2897,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "3d6+INT 法术伤害。力场伤害"
       },
       {
@@ -3016,13 +2909,12 @@
         "target": "区域",
         "damage": {
           "dice_count": 3,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围伤害",
             "target": "敌方"
@@ -3033,7 +2925,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 7,
+        "cooldown": 4,
         "description": "3d8+INT 法术伤害。范围伤害"
       },
       {
@@ -3044,14 +2936,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "寒冰"
         },
         "effects": [
           {
-            "type": "hold",
+            "type": "定身",
             "duration": 1,
             "desc": "定身",
             "target": "敌方"
@@ -3062,7 +2953,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "1d8+INT 寒冰伤害。定身"
       },
       {
@@ -3073,14 +2964,13 @@
         "range": "近战",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "火焰"
         },
         "effects": [
           {
-            "type": "burn",
+            "type": "灼烧",
             "duration": 1,
             "desc": "灼烧",
             "target": "敌方"
@@ -3091,7 +2981,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "2d10+INT 火焰伤害。灼烧"
       },
       {
@@ -3102,14 +2992,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "雷电"
         },
         "effects": [
           {
-            "type": "stun",
+            "type": "眩晕",
             "duration": 1,
             "desc": "麻痹",
             "target": "敌方"
@@ -3120,7 +3009,7 @@
           "dc_formula": "8+PROF+INT",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "2d8+INT 雷电伤害。麻痹"
       },
       {
@@ -3131,14 +3020,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "INT",
+          "dice_count": 3,
+          "dice_size": 4,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "自身"
@@ -3163,9 +3051,8 @@
       "range": "120尺",
       "target": "单体",
       "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "穿刺"
       },
       "effects": [],
@@ -3181,8 +3068,7 @@
       "target": "单体",
       "damage": {
         "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
+        "dice_size": 6,
         "type": "穿刺"
       },
       "effects": [],
@@ -3197,9 +3083,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "力场"
       },
       "effects": [
@@ -3222,9 +3107,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
+        "dice_count": 2,
+        "dice_size": 6,
         "type": "穿刺"
       },
       "effects": [],
@@ -3247,13 +3131,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "暴击",
             "target": "敌方"
@@ -3264,7 +3147,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 2,
+        "cooldown": 0,
         "description": "2d8+DEX 穿刺伤害。暴击"
       },
       {
@@ -3275,14 +3158,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围",
             "target": "敌方"
@@ -3293,7 +3175,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "3d6+DEX 穿刺伤害。范围"
       },
       {
@@ -3305,8 +3187,7 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
@@ -3322,7 +3203,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "2d10+DEX 穿刺伤害。穿透"
       },
       {
@@ -3333,14 +3214,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "dash",
+            "type": "突进",
             "duration": 1,
             "desc": "位移",
             "target": "自身"
@@ -3362,14 +3242,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "重伤",
             "target": "敌方"
@@ -3380,7 +3259,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "3d10+DEX 穿刺伤害。重伤"
       },
       {
@@ -3393,12 +3272,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -3409,7 +3287,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 1,
         "description": "2d6+DEX 穿刺伤害。减速"
       },
       {
@@ -3421,13 +3299,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "暴击",
             "target": "敌方"
@@ -3449,14 +3326,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围",
             "target": "敌方"
@@ -3467,7 +3343,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "3d6+DEX 穿刺伤害。范围"
       },
       {
@@ -3479,8 +3355,7 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
@@ -3496,7 +3371,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "2d10+DEX 穿刺伤害。穿透"
       },
       {
@@ -3507,14 +3382,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "dash",
+            "type": "突进",
             "duration": 1,
             "desc": "位移",
             "target": "自身"
@@ -3525,7 +3399,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "1d4+DEX 能量伤害。位移"
       },
       {
@@ -3536,14 +3410,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "重伤",
             "target": "敌方"
@@ -3554,7 +3427,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "3d10+DEX 穿刺伤害。重伤"
       },
       {
@@ -3567,12 +3440,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -3583,7 +3455,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 4,
         "description": "2d6+DEX 穿刺伤害。减速"
       }
     ],
@@ -3597,13 +3469,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "暴击",
             "target": "敌方"
@@ -3614,7 +3485,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 2,
+        "cooldown": 0,
         "description": "2d8+DEX 穿刺伤害。暴击"
       },
       {
@@ -3625,14 +3496,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围",
             "target": "敌方"
@@ -3643,7 +3513,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "3d6+DEX 穿刺伤害。范围"
       },
       {
@@ -3655,8 +3525,7 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
@@ -3672,7 +3541,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "2d10+DEX 穿刺伤害。穿透"
       },
       {
@@ -3683,14 +3552,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "dash",
+            "type": "突进",
             "duration": 1,
             "desc": "位移",
             "target": "自身"
@@ -3712,14 +3580,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "重伤",
             "target": "敌方"
@@ -3730,7 +3597,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "3d10+DEX 穿刺伤害。重伤"
       },
       {
@@ -3743,12 +3610,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -3759,7 +3625,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 1,
         "description": "2d6+DEX 穿刺伤害。减速"
       },
       {
@@ -3771,13 +3637,12 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "暴击",
             "target": "敌方"
@@ -3799,14 +3664,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 3,
+          "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "aoe",
+            "type": "范围",
             "duration": 1,
             "desc": "范围",
             "target": "敌方"
@@ -3817,7 +3681,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "3d6+DEX 穿刺伤害。范围"
       },
       {
@@ -3829,8 +3693,7 @@
         "target": "单体",
         "damage": {
           "dice_count": 2,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
@@ -3846,7 +3709,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "2d10+DEX 穿刺伤害。穿透"
       },
       {
@@ -3857,14 +3720,13 @@
         "range": "自身",
         "target": "自身",
         "damage": {
-          "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "dash",
+            "type": "突进",
             "duration": 1,
             "desc": "位移",
             "target": "自身"
@@ -3875,7 +3737,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 4,
+        "cooldown": 1,
         "description": "1d4+DEX 能量伤害。位移"
       },
       {
@@ -3886,14 +3748,13 @@
         "range": "远程",
         "target": "单体",
         "damage": {
-          "dice_count": 3,
-          "dice_size": 10,
-          "bonus_attr": "DEX",
+          "dice_count": 2,
+          "dice_size": 6,
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "crit",
+            "type": "暴击",
             "duration": 1,
             "desc": "重伤",
             "target": "敌方"
@@ -3904,7 +3765,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "3d10+DEX 穿刺伤害。重伤"
       },
       {
@@ -3917,12 +3778,11 @@
         "damage": {
           "dice_count": 2,
           "dice_size": 6,
-          "bonus_attr": "DEX",
           "type": "穿刺"
         },
         "effects": [
           {
-            "type": "slow",
+            "type": "减速",
             "duration": 1,
             "desc": "减速",
             "target": "敌方"
@@ -3933,7 +3793,7 @@
           "dc_formula": "8+PROF+DEX",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 4,
         "description": "2d6+DEX 穿刺伤害。减速"
       }
     ]
@@ -3948,8 +3808,7 @@
       "target": "自身",
       "damage": {
         "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
+        "dice_size": 12,
         "type": "光耀"
       },
       "effects": [
@@ -3971,9 +3830,8 @@
       "range": "30尺",
       "target": "自身",
       "damage": {
-        "dice_count": 2,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
+        "dice_count": 1,
+        "dice_size": 12,
         "type": "光耀"
       },
       "effects": [],
@@ -3988,9 +3846,8 @@
       "range": "自身",
       "target": "自身",
       "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "CON",
+        "dice_count": 1,
+        "dice_size": 12,
         "type": "力场"
       },
       "effects": [
@@ -4013,9 +3870,8 @@
       "range": "60尺",
       "target": "范围",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
+        "dice_count": 1,
+        "dice_size": 12,
         "type": "光耀"
       },
       "effects": [],
@@ -4037,14 +3893,13 @@
         "range": "远程",
         "target": "友方",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "治疗",
             "target": "友方"
@@ -4055,7 +3910,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "2d8+WIS 能量伤害。治疗"
       },
       {
@@ -4067,13 +3922,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "友方"
@@ -4084,7 +3938,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "1d10+WIS 法术伤害。护盾"
       },
       {
@@ -4096,13 +3950,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "CHA",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "增益",
             "target": "友方"
@@ -4113,7 +3966,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "1d6+CHA 能量伤害。增益"
       },
       {
@@ -4125,13 +3978,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "cleanse",
+            "type": "净化",
             "duration": 1,
             "desc": "净化",
             "target": "友方"
@@ -4142,7 +3994,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "1d4+WIS 法术伤害。净化"
       },
       {
@@ -4153,14 +4005,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "群疗",
             "target": "友方"
@@ -4171,7 +4022,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "2d6+WIS 能量伤害。群疗"
       },
       {
@@ -4184,12 +4035,11 @@
         "damage": {
           "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CHA",
           "type": "法术"
         },
         "effects": [
           {
-            "type": "revive",
+            "type": "复活",
             "duration": 1,
             "desc": "复活",
             "target": "友方"
@@ -4200,7 +4050,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 12,
+        "cooldown": 1,
         "description": "1d12+CHA 法术伤害。复活"
       },
       {
@@ -4211,14 +4061,13 @@
         "range": "远程",
         "target": "友方",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "治疗",
             "target": "友方"
@@ -4229,7 +4078,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "2d8+WIS 能量伤害。治疗"
       },
       {
@@ -4241,13 +4090,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "友方"
@@ -4258,7 +4106,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "1d10+WIS 法术伤害。护盾"
       },
       {
@@ -4270,13 +4118,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "CHA",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "增益",
             "target": "友方"
@@ -4287,7 +4134,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "1d6+CHA 能量伤害。增益"
       },
       {
@@ -4299,13 +4146,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "cleanse",
+            "type": "净化",
             "duration": 1,
             "desc": "净化",
             "target": "友方"
@@ -4316,7 +4162,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "1d4+WIS 法术伤害。净化"
       },
       {
@@ -4327,14 +4173,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "群疗",
             "target": "友方"
@@ -4345,7 +4190,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "2d6+WIS 能量伤害。群疗"
       },
       {
@@ -4358,12 +4203,11 @@
         "damage": {
           "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CHA",
           "type": "法术"
         },
         "effects": [
           {
-            "type": "revive",
+            "type": "复活",
             "duration": 1,
             "desc": "复活",
             "target": "友方"
@@ -4374,7 +4218,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 12,
+        "cooldown": 4,
         "description": "1d12+CHA 法术伤害。复活"
       }
     ],
@@ -4387,14 +4231,13 @@
         "range": "远程",
         "target": "友方",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "治疗",
             "target": "友方"
@@ -4405,7 +4248,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 0,
         "description": "2d8+WIS 能量伤害。治疗"
       },
       {
@@ -4417,13 +4260,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "友方"
@@ -4434,7 +4276,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "1d10+WIS 法术伤害。护盾"
       },
       {
@@ -4446,13 +4288,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "CHA",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "增益",
             "target": "友方"
@@ -4463,7 +4304,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 2,
         "description": "1d6+CHA 能量伤害。增益"
       },
       {
@@ -4475,13 +4316,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "cleanse",
+            "type": "净化",
             "duration": 1,
             "desc": "净化",
             "target": "友方"
@@ -4492,7 +4332,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "1d4+WIS 法术伤害。净化"
       },
       {
@@ -4503,14 +4343,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "群疗",
             "target": "友方"
@@ -4521,7 +4360,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 0,
         "description": "2d6+WIS 能量伤害。群疗"
       },
       {
@@ -4534,12 +4373,11 @@
         "damage": {
           "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CHA",
           "type": "法术"
         },
         "effects": [
           {
-            "type": "revive",
+            "type": "复活",
             "duration": 1,
             "desc": "复活",
             "target": "友方"
@@ -4550,7 +4388,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 12,
+        "cooldown": 1,
         "description": "1d12+CHA 法术伤害。复活"
       },
       {
@@ -4561,14 +4399,13 @@
         "range": "远程",
         "target": "友方",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 8,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "治疗",
             "target": "友方"
@@ -4579,7 +4416,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 3,
+        "cooldown": 2,
         "description": "2d8+WIS 能量伤害。治疗"
       },
       {
@@ -4591,13 +4428,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 10,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "shield",
+            "type": "护盾",
             "duration": 1,
             "desc": "护盾",
             "target": "友方"
@@ -4608,7 +4444,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 4,
         "description": "1d10+WIS 法术伤害。护盾"
       },
       {
@@ -4620,13 +4456,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 6,
-          "bonus_attr": "CHA",
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "buff",
+            "type": "增益",
             "duration": 1,
             "desc": "增益",
             "target": "友方"
@@ -4637,7 +4472,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 6,
+        "cooldown": 0,
         "description": "1d6+CHA 能量伤害。增益"
       },
       {
@@ -4649,13 +4484,12 @@
         "target": "友方",
         "damage": {
           "dice_count": 1,
-          "dice_size": 4,
-          "bonus_attr": "WIS",
+          "dice_size": 12,
           "type": "法术"
         },
         "effects": [
           {
-            "type": "cleanse",
+            "type": "净化",
             "duration": 1,
             "desc": "净化",
             "target": "友方"
@@ -4666,7 +4500,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 5,
+        "cooldown": 1,
         "description": "1d4+WIS 法术伤害。净化"
       },
       {
@@ -4677,14 +4511,13 @@
         "range": "远程",
         "target": "区域",
         "damage": {
-          "dice_count": 2,
-          "dice_size": 6,
-          "bonus_attr": "WIS",
+          "dice_count": 1,
+          "dice_size": 12,
           "type": "能量"
         },
         "effects": [
           {
-            "type": "heal",
+            "type": "治疗",
             "duration": 1,
             "desc": "群疗",
             "target": "友方"
@@ -4695,7 +4528,7 @@
           "dc_formula": "8+PROF+WIS",
           "on_save": "无效"
         },
-        "cooldown": 8,
+        "cooldown": 2,
         "description": "2d6+WIS 能量伤害。群疗"
       },
       {
@@ -4708,12 +4541,11 @@
         "damage": {
           "dice_count": 1,
           "dice_size": 12,
-          "bonus_attr": "CHA",
           "type": "法术"
         },
         "effects": [
           {
-            "type": "revive",
+            "type": "复活",
             "duration": 1,
             "desc": "复活",
             "target": "友方"
@@ -4724,7 +4556,7 @@
           "dc_formula": "8+PROF+CHA",
           "on_save": "无效"
         },
-        "cooldown": 12,
+        "cooldown": 4,
         "description": "1d12+CHA 法术伤害。复活"
       }
     ]

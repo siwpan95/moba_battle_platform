@@ -1,0 +1,117 @@
+[
+  {
+    "name": "诗篇",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "布拉吉吟诵诗篇——诗歌之神的每一个字都带着魔力。1d8+WIS 力场伤害。"
+  },
+  {
+    "name": "灵感之泉",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "诗神灵感",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "heal",
+        "desc": "诗歌治愈心灵",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+WIS"
+      }
+    ],
+    "cooldown": 1,
+    "description": "布拉吉饮下灵感之泉——诗歌的蜜酒在他血管中流淌，每一个词句都能振奋人心。增伤2回合+回复2d6+WIS。"
+  },
+  {
+    "name": "吟唱",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "诗歌的魔力",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "slow",
+        "desc": "陶醉在韵律中",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "布拉吉低声吟唱——他的诗歌能让最凶暴的战士放下刀剑，静心聆听。魅惑+减速各1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "英灵之歌",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "英灵殿的史诗",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "heal",
+        "desc": "英灵的赞歌",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "3d8+WIS"
+      }
+    ],
+    "cooldown": 4,
+    "description": "布拉吉高唱英灵之歌——瓦尔哈拉的厅堂中回响着英雄的史诗，每一个音符都赐予无尽勇气。AOE增伤+大量回复。3d8+WIS 光耀伤害。",
+    "aoe_radius": 30
+  }
+]

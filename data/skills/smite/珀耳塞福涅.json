@@ -1,0 +1,121 @@
+[
+  {
+    "name": "冥界之花",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "珀尔塞福涅摘下冥界之花——每一朵从冥土中绽放的花都是亡魂的哀鸣。1d8+INT 黯蚀伤害。"
+  },
+  {
+    "name": "石榴籽",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "desc": "六颗石榴籽的契约",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "dot",
+        "desc": "冥界的气息渗入骨髓",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "珀尔塞福涅掷出石榴籽——她吃了六颗冥界石榴籽，因此每年有六个月必须返回冥界。束缚1回合+dot 2回合。2d6+INT 黯蚀伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "春归",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "desc": "春天归来，万物复苏",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d8+INT"
+      },
+      {
+        "type": "buff",
+        "desc": "大地回春之力",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "珀尔塞福涅重返人间——当她踏出冥界，大地回春、百花盛开。回复2d8+INT+增伤2回合。"
+  },
+  {
+    "name": "冥后之怒",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "冥后之怒让生者胆寒",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "冥后将生者拖入地府",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "珀尔塞福涅释放冥后之怒——她既是带来春天的少女，也是统治亡灵的冥后，双重身份让她比任何神祇都更可怕。AOE恐惧+低血斩杀。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

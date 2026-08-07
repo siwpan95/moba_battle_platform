@@ -1,5 +1,5 @@
 {
-  "card_id": "300-1120",
+  "card_id": "300_heroes:忍野忍",
   "hero": {
     "name": "忍野忍",
     "name_en": "",
@@ -110,81 +110,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "暗杀",
-      "key": "Q",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 2,
-      "description": "暗杀（Q）：背刺暴击。造成 1d10+INT 黯蚀伤害。"
-    },
-    {
-      "name": "影步",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [
-        {
-          "type": "隐身",
-          "duration": 1,
-          "desc": "进入隐身状态。",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 3,
-      "description": "影步（W）：隐身。进入隐身状态。"
-    },
-    {
-      "name": "飞镖",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "飞镖（E）：远程标记。造成 1d10+DEX 穿刺伤害。"
-    },
-    {
-      "name": "暗影突袭",
-      "key": "R",
-      "type": "法术",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "INT",
-        "type": "黯蚀"
-      },
-      "effects": [],
-      "cooldown": 5,
-      "description": "暗影突袭（R）：多段斩杀。造成 3d12+INT 黯蚀伤害。"
-    }
-  ]
+  "legacy_card_id": "300-1120"
 }

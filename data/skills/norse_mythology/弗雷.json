@@ -1,0 +1,106 @@
+[
+  {
+    "name": "胜利之剑",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。弗雷的胜利之剑能自行飞舞战斗，无需持握亦可杀敌。",
+    "approx": true
+  },
+  {
+    "name": "丰饶之雨",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 1,
+        "desc": "剑刃汲取生命"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。弗雷召唤丰饶之力，剑刃汲取敌方生命回复自身。",
+    "approx": true
+  },
+  {
+    "name": "金鬃冲锋",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "金鬃野猪突进20尺"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。弗雷骑乘金鬃野猪古林博斯帝冲锋。",
+    "approx": true
+  },
+  {
+    "name": "光明精灵王",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击力+4"
+      },
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "光耀刺目"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 光耀伤害。弗雷显现光明精灵之王的真身。增益2回合+致盲目标1回合。",
+    "approx": true,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  }
+]

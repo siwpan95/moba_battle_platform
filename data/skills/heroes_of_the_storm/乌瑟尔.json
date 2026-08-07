@@ -1,0 +1,92 @@
+[
+  {
+    "name": "圣光术",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "desc": "恢复生命",
+        "value_formula": "1d8+WIS",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+STR 光耀伤害。恢复生命。"
+  },
+  {
+    "name": "圣光波",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 1,
+    "description": "2d6+STR 光耀伤害。",
+    "aoe_radius": 15
+  },
+  {
+    "name": "制裁之锤",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "desc": "目标失去动作",
+        "duration": 1,
+        "dc_attr": "CON",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。目标失去动作1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "神圣风暴",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [],
+    "cooldown": 4,
+    "description": "2d8+STR 光耀伤害。",
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "name": "方天画戟",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "画戟破甲"
+      }
+    ],
+    "cooldown": 0,
+    "description": "人中吕布，马中赤兔！1d10+STR 挥砍伤害。方天画戟之威破开目标护甲。"
+  },
+  {
+    "name": "辕门射戟",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "神射震慑，速度减半"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "辕门射戟，百步穿杨！2d8+STR 穿刺远程伤害。CON豁免无效则速度减半——飞将之名非虚传。"
+  },
+  {
+    "name": "赤兔突击",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 2,
+        "desc": "赤兔马冲锋，速度翻倍"
+      }
+    ],
+    "cooldown": 2,
+    "description": "赤兔马日行千里！1d8+STR 钝击伤害。吕布骑赤兔发起冲锋，速度翻倍2回合。"
+  },
+  {
+    "name": "天下无双",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "无双乱舞：伤害+50%"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "鬼神一击：低血量斩杀"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "天下无双，鬼神吕布！2d10+STR 挥砍范围伤害。无双乱舞增伤2回合，鬼神一击对低血量斩杀。"
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "card_id": "ONE-2271",
+  "card_id": "one_piece:香克斯",
   "hero": {
     "name": "香克斯",
     "name_en": "Shanks",
@@ -109,94 +109,5 @@
     "atk": 2.5,
     "ap": 1.5
   },
-  "skills": [
-    {
-      "name": "见闻色斩",
-      "key": "Q",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "单体",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 10,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 0,
-      "description": "2d10+STR 挥砍伤害。",
-      "approx": true
-    },
-    {
-      "name": "霸王色冲击",
-      "key": "W",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "范围",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "震慑",
-          "duration": 1,
-          "desc": "范围内敌人被震慑",
-          "target": "敌方"
-        }
-      ],
-      "cooldown": 1,
-      "description": "释放霸王色，震慑范围内敌人。",
-      "approx": true,
-      "aoe_radius": 10
-    },
-    {
-      "name": "武装色缠绕",
-      "key": "E",
-      "type": "物理",
-      "action": "附赠动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 0,
-        "dice_size": 0,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [
-        {
-          "type": "增益",
-          "duration": 2,
-          "desc": "攻击与防御提升",
-          "target": "自身"
-        }
-      ],
-      "cooldown": 2,
-      "description": "武装色缠绕，提升攻防，持续 2 回合。",
-      "approx": true
-    },
-    {
-      "name": "断臂之誓",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "近战",
-      "target": "范围",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 12,
-        "bonus_attr": "STR",
-        "type": "挥砍"
-      },
-      "effects": [],
-      "cooldown": 4,
-      "description": "3d12+STR 挥砍伤害，覆盖一片区域。",
-      "approx": true,
-      "aoe_radius": 10
-    }
-  ]
+  "legacy_card_id": "ONE-2271"
 }

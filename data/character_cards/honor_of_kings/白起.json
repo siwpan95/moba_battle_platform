@@ -1,5 +1,5 @@
 {
-  "card_id": "HON-1753",
+  "card_id": "honor_of_kings:白起",
   "hero": {
     "name": "白起",
     "name_en": "",
@@ -111,15 +111,45 @@
   },
   "skills": [
     {
-      "name": "护盾猛击",
+      "name": "坦克·不屈意志",
       "key": "Q",
+      "type": "真实",
+      "action": "短暂免疫控制",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "immune",
+          "duration": 1,
+          "desc": "免疫控制",
+          "target": "自身"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "1d4+CON 能量伤害。免疫控制",
+      "approx": true
+    },
+    {
+      "name": "护盾猛击",
+      "key": "W",
       "type": "物理",
       "action": "动作",
       "range": "近战",
       "target": "单体",
       "damage": {
         "dice_count": 1,
-        "dice_size": 10,
+        "dice_size": 12,
         "bonus_attr": "STR",
         "type": "钝击"
       },
@@ -136,8 +166,54 @@
         "dc_formula": "8+PROF+STR",
         "on_save": "无效"
       },
-      "cooldown": 0,
-      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。"
+      "cooldown": 1,
+      "description": "1d10+STR 钝击伤害。目标需通过STR豁免否则速度减半1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能二",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [],
+      "cooldown": 2,
+      "description": "210+STR 伤害。冷却1回合。",
+      "approx": true
+    },
+    {
+      "name": "技能三",
+      "key": "R",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "duration": 2,
+          "value": 15,
+          "desc": "速度+15尺",
+          "target": "自身"
+        }
+      ],
+      "cooldown": 4,
+      "description": "自身速度+15尺，持续2回合。冷却2回合。",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "HON-1753"
 }

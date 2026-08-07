@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2591",
+  "card_id": "three_body:维德",
+  "legacy_card_id": "THE-1006",
   "hero": {
     "name": "维德",
     "name_en": "Thomas Wade",
@@ -124,7 +125,14 @@
         "bonus_attr": "STR",
         "type": "钝击"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "击退",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "强袭冲击"
+        }
+      ],
       "cooldown": 0,
       "description": "2d10+STR 钝击伤害。",
       "approx": true
@@ -192,7 +200,14 @@
         "bonus_attr": "STR",
         "type": "钝击"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "击退",
+          "target": "敌方",
+          "duration": 0,
+          "desc": "强袭冲击"
+        }
+      ],
       "cooldown": 4,
       "description": "3d12+STR 钝击伤害，覆盖一片区域。",
       "approx": true,

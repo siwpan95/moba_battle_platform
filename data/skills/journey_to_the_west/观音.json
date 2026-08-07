@@ -1,0 +1,128 @@
+[
+  {
+    "name": "净瓶甘露",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "减速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "杨柳枝蘸净瓶甘露洒出，1d8+WIS 光耀伤害，目标减速1回合。"
+  },
+  {
+    "name": "慈航普渡",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "回复3d8生命"
+      },
+      {
+        "type": "cleanse",
+        "target": "自身",
+        "duration": 1,
+        "desc": "解除负面效果"
+      }
+    ],
+    "cooldown": 1,
+    "description": "观世音菩萨慈悲济世。回复3d8生命并解除全体负面效果。"
+  },
+  {
+    "name": "莲花宝座",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得大量护盾"
+      },
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "全体增伤+20%"
+      }
+    ],
+    "cooldown": 2,
+    "description": "莲花宝座佛光护体。全体获得护盾并增伤2回合。"
+  },
+  {
+    "name": "千手千眼",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "target": "自身",
+        "duration": 1,
+        "desc": "全体回复4d8"
+      },
+      {
+        "type": "shield",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得护盾"
+      },
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "震慑"
+      }
+    ],
+    "cooldown": 4,
+    "description": "千手千眼观音显圣！3d8+WIS 光耀范围伤害，全体回复4d8+护盾2回合，未通过WIS豁免者震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "无效"
+    },
+    "aoe_radius": 20
+  }
+]

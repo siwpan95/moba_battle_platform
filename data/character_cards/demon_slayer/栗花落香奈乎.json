@@ -1,0 +1,229 @@
+{
+  "card_id": "demon_slayer:栗花落香奈乎",
+  "legacy_card_id": "DEM-1018",
+  "hero": {
+    "name": "栗花落香奈乎",
+    "name_en": "Kanao Tsuyuri",
+    "alias": "",
+    "title": "Kanao Tsuyuri"
+  },
+  "game": {
+    "name": "Demon Slayer",
+    "name_cn": "鬼灭之刃",
+    "native_role": "花之呼吸 (Flower Breathing)",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "鬼灭之刃",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "收割",
+    "爆发",
+    "硬控制"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "花之呼吸·贰之型 御影梅",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "连击",
+          "target": "敌方",
+          "value": 3,
+          "desc": "梅花三弄般的三段突刺"
+        }
+      ],
+      "cooldown": 0,
+      "description": "花之呼吸·御影梅——刀如梅花纷落的三连突刺。2d8+DEX 挥砍伤害，三段连击。",
+      "approx": true
+    },
+    {
+      "name": "花之呼吸·肆之型 红花衣",
+      "key": "W",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 2,
+          "value": 20,
+          "desc": "花舞身法加速"
+        }
+      ],
+      "cooldown": 1,
+      "description": "栗花落香奈乎身着红衣般的弧形斩击——身如花瓣飘舞。2d6+DEX 挥砍伤害，速度+20尺持续2回合。",
+      "approx": true
+    },
+    {
+      "name": "花之呼吸·陆之型 涡桃",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "aoe_radius": 10,
+      "effects": [
+        {
+          "type": "眩晕",
+          "target": "敌方",
+          "duration": 1,
+          "dc_attr": "CON",
+          "desc": "涡旋斩击令敌眩晕"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "涡桃——如桃花漩涡般的回旋斩。2d10+DEX 挥砍伤害，10尺范围。CON豁免失败眩晕1回合。",
+      "approx": true
+    },
+    {
+      "name": "花之呼吸·终之型 彼岸朱眼",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "朱眼捕捉要害一击必杀"
+        },
+        {
+          "type": "暴击强化",
+          "target": "自身",
+          "duration": 2,
+          "value_formula": "PROF*10",
+          "desc": "朱眼洞察力大幅提升"
+        }
+      ],
+      "cooldown": 4,
+      "description": "栗花落香奈乎开启彼岸朱眼——极限动态视力捕捉一切破绽。4d10+DEX 穿刺伤害，必定暴击，后续2回合暴击率+PROF×10%。冷却4回合。",
+      "approx": true
+    }
+  ]
+}

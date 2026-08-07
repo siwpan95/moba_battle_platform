@@ -1,0 +1,117 @@
+[
+  {
+    "name": "蝙蝠爪",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "蝙蝠咬伤",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "卡玛佐茨挥出蝙蝠利爪——蝙蝠之神的手爪比黑曜石刀更锋利。1d10+DEX 挥砍伤害，dot 1回合。"
+  },
+  {
+    "name": "声呐尖叫",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "声呐攻击震碎神经",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "卡玛佐茨发出超声尖叫——他的声波能让猎物头晕目眩、失去方向。AOE恐惧。2d8+DEX 力场伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "暗夜飞扑",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "invis",
+        "desc": "融入黑夜",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "accel",
+        "desc": "无声滑翔",
+        "target": "自身",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 2,
+    "description": "卡玛佐茨融入暗夜——他是洞穴与黑暗的神明，在黑夜中如鱼得水。隐身+加速各2回合。"
+  },
+  {
+    "name": "嗜血狂宴",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "lifesteal",
+        "desc": "吸血狂宴",
+        "target": "自身",
+        "duration": ""
+      },
+      {
+        "type": "execute",
+        "desc": "血液吸干",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "卡玛佐茨展开嗜血狂宴——千万只蝙蝠同时从洞穴涌出，将战场化为鲜血的盛宴。吸血+低血斩杀。4d6+DEX 黯蚀伤害。",
+    "aoe_radius": 30
+  }
+]

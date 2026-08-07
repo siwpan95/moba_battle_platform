@@ -1,0 +1,114 @@
+[
+  {
+    "name": "逆流投掷",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "移动速度减半",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "奋力掷出一柄飞斧，对命中敌人造成1d10+STR挥砍伤害并减速2回合。拾起地上的飞斧可使此技能冷却减少2回合。DEX豁免成功则免疫减速。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "残暴打击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "攻击速度+50%",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "lifesteal",
+        "desc": "获得20%生命偷取",
+        "duration": 2,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "进入狂战士之怒，攻击速度+50%，并获得20%生命偷取。造成2d8+STR挥砍伤害。每损失2.5%生命值，治疗效果额外+1%。持续2回合。"
+  },
+  {
+    "name": "鲁莽挥击",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "闪电"
+    },
+    "effects": [
+      {
+        "type": "true_damage",
+        "desc": "此伤害无视减伤与护盾",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "以狂野之力劈出一道不可阻挡的闪电斩击。造成1d8+STR闪电伤害。此伤害为真实伤害，无视一切减伤与护盾效果。施放时自身消耗少量生命值，但若击杀目标则返还消耗。"
+  },
+  {
+    "name": "诸神黄昏",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "immune",
+        "desc": "免疫一切控制效果",
+        "duration": 3,
+        "target": "自身"
+      },
+      {
+        "type": "buff",
+        "desc": "攻击力+30%，移动速度+20尺",
+        "duration": 3,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "呼唤弗雷尔卓德的远古诸神之力，化身不可阻挡的毁灭风暴。造成2d10+STR挥砍伤害。免疫一切控制效果，攻击力+30%，移动速度+20尺，持续3回合。激活时被动护甲与魔抗翻倍。"
+  }
+]

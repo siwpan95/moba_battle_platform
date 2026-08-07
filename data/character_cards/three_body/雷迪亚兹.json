@@ -1,5 +1,6 @@
 {
-  "card_id": "THE-2595",
+  "card_id": "three_body:雷迪亚兹",
+  "legacy_card_id": "THE-1010",
   "hero": {
     "name": "雷迪亚兹",
     "name_en": "Rey Diaz",
@@ -124,7 +125,14 @@
         "bonus_attr": "DEX",
         "type": "火焰"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "核爆炸持续灼烧"
+        }
+      ],
       "cooldown": 0,
       "description": "2d10+DEX 火焰伤害。",
       "approx": true
@@ -192,7 +200,14 @@
         "bonus_attr": "DEX",
         "type": "火焰"
       },
-      "effects": [],
+      "effects": [
+        {
+          "type": "灼烧",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "核爆炸持续灼烧"
+        }
+      ],
       "cooldown": 4,
       "description": "4d10+DEX 火焰伤害，覆盖大片区域。",
       "approx": true,

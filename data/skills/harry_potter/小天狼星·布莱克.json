@@ -1,0 +1,114 @@
+[
+  {
+    "name": "魔杖突刺",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "魔杖冲击击退"
+      },
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "突刺穿透"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d6+DEX 穿刺伤害。",
+    "approx": true
+  },
+  {
+    "name": "大黑犬扑击",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 0,
+        "desc": "目标被击退"
+      },
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "撕咬持续伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害（犬形态扑击）。",
+    "approx": true
+  },
+  {
+    "name": "无声潜行",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 0,
+      "dice_size": 0,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "duration": 1,
+        "desc": "进入隐身并获得先攻",
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "进入隐身，持续 1 回合。",
+    "approx": true
+  },
+  {
+    "name": "阿兹卡班越狱",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "duration": 0,
+        "desc": "对孤立目标造成额外伤害",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害，对孤立目标处决。",
+    "approx": true
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "name": "虫之呼吸·蝶之舞 戏弄",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒素持续伤害"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d6+DEX 毒素伤害。",
+    "approx": true
+  },
+  {
+    "name": "虫之呼吸·蜂牙之舞 真弊",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒素持续伤害"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 毒素伤害。",
+    "approx": true
+  },
+  {
+    "name": "毒雾喷洒",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "duration": 2,
+        "desc": "范围内敌人中毒",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+DEX 毒素伤害，使范围敌人中毒。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "虫之呼吸·蜩之舞 复讐",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "剧毒",
+        "duration": 0,
+        "desc": "对鬼造成额外剧毒",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 毒素伤害，对鬼额外有效。",
+    "approx": true
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "name": "虎豹吹箭",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "希巴兰奎吹出虎豹之箭——英雄孪生子中最敏捷的猎手。1d8+DEX 穿刺伤害。"
+  },
+  {
+    "name": "变身",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "化为虎豹锁定猎物",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "希巴兰奎化身虎豹——他继承了孪生兄弟的变形之力。标记易伤2回合。2d6+DEX 穿刺伤害。"
+  },
+  {
+    "name": "狩猎之舞",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "猎豹的速度",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "invis",
+        "desc": "丛林匿踪",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "希巴兰奎跳出狩猎之舞——他的脚步轻捷如美洲豹，在丛林中无影无踪。加速2回合+隐身1回合。"
+  },
+  {
+    "name": "孪生太阳",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "太阳英雄终结敌人",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "致盲",
+        "desc": "第二个太阳升起",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "希巴兰奎化身为第二颗太阳——孪生兄弟击败冥界后都化为了天上的太阳。低血斩杀+AOE致盲。3d8+DEX 光耀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

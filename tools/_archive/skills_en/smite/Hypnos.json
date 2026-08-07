@@ -1,0 +1,122 @@
+[
+  {
+    "name": "罂粟花",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "昏昏欲睡",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "许普诺斯摇晃罂粟花——睡神的气息让最警醒的哨兵也垂下眼皮。1d8+INT 力场伤害，减速1回合。"
+  },
+  {
+    "name": "沉睡",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "陷入沉睡",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "许普诺斯令目标沉睡——他曾让宙斯本人陷入睡眠，让赫拉得以在特洛伊战争中做手脚。AOE沉睡1回合。2d6+INT 力场伤害。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "梦境之门",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "梦境之纱",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "1d8+INT"
+      },
+      {
+        "type": "invis",
+        "desc": "遁入梦境",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "许普诺斯打开梦境之门——他的洞穴位于冥界，勒忒河的遗忘之水在洞口缓缓流过。护盾2回合+隐身1回合。"
+  },
+  {
+    "name": "永恒沉睡",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "控制",
+        "desc": "永恒沉睡",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "execute",
+        "desc": "在梦中永眠",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "许普诺斯降下永恒沉睡——当睡神不再手下留情，整个战场都会在几息之间陷入静谧。AOE沉睡+低血斩杀。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

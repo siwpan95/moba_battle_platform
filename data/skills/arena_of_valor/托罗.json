@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Heavy Slam",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "目标移动速度减半，持续2轮"
+      }
+    ],
+    "cooldown": 0,
+    "description": "沉重的钝击撕裂空气，Toro挥动武器发起冲锋。1d10+STR 钝击伤害。 目标移动速度减半，持续2轮。"
+  },
+  {
+    "name": "Iron Fortress",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "reduce",
+        "target": "自身",
+        "duration": 1,
+        "desc": "本回合受到伤害减半"
+      }
+    ],
+    "cooldown": 1,
+    "description": "Toro架起防御姿态，以钢铁意志吸收伤害。2d6+STR 钝击伤害。 本回合受到伤害减半。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "Unyielding Will",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "目标移动速度减半，持续2轮"
+      }
+    ],
+    "cooldown": 2,
+    "description": "大地震颤，Toro的重击碾碎敌阵。1d8+STR 钝击伤害。 目标移动速度减半，持续2轮。"
+  },
+  {
+    "name": "Earthshatter",
+    "key": "P",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "target": "敌方",
+        "duration": 1,
+        "saving_throw": {
+          "attr": "CON",
+          "dc_formula": "8+PROF+STR",
+          "on_save": "无效"
+        },
+        "desc": "使目标冻结1轮（CON豁免 DC=8+PROF+STR，豁免无效）"
+      }
+    ],
+    "cooldown": 4,
+    "description": "「见证我的怒火！」Toro化身不可阻挡的战争机器。2d8+STR 钝击伤害。 使目标冻结1轮（CON豁免 DC=8+PROF+STR，豁免无效）。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "无效"
+    },
+    "aoe_radius": 10
+  }
+]

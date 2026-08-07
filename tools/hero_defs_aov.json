@@ -1,0 +1,1032 @@
+[
+  {
+    "name": "Arduin",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Arthur",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Ata",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Baldum",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Chaugnar",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Cresht",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Grakk",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Lumburr",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Maloch",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Omega",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Ormarr",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Skud",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Taara",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Toro",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Wiro",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Xeniel",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Ybneth",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Zip",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Gildur",
+    "role": "tank",
+    "skills": {
+      "Q": "Heavy Slam",
+      "W": "Iron Fortress",
+      "E": "Unyielding Will",
+      "R": "Earthshatter"
+    }
+  },
+  {
+    "name": "Airi",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Allain",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Amily",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Aoi",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Astrid",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Bijan",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Dextra",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Errol",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Florentino",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "KilGroth",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Lu Bu",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Max",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Omen",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Qi",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Riktor",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Rourke",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Ryoma",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Superman",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Tachi",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Veres",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Volkath",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Wonder Woman",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Wukong",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Yan",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Zanis",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Zuka",
+    "role": "fighter",
+    "skills": {
+      "Q": "Blade Rush",
+      "W": "War Stomp",
+      "E": "Battle Spirit",
+      "R": "Final Stand"
+    }
+  },
+  {
+    "name": "Enzo",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Kaine",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Keera",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Kriknak",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Paine",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Quillen",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Sinestrea",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Zephys",
+    "role": "assassin",
+    "skills": {
+      "Q": "Shadow Strike",
+      "W": "Venom Blade",
+      "E": "Flicker Step",
+      "R": "Death Mark"
+    }
+  },
+  {
+    "name": "Aleister",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "AzzenKa",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Darcy",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Diaochan",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Dirak",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Iggy",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Ignis",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Ilumia",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Ishar",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Jinnar",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Krizzix",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Lauriel",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Liliana",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Lorion",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Marja",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Mganga",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Natalya",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Preyta",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Raz",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Sephera",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Tulen",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Veera",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Yue",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Zata",
+    "role": "mage",
+    "skills": {
+      "Q": "Arcane Bolt",
+      "W": "Mystic Cage",
+      "E": "Eldritch Flow",
+      "R": "Cataclysm"
+    }
+  },
+  {
+    "name": "Bonnie",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Bright",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Brunhilda",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Capheny",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Elsu",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Elandorr",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Fennik",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Hayate",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Laville",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Lindis",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Moren",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Slimz",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Stuart",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Teeri",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "TelAnnas",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Thorne",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Wisp",
+    "role": "marksman",
+    "skills": {
+      "Q": "Piercing Shot",
+      "W": "Hunters Trap",
+      "E": "Evasive Roll",
+      "R": "Barrage"
+    }
+  },
+  {
+    "name": "Alice",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Annette",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Arum",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Aya",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Helen",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Ming",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Rouie",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "Roxie",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  },
+  {
+    "name": "TeeMee",
+    "role": "support",
+    "skills": {
+      "Q": "Sacred Light",
+      "W": "Guardian Blessing",
+      "E": "Warding Aura",
+      "R": "Divine Intervention"
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "霸王举鼎",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "sunder",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "破甲：目标护甲降低"
+      }
+    ],
+    "cooldown": 0,
+    "description": "力拔山兮气盖世！1d10+STR 挥砍伤害，目标护甲降低1回合。西楚霸王之神力无人能挡。"
+  },
+  {
+    "name": "破釜沉舟",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击提升"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "速度减半"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "无效"
+    },
+    "cooldown": 1,
+    "description": "沉舟破釜，背水一战！2d8+STR 挥砍伤害，自身攻击提升2回合。目标需通过CON豁免否则速度减半。"
+  },
+  {
+    "name": "乌骓突骑",
+    "key": "3",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "target": "自身",
+        "duration": 1,
+        "desc": "冲锋突进"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "击退目标"
+      }
+    ],
+    "cooldown": 2,
+    "description": "跨乌骓宝马突入敌阵！1d8+STR 钝击伤害。自身冲锋突进，击退目标。"
+  },
+  {
+    "name": "霸王别姬·垓下歌",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "target": "自身",
+        "duration": 2,
+        "desc": "伤害+50%，攻击范围扩大"
+      },
+      {
+        "type": "execute",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "低血量额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "aoe_radius": 15,
+    "description": "力拔山兮气盖世，时不利兮骓不逝！2d10+STR 挥砍范围伤害。自身获得增伤2回合，对低血量目标伤害翻倍。"
+  }
+]

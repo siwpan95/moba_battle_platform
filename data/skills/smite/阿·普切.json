@@ -1,0 +1,124 @@
+[
+  {
+    "name": "腐烂之触",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "肉体腐烂",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "阿普切伸出腐烂之手——玛雅死神所触之物会在瞬间腐坏。1d8+INT 黯蚀伤害，dot 2回合。"
+  },
+  {
+    "name": "尸骸风暴",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "尸骸从天而降",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "阿普切降下尸骸风暴——腐烂的尸体像冰雹般砸落，同时发出凄厉的尖叫。AOE恐惧。2d6+INT 黯蚀伤害。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "冥界召唤",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "shield",
+        "desc": "亡灵护体",
+        "target": "自身",
+        "duration": "2",
+        "value_formula": "2d6+INT"
+      },
+      {
+        "type": "heal",
+        "desc": "吸取生命力",
+        "target": "自身",
+        "duration": "",
+        "value_formula": "2d6+INT"
+      }
+    ],
+    "cooldown": 2,
+    "description": "阿普切呼唤冥界之力——西巴尔巴的亡魂环绕在他的四周。护盾+回复。"
+  },
+  {
+    "name": "永恒腐败",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "一切皆腐",
+        "target": "敌方",
+        "duration": "3"
+      },
+      {
+        "type": "execute",
+        "desc": "在腐烂中消逝",
+        "target": "敌方",
+        "duration": ""
+      }
+    ],
+    "cooldown": 4,
+    "description": "阿普切释放永恒腐败——在他的领域中，即使不朽者也会感受到肉身的溃烂与衰竭。AOE dot 3回合+低血斩杀。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  }
+]

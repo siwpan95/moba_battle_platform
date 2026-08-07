@@ -1,0 +1,104 @@
+[
+  {
+    "name": "恋之呼吸·壹之型 初恋之绊创",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击速度提升"
+      }
+    ],
+    "cooldown": 0,
+    "description": "2d8+STR 挥砍伤害。",
+    "approx": true
+  },
+  {
+    "name": "恋之呼吸·叁之型 猫猫恋爱",
+    "key": "W",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击速度提升"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 挥砍伤害。",
+    "approx": true
+  },
+  {
+    "name": "恋之呼吸·伍之型 摇曳恋风",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击速度提升"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d8+STR 挥砍伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 8
+  },
+  {
+    "name": "恋之呼吸·陆之型 猫猫狂恋",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "攻击速度提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d10+STR 挥砍伤害，覆盖一片区域。",
+    "approx": true,
+    "aoe_radius": 10
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "name": "玄武真功·山海拳经",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "连击",
+        "value": 2,
+        "desc": "山海拳经连绵不绝二段追击",
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 0,
+    "description": "十强武者武无敌自创的玄武真功——山海拳经刚柔并济。2d8+STR 钝击伤害，二段连击。"
+  },
+  {
+    "name": "玄武真功·列强腿绝",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "列强腿劲踢飞目标",
+        "target": "敌方"
+      },
+      {
+        "type": "倒地",
+        "duration": 1,
+        "desc": "挨了这脚必倒地不起",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 1,
+    "description": "十强武道之腿法——列强腿绝如战斧劈落。2d10+DEX 钝击伤害。STR豁免失败击飞15尺并倒地。冷却1回合。"
+  },
+  {
+    "name": "玄武真功·甲骨龙爪",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿甲",
+        "desc": "龙爪手无视所有护甲加值",
+        "target": "敌方"
+      },
+      {
+        "type": "内伤",
+        "duration": 2,
+        "dmg_per_turn": "1d6",
+        "desc": "爪劲透骨造成内伤",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 2,
+    "description": "十强武道之爪法——甲骨龙爪，撕裂万物！2d10+STR 穿刺伤害，无视护甲。CON豁免失败内伤2回合(每回合1d6)。冷却2回合。"
+  },
+  {
+    "name": "十方无敌·十强归元",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "范围",
+    "damage": {
+      "dice_count": 5,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "aoe_radius": 25,
+    "effects": [
+      {
+        "type": "眩晕",
+        "duration": 2,
+        "dc_attr": "CON",
+        "desc": "十强武道齐发，震晕群敌",
+        "target": "敌方"
+      },
+      {
+        "type": "击飞",
+        "duration": 1,
+        "dc_attr": "STR",
+        "desc": "十方无敌轰飞一切",
+        "target": "敌方"
+      }
+    ],
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "cooldown": 4,
+    "description": "武无敌将十强武道融会贯通的终极一击——十方无敌，天下无双！5d10+STR 力场伤害，25尺范围。CON豁免失败眩晕2回合。STR豁免失败击飞25尺。冷却4回合。"
+  }
+]

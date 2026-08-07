@@ -1,0 +1,121 @@
+[
+  {
+    "name": "狐火",
+    "key": "1",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "desc": "狐火灼烧灵魂，经久不灭",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 0,
+    "description": "妲己弹指出一缕青蓝色狐火——看似幽美，触之则焚骨蚀魂。1d8+INT 黯蚀伤害，dot 2回合。"
+  },
+  {
+    "name": "倾国",
+    "key": "2",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "desc": "倾国倾城，令敌人神魂颠倒",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 1,
+    "description": "妲己回眸一笑——倾国倾城的容颜令敌人瞬间失神，兵器脱手。2d6+INT 力场伤害，魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  },
+  {
+    "name": "狐媚",
+    "key": "3",
+    "type": "法术",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "狐步轻盈，如鬼似魅",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "invis",
+        "desc": "幻术迷眼，隐入妖雾",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "妲己施展狐媚之术——九尾妖狐的幻术连纣王都深陷其中无法自拔。获得隐身1回合+加速2回合。"
+  },
+  {
+    "name": "九尾天狐",
+    "key": "4",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "desc": "九尾真身显露，凡人心胆俱裂",
+        "target": "敌方",
+        "duration": "1"
+      },
+      {
+        "type": "dot",
+        "desc": "九条狐尾带九种孽火",
+        "target": "敌方",
+        "duration": "3"
+      }
+    ],
+    "cooldown": 4,
+    "description": "妲己现出九尾狐真身——九条狐尾遮天蔽日，每一尾燃着一种孽火，焚尽世间一切不洁。AOE恐惧+dot 3回合。4d6+INT 黯蚀伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "无效"
+    }
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "name": "冈格尼尔投掷",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [],
+    "cooldown": 0,
+    "description": "奥丁掷出永恒之枪冈格尼尔——这支由矮人锻造的神枪永不偏离目标，划破长空如一道苍白闪电。1d10+STR 穿刺伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "渡鸦之眼",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "vuln",
+        "desc": "福金与雾尼盘旋于敌人上空，揭露其所有弱点",
+        "duration": 2,
+        "target": "敌方"
+      }
+    ],
+    "cooldown": 1,
+    "description": "奥丁肩头双鸦——思想之福金与记忆之雾尼——展翅扑向敌人，啄食其眼目。目标被标记为易伤，2回合内所受伤害加深。2d8+STR 穿刺伤害。"
+  },
+  {
+    "name": "卢恩符文",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "desc": "奥丁以卢恩文字刻写胜利之咒，强化自身战力",
+        "duration": 2,
+        "target": "自身"
+      },
+      {
+        "type": "immune",
+        "desc": "符文护体，免疫控制效果",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "奥丁吟唱古老的卢恩符文——那是他倒吊世界树九昼夜、以长矛刺穿自己换来的智慧。符文之力使他获得增幅与短暂免疫控制。1d8+STR 力场伤害。"
+  },
+  {
+    "name": "英灵殿之门",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "奥丁骑乘八足神驹斯雷普尼尔发起冲锋",
+        "duration": 1,
+        "target": "自身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "奥丁骑乘八足神驹斯雷普尼尔，率领英灵殿的亡灵战士发起最终冲锋。所过之处，大地震颤，生者尽数归于他的名下。2d10+STR 穿刺伤害，AOE，自身获得加速。",
+    "aoe_radius": 25,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

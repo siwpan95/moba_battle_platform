@@ -1,5 +1,5 @@
 {
-  "card_id": "ONM-2356",
+  "card_id": "onmyoji_arena:椒图",
   "hero": {
     "name": "椒图",
     "name_en": "",
@@ -111,27 +111,125 @@
   },
   "skills": [
     {
-      "name": "大招",
+      "name": "辅助·治愈之光",
+      "key": "Q",
+      "type": "混合",
+      "action": "恢复生命",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "heal",
+          "duration": 1,
+          "desc": "治疗",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 0,
+      "description": "2d8+WIS 能量伤害。治疗",
+      "approx": true
+    },
+    {
+      "name": "辅助·守护结界",
+      "key": "W",
+      "type": "法术",
+      "action": "提供护盾",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "shield",
+          "duration": 1,
+          "desc": "护盾",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
+      },
+      "cooldown": 1,
+      "description": "1d10+WIS 法术伤害。护盾",
+      "approx": true
+    },
+    {
+      "name": "辅助·增益祝福",
+      "key": "E",
+      "type": "混合",
+      "action": "提升属性",
+      "range": "自身",
+      "target": "友方",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 12,
+        "bonus_attr": "CHA",
+        "type": "能量"
+      },
+      "effects": [
+        {
+          "type": "buff",
+          "duration": 1,
+          "desc": "增益",
+          "target": "友方"
+        }
+      ],
+      "saving_throw": {
+        "attr": "CHA",
+        "dc_formula": "8+PROF+CHA",
+        "on_save": "无效"
+      },
+      "cooldown": 2,
+      "description": "1d6+CHA 能量伤害。增益",
+      "approx": true
+    },
+    {
+      "name": "辅助·净化术",
       "key": "R",
       "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
+      "action": "移除负面",
+      "range": "远程",
+      "target": "友方",
       "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
+        "dice_count": 1,
+        "dice_size": 12,
         "bonus_attr": "WIS",
-        "type": "光耀"
+        "type": "法术"
       },
-      "effects": [],
-      "aoe_radius": 15,
+      "effects": [
+        {
+          "type": "cleanse",
+          "duration": 1,
+          "desc": "净化",
+          "target": "友方"
+        }
+      ],
       "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "无效"
       },
       "cooldown": 4,
-      "description": "48+WIS 范围伤害。DEX豁免减半。冷却4回合。"
+      "description": "1d4+WIS 法术伤害。净化",
+      "approx": true
     }
-  ]
+  ],
+  "legacy_card_id": "ONM-2356"
 }

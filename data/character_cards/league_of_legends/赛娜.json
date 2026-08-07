@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-2013",
+  "card_id": "league_of_legends:赛娜",
+  "legacy_card_id": "LEA-1145",
   "hero": {
     "name": "赛娜",
     "name_en": "Senna",
@@ -108,30 +109,5 @@
     "hp": 70,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "大招",
-      "key": "R",
-      "type": "物理",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "effects": [],
-      "aoe_radius": 15,
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      },
-      "cooldown": 4,
-      "description": "48+DEX 范围伤害。DEX豁免减半。冷却4回合。"
-    }
-  ]
+  }
 }

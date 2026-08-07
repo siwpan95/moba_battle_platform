@@ -1,5 +1,6 @@
 {
-  "card_id": "LEA-1962",
+  "card_id": "league_of_legends:璐璐",
+  "legacy_card_id": "LEA-1094",
   "hero": {
     "name": "璐璐",
     "name_en": "Lulu",
@@ -107,24 +108,5 @@
     "hp": 50,
     "atk": 2.5,
     "ap": 1.5
-  },
-  "skills": [
-    {
-      "name": "技能二",
-      "key": "W",
-      "type": "法术",
-      "action": "动作",
-      "range": "60尺",
-      "target": "范围",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "火焰"
-      },
-      "effects": [],
-      "cooldown": 1,
-      "description": "26+INT 伤害。冷却1回合。"
-    }
-  ]
+  }
 }

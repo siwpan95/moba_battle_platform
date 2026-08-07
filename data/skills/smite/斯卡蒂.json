@@ -1,0 +1,122 @@
+[
+  {
+    "name": "冰弓",
+    "key": "1",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "冰箭冻结",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 0,
+    "description": "斯卡蒂弯弓搭箭——这位女巨人/冬之女神终身在雪山上狩猎。1d8+DEX 穿刺伤害，减速1回合。"
+  },
+  {
+    "name": "雪崩",
+    "key": "2",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "slow",
+        "desc": "雪崩掩埋一切",
+        "target": "敌方",
+        "duration": "2"
+      }
+    ],
+    "cooldown": 1,
+    "description": "斯卡蒂引发雪崩——整个山坡的积雪倾泻而下，万物皆被白色吞没。AOE减速2回合。2d6+DEX 寒冷伤害。",
+    "aoe_radius": 20,
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "滑雪",
+    "key": "3",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "accel",
+        "desc": "滑雪飞驰",
+        "target": "自身",
+        "duration": "2"
+      },
+      {
+        "type": "invis",
+        "desc": "融入暴风雪",
+        "target": "自身",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 2,
+    "description": "斯卡蒂穿越暴风雪——在漫天飞雪中，她是最致命的猎手。加速2回合+隐身1回合。"
+  },
+  {
+    "name": "冬狼召唤",
+    "key": "4",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "desc": "狼群猎杀虚弱者",
+        "target": "敌方",
+        "duration": ""
+      },
+      {
+        "type": "束缚",
+        "desc": "狼群围猎",
+        "target": "敌方",
+        "duration": "1"
+      }
+    ],
+    "cooldown": 4,
+    "description": "斯卡蒂召唤冬狼群——雪山上所有的白狼应她召唤而来，将猎物团团围住。低血斩杀+AOE束缚。3d8+DEX 寒冷伤害。",
+    "aoe_radius": 30,
+    "saving_throw": {
+      "attr": "STR",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "无效"
+    }
+  }
+]
