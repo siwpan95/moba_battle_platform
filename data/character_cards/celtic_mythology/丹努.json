@@ -118,12 +118,12 @@
       "type": "法术",
       "damage": {
         "dice_count": 1,
-        "dice_size": 8,
+        "dice_size": 6,
         "bonus_attr": "WIS",
         "type": "光耀"
       },
       "cooldown": 0,
-      "description": "发射圣光弹幕攻击敌人。辅助的基础远程骚扰手段。",
+      "description": "1d6+WIS光耀伤害。丹努投出「母河轻抚」，一点微光钉在敌背，猎杀就此开始。标记目标，使其受到额外伤害。",
       "range": "远程",
       "target": "单体",
       "action": "动作",
@@ -147,7 +147,7 @@
         "type": "光耀"
       },
       "cooldown": 1,
-      "description": "吟唱治疗祷言/释放护盾，为盟友提供生命恢复或伤害吸收。",
+      "description": "2d6+WIS光耀伤害。丹努引「大地庇佑」，暖流漫过伤处，血肉在光中悄然弥合。恢复生命值；生成临时伤害吸收护盾。",
       "range": "远程",
       "target": "单体",
       "action": "动作",
@@ -179,7 +179,7 @@
         "type": "光耀"
       },
       "cooldown": 2,
-      "description": "施加祝福/净化，强化盟友属性或清除负面效果。辅助的增益核心。",
+      "description": "1d8+WIS光耀伤害。丹努张开「神族赐福」，光壁在身周凝成，来袭之伤尽碎于其上。生成临时伤害吸收护盾。",
       "range": "远程",
       "target": "单体",
       "action": "动作",
@@ -204,12 +204,12 @@
       "type": "法术",
       "damage": {
         "dice_count": 3,
-        "dice_size": 8,
+        "dice_size": 6,
         "bonus_attr": "WIS",
         "type": "光耀"
       },
       "cooldown": 4,
-      "description": "召唤神圣领域/天使庇护，为大范围盟友提供强力保护与治疗。",
+      "description": "3d6+WIS光耀伤害。丹努倾洒「达努恩泽」，翠绿的雾化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
       "range": "远程",
       "target": "范围",
       "action": "动作",

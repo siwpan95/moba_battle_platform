@@ -25,6 +25,19 @@ def check_cards() -> dict:
     return {"ok": r.returncode == 0, "returncode": r.returncode, "tail": tail}
 
 
+def check_dual_representation() -> dict:
+    """R4 双表示守卫：公版 IP 卡内嵌 skills 须与 data/skills/<ip>/<英雄>.json 完全一致，
+    且 4 技能骰期望之和落在 GDD ROLE_BAND 内。直接从 tools.check_cards 复用同一实现。"""
+    sys.path.insert(0, paths.PROJECT_ROOT)
+    try:
+        from tools.check_cards import check_dual_representation as _fn
+    except Exception as e:
+        return {"ok": False, "error": f"import 失败: {e}"}
+    errors, checked = _fn()
+    return {"ok": len(errors) == 0, "checked": checked,
+            "error_count": len(errors), "errors": errors[:10]}
+
+
 def run_pytest() -> dict:
     """运行 pytest tests/ -q。"""
     r = subprocess.run(
@@ -65,9 +78,11 @@ def smoke_battle(n: int = 20, max_turns: int = 50, seed: int = 42) -> dict:
 
 
 def verify(run_pytest: bool = False, smoke: bool = False) -> dict:
-    """主入口。check_cards 必跑；pytest / smoke 可选。"""
+    """主入口。check_cards 与双表示守卫必跑；pytest / smoke 可选。"""
     rep = {"check_cards": check_cards()}
     ok = rep["check_cards"]["ok"]
+    rep["check_dual_representation"] = check_dual_representation()
+    ok = ok and rep["check_dual_representation"]["ok"]
     if run_pytest:
         rep["pytest"] = run_pytest()
         ok = ok and rep["pytest"]["ok"]
@@ -78,4 +93,4 @@ def verify(run_pytest: bool = False, smoke: bool = False) -> dict:
     return rep
 
 
-__all__ = ["check_cards", "run_pytest", "smoke_battle", "verify"]
+__all__ = ["check_cards", "check_dual_representation", "run_pytest", "smoke_battle", "verify"]
