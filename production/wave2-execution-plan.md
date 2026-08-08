@@ -349,11 +349,12 @@ mkdir data/source/three_kingdoms
 
 内容模板参考 §3.3。
 
-#### 步骤 3：建 `data/skills/<game_id>.json` 技能数据
+#### 步骤 3：建 `data/skills/<game_id>/` 技能数据（每英雄一个文件）
 
 ```bash
-# 如果文件不存在则创建空结构
-echo '{}' > data/skills/three_kingdoms.json
+# 为每英雄新建一个文件，内容为 4 技能 dict 的 list
+mkdir -p data/skills/three_kingdoms
+echo '[]' > data/skills/three_kingdoms/示例英雄.json
 ```
 
 然后按 Wave 1 附录 A 格式填入英雄→技能映射。最低要求：前 5 个英雄完成即可跑通管线验证。
@@ -557,7 +558,7 @@ print(f"\n  技能文件覆盖: {len(detailed)}/{total_games} 详细, {len(place
 ```python
 # tests/test_wave2.py
 def test_all_new_ips_have_skills_file():
-    """验证 WAVE2_IPS 中每个 IP 都有 data/skills/<game_id>.json"""
+    """验证 WAVE2_IPS 中每个 IP 都有 data/skills/<game_id>/ 目录且每英雄一个技能文件"""
     ...
 
 def test_new_heroes_pass_gate_c():

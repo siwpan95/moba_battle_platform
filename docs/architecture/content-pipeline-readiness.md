@@ -25,7 +25,7 @@
 > 即 SEV-2 事故（42% 英雄开战即崩）的**根因代码从未被修复**，当年只迁移了磁盘数据（`tools/migrate_skills_format.py`），没修生成器。
 > 今天只要新增任何一个 IP，或为既有 IP 补任何一个技能库未覆盖的英雄，**CI 门禁 `tools/check_cards.py` 立刻转红**，且该英雄退化为 1 个技能。
 
-这条路径当前的命中面高达 **65%**：全库 1659 张卡中仅 **581 张（35%）** 在 `data/skills/<game_id>.json` 中有真实技能数据，其余 1078 张全部走回退。技能数分布证实了这一点——**只有 574 张卡（34.6%）拥有完整 4 技能**，700 张仅 1 技能，378 张为 QWER×3 的 12 条冗余。
+这条路径当前的命中面高达 **65%**：全库 1659 张卡中仅 **581 张（35%）** 在 `data/skills/<game_id>/<英雄名>.json`（每英雄一个文件）中有真实技能数据，其余 1078 张全部走回退。技能数分布证实了这一点——**只有 574 张卡（34.6%）拥有完整 4 技能**，700 张仅 1 技能，378 张为 QWER×3 的 12 条冗余。
 
 **结论**：内容扩充在**修复 5 项 P0/P1 改动后可以放行**；不修则每扩一个 IP 都在放大既有 65% 的内容债，且 CI 无法通过。
 
@@ -84,7 +84,7 @@ Python 3.13.14 (Windows) — 注：CI 矩阵为 3.10/3.11/3.12/3.13
 
 ```
                      ┌───────────────────────── 内容生产端 (tools/) ─────────────────────────┐
-data/source/<game_id>/heroes.json          data/skills/<game_id>.json      data/skills/_templates.json
+data/source/<game_id>/heroes.json          data/skills/<game_id>/<英雄名>.json      data/skills/_templates.json
         │  (人工/爬取录入)                        │ (结构化D&D技能)                │ (6职业通用模板)
         ▼                                        │                                │
 data/analysis/all_heroes_unified.json            │                                │
@@ -211,7 +211,7 @@ if os.path.basename(f).startswith("_"):
 | 2 | 补 `hero_file` 候选名 | `core/registry.py:61-63` | `detect_hero_file()`（`:66-75`）回退 `heroes.json` |
 | 3 | 建 `data/source/<game_id>/heroes.json` | — | 无源数据 |
 | 4 | 并入 `data/analysis/all_heroes_unified.json` | — | 生成器读不到（`card_generator.py:34`） |
-| 5 | **建 `data/skills/<game_id>.json`** | — | **触发 BLOCKER-1，产出违约卡片** |
+| 5 | **建 `data/skills/<game_id>/` 并为每英雄新建 `<英雄名>.json`** | — | **触发 BLOCKER-1，产出违约卡片** |
 | 6 | （可选）补英雄名中文化 | `tools/hero_name_mapping.py` | 英雄名保留原文 |
 
 > `tools/card_tool.py:530-594` 的 `add-game` 子命令**只完成了第 3 步**（建 `data/source/` 模板 + 说明.md），
@@ -528,7 +528,7 @@ result[display] = card          # ← OrderedDict 直接覆盖，无碰撞检测
 
 **对内容扩充的阻断性**：
 - 新增任意 IP（技能库必然从空开始）→ 所有卡 `skills: dict` → **`tools/check_cards.py` 非零退出 → CI 红 → 无法合并**
-- 为既有 IP 补录英雄，只要不在 `skills/<game_id>.json` 中 → 同上
+- 为既有 IP 补录英雄，只要不在 `data/skills/<game_id>/<英雄名>.json` 中 → 同上
 - 即使绕过 CI，该英雄在客户端只有 **1 个技能**，且 `random.choice` 使其**不可复现**（虽有 `random.seed(rng_seed)` 于 `:366`，但模板选择随之绑定到 seed，语义上仍是"随机抽一个技能当全部技能"）
 
 **必改**：`get_skills()` 的返回类型契约必须锁死为 `list[Skill]`（长度 4）。

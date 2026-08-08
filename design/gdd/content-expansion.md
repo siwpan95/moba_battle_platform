@@ -129,10 +129,10 @@
 
 ### 1.6 根因：源技能文件覆盖缺口
 
-`tools/card_generator.py:196` 按 `game_id` 从 `data/skills/<game_id>.json` 加载真实技能；
+`tools/card_generator.py:196` 按 `game_id` 从 `data/skills/<game_id>/<英雄名>.json`（每英雄一个文件）加载真实技能；
 缺失时回落 `_templates.json` 角色模板。实测源文件条目数：
 
-| IP | 卡数 | `data/skills/<ip>.json` 条目 | **缺口** |
+| IP | 卡数 | `data/skills/<ip>/` 英雄文件数 | **缺口** |
 |---|---|---|---|
 | league_of_legends | 172 | 50 | **122** |
 | smite | 130 | 12 | **118** |
@@ -284,7 +284,7 @@
 
 **目标：真实技能覆盖 574（34.6%）→ 1100–1200（66–72%）。**
 
-做法是补 `data/skills/<game_id>.json` 源条目（§1.6 已证明管线自动生效，无需改代码）。
+做法是补 `data/skills/<game_id>/<英雄名>.json` 源文件（每英雄一个文件，§1.6 已证明管线自动生效，无需改代码）。
 
 **优先级排序原则**（按 `缺口 × IP 知名度 × 数据可得性` 加权）：
 
@@ -658,7 +658,7 @@ FAIL      : 任一 A-1/A-2/A-3/A-6/A-7、B-1/B-2、任一 C、任一 D、任一 
    分类，统计 `flavor` 占比与未识别 `type` 频次。
 5. **平衡基线**：`import core.simulator.BattleSimulator`，固定 `random.Random(20260805)`，
    60 回合上限，按 §4.3 采样协议跑 A/B/C 三组实验。
-6. **源覆盖缺口**：对比 `data/skills/<game_id>.json` 的有效英雄条目数与
+6. **源覆盖缺口**：对比 `data/skills/<game_id>/` 的英雄文件数与
    `data/character_cards/<game_id>/` 的卡数。
 
 **未做任何写操作**；分析脚本存放于工作区外临时目录，未落入仓库。

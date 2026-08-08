@@ -424,12 +424,11 @@ Week 9:   全量回顾 → 决定是否推进 1-D/1-E 还是跳 Wave 2
 
 ## 附录 A — 源数据条目格式模板
 
-新增的 `data/skills/<game_id>.json` 条目必须遵循以下格式：
+新增的 `data/skills/<game_id>/<英雄名>.json` 必须遵循以下格式（每英雄一个文件，内容为 4 个技能 dict 的 list）：
 
 ```json
-{
-  "丽桑卓": [
-    {
+[
+  {
       "name": "冰霜之环",
       "key": "Q",
       "type": "法术",
@@ -459,8 +458,7 @@ Week 9:   全量回顾 → 决定是否推进 1-D/1-E 还是跳 Wave 2
       "description": "释放冰霜之环，造成1d8+INT冷冻伤害。目标须通过CON豁免，失败则速度减半2回合，成功则伤害减半。"
     }
     // ... (3 more skills with cooldown=1,2,4)
-  ]
-}
+]
 ```
 
 **必须满足的契约**：
