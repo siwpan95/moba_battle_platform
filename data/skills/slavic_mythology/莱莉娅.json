@@ -1,0 +1,112 @@
+[
+  {
+    "name": "桦树少女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "戴上花冠"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。少女们在桦树下选出一个「莱莉娅」，给她戴上花冠。增益2回合。"
+  },
+  {
+    "name": "绿之周",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "绿周休养"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。谢肉节后的绿周属于她。这一周不许干重活。回复。"
+  },
+  {
+    "name": "初恋之神",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被初春迷住"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她管的不是婚姻，是还没定下来的那部分。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "河上花冠",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "花冠随水而去"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "恢复生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。少女把花冠放进河里漂走。漂到谁那里，谁就有了消息。净化+治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

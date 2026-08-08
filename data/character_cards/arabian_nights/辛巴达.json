@@ -1,24 +1,23 @@
 {
-  "card_id": "arabian_nights:辛巴达",
-  "legacy_card_id": "ONE-97613",
+  "card_id": "Arabian_Nights:辛巴达",
+  "legacy_card_id": "ARA-1007",
   "hero": {
     "name": "辛巴达",
     "name_en": "Sinbad",
-    "alias": "",
-    "title": "Sinbad"
+    "alias": "七海航海家",
+    "title": "七海航海家"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "战士",
     "universal_role": "fighter",
     "role_name": "战士",
     "role_dnd_class": "战士"
   },
-  "source": "一千零一夜",
+  "source": "阿拉伯神话",
   "difficulty": 3,
   "playstyle_tags": [
-    "变身",
     "持续输出",
     "突进",
     "缠斗"
@@ -113,52 +112,52 @@
   },
   "skills": [
     {
-      "name": "水手斩",
+      "name": "七次远航",
       "key": "Q",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 1,
         "dice_size": 10,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 0,
-      "description": "挥舞武器发动沉重打击。战士的近身搏杀之本。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "处决",
-          "desc": "对低血量目标造成额外伤害",
-          "duration": 0,
-          "target": "敌方"
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "航海之运"
         }
-      ]
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。他七次出海，七次差点回不来。增益2回合。"
     },
     {
-      "name": "船板护壁",
+      "name": "巨鲸之脊",
       "key": "W",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 2,
         "dice_size": 8,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 1,
-      "description": "摆出防御姿态，提升自身韧性。战斗中的生存之道。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "增益",
-          "desc": "提升自身攻击力",
-          "duration": 2,
-          "target": "自身"
+          "type": "击退",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "灼鲸逃生"
         }
       ],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。他曾在鲸背上点火，骗它沉回海里。击退1回合。",
       "saving_throw": {
         "attr": "CON",
         "dc_formula": "8+PROF+STR",
@@ -166,52 +165,63 @@
       }
     },
     {
-      "name": "大鹏突进",
+      "name": "悬岛之藤",
       "key": "E",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
       "damage": {
         "dice_count": 1,
         "dice_size": 8,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 2,
-      "description": "向目标发起冲锋/跳跃。战士切入战场的突进技。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "治疗",
-          "desc": "恢复生命值",
-          "duration": 0,
-          "target": "自身"
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "被带上高空"
         }
-      ]
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。他攀着鹰叼起的肉，被带上悬在半空的小岛。加速1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
     },
     {
-      "name": "七海远征",
+      "name": "满载而归",
       "key": "R",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 2,
         "dice_size": 10,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 4,
-      "description": "激发全部战意，进入狂暴/强化状态。战士的终极战斗形态。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "吸血",
-          "desc": "攻击时回复生命",
+          "type": "处决",
+          "target": "敌方",
+          "desc": "绝处一搏"
+        },
+        {
+          "type": "暴击",
+          "target": "自身",
           "duration": 2,
-          "target": "自身"
+          "desc": "暴击率提升"
         }
       ],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。最后一趟，他带着财宝和伤疤回了家。处决+暴击2回合。",
       "saving_throw": {
         "attr": "CON",
         "dc_formula": "8+PROF+STR",

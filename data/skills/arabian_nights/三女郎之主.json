@@ -1,0 +1,115 @@
+[
+  {
+    "name": "门内奇宴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "门内奇宴"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 辉蚀伤害。她府中三位女郎各持绝技，款待不速之客。增益2回合。"
+  },
+  {
+    "name": "犬形之咒",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "犬形之咒"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 辉蚀伤害。两位姊妹被咒成黑狗，只在她宅中现形。石化1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "琴笛留客",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "琴笛留客"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 辉蚀伤害。她抚琴弄笛，把脚夫与三丐留在府中。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "解咒归常",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "解咒归常"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 辉蚀伤害。经一番波折，黑狗终得解咒，府复如常。净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

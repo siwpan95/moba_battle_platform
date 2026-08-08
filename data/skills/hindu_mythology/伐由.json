@@ -1,0 +1,114 @@
+[
+  {
+    "name": "气息穿刺",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "呼吸被抽离"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 力场伤害。伐由是生命之气（普拉那）本身。他抽走一口气，肺就先于心停摆。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "旋风疾走",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "化风疾驰"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 力场伤害。风神从不走直线，他只是先出现在别处，再决定刚才有没有经过。加速1回合。"
+  },
+  {
+    "name": "无形之身",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 力场伤害。《梨俱吠陀》说，无人见过伐由的形体，只见过他经过的痕迹。隐身1回合。"
+  },
+  {
+    "name": "哈努曼之父",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被风暴掀出战场"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 力场伤害。他把整个风的力量交给了儿子。今天他决定自己用一次。击退1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

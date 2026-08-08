@@ -1,6 +1,6 @@
 {
   "card_id": "chinese_mythology:共工",
-  "legacy_card_id": "CHI-44886",
+  "legacy_card_id": "CHI-1006",
   "hero": {
     "name": "共工",
     "name_en": "Gonggong",
@@ -21,8 +21,7 @@
     "先手",
     "前排",
     "承伤",
-    "护盾",
-    "钩子"
+    "护盾"
   ],
   "attributes": {
     "STR": {

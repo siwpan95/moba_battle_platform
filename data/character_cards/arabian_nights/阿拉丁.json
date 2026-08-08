@@ -1,28 +1,27 @@
 {
-  "card_id": "arabian_nights:阿拉丁",
-  "legacy_card_id": "ONE-83721",
+  "card_id": "Arabian_Nights:阿拉丁",
+  "legacy_card_id": "ARA-1015",
   "hero": {
     "name": "阿拉丁",
     "name_en": "Aladdin",
-    "alias": "",
-    "title": "Aladdin"
+    "alias": "神灯少年",
+    "title": "神灯少年"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "刺客",
     "universal_role": "assassin",
     "role_name": "刺客",
     "role_dnd_class": "游荡者"
   },
-  "source": "一千零一夜",
+  "source": "阿拉伯神话",
   "difficulty": 4,
   "playstyle_tags": [
     "切入",
-    "持续伤害",
     "收割",
     "爆发",
-    "高机动"
+    "钩子"
   ],
   "attributes": {
     "STR": {
@@ -113,105 +112,109 @@
   },
   "skills": [
     {
-      "name": "灯刃刺",
+      "name": "灯中召唤",
       "key": "Q",
       "type": "物理",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "cooldown": 0,
-      "description": "以迅雷之势发动近战打击。在阴影中淬炼的利刃直取要害。",
+      "action": "动作",
       "range": "近战",
       "target": "单体",
-      "action": "动作",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
       "effects": [
         {
-          "type": "加速",
-          "desc": "提升移动和攻击速度",
+          "type": "增援",
+          "target": "自身",
           "duration": 2,
-          "target": "自身"
+          "desc": "巨灵现身"
         }
-      ]
+      ],
+      "cooldown": 0,
+      "description": "1d8+DEX 穿刺伤害。他擦了擦旧灯，一个巨灵轰然现身。增援2回合。"
     },
     {
-      "name": "魔戒匿踪",
+      "name": "飞天求婚",
       "key": "W",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 2,
         "dice_size": 8,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "腾云而去"
+        }
+      ],
       "cooldown": 1,
-      "description": "投掷淬毒暗器，精准命中远方目标。暗杀者的远程绝技。",
-      "range": "远程",
+      "description": "2d8+DEX 穿刺伤害。巨灵把他抬进宫殿，去见心仪的公主。加速1回合。"
+    },
+    {
+      "name": "指环护身",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
       "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "净化",
+          "target": "自身",
+          "desc": "戒指脱险"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+DEX 穿刺伤害。他还有一枚戒指精灵，危难时拉他脱身。净化。"
+    },
+    {
+      "name": "埋于地穴",
+      "key": "R",
+      "type": "物理",
       "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
       "effects": [
         {
           "type": "处决",
-          "desc": "对低血量目标造成额外伤害",
-          "duration": 0,
-          "target": "敌方"
+          "target": "敌方",
+          "desc": "反手活埋"
+        },
+        {
+          "type": "破甲",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "护甲被削弱"
         }
       ],
+      "cooldown": 4,
+      "description": "3d8+DEX 穿刺伤害。法师把他骗进地道，他用灯反将对方活埋。处决+破甲2回合。",
       "saving_throw": {
-        "attr": "DEX",
+        "attr": "CON",
         "dc_formula": "8+PROF+DEX",
         "on_save": "半伤"
       }
-    },
-    {
-      "name": "飞毯疾行",
-      "key": "E",
-      "type": "物理",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "cooldown": 2,
-      "description": "身形一闪，化作暗影穿行于战场。刺客赖以生存的位移身法。",
-      "range": "远程",
-      "target": "单体",
-      "action": "动作",
-      "effects": [
-        {
-          "type": "加速",
-          "desc": "提升移动和攻击速度",
-          "duration": 2,
-          "target": "自身"
-        }
-      ]
-    },
-    {
-      "name": "神灯之愿",
-      "key": "R",
-      "type": "物理",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "挥砍"
-      },
-      "cooldown": 4,
-      "description": "锁定猎物，释放致命连击。暗影之力凝于一点，一击必杀。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
-      "effects": [
-        {
-          "type": "加速",
-          "desc": "提升移动和攻击速度",
-          "duration": 2,
-          "target": "自身"
-        }
-      ]
     }
   ]
 }

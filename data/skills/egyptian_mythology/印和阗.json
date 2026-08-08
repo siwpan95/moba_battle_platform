@@ -1,0 +1,112 @@
+[
+  {
+    "name": "外科切开",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "精确切开"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。《埃德温·史密斯纸草》记载了四十八例外科病案。他熟悉每一例。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "阶梯金字塔",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "石构掩体"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。他为左塞尔设计了人类第一座石造巨构。他现在临时搭了一段。护盾2回合。"
+  },
+  {
+    "name": "药草处方",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "古方生效"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。萨卡拉出土的药方里有蜂蜜、柳皮和一些至今没人认得的成分。治疗。"
+  },
+  {
+    "name": "升神为医",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "神庙梦疗"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。两千年后，凡人印和阗被埃及人尊为医神。病者在他的神庙里过夜求梦。回复+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

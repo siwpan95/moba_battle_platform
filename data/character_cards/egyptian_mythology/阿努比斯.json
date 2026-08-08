@@ -1,6 +1,6 @@
 {
   "card_id": "egyptian_mythology:阿努比斯",
-  "legacy_card_id": "EGY-13260",
+  "legacy_card_id": "EGY-1005",
   "hero": {
     "name": "阿努比斯",
     "name_en": "Anubis",
@@ -21,8 +21,7 @@
     "先手",
     "前排",
     "承伤",
-    "护盾",
-    "钩子"
+    "护盾"
   ],
   "attributes": {
     "STR": {

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "弦音搅局",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被流言搅乱心神"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+CHA 力场伤害。他弹着坦布拉琴在三界之间游走，顺便把每边的话都说给另一边听。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "传讯之口",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "得情报优势"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+CHA 力场伤害。他是诸神的信使。他刚把敌人的部署告诉了己方。强化2回合。"
+  },
+  {
+    "name": "挑拨之艺",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "内部起疑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+CHA 力场伤害。他挑起过无数场战争，每一场都真心认为是在帮忙。干扰1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "那罗延颂",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被圣名摄住"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "恢复生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+CHA 力场伤害。他不停念诵毗湿奴之名，念到整个战场都开始跟着念。魅惑1回合+治疗。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

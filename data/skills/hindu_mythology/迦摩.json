@@ -1,0 +1,120 @@
+[
+  {
+    "name": "花箭·迷惑",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "中花箭者心神失守"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+CHA 力场伤害。他的弓由甘蔗做成，弦是一串蜜蜂，箭镞是五种花。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "鹦鹉座骑",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "鹦鹉载行"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+CHA 力场伤害。他骑鹦鹉出行，因此没人把他当成威胁——直到中箭。加速1回合。"
+  },
+  {
+    "name": "春神随行",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "心防松懈"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+CHA 力场伤害。他的同伴是春天。春天所到之处，防备心会自然松懈。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "焚身一射",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "CHA",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "焚身也要射出的一箭"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+CHA 力场伤害。他射向修行中的湿婆，被第三只眼烧成灰烬。但那一箭确实命中了。魅惑1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+CHA",
+      "on_save": "半伤"
+    }
+  }
+]

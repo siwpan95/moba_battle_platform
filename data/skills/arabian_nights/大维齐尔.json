@@ -1,0 +1,107 @@
+[
+  {
+    "name": "舍女纾难",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "舍女纾难"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。他主动把女儿送进王宫，替全城女子赴死。增益2回合。"
+  },
+  {
+    "name": "暗授故事",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "暗授故事"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。他教女儿用故事吊住国王，拖过一夜。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "守夜续命",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "守夜续命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。他每夜守在宫门外，听里头讲到了哪一章。回复。"
+  },
+  {
+    "name": "因女得全",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "因女得全"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。女儿成了王后，他这把老骨头也保住了。净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

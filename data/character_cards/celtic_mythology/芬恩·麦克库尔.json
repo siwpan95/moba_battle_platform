@@ -1,6 +1,6 @@
 {
   "card_id": "celtic_mythology:芬恩·麦克库尔",
-  "legacy_card_id": "CEL-67524",
+  "legacy_card_id": "CEL-1001",
   "hero": {
     "name": "芬恩·麦克库尔",
     "name_en": "Fionn mac Cumhaill",
@@ -21,7 +21,8 @@
     "变身",
     "持续输出",
     "突进",
-    "缠斗"
+    "缠斗",
+    "钩子"
   ],
   "attributes": {
     "STR": {

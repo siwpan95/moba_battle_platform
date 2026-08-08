@@ -1,0 +1,108 @@
+[
+  {
+    "name": "阳炎之身",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 光耀伤害。她是太阳前面的那层热浪。你看得见她，但抓不到位置。隐身1回合。"
+  },
+  {
+    "name": "不可捉不可害",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "四不可加身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 光耀伤害。经文说她「不可见、不可捉、不可缚、不可害」。武士很喜欢这句。免疫1回合。"
+  },
+  {
+    "name": "猪车疾行",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "向前突进"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 光耀伤害。她乘七头野猪拉的车，从队列的侧面切进去。冲锋1回合。"
+  },
+  {
+    "name": "武者之守",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "阳炎一击"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "属性获得提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。楠木正成、毛利元就都随身带她的护符。她管的是「安全地赢」。处决+增益2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

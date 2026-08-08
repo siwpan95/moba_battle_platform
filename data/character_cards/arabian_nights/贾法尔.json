@@ -1,32 +1,31 @@
 {
-  "card_id": "arabian_nights:贾法尔",
-  "legacy_card_id": "ONE-87591",
+  "card_id": "Arabian_Nights:贾法尔",
+  "legacy_card_id": "ARA-1044",
   "hero": {
     "name": "贾法尔",
     "name_en": "Ja'far",
-    "alias": "",
-    "title": "Ja'far"
+    "alias": "公正维齐尔",
+    "title": "公正维齐尔"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
-    "native_role": "法师",
-    "universal_role": "mage",
-    "role_name": "法师",
-    "role_dnd_class": "法师"
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
   },
-  "source": "一千零一夜",
-  "difficulty": 3,
+  "source": "阿拉伯神话",
+  "difficulty": 2,
   "playstyle_tags": [
-    "AOE",
-    "控制",
-    "远程",
-    "高机动"
+    "保护",
+    "增益",
+    "治疗"
   ],
   "attributes": {
     "STR": {
-      "score": 8,
-      "modifier": -1,
+      "score": 10,
+      "modifier": 0,
       "name_cn": "力量"
     },
     "DEX": {
@@ -40,8 +39,8 @@
       "name_cn": "体质"
     },
     "INT": {
-      "score": 17,
-      "modifier": 3,
+      "score": 8,
+      "modifier": -1,
       "name_cn": "智力"
     },
     "WIS": {
@@ -50,182 +49,178 @@
       "name_cn": "感知"
     },
     "CHA": {
-      "score": 10,
-      "modifier": 0,
+      "score": 17,
+      "modifier": 3,
       "name_cn": "魅力"
     }
   },
   "primary_abilities": [
-    "INT"
+    "WIS",
+    "CHA"
   ],
-  "hit_die": 6,
+  "hit_die": 8,
   "stats_lv1": {
     "level": 1,
-    "hp": 70,
-    "hp_dnd_raw": 7,
-    "ac": 11,
-    "physical_atk": 31,
-    "magic_power": 47,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
     "prof_bonus": 2,
     "atk_speed_pct": 1.0,
     "crit_chance": 12.0,
     "crit_damage": 155.0,
     "cdr_pct": 2.0,
-    "heal_bonus_pct": 0.0,
+    "heal_bonus_pct": 6.0,
     "cc_resist_pct": 2.0,
     "save_bonuses": {
-      "STR": -1,
+      "STR": 0,
       "DEX": 1,
       "CON": 1,
-      "INT": 5,
+      "INT": -1,
       "WIS": 4,
-      "CHA": 0
+      "CHA": 5
     }
   },
   "stats_lv18": {
     "level": 18,
-    "hp": 920,
-    "hp_dnd_raw": 92,
-    "ac": 11,
-    "physical_atk": 43,
-    "magic_power": 55,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
     "prof_bonus": 6,
     "atk_speed_pct": 1.0,
     "crit_chance": 12.0,
     "crit_damage": 155.0,
     "cdr_pct": 2.0,
-    "heal_bonus_pct": 0.0,
+    "heal_bonus_pct": 6.0,
     "cc_resist_pct": 2.0,
     "save_bonuses": {
-      "STR": -1,
+      "STR": 0,
       "DEX": 1,
       "CON": 1,
-      "INT": 9,
+      "INT": -1,
       "WIS": 8,
-      "CHA": 0
+      "CHA": 9
     }
   },
   "growth_per_level": {
-    "hp": 50,
+    "hp": 60,
     "atk": 2.5,
     "ap": 1.5
   },
   "skills": [
     {
-      "name": "蛇杖弹",
+      "name": "明察真凶",
       "key": "Q",
       "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "明察真凶"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 力场伤害。他听完各方说辞，总能揪出真正的错处。标记2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "缓王之怒",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "缓王之怒"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 力场伤害。君王要杀人，他总先想办法拖到天亮。沉默1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "保全无辜",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
       "damage": {
         "dice_count": 1,
         "dice_size": 8,
-        "bonus_attr": "INT",
+        "bonus_attr": "WIS",
         "type": "力场"
       },
-      "cooldown": 0,
-      "description": "凝聚元素之力，向前方发射魔法弹幕。基础但致命的法术攻击。",
-      "range": "远程",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "减速",
-          "desc": "降低目标移动速度",
-          "duration": 2,
-          "target": "敌方"
+          "type": "净化",
+          "target": "自身",
+          "desc": "保全无辜"
         }
       ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      }
-    },
-    {
-      "name": "宰相罩",
-      "key": "W",
-      "type": "法术",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "cooldown": 1,
-      "description": "在目标区域引发元素爆发，将敌人禁锢于魔法牢笼之中。",
-      "range": "近战",
-      "target": "范围",
-      "action": "动作",
-      "effects": [
-        {
-          "type": "眩晕",
-          "desc": "使目标眩晕，失去行动能力",
-          "duration": 1,
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      }
-    },
-    {
-      "name": "咒印封缚",
-      "key": "E",
-      "type": "法术",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
       "cooldown": 2,
-      "description": "以魔力扭曲空间，瞬间转移自身位置。法师的保命位移法术。",
-      "range": "远程",
-      "target": "范围",
-      "action": "动作",
-      "effects": [
-        {
-          "type": "加速",
-          "desc": "提升移动和攻击速度",
-          "duration": 2,
-          "target": "自身"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      }
+      "description": "1d8+WIS 力场伤害。他暗中放走不少被冤的人。净化。"
     },
     {
-      "name": "巨蟒诅咒",
+      "name": "忠谏立身",
       "key": "R",
       "type": "法术",
-      "damage": {
-        "dice_count": 4,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "cooldown": 4,
-      "description": "召唤天外陨石/暴风雪/元素风暴，对广大区域造成毁灭性打击。",
+      "action": "动作",
       "range": "远程",
       "target": "范围",
-      "action": "动作",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
       "effects": [
         {
-          "type": "破甲",
-          "desc": "降低目标防御力",
+          "type": "增益",
+          "target": "自身",
           "duration": 2,
-          "target": "敌方"
+          "desc": "忠谏立身"
         }
       ],
+      "cooldown": 4,
+      "description": "3d6+WIS 力场伤害。他谏了一辈子，最后也栽在君王的疑心上。增益2回合。",
       "saving_throw": {
         "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
+        "dc_formula": "8+PROF+WIS",
         "on_save": "半伤"
-      }
+      },
+      "aoe_radius": 15
     }
   ]
 }

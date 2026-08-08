@@ -1,0 +1,101 @@
+[
+  {
+    "name": "凿河济旅",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "凿河济旅"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 辉蚀伤害。她出资在朝圣路上开河，旅人赖以为生。治疗。"
+  },
+  {
+    "name": "宫闱斡旋",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "宫闱斡旋"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 辉蚀伤害。她在后宫斡旋，替家族保住颜面。增益2回合。"
+  },
+  {
+    "name": "赈济孤寡",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "赈济孤寡"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 辉蚀伤害。她常散财给城里的孤寡，名声传遍巴格达。回复。"
+  },
+  {
+    "name": "贤后化刚",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "贤后化刚"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 辉蚀伤害。有她在，哈里发的许多决断都软了下来。净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

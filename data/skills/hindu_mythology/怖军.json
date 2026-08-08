@@ -1,0 +1,120 @@
+[
+  {
+    "name": "巨杵横扫",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被巨杵砸伏"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。他的兵器是狼牙棒，用法只有一种：抡圆了砸。倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "撕裂难降",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 2,
+        "desc": "饮敌之血"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。他撕开难降的胸膛饮血，履行了十三年前立下的誓言。吸血2回合。"
+  },
+  {
+    "name": "狼腹之饥",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "饥饿转为蛮力"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。怖军之名意为“可怕者”，绰号“狼腹”——他吃得和打得一样凶。狂暴2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "碎难敌之股",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "腿骨尽碎"
+      },
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被压制在地"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。摔跤规则禁止击打腰下。黑天拍了拍大腿，怖军就懂了。重创2回合+制服1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

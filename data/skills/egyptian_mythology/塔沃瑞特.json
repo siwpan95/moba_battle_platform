@@ -1,0 +1,113 @@
+[
+  {
+    "name": "河马张口",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "直面河马巨口"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 钝击伤害。尼罗河里最危险的不是鳄鱼。她张开嘴的宽度足以证明这点。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "萨字护符",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "萨符庇护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 钝击伤害。她手扶“萨”形护身符，那是产房里最常见的符号。护盾2回合。"
+  },
+  {
+    "name": "接生之手",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "接生之手"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 钝击伤害。她的手接住过无数新生命，也把濒死者从边缘拽了回来。治疗。"
+  },
+  {
+    "name": "护产暴怒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "三兽护产之怒"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 钝击伤害。有人靠近产房。河马、狮、鳄三重形态同时爆发。倒地1回合+净化。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

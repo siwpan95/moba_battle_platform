@@ -1,27 +1,26 @@
 {
-  "card_id": "arabian_nights:神灯精灵",
-  "legacy_card_id": "ONE-20576",
+  "card_id": "Arabian_Nights:神灯精灵",
+  "legacy_card_id": "ARA-1023",
   "hero": {
     "name": "神灯精灵",
     "name_en": "Genie of the Lamp",
-    "alias": "",
-    "title": "Genie of the Lamp"
+    "alias": "灯中之主",
+    "title": "灯中之主"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "法师",
     "universal_role": "mage",
     "role_name": "法师",
     "role_dnd_class": "法师"
   },
-  "source": "一千零一夜",
+  "source": "阿拉伯神话",
   "difficulty": 3,
   "playstyle_tags": [
     "AOE",
     "控制",
-    "远程",
-    "高机动"
+    "远程"
   ],
   "attributes": {
     "STR": {
@@ -112,120 +111,123 @@
   },
   "skills": [
     {
-      "name": "灯焰弹",
+      "name": "巨灵现身",
       "key": "Q",
       "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
       "damage": {
         "dice_count": 1,
         "dice_size": 8,
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "cooldown": 0,
-      "description": "凝聚元素之力，向前方发射魔法弹幕。基础但致命的法术攻击。",
-      "range": "远程",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "减速",
-          "desc": "降低目标移动速度",
+          "type": "增援",
+          "target": "自身",
           "duration": 2,
-          "target": "敌方"
+          "desc": "巨灵降临"
         }
       ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      }
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。灯一擦，烟雾凝成顶天立地的巨灵。增援2回合。"
     },
     {
-      "name": "烟雾罩",
+      "name": "移宫压境",
       "key": "W",
       "type": "法术",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "cooldown": 1,
-      "description": "在目标区域引发元素爆发，将敌人禁锢于魔法牢笼之中。",
-      "range": "近战",
-      "target": "范围",
       "action": "动作",
-      "effects": [
-        {
-          "type": "眩晕",
-          "desc": "使目标眩晕，失去行动能力",
-          "duration": 1,
-          "target": "敌方"
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+INT",
-        "on_save": "半伤"
-      }
-    },
-    {
-      "name": "愿望咒缚",
-      "key": "E",
-      "type": "法术",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "INT",
-        "type": "力场"
-      },
-      "cooldown": 2,
-      "description": "以魔力扭曲空间，瞬间转移自身位置。法师的保命位移法术。",
       "range": "远程",
       "target": "范围",
-      "action": "动作",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
       "effects": [
         {
-          "type": "加速",
-          "desc": "提升移动和攻击速度",
-          "duration": 2,
-          "target": "自身"
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "宫移压境"
         }
       ],
+      "cooldown": 1,
+      "description": "2d6+INT 力场伤害。他一夜把公主的宫殿连根搬到邻国。压制1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "凭空造物",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "凭空造物"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 力场伤害。他要什么便造什么，连金砖都是凭空来。强化2回合。",
       "saving_throw": {
         "attr": "DEX",
         "dc_formula": "8+PROF+INT",
         "on_save": "半伤"
-      }
+      },
+      "aoe_radius": 10
     },
     {
-      "name": "三愿成真",
+      "name": "囚灯之怒",
       "key": "R",
       "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
       "damage": {
         "dice_count": 4,
         "dice_size": 6,
         "bonus_attr": "INT",
         "type": "力场"
       },
-      "cooldown": 4,
-      "description": "召唤天外陨石/暴风雪/元素风暴，对广大区域造成毁灭性打击。",
-      "range": "远程",
-      "target": "范围",
-      "action": "动作",
       "effects": [
         {
-          "type": "破甲",
-          "desc": "降低目标防御力",
-          "duration": 2,
-          "target": "敌方"
+          "type": "处决",
+          "target": "敌方",
+          "desc": "封回灯中"
+        },
+        {
+          "type": "禁锢",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被困于原地"
         }
       ],
+      "cooldown": 4,
+      "description": "4d6+INT 力场伤害。谁惹怒他，他便把谁封回灯里永不超生。处决+禁锢1回合。",
       "saving_throw": {
-        "attr": "DEX",
+        "attr": "CON",
         "dc_formula": "8+PROF+INT",
         "on_save": "半伤"
-      }
+      },
+      "aoe_radius": 15
     }
   ]
 }

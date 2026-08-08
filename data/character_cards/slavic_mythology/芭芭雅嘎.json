@@ -1,6 +1,6 @@
 {
   "card_id": "slavic_mythology:芭芭雅嘎",
-  "legacy_card_id": "SLA-27533",
+  "legacy_card_id": "SLA-1011",
   "hero": {
     "name": "芭芭雅嘎",
     "name_en": "Baba Yaga",
@@ -20,7 +20,6 @@
   "playstyle_tags": [
     "AOE",
     "控制",
-    "硬控制",
     "远程",
     "高机动"
   ],

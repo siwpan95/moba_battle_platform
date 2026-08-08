@@ -1,106 +1,122 @@
 [
   {
-    "name": "王刃斩",
+    "name": "新婚之刃",
     "key": "Q",
     "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
     "damage": {
       "dice_count": 1,
       "dice_size": 10,
       "bonus_attr": "STR",
       "type": "挥砍"
     },
-    "cooldown": 0,
-    "description": "挥舞武器发动沉重打击。战士的近身搏杀之本。",
-    "range": "近战",
-    "target": "单体",
-    "action": "动作",
     "effects": [
       {
-        "type": "吸血",
-        "desc": "攻击时回复生命",
-        "duration": 2,
-        "target": "自身"
-      }
-    ]
-  },
-  {
-    "name": "君王护壁",
-    "key": "W",
-    "type": "物理",
-    "damage": {
-      "dice_count": 2,
-      "dice_size": 8,
-      "bonus_attr": "STR",
-      "type": "挥砍"
-    },
-    "cooldown": 1,
-    "description": "摆出防御姿态，提升自身韧性。战斗中的生存之道。",
-    "range": "近战",
-    "target": "单体",
-    "action": "动作",
-    "effects": [
+        "type": "处决",
+        "target": "敌方",
+        "desc": "黎明处决"
+      },
       {
-        "type": "减速",
-        "desc": "降低目标移动速度",
-        "duration": 2,
-        "target": "敌方"
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "陷入恐慌"
       }
     ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。每个新娘在初夜后黎明前，都要死在他手里。处决+恐惧1回合。",
     "saving_throw": {
-      "attr": "CON",
+      "attr": "WIS",
       "dc_formula": "8+PROF+STR",
       "on_save": "半伤"
     }
   },
   {
-    "name": "夜巡突进",
+    "name": "王权之怒",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "王怒震怖"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。他一声令下，全城的喜宴都会变成刑场。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "疑心之剑",
     "key": "E",
     "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
     "damage": {
       "dice_count": 1,
       "dice_size": 8,
       "bonus_attr": "STR",
       "type": "挥砍"
     },
-    "cooldown": 2,
-    "description": "向目标发起冲锋/跳跃。战士切入战场的突进技。",
-    "range": "近战",
-    "target": "单体",
-    "action": "动作",
     "effects": [
       {
-        "type": "破甲",
-        "desc": "降低目标防御力",
+        "type": "易伤",
+        "target": "敌方",
         "duration": 2,
-        "target": "敌方"
+        "desc": "被疑心反噬"
       }
-    ]
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。他不再信任何女人，剑永远横在枕边。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
   },
   {
-    "name": "千夜终章",
+    "name": "千夜之约",
     "key": "R",
     "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
     "damage": {
       "dice_count": 2,
       "dice_size": 10,
       "bonus_attr": "STR",
       "type": "挥砍"
     },
-    "cooldown": 4,
-    "description": "激发全部战意，进入狂暴/强化状态。战士的终极战斗形态。",
-    "range": "近战",
-    "target": "单体",
-    "action": "动作",
     "effects": [
       {
-        "type": "处决",
-        "desc": "对低血量目标造成额外伤害",
-        "duration": 0,
-        "target": "敌方"
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被故事留住"
       }
     ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。直到有个姑娘用故事，把他的刀钝在了黎明前。沉默1回合。",
     "saving_throw": {
-      "attr": "CON",
+      "attr": "WIS",
       "dc_formula": "8+PROF+STR",
       "on_save": "半伤"
     }

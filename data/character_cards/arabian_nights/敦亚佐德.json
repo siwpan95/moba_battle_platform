@@ -1,26 +1,25 @@
 {
-  "card_id": "arabian_nights:敦亚佐德",
-  "legacy_card_id": "ONE-90887",
+  "card_id": "Arabian_Nights:敦亚佐德",
+  "legacy_card_id": "ARA-1040",
   "hero": {
     "name": "敦亚佐德",
-    "name_en": "Dunyazad",
-    "alias": "",
-    "title": "Dunyazad"
+    "name_en": "Dinarzad",
+    "alias": "催更的妹妹",
+    "title": "催更的妹妹"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "辅助",
     "universal_role": "support",
     "role_name": "辅助",
     "role_dnd_class": "牧师"
   },
-  "source": "一千零一夜",
+  "source": "阿拉伯神话",
   "difficulty": 2,
   "playstyle_tags": [
     "保护",
     "增益",
-    "护盾",
     "治疗"
   ],
   "attributes": {
@@ -113,127 +112,110 @@
   },
   "skills": [
     {
-      "name": "夜话轻抚",
+      "name": "催更助姐",
       "key": "Q",
       "type": "法术",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
-        "type": "光耀"
-      },
-      "cooldown": 0,
-      "description": "发射圣光弹幕攻击敌人。辅助的基础远程骚扰手段。",
+      "action": "动作",
       "range": "远程",
       "target": "单体",
-      "action": "动作",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
       "effects": [
         {
-          "type": "标记",
-          "desc": "标记目标，使其受到额外伤害",
+          "type": "增益",
+          "target": "自身",
           "duration": 2,
-          "target": "敌方"
+          "desc": "催更助姐"
         }
-      ]
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 力场伤害。她总在夜深时喊：姐姐，再讲一段嘛。增益2回合。"
     },
     {
-      "name": "姐妹庇佑",
+      "name": "榻边留客",
       "key": "W",
       "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
       "damage": {
         "dice_count": 2,
         "dice_size": 6,
         "bonus_attr": "WIS",
-        "type": "光耀"
+        "type": "力场"
       },
-      "cooldown": 1,
-      "description": "吟唱治疗祷言/释放护盾，为盟友提供生命恢复或伤害吸收。",
-      "range": "远程",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "治疗",
-          "desc": "恢复生命值",
-          "duration": 0,
-          "target": "自身",
-          "value": "3d8+WIS"
-        },
-        {
-          "type": "护盾",
-          "desc": "生成临时伤害吸收护盾",
-          "duration": 2,
-          "target": "自身",
-          "value": "2d8+CHA"
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "榻边留客"
         }
-      ]
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 力场伤害。她躺在一旁，替姐姐把国王的注意力留住。沉默1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
     },
     {
-      "name": "续话赐福",
+      "name": "奉茶续气",
       "key": "E",
       "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
       "damage": {
         "dice_count": 1,
         "dice_size": 8,
         "bonus_attr": "WIS",
-        "type": "光耀"
+        "type": "力场"
       },
-      "cooldown": 2,
-      "description": "施加祝福/净化，强化盟友属性或清除负面效果。辅助的增益核心。",
-      "range": "远程",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "护盾",
-          "desc": "生成临时伤害吸收护盾",
-          "duration": 2,
+          "type": "回复",
           "target": "自身",
-          "value": "2d10+CHA"
+          "desc": "奉茶续气"
         }
       ],
-      "saving_throw": {
-        "attr": "WIS",
-        "dc_formula": "8+PROF+WIS",
-        "on_save": "半伤"
-      }
+      "cooldown": 2,
+      "description": "1d8+WIS 力场伤害。故事将尽，她适时奉茶，让姐姐喘口气。回复。"
     },
     {
-      "name": "黎明启幕",
+      "name": "姐妹同心",
       "key": "R",
       "type": "法术",
-      "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "WIS",
-        "type": "光耀"
-      },
-      "cooldown": 4,
-      "description": "召唤神圣领域/天使庇护，为大范围盟友提供强力保护与治疗。",
+      "action": "动作",
       "range": "远程",
       "target": "范围",
-      "action": "动作",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
       "effects": [
         {
-          "type": "治疗",
-          "desc": "恢复生命值",
-          "duration": 0,
+          "type": "增援",
           "target": "自身",
-          "value": "4d10+WIS"
-        },
-        {
-          "type": "护盾",
-          "desc": "生成临时伤害吸收护盾",
           "duration": 2,
-          "target": "自身",
-          "value": "3d10+CHA"
+          "desc": "姐妹同心"
         }
       ],
+      "cooldown": 4,
+      "description": "3d6+WIS 力场伤害。姐妹俩合力，才把那一千零一夜讲完。增援2回合。",
       "saving_throw": {
-        "attr": "WIS",
+        "attr": "DEX",
         "dc_formula": "8+PROF+WIS",
         "on_save": "半伤"
-      }
+      },
+      "aoe_radius": 15
     }
   ]
 }

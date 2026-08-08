@@ -1,0 +1,107 @@
+[
+  {
+    "name": "青穗之软",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "青穗之嫩"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她代表还没成熟的玉米。这个阶段最好吃，也最容易被糟蹋。治疗。"
+  },
+  {
+    "name": "须发如丝",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "青苗抽穗"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。玉米上的须就是她的头发。剥开外皮的时候要轻。增益2回合。"
+  },
+  {
+    "name": "八月之祭",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "尝新之节"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。第八个月的节日属于她。那时候正好可以尝新。回复。"
+  },
+  {
+    "name": "代身之女",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "以身代穗"
+      },
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得增援之力"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。扮成她的少女游行一整天，跳完最后一支舞就被献上。净化+增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

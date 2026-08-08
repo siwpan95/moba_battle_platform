@@ -1,6 +1,6 @@
 {
   "card_id": "egyptian_mythology:阿图姆",
-  "legacy_card_id": "EGY-83715",
+  "legacy_card_id": "EGY-1017",
   "hero": {
     "name": "阿图姆",
     "name_en": "Atum",
@@ -20,7 +20,6 @@
   "playstyle_tags": [
     "AOE",
     "控制",
-    "硬控制",
     "远程",
     "高机动"
   ],

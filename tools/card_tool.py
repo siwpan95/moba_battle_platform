@@ -30,6 +30,18 @@ if sys.platform == "win32":
     except Exception:
         pass
 
+TOOLS_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(TOOLS_DIR)
+
+# 路径引导必须先于任何本地 import：
+#   · TOOLS_DIR   —— 供 `from card_generator import ...`（同目录模块）
+#   · PROJECT_ROOT —— 供 `from core...` 包导入
+# 不能依赖「脚本目录自动入 sys.path」：embeddable 版 Python（带 ._pth）
+# 与 -P / PYTHONSAFEPATH 模式下该行为被禁用，会直接 ModuleNotFoundError。
+for _p in (PROJECT_ROOT, TOOLS_DIR):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
 # 将 card_generator 的核心函数导入
 from card_generator import (
     generate_character_card, get_skills, GAME_NAME_CN,
@@ -37,11 +49,6 @@ from card_generator import (
     ROLE_TEMPLATES, RACIAL_BONUS, validate_point_buy
 )
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# 让 tools 脚本能导入 core 包（与 main.py / hero_calculator.py 一致）
-if PROJECT_ROOT not in sys.path:
-    sys.path.insert(0, PROJECT_ROOT)
 # 游戏注册表 / 共享工具（单一真相）从 core.config 导入
 from core.config import REGISTRY_BY_ID, REGISTRY_BY_DISPLAY, detect_hero_file
 from core import schema

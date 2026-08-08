@@ -1,6 +1,6 @@
 {
   "card_id": "arthurian_legend:摩根勒菲",
-  "legacy_card_id": "ART-7366",
+  "legacy_card_id": "ART-1004",
   "hero": {
     "name": "摩根勒菲",
     "name_en": "Morgan le Fay",
@@ -20,7 +20,6 @@
   "playstyle_tags": [
     "AOE",
     "控制",
-    "硬控制",
     "远程",
     "高机动"
   ],

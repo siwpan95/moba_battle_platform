@@ -1,6 +1,6 @@
 {
   "card_id": "japanese_mythology:龙神",
-  "legacy_card_id": "JAP-71927",
+  "legacy_card_id": "JAP-1011",
   "hero": {
     "name": "龙神",
     "name_en": "Ryujin",
@@ -21,8 +21,7 @@
     "先手",
     "前排",
     "承伤",
-    "护盾",
-    "钩子"
+    "护盾"
   ],
   "attributes": {
     "STR": {

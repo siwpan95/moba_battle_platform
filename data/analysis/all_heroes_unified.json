@@ -1,6 +1,6 @@
 {
-  "total_games": 40,
-  "total_heroes": 2037,
+  "total_games": 41,
+  "total_heroes": 2461,
   "heroes": [
     {
       "game": "300 Heroes",
@@ -18332,6 +18332,3822 @@
       "native_role": "战士",
       "universal_role": "fighter",
       "source": "一千零一夜"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "阿蒙",
+      "name_en": "Amun",
+      "alias": "隐秘之主",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "阿蒙涅特",
+      "name_en": "Amunet",
+      "alias": "隐匿之母",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "赫卡",
+      "name_en": "Heka",
+      "alias": "魔法本源",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "阿吞",
+      "name_en": "Aten",
+      "alias": "唯一日轮",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "贝努",
+      "name_en": "Bennu",
+      "alias": "不死苍鹭",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "涅斐尔图姆",
+      "name_en": "Nefertum",
+      "alias": "初生莲华",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "哈波克拉特斯",
+      "name_en": "Harpocrates",
+      "alias": "缄默之子",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "索普德特",
+      "name_en": "Sopdet",
+      "alias": "天狼星之女",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "梅赫图尔特",
+      "name_en": "Mehet-Weret",
+      "alias": "原初天牛",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "蒙图",
+      "name_en": "Montu",
+      "alias": "鹰首战神",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "玛阿赫斯",
+      "name_en": "Maahes",
+      "alias": "持刀狮神",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "敏",
+      "name_en": "Min",
+      "alias": "丰饶举臂者",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "谢兹穆",
+      "name_en": "Shezmu",
+      "alias": "榨油屠夫",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "梅希特",
+      "name_en": "Mehit",
+      "alias": "狮女猎神",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "阿米特",
+      "name_en": "Ammit",
+      "alias": "亡者吞噬者",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "塔特能",
+      "name_en": "Tatenen",
+      "alias": "隆起之地",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "瓦吉特",
+      "name_en": "Wadjet",
+      "alias": "眼镜蛇之眼",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "韦普瓦韦特",
+      "name_en": "Wepwawet",
+      "alias": "开路者",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "塞尔凯特",
+      "name_en": "Serqet",
+      "alias": "蝎之呼吸",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "多姆泰夫",
+      "name_en": "Duamutef",
+      "alias": "豺首守胃者",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "梅列特塞格尔",
+      "name_en": "Meretseger",
+      "alias": "静默之峰",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "凯克",
+      "name_en": "Kek",
+      "alias": "原初黑暗",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "奈赫贝特",
+      "name_en": "Nekhbet",
+      "alias": "白秃鹫王冠",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "奈斯",
+      "name_en": "Neith",
+      "alias": "织弓之母",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "阿努凯特",
+      "name_en": "Anuket",
+      "alias": "拥抱之河",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "萨提斯",
+      "name_en": "Satis",
+      "alias": "洪水之箭",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "凯布山纳夫",
+      "name_en": "Qebehsenuef",
+      "alias": "隼首守肠者",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "索普杜",
+      "name_en": "Sopdu",
+      "alias": "东境之隼",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "索卡尔",
+      "name_en": "Sokar",
+      "alias": "冥府工匠",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "贝斯",
+      "name_en": "Bes",
+      "alias": "护宅侏儒",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "努恩",
+      "name_en": "Nun",
+      "alias": "原初深渊",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "阿佩普",
+      "name_en": "Apep",
+      "alias": "混沌巨蛇",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "哈碧",
+      "name_en": "Hapy",
+      "alias": "狒首守肺者",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "巴内布杰德特",
+      "name_en": "Banebdjedet",
+      "alias": "公羊四魂",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "斯芬克斯",
+      "name_en": "Sphinx",
+      "alias": "谜之守卫",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "凯布利",
+      "name_en": "Khepri",
+      "alias": "朝阳圣甲虫",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "塞莎特",
+      "name_en": "Seshat",
+      "alias": "书写女神",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "塔沃瑞特",
+      "name_en": "Taweret",
+      "alias": "护产河马",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "赫努姆",
+      "name_en": "Khnum",
+      "alias": "陶轮造人者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "哈皮",
+      "name_en": "Hapi",
+      "alias": "尼罗河泛滥",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "姆特",
+      "name_en": "Mut",
+      "alias": "秃鹫母神",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "艾姆谢特",
+      "name_en": "Imsety",
+      "alias": "人首守肝者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "印和阗",
+      "name_en": "Imhotep",
+      "alias": "医圣建筑师",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "雷内努特",
+      "name_en": "Renenutet",
+      "alias": "哺育之蛇",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "赫赫",
+      "name_en": "Heh",
+      "alias": "百万年之神",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "伐由",
+      "name_en": "Vayu",
+      "alias": "风之呼吸",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "苏摩",
+      "name_en": "Soma",
+      "alias": "甘露之月",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "乌莎",
+      "name_en": "Ushas",
+      "alias": "黎明少女",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "陀湿多",
+      "name_en": "Tvastar",
+      "alias": "神匠之槌",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "双马童",
+      "name_en": "Ashvins",
+      "alias": "晨昏医者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "摩差",
+      "name_en": "Matsya",
+      "alias": "救世之鱼",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "俱利摩",
+      "name_en": "Kurma",
+      "alias": "承山之龟",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "筏罗诃",
+      "name_en": "Varaha",
+      "alias": "掘地野猪",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "伐摩那",
+      "name_en": "Vamana",
+      "alias": "三步侏儒",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "持斧罗摩",
+      "name_en": "Parashurama",
+      "alias": "灭刹帝利者",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "迦尔吉",
+      "name_en": "Kalki",
+      "alias": "白马终末",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "楼陀罗",
+      "name_en": "Rudra",
+      "alias": "咆哮暴风",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "维拉巴德拉",
+      "name_en": "Virabhadra",
+      "alias": "湿婆之怒",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "陪胪",
+      "name_en": "Bhairava",
+      "alias": "恐怖之相",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "恰蒙达",
+      "name_en": "Chamunda",
+      "alias": "骸骨女神",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "难提",
+      "name_en": "Nandi",
+      "alias": "湿婆坐骑",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "阿周那",
+      "name_en": "Arjuna",
+      "alias": "甘狄拔神弓",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "迦尔纳",
+      "name_en": "Karna",
+      "alias": "太阳之子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "怖军",
+      "name_en": "Bhima",
+      "alias": "狼腹之力",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "难敌",
+      "name_en": "Duryodhana",
+      "alias": "俱卢长子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "毗湿摩",
+      "name_en": "Bhishma",
+      "alias": "誓约之祖",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "坚战",
+      "name_en": "Yudhishthira",
+      "alias": "正法之王",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "沙恭尼",
+      "name_en": "Shakuni",
+      "alias": "骨骰之手",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "德罗纳",
+      "name_en": "Drona",
+      "alias": "兵法之师",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "罗波那",
+      "name_en": "Ravana",
+      "alias": "十首魔王",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "因陀罗吉特",
+      "name_en": "Indrajit",
+      "alias": "胜因陀罗者",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "罗什曼那",
+      "name_en": "Lakshmana",
+      "alias": "忠影之弟",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "悉多",
+      "name_en": "Sita",
+      "alias": "垄沟之女",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "婆厘",
+      "name_en": "Vali",
+      "alias": "猴国旧王",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "阇陀由",
+      "name_en": "Jatayu",
+      "alias": "老鹫殉道",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "迦楼罗",
+      "name_en": "Garuda",
+      "alias": "金翅大鹏",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "迦摩",
+      "name_en": "Kama",
+      "alias": "甘蔗之弓",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "巴利",
+      "name_en": "Bali",
+      "alias": "守诺魔王",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "摩希沙",
+      "name_en": "Mahishasura",
+      "alias": "水牛魔王",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "希兰亚卡西普",
+      "name_en": "Hiranyakashipu",
+      "alias": "金衣不死",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "罗睺",
+      "name_en": "Rahu",
+      "alias": "吞日之首",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "计都",
+      "name_en": "Ketu",
+      "alias": "彗尾之身",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "恒河女神",
+      "name_en": "Ganga",
+      "alias": "天河下凡",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "那罗陀",
+      "name_en": "Narada",
+      "alias": "琵琶游方",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "广博仙人",
+      "name_en": "Vyasa",
+      "alias": "史诗编者",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "俱比罗",
+      "name_en": "Kubera",
+      "alias": "财宝之主",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "印度神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "摩瑞甘",
+      "name_en": "Morrigan",
+      "alias": "预示死亡的乌鸦",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "巴德布",
+      "name_en": "Badb",
+      "alias": "战场的乌鸦",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "涅万",
+      "name_en": "Nemain",
+      "alias": "战斗狂乱",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "玛卡",
+      "name_en": "Macha",
+      "alias": "跑赢王马的孕妇",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "迪安·凯赫特",
+      "name_en": "Dian Cecht",
+      "alias": "银臂的锻造者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "米阿赫",
+      "name_en": "Miach",
+      "alias": "接回血肉的手",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "艾尔米德",
+      "name_en": "Airmed",
+      "alias": "草药的分类者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "戈布纽",
+      "name_en": "Goibniu",
+      "alias": "三击成枪",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "布雷斯",
+      "name_en": "Bres",
+      "alias": "美貌的吝啬王",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "巴洛尔",
+      "name_en": "Balor",
+      "alias": "邪眼之王",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "因迪赫",
+      "name_en": "Indech",
+      "alias": "弗摩尔的海王",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "特斯拉",
+      "name_en": "Tethra",
+      "alias": "会说话的剑",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "埃柳",
+      "name_en": "Eriu",
+      "alias": "以己名国",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "邦芭",
+      "name_en": "Banba",
+      "alias": "最初的名字",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "埃恩古斯",
+      "name_en": "Aengus Og",
+      "alias": "梦中之爱",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "波安",
+      "name_en": "Boann",
+      "alias": "追人的河",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "米迪尔",
+      "name_en": "Midir",
+      "alias": "棋局赢来的妻",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "埃坦",
+      "name_en": "Etain",
+      "alias": "被吞下的转世",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "康纳尔·凯尔纳赫",
+      "name_en": "Conall Cernach",
+      "alias": "复仇的执行人",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "弗格斯·麦克罗伊",
+      "name_en": "Fergus mac Roich",
+      "alias": "斩去山头的剑",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "康乔巴尔",
+      "name_en": "Conchobar",
+      "alias": "脑中的石弹",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "费迪亚",
+      "name_en": "Ferdiad",
+      "alias": "角质之皮",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "纳伊西",
+      "name_en": "Naoise",
+      "alias": "私奔的乌斯纳之子",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "康拉",
+      "name_en": "Connla",
+      "alias": "被父亲杀死的儿子",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "埃弗",
+      "name_en": "Aoife",
+      "alias": "影之国的姐姐",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "埃梅尔",
+      "name_en": "Emer",
+      "alias": "六德之妻",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "卡斯巴德",
+      "name_en": "Cathbad",
+      "alias": "开口即成真",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "阿伊利尔",
+      "name_en": "Ailill",
+      "alias": "白角牛的主人",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "乌阿萨赫",
+      "name_en": "Uathach",
+      "alias": "影之国的引路人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "高尔·麦克莫尔纳",
+      "name_en": "Goll mac Morna",
+      "alias": "独眼的宿敌",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "卡尔特",
+      "name_en": "Cailte mac Ronain",
+      "alias": "跑得最快的芬尼亚",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "格兰尼",
+      "name_en": "Grainne",
+      "alias": "自己选人的公主",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "斯科兰",
+      "name_en": "Sceolang",
+      "alias": "有人类血统的猎犬",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "阿里安罗德",
+      "name_en": "Arianrhod",
+      "alias": "银轮之下的三重诅咒",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "格温迪恩",
+      "name_en": "Gwydion",
+      "alias": "用花造人的魔法师",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "凯里德温",
+      "name_en": "Ceridwen",
+      "alias": "智慧之釜",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "布洛德韦德",
+      "name_en": "Blodeuwedd",
+      "alias": "花做的猫头鹰",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "普维尔",
+      "name_en": "Pwyll",
+      "alias": "换了一年身的王",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "阿劳恩",
+      "name_en": "Arawn",
+      "alias": "安农之王",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "格温·艾普·努德",
+      "name_en": "Gwyn ap Nudd",
+      "alias": "五朔节的猎手",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "布兰·本迪盖德",
+      "name_en": "Bran the Blessed",
+      "alias": "不腐的头颅",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "塔利埃辛",
+      "name_en": "Taliesin",
+      "alias": "光辉之眉",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "埃波娜",
+      "name_en": "Epona",
+      "alias": "唯一被罗马采纳的凯尔特神",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "贝勒努斯",
+      "name_en": "Belenus",
+      "alias": "五月火焰",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "安达特",
+      "name_en": "Andraste",
+      "alias": "不可战胜",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "布狄卡",
+      "name_en": "Boudica",
+      "alias": "战车上的女王",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "天之御中主神",
+      "name_en": "Amenominakanushi",
+      "alias": "最初显现者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "思兼神",
+      "name_en": "Omoikane",
+      "alias": "同时想很多事的神",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "天手力男神",
+      "name_en": "Amenotajikarao",
+      "alias": "拉开岩户的臂力",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "天儿屋命",
+      "name_en": "Amenokoyane",
+      "alias": "祝词之祖",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "石凝姥命",
+      "name_en": "Ishikoridome",
+      "alias": "八咫镜的铸造者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "建御雷",
+      "name_en": "Takemikazuchi",
+      "alias": "剑尖上的谈判",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "经津主神",
+      "name_en": "Futsunushi",
+      "alias": "香取之剑",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "建御名方",
+      "name_en": "Takeminakata",
+      "alias": "输掉腕力的神",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "事代主",
+      "name_en": "Kotoshironushi",
+      "alias": "拍手退场",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "八岐大蛇",
+      "name_en": "Yamata no Orochi",
+      "alias": "八首八尾",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "稻田姬",
+      "name_en": "Kushinadahime",
+      "alias": "被换成梳子的新娘",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "木花开耶姬",
+      "name_en": "Konohanasakuyahime",
+      "alias": "火中生产",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "磐长姬",
+      "name_en": "Iwanagahime",
+      "alias": "被退回的长寿",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "山幸彦",
+      "name_en": "Hoori",
+      "alias": "找回鱼钩的人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "海幸彦",
+      "name_en": "Hoderi",
+      "alias": "被潮水教训的兄长",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "丰玉姬",
+      "name_en": "Toyotamahime",
+      "alias": "被看见原形",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "玉依姬",
+      "name_en": "Tamayoribime",
+      "alias": "代姐养子",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "猿田彦",
+      "name_en": "Sarutahiko",
+      "alias": "岔路上的巨神",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "迦具土",
+      "name_en": "Kagutsuchi",
+      "alias": "出生即弑母",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "黄泉丑女",
+      "name_en": "Yomotsu-shikome",
+      "alias": "追赶的丑女",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "天邪鬼",
+      "name_en": "Amanojaku",
+      "alias": "专门唱反调",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "酒吞童子",
+      "name_en": "Shuten-doji",
+      "alias": "大江山的鬼王",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "茨木童子",
+      "name_en": "Ibaraki-doji",
+      "alias": "回来取手臂的鬼",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "大天狗",
+      "name_en": "Daitengu",
+      "alias": "赤面高鼻",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "鵺",
+      "name_en": "Nue",
+      "alias": "五种动物拼成的东西",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "玉藻前",
+      "name_en": "Tamamo-no-Mae",
+      "alias": "九尾的白面",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "雪女",
+      "name_en": "Yuki-onna",
+      "alias": "雪夜的白衣",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "土蜘蛛",
+      "name_en": "Tsuchigumo",
+      "alias": "屋梁上的巨蛛",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "大百足",
+      "name_en": "Omukade",
+      "alias": "绕山七圈半",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "阎魔",
+      "name_en": "Enma",
+      "alias": "读簿的裁判",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "源赖光",
+      "name_en": "Minamoto no Raiko",
+      "alias": "讨鬼的大将",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "渡边纲",
+      "name_en": "Watanabe no Tsuna",
+      "alias": "斩下鬼臂的人",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "坂田金时",
+      "name_en": "Sakata Kintoki",
+      "alias": "山中的红孩子",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "俵藤太",
+      "name_en": "Tawara Toda",
+      "alias": "唾沫上的三箭",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "源义经",
+      "name_en": "Minamoto no Yoshitsune",
+      "alias": "八艘跳",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "武藏坊弁庆",
+      "name_en": "Benkei",
+      "alias": "站着死的和尚",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "那须与一",
+      "name_en": "Nasu no Yoichi",
+      "alias": "射扇的一箭",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "巴御前",
+      "name_en": "Tomoe Gozen",
+      "alias": "一骑当千的女武者",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "神功皇后",
+      "name_en": "Jingu",
+      "alias": "腹中系石",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "安倍晴明",
+      "name_en": "Abe no Seimei",
+      "alias": "式神使",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "芦屋道满",
+      "name_en": "Ashiya Doman",
+      "alias": "输给晴明的术士",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "毘沙门天",
+      "name_en": "Bishamonten",
+      "alias": "北方多闻",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "不动明王",
+      "name_en": "Fudo Myoo",
+      "alias": "背火而立",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "摩利支天",
+      "name_en": "Marishiten",
+      "alias": "阳炎不可见",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "弁才天",
+      "name_en": "Benzaiten",
+      "alias": "琵琶与水",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "惠比寿",
+      "name_en": "Ebisu",
+      "alias": "被放逐的第一个孩子",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "乙姬",
+      "name_en": "Otohime",
+      "alias": "龙宫的招待",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "河童",
+      "name_en": "Kappa",
+      "alias": "头顶的水碟",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "座敷童子",
+      "name_en": "Zashiki-warashi",
+      "alias": "住在房里的孩子",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "日本神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "后羿",
+      "name_en": "Hou Yi",
+      "alias": "射日者",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "精卫",
+      "name_en": "Jingwei",
+      "alias": "衔木填海",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "夸父",
+      "name_en": "Kuafu",
+      "alias": "逐日的巨人",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "烛九阴",
+      "name_en": "Zhujiuyin",
+      "alias": "睁眼为昼",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "颛顼",
+      "name_en": "Zhuanxu",
+      "alias": "绝地天通",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "少昊",
+      "name_en": "Shaohao",
+      "alias": "百鸟之朝",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "大禹",
+      "name_en": "Yu the Great",
+      "alias": "十三年不入家门",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "鲧",
+      "name_en": "Gun",
+      "alias": "偷息壤的人",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "相柳",
+      "name_en": "Xiangliu",
+      "alias": "九首食九山",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "防风氏",
+      "name_en": "Fangfeng",
+      "alias": "迟到的巨人",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "陆吾",
+      "name_en": "Luwu",
+      "alias": "昆仑守门",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "毕方",
+      "name_en": "Bifang",
+      "alias": "一足火鸟",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "九尾狐",
+      "name_en": "Nine-Tailed Fox",
+      "alias": "青丘之兽",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "飞廉",
+      "name_en": "Feilian",
+      "alias": "风伯",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "英招",
+      "name_en": "Ying Zhao",
+      "alias": "槐江之守",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "女魃",
+      "name_en": "Nuba",
+      "alias": "所居不雨",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "白泽",
+      "name_en": "Baize",
+      "alias": "知万物之情",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "巫咸",
+      "name_en": "Wu Xian",
+      "alias": "十巫之首",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "东皇太一",
+      "name_en": "Donghuang Taiyi",
+      "alias": "九歌之首",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "洛神宓妃",
+      "name_en": "Luo Shen",
+      "alias": "凌波微步",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "山鬼",
+      "name_en": "Shan Gui",
+      "alias": "被薜荔带女萝",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "姜子牙",
+      "name_en": "Jiang Ziya",
+      "alias": "打神鞭",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "哪吒",
+      "name_en": "Nezha",
+      "alias": "剔骨还父",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "太乙真人",
+      "name_en": "Taiyi Zhenren",
+      "alias": "莲花的匠人",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "广成子",
+      "name_en": "Guangchengzi",
+      "alias": "崆峒问道",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "申公豹",
+      "name_en": "Shen Gongbao",
+      "alias": "道友请留步",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "通天教主",
+      "name_en": "Tongtian",
+      "alias": "诛仙四剑",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "云霄娘娘",
+      "name_en": "Yunxiao",
+      "alias": "混元金斗",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "闻仲",
+      "name_en": "Wen Zhong",
+      "alias": "三只眼的太师",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "雷震子",
+      "name_en": "Leizhenzi",
+      "alias": "风雷双翅",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "黄天化",
+      "name_en": "Huang Tianhua",
+      "alias": "玉麒麟",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "土行孙",
+      "name_en": "Tuxingsun",
+      "alias": "地下三千里",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "陆压道人",
+      "name_en": "Luya",
+      "alias": "钉头七箭书",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "赵公明",
+      "name_en": "Zhao Gongming",
+      "alias": "二十四颗定海珠",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "李靖",
+      "name_en": "Li Jing",
+      "alias": "托塔天王",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "邓婵玉",
+      "name_en": "Deng Chanyu",
+      "alias": "五光石",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "镇元子",
+      "name_en": "Zhenyuanzi",
+      "alias": "地仙之祖",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "孙悟空",
+      "name_en": "Sun Wukong",
+      "alias": "齐天大圣",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "钟馗",
+      "name_en": "Zhong Kui",
+      "alias": "捉鬼的进士",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "关圣帝君",
+      "name_en": "Guan Yu",
+      "alias": "武圣",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "虞舜",
+      "name_en": "Shun",
+      "alias": "历山耕田",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "太白金星",
+      "name_en": "Taibai Jinxing",
+      "alias": "招安使者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "铁拐李",
+      "name_en": "Tieguai Li",
+      "alias": "借尸还魂",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "妈祖",
+      "name_en": "Mazu",
+      "alias": "湄洲的女儿",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "养由基",
+      "name_en": "Yang Youji",
+      "alias": "百步穿杨",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "纪昌",
+      "name_en": "Ji Chang",
+      "alias": "视虱如轮",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "斯万托维特",
+      "name_en": "Svantovit",
+      "alias": "阿尔科纳四面神",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "鲁耶维特",
+      "name_en": "Rugievit",
+      "alias": "七面七剑",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "拉德加斯特",
+      "name_en": "Radegast",
+      "alias": "客人的神",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "拉达",
+      "name_en": "Lada",
+      "alias": "春天的和谐",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "莱莉娅",
+      "name_en": "Lelya",
+      "alias": "初生的春",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "齐瓦",
+      "name_en": "Ziva",
+      "alias": "活着",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "玛扎娜",
+      "name_en": "Marzanna",
+      "alias": "冬与死",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "维斯纳",
+      "name_en": "Vesna",
+      "alias": "春的到来",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "库帕拉",
+      "name_en": "Kupala",
+      "alias": "仲夏之火",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "多多拉",
+      "name_en": "Dodola",
+      "alias": "求雨的少女",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "莫罗兹科",
+      "name_en": "Morozko",
+      "alias": "严寒老人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "斯涅古罗奇卡",
+      "name_en": "Snegurochka",
+      "alias": "雪做的姑娘",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "波卢德尼察",
+      "name_en": "Poludnitsa",
+      "alias": "正午的女人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "波列维克",
+      "name_en": "Polevik",
+      "alias": "田埂上的小老头",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "沃迪亚诺伊",
+      "name_en": "Vodyanoy",
+      "alias": "水下的老头",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "班尼克",
+      "name_en": "Bannik",
+      "alias": "澡堂里的精",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "基基莫拉",
+      "name_en": "Kikimora",
+      "alias": "屋角的纺纱声",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "乌皮尔",
+      "name_en": "Upyr",
+      "alias": "白天也能出来",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "斯特里加",
+      "name_en": "Strzyga",
+      "alias": "两颗心两条命",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "维伊",
+      "name_en": "Viy",
+      "alias": "垂到地上的眼睑",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "拉洛格",
+      "name_en": "Rarog",
+      "alias": "火隼",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "西马格尔",
+      "name_en": "Simargl",
+      "alias": "有翼的守犬",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "波洛兹",
+      "name_en": "Poloz",
+      "alias": "地底蛇王",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "兹梅伊·戈里尼奇",
+      "name_en": "Zmey Gorynych",
+      "alias": "三头喷火龙",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "图戈林",
+      "name_en": "Tugarin",
+      "alias": "会飞的蛇怪",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "沃尔科拉克",
+      "name_en": "Volkolak",
+      "alias": "披上狼皮的人",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "斯维亚托戈尔",
+      "name_en": "Svyatogor",
+      "alias": "提不动的褡裢",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "米库拉·谢利亚尼诺维奇",
+      "name_en": "Mikula Selyaninovich",
+      "alias": "扛得动大地的农夫",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "沃尔加·斯维亚托斯拉维奇",
+      "name_en": "Volga Svyatoslavich",
+      "alias": "会变形的公",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "萨特科",
+      "name_en": "Sadko",
+      "alias": "海底弹琴的人",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "瓦西里·布斯拉耶夫",
+      "name_en": "Vasily Buslaev",
+      "alias": "跟全城打架的人",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "索洛维·拉兹博伊尼克",
+      "name_en": "Solovei the Robber",
+      "alias": "夜莺强盗",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "杜奈·伊万诺维奇",
+      "name_en": "Dunai Ivanovich",
+      "alias": "赌箭输掉的人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "伊万·戈金诺维奇",
+      "name_en": "Ivan Godinovich",
+      "alias": "射天鹅的人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "加马云",
+      "name_en": "Gamayun",
+      "alias": "预言之鸟",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "阿列科诺斯特",
+      "name_en": "Alkonost",
+      "alias": "让人忘事的歌",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "西林",
+      "name_en": "Sirin",
+      "alias": "悲哀的歌",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "智者瓦西丽莎",
+      "name_en": "Vasilisa the Wise",
+      "alias": "青蛙公主",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "玛丽亚·莫列夫娜",
+      "name_en": "Marya Morevna",
+      "alias": "打赢仗的女王",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "伊万王子",
+      "name_en": "Ivan Tsarevich",
+      "alias": "第三个儿子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "灰狼",
+      "name_en": "Grey Wolf",
+      "alias": "吃掉他的马",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "叶莲娜",
+      "name_en": "Elena the Beautiful",
+      "alias": "被认出来的公主",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "丘里洛·普连科维奇",
+      "name_en": "Churilo Plenkovich",
+      "alias": "让人分心的美男",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "罗德",
+      "name_en": "Rod",
+      "alias": "生育之源",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "涅多利亚",
+      "name_en": "Nedolya",
+      "alias": "背后的厄运",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特拉尔特库特利",
+      "name_en": "Tlaltecuhtli",
+      "alias": "被撕开的大地",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奥梅特奥特尔",
+      "name_en": "Ometeotl",
+      "alias": "二元合一",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奇瓦科阿特尔",
+      "name_en": "Cihuacoatl",
+      "alias": "夜里哭的女人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特佩约约特尔",
+      "name_en": "Tepeyollotl",
+      "alias": "山的心脏",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "韦韦特奥特尔",
+      "name_en": "Huehueteotl",
+      "alias": "最老的火",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特拉洛克众",
+      "name_en": "Tlaloque",
+      "alias": "四方的雨侍",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特奥约米基",
+      "name_en": "Teoyaomiqui",
+      "alias": "战死者的收集人",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "索奇奎察尔",
+      "name_en": "Xochiquetzal",
+      "alias": "花的羽毛",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "索奇皮利",
+      "name_en": "Xochipilli",
+      "alias": "花之王子",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "马库伊尔索奇特尔",
+      "name_en": "Macuilxochitl",
+      "alias": "五花",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "马雅韦尔",
+      "name_en": "Mayahuel",
+      "alias": "四百个乳房",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "帕特卡特尔",
+      "name_en": "Patecatl",
+      "alias": "药的主人",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "森特松·托托奇廷",
+      "name_en": "Centzon Totochtin",
+      "alias": "四百只兔子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奇科梅科阿特尔",
+      "name_en": "Chicomecoatl",
+      "alias": "七蛇",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "希洛嫩",
+      "name_en": "Xilonen",
+      "alias": "嫩玉米",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "托奇",
+      "name_en": "Toci",
+      "alias": "我们的祖母",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "韦斯托西瓦特尔",
+      "name_en": "Huixtocihuatl",
+      "alias": "盐的女神",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特拉索尔特奥特尔",
+      "name_en": "Tlazolteotl",
+      "alias": "吃污秽的神",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "齐齐米梅",
+      "name_en": "Tzitzimimeh",
+      "alias": "日食时的星魔",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "伊察帕帕洛特尔",
+      "name_en": "Itzpapalotl",
+      "alias": "黑曜石蝴蝶",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奇瓦特特奥",
+      "name_en": "Cihuateteo",
+      "alias": "难产死去的女人",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "伊兹特利",
+      "name_en": "Itztli",
+      "alias": "黑曜石之刃",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "恰尔奇乌托托林",
+      "name_en": "Chalchiuhtotolin",
+      "alias": "玉火鸡",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "阿维措特尔水兽",
+      "name_en": "Ahuizotl",
+      "alias": "手掌尾巴",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "纳瓦尔",
+      "name_en": "Nahual",
+      "alias": "换皮的人",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "米斯科阿特尔",
+      "name_en": "Mixcoatl",
+      "alias": "云蛇",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特拉惠斯卡尔潘特库特利",
+      "name_en": "Tlahuizcalpantecuhtli",
+      "alias": "晨星",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奥帕奇特利",
+      "name_en": "Opochtli",
+      "alias": "撒网的左手",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "阿米米特尔",
+      "name_en": "Amimitl",
+      "alias": "水中的箭",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奇马尔曼",
+      "name_en": "Chimalman",
+      "alias": "被箭射中的母亲",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "托皮尔津",
+      "name_en": "Topiltzin Quetzalcoatl",
+      "alias": "图拉的祭司王",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "特拉卡埃莱尔",
+      "name_en": "Tlacaelel",
+      "alias": "从不当王的军师",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "伊兹科阿特尔",
+      "name_en": "Itzcoatl",
+      "alias": "黑曜之蛇",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "阿萨亚卡特尔",
+      "name_en": "Axayacatl",
+      "alias": "水面之脸",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "阿维措特尔",
+      "name_en": "Ahuitzotl",
+      "alias": "扩张到极限的王",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "蒙特苏马二世",
+      "name_en": "Moctezuma II",
+      "alias": "犹豫的皇帝",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "库奥赫特莫克",
+      "name_en": "Cuauhtemoc",
+      "alias": "落下的鹰",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "内萨瓦尔科约特尔",
+      "name_en": "Nezahualcoyotl",
+      "alias": "饥饿的郊狼",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "老鹰武士",
+      "name_en": "Cuauhtli Warrior",
+      "alias": "太阳的士兵",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "美洲豹武士",
+      "name_en": "Ocelotl Warrior",
+      "alias": "夜里的士兵",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "马利纳尔索奇特尔",
+      "name_en": "Malinalxochitl",
+      "alias": "被丢下的姐姐",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "科皮尔",
+      "name_en": "Copil",
+      "alias": "长成仙人掌的心",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "亚卡特库特利",
+      "name_en": "Yacatecuhtli",
+      "alias": "走在最前的鼻子",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "伊斯特利尔顿",
+      "name_en": "Ixtlilton",
+      "alias": "小黑脸",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "阿特拉卡曼尼",
+      "name_en": "Atlacamani",
+      "alias": "海上的风暴",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "加海里斯",
+      "name_en": "Gaheris",
+      "alias": "误杀母亲的儿子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "阿格规文",
+      "name_en": "Agravain",
+      "alias": "捅破窗户纸的人",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "摩高斯",
+      "name_en": "Morgause",
+      "alias": "奥克尼的王后",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "洛特王",
+      "name_en": "King Lot",
+      "alias": "十一王之首",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "拉莫拉克",
+      "name_en": "Lamorak",
+      "alias": "第三强的骑士",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "佩里诺王",
+      "name_en": "King Pellinore",
+      "alias": "追寻怪兽的人",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "尤维恩",
+      "name_en": "Ywain",
+      "alias": "狮子骑士",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "埃雷克",
+      "name_en": "Erec",
+      "alias": "怠于武事的新郎",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "马克王",
+      "name_en": "King Mark",
+      "alias": "康沃尔的丈夫",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "赫克托爵士",
+      "name_en": "Sir Ector",
+      "alias": "养大国王的人",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "卢坎",
+      "name_en": "Lucan",
+      "alias": "抬起国王的侍酒官",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "卡拉多斯",
+      "name_en": "Caradoc",
+      "alias": "断臂的骑士",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "铁面红骑士",
+      "name_en": "Ironside",
+      "alias": "红原野的红骑士",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "里恩斯王",
+      "name_en": "King Rience",
+      "alias": "收集胡子的人",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "渔王佩莱斯",
+      "name_en": "King Pelles",
+      "alias": "看守圣杯的伤",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "卢修斯",
+      "name_en": "Lucius",
+      "alias": "罗马的索贡者",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "圣米歇尔山巨人",
+      "name_en": "Giant of Mont St Michel",
+      "alias": "山上的食人者",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "帕洛米德斯",
+      "name_en": "Palamedes",
+      "alias": "未受洗的骑士",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "迪纳丹",
+      "name_en": "Dinadan",
+      "alias": "说实话的骑士",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "阿科隆",
+      "name_en": "Accolon",
+      "alias": "拿着真剑的人",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "莱昂内尔",
+      "name_en": "Lionel",
+      "alias": "被鞭打的堂弟",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "布莱奥贝里斯",
+      "name_en": "Bleoberis",
+      "alias": "本威克家的剑",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "佩利亚斯",
+      "name_en": "Pelleas",
+      "alias": "被讥笑的痴情人",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "卡斯·帕鲁格",
+      "name_en": "Cath Palug",
+      "alias": "安格尔西的巨猫",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "奎斯坦格兽",
+      "name_en": "Questing Beast",
+      "alias": "肚子里有猎犬",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "尼缪",
+      "name_en": "Nimue",
+      "alias": "封住梅林的人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "薇薇安",
+      "name_en": "Viviane",
+      "alias": "湖中的养母",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "布莱斯",
+      "name_en": "Blaise",
+      "alias": "记下这一切的人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "绿骑士",
+      "name_en": "Green Knight",
+      "alias": "捡起自己脑袋的人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "克劳达斯",
+      "name_en": "Claudas",
+      "alias": "夺走班国的人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "拉格内尔夫人",
+      "name_en": "Dame Ragnelle",
+      "alias": "最丑的新娘",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "托尔爵士",
+      "name_en": "Sir Tor",
+      "alias": "牧牛人的儿子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "萨格拉莫尔",
+      "name_en": "Sagramore",
+      "alias": "渴望之人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "格里弗莱特",
+      "name_en": "Griflet",
+      "alias": "扔剑入湖的人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "埃克托·德·马里斯",
+      "name_en": "Ector de Maris",
+      "alias": "念悼词的弟弟",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "兰瓦尔",
+      "name_en": "Lanval",
+      "alias": "被仙女养起来的骑士",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "萨菲尔",
+      "name_en": "Safir",
+      "alias": "帕洛米德斯的弟弟",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "伊索尔德",
+      "name_en": "Iseult",
+      "alias": "喝错药水的人",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "阿斯托拉特的伊莲",
+      "name_en": "Elaine of Astolat",
+      "alias": "百合少女",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "科比尼克的伊莲",
+      "name_en": "Elaine of Corbenic",
+      "alias": "圣杯的母亲",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "伊格赖因",
+      "name_en": "Igraine",
+      "alias": "被换了脸的丈夫",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "琳内特",
+      "name_en": "Lynette",
+      "alias": "一路骂人的向导",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "布兰格温",
+      "name_en": "Brangaine",
+      "alias": "拿错瓶子的侍女",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "恩尼德",
+      "name_en": "Enide",
+      "alias": "被禁止说话的妻子",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "亚利马太的约瑟",
+      "name_en": "Joseph of Arimathea",
+      "alias": "带杯来英伦的人",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "迈立德",
+      "name_en": "Marid",
+      "alias": "深海之主",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "黄铜城傀儡王",
+      "name_en": "Lord of the City of Brass",
+      "alias": "黄铜傀儡",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "海中老人",
+      "name_en": "Old Man of the Sea",
+      "alias": "缠颈之魇",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "驼背人",
+      "name_en": "The Hunchback",
+      "alias": "不死的笑匠",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "郁南王",
+      "name_en": "King Yunan",
+      "alias": "中谗之君",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "黑岛女王",
+      "name_en": "Queen of the Black Islands",
+      "alias": "半石化者",
+      "native_role": "坦克",
+      "universal_role": "tank",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "山鲁亚尔",
+      "name_en": "Shahryar",
+      "alias": "萨桑暴君",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "辛巴达",
+      "name_en": "Sinbad",
+      "alias": "七海航海家",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "卡西姆",
+      "name_en": "Cassim",
+      "alias": "贪兄",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "哈伦·拉希德",
+      "name_en": "Harun al-Rashid",
+      "alias": "巴格达哈里发",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "第二卡兰达尔",
+      "name_en": "Second Kalandar",
+      "alias": "独眼王子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "黑岛王子",
+      "name_en": "Prince of the Black Islands",
+      "alias": "受咒之子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "卡马拉尔扎曼",
+      "name_en": "Camaralzaman",
+      "alias": "痴情王子",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "乌木马王子",
+      "name_en": "Prince of the Ebony Horse",
+      "alias": "飞天骑士",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "四十大盗首领",
+      "name_en": "Captain of the Forty Thieves",
+      "alias": "芝麻开门者",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "阿拉丁",
+      "name_en": "Aladdin",
+      "alias": "神灯少年",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "阿里巴巴",
+      "name_en": "Ali Baba",
+      "alias": "樵夫义贼",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "马尔基娜",
+      "name_en": "Morgiana",
+      "alias": "智勇婢女",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "马苏尔",
+      "name_en": "Masrur",
+      "alias": "御前刽子手",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "食尸鬼",
+      "name_en": "Ghoul",
+      "alias": "坟场食尸者",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "第三卡兰达尔",
+      "name_en": "Third Kalandar",
+      "alias": "箱中王子",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "基督教经纪人",
+      "name_en": "Christian Broker",
+      "alias": "市集掮客",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "标记之贼",
+      "name_en": "The Marking Thief",
+      "alias": "门上做记的小偷",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "神灯精灵",
+      "name_en": "Genie of the Lamp",
+      "alias": "灯中之主",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "戒指精灵",
+      "name_en": "Genie of the Ring",
+      "alias": "戒中守护",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "伊夫利特",
+      "name_en": "Ifrit",
+      "alias": "火狱之魔",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "渔夫的精灵",
+      "name_en": "Jinni of the Bottle",
+      "alias": "瓶中囚徒",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "老渔夫",
+      "name_en": "The Fisherman",
+      "alias": "撒网智者",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "朱德尔",
+      "name_en": "Judar",
+      "alias": "渔网术士",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "杜班医师",
+      "name_en": "Sage Duban",
+      "alias": "奇术医师",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "蛇后",
+      "name_en": "Queen of the Serpents",
+      "alias": "地底蛇国女王",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "美丽的波斯女",
+      "name_en": "The Fair Persian",
+      "alias": "倾城 enchantress",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "巴米塞德",
+      "name_en": "Barmecide",
+      "alias": "空盘盛宴之主",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "女妖",
+      "name_en": "Ifritah",
+      "alias": "火狱女王",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "第一卡兰达尔",
+      "name_en": "First Kalandar",
+      "alias": "化猿王子",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "大鹏鸟",
+      "name_en": "The Roc",
+      "alias": "遮天巨禽",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "努尔丁",
+      "name_en": "Noureddin",
+      "alias": "波斯情郎",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "巴杜拉",
+      "name_en": "Budur",
+      "alias": "女扮王者的公主",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "阿吉布",
+      "name_en": "Ajib",
+      "alias": "骄纵王子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "山鲁佐德",
+      "name_en": "Scheherazade",
+      "alias": "说书救己的宰相女",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "敦亚佐德",
+      "name_en": "Dinarzad",
+      "alias": "催更的妹妹",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "阿布·哈桑",
+      "name_en": "Abu al-Hasan",
+      "alias": "醉梦哈里发",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "祖贝达",
+      "name_en": "Zubaidah",
+      "alias": "哈里发之妻",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "犹太医生",
+      "name_en": "Jewish Doctor",
+      "alias": "误诊郎中",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "贾法尔",
+      "name_en": "Ja'far",
+      "alias": "公正维齐尔",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "非洲魔法师",
+      "name_en": "The African Magician",
+      "alias": "夺灯之徒",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "魔法师之弟",
+      "name_en": "The Magician's Brother",
+      "alias": "扮装的复仇者",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "萨布拉",
+      "name_en": "Princess Sabra",
+      "alias": "乌木马童话的公主",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "舍赫拉曼",
+      "name_en": "King Shahriman",
+      "alias": "卡马拉尔扎曼之父",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "大维齐尔",
+      "name_en": "The Grand Vizier",
+      "alias": "山鲁佐德之父",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "萨德",
+      "name_en": "Sa'd",
+      "alias": "朱德尔之兄",
+      "native_role": "战士",
+      "universal_role": "fighter",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "萨利姆",
+      "name_en": "Salim",
+      "alias": "朱德尔之兄",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "朱德尔的术士",
+      "name_en": "The Magician of Judar",
+      "alias": "设局夺宝者",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "卡吉亚·哈桑",
+      "name_en": "Cogia Hassan",
+      "alias": "受骗的香客",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "阿布·纳瓦斯",
+      "name_en": "Abu Nuwas",
+      "alias": "宫廷诗人",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "巴格达理发师",
+      "name_en": "The Talkative Barber",
+      "alias": "停不下的嘴",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "三女郎之主",
+      "name_en": "The Lady of Baghdad",
+      "alias": "巴格达贵妇",
+      "native_role": "法师",
+      "universal_role": "mage",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "哈提姆·塔伊",
+      "name_en": "Hatim Tai",
+      "alias": "慷慨之王",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "阿拉丁之母",
+      "name_en": "Aladdin's Mother",
+      "alias": "捧宝求见的母亲",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "卡西姆之妻",
+      "name_en": "Cassim's Wife",
+      "alias": "缝尸报信的嫂子",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "巴格达老妪",
+      "name_en": "The Old Woman of Baghdad",
+      "alias": "街角指路者",
+      "native_role": "辅助",
+      "universal_role": "support",
+      "source": "阿拉伯神话"
+    },
+    {
+      "game": "Arabian Nights",
+      "name": "哈里发密探",
+      "name_en": "The Caliph's Spy",
+      "alias": "墙缝递字的人",
+      "native_role": "刺客",
+      "universal_role": "assassin",
+      "source": "阿拉伯神话"
     }
   ]
 }

@@ -1,24 +1,23 @@
 {
-  "card_id": "arabian_nights:卡西姆",
-  "legacy_card_id": "ONE-79526",
+  "card_id": "Arabian_Nights:卡西姆",
+  "legacy_card_id": "ARA-1008",
   "hero": {
     "name": "卡西姆",
     "name_en": "Cassim",
-    "alias": "",
-    "title": "Cassim"
+    "alias": "贪兄",
+    "title": "贪兄"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "战士",
     "universal_role": "fighter",
     "role_name": "战士",
     "role_dnd_class": "战士"
   },
-  "source": "一千零一夜",
+  "source": "阿拉伯神话",
   "difficulty": 3,
   "playstyle_tags": [
-    "变身",
     "持续输出",
     "突进",
     "缠斗"
@@ -113,52 +112,57 @@
   },
   "skills": [
     {
-      "name": "贪金斩",
+      "name": "贪念开门",
       "key": "Q",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 1,
         "dice_size": 10,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 0,
-      "description": "挥舞武器发动沉重打击。战士的近身搏杀之本。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "吸血",
-          "desc": "攻击时回复生命",
+          "type": "易伤",
+          "target": "敌方",
           "duration": 2,
-          "target": "自身"
+          "desc": "贪念误事"
         }
-      ]
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。他记住了芝麻开门，却忘了怎么关门。易伤2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
     },
     {
-      "name": "商队护壁",
+      "name": "满载之困",
       "key": "W",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 2,
         "dice_size": 8,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 1,
-      "description": "摆出防御姿态，提升自身韧性。战斗中的生存之道。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "减速",
-          "desc": "降低目标移动速度",
-          "duration": 2,
-          "target": "敌方"
+          "type": "束缚",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被金子卡住"
         }
       ],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。金子堆得太高，他卡在洞里出不来。束缚1回合。",
       "saving_throw": {
         "attr": "CON",
         "dc_formula": "8+PROF+STR",
@@ -166,52 +170,63 @@
       }
     },
     {
-      "name": "芝麻开门",
+      "name": "暗号忘却",
       "key": "E",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
       "damage": {
         "dice_count": 1,
         "dice_size": 8,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 2,
-      "description": "向目标发起冲锋/跳跃。战士切入战场的突进技。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
-          "type": "破甲",
-          "desc": "降低目标防御力",
-          "duration": 2,
-          "target": "敌方"
+          "type": "混乱",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "暗语错乱"
         }
-      ]
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。慌乱中他喊错开门的暗语，门纹丝不动。混乱1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
     },
     {
-      "name": "宝窟崩塌",
+      "name": "分尸之祸",
       "key": "R",
       "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
       "damage": {
         "dice_count": 2,
         "dice_size": 10,
         "bonus_attr": "STR",
         "type": "挥砍"
       },
-      "cooldown": 4,
-      "description": "激发全部战意，进入狂暴/强化状态。战士的终极战斗形态。",
-      "range": "近战",
-      "target": "单体",
-      "action": "动作",
       "effects": [
         {
           "type": "处决",
-          "desc": "对低血量目标造成额外伤害",
-          "duration": 0,
-          "target": "敌方"
+          "target": "敌方",
+          "desc": "被强盗分尸"
+        },
+        {
+          "type": "重伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "伤势持续恶化"
         }
       ],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。归来的强盗把他切成四块，挂在洞里示众。处决+重伤2回合。",
       "saving_throw": {
         "attr": "CON",
         "dc_formula": "8+PROF+STR",

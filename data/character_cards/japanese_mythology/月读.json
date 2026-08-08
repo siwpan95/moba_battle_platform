@@ -1,6 +1,6 @@
 {
   "card_id": "japanese_mythology:月读",
-  "legacy_card_id": "JAP-62211",
+  "legacy_card_id": "JAP-1001",
   "hero": {
     "name": "月读",
     "name_en": "Tsukuyomi",
@@ -20,7 +20,6 @@
   "playstyle_tags": [
     "AOE",
     "控制",
-    "硬控制",
     "远程",
     "高机动"
   ],

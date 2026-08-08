@@ -1,0 +1,107 @@
+[
+  {
+    "name": "龙舌兰之身",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "龙舌兰汁"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她化作龙舌兰。割开的地方流出的汁就是酒的原料。治疗。"
+  },
+  {
+    "name": "四百乳哺",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "四百兔集合"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她有四百个乳房，用来喂她那四百个兔子儿子。增援2回合。"
+  },
+  {
+    "name": "与羽蛇同逃",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她跟羽蛇神私奔，两人变成一棵分叉的树躲在一起。隐身1回合。"
+  },
+  {
+    "name": "被祖母撕碎",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "自碎片重生"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。齐齐米梅追上来把她撕成碎片。羽蛇把碎片埋了，长出第一株龙舌兰。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

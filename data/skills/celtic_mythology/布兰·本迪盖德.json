@@ -1,0 +1,114 @@
+[
+  {
+    "name": "涉海之巨",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "巨躯涉海"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他大得没有船装得下，于是自己蹚过爱尔兰海，把舰队顶在肩上。减伤2回合。"
+  },
+  {
+    "name": "以身作桥",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "以身承重"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他横躺在河上让军队踏过去，说：谁当首领，谁就当桥。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "重生之釜",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "投入重生之釜"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。那口釜能让死者复活，只是复活的人不会说话。他把它送出去了。复活。"
+  },
+  {
+    "name": "八十年之首",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "断首仍主持宴席"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。毒矛伤了脚，他让部下砍下自己的头。这颗头陪他们宴饮了八十年。增援2回合+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,6 +1,6 @@
 {
   "card_id": "celtic_mythology:玛纳南",
-  "legacy_card_id": "CEL-83365",
+  "legacy_card_id": "CEL-1014",
   "hero": {
     "name": "玛纳南",
     "name_en": "Manannán",
@@ -21,8 +21,7 @@
     "先手",
     "前排",
     "承伤",
-    "护盾",
-    "钩子"
+    "护盾"
   ],
   "attributes": {
     "STR": {

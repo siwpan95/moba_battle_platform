@@ -1,0 +1,107 @@
+[
+  {
+    "name": "代姐哺育",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "代亲之养"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。姐姐走了，她上岸把外甥养大。后来又嫁给了他。治疗。"
+  },
+  {
+    "name": "神灵依代",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "神灵附体"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她的名字意思是「神灵附身的少女」。这是一种职能，不是一个人。增益2回合。"
+  },
+  {
+    "name": "神武之母",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "王统降生"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她生下的第四子，就是初代天皇神武。增援2回合。"
+  },
+  {
+    "name": "水边之祀",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "水边祓禊"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。祭她要在水边。凡是水与神交界的地方，都算她的辖区。净化+回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

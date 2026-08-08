@@ -1,0 +1,101 @@
+[
+  {
+    "name": "指路善目",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "指路善目"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 辉蚀伤害。她坐在街角，专给迷路的旅人指路。增益2回合。"
+  },
+  {
+    "name": "巧舌解围",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "巧舌解围"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 辉蚀伤害。几次危局，她三两句就把追兵支到了别处。净化。"
+  },
+  {
+    "name": "暗递消息",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "暗递消息"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 辉蚀伤害。她替不少主角把口信送到对的人手里。回复。"
+  },
+  {
+    "name": "慈言化险",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "辉蚀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "慈言化险"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 辉蚀伤害。她一句慈祥的唠叨，常比刀剑更能化险。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

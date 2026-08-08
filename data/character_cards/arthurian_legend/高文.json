@@ -1,6 +1,6 @@
 {
   "card_id": "arthurian_legend:高文",
-  "legacy_card_id": "ART-65631",
+  "legacy_card_id": "ART-1005",
   "hero": {
     "name": "高文",
     "name_en": "Gawain",
@@ -21,7 +21,8 @@
     "变身",
     "持续输出",
     "突进",
-    "缠斗"
+    "缠斗",
+    "钩子"
   ],
   "attributes": {
     "STR": {

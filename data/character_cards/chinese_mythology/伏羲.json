@@ -1,6 +1,6 @@
 {
   "card_id": "chinese_mythology:伏羲",
-  "legacy_card_id": "CHI-52929",
+  "legacy_card_id": "CHI-1002",
   "hero": {
     "name": "伏羲",
     "name_en": "Fuxi",
@@ -20,7 +20,6 @@
   "playstyle_tags": [
     "AOE",
     "控制",
-    "硬控制",
     "远程",
     "高机动"
   ],

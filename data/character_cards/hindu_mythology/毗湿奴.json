@@ -1,6 +1,6 @@
 {
   "card_id": "hindu_mythology:毗湿奴",
-  "legacy_card_id": "HIN-78794",
+  "legacy_card_id": "HIN-1001",
   "hero": {
     "name": "毗湿奴",
     "name_en": "Vishnu",
@@ -21,8 +21,7 @@
     "先手",
     "前排",
     "承伤",
-    "护盾",
-    "钩子"
+    "护盾"
   ],
   "attributes": {
     "STR": {

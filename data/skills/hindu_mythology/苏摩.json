@@ -1,0 +1,112 @@
+[
+  {
+    "name": "醉酒之滴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "神智被苏摩酒搅乱"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。苏摩酒是诸神的兴奋剂，凡人饮之则神智错乱。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "不死甘露",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "甘露修补肉身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。搅乳海时浮出的甘露就是他。饮者暂时无法真正死去。治疗。"
+  },
+  {
+    "name": "月相盈亏",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "随月相回满"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。苏摩每月被达刹诅咒而亏缺，又每月重新盈满。他把盈的那半借了出去。回复。"
+  },
+  {
+    "name": "乳海涌流",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "甘露洗去污秽"
+      },
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "能力被强化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。众神与阿修罗合力搅动的乳海再度翻起，甘露洒遍全场。净化+强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

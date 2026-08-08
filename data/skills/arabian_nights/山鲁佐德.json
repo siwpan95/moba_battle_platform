@@ -1,125 +1,107 @@
 [
   {
-    "name": "故事轻抚",
+    "name": "千夜之谈",
     "key": "Q",
     "type": "法术",
-    "damage": {
-      "dice_count": 1,
-      "dice_size": 8,
-      "bonus_attr": "WIS",
-      "type": "光耀"
-    },
-    "cooldown": 0,
-    "description": "发射圣光弹幕攻击敌人。辅助的基础远程骚扰手段。",
+    "action": "动作",
     "range": "远程",
     "target": "单体",
-    "action": "动作",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
     "effects": [
       {
-        "type": "减速",
-        "desc": "降低目标移动速度",
-        "duration": 2,
-        "target": "敌方"
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "故事留人"
       }
-    ]
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她每夜讲一段，天亮留个悬念吊住国王。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
   },
   {
-    "name": "悬念庇佑",
+    "name": "以故事续命",
     "key": "W",
     "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
     "damage": {
       "dice_count": 2,
       "dice_size": 6,
       "bonus_attr": "WIS",
-      "type": "光耀"
+      "type": "力场"
     },
-    "cooldown": 1,
-    "description": "吟唱治疗祷言/释放护盾，为盟友提供生命恢复或伤害吸收。",
-    "range": "远程",
-    "target": "单体",
-    "action": "动作",
     "effects": [
       {
-        "type": "治疗",
-        "desc": "恢复生命值",
-        "duration": 0,
+        "type": "增益",
         "target": "自身",
-        "value": "3d8+WIS"
-      },
-      {
-        "type": "护盾",
-        "desc": "生成临时伤害吸收护盾",
         "duration": 2,
-        "target": "自身",
-        "value": "2d8+CHA"
+        "desc": "以故事续命"
       }
-    ]
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。国王想听结局，便不忍在黎明杀她。增益2回合。"
   },
   {
-    "name": "妙语赐福",
+    "name": "以故事化怒",
     "key": "E",
     "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
     "damage": {
       "dice_count": 1,
       "dice_size": 8,
       "bonus_attr": "WIS",
-      "type": "光耀"
+      "type": "力场"
     },
-    "cooldown": 2,
-    "description": "施加祝福/净化，强化盟友属性或清除负面效果。辅助的增益核心。",
-    "range": "远程",
-    "target": "单体",
-    "action": "动作",
     "effects": [
       {
-        "type": "护盾",
-        "desc": "生成临时伤害吸收护盾",
-        "duration": 2,
+        "type": "净化",
         "target": "自身",
-        "value": "2d10+CHA"
+        "desc": "以故事化怒"
       }
     ],
-    "saving_throw": {
-      "attr": "WIS",
-      "dc_formula": "8+PROF+WIS",
-      "on_save": "半伤"
-    }
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她用一则则寓言，把暴君讲成了明君。净化。"
   },
   {
-    "name": "千夜物语",
+    "name": "抚平王心",
     "key": "R",
     "type": "法术",
-    "damage": {
-      "dice_count": 3,
-      "dice_size": 8,
-      "bonus_attr": "WIS",
-      "type": "光耀"
-    },
-    "cooldown": 4,
-    "description": "召唤神圣领域/天使庇护，为大范围盟友提供强力保护与治疗。",
+    "action": "动作",
     "range": "远程",
     "target": "范围",
-    "action": "动作",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
     "effects": [
       {
         "type": "治疗",
-        "desc": "恢复生命值",
-        "duration": 0,
         "target": "自身",
-        "value": "4d10+WIS"
-      },
-      {
-        "type": "护盾",
-        "desc": "生成临时伤害吸收护盾",
-        "duration": 2,
-        "target": "自身",
-        "value": "3d10+CHA"
+        "desc": "抚平王心"
       }
     ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。讲满一千零一夜，她真的坐稳了后位。治疗。",
     "saving_throw": {
-      "attr": "WIS",
+      "attr": "DEX",
       "dc_formula": "8+PROF+WIS",
       "on_save": "半伤"
-    }
+    },
+    "aoe_radius": 15
   }
 ]

@@ -1,6 +1,6 @@
 {
   "card_id": "japanese_mythology:天照大神",
-  "legacy_card_id": "JAP-5749",
+  "legacy_card_id": "JAP-1000",
   "hero": {
     "name": "天照大神",
     "name_en": "Amaterasu",
@@ -20,7 +20,6 @@
   "playstyle_tags": [
     "AOE",
     "控制",
-    "硬控制",
     "远程",
     "高机动"
   ],

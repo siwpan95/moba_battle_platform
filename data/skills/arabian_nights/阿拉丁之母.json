@@ -1,0 +1,101 @@
+[
+  {
+    "name": "捧宝壮胆",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "捧宝壮胆"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她拎着一篮稀世珠宝，硬着头皮去敲宫殿的门。增益2回合。"
+  },
+  {
+    "name": "代子陈情",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "代子陈情"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她替不敢进宫的儿子，向公主陈明心意。净化。"
+  },
+  {
+    "name": "织席续命",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "织席续命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。儿子失踪的那些年，她靠织席把日子撑下来。回复。"
+  },
+  {
+    "name": "卸忧安养",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "卸忧安养"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。等阿拉丁衣锦而归，她总算卸下多年提心。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

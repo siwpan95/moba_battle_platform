@@ -1,0 +1,127 @@
+[
+  {
+    "name": "食指抵唇",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被命令噤声"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。幼年荷鲁斯把手指压在唇上——那不是撒娇，是命令全世界闭嘴。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "侧发绺鞭挞",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被静默拖住"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。童神耳侧垂下的那绺发辫甩动起来，抽出的是纯粹的静默。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "莲座隐匿",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "退回未出生的状态"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。他缩回莲花座中，像从未被生下过一样。隐身1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "秘仪禁言",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "秘仪封口"
+      },
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "行动失去章法"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。伊西斯为保护幼子而设的禁令生效：说出这里发生之事的人，将失去声音。沉默1回合+混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

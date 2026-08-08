@@ -1,126 +1,118 @@
 [
   {
-    "name": "巧手轻抚",
+    "name": "辨贼之舞",
     "key": "Q",
-    "type": "法术",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
     "damage": {
       "dice_count": 1,
       "dice_size": 8,
-      "bonus_attr": "WIS",
-      "type": "光耀"
+      "bonus_attr": "DEX",
+      "type": "穿刺"
     },
-    "cooldown": 0,
-    "description": "发射圣光弹幕攻击敌人。辅助的基础远程骚扰手段。",
-    "range": "远程",
-    "target": "单体",
-    "action": "动作",
     "effects": [
       {
-        "type": "治疗",
-        "desc": "恢复生命值",
-        "duration": 0,
-        "target": "自身",
-        "value": "2d6+WIS"
-      }
-    ]
-  },
-  {
-    "name": "慧心庇佑",
-    "key": "W",
-    "type": "法术",
-    "damage": {
-      "dice_count": 2,
-      "dice_size": 6,
-      "bonus_attr": "WIS",
-      "type": "光耀"
-    },
-    "cooldown": 1,
-    "description": "吟唱治疗祷言/释放护盾，为盟友提供生命恢复或伤害吸收。",
-    "range": "远程",
-    "target": "单体",
-    "action": "动作",
-    "effects": [
-      {
-        "type": "治疗",
-        "desc": "恢复生命值",
-        "duration": 0,
-        "target": "自身",
-        "value": "3d8+WIS"
+        "type": "处决",
+        "target": "敌方",
+        "desc": "舞中夺命"
       },
       {
-        "type": "护盾",
-        "desc": "生成临时伤害吸收护盾",
-        "duration": 2,
-        "target": "自身",
-        "value": "2d8+CHA"
-      }
-    ]
-  },
-  {
-    "name": "匕舞赐福",
-    "key": "E",
-    "type": "法术",
-    "damage": {
-      "dice_count": 1,
-      "dice_size": 8,
-      "bonus_attr": "WIS",
-      "type": "光耀"
-    },
-    "cooldown": 2,
-    "description": "施加祝福/净化，强化盟友属性或清除负面效果。辅助的增益核心。",
-    "range": "远程",
-    "target": "单体",
-    "action": "动作",
-    "effects": [
-      {
-        "type": "护盾",
-        "desc": "生成临时伤害吸收护盾",
-        "duration": 2,
-        "target": "自身",
-        "value": "2d10+CHA"
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法施放技能"
       }
     ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。她以舞掩身，用刀精准结果了席间的刺客。处决+沉默1回合。",
     "saving_throw": {
       "attr": "WIS",
-      "dc_formula": "8+PROF+WIS",
+      "dc_formula": "8+PROF+DEX",
       "on_save": "半伤"
     }
   },
   {
-    "name": "沸油奇计",
+    "name": "油桶验敌",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "听声辨敌"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。她挨个敲桶，听出哪只桶里藏着活人。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "沸油守门",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "滚油守门"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 穿刺伤害。她把滚油倒进桶，一夜斩尽余党。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "智嫁东主",
     "key": "R",
-    "type": "法术",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
     "damage": {
       "dice_count": 3,
       "dice_size": 8,
-      "bonus_attr": "WIS",
-      "type": "光耀"
+      "bonus_attr": "DEX",
+      "type": "穿刺"
     },
-    "cooldown": 4,
-    "description": "召唤神圣领域/天使庇护，为大范围盟友提供强力保护与治疗。",
-    "range": "远程",
-    "target": "范围",
-    "action": "动作",
     "effects": [
       {
-        "type": "治疗",
-        "desc": "恢复生命值",
-        "duration": 0,
+        "type": "增益",
         "target": "自身",
-        "value": "4d10+WIS"
-      },
-      {
-        "type": "护盾",
-        "desc": "生成临时伤害吸收护盾",
         "duration": 2,
-        "target": "自身",
-        "value": "3d10+CHA"
+        "desc": "立身为主母"
       }
     ],
-    "saving_throw": {
-      "attr": "WIS",
-      "dc_formula": "8+PROF+WIS",
-      "on_save": "半伤"
-    }
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。她最终嫁入主家，成了这一门的女主人。增益2回合。"
   }
 ]
