@@ -5,12 +5,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 1,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 0,
-    "description": "1d8+WIS光耀伤害。句芒催动「春木轻抚」，筋骨间腾起灼热的力，气势为之一变。提升自身攻击力。",
+    "description": "1d6+WIS光耀伤害。句芒催动「春木轻抚」，筋骨间腾起灼热的力，气势为之一变。提升自身攻击力。",
     "range": "远程",
     "target": "单体",
     "action": "动作",
@@ -91,12 +91,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 3,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 4,
-    "description": "3d8+WIS光耀伤害。句芒倾洒「万木回春」，昆仑的雪化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
+    "description": "3d6+WIS光耀伤害。句芒倾洒「万木回春」，昆仑的雪化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
     "range": "远程",
     "target": "范围",
     "action": "动作",

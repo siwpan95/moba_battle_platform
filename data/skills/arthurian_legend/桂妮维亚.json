@@ -5,12 +5,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 1,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 0,
-    "description": "1d8+WIS光耀伤害。桂妮维亚踏出「蔷薇轻抚」，身法陡然轻快，攻势连绵不绝。提升自身攻击力。",
+    "description": "1d6+WIS光耀伤害。桂妮维亚踏出「蔷薇轻抚」，身法陡然轻快，攻势连绵不绝。提升自身攻击力。",
     "range": "远程",
     "target": "单体",
     "action": "动作",
@@ -91,12 +91,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 3,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 4,
-    "description": "3d8+WIS光耀伤害。桂妮维亚倾洒「王后加冕」，圆桌的誓化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
+    "description": "3d6+WIS光耀伤害。桂妮维亚倾洒「王后加冕」，圆桌的誓化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
     "range": "远程",
     "target": "范围",
     "action": "动作",

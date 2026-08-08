@@ -5,12 +5,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 1,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 0,
-    "description": "1d8+WIS光耀伤害。神农张开「百草轻抚」，光壁在身周凝成，来袭之伤尽碎于其上。生成临时伤害吸收护盾。",
+    "description": "1d6+WIS光耀伤害。神农张开「百草轻抚」，光壁在身周凝成，来袭之伤尽碎于其上。生成临时伤害吸收护盾。",
     "range": "远程",
     "target": "单体",
     "action": "动作",
@@ -92,12 +92,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 3,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 4,
-    "description": "3d8+WIS光耀伤害。神农燃尽「尝草济世」，生命之泉自足下涌出，全军同沐其恩。恢复生命值；生成临时伤害吸收护盾。",
+    "description": "3d6+WIS光耀伤害。神农燃尽「尝草济世」，生命之泉自足下涌出，全军同沐其恩。恢复生命值；生成临时伤害吸收护盾。",
     "range": "远程",
     "target": "范围",
     "action": "动作",

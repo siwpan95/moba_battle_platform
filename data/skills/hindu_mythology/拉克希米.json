@@ -5,12 +5,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 1,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 0,
-    "description": "1d8+WIS光耀伤害。拉克希米探手扣住「金莲轻抚」，一股沛然之力压落，敌身骤然僵直。使目标眩晕，失去行动能力。",
+    "description": "1d6+WIS光耀伤害。拉克希米探手扣住「金莲轻抚」，一股沛然之力压落，敌身骤然僵直。使目标眩晕，失去行动能力。",
     "range": "远程",
     "target": "单体",
     "action": "动作",
@@ -91,12 +91,12 @@
     "type": "法术",
     "damage": {
       "dice_count": 3,
-      "dice_size": 8,
+      "dice_size": 6,
       "bonus_attr": "WIS",
       "type": "光耀"
     },
     "cooldown": 4,
-    "description": "3d8+WIS光耀伤害。拉克希米倾洒「莲华金雨」，梵天的光化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
+    "description": "3d6+WIS光耀伤害。拉克希米倾洒「莲华金雨」，梵天的光化作生机之雨，垂危者重新睁眼。恢复生命值；生成临时伤害吸收护盾。",
     "range": "远程",
     "target": "范围",
     "action": "动作",
