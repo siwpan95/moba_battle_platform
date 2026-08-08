@@ -1,0 +1,111 @@
+[
+  {
+    "name": "白拍子之舞",
+    "key": "Q",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX光影伤害。静御前散出「白拍子之舞」，敌之感官被搅乱，脚步一寸寸沉滞下去。被魅惑，敌我不分。",
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "desc": "被魅惑，敌我不分",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "影隐月步",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX光影伤害。静御前借「影隐月步」敛去气息，连脚步声都被一并吞没。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "哀歌缠心",
+    "key": "E",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX光影伤害。静御前散出「哀歌缠心」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "血色乱舞",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。静御前挥落「血色乱舞」，濒死者的最后一线生机被彻底斩断。对残血敌人造成致命一击。",
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对残血敌人造成致命一击"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

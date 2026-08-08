@@ -1,0 +1,110 @@
+[
+  {
+    "name": "清源之矢",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "直线",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。阿特拉卡散出「清源之矢」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "涟漪匿踪",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX光影伤害。阿特拉卡没入「涟漪匿踪」，身形在光影里溶成一缕烟。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "寒潮破甲",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。阿特拉卡以「寒潮破甲」精准凿开敌之甲缝，护体之力应声瓦解。护甲被洞穿，防御大减。",
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "desc": "护甲被洞穿，防御大减"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "洪流贯空",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。阿特拉卡挥落「洪流贯空」，濒死者的最后一线生机被彻底斩断。对残血敌人造成致命一击。",
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对残血敌人造成致命一击"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

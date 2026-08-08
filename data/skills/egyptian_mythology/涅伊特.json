@@ -1,0 +1,116 @@
+[
+  {
+    "name": "织命之射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。涅伊特投出「织命之射」，一点微光钉在敌背，猎杀就此开始。被标记，受到的伤害提升。",
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "双弓交错",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "直线",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX穿刺伤害。涅伊特以「双弓交错」精准凿开敌之甲缝，护体之力应声瓦解。护甲被洞穿，防御大减。",
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "desc": "护甲被洞穿，防御大减"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "猎网缚足",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。涅伊特探手扣住「猎网缚足」，一股沛然之力压落，敌身骤然僵直。被缠住，无法行动。",
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "desc": "被缠住，无法行动",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "创世之矢",
+    "key": "R",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX光影伤害。涅伊特将「创世之矢」重重顿落，天地失声，敌阵僵成一片死物。陷入眩晕，丧失反击。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "desc": "陷入眩晕，丧失反击",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

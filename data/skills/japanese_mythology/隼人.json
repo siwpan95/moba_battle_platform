@@ -1,0 +1,110 @@
+[
+  {
+    "name": "鹰眼穿杨",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。隼人以「鹰眼穿杨」在敌身烙下印记，其行踪再无可藏。被标记，受到的伤害提升。",
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "疾羽连射",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "直线",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX穿刺伤害。隼人低语「疾羽连射」，寒意顺着敌之脊背爬上，攻势自乱。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "风遁身法",
+    "key": "E",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX光影伤害。隼人没入「风遁身法」，身形在光影里溶成一缕烟。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "万羽蔽空",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。隼人引爆「万羽蔽空」，蚀骨之力扩散开来，无人能全身而退。中剧毒，持续受创。",
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "desc": "中剧毒，持续受创"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

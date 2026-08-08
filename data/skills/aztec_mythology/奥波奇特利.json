@@ -1,0 +1,110 @@
+[
+  {
+    "name": "芦箭穿鳞",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。奥波奇特利以「芦箭穿鳞」在敌身烙下印记，其行踪再无可藏。被标记，受到的伤害提升。",
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "沼雾藏踪",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX光影伤害。奥波奇特利没入「沼雾藏踪」，身形在光影里溶成一缕烟。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "渔网缚敌",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。奥波奇特利探手扣住「渔网缚敌」，一股沛然之力压落，敌身骤然僵直。被缠住，无法行动。",
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "desc": "被缠住，无法行动",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "万箭覆泽",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。奥波奇特利倾泻「万箭覆泽」，太阳的灼被烧灼成焦土，敌军在余毒中缓缓凋零。中剧毒，持续受创。",
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "desc": "中剧毒，持续受创"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

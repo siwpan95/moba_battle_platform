@@ -1,0 +1,227 @@
+{
+  "card_id": "arabian_nights:莱拉",
+  "legacy_card_id": "ONE-2024",
+  "hero": {
+    "name": "莱拉",
+    "name_en": "Layla",
+    "alias": "不眠歌者",
+    "title": "不眠歌者"
+  },
+  "game": {
+    "name": "One Thousand and One Nights",
+    "name_cn": "一千零一夜",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "一千零一夜",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "持续输出",
+    "核心",
+    "硬控制",
+    "远程",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "夜曲之矢",
+      "key": "Q",
+      "type": "混合",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "光影"
+      },
+      "cooldown": 0,
+      "description": "1d10+DEX光影伤害。莱拉低语「夜曲之矢」，寒意顺着敌之脊背爬上，攻势自乱。被魅惑，敌我不分。",
+      "effects": [
+        {
+          "type": "魅惑",
+          "target": "敌方",
+          "desc": "被魅惑，敌我不分",
+          "duration": 2
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "月纱遁形",
+      "key": "W",
+      "type": "混合",
+      "action": "动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "光影"
+      },
+      "cooldown": 1,
+      "description": "2d6+DEX光影伤害。莱拉没入「月纱遁形」，身形在光影里溶成一缕烟。遁入暗影，难以被察觉。",
+      "effects": [
+        {
+          "type": "隐身",
+          "target": "自身",
+          "desc": "遁入暗影，难以被察觉"
+        }
+      ]
+    },
+    {
+      "name": "痴心缠缚",
+      "key": "E",
+      "type": "混合",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "光影"
+      },
+      "cooldown": 2,
+      "description": "1d8+DEX光影伤害。莱拉散出「痴心缠缚」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "desc": "被箭风削减速，移速下降",
+          "duration": 2
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "不眠长夜",
+      "key": "R",
+      "type": "混合",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "光影"
+      },
+      "cooldown": 4,
+      "description": "3d8+DEX光影伤害。莱拉倾力斩出「不眠长夜」，香料市集的暖为之一凝，当面之敌尽被钉在原地。陷入眩晕，丧失反击。",
+      "effects": [
+        {
+          "type": "眩晕",
+          "target": "敌方",
+          "desc": "陷入眩晕，丧失反击",
+          "duration": 2
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

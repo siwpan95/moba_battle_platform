@@ -1,0 +1,111 @@
+[
+  {
+    "name": "沙海疾射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "直线",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。齐亚德低语「沙海疾射」，寒意顺着敌之脊背爬上，攻势自乱。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "幻市护盾",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "护盾"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX护盾伤害。齐亚德以「幻市护盾」覆身，气机内敛，锋刃再难透入分毫。获得护盾庇护。",
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "desc": "获得护盾庇护"
+      }
+    ]
+  },
+  {
+    "name": "海市缚影",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。齐亚德探手扣住「海市缚影」，一股沛然之力压落，敌身骤然僵直。被缠住，无法行动。",
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "desc": "被缠住，无法行动",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "群星坠沙",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。齐亚德倾泻「群星坠沙」，香料市集的暖被烧灼成焦土，敌军在余毒中缓缓凋零。中剧毒，持续受创。",
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "desc": "中剧毒，持续受创"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

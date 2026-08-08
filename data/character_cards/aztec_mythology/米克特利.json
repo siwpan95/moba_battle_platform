@@ -1,0 +1,224 @@
+{
+  "card_id": "aztec_mythology:米克特利",
+  "legacy_card_id": "AZT-2018",
+  "hero": {
+    "name": "米克特利",
+    "name_en": "Mictli",
+    "alias": "冥土引者",
+    "title": "冥土引者"
+  },
+  "game": {
+    "name": "Aztec Mythology",
+    "name_cn": "阿兹特克神话",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "阿兹特克神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "护盾",
+    "持续输出",
+    "核心",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "冥土之射",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "cooldown": 0,
+      "description": "1d10+DEX穿刺伤害。米克特利以「冥土之射」在敌身烙下印记，其行踪再无可藏。被标记，受到的伤害提升。",
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "desc": "被标记，受到的伤害提升"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "骨盾护身",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "护盾"
+      },
+      "cooldown": 1,
+      "description": "2d6+DEX护盾伤害。米克特利张开「骨盾护身」，光壁在身周凝成，来袭之伤尽碎于其上。获得护盾庇护。",
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "desc": "获得护盾庇护"
+        }
+      ]
+    },
+    {
+      "name": "亡魂缠缚",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "cooldown": 2,
+      "description": "1d8+DEX穿刺伤害。米克特利的「亡魂缠缚」如铁枷扣下，对手连抬手都成了奢望。被缠住，无法行动。",
+      "effects": [
+        {
+          "type": "束缚",
+          "target": "敌方",
+          "desc": "被缠住，无法行动",
+          "duration": 2
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "黄泉归寂",
+      "key": "R",
+      "type": "混合",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "光影"
+      },
+      "cooldown": 4,
+      "description": "3d8+DEX光影伤害。米克特利倾尽「黄泉归寂」，太阳的灼见证了这一记终结之斩。对残血敌人造成致命一击。",
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "对残血敌人造成致命一击"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

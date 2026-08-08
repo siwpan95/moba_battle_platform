@@ -1,0 +1,110 @@
+[
+  {
+    "name": "冥土之射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。米克特利以「冥土之射」在敌身烙下印记，其行踪再无可藏。被标记，受到的伤害提升。",
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "骨盾护身",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "护盾"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX护盾伤害。米克特利张开「骨盾护身」，光壁在身周凝成，来袭之伤尽碎于其上。获得护盾庇护。",
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "desc": "获得护盾庇护"
+      }
+    ]
+  },
+  {
+    "name": "亡魂缠缚",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。米克特利的「亡魂缠缚」如铁枷扣下，对手连抬手都成了奢望。被缠住，无法行动。",
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "desc": "被缠住，无法行动",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "黄泉归寂",
+    "key": "R",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX光影伤害。米克特利倾尽「黄泉归寂」，太阳的灼见证了这一记终结之斩。对残血敌人造成致命一击。",
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对残血敌人造成致命一击"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

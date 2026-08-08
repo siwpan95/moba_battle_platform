@@ -1,0 +1,111 @@
+[
+  {
+    "name": "羽蛇之噬",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。伊奇波奇特利散出「羽蛇之噬」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "日轮护盾",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "护盾"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX护盾伤害。伊奇波奇特利张开「日轮护盾」，光壁在身周凝成，来袭之伤尽碎于其上。获得护盾庇护。",
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "desc": "获得护盾庇护"
+      }
+    ]
+  },
+  {
+    "name": "毒羽纷飞",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。伊奇波奇特利掷出「毒羽纷飞」，余烬附于敌身，伤口久久不愈。中剧毒，持续受创。",
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "desc": "中剧毒，持续受创"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "神羽灭世",
+    "key": "R",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX光影伤害。伊奇波奇特利将「神羽灭世」重重顿落，天地失声，敌阵僵成一片死物。陷入眩晕，丧失反击。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "desc": "陷入眩晕，丧失反击",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

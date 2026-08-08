@@ -1,0 +1,224 @@
+{
+  "card_id": "arabian_nights:安塔拉",
+  "legacy_card_id": "ONE-2026",
+  "hero": {
+    "name": "安塔拉",
+    "name_en": "Antarah",
+    "alias": "诗剑骑士",
+    "title": "诗剑骑士"
+  },
+  "game": {
+    "name": "One Thousand and One Nights",
+    "name_cn": "一千零一夜",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "一千零一夜",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "护盾",
+    "持续输出",
+    "核心",
+    "远程",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "诗剑之射",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "cooldown": 0,
+      "description": "1d10+DEX穿刺伤害。安塔拉投出「诗剑之射」，一点微光钉在敌背，猎杀就此开始。被标记，受到的伤害提升。",
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "desc": "被标记，受到的伤害提升"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "沙漠之盾",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "护盾"
+      },
+      "cooldown": 1,
+      "description": "2d6+DEX护盾伤害。安塔拉以「沙漠之盾」覆身，气机内敛，锋刃再难透入分毫。获得护盾庇护。",
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "desc": "获得护盾庇护"
+        }
+      ]
+    },
+    {
+      "name": "烈风破甲",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "直线",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "cooldown": 2,
+      "description": "1d8+DEX穿刺伤害。安塔拉以「烈风破甲」精准凿开敌之甲缝，护体之力应声瓦解。护甲被洞穿，防御大减。",
+      "effects": [
+        {
+          "type": "破甲",
+          "target": "敌方",
+          "desc": "护甲被洞穿，防御大减"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "荣耀贯日",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "cooldown": 4,
+      "description": "3d8+DEX穿刺伤害。安塔拉倾尽「荣耀贯日」，香料市集的暖见证了这一记终结之斩。对残血敌人造成致命一击。",
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "对残血敌人造成致命一击"
+        }
+      ],
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

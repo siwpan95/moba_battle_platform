@@ -1,0 +1,110 @@
+[
+  {
+    "name": "痴情之射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。卡伊斯投出「痴情之射」，一点微光钉在敌背，猎杀就此开始。被标记，受到的伤害提升。",
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "狂念护体",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "护盾"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX护盾伤害。卡伊斯张开「狂念护体」，光壁在身周凝成，来袭之伤尽碎于其上。获得护盾庇护。",
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "desc": "获得护盾庇护"
+      }
+    ]
+  },
+  {
+    "name": "疯魔乱舞",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。卡伊斯挥出「疯魔乱舞」，锋刃削过甲面，破绽就此暴露。护甲被洞穿，防御大减。",
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "desc": "护甲被洞穿，防御大减"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "疯癫绝恋",
+    "key": "R",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX光影伤害。卡伊斯倾尽「疯癫绝恋」，恐惧如潮水淹没敌军，秩序荡然无存。陷入恐惧，仓皇失措。",
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "desc": "陷入恐惧，仓皇失措",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

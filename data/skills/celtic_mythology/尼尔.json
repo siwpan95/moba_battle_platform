@@ -1,0 +1,110 @@
+[
+  {
+    "name": "翠羽之射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。尼尔投出「翠羽之射」，一点微光钉在敌背，猎杀就此开始。被标记，受到的伤害提升。",
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "雾隐遁形",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX光影伤害。尼尔没入「雾隐遁形」，身形在光影里溶成一缕烟。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "荆棘缠缚",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX穿刺伤害。尼尔的「荆棘缠缚」如铁枷扣下，对手连抬手都成了奢望。被缠住，无法行动。",
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "desc": "被缠住，无法行动",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "王权天降",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "直线",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。尼尔倾尽「王权天降」，翠绿的雾见证了这一记终结之斩。对残血敌人造成致命一击。",
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对残血敌人造成致命一击"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

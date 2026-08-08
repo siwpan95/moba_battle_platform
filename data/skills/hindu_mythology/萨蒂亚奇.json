@@ -1,0 +1,105 @@
+[
+  {
+    "name": "风驰连射",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "直线",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX穿刺伤害。萨蒂亚奇散出「风驰连射」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "瑜珈护体",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "护盾"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX护盾伤害。萨蒂亚奇张开「瑜珈护体」，光壁在身周凝成，来袭之伤尽碎于其上。获得护盾庇护。",
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "desc": "获得护盾庇护"
+      }
+    ]
+  },
+  {
+    "name": "幻身闪避",
+    "key": "E",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX光影伤害。萨蒂亚奇借「幻身闪避」敛去气息，连脚步声都被一并吞没。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "千箭朝宗",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX穿刺伤害。萨蒂亚奇倾泻「千箭朝宗」，恒河的雾被烧灼成焦土，敌军在余毒中缓缓凋零。中剧毒，持续受创。",
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "desc": "中剧毒，持续受创"
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

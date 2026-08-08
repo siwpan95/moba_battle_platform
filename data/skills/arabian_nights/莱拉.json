@@ -1,0 +1,112 @@
+[
+  {
+    "name": "夜曲之矢",
+    "key": "Q",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 0,
+    "description": "1d10+DEX光影伤害。莱拉低语「夜曲之矢」，寒意顺着敌之脊背爬上，攻势自乱。被魅惑，敌我不分。",
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "desc": "被魅惑，敌我不分",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "月纱遁形",
+    "key": "W",
+    "type": "混合",
+    "action": "动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 1,
+    "description": "2d6+DEX光影伤害。莱拉没入「月纱遁形」，身形在光影里溶成一缕烟。遁入暗影，难以被察觉。",
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "desc": "遁入暗影，难以被察觉"
+      }
+    ]
+  },
+  {
+    "name": "痴心缠缚",
+    "key": "E",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 2,
+    "description": "1d8+DEX光影伤害。莱拉散出「痴心缠缚」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "desc": "被箭风削减速，移速下降",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "不眠长夜",
+    "key": "R",
+    "type": "混合",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光影"
+    },
+    "cooldown": 4,
+    "description": "3d8+DEX光影伤害。莱拉倾力斩出「不眠长夜」，香料市集的暖为之一凝，当面之敌尽被钉在原地。陷入眩晕，丧失反击。",
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "desc": "陷入眩晕，丧失反击",
+        "duration": 2
+      }
+    ],
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

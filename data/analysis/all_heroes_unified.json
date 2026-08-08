@@ -1,6 +1,6 @@
 {
   "total_games": 41,
-  "total_heroes": 2461,
+  "total_heroes": 2488,
   "heroes": [
     {
       "game": "300 Heroes",
@@ -22148,6 +22148,249 @@
       "native_role": "刺客",
       "universal_role": "assassin",
       "source": "阿拉伯神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "辛努海",
+      "name_en": "Sinuhe",
+      "alias": "沙漠游侠",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "卡叠什",
+      "name_en": "Qadesh",
+      "alias": "爱战女神",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Egyptian Mythology",
+      "name": "涅伊特",
+      "name_en": "Neith",
+      "alias": "狩猎之母",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "埃及神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "埃卡拉维亚",
+      "name_en": "Ekalavya",
+      "alias": "忠矢弟子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "萨蒂亚奇",
+      "name_en": "Satyaki",
+      "alias": "御车神射",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Hindu Mythology",
+      "name": "普利杜曼",
+      "name_en": "Pradyumna",
+      "alias": "爱神之子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "印度神话"
+    },
+    {
+      "game": "Celtic Mythology",
+      "name": "尼尔",
+      "name_en": "Niall",
+      "alias": "爱尔兰王",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "凯尔特神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "平敦盛",
+      "name_en": "Atsumori",
+      "alias": "敦盛公子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "木曾义仲",
+      "name_en": "Kiso",
+      "alias": "木曾义仲",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "静御前",
+      "name_en": "Shizuka",
+      "alias": "白拍子",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Japanese Mythology",
+      "name": "隼人",
+      "name_en": "Hayato",
+      "alias": "隼人射族",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "日本神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "逢蒙",
+      "name_en": "Peng Meng",
+      "alias": "叛师弓手",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Chinese Mythology",
+      "name": "甘蝇",
+      "name_en": "Gan Ying",
+      "alias": "射艺之师",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "中国神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "扎巴瓦",
+      "name_en": "Zabava",
+      "alias": "波良尼察",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "柳巴瓦",
+      "name_en": "Lyubava",
+      "alias": "河歌少女",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Slavic Mythology",
+      "name": "玛尔法",
+      "name_en": "Marfa",
+      "alias": "林间猎手",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "斯拉夫神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "奥波奇特利",
+      "name_en": "Opochtli",
+      "alias": "芦箭之神",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "伊奇波奇特利",
+      "name_en": "Ixpochtli",
+      "alias": "羽蛇祭司",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "米克特利",
+      "name_en": "Mictli",
+      "alias": "冥土引者",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Aztec Mythology",
+      "name": "阿特拉卡",
+      "name_en": "Atlacahua",
+      "alias": "水箭之神",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "阿兹特克神话"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "罗宾汉",
+      "name_en": "Robin Hood",
+      "alias": "舍伍德义贼",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "Arthurian Legend",
+      "name": "玛丽安",
+      "name_en": "Maid Marian",
+      "alias": "自由之影",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "亚瑟王传说"
+    },
+    {
+      "game": "One Thousand and One Nights",
+      "name": "塔里克",
+      "name_en": "Tariq",
+      "alias": "星夜将领",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "一千零一夜"
+    },
+    {
+      "game": "One Thousand and One Nights",
+      "name": "齐亚德",
+      "name_en": "Ziyad",
+      "alias": "沙海谋士",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "一千零一夜"
+    },
+    {
+      "game": "One Thousand and One Nights",
+      "name": "莱拉",
+      "name_en": "Layla",
+      "alias": "不眠歌者",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "一千零一夜"
+    },
+    {
+      "game": "One Thousand and One Nights",
+      "name": "卡伊斯",
+      "name_en": "Qays",
+      "alias": "疯癫诗人",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "一千零一夜"
+    },
+    {
+      "game": "One Thousand and One Nights",
+      "name": "安塔拉",
+      "name_en": "Antarah",
+      "alias": "诗剑骑士",
+      "native_role": "射手",
+      "universal_role": "marksman",
+      "source": "一千零一夜"
     }
   ]
 }
