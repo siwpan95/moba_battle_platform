@@ -1,0 +1,113 @@
+[
+  {
+    "name": "武藏武士",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "武藏武士"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。他是武藏畠山氏，武力过人，号称「武藏无双」。强化2回合。"
+  },
+  {
+    "name": "一骑当千",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "一骑当千"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。他一骑当千，无人能挡，所向披靡。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "大刀之舞",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "大刀之舞"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。他使大刀，挥舞如风，敌手近身即亡。暴击2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "武藏之殉",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "武藏之殉"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。他遭梶原景时谗言，举兵讨伐，败死，武藏之殇。处决。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "name": "巨步之踏",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "巨步之踏"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。他一步能跨一座山。山那边的村庄当晚就听见脚步声。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "三呼之啸",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "三呼之啸"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。他连呼三声，第二声能震碎瓦片，第三声能震断矛杆。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "石心之固",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "石心之固"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。他的心是石头。心不跳，人也能动——因为他根本不需要心跳。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "陨石之落",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "陨石之落"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。他从天上扯下一块陨石砸向敌阵。陨石落地，他自己也跟着落地——再没起来。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

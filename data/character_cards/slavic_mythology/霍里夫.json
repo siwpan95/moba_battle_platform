@@ -1,0 +1,228 @@
+{
+  "card_id": "slavic_mythology:霍里夫",
+  "legacy_card_id": "SLA-1097",
+  "hero": {
+    "name": "霍里夫",
+    "name_en": "Khoriv",
+    "alias": "次弟",
+    "title": "次弟"
+  },
+  "game": {
+    "name": "Slavic Mythology",
+    "name_cn": "斯拉夫神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "斯拉夫神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "山名霍里夫",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "防御",
+          "target": "自身",
+          "duration": 2,
+          "desc": "据山而守"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 钝击伤害。基辅有一座山叫霍里夫山，就是他先上去看了地形。防御2回合。"
+    },
+    {
+      "name": "与兄同筑",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "守城外之梁"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 钝击伤害。他不争长兄的城主之位。他守的是城外那道山梁。减伤2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "猎人之手",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "猎人之力"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 钝击伤害。他管打猎。城墙外的野物都归他分配。强化2回合。"
+    },
+    {
+      "name": "山梁之守",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "守至山葬"
+        },
+        {
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被强行压制"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 钝击伤害。他死后埋在他守过的山梁上。守的位置没变。处决+压制1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

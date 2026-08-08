@@ -1,0 +1,109 @@
+[
+  {
+    "name": "星占先知",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "星占先知"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 法术伤害。偕天通晓星相，能预知战局走向。他把走向告诉了队友。增益2回合。"
+  },
+  {
+    "name": "剑术辅战",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "剑术辅战"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 法术伤害。他与无种师出同门。负责给哥哥补位。强化2回合。"
+  },
+  {
+    "name": "牧群之管",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "牧群之管"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 法术伤害。他在流放期间负责管马群。马听他的话。加速1回合。"
+  },
+  {
+    "name": "智之预言",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "智之预言"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 法术伤害。他曾在坚战问策时一言不发地写下战局结局。写下的就发生了。暗示1回合+回复。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

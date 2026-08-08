@@ -1,0 +1,238 @@
+{
+  "card_id": "celtic_mythology:哈格尼斯",
+  "legacy_card_id": "CEL-1132",
+  "hero": {
+    "name": "哈格尼斯",
+    "name_en": "Nuckelavee",
+    "alias": "无皮之马",
+    "title": "无皮之马"
+  },
+  "game": {
+    "name": "Celtic Mythology",
+    "name_cn": "凯尔特神话",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "凯尔特神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "持续伤害",
+    "持续输出",
+    "核心",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "无皮之躯",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "无皮之兆"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+DEX 毒素伤害。他没有皮。看到他的人当晚皮肤就开始痒——痒到自己挠破。恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "毒息之吹",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "中毒",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "毒息之吹"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+DEX 毒素伤害。他从嘴里吹出的气能让一片庄稼枯死。枯死的庄稼人畜都不能吃。中毒2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "单眼之盯",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "单眼之盯"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+DEX 毒素伤害。他那只独眼一盯，被盯的人腿就软。腿软了就跑不掉。减速2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "退潮之囚",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "退潮之困"
+        },
+        {
+          "type": "破甲",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "护甲被削弱"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 毒素伤害。他怕淡水。下雨天他不敢出，退潮时他被困在咸水湾里动不了。处决+破甲2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

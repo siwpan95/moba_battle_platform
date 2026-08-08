@@ -1,0 +1,116 @@
+[
+  {
+    "name": "食人咒文",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 2,
+        "desc": "食神之血"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 黯蚀伤害。乌纳斯金字塔内的咒文记载：他吞食神祇，以神血为饮。吸血2回合。"
+  },
+  {
+    "name": "塞拉斐姆甬道",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "咒文蚀身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 黯蚀伤害。他的金字塔甬道刻满“食人咒”，走进去的人会被咒文一点点剥蚀。持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "星辰之母",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "星辰之甲"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 黯蚀伤害。咒文记载乌纳斯以星辰为母，天上的星子落下来成为他的甲。护盾2回合。"
+  },
+  {
+    "name": "吞噬诸神",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "吞神之压"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "陷入恐慌"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 黯蚀伤害。《金字塔铭文》第 254 节：乌纳斯吞食诸神，活着的和死着的，他的胃比冥府还大。压制1回合+恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

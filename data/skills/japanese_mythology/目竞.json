@@ -1,0 +1,114 @@
+[
+  {
+    "name": "千颅齐视",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "千颅齐视"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 力场伤害。《今昔物语》载千万骷髅齐视平清盛，目不交睫。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "一视之威",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "一视之威"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 力场伤害。他一视不眨，被视者心慌意乱，手不能动。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "骷髅之阵",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "骷髅之阵"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 力场伤害。千万骷髅列阵，齐视一人，无人可挡其视。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "瞬目之击",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "瞬目之击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。他瞬目之间出手，被视者已败，无还手之力。暴击2回合。"
+  }
+]

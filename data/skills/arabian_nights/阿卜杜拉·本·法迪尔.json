@@ -1,0 +1,113 @@
+[
+  {
+    "name": "贴身护卫",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "贴身护卫"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。他走在商队主人身侧，手始终按在刀柄上。护盾2回合。"
+  },
+  {
+    "name": "识贼于微",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "识贼于微"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。他能从眼神中看出谁是不怀好意的贼人。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "一刀封喉",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一刀封喉"
+      },
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法施放技能"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 穿刺伤害。贼人刚抬手，他的刀已经抹过了对方的脖子。处决+沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "夜行甩尾",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "潜行",
+        "target": "自身",
+        "duration": 1,
+        "desc": "夜行甩尾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。事毕他纵身上房，消失在夜色中。潜行1回合。"
+  }
+]

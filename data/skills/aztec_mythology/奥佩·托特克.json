@@ -1,0 +1,108 @@
+[
+  {
+    "name": "丰收之赐",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "丰收之分"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他管丰收之后的分发。丰收不分发就会烂，他管的就是这段。回复。"
+  },
+  {
+    "name": "粮仓之护",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "粮仓之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。他护佑粮仓。粮仓不被虫蛀不被水淹，都靠他。护盾2回合。"
+  },
+  {
+    "name": "种子之选",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "种子之选"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他选下一年的种子。选种这件事他最懂，选错了来年就麻烦。增益2回合。"
+  },
+  {
+    "name": "断粮之判",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "断粮之判"
+      },
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤口持续流失生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。他断粮时人就得走。留下的会饿死，走的人还有机会。处决+持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

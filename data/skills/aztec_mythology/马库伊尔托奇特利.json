@@ -1,0 +1,126 @@
+[
+  {
+    "name": "五兔之名",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "五兔之醉"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 黯蚀伤害。他是五位享乐神之一，名带数字五。五在阿兹特克代表过度。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "纵欲之罚",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "纵欲之疾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 黯蚀伤害。违反斋戒的人会得他降下的病。病的部位很具体，不好公开说。中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "兔群之首",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "兔群之首"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 黯蚀伤害。他也是四百兔子里排得上号的那只。他管的醉法比别的兔更厉害。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "过度结算",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "过度结算"
+      },
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤口持续流失生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 黯蚀伤害。他把人这一年的「过度」加在一起算总账。算完就收。处决+持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

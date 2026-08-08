@@ -1,0 +1,118 @@
+[
+  {
+    "name": "未生之名",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "未生之醉"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 黯蚀伤害。它是四百兔子里还没出生的那只。它代表「还没醉过」的醉法。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "未尝之味",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "未尝之味"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 黯蚀伤害。它带来一种没人尝过的味道。尝过的人说不出那是什么。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "未醉之醒",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "未醉之醒"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 黯蚀伤害。它让人在醉里保持清醒。这比醉本身更可怕。净化。"
+  },
+  {
+    "name": "未终之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "未终之终"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "移动速度降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 黯蚀伤害。它最后的收场没有终点。你不知道什么时候算结束了。处决+减速2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

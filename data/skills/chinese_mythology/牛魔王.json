@@ -1,0 +1,120 @@
+[
+  {
+    "name": "平天大圣",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "大圣之威"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。他与孙悟空等七大圣结义，他居首，号平天大圣。狂暴2回合。"
+  },
+  {
+    "name": "混铁棍",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "混铁一棍"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。他使一根混铁棍，与孙悟空的金箍棒不相上下。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "七十二变",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "变化莫测"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。他也会七十二般变化，孙悟空变什么他就变什么克。隐身1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "现大白牛",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "牛形之怒"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。他现出大白牛原形，头如峻岭，角如铁塔。击飞1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "异教之威",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "异教之甲"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 挥砍伤害。他从不列颠之外的国来，带的是异教徒的兵和异教徒的甲。护盾2回合。"
+  },
+  {
+    "name": "持信出阵",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "持信而战"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 挥砍伤害。他手持一封圣徒所书之信上战场，信里说他会活到受洗那天。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "受洗之约",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "同受圣洗"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 挥砍伤害。他和加文打了一整天，两人都受了致命伤。后来一起受的洗。治疗。"
+  },
+  {
+    "name": "殉道之死",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "殉道之终"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。他后来回了家乡传道，死在那里。死的时候还是个骑士。处决+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

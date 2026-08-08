@@ -1,0 +1,113 @@
+[
+  {
+    "name": "幻术之主",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "幻术之乱"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 挥砍伤害。他是纳瓦尔术的大师。他能同时变出好几种动物。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "分身之术",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "分身之遁"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 挥砍伤害。他变出三只动物，三只都是他。你不知道打哪一只。隐身1回合。"
+  },
+  {
+    "name": "兽形之变",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "兽形之变"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 挥砍伤害。他变成美洲豹、狼或鹰。变的不是外形，是真的变成那种东西。增益2回合。"
+  },
+  {
+    "name": "一击之终",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一击之终"
+      },
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "暴击率提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 挥砍伤害。他从兽形变回人形时出最后一击。这一击在他还是兽时就已经准备好了。处决+暴击2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

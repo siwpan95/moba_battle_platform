@@ -1,0 +1,124 @@
+[
+  {
+    "name": "无皮之躯",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无皮之兆"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 毒素伤害。他没有皮。看到他的人当晚皮肤就开始痒——痒到自己挠破。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "毒息之吹",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒息之吹"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 毒素伤害。他从嘴里吹出的气能让一片庄稼枯死。枯死的庄稼人畜都不能吃。中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "单眼之盯",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "单眼之盯"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 毒素伤害。他那只独眼一盯，被盯的人腿就软。腿软了就跑不掉。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "退潮之囚",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "退潮之困"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 毒素伤害。他怕淡水。下雨天他不敢出，退潮时他被困在咸水湾里动不了。处决+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

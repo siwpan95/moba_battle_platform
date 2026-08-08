@@ -1,0 +1,121 @@
+[
+  {
+    "name": "拖地入海",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "拖地之压"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他把整个大地拖入宇宙之海。筏罗诃花了一千年才追上。压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "金瞳之凝",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "金瞳之凝"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他的眼睛像融化的金子。被他盯上的人脚步发沉。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "深潜之躯",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "深潜之躯"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他常年潜行深海。身体扛得住海底的水压。减伤2回合。"
+  },
+  {
+    "name": "獠牙之挑",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "獠牙之挑"
+      },
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被抛向空中"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他与筏罗诃的獠牙对挑。输了，但獠牙留下的伤还在。重创2回合+击飞1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

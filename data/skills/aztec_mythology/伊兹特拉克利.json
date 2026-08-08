@@ -1,0 +1,125 @@
+[
+  {
+    "name": "霜之裁判",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "冻结",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "霜之裁决"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 冰冷伤害。他是霜冻、寒冷和公正之神。他蒙着眼，因为他不看身份只看事实。冻结1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "黑曜石弯刃",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "黑曜弯刃"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 冰冷伤害。他的武器是一片弯曲的黑曜石。割过的地方不流血，直接冻住。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "盲眼公正",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "盲眼之判"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 冰冷伤害。他眼睛上蒙着布。这是他拒绝看人的态度，也是他判案的方式。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "冬之惩罚",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "冬之结案"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "移动速度降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 冰冷伤害。他降下的霜能让整片地冻裂。他出手不是为了伤人，是为了结案。处决+减速2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "name": "天穹压顶",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "天穹倾覆"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。他是天空本身。压下来时，没有人扛得住整片天的重量。压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "雷霆父吼",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被父吼震慑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。《梨俱吠陀》称他与大地母神钵利蒂维本是夫妻，吼声即是雷。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "星宿倾泻",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "星雨不绝"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。他抖动披风，星辰便如雨落下。每一颗都带着陨石的重量。持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "苍穹坠地",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "天地合拢之夹"
+      },
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法移动"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。神话结尾，天空与大地最终合拢。中间的一切都被夹住。真实伤害+束缚1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

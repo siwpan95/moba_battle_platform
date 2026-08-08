@@ -1,0 +1,114 @@
+[
+  {
+    "name": "宫中侍女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "引路之侍"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她是桂妮维亚身边的侍女。兰斯洛特第一次进宫就由她引路。增益2回合。"
+  },
+  {
+    "name": "传书之差",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "传书之秘"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她替王后和兰斯洛特传书。这事她办了三年没被人发现。隐身1回合。"
+  },
+  {
+    "name": "一夜之错",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "错信之失"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。有一夜她错把信给了高文。那夜以后宫廷再没人提她。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "归隐之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "焚信之终"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。她最后进了修道院。死前她烧掉了所有信。一封不留。净化+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

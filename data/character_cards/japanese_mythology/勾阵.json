@@ -1,0 +1,225 @@
+{
+  "card_id": "japanese_mythology:勾阵",
+  "legacy_card_id": "JAP-1102",
+  "hero": {
+    "name": "勾阵",
+    "name_en": "Koujin",
+    "alias": "辰位坚将",
+    "title": "辰位坚将"
+  },
+  "game": {
+    "name": "Japanese Mythology",
+    "name_cn": "日本神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "日本神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "护盾",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "勾阵之将",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "防御",
+          "target": "自身",
+          "duration": 2,
+          "desc": "勾阵之将"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 钝击伤害。他是十二神将之一，居辰位，主坚阵不可破。防御2回合。"
+    },
+    {
+      "name": "钩形之盾",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "钩形之盾"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 钝击伤害。他以钩为盾，挡下所有正面来袭，无物可透。护盾2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "钩陈之星",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "钩陈之星"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 钝击伤害。他源自天上钩陈星，是天子近卫，最坚之将。减伤2回合。"
+    },
+    {
+      "name": "坚阵之锁",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "禁锢",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "坚阵之锁"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 钝击伤害。他立阵后，敌手无法穿透，进退皆困。禁锢1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

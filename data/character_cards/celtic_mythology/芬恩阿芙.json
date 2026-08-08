@@ -1,0 +1,239 @@
+{
+  "card_id": "celtic_mythology:芬恩阿芙",
+  "legacy_card_id": "CEL-1147",
+  "hero": {
+    "name": "芬恩阿芙",
+    "name_en": "Fionnabhair",
+    "alias": "康诺特之女",
+    "title": "康诺特之女"
+  },
+  "game": {
+    "name": "Celtic Mythology",
+    "name_cn": "凯尔特神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "凯尔特神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "潜行",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "锦标之换",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "锦标之换"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。梅芙把她许给浅滩胜者。她一晚换了三个未婚夫——三个都没活过次日。标记2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "拒嫁之言",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "拒嫁之言"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 力场伤害。她最后拒了所有人：我不嫁死人，也不嫁杀我弟兄的人。沉默1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "林中之遁",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "隐身",
+          "target": "自身",
+          "duration": 1,
+          "desc": "林中之遁"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 力场伤害。她逃进卡姆利森林。林子里的人至今说她还在。隐身1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "白手之诺",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "净化",
+          "target": "自身",
+          "desc": "白手之诺"
+        },
+        {
+          "type": "重伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "伤势持续恶化"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 力场伤害。她立誓终身不嫁，双手从此只为自己动。她死时双手仍是白的。净化+重伤2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

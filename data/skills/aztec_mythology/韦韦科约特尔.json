@@ -1,0 +1,126 @@
+[
+  {
+    "name": "音乐之始",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被乐声带走"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 法术伤害。他是音乐、舞蹈和放纵之神。他发明了鼓，然后让所有人跟着跳。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "老狡之计",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "老狡之计"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 法术伤害。他是老郊狼。他做的事看着像玩闹，其实每一步都有目的。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "与黑镜为友",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "黑镜之友"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 法术伤害。他和特斯卡特利波卡是朋友。两个喜欢恶作剧的神凑在一起很危险。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "纵欲之罚",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "纵欲结算"
+      },
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤口持续流失生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 法术伤害。他带来狂欢也带来惩罚。在他这里待太久的人回不去原来的生活。处决+持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

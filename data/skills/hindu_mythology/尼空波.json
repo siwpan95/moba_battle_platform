@@ -1,0 +1,119 @@
+[
+  {
+    "name": "蛮力之锤",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "蛮力之锤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。尼空波的兵器是一柄比人还高的石锤。倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "夜间复活",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "夜间复活"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。他在夜里受“战死可复活一次”的恩赐。复活。"
+  },
+  {
+    "name": "城墙之碎",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "城墙之碎"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。他能徒手砸碎城墙。包括楞伽城墙。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "断臂之战",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "断臂之战"
+      },
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤势持续恶化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他与某位天神单挑时被斩断一臂。另一臂仍在打。狂暴2回合+重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

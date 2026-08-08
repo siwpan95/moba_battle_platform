@@ -1,0 +1,121 @@
+[
+  {
+    "name": "四目重瞳",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "四目之明"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。《论衡》说仓颉四目，生而能书，观鸟兽之迹。增益2回合。"
+  },
+  {
+    "name": "造字",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "字成鬼哭"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。他观鸟兽蹄迒之迹而造字，天雨粟，鬼夜哭。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "天雨粟",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "天降粟雨"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。字成则天降粟雨，鬼神为之惊惧，感文明之启。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "鬼夜哭",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "鬼哭之威"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。鬼知人将记录其恶，故夜哭，文字之力如此。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

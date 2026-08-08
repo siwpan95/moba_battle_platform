@@ -1,0 +1,118 @@
+[
+  {
+    "name": "骨架之相",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "骨架之相"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 黯蚀伤害。她本是枯骨，化形为美貌女子，引人近身。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "怨念之骨",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "怨念之骨"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 黯蚀伤害。她死于怨念，骨中藏恨，触之即染。持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "夜半相访",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "夜半相访"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 黯蚀伤害。她夜半访旧友，握手时露出骨指，友人惊骇。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "骨握之寒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "骨握之寒"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 黯蚀伤害。她握手时寒入骨髓，被握者一夜而衰，精气尽失。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

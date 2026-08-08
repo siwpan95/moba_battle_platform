@@ -1,0 +1,114 @@
+[
+  {
+    "name": "开花谷之名",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "远方之名"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。他来自一个四季开花的山谷。宫廷里没人听过这地名。增益2回合。"
+  },
+  {
+    "name": "持杯之宴",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "不为圣物动"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。他在圣杯飘过厅堂时唯一一个不伸手去拿的。免疫1回合。"
+  },
+  {
+    "name": "长矛之阵",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "长矛挑五骑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。他用一柄比身高还长的矛，在阵前连挑五骑。暴击2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "退隐归谷",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "归谷一击"
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。卡姆兰之后他回了那座山谷，从此再没人见过他。穿透+隐身1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

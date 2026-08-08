@@ -1,0 +1,118 @@
+[
+  {
+    "name": "罗刹之美",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "罗刹之美"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 黯蚀伤害。她是首哩薄那迦之妹，美到能让人放下武器。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "毒咒之口",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "剧毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒咒之口"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 黯蚀伤害。她念的咒能让中咒者七孔流血。剧毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "夜间疾行",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "夜间疾行"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 黯蚀伤害。罗刹女在夜里比白天快三倍。加速1回合。"
+  },
+  {
+    "name": "维毗沙那之妹",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "维毗沙那之妹"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "对低生命目标造成致命一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 黯蚀伤害。她与维毗沙那一同转投罗摩。她知道罗波那的软肋。标记2回合+斩杀。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

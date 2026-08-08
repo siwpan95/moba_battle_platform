@@ -1,0 +1,115 @@
+[
+  {
+    "name": "城门之守",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "城门之守"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。他守艾明·玛卡的西门，一年三百六十五日不换岗。换岗那天就是他死那天。护盾2回合。"
+  },
+  {
+    "name": "幼者之师",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "幼者之师"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。红枝武士新兵都由他带。他带的兵，第一战不死，第二战就开始带别人。增益2回合。"
+  },
+  {
+    "name": "浅滩之夜",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "浅滩之伤"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。他在浅滩替库丘林守了三夜，每人来犯都被他打回去——直到自己失血昏倒。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "继位之让",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "让位之德"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。康乔巴尔死后王位传给他。他让了，理由是「我守的是门，不是王座」。强化2回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

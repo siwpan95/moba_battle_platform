@@ -1,0 +1,116 @@
+[
+  {
+    "name": "修验道祖",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "修验道祖"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 法术伤害。他是修验道始祖，能役使鬼神，前鬼后鬼为侍。增援2回合。"
+  },
+  {
+    "name": "前鬼后鬼",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "前鬼后鬼"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 法术伤害。他驱使前鬼后鬼二鬼为侍，听其号令。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "飞天之术",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "飞天之术"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 法术伤害。他修孔雀咒，能腾空飞行，瞬至千里。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "一咒锁山",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "一咒锁山"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 法术伤害。他一咒锁住一座山，山神听令，不敢违抗。制服1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

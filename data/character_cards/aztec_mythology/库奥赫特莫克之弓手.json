@@ -1,0 +1,226 @@
+{
+  "card_id": "aztec_mythology:库奥赫特莫克之弓手",
+  "legacy_card_id": "AZT-1145",
+  "hero": {
+    "name": "库奥赫特莫克之弓手",
+    "name_en": "Cuauhtemoc's Archer",
+    "alias": "末城之矢",
+    "title": "末城之矢"
+  },
+  "game": {
+    "name": "Aztec Mythology",
+    "name_cn": "阿兹特克神话",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "阿兹特克神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "持续输出",
+    "核心",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "末城之弓",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "末城之守"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+DEX 穿刺伤害。他是库奥赫特莫克手下最后的弓手。城被围时他还在墙上射。增益2回合。"
+    },
+    {
+      "name": "墙上之射",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "暴击",
+          "target": "自身",
+          "duration": 2,
+          "desc": "墙上之射"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+DEX 穿刺伤害。他从城墙上往下射。射程不远，但很准。暴击2回合。"
+    },
+    {
+      "name": "独木舟之箭",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "desc": "舟上之箭"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+DEX 穿刺伤害。他在独木舟上也射得准。湖上的风对他不构成干扰。穿透。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "最后之矢",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "最后之矢"
+        },
+        {
+          "type": "重伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "伤势持续恶化"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 穿刺伤害。他最后射出的那支箭没了目标。城已经破了。处决+重伤2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

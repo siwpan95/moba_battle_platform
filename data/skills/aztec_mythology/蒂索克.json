@@ -1,0 +1,119 @@
+[
+  {
+    "name": "地日之名",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "地日之名"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。他的称号是特拉尔奇托纳蒂乌，意思是「地上的太阳」。这太阳不太亮。增益2回合。"
+  },
+  {
+    "name": "征服之少",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "战绩平平"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。他在位五年只打下了两座城。和他前后任比起来，这个成绩很差。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "神庙石盘",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "石盘之固"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。他那块著名的征服石盘刻着他打的仗。仗不多，石盘刻得很认真。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "被毒之疑",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "不明之死"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒素持续侵蚀"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他死得不明不白。有人说是被毒死的，也有人说是被术法害的。处决+中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

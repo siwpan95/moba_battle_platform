@@ -1,0 +1,121 @@
+[
+  {
+    "name": "浮桥俯瞰",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "居高临下"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。他与造化三神同代，立于天之浮桥上俯视混沌原野，未尝下临。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "独神隐身",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。显现之后立刻隐去形姿，与造化三神同样不再登场于世事。隐身1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "芦芽初萌",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被纳入初萌"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。「阿斯诃备」意为芦芽初发。万物之始生在他这里显现。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "太初五柱",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "太初定位"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。他是天地初判时第五位显现的独神，名列别天津神之末。制服1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

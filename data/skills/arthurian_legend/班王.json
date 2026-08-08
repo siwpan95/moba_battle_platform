@@ -1,0 +1,118 @@
+[
+  {
+    "name": "焚城之夜",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "故城焚毁"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。他从前门突围，回头看见城堡在火里。他在山坡上当场死去。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "托妻寄子",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "以子相托"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。他把妻子和襁褓里的兰斯洛特交给湖中仙女，说：这孩子以后归你。增援2回合。"
+  },
+  {
+    "name": "本威克之剑",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "家传之剑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。他留下的那把剑，后来由湖中仙女亲手交给长大的儿子。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "克劳达斯之仇",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "旧仇上门"
+      },
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对残血目标造成额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。夺他国的人叫克劳达斯。这笔账由他儿子十八年后上门清算。穿透+处决。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

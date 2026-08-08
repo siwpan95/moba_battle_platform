@@ -1,0 +1,115 @@
+[
+  {
+    "name": "谢科维察山",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "据山设望"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。基辅另一座山叫谢科维察。他在那里立了瞭望台。防御2回合。"
+  },
+  {
+    "name": "号角之约",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "号角三响"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他吹的号角能传过整个第聂伯河。号响三声，三座山的人都能听见。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "硬木之盾",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "硬木之盾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他用整块硬木削盾。砍一刀只留一道白印。护盾2回合。"
+  },
+  {
+    "name": "合山而葬",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "合山而终"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受到的伤害降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他和霍里夫葬在同一道山梁的两端。中间那段归他们俩。处决+减伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

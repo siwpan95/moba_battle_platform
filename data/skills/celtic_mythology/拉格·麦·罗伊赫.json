@@ -1,0 +1,118 @@
+[
+  {
+    "name": "父死之誓",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "为父复仇"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。父亲库尔被库丘林所杀。他立誓：三日内必取其首，否则自刎。狂暴2回合。"
+  },
+  {
+    "name": "三石之投",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "三石三中"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。他用三块石头分别击中库丘林的标枪、护身石、最后是头颅。每一块都不浪费。真实伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "御者之忠",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "御者指认"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。他的御者洛埃格替他指认目标。御者死后他独眼再没找回准头。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "首级归丘",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "首级归腰"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。他把库丘林的首级带回塔拉，挂在自己腰带上。腰带从此再没解开过。处决+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

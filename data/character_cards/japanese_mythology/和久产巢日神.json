@@ -1,0 +1,215 @@
+{
+  "card_id": "japanese_mythology:和久产巢日神",
+  "legacy_card_id": "JAP-1086",
+  "hero": {
+    "name": "和久产巢日神",
+    "name_en": "Wakumusuhi",
+    "alias": "海宫之子",
+    "title": "海宫之子"
+  },
+  "game": {
+    "name": "Japanese Mythology",
+    "name_cn": "日本神话",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "日本神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "海神之子",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "海宫之子"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 寒冷伤害。他是绵津见之子，丰玉姬之兄，居于海宫。增援2回合。"
+    },
+    {
+      "name": "食神之父",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "食神补全"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 寒冷伤害。大宜都比卖被杀后，他化身食物神，补全食源。强化2回合。"
+    },
+    {
+      "name": "丰熟之水",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "回复",
+          "target": "自身",
+          "desc": "丰熟之水"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+WIS 寒冷伤害。他管海上丰熟。水与食的关联在他这里成立。回复。"
+    },
+    {
+      "name": "海陆之桥",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "寒冷"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "target": "自身",
+          "desc": "海陆之桥"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d6+WIS 寒冷伤害。海宫与陆地的通路，由他来维系，潮汐听他号令。治疗。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

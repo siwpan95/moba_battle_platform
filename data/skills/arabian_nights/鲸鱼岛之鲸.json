@@ -1,0 +1,127 @@
+[
+  {
+    "name": "浮岛之眠",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "巨鲸之肤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 冰冷伤害。辛巴达的船员在它背上生火，它才从百年沉睡中惊醒。护盾2回合。"
+  },
+  {
+    "name": "翻身入海",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "巨浪掀飞"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "海水裹足"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 冰冷伤害。它猛然下潜，整座岛屿连同篝火一起沉入波涛。击退1回合+减速2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "旋涡吞舟",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "旋涡锁船"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 冰冷伤害。它一摆尾，海面塌出一个把船吸进去的旋涡。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "深渊之口",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "巨鲸吞舟"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 冰冷伤害。它张开足以吞下桅杆的巨口，连船带人卷入腹中。压制1回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

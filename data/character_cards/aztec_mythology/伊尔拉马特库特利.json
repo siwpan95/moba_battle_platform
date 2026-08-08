@@ -1,0 +1,233 @@
+{
+  "card_id": "aztec_mythology:伊尔拉马特库特利",
+  "legacy_card_id": "AZT-1081",
+  "hero": {
+    "name": "伊尔拉马特库特利",
+    "name_en": "Ilamatecuhtli",
+    "alias": "老女神",
+    "title": "老女神"
+  },
+  "game": {
+    "name": "Aztec Mythology",
+    "name_cn": "阿兹特克神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "阿兹特克神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "古老之身",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "古老之身"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 黯蚀伤害。她是一位很老的女神。老到很多神都不记得她年轻时的样子。减伤2回合。"
+    },
+    {
+      "name": "织女之护",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "织工之护"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 黯蚀伤害。她是织工行会的守护神。织布的手都在她的庇护之下。增益2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "老鹰之舞",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "老鹰之舞"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 黯蚀伤害。祭她时跳的舞叫老鹰舞。跳完要献上假扮她的老妇。恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "收岁之礼",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "收岁之礼"
+        },
+        {
+          "type": "持续伤害",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "伤口持续流失生命"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 黯蚀伤害。她管的是年末。一年到头，旧的东西归她收走。处决+持续伤害2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

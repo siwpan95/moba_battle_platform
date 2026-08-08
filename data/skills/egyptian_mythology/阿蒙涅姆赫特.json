@@ -1,0 +1,116 @@
+[
+  {
+    "name": "白堡石墙",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "白堡石墙"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。阿蒙涅姆赫特在伊塔威建白堡，堡墙以石灰岩砌就，箭射上去只留白点。护盾2回合。"
+  },
+  {
+    "name": "十二堡链",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "十二堡链"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他在尼罗河沿岸建十二座堡垒，组成一道连锁防线。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "先王教谕",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "教谕之训"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。《阿蒙涅姆赫特教谕》记载先王遇刺的教训，他把教训化为防身的本能。减伤2回合。"
+  },
+  {
+    "name": "堡链合围",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "堡链夹困"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "陷入恐慌"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。十二座堡垒同时关门，站在链内的人被十二面墙夹住。束缚1回合+恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "贤后之谏",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "贤后之谏"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 法术伤害。她多次劝罗波那归还悉多。罗波那不听。她是对的。干扰1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "知悉罗波那死穴",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "死穴之知"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 法术伤害。她是唯一知道罗波那脐部藏有甘露的人。她把这秘密告诉了维毗沙那。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "美之护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "美之迟疑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 法术伤害。她以美貌闻名。那份美能让人迟疑出手。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "电舌之恨",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "恨意之一击"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 法术伤害。她曾因罗波那杀其弟而恨过他。恨意化作一击。重伤2回合+净化。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

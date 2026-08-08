@@ -1,0 +1,121 @@
+[
+  {
+    "name": "捞鱼之婴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "捞鱼之获"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 法术伤害。他下海捞鱼没捞到，捞上来一个婴儿。这个婴儿会背诗。增益2回合。"
+  },
+  {
+    "name": "受刑之诗",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "以诗脱罪"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 法术伤害。他被主君关进牢里要处死。是那个婴儿背了一首诗替他脱的罪。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "银手之赐",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "以圣护身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 法术伤害。那个婴儿替他在主君面前显了一次圣。他从此再没受过刑。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "守河之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "守河之终"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 法术伤害。他守在塔列辛长大的那条河边，到死没再下海捞过鱼。处决+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

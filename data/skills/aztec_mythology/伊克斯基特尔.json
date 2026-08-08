@@ -1,0 +1,121 @@
+[
+  {
+    "name": "术士之主",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "术士加持"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 黯蚀伤害。他是巫师的守护神。所有在夜里做术的人最后都要经过他这一关。增益2回合。"
+  },
+  {
+    "name": "暗影之术",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "暗影缠身"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 黯蚀伤害。他的术法走的是暗影一路。看不见的手比看得见的刀更难防。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "咒之反噬",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "反弹",
+        "target": "自身",
+        "duration": 2,
+        "desc": "咒术反噬"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 黯蚀伤害。他能让别人施的术反过来咬施术者。这一手让所有术士都怕他。反弹2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "夜会之主",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "夜会之裁"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "陷入恐慌"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 黯蚀伤害。他在夜里召集术士开会。开会的内容从不外传，外传的人也不在了。处决+恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

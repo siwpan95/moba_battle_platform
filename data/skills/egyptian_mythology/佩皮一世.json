@@ -1,0 +1,121 @@
+[
+  {
+    "name": "王令石碑",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被王令定身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+CON 力场伤害。佩皮的敕令刻在石碑上立于各州，碑文所及之处无人敢动。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "南征铜甲",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "铜甲覆体"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+CON 力场伤害。他亲征南境时披挂的铜甲，是古王国最厚的一副。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "六金字塔",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "六塔拱卫"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+CON 力场伤害。他为六位先王修建六座金字塔，排成一道防线拱卫萨卡拉。减伤2回合。"
+  },
+  {
+    "name": "王令之决",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "王令压服"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+CON 力场伤害。《金字塔铭文》第 500 节：佩皮的王令所到之处，叛乱即刻平息。压制1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

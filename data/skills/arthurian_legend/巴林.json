@@ -1,0 +1,124 @@
+[
+  {
+    "name": "狱中拔剑",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双剑在手"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。他被关了半年，亚瑟放他出来那天，他从狱卒手里夺了第二把剑。增益2回合。"
+  },
+  {
+    "name": "湖中女士之死",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "当场一剑"
+      },
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "防御破绽暴露"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。他一剑砍下了来讨剑的湖中女士的头。卡美洛从此与他结怨。处决+易伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "圣矛之执",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "悲惨一击"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。他接过那支滴血的圣矛，不懂自己在做什么，随手往前一送。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "巴兰同陨",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "兄弟互刺"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。他和亲兄弟巴兰在林中误战，都以为对方是陌生人。两人才发现已互刺致命。重伤2回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

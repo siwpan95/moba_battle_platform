@@ -1,0 +1,235 @@
+{
+  "card_id": "egyptian_mythology:登",
+  "legacy_card_id": "EGY-1149",
+  "hero": {
+    "name": "登",
+    "name_en": "Den",
+    "alias": "双冠首戴",
+    "title": "双冠首戴"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "埃及神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "护盾",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "双冠之力",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "双冠之力"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。登是第一位同时戴上下埃及双冠的法老，双冠之力化为法术。强化2回合。"
+    },
+    {
+      "name": "阿拜多斯之石",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "石碑法阵"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 力场伤害。他的墓中出土了最早的石灰岩石碑，石碑化为法阵。护盾2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "舍迈特之咒",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "束缚",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "舍迈特之缚"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 力场伤害。他以“舍迈特”之名施行法术，被咒者体重骤增无法移动。束缚1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "登之首创",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "首创之咒"
+        },
+        {
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被强行压制"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 力场伤害。《巴勒莫石碑》：登首创了多项法术仪式，他的咒语至今仍被引用。沉默1回合+压制1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

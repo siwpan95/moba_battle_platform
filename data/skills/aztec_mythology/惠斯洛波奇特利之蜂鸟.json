@@ -1,0 +1,113 @@
+[
+  {
+    "name": "战神之鸟",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "战神之鸟"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 光耀伤害。它是维齐洛波奇特利的蜂鸟。战神的头盔上就是这只鸟。增益2回合。"
+  },
+  {
+    "name": "振翅之速",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "振翅之速"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 光耀伤害。它振翅的速度快到看不见。你看不到它动，只听到嗡嗡声。加速1回合。"
+  },
+  {
+    "name": "喙之穿",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "喙之穿"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 光耀伤害。它的喙比针还尖。它从远处飞来，一喙就穿。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "一喙之终",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一喙之终"
+      },
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "暴击率提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。它最后一喙刺入要害。刺完就飞走了，没给反应的时间。处决+暴击2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

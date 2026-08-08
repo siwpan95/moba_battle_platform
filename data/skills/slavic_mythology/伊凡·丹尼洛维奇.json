@@ -1,0 +1,114 @@
+[
+  {
+    "name": "钱袋之厚",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "钱袋为盾"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 钝击伤害。他的钱袋从不空。别人以为他吝啬，其实他在攒赎城的钱。护盾2回合。"
+  },
+  {
+    "name": "收贡于四邻",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "以贡代战"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 钝击伤害。他向四邻收贡。收的不是刀，是钱。钱到了，仗就免了。增益2回合。"
+  },
+  {
+    "name": "买乌格利奇",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "钱至城归"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 钝击伤害。他用钱把乌格利奇买下来。一仗没打，城就归了他。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "钱袋压棺",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "钱袋压棺"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 钝击伤害。他死后钱袋放在棺材脚头。来世的路上也要带着。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

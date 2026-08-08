@@ -1,0 +1,121 @@
+[
+  {
+    "name": "幼时被掠",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "失姓之子"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他还是孩子的时候被掠走，在异国养大。连自己姓什么都忘了。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "归岛之日",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "归岛之诺"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他长大了带兵回来，把当年掠他的人一个一个找出来。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "圆桌补缺",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "补缺之位"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他在圆桌上补了危险之座旁的一格——那一年没人敢坐危险之座。护盾2回合。"
+  },
+  {
+    "name": "守关之终",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "守关而终"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他没去卡姆兰。他守在自己补的那座关上，最后死在那里。防御2回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

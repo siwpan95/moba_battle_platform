@@ -1,0 +1,108 @@
+[
+  {
+    "name": "浪花之愈",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "浪花之愈"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 冰冷伤害。她捧一捧浪花洒在伤者身上，伤口便愈合了。治疗。"
+  },
+  {
+    "name": "海雾蔽目",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "海雾蔽目"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 冰冷伤害。她呼出一口气，海面上便起了浓雾。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "潮声慰军",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "潮声慰军"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 冰冷伤害。她学潮声哼了一段曲，士兵的恐惧便消了。增益2回合。"
+  },
+  {
+    "name": "海母之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "海母之护"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 冰冷伤害。她张开双臂，身后的船便不再怕风浪。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

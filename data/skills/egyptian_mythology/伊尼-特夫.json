@@ -1,0 +1,122 @@
+[
+  {
+    "name": "底比斯之兴",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "底比斯之力"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。伊尼-特夫家族在底比斯崛起，他的法术以底比斯之力为引。强化2回合。"
+  },
+  {
+    "name": "诺马尔克之令",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "诺马尔克之令"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。他以“诺马尔克”（州长）之名统辖底比斯，法术以行政令为引。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "卡纳克之基",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "卡纳克之基"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。他为卡纳克神庙奠基，基石化为法阵核心。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "伊尼-特夫之誓",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "北归之拖"
+      },
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被强行压制"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。《第十一王朝铭文》：他誓言把北境夺回，被他的法术击中者会被拖向北方。击退1回合+压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

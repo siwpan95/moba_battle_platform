@@ -1,0 +1,126 @@
+[
+  {
+    "name": "摩德罗之矛",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "摩德罗之矛"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 穿刺伤害。他掌管摩德罗国骑兵。矛法比沙恭尼还阴。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "双面之诺",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "双面之诺"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 穿刺伤害。他同时答应了难敌和坚战。他表面上助俱卢，暗中助般度。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "御者之阻",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "御者之阻"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 穿刺伤害。他担任迦尔纳的御者，一路上用话削弱迦尔纳的信心。干扰1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "第十八日",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "统帅之压"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受到的伤害降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。他在第十八日出任俱卢统帅。当天就阵亡了。但撑到了那时。压制1回合+减伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

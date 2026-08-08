@@ -1,0 +1,124 @@
+[
+  {
+    "name": "蓬特之舵",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "蓬特之舵"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 穿刺伤害。哈特谢普苏特的船队远航蓬特，她以舵为弓，帆缆为弦。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "方尖碑之影",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "方尖碑之影"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 穿刺伤害。她在卡尔纳克竖起的方尖碑高三十米，影子指向谁谁就倒霉。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "假须之射",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "假须之疾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。她戴着法老的假须，从远处看与男法老无异——箭也一样。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "红丘之巅",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "红丘之矢"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被推离原位"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。《蓬特远航铭文》：哈特谢普苏特的舰队从红丘之巅远航，回航时载满了金与箭。穿透+击退1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

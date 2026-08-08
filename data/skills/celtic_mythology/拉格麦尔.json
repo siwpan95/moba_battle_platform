@@ -1,0 +1,114 @@
+[
+  {
+    "name": "双马之御",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双马之御"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 穿刺伤害。他驾驭灰马玛查与黑马桑格兰。两匹马都能听懂他每一句话。增益2回合。"
+  },
+  {
+    "name": "武器之递",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "递兵之疾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 穿刺伤害。他在车上递枪、递剑、递盾。库丘林打多久，他就递多久。加速1回合。"
+  },
+  {
+    "name": "浅滩之眼",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "浅滩之眼"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。他站在浅滩边替库丘林望风。对方一出水，他就报姓名和武器。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "同死之约",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "同死之约"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。库丘林死的那天他也死在同一辆车上。两匹马自己走回了艾明。处决+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

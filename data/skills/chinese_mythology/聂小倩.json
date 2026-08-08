@@ -1,0 +1,117 @@
+[
+  {
+    "name": "兰若寺鬼",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "女鬼之姿"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 黯蚀伤害。《聊斋》她是兰若寺女鬼，被树妖姥姥驱使害人。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "弹筝引客",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "筝声引客"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 黯蚀伤害。她奉命以筝声引旅人入寺，供姥姥吸血。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "骨匣托付",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "迁骨脱困"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 黯蚀伤害。她求宁采臣将她骨灰迁走，脱离姥姥掌控。净化。"
+  },
+  {
+    "name": "重见天日",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "归宁之末"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 黯蚀伤害。骨灰迁葬她魂归宁家，终得安宁，再不受姥姥驱遣。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "金顶王帐",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "金帐为王"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 挥砍伤害。他的帐子立在希拉的高地上，整片沙漠都奉他为主。护盾2回合。"
+  },
+  {
+    "name": "骑射之民",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "骑射之民"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 挥砍伤害。他治下的部落人人善骑射，号令一出便聚成大军。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "拒贡之怒",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "王怒亲征"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 挥砍伤害。藩国不肯纳贡，他一拍案便率骑亲征。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "固土之壁",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "固土之壁"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。他在边境筑起土垒，将外敌挡在沙漠的另一边。减伤2回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

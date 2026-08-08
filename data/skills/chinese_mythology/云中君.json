@@ -1,0 +1,122 @@
+[
+  {
+    "name": "浴兰汤",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "兰汤沐芳"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 电击伤害。《九歌·云中君》「浴兰汤兮沐芳，华采衣兮若英」。增益2回合。"
+  },
+  {
+    "name": "龙驾周章",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "龙驾翱游"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 电击伤害。「龙驾兮帝服，聊翱游兮周章」，他驾龙车周游四海。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "览冀州",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "云气弥漫"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 电击伤害。「览冀州兮有余，横四海兮焉穷」，他俯瞰大地无远不至。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "八翼齐震",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "云海翻腾"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 电击伤害。他是云神，一振则云海翻腾，雷电交加。击飞1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

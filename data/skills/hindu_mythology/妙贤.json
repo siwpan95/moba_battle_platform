@@ -1,0 +1,109 @@
+[
+  {
+    "name": "阿周那之妻",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "妙贤之祝"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。她是黑天之妹，嫁给了阿周那。她的祝福让阿周那更强。强化2回合。"
+  },
+  {
+    "name": "御车之教",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "御车之教"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她曾驾驶阿周那的战车。车技比许多御者都好。加速1回合。"
+  },
+  {
+    "name": "激昂之母",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "激昂之母"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她是激昂的母亲。母爱化作护盾。护盾2回合。"
+  },
+  {
+    "name": "多门之奔",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "多门之奔"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。阿周那劫她出走多门城。她一路上笑着。冲锋1回合+回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

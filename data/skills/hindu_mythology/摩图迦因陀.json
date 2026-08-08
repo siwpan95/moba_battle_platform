@@ -1,0 +1,121 @@
+[
+  {
+    "name": "双身共体",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双身共体"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 黯蚀伤害。摩图与迦因陀是从毗湿奴耳垢里生出的双魔。两个共用一身。减伤2回合。"
+  },
+  {
+    "name": "吠陀之盗",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "吠陀被盗"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 黯蚀伤害。他们曾盗走吠陀经藏入海底。知识被偷走的人会发懵。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "污秽之躯",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "污秽之沾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 黯蚀伤害。耳垢所生之物本就不洁。碰他们的人会被污秽沾染。中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "双魔合击",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "双魔合击"
+      },
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被强行压制"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 黯蚀伤害。两个头同时咬下。一张嘴在上，一张嘴在下。重创2回合+压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

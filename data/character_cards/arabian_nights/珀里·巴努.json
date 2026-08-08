@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:珀里·巴努",
-  "legacy_card_id": "ONE-12353",
+  "card_id": "Arabian_Nights:珀里·巴努",
+  "legacy_card_id": "ARA-1013",
   "hero": {
     "name": "珀里·巴努",
     "name_en": "Peri Banu",
@@ -8,8 +8,8 @@
     "title": "Peri Banu"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "辅助",
     "universal_role": "support",
     "role_name": "辅助",
@@ -21,7 +21,8 @@
     "保护",
     "增益",
     "护盾",
-    "治疗"
+    "治疗",
+    "硬控制"
   ],
   "attributes": {
     "STR": {

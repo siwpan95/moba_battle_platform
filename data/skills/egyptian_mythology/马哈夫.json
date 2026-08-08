@@ -1,0 +1,124 @@
+[
+  {
+    "name": "渡船撞击",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被渡船撞开"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 黯蚀伤害。马哈夫撑着冥河渡船，船首撞开一切拦路的东西。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "拒渡之矛",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被船篙钉住"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 黯蚀伤害。他有权决定谁能上船，被拒绝的人会被船篙戳进淤泥里。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "冥河水寒",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "冥河水寒"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 黯蚀伤害。冥河的水比任何冰都冷，他舀一瓢泼过去就能冻住人的关节。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "彼岸登船",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "被推回此岸"
+      },
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法施放技能"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 黯蚀伤害。《亡灵书》第 99 章：马哈夫只在死者说出正确咒语后才撑船，否则他把人推回此岸。处决+沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

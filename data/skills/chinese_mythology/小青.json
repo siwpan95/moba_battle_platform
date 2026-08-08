@@ -1,0 +1,113 @@
+[
+  {
+    "name": "青蛇之妹",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "青蛇之身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 毒素伤害。她是白素贞的侍女，青蛇所化，性烈如火。增益2回合。"
+  },
+  {
+    "name": "双剑青锋",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "青锋一剑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 毒素伤害。她与白素贞共战法海，青锋剑不离手。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "水漫金山",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "水漫之冲"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 毒素伤害。她调虾兵蟹将水漫金山，与法海斗法。冲锋1回合。"
+  },
+  {
+    "name": "雷峰塔下",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "塔倒之末"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 毒素伤害。白素贞被压雷峰塔，她逃走修练，二十年后塔倒人出。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "私生子之列",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "私生子之列"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。他和弗洛伦斯是兄弟。父亲一样不认他们。增益2回合。"
+  },
+  {
+    "name": "潜行之夜",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "夜焚粮仓"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。他潜进一座敌城，从井里爬出来放火烧了粮仓。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "不留痕迹",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "不留痕迹"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 穿刺伤害。他立过规矩：自己过的地方不留一个活人指认。隐身1回合。"
+  },
+  {
+    "name": "同兄之陨",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "同坟兄弟"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。他死在兄弟之前几个小时。两个人埋在同一座坟里。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

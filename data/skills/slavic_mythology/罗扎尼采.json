@@ -1,0 +1,108 @@
+[
+  {
+    "name": "命线之纺",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "命线之纺"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。孩子出生那夜她来纺命线。线纺多长，这孩子就活多长。增益2回合。"
+  },
+  {
+    "name": "七姊同席",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "七姊同席"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她是七个命运女之一。七个一起在产妇床边坐。增援2回合。"
+  },
+  {
+    "name": "额上之点",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "额上之点"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她在新生儿额头点一下。点过的孩子命硬一点。护盾2回合。"
+  },
+  {
+    "name": "剪线之时",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "剪线之落"
+      },
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "重返战场"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。她剪刀一落，线就断了。线断的时候，人就走了。处决+复活。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

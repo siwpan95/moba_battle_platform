@@ -1,0 +1,240 @@
+{
+  "card_id": "egyptian_mythology:美伦涅特",
+  "legacy_card_id": "EGY-1153",
+  "hero": {
+    "name": "美伦涅特",
+    "name_en": "Merneith",
+    "alias": "女王摄政",
+    "title": "女王摄政"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "埃及神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "护盾",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "摄政之令",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "摄政之令"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 力场伤害。美伦涅特以太后之名摄政，她的法术以王令为引。沉默1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "太后之护",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "太后之护"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 力场伤害。她为幼子筑起护身法阵，法阵之力来自王权。护盾2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "阿拜多斯之葬",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "阿拜多斯法阵"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 力场伤害。她在阿拜多斯的墓规模与法老等同，墓中的法阵至今有效。强化2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "摄政之裁",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "束缚",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "太后之缚"
+        },
+        {
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被强行压制"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 力场伤害。《第一王朝年代记》：美伦涅特以太后之名裁决朝政，被她的法术击中者失去行动力。束缚1回合+压制1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "name": "岁月之延",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "岁月之延"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。雷涅特掌管岁月，她为队友延长伤愈的时间。回复。"
+  },
+  {
+    "name": "年成之赐",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "年成之赐"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她以丰年之收赐予队友，收成的精华能治愈伤痛。治疗。"
+  },
+  {
+    "name": "时序之缓",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "时序之缓"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她减缓敌人的时序，让敌人的动作慢一拍。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "岁月之回",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "岁月之回"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。《棺文》第 739 节：雷涅特能拨回岁月之针，把队友从死亡边缘拉回。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

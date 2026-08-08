@@ -1,0 +1,234 @@
+{
+  "card_id": "celtic_mythology:格拉德隆",
+  "legacy_card_id": "CEL-1099",
+  "hero": {
+    "name": "格拉德隆",
+    "name_en": "Gradlon",
+    "alias": "伊斯城的王",
+    "title": "伊斯城的王"
+  },
+  "game": {
+    "name": "Celtic Mythology",
+    "name_cn": "凯尔特神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "凯尔特神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "护盾"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "海墙之王",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "海墙之堤"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 冰冷伤害。他建的伊斯城低于海面，靠一道堤坝和一把钥匙。钥匙只许他拿。护盾2回合。"
+    },
+    {
+      "name": "莫瓦尔赫之骑",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "海马之驰"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 冰冷伤害。他的马莫瓦尔赫能在海面奔驰。海浪在马蹄下像石头。加速1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "钥匙之失",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "易伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "钥匙失窃"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 冰冷伤害。女儿达胡特偷了钥匙开闸。海水灌进来的瞬间，他才发现钥匙不在腰上。易伤2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "圣吉诺莱之救",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "弃女逃生"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 冰冷伤害。吉诺莱修士把他从洪水中拽上马背。他活了，女儿没活——这是他余生最常提的一夜。处决+重创2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

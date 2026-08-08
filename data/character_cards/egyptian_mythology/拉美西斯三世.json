@@ -1,0 +1,231 @@
+{
+  "card_id": "egyptian_mythology:拉美西斯三世",
+  "legacy_card_id": "EGY-1102",
+  "hero": {
+    "name": "拉美西斯三世",
+    "name_en": "Ramesses III",
+    "alias": "海民之盾",
+    "title": "海民之盾"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "埃及神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "护盾",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "海民之役",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "海民之盾"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 钝击伤害。他挡住了海上民族的入侵，盾墙在尼罗河三角洲合拢。护盾2回合。"
+    },
+    {
+      "name": "麦地奈特哈布",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "葬祭庙墙"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 钝击伤害。他的葬祭庙墙厚六米，墙上的浮雕就是他打过的每一仗。减伤2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "三次战役",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "三役之甲"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 钝击伤害。他在位期间打了三场决定性战役，每场的经验都沉淀为甲。强化2回合。"
+    },
+    {
+      "name": "海民之灭",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "海民之灭"
+        },
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "陷入恐慌"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 钝击伤害。《哈里斯大纸草》：拉美西斯三世在海民之役中将敌人尽数歼灭于海岸。压制1回合+恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

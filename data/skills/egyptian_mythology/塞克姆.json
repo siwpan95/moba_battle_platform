@@ -1,0 +1,123 @@
+[
+  {
+    "name": "权杖之光",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "权杖之光"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 力场伤害。塞克姆是灵魂的“力量”，以权杖化光射出。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "力之测定",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "力之测定"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 力场伤害。她测定每个灵魂的力量值，被测者无法隐藏。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "权杖充能",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "攻速强化",
+        "target": "自身",
+        "duration": 1,
+        "desc": "权杖充能"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 力场伤害。权杖蓄积力量，蓄满后射出的光更亮更致命。攻速强化1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "塞克姆之决",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "力竭之伤"
+      },
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "防御破绽暴露"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 力场伤害。《棺文》第 766 节：塞克姆之权杖所及之处，灵魂的力量被抽空。真实伤害+易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

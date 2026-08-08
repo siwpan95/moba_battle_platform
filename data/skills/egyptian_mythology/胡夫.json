@@ -1,0 +1,126 @@
+[
+  {
+    "name": "巨石封压",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被巨石压倒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。胡夫以金字塔巨石砸下，二百三十万块的重量压在一个点上。倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "花岗岩内棺",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "花岗岩棺护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。国王墓室里的花岗岩石棺比任何盾都厚，他把自己塞进去。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "大金字塔之影",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被金字塔之影覆盖"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。高一百四十六米的影子横过高原，被影子盖住的人动弹不得。石化1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "永居之所",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "封入巨构"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。《金字塔铭文》第 1712 节：胡夫为自己建了永恒居所，他现在把别人也塞进去。束缚1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

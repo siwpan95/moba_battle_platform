@@ -1,0 +1,118 @@
+[
+  {
+    "name": "影子剥离",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "潜行",
+        "target": "自身",
+        "duration": 1,
+        "desc": "化为影子"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 黯蚀伤害。谢特就是人的影子，她能从人身上剥离出来，独立行动。潜行1回合。"
+  },
+  {
+    "name": "影中窃言",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "影中窃言"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 黯蚀伤害。影子贴在墙壁上时能听到屋里说的话——她什么都听到了。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "暗影蚀体",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "暗影蚀体"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 黯蚀伤害。她钻进敌人的影子里，从里面把人啃噬一空。持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "影之决断",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "影之消散"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "对低生命目标造成致命一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 黯蚀伤害。《金字塔铭文》第 546 节：谢特是灵魂七部分之一，失去影子的人会逐渐消散。恐惧1回合+斩杀。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "鸦嘴之啄",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "鸦嘴之啄"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 穿刺伤害。他化鸦形，喙如利刃，一啄见血。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "飞羽之矢",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "飞羽之矢"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 穿刺伤害。他的羽毛如箭矢，从空中落下，密如骤雨。暴击2回合。"
+  },
+  {
+    "name": "山中疾风",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "山中疾风"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 穿刺伤害。他在山间飞行如疾风，人所不见，唯闻风声。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "群鸦蔽日",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "群鸦蔽日"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。他唤群鸦蔽日，敌手不见天光，无所适从。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

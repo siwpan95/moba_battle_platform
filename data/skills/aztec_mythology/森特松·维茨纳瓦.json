@@ -1,0 +1,119 @@
+[
+  {
+    "name": "四百兄弟",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "四百星众"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 黯蚀伤害。他们是科阿特利奎的四百个儿子，住在天上南方，代表南方的星宿。增援2回合。"
+  },
+  {
+    "name": "谋害母命",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "弑母之谋"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 黯蚀伤害。他们和姐姐科约尔绍基一起密谋杀母亲。计划没成功。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "被兄所灭",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被兄击散"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 黯蚀伤害。维齐洛波奇特利一出生就把他们打散了。四百颗星滚了一地。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "日出星隐",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "日出星隐"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "移动速度降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 黯蚀伤害。他们怕太阳。日出时他们就必须消失，这是他们的弱点也是他们的规矩。处决+减速2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

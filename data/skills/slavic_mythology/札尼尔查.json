@@ -1,0 +1,118 @@
+[
+  {
+    "name": "黑龙之形",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "黑龙魔源"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 黯蚀伤害。他是魔法的源头，形态是一条黑龙。鳞片上刻着所有咒文。增益2回合。"
+  },
+  {
+    "name": "翼蔽月华",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "翼蔽月华"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 黯蚀伤害。他飞过夜空时翅膀遮住月亮。月食就是这么来的。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "尾扫咒阵",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "尾扫成阵"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 黯蚀伤害。他的尾巴一扫，地上就刻出一个完整的咒阵。阵里的人动不了。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "噬魔法师",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "噬魔吞法"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 黯蚀伤害。他吞掉所有挑战他的法师。吞一个，他身上的鳞就多一片。处决+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

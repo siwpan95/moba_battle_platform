@@ -1,0 +1,112 @@
+[
+  {
+    "name": "善念之护",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "善念之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。须尼陀罗之名意为“善行者”。他的善念化作护盾。护盾2回合。"
+  },
+  {
+    "name": "弃恶从善",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "弃恶从善"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。他放弃了阿修罗的暴行，转修正法。这份转变让敌人迟疑。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "医者之手",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "医者之手"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他通晓阿修罗秘传的医术。能治重伤。治疗。"
+  },
+  {
+    "name": "正法之归",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "正法之归"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。他在战后归依正法。归依者受到庇护。净化+回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

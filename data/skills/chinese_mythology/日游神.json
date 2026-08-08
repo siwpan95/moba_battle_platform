@@ -1,0 +1,119 @@
+[
+  {
+    "name": "昼巡之神",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "昼巡之职"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 光耀伤害。他白日巡行人间，记录善恶，归于天曹。增益2回合。"
+  },
+  {
+    "name": "持簿录过",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "簿上留名"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 光耀伤害。他簿上记人罪过，毫厘不差，秋毫无隐。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "日光所及",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "日光炽目"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 光耀伤害。他过处日光为之一炽，阴暗无所藏。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "奏闻天曹",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "天曹之罚"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。他将簿册呈报天曹，恶人立受天谴。穿透+重创2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

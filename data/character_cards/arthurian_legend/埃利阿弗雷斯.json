@@ -1,0 +1,233 @@
+{
+  "card_id": "arthurian_legend:埃利阿弗雷斯",
+  "legacy_card_id": "ART-1150",
+  "hero": {
+    "name": "埃利阿弗雷斯",
+    "name_en": "Eliavres",
+    "alias": "马克之巫",
+    "title": "马克之巫"
+  },
+  "game": {
+    "name": "Arthurian Legend",
+    "name_cn": "亚瑟王传说",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "亚瑟王传说",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "马克之巫",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "宫廷之巫"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 黯蚀伤害。他是马克王宫廷里的在册巫师。宫廷里的人都怕他三分。增益2回合。"
+    },
+    {
+      "name": "换妻之术",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "混乱",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "换形之术"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 黯蚀伤害。他用幻术让马克王的王后看上去像一只牝鹿。王后因此跑了。混乱1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "生异之子",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "异子之兆"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 黯蚀伤害。他用法术让一位骑士的妻子生下一头怪。这件事他从不解释。恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "被缚之终",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "自缚之亡"
+        },
+        {
+          "type": "禁锢",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被困于原地"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 黯蚀伤害。他最后被人用法术缚在了一棵树上。咒是他自己教的那个。处决+禁锢1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

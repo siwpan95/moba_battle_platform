@@ -1,0 +1,227 @@
+{
+  "card_id": "slavic_mythology:伊兹亚斯拉夫",
+  "legacy_card_id": "SLA-1131",
+  "hero": {
+    "name": "伊兹亚斯拉夫",
+    "name_en": "Izyaslav",
+    "alias": "争位的兄长",
+    "title": "争位的兄长"
+  },
+  "game": {
+    "name": "Slavic Mythology",
+    "name_cn": "斯拉夫神话",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "斯拉夫神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "持续输出",
+    "核心",
+    "远程",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "三兄分土",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "得基辅一份"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+DEX 穿刺伤害。雅罗斯拉夫死后三子分土。他分到的是基辅这一份。增益2回合。"
+    },
+    {
+      "name": "夜遁出城",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "夜遁翻墙"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+DEX 穿刺伤害。他被弟弟赶出基辅时是夜里走的。城门没开，他翻的墙。加速1回合。"
+    },
+    {
+      "name": "求波兰之兵",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "借兵复城"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+DEX 穿刺伤害。他向波兰借兵。借来的兵不归他管，但先替他打。增援2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "箭中旗手",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "desc": "箭断旗杆"
+        },
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "对残血目标造成额外伤害"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 穿刺伤害。他回基辅那仗，第一箭射中的是弟弟的旗手。旗倒了，城就破了。穿透+处决。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "name": "五首环守",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "五首环守"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 黯蚀伤害。穆罗有五个头，分别看守五个方向。背后也有人盯着。护盾2回合。"
+  },
+  {
+    "name": "那罗陀之敌",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "城守之固"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 黯蚀伤害。他与黑天在普拉吉城决战。守城守了七天。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "五口同咒",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "五口同咒"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 黯蚀伤害。五个头同时念咒。咒效力是普通五倍。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "断首不死",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "断首不死"
+      },
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被强行压制"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 黯蚀伤害。黑天一刀斩了他。头还在念咒。回复+压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

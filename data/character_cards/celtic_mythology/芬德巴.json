@@ -1,0 +1,234 @@
+{
+  "card_id": "celtic_mythology:芬德巴",
+  "legacy_card_id": "CEL-1097",
+  "hero": {
+    "name": "芬德巴",
+    "name_en": "Findabair",
+    "alias": "梅芙之女",
+    "title": "梅芙之女"
+  },
+  "game": {
+    "name": "Celtic Mythology",
+    "name_cn": "凯尔特神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "凯尔特神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "锦标之诺",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "锦标之诺"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 光耀伤害。梅芙许诺：谁能在浅滩击败库丘林，就把她嫁谁。她对此一言不发。标记2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "百人之死",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "百人为她而死"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 光耀伤害。为了争她，康诺特百名武士死在浅滩。她一个不认。恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "拒父之言",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "净化",
+          "target": "自身",
+          "desc": "拒父之言"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 光耀伤害。她当众拒绝父亲阿伊利尔的安排：我不嫁任何死在浅滩的人。净化。"
+    },
+    {
+      "name": "心碎之陨",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "倒地",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "心碎之陨"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 光耀伤害。她听说情郎弗拉赫战死，当场气绝。胸口无伤，是碎的。倒地1回合+重创2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

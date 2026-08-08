@@ -1,0 +1,121 @@
+[
+  {
+    "name": "夜行疾步",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "夜行疾步"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。天一黑它便从坟堆里钻出来，脚步比马还快。加速1回合。"
+  },
+  {
+    "name": "厚皮如甲",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "厚皮如甲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。它的皮又厚又糙，砍上去像砍在老树皮上。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "利爪裂甲",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "利爪裂甲"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。它一爪子下去，连人带甲撕成两半。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "妖魔之噬",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "妖魔之噬"
+      },
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤势持续恶化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。它最爱啃活人的骨头，嘎嘣脆响彻夜空。压制1回合+重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

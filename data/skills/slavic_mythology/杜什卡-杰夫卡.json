@@ -1,0 +1,120 @@
+[
+  {
+    "name": "无魂之形",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "无魂之躯"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 黯蚀伤害。她是被夺走魂的少女。魂没了，形还在。形替她活。免疫1回合。"
+  },
+  {
+    "name": "寻魂之路",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "寻魂疾行"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 黯蚀伤害。她满世界找自己的魂。魂在一个她不能去的地方。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "问三巫",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "三巫之指"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 黯蚀伤害。她问过三个巫。三个巫都摇头，但指了同一个方向。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "魂归形灭",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "魂归形灭"
+      },
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "重返战场"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 黯蚀伤害。她找回魂的那一刻，形就灭了。这是契约，没法改。处决+复活。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

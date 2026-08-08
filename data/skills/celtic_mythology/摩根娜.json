@@ -1,0 +1,121 @@
+[
+  {
+    "name": "海中之镜",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "水镜映死"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 冰冷伤害。她在水面下照镜，看见的人三天内必死。镜面从不映她自己。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "盐潮之守",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "盐潮之守"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 冰冷伤害。她让海水漫过城墙。漫过之后，城里就只剩她和鱼了。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "九姊妹之岛",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "九姊之岛"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 冰冷伤害。她和八个姐妹守一座岛。来人能上去，没有一个能下来。护盾2回合。"
+  },
+  {
+    "name": "溺舟之术",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "溺舟之翻"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 冰冷伤害。她用一根头发缠住船舵。船转一圈就翻，她只动了一根发。倒地1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

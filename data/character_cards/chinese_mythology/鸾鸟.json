@@ -1,0 +1,227 @@
+{
+  "card_id": "chinese_mythology:鸾鸟",
+  "legacy_card_id": "CHI-1087",
+  "hero": {
+    "name": "鸾鸟",
+    "name_en": "Luanniao",
+    "alias": "见则安宁",
+    "title": "见则安宁"
+  },
+  "game": {
+    "name": "Chinese Mythology",
+    "name_cn": "中国神话",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "中国神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "持续输出",
+    "核心",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "状如翟鸟",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "五采文羽"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+DEX 光耀伤害。《山海经》「有鸟焉，其状如翟而五采文，名曰鸾鸟」。增益2回合。"
+    },
+    {
+      "name": "鸣声如铃",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "暴击",
+          "target": "自身",
+          "duration": 2,
+          "desc": "清音贯耳"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+DEX 光耀伤害。它叫声如铜铃，清越入云，闻者心宁。暴击2回合。"
+    },
+    {
+      "name": "镜中鸾影",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "魅惑",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "鸾影悲鸣"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+DEX 光耀伤害。镜中见鸾则悲鸣，舞而后死，为人所珍。魅惑1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "青鸾传信",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "desc": "万里传音"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 光耀伤害。青鸾为西王母传信，飞越昆仑，一去万里。穿透+重创2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

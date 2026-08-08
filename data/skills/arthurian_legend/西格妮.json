@@ -1,0 +1,113 @@
+[
+  {
+    "name": "树下之哀",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "树下之哀"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。她第一次出场是抱着一具尸首坐在树下。那人是她的爱人。增益2回合。"
+  },
+  {
+    "name": "持杯之示",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "未问之示"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她拿圣杯给帕西瓦尔看了一次。她没说这是什么，他也忘了问。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "隐修之名",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "荒野隐修"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她后来在荒野里建了一座小屋，自封隐修女。她从不剃发。护盾2回合。"
+  },
+  {
+    "name": "同袍之葬",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "守坟之终"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。她最后替帕西瓦尔守过一次坟。守完以后她也跟着走了。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

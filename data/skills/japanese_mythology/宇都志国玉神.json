@@ -1,0 +1,108 @@
+[
+  {
+    "name": "大国之别",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "现世之灵"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 力场伤害。他是大国主神之异名，主管显世万物之灵。强化2回合。"
+  },
+  {
+    "name": "显世之灵",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "显世之立"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 力场伤害。「宇都志」意为现显，现世之灵由此立，万物有主。增益2回合。"
+  },
+  {
+    "name": "万物之代",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "万物之代"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 力场伤害。代代国津神从他这里承继现世之权。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "现世之定",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "现世之定"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。他定下现世秩序，使出云国得以让渡天津神。真实伤害。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "name": "愈合之光",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "晨光治愈"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 光耀伤害。他是治愈与幻象之神，和太阳升起前那一段天光有关。治疗。"
+  },
+  {
+    "name": "幻象之主",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "幻象入侵"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 光耀伤害。他能让人看见还没有发生的事。这是他的治疗方式，也是他的武器。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "第三夜时",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "夜时之主"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 光耀伤害。他是九位夜主里的第三位。那一段夜最深，也最需要被看见。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "水星之影",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "水星之判"
+      },
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "视野被夺"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 光耀伤害。他和水星有关。那颗星出现的时间很短，出现时意味着该做判断了。处决+致盲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

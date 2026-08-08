@@ -1,0 +1,102 @@
+[
+  {
+    "name": "长头之相",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "长头之福"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他头长身矮，象征长寿与福禄，南极星之化。增益2回合。"
+  },
+  {
+    "name": "鹿之伴",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "鹿伴之寿"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。他常伴一只鹿，鹿是长寿之兽，与他同行。回复。"
+  },
+  {
+    "name": "南极星之化",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "南极之寿"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他源自南极老人星，主寿，寿延三百年。复活。"
+  },
+  {
+    "name": "福禄三全",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "福禄三全"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。福、禄、寿三星合一即他，三全之相。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

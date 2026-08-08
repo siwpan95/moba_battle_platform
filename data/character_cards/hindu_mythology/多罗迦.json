@@ -1,0 +1,234 @@
+{
+  "card_id": "hindu_mythology:多罗迦",
+  "legacy_card_id": "HIN-1135",
+  "hero": {
+    "name": "多罗迦",
+    "name_en": "Taraka",
+    "alias": "老阿修罗王",
+    "title": "老阿修罗王"
+  },
+  "game": {
+    "name": "Hindu Mythology",
+    "name_cn": "印度神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "印度神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "护盾"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "母系之恩",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "母系之恩"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 黯蚀伤害。梵天赐他“只能被七日童子所杀”。他从此高枕无忧。减伤2回合。"
+    },
+    {
+      "name": "三城之主",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "三城之护"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 黯蚀伤害。他与其他阿修罗共建了三座飞天魔城。城在空中。护盾2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "摧山之击",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "击退",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "摧山之击"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 黯蚀伤害。他曾一击把一座山推平。力量属于顶级。击退1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "室建陀之矛",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "重伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "神矛之创"
+        },
+        {
+          "type": "真实伤害",
+          "target": "敌方",
+          "desc": "无视护甲与护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 黯蚀伤害。七日童子室建陀用法矛刺穿了他。恩赐因此被破。重伤2回合+真实伤害。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

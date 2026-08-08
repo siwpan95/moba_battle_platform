@@ -1,0 +1,122 @@
+[
+  {
+    "name": "阿拜多斯之咒",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "护符之壁"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 黯蚀伤害。捷尔在阿拜多斯的墓中出土了最早的护身符，护符化为咒术。护盾2回合。"
+  },
+  {
+    "name": "献祭之环",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "献祭之环"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 黯蚀伤害。他的墓周围有三百三十八个陪葬墓，陪葬者的怨气化为法阵。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "象牙之刻",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "象牙之刻"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 黯蚀伤害。他的象牙刻板上的符号是已知最早的法术文字。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "捷尔之裁",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "陪葬之压"
+      },
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤口持续流失生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 黯蚀伤害。《第一王朝年代记》：捷尔的法术使陪葬者的灵魂为他所用，被他的法阵罩住者无法逃脱。压制1回合+持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

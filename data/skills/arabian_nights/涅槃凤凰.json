@@ -1,0 +1,124 @@
+[
+  {
+    "name": "灰烬之雨",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "灰烬之雨"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 火焰伤害。它从天而降，洒下漫天的灰烬和火星。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "火尾长曳",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "火尾长曳"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 火焰伤害。它飞过之处，留下一道长长的火尾。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "远距凝视",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "远距凝视"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 火焰伤害。它的眼一瞪，远处的敌人衣裳便自燃起来。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "涅槃一噬",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "涅槃一噬"
+      },
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 火焰伤害。它自高处俯冲，一口吞掉敌人的头颅。处决+灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

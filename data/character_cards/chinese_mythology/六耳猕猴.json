@@ -1,0 +1,231 @@
+{
+  "card_id": "chinese_mythology:六耳猕猴",
+  "legacy_card_id": "CHI-1123",
+  "hero": {
+    "name": "六耳猕猴",
+    "name_en": "Liu'er",
+    "alias": "混世四猴",
+    "title": "混世四猴"
+  },
+  "game": {
+    "name": "Chinese Mythology",
+    "name_cn": "中国神话",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "中国神话",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "收割",
+    "潜行",
+    "爆发"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "假悟空",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "隐身",
+          "target": "自身",
+          "duration": 1,
+          "desc": "化作真身"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+DEX 钝击伤害。他化作孙悟空模样，连观音也难辨真伪。隐身1回合。"
+    },
+    {
+      "name": "随心铁杆",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "破甲",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "铁杆一击"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 钝击伤害。他也使一根随心铁杆兵，与金箍棒一般无二。破甲2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "知前后",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "混乱",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "知前后之乱"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+DEX 钝击伤害。他「善聆音，能察理，知前后」，万物皆明。混乱1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "真假难辨",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "灵山识破"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 钝击伤害。直到如来识破，方被打死，世间再无此猴。处决+重创2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "水弓之名",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "水弓之射"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 穿刺伤害。他是水神也是弓箭手。他的弓和奥帕奇特利的不同，是用于深水的。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "深水之护",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "深水之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 穿刺伤害。他站在深水里。深水挡住了大部分攻击。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "水鸟之伴",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "水鸟之佑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 穿刺伤害。他的信使是水鸟。水鸟飞过的地方水路就安全。增益2回合。"
+  },
+  {
+    "name": "收弓之判",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "收弓之判"
+      },
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤势持续恶化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。他最后收弓。收弓之前的那一箭是致命的。处决+重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

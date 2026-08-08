@@ -1,0 +1,218 @@
+{
+  "card_id": "slavic_mythology:德米特里·顿斯科伊",
+  "legacy_card_id": "SLA-1079",
+  "hero": {
+    "name": "德米特里·顿斯科伊",
+    "name_en": "Dmitry Donskoy",
+    "alias": "顿河之王",
+    "title": "顿河之王"
+  },
+  "game": {
+    "name": "Slavic Mythology",
+    "name_cn": "斯拉夫神话",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "斯拉夫神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "护盾",
+    "持续输出",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "顿河誓师",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "狂暴",
+          "target": "自身",
+          "duration": 2,
+          "desc": "破釜顿河"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。他在顿河边誓师。过河的桥拆了，意思是只能赢不能退。狂暴2回合。"
+    },
+    {
+      "name": "库利科沃",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "原野会战"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。他在库利科沃原野打了整整一天。天黑时鞑靼人先跑了。增援2回合。"
+    },
+    {
+      "name": "换甲上阵",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "换甲替死"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。他和部下换了甲胄。部下穿着他的甲中了致命一击，他活了下来。护盾2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "莫斯科白石",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "防御",
+          "target": "自身",
+          "duration": 2,
+          "desc": "白石之城"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。他用白石头重修了莫斯科的城墙。鞑靼人再来就没打进过。防御2回合。"
+    }
+  ]
+}

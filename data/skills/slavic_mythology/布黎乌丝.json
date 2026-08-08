@@ -1,0 +1,106 @@
+[
+  {
+    "name": "药草之识",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "药草之识"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。她认识所有药草。她走过的草地，草都变得更苦一点。治疗。"
+  },
+  {
+    "name": "冷泉之引",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "冷泉洗伤"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她把冷泉引到病床边。冷泉的水洗伤口，伤口就收。回复。"
+  },
+  {
+    "name": "退热之手",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "退热之手"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她把手放在发烧的人额头上。一夜过去，热就退了。净化。"
+  },
+  {
+    "name": "复生之水",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "复生之水"
+      },
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得吸收伤害的护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。她瓶里的水能救刚死的人。但瓶子一年只满一次。复活+护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

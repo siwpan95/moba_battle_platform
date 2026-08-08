@@ -1,0 +1,126 @@
+[
+  {
+    "name": "幻城迷踪",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "幻城迷踪"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 黯蚀伤害。商波罗有九十九座幻城。每座城里都有一个“他”。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "盗妻之术",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "盗妻之术"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 黯蚀伤害。他从黑天手里抢走了妙贤。用的就是幻术。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "黑魔法之箭",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "魂蚀之箭"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 黯蚀伤害。他的箭不带物理伤害，直接侵蚀中箭者的魂。痛苦2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "九十九幻灭",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "幻灭之震"
+      },
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "陷入恐慌"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 黯蚀伤害。九十九座幻城同时崩塌。崩塌的冲击波是真的。真实伤害+恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

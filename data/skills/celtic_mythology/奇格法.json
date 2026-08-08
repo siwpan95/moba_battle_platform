@@ -1,0 +1,114 @@
+[
+  {
+    "name": "荒原之守",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "荒原之守"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 光耀伤害。土地被咒成荒原时，她是少数没慌的人。她对玛纳威丹说：我们能过。护盾2回合。"
+  },
+  {
+    "name": "三业之伴",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三业之伴"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 光耀伤害。丈夫普德里和玛纳威丹做马鞍、做盾、做鞋，她管账、管料、管饭。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "鼠王之夜",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "劝慎之言"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 光耀伤害。玛纳威丹要吊死鼠王时，她劝他别轻易动手——这鼠不一般。净化。"
+  },
+  {
+    "name": "归土之诺",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "归土之安"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 光耀伤害。咒解之后她和普德里重整戴伏德。她说：这片地认得我们，我们也认得它。回复+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

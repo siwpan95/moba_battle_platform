@@ -1,0 +1,114 @@
+[
+  {
+    "name": "天鹅之舟",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "天鹅引舟"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。他被一只天鹅拖着的小舟送到布拉班特，连桨都没有。加速1回合。"
+  },
+  {
+    "name": "替婚出战",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "以战成婚"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。他替一个从未谋面的公主要了仗，赢了以后娶了她。增益2回合。"
+  },
+  {
+    "name": "不许问名",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "禁问之名"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。他只立一条规矩：永远不许问我是谁。她偏偏问了。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "失约而去",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "失约归去"
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。她问出口那天，他抱起两个孩子，回到天鹅拖着的舟上，再没回来。穿透+隐身1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

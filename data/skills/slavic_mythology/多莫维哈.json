@@ -1,0 +1,120 @@
+[
+  {
+    "name": "灶后之位",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "灶后之位"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 火焰伤害。她住灶后，和多莫沃伊并排。她管的是纺纱那块。增益2回合。"
+  },
+  {
+    "name": "纺线之乱",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "纺线自结"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 火焰伤害。她不高兴时，纺出来的线会自己打结。解一晚上都解不开。干扰1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "护产之婆",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "灶边接生"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 火焰伤害。从前的女人在灶边生孩子。这时候她比多莫沃伊还尽责。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "熄灶之罚",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "熄灶之罚"
+      },
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤势持续恶化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 火焰伤害。得罪她的家，灶火自己熄。熄了就点不着，得她点头才行。处决+重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

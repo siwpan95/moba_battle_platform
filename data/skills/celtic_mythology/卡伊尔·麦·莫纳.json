@@ -1,0 +1,114 @@
+[
+  {
+    "name": "肩上之鹿",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "追鹿之疾"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。他追一头鹿追遍全爱尔兰，回来时鹿扛在肩上，长矛还夹在腋下。加速1回合。"
+  },
+  {
+    "name": "断河之跃",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "断河一跃"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。他一跃能跨过涨水的河。雨季的敌阵在他眼里和一条河没两样。冲锋1回合。"
+  },
+  {
+    "name": "独眼之准",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "独眼定射"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。他只有一只眼，但那只眼比别人的两只加起来还准。暴击2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "加布拉之亡",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "并肩之死"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。加布拉一役他和奥斯卡并肩死战，两人都没退。最后都站着倒下。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

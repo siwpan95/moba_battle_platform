@@ -1,0 +1,119 @@
+[
+  {
+    "name": "银色之矢",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "银矢穿心"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 光耀伤害。他的箭是银的。被射中的人不会死，只是心会乱。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "春歌伴唱",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "春歌和声"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 光耀伤害。拉达唱歌时他在旁边应和。他的声音是和声，但缺了就不行。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "花冠之约",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "花冠为约"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 光耀伤害。姑娘把花冠戴在少年头上，这约就算他见证的。护盾2回合。"
+  },
+  {
+    "name": "化白桦",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "化桦而立"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "恢复生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 光耀伤害。他最后化成一棵白桦。白桦树下初恋的人最多。处决+治疗。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

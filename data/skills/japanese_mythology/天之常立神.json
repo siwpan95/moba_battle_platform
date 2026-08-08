@@ -1,0 +1,110 @@
+[
+  {
+    "name": "永立不坐",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "永立不倒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 力场伤害。「常立」即永立不坐。他自坐下之日起便不再被击倒。减伤2回合。"
+  },
+  {
+    "name": "五柱独神",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "独神之列"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 力场伤害。与造化三神、宇摩志阿斯诃备比古迟神同列，是别天津神第五位。防御2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "天柱之镇",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "天柱之镇"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 力场伤害。天地之间以天柱为枢，他镇守天柱一端，无人能撼。护盾2回合。"
+  },
+  {
+    "name": "不可动摇",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "撼之反伤"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。「常立」之名即「不可动摇」。撼动他的尝试都反伤其身。重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

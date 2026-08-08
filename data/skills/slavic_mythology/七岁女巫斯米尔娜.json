@@ -1,0 +1,126 @@
+[
+  {
+    "name": "七岁开眼",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "开眼所见"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 法术伤害。她七岁那年突然能看见别人看不见的东西。她没学过，自己就会。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "镜中之占",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "镜中问答"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 法术伤害。她对着镜子看，镜里的人不是她。镜里的人会回答问题。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "不睡之童",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "不眠之守"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 法术伤害。她七岁之后就没睡过觉。夜里她替村里人守梦。免疫1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "一句话咒",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一言之咒"
+      },
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法移动"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 法术伤害。她念的咒只有一句话。一句话说完，被念的人就动不了。处决+束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

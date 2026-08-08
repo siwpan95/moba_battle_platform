@@ -1,0 +1,108 @@
+[
+  {
+    "name": "母怀之安",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "母怀之安"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。她把受伤的人揽在怀里，伤口的血便止住了。治疗。"
+  },
+  {
+    "name": "沙暴蔽目",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "沙暴蔽目"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她一挥手，沙暴便遮住了追兵的视线。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "慈言慰军",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "慈言慰军"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她一句温言，让溃退的士兵重新站直了腰。增益2回合。"
+  },
+  {
+    "name": "沙母之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "沙母之护"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。她张开双臂，身后的旅人便不再畏惧风沙。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

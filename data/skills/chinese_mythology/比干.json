@@ -1,0 +1,114 @@
+[
+  {
+    "name": "王叔之尊",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "少师之尊"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他是纣王叔父，殷商少师，忠直敢谏。增益2回合。"
+  },
+  {
+    "name": "七窍之心",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "七窍之明"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。传说他心有七窍，聪慧过人，故妲己称圣人有七窍之心。净化。"
+  },
+  {
+    "name": "强谏纣王",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "直言谏君"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他冒死强谏，面折廷争，不畏权佞。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "文财神",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "财神之庇"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "属性获得提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。他被剖心而死，后世尊为文财神，民间奉为司财之神。护盾2回合+增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

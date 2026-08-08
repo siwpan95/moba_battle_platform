@@ -1,0 +1,107 @@
+[
+  {
+    "name": "好运之姊",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "好运之助"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。她是涅多利亚的姐妹。区别在于她干活，而且干得多。增益2回合。"
+  },
+  {
+    "name": "肩上之坐",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "肩上之佑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她坐在人肩上。被坐的人做什么都顺一点。强化2回合。"
+  },
+  {
+    "name": "赠一勺",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "一勺之赠"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她给穷到底的人留一勺。一勺不多，但够活到明天。回复。"
+  },
+  {
+    "name": "转角之遇",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "转角之遇"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "恢复生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。她让转角遇到的人刚好是帮得上忙的那个。她只转这一次。净化+治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

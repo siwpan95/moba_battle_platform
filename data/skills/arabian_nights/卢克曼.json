@@ -1,0 +1,107 @@
+[
+  {
+    "name": "寓言启智",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "寓言启智"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。他用蚂蚁和杜鹃的寓言，让骄傲的国王低下了头。净化。"
+  },
+  {
+    "name": "草药辨毒",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "草药辨毒"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。他能从一千种草药里挑出那一味解药。治疗。"
+  },
+  {
+    "name": "预言之语",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "预言之语"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。他一句话便点破了敌人的诡计。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "智圣之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "智圣之护"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。他用一句古老的祝词，护住了全军的性命。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

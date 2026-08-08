@@ -1,0 +1,107 @@
+[
+  {
+    "name": "无尽之怀",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "无限之怀"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。阿底提之名意为“无拘”。她的怀抱容得下所有孩子。护盾2回合。"
+  },
+  {
+    "name": "八子之生",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "八子之力"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她生了八个阿底提耶，其中第七个被她遗弃后又收回。增援2回合。"
+  },
+  {
+    "name": "解脱之索",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "解脱之索"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她不束缚人，她解束缚。被她碰到的枷锁自动脱落。净化。"
+  },
+  {
+    "name": "母神回护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "母神回护"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。被她护着的人不会真正死去——母亲不允许。复活+回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

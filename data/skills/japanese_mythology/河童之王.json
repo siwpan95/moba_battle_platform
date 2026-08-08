@@ -1,0 +1,115 @@
+[
+  {
+    "name": "河童之长",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "河童之长"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 力场伤害。他是河童之王，统领一河河童，号令一方。增援2回合。"
+  },
+  {
+    "name": "巨型水碟",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "巨型水碟"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 力场伤害。他头顶水碟如盆，力气数倍于常河童。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "拉人入水",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "拉人入水"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 力场伤害。他专拉马匹入水，连马都拉不动他，何况是人。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "一河之主",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "一河之主"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。他立一河之主，所辖水族皆听号令，逆者沉底。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

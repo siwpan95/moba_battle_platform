@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:艾哈迈德",
-  "legacy_card_id": "ONE-16421",
+  "card_id": "Arabian_Nights:艾哈迈德",
+  "legacy_card_id": "ARA-1012",
   "hero": {
     "name": "艾哈迈德",
     "name_en": "Ahmad",
@@ -8,8 +8,8 @@
     "title": "Ahmad"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "射手",
     "universal_role": "marksman",
     "role_name": "射手",
@@ -20,9 +20,8 @@
   "playstyle_tags": [
     "持续输出",
     "核心",
-    "远程",
-    "钩子",
-    "高机动"
+    "硬控制",
+    "远程"
   ],
   "attributes": {
     "STR": {

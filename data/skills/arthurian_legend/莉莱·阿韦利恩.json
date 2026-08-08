@@ -1,0 +1,121 @@
+[
+  {
+    "name": "阿韦利恩之女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "秘术之传"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 法术伤害。她来自阿韦利恩。她的法术从不教外人。增益2回合。"
+  },
+  {
+    "name": "铜环之制",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "铜环之秘"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 法术伤害。她有一枚铜环，戴上能听懂鸟语。她从不告诉别人听到了什么。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "湖位之补",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "补湖之位"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 法术伤害。湖中女士死了一位以后，是她补上的。她做了七年。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "让位之隐",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "让位之终"
+      },
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 法术伤害。她做到一半把位子让给了别人。理由她只对一个湖中女士说过。处决+隐身1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

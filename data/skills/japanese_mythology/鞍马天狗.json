@@ -1,0 +1,107 @@
+[
+  {
+    "name": "鞍马山之修",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 挥砍伤害。他居于鞍马山，是僧人修行的对手，亦师亦敌。隐身1回合。"
+  },
+  {
+    "name": "天狗剑之传",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "天狗剑法"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 挥砍伤害。他教源义经剑术七年，授天狗剑法，义经一夜尽学。强化2回合。"
+  },
+  {
+    "name": "高鼻赤面",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "高鼻赤面"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 挥砍伤害。他鼻高脸赤，形貌可怖，见者失魂。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "一击之授",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "天狗一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 挥砍伤害。他称义经为天生奇才，授以一击必杀之术。处决。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

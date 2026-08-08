@@ -1,0 +1,241 @@
+{
+  "card_id": "egyptian_mythology:伊阿",
+  "legacy_card_id": "EGY-1139",
+  "hero": {
+    "name": "伊阿",
+    "name_en": "Iah",
+    "alias": "月之密语",
+    "title": "月之密语"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "埃及神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "潜行",
+    "硬控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "月华之寒",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "月华之寒"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 冰冷伤害。伊阿是月神之一，他的月华比日光更冷。减速2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "月相变换",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "隐身",
+          "target": "自身",
+          "duration": 1,
+          "desc": "朔月隐没"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 冰冷伤害。他随月相变换力量，朔时隐、望时显。隐身1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "银光之咒",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "混乱",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "银光之咒"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 冰冷伤害。他以银光为咒，被照到的人言语变得含糊。混乱1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "望月之裁",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "望月之裁"
+        },
+        {
+          "type": "冻结",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被冰封"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 冰冷伤害。《棺文》第 682 节：伊阿在望月之夜力量最强，他此时裁决的咒语无法被解除。沉默1回合+冻结1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

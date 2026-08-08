@@ -1,0 +1,126 @@
+[
+  {
+    "name": "盲王之力",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "盲王之击"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他天生目盲，但臂力过人。铁杖一挥能碎车。倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "百子之父",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "百子之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他有一百个儿子。他把每一份父爱都换成了护盾。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "偏听之患",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "偏听之患"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他看不见，只听沙恭尼的话。被听信的人能操纵他。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "掷杖碎车",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "掷杖碎车"
+      },
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被强行压制"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。般度五子来访时，他一怒之下把铁杖掷向“声音”来源。碎了辆车。击退1回合+压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "三兄之妹",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "望风之妹"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。基伊、谢克、霍里夫的妹妹。建城时她在最高处望风。增益2回合。"
+  },
+  {
+    "name": "河上之箭",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "箭落定界"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。她在第聂伯河上射一箭定界。箭落的地方就是城的南界。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "捷足之女",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "捷足传令"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 穿刺伤害。她跑得比三个哥哥都快。传令的事一直是她的。加速1回合。"
+  },
+  {
+    "name": "护兄之矢",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "城头三矢"
+      },
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "暴击率提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。敌军逼近时她从城头射下三箭。三箭中三个旗手。处决+暴击2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

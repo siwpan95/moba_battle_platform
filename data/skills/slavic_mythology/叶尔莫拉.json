@@ -1,0 +1,107 @@
+[
+  {
+    "name": "七月之牧",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "七月之牧"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他管七月的牧场。七月草最盛，牲口最壮。增益2回合。"
+  },
+  {
+    "name": "收雷之刃",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "雷地之药"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。雷劈下来的那块地他收走。地不能再种，但能当药田。净化。"
+  },
+  {
+    "name": "护犊之手",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "护犊之手"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。母牛难产时他在旁边。他在的牛犊都活。治疗。"
+  },
+  {
+    "name": "秋分之馈",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "秋分之馈"
+      },
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得吸收伤害的护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。秋分那天他把草场收回去。收的方式是下一场霜。回复+护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

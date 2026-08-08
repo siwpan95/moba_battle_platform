@@ -1,0 +1,106 @@
+[
+  {
+    "name": "双真理之护",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双真理之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。玛阿提以“双真理”之名筑起护身法阵，法阵之内谎言无所遁形。护盾2回合。"
+  },
+  {
+    "name": "真理之秤",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "真理之秤"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。她以玛阿特之羽秤量队友的伤，轻者得愈。治疗。"
+  },
+  {
+    "name": "谎言之驱",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "驱散",
+        "target": "自身",
+        "desc": "谎言之驱"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她驱散一切虚妄，敌人的伪装被揭穿。驱散。"
+  },
+  {
+    "name": "双真理之裁",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "双真理之净"
+      },
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "重返战场"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。《亡灵书》第 125 章：玛阿提守在双真理厅，被她认可者得获新生。净化+复活。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

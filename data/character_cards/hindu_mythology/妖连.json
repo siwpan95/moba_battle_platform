@@ -1,0 +1,227 @@
+{
+  "card_id": "hindu_mythology:妖连",
+  "legacy_card_id": "HIN-1104",
+  "hero": {
+    "name": "妖连",
+    "name_en": "Jarasandha",
+    "alias": "双身魔王",
+    "title": "双身魔王"
+  },
+  "game": {
+    "name": "Hindu Mythology",
+    "name_cn": "印度神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "印度神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "双身拼合",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "回复",
+          "target": "自身",
+          "desc": "双身愈合"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+STR 钝击伤害。他出生时是两半，被女妖拼合而成。因此得名“妖连”。回复。"
+    },
+    {
+      "name": "摩揭陀王",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "王威之压"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+STR 钝击伤害。他统治摩揭陀国，囚禁过上百个国王准备献祭。压制1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "不朽之恩",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "不朽之恩"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+STR 钝击伤害。他被赐过“只能由内而外拆开”的不死。砍他没用。减伤2回合。"
+    },
+    {
+      "name": "怖军之拆",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "钝击"
+      },
+      "effects": [
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "怖军之拆"
+        },
+        {
+          "type": "真实伤害",
+          "target": "敌方",
+          "desc": "无视护甲与护盾"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 钝击伤害。怖军把他从脚到头撕成两半，往相反方向扔。这是唯一的杀法。重创2回合+真实伤害。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

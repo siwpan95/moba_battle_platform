@@ -1,0 +1,239 @@
+{
+  "card_id": "hindu_mythology:众友仙人",
+  "legacy_card_id": "HIN-1067",
+  "hero": {
+    "name": "众友仙人",
+    "name_en": "Vishvamitra",
+    "alias": "刹帝利转仙",
+    "title": "刹帝利转仙"
+  },
+  "game": {
+    "name": "Hindu Mythology",
+    "name_cn": "印度神话",
+    "native_role": "法师",
+    "universal_role": "mage",
+    "role_name": "法师",
+    "role_dnd_class": "法师"
+  },
+  "source": "印度神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "AOE",
+    "控制",
+    "远程"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "INT"
+  ],
+  "hit_die": 6,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 70,
+    "hp_dnd_raw": 7,
+    "ac": 11,
+    "physical_atk": 31,
+    "magic_power": 47,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 4,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 920,
+    "hp_dnd_raw": 92,
+    "ac": 11,
+    "physical_atk": 43,
+    "magic_power": 55,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 9,
+      "WIS": 8,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 50,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "王剑弃地",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "INT",
+        "type": "电击"
+      },
+      "effects": [
+        {
+          "type": "破甲",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "王剑之弃"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+INT 电击伤害。他本是国王，见到极裕的如意牛后弃剑入山，从此改修仙道。破甲2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "三界震动",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "电击"
+      },
+      "effects": [
+        {
+          "type": "震慑",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "三界震动"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+INT 电击伤害。他苦修到梵天不得不承认为仙人时，三界同时震了一下。震慑1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "造神之怒",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "电击"
+      },
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "造神之怒"
+        }
+      ],
+      "cooldown": 2,
+      "description": "2d6+INT 电击伤害。他曾一怒造出另一群天神对抗因陀罗。那些神至今还跟着他。增援2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "优湿罗造桥",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 4,
+        "dice_size": 6,
+        "bonus_attr": "INT",
+        "type": "电击"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "被河水截路"
+        },
+        {
+          "type": "干扰",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "行动被打断"
+        }
+      ],
+      "cooldown": 4,
+      "description": "4d6+INT 电击伤害。他把一整条河流引到般度五子的营前，只为洗一洗脚。减速2回合+干扰1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+INT",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

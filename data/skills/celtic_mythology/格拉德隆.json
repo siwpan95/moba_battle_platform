@@ -1,0 +1,120 @@
+[
+  {
+    "name": "海墙之王",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "海墙之堤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 冰冷伤害。他建的伊斯城低于海面，靠一道堤坝和一把钥匙。钥匙只许他拿。护盾2回合。"
+  },
+  {
+    "name": "莫瓦尔赫之骑",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "海马之驰"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 冰冷伤害。他的马莫瓦尔赫能在海面奔驰。海浪在马蹄下像石头。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "钥匙之失",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "钥匙失窃"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 冰冷伤害。女儿达胡特偷了钥匙开闸。海水灌进来的瞬间，他才发现钥匙不在腰上。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "圣吉诺莱之救",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "弃女逃生"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 冰冷伤害。吉诺莱修士把他从洪水中拽上马背。他活了，女儿没活——这是他余生最常提的一夜。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

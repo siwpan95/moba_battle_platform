@@ -1,0 +1,108 @@
+[
+  {
+    "name": "双圣同骑",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双圣之佑"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他们俩共骑一匹马。马在他们手里从不失蹄。增益2回合。"
+  },
+  {
+    "name": "马医之手",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "马医之手"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。马病了找他们。他们在马额上画一个十字，马就好了。治疗。"
+  },
+  {
+    "name": "群马之引",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "群马随圣"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他们吹口哨，方圆的马都会跟着走。增援2回合。"
+  },
+  {
+    "name": "护骑士之坠",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "坠马之托"
+      },
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得吸收伤害的护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。骑士坠马时他们托一下。托住的人摔不死。复活+护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

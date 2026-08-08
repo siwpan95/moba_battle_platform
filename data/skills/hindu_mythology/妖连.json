@@ -1,0 +1,114 @@
+[
+  {
+    "name": "双身拼合",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "双身愈合"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他出生时是两半，被女妖拼合而成。因此得名“妖连”。回复。"
+  },
+  {
+    "name": "摩揭陀王",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "王威之压"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他统治摩揭陀国，囚禁过上百个国王准备献祭。压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "不朽之恩",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "不朽之恩"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他被赐过“只能由内而外拆开”的不死。砍他没用。减伤2回合。"
+  },
+  {
+    "name": "怖军之拆",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "怖军之拆"
+      },
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "无视护甲与护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。怖军把他从脚到头撕成两半，往相反方向扔。这是唯一的杀法。重创2回合+真实伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

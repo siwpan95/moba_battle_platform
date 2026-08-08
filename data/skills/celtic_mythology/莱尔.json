@@ -1,0 +1,121 @@
+[
+  {
+    "name": "四子之形",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "天鹅之哀"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 冰冷伤害。后妻把他的四个孩子变成天鹅。他听见天鹅叫就出门，但叫的不是孩子了。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "父之承托",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "海面为桥"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 冰冷伤害。他能托起整片海面，让军队从上面走过。海浪在他面前等于平地。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "千年之约",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "千年之躯"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 冰冷伤害。孩子要化九百年天鹅。他活到最后一天，亲眼看见他们恢复人形——然后老死。减伤2回合。"
+  },
+  {
+    "name": "风暴之父",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "风暴掀翻"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 冰冷伤害。他一动怒，西海就翻。翻完之后他仍坐在原位，像什么都没发生过。倒地1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

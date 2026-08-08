@@ -1,0 +1,121 @@
+[
+  {
+    "name": "大雷之顶",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "头顶大雷"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 电击伤害。伊邪那美头顶大雷，最致命的一击从天而降。眩晕1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "火雷之胸",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "火雷灼胸"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 电击伤害。胸前火雷，焚烧一切近身之物，触之即燃。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "黑雷之隐",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "黑雷侵蚀"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 电击伤害。阴部黑雷，藏在最不可见之处，蚀人血脉。中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "鸣雷齐发",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "八雷齐鸣"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 电击伤害。八雷齐鸣，黄泉之声震慑活人，闻者失魂。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

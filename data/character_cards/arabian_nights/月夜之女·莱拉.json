@@ -1,0 +1,221 @@
+{
+  "card_id": "Arabian_Nights:月夜之女·莱拉",
+  "legacy_card_id": "ARA-1185",
+  "hero": {
+    "name": "月夜之女·莱拉",
+    "name_en": "Layla of the Moonlit Night",
+    "alias": "月夜之女",
+    "title": "月夜之女"
+  },
+  "game": {
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "一千零一夜",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "护盾",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "月华之愈",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "治疗",
+          "target": "自身",
+          "desc": "月华之愈"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 冰冷伤害。她借月光洒在友军身上，伤口便合上了。治疗。"
+    },
+    {
+      "name": "月晕致盲",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "致盲",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "月晕致盲"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 冰冷伤害。她一抬手，月晕让敌人眼前一花。致盲2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "夜风之抚",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "回复",
+          "target": "自身",
+          "desc": "夜风之抚"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+WIS 冰冷伤害。她呼出一口夜风，友军的疲惫便消了。回复。"
+    },
+    {
+      "name": "月华之护",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "冰冷"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "月华之护"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d6+WIS 冰冷伤害。她在友军周身裹上一层月光，挡住夜袭。护盾2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

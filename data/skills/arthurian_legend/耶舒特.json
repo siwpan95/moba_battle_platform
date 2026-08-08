@@ -1,0 +1,117 @@
+[
+  {
+    "name": "被夺之女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被夺之辱"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。帕西瓦尔第一次出门就闯进她的帐篷，夺走了她的胸针和戒指。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "无端受谴",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无端受谴"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她的丈夫以为是她自愿，从此不许她带任何饰物。她默默受着。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "复得之诺",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "复得之诺"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。帕西瓦尔后来回来，亲手把胸针和戒指还给她。她什么也没说。治疗。"
+  },
+  {
+    "name": "归家之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "归家之终"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。她和丈夫最后和好。她从此再没戴过那枚胸针，把它收进了箱底。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

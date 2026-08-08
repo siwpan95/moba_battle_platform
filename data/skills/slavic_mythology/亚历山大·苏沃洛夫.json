@@ -1,0 +1,109 @@
+[
+  {
+    "name": "科学即胜",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "科学之胜"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 钝击伤害。他写了一本《制胜的科学》。核心一句话：打不赢就别打。增益2回合。"
+  },
+  {
+    "name": "急行军",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "急行百里"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 钝击伤害。他的兵一天走百里。到的时候敌人还在睡。加速1回合。"
+  },
+  {
+    "name": "翻阿尔卑斯",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "翻山之军"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 钝击伤害。他带兵翻过阿尔卑斯山。翻过去的人比留下的人多。增援2回合。"
+  },
+  {
+    "name": "未败之名",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "未败之终"
+      },
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "能力被强化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 钝击伤害。他打了一辈子仗没输过。最后一场他没打——他病了。处决+强化2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

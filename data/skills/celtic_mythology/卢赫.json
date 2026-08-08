@@ -1,0 +1,110 @@
+[
+  {
+    "name": "木具之速",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "木盾之速"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 钝击伤害。他做一面盾只用三斧。盾做完就能上战场。护盾2回合。"
+  },
+  {
+    "name": "三匠之木",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三匠之木"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 钝击伤害。戈布纽打铁、克雷德内铸铜、他做木。三人合制一柄枪，只用一炷香。增益2回合。"
+  },
+  {
+    "name": "车轴之固",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "车轴之固"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 钝击伤害。他做的车轴断不了。轴断了车就散——所以他从不让轴断。强化2回合。"
+  },
+  {
+    "name": "木人傀儡",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "木兵之列"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 钝击伤害。他能用木刻出士兵。木兵不会说话，但能挡一阵——挡完就成柴。增援2回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

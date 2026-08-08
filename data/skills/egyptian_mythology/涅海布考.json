@@ -1,0 +1,124 @@
+[
+  {
+    "name": "蛇噬卡",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "蛇毒噬卡"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 毒素伤害。原初蛇神咬住死者的卡，把生命之力连同肢体一并吞下。中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "多首环伺",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "多首合围"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 毒素伤害。他有时被描绘为多首之蛇，每个头从不同方向同时咬下。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "殡仪护灵",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "卡之纽带"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 毒素伤害。《金字塔铭文》第 688 节：涅海布考为亡王系上“卡”之纽带，途中斩断一切阻碍。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "蛇形绞决",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被蛇身绞死"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "对低生命目标造成致命一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 毒素伤害。他以蛇身缠住罪灵，收紧的速度比呼吸快一拍。制服1回合+斩杀。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

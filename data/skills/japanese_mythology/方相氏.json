@@ -1,0 +1,120 @@
+[
+  {
+    "name": "四目之相",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "四目之相"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 光耀伤害。他面生四目，是驱邪的方相氏，掌大丧之驱。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "黄金之面",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "黄金之面"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 光耀伤害。他戴黄金四目面具，持戈扬盾，立于大丧之前。防御2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "大丧之驱",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "大丧之驱"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 光耀伤害。他在天皇大丧前行，驱赶邪祟，开道辟邪。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "邪鬼之镇",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "邪鬼之镇"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 光耀伤害。他脚下踩邪鬼，邪鬼永不得起，镇压于地。制服1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

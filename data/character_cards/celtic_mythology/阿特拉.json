@@ -1,0 +1,237 @@
+{
+  "card_id": "celtic_mythology:阿特拉",
+  "legacy_card_id": "CEL-1083",
+  "hero": {
+    "name": "阿特拉",
+    "name_en": "Athirne",
+    "alias": "不肯借物的诗人",
+    "title": "不肯借物的诗人"
+  },
+  "game": {
+    "name": "Celtic Mythology",
+    "name_cn": "凯尔特神话",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "凯尔特神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "三求之客",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "干扰",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "三求不还"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 法术伤害。他向人借锅借刀借针，借完不还。下次来还是借这三样。干扰1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "独吞之鹅",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "易伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "独吞之名"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+STR 法术伤害。他和儿子分食一只鹅，妻子和女儿不许动筷。这事成了爱尔兰诗人最久的丑闻。易伤2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "挑拨之王",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "诗挑九日战"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 法术伤害。他写讽刺诗逼康乔巴尔出兵莱斯特。一封信挑起一场九日战。恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "城破之偿",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "锅偿旧债"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 法术伤害。他被攻入的莱斯特人当场抓住。借过的锅这次还了——砸在他头上。处决+重创2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "card_id": "egyptian_mythology:谢特",
+  "legacy_card_id": "EGY-1107",
+  "hero": {
+    "name": "谢特",
+    "name_en": "Khaibit",
+    "alias": "影之潜行",
+    "title": "影之潜行"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "埃及神话",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "收割",
+    "斩杀",
+    "爆发"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "影子剥离",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "潜行",
+          "target": "自身",
+          "duration": 1,
+          "desc": "化为影子"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+DEX 黯蚀伤害。谢特就是人的影子，她能从人身上剥离出来，独立行动。潜行1回合。"
+    },
+    {
+      "name": "影中窃言",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "影中窃言"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 黯蚀伤害。影子贴在墙壁上时能听到屋里说的话——她什么都听到了。沉默1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "暗影蚀体",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "持续伤害",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "暗影蚀体"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+DEX 黯蚀伤害。她钻进敌人的影子里，从里面把人啃噬一空。持续伤害2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "影之决断",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "影之消散"
+        },
+        {
+          "type": "斩杀",
+          "target": "敌方",
+          "desc": "对低生命目标造成致命一击"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 黯蚀伤害。《金字塔铭文》第 546 节：谢特是灵魂七部分之一，失去影子的人会逐渐消散。恐惧1回合+斩杀。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

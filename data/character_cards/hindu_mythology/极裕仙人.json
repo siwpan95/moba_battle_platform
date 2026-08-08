@@ -1,0 +1,221 @@
+{
+  "card_id": "hindu_mythology:极裕仙人",
+  "legacy_card_id": "HIN-1066",
+  "hero": {
+    "name": "极裕仙人",
+    "name_en": "Vashistha",
+    "alias": "王师之杖",
+    "title": "王师之杖"
+  },
+  "game": {
+    "name": "Hindu Mythology",
+    "name_cn": "印度神话",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "印度神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "护盾",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "如意神牛",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "回复",
+          "target": "自身",
+          "desc": "如意牛之乳"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 法术伤害。极裕拥有一头要什么给什么的如意牛。把敌人也喂饱了再说。回复。"
+    },
+    {
+      "name": "七仙之首",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "王师之威"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 法术伤害。他是七仙人中的领袖，论资历在场无人能及。强化2回合。"
+    },
+    {
+      "name": "咒语回护",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "咒语回护"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+WIS 法术伤害。众友仙人曾放罗刹来攻，他用一道咒就把整座道场围住。护盾2回合。"
+    },
+    {
+      "name": "永生之咒",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "法术"
+      },
+      "effects": [
+        {
+          "type": "复活",
+          "target": "自身",
+          "desc": "永生之咒"
+        },
+        {
+          "type": "净化",
+          "target": "自身",
+          "desc": "移除负面状态"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d6+WIS 法术伤害。《梨俱吠陀》记他与众友斗法数百年不死。他把不死的窍门给了队友。复活+净化。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "山之怪",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "山怪之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 钝击伤害。它是晨星神的山怪。它住在山顶，山一动它就醒。护盾2回合。"
+  },
+  {
+    "name": "山崩之兆",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "山崩之滞"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 钝击伤害。它一跺脚山就崩。崩下来的石头挡住路。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "岩皮之身",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "岩皮之身"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 钝击伤害。它的皮是岩石。砍上去火星四溅，皮没事。减伤2回合。"
+  },
+  {
+    "name": "一砸之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一砸之终"
+      },
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被击倒在地"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 钝击伤害。它最后用整座山压下来。被压的地方什么都没了。处决+倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

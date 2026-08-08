@@ -1,0 +1,108 @@
+[
+  {
+    "name": "流浪市井",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "流浪市井"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 穿刺伤害。他从小在街头混大，练就一双快脚和一把快刀。加速1回合。"
+  },
+  {
+    "name": "翻墙入室",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "潜行",
+        "target": "自身",
+        "duration": 1,
+        "desc": "翻墙入室"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 穿刺伤害。三丈高的墙他一跃而过，比猫还轻。潜行1回合。"
+  },
+  {
+    "name": "飞刀夺命",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "飞刀夺命"
+      },
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法施放技能"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 穿刺伤害。他的飞刀能在二十步外钉穿铜板。处决+沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "事了抽身",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "隐形",
+        "target": "自身",
+        "duration": 1,
+        "desc": "事了抽身"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 穿刺伤害。他从不恋战，一刀得手便翻墙走了。隐形1回合。"
+  }
+]

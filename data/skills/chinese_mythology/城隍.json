@@ -1,0 +1,116 @@
+[
+  {
+    "name": "守城之神",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "城垣之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 力场伤害。一城之守神，护佑境内百姓，城墙即其法身。护盾2回合。"
+  },
+  {
+    "name": "鉴察阴阳",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "鉴察之眼"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 力场伤害。他兼管阴间事务，城中大小鬼神皆归其调遣。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "显圣护民",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "显圣之护"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 力场伤害。遇灾厄他显灵示警，香火越盛法力越强。防御2回合。"
+  },
+  {
+    "name": "坐堂判案",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "判案之威"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。他坐城隍庙大殿判阴阳两界之案，赏善罚恶。制服1回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

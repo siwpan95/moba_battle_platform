@@ -1,0 +1,116 @@
+[
+  {
+    "name": "豁落之车",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "豁落巡天"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 火焰伤害。他是玉枢火府天将，驾豁落之车巡天，性如烈火。冲锋1回合。"
+  },
+  {
+    "name": "金鞭护道",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "金鞭之威"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 火焰伤害。《明史》载他姓王名善，金鞭护道，邪神见之辟易。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "雷火神将",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "雷火护体"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 火焰伤害。他为雷部十二神将之首，雷火护体邪祟不能侵。护盾2回合。"
+  },
+  {
+    "name": "齐天大圣之敌",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "灵官之鞭"
+      },
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "护甲被削弱"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 火焰伤害。孙悟空大闹天宫，他持鞭拦于凌霄殿外，打得难解难分。击退1回合+破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

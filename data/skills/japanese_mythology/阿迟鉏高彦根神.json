@@ -1,0 +1,119 @@
+[
+  {
+    "name": "河维奇之剑",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "丧庐一剑平"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 电击伤害。他拔出十拳剑河维奇，砍平悼念天若日子的丧庐。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "误为亡友",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被误认身份"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 电击伤害。他来吊唁，却被误认为是复活的天若日子。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "雷神之裔",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "雷神之裔"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 电击伤害。他是建御名方之子，出云系雷神武神，脾气暴烈。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "怒踢丧庐",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "丧庐踢飞"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 电击伤害。朋友死得冤枉，他迁怒于哀悼者，一脚踢飞丧庐。击飞1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "name": "六合之将",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "六合之将"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 力场伤害。他是十二神将之一，居未位，主调和四方之力。增益2回合。"
+  },
+  {
+    "name": "六合之术",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "六合之术"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 力场伤害。六合即天地四方之合，他调四方之力为一体。强化2回合。"
+  },
+  {
+    "name": "调和之剑",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "调和之剑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 力场伤害。他持剑调和诸将，是十二神将之统帅。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "六方封阵",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "制服",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "六方封阵"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。他封六方，敌手无处可退，进退皆死。制服1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

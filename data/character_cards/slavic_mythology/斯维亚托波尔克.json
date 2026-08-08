@@ -1,0 +1,233 @@
+{
+  "card_id": "slavic_mythology:斯维亚托波尔克",
+  "legacy_card_id": "SLA-1132",
+  "hero": {
+    "name": "斯维亚托波尔克",
+    "name_en": "Svyatopolk the Accursed",
+    "alias": "受咒的兄长",
+    "title": "受咒的兄长"
+  },
+  "game": {
+    "name": "Slavic Mythology",
+    "name_cn": "斯拉夫神话",
+    "native_role": "射手",
+    "universal_role": "marksman",
+    "role_name": "射手",
+    "role_dnd_class": "游侠"
+  },
+  "source": "斯拉夫神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "持续输出",
+    "核心",
+    "远程",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX",
+    "WIS"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 16,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 16,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 7,
+      "DEX": 9,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 2,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "弑兄之名",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "弑兄之名"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+DEX 黯蚀伤害。他为了独占基辅，派人杀了两个弟弟鲍里斯和格列布。恐惧1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "波兰岳家",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "波兰岳援"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+DEX 黯蚀伤害。他的岳父是波兰国王。打不过弟弟就找岳父借兵。增援2回合。"
+    },
+    {
+      "name": "三战于基辅",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "夜渡逃亡"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+DEX 黯蚀伤害。他和雅罗斯拉夫打了三场。第三场他逃过了第聂伯河。加速1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "死于荒野",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "荒野无葬"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 黯蚀伤害。他最后死在波洛夫草原。没人收尸，鹰和狼把他吃干净了。处决+重创2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

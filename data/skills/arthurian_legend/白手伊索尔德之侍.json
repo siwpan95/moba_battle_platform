@@ -1,0 +1,107 @@
+[
+  {
+    "name": "同名之侍",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "同名之侍"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她侍奉白手伊索尔德，名字也叫布兰格温。她和金发那位同名同职。增益2回合。"
+  },
+  {
+    "name": "夜守之诺",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "夜守不留"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。新婚夜她替白手侍寝。第二天早上她离开，从此没再回过房。隐身1回合。"
+  },
+  {
+    "name": "金创之医",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "金创之医"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。白手懂得治毒伤。这套手法是她从一个修士那里学的，传给了白手。治疗。"
+  },
+  {
+    "name": "同穴之陪",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "陪至终老"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。白手伊索尔德到死都有她陪着。葬礼是她一个人办的。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

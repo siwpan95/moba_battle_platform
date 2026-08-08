@@ -1,0 +1,113 @@
+[
+  {
+    "name": "弃女之命",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "弃女之命"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他命格拉德隆在马上弃女。王流泪照做——这是拯救的唯一办法。净化。"
+  },
+  {
+    "name": "钟声之驱",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "钟声之驱"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。他的钟一响，海上的摩根当夜不歌。一年响一次，响一次安静一年。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "隐修之立",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "隐修之立"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他在海上小岛立隐修院。院墙外是海妖，院墙内是钟声。护盾2回合。"
+  },
+  {
+    "name": "归海之诺",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "归海之镇"
+      },
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得增援之力"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。他临终要求弟子把他的尸首沉入伊斯城旧址。沉下那夜，城里再无钟声。复活+增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

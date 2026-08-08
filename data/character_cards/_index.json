@@ -1,7 +1,7 @@
 {
   "project": "MOBA英雄角色卡",
   "framework": "基于D&D 5e规则的数值体系",
-  "total_cards": 6121,
+  "total_cards": 7076,
   "total_games": 40,
   "games": {
     "300_heroes": {
@@ -13,7 +13,7 @@
     "arabian_nights": {
       "display": "Arabian Nights",
       "cn": "一千零一夜",
-      "count": 71,
+      "count": 180,
       "directory": "arabian_nights"
     },
     "arena_of_valor": {
@@ -25,25 +25,25 @@
     "arthurian_legend": {
       "display": "Arthurian Legend",
       "cn": "亚瑟王传说",
-      "count": 63,
+      "count": 175,
       "directory": "arthurian_legend"
     },
     "aztec_mythology": {
       "display": "Aztec Mythology",
       "cn": "阿兹特克神话",
-      "count": 65,
+      "count": 176,
       "directory": "aztec_mythology"
     },
     "celtic_mythology": {
       "display": "Celtic Mythology",
       "cn": "凯尔特神话",
-      "count": 66,
+      "count": 174,
       "directory": "celtic_mythology"
     },
     "chinese_mythology": {
       "display": "Chinese Mythology",
       "cn": "中国神话",
-      "count": 70,
+      "count": 167,
       "directory": "chinese_mythology"
     },
     "cthulhu_mythos": {
@@ -73,7 +73,7 @@
     "egyptian_mythology": {
       "display": "Egyptian Mythology",
       "cn": "埃及神话",
-      "count": 68,
+      "count": 174,
       "directory": "egyptian_mythology"
     },
     "feiren_xueyuan": {
@@ -115,7 +115,7 @@
     "hindu_mythology": {
       "display": "Hindu Mythology",
       "cn": "印度神话",
-      "count": 63,
+      "count": 170,
       "directory": "hindu_mythology"
     },
     "hong_kong_comics": {
@@ -133,7 +133,7 @@
     "japanese_mythology": {
       "display": "Japanese Mythology",
       "cn": "日本神话",
-      "count": 70,
+      "count": 169,
       "directory": "japanese_mythology"
     },
     "journey_to_the_west": {
@@ -205,7 +205,7 @@
     "slavic_mythology": {
       "display": "Slavic Mythology",
       "cn": "斯拉夫神话",
-      "count": 68,
+      "count": 174,
       "directory": "slavic_mythology"
     },
     "smite": {

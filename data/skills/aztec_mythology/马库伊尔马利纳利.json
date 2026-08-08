@@ -1,0 +1,125 @@
+[
+  {
+    "name": "五草之名",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "五草之幻"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 毒素伤害。他是五位享乐神之一，代表过度的享乐。草在他这里有特别的含义。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "草之护甲",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "草甲之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 毒素伤害。他用草编成护甲。别看不起草，冥界的草比铁还硬。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "致幻之烟",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "致幻之烟"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 毒素伤害。他点燃草让人闻。闻了之后看见的东西不一定是真的。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "过度之收",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "过度之收"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒素持续侵蚀"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 毒素伤害。他最后来收「过度」的账。收的方式是让人再也回不到正常。处决+中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

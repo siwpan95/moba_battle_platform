@@ -1,0 +1,107 @@
+[
+  {
+    "name": "美之抚慰",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "美之抚慰"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。涅菲尔塔莉的美能抚慰伤痛，被她注视的队友伤势减轻。治疗。"
+  },
+  {
+    "name": "阿布辛贝小庙之护",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "小庙之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。拉美西斯二世为她建的阿布辛贝小庙化为护身法阵。护盾2回合。"
+  },
+  {
+    "name": "哈托尔之冕",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "哈托尔之冕"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。她以哈托尔之冕加冕，冕上的日轮为队友注入力量。强化2回合。"
+  },
+  {
+    "name": "王后之谷之仪",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "王后之谷"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。《涅菲尔塔莉墓壁画》：她的墓壁画描绘了通往来世的旅程，她把这段旅程借给队友。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

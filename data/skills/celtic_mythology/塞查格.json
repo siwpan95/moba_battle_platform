@@ -1,0 +1,113 @@
+[
+  {
+    "name": "醉睡之失",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "醉睡之失"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 冰冷伤害。他守堤时喝醉了。醒来时海水已灌进半个城。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "钟声之悔",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "钟声之悔"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 冰冷伤害。他余生在海边听钟。每响一声，他念一句悔——钟响多少声，他念多少句。净化。"
+  },
+  {
+    "name": "三女之护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三女之护"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 冰冷伤害。他把三个女儿托付给渔夫。三个女儿后来都成了修女——没有一个再回过城。护盾2回合。"
+  },
+  {
+    "name": "投海之偿",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "投海之偿"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 冰冷伤害。他最后投海自尽。投海那天钟没响——钟也觉得不需要了。处决+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

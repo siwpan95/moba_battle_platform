@@ -1,0 +1,115 @@
+[
+  {
+    "name": "三王之盟",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三王之盟"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 黯蚀伤害。他和两个兄弟共守北不列颠。三人各管一段长城，长城因此没破。增援2回合。"
+  },
+  {
+    "name": "夜议之桌",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "夜议之桌"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 黯蚀伤害。他在夜里有张议事桌。桌上摆过三个头颅——其中两个是叛徒的。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "血誓之杯",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "血誓之杯"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 黯蚀伤害。他立的誓要用血。誓破者血逆流——他从没破过誓。强化2回合。"
+  },
+  {
+    "name": "长城之归",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "长城之归"
+      },
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤势持续恶化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 黯蚀伤害。他临死前爬上长城，背靠烽火台坐了三天。第四天才倒。护盾2回合+重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

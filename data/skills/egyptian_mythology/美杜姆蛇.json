@@ -1,0 +1,113 @@
+[
+  {
+    "name": "石壁钻穴",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "潜行",
+        "target": "自身",
+        "duration": 1,
+        "desc": "石壁钻穴"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 毒素伤害。美杜姆的蛇妖能从石壁的缝隙里钻进钻出，没有门能挡住。潜行1回合。"
+  },
+  {
+    "name": "毒牙一击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "剧毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒牙一击"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 毒素伤害。它的毒牙比针还细，咬一口你可能都没感觉——直到倒下。剧毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "蛇蜕逃生",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "蛇蜕逃生"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 毒素伤害。它留下一张完整的蛇蜕在原地，本体已经到了你身后。隐身1回合。"
+  },
+  {
+    "name": "美杜姆之噬",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "七步之倒"
+      },
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "毒素持续侵蚀"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 毒素伤害。《棺文》第 882 节：美杜姆蛇妖守在金字塔入口，被咬者七步之内必倒。斩杀+中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

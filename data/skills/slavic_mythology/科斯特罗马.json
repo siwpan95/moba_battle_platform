@@ -1,0 +1,120 @@
+[
+  {
+    "name": "春之面具",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "草面具之春"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 冰冷伤害。他和雅里洛是同一组春神。他戴的是草编的面具。增益2回合。"
+  },
+  {
+    "name": "稻草人之葬",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "替身之葬"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 冰冷伤害。春末人们扎一个他的草人，穿上男人的衣服，扔进河里。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "与妹同生",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "孪生之命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 冰冷伤害。他和孪生妹妹科斯特罗马的伊凡是一对。两人的故事以河为界。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "麦穗自焚",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "化灰肥田"
+      },
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "重返战场"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 冰冷伤害。得知孪生禁忌后他自焚于麦田。第二年那块地长得最好。处决+复活。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

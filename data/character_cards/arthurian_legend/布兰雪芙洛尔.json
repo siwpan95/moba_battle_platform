@@ -1,0 +1,231 @@
+{
+  "card_id": "arthurian_legend:布兰雪芙洛尔",
+  "legacy_card_id": "ART-1160",
+  "hero": {
+    "name": "布兰雪芙洛尔",
+    "name_en": "Blanchefleur",
+    "alias": "圣杯之后",
+    "title": "圣杯之后"
+  },
+  "game": {
+    "name": "Arthurian Legend",
+    "name_cn": "亚瑟王传说",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "亚瑟王传说",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "治疗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "圣杯之后",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "白花之名"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 光耀伤害。她是帕西瓦尔的妻子。她的名字意思是「白花」。增益2回合。"
+    },
+    {
+      "name": "被困之女",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "束缚",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被困之女"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 光耀伤害。她曾被困在一座被咒的城里。帕西瓦尔替她破了那咒。束缚1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "四夜之诺",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "暗示",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "四夜之问"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+WIS 光耀伤害。她答应帕西瓦尔：同床四夜，每夜问一个问题。第四夜他答对了。暗示1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "失夫之终",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "光耀"
+      },
+      "effects": [
+        {
+          "type": "复活",
+          "target": "自身",
+          "desc": "守城等夫"
+        },
+        {
+          "type": "净化",
+          "target": "自身",
+          "desc": "移除负面状态"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d6+WIS 光耀伤害。帕西瓦尔去找圣杯再没回。她守在城里，到死等他。复活+净化。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "丹穴之鸟",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "五采之辉"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 火焰伤害。《山海经》「丹穴之山有鸟焉，五采而文，名曰凤凰」。增益2回合。"
+  },
+  {
+    "name": "见则安宁",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "瑞鸟却邪"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 火焰伤害。它出现则天下太平，故为瑞兆，非梧桐不栖。净化。"
+  },
+  {
+    "name": "鸣中律吕",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "百鸟来朝"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 火焰伤害。它的鸣声合十二律吕，自歌自舞，群鸟从之。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "涅槃之火",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "涅槃真火"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 火焰伤害。它浴火而重生，五百年一涅槃，羽化更艳。灼烧2回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

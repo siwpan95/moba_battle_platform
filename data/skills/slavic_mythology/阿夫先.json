@@ -1,0 +1,107 @@
+[
+  {
+    "name": "新岁之首",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "新岁之首"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他管新年的第一夜。这一夜的梦算一年的兆。增益2回合。"
+  },
+  {
+    "name": "颂歌之伯",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "颂歌之伯"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。科利瓦的节日上他是带头唱的。他的声音最老。增援2回合。"
+  },
+  {
+    "name": "麦酒之分",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "麦酒之分"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他给每家分一碗新年麦酒。酒是同一个坛子倒的，味道家家不同。回复。"
+  },
+  {
+    "name": "旧岁之送",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "送走旧岁"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "恢复生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。新年第一缕光出来时他送走旧岁。旧岁被他领走，不再回来。净化+治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

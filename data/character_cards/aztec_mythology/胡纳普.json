@@ -1,0 +1,228 @@
+{
+  "card_id": "aztec_mythology:胡纳普",
+  "legacy_card_id": "AZT-1127",
+  "hero": {
+    "name": "胡纳普",
+    "name_en": "Hunahpu",
+    "alias": "吹箭手",
+    "title": "吹箭手"
+  },
+  "game": {
+    "name": "Aztec Mythology",
+    "name_cn": "阿兹特克神话",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "阿兹特克神话",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "收割",
+    "爆发"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "吹箭之手",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "穿透",
+          "target": "敌方",
+          "desc": "吹箭之穿"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+DEX 穿刺伤害。他是英雄双胞胎里的哥哥。他的武器是吹箭筒，不打近战。穿透。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "断头再生",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "复活",
+          "target": "自身",
+          "desc": "断头再生"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 穿刺伤害。他的头被蝙蝠神砍下来过。他用葫芦当假头继续打。复活。"
+    },
+    {
+      "name": "冥界球赛",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "标记",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "被球赛锁定"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+DEX 穿刺伤害。他和弟弟在冥界打球赛赢了对手。球赛就是他们的战场。标记2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "一箭之终",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "一箭之终"
+        },
+        {
+          "type": "致盲",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "视野被夺"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 穿刺伤害。他最后一箭射中冥界主的嘴。这一箭结束了整场比赛。处决+致盲2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

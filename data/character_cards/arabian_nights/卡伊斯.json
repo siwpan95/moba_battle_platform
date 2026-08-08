@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:卡伊斯",
-  "legacy_card_id": "ONE-2025",
+  "card_id": "Arabian_Nights:卡伊斯",
+  "legacy_card_id": "ARA-1080",
   "hero": {
     "name": "卡伊斯",
     "name_en": "Qays",
@@ -8,8 +8,8 @@
     "title": "疯癫诗人"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "射手",
     "universal_role": "marksman",
     "role_name": "射手",

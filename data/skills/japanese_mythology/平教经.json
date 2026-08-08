@@ -1,0 +1,102 @@
+[
+  {
+    "name": "平家猛将",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "平家猛将"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 挥砍伤害。他是平教经，能拉开强弓，力冠三军。强化2回合。"
+  },
+  {
+    "name": "矢无虚发",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "矢无虚发"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 挥砍伤害。他射源义经，箭箭必中，义经仅以身免。暴击2回合。"
+  },
+  {
+    "name": "八艘追击",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "八艘追击"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 挥砍伤害。他追源义经，连跳八艘船，义经狼狈而逃。加速1回合。"
+  },
+  {
+    "name": "抱投共沉",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "抱投共沉"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 挥砍伤害。他抱住敌将投海，同归于尽，壮烈殉国。处决。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

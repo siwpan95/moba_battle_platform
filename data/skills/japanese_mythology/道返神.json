@@ -1,0 +1,115 @@
+[
+  {
+    "name": "千引之石",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "千引石封"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。伊邪那岐堵在黄泉比良坂的千引石就是他，封住生死之界。护盾2回合。"
+  },
+  {
+    "name": "道之返",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "强行遣返"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。「道返」即让走过的人回头。他堵住了生死的通路。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "永封黄泉",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "禁锢",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "生死界封"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。「从此不再相见」。这块石头封住了生死之界，永不可开。禁锢1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "不可逾越",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "巨岩之威"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。千人拉不动的巨岩，自此再无人能从黄泉归来。重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "梵天之咒",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "梵天之咒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 力场伤害。他因得罪罗波那被梵天诅咒变成畸形。咒本身就是武器。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "夜叉之矢",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "夜叉之矢"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 力场伤害。他从父亲处继承了夜叉族的法矢。矢到之处，金光爆裂。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "财宝之眼",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "财宝之眼"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 力场伤害。他能看见战场上所有值钱的东西——包括敌人的护甲弱点。易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "罗波那之恨",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "罗波那之恨"
+      },
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 力场伤害。罗波那为了他爹的飞天车把他推下城。这份恨化为一击。真实伤害+标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

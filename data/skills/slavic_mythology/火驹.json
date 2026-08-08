@@ -1,0 +1,119 @@
+[
+  {
+    "name": "鼻孔喷火",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "鼻火喷旗"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 火焰伤害。它一打响鼻，鼻孔里就喷出一道火线。火线烧的是敌军的旗。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "踏焰而行",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "踏焰疾驰"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 火焰伤害。它跑过的路面会着火。追它的马不敢踩那条路。加速1回合。"
+  },
+  {
+    "name": "鬃毛之盾",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "鬃焰为盾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 火焰伤害。它的鬃毛是火做的。砍它的手会被燎到。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "冲阵一踢",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "焦土之踢"
+      },
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "持续受到火焰伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 火焰伤害。它冲进敌阵只踢一脚。踢中的那块地变成焦土。处决+灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

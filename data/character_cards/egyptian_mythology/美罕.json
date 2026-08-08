@@ -1,0 +1,235 @@
+{
+  "card_id": "egyptian_mythology:美罕",
+  "legacy_card_id": "EGY-1086",
+  "hero": {
+    "name": "美罕",
+    "name_en": "Mehen",
+    "alias": "盘蛇护神",
+    "title": "盘蛇护神"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "坦克",
+    "universal_role": "tank",
+    "role_name": "坦克",
+    "role_dnd_class": "野蛮人"
+  },
+  "source": "埃及神话",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "先手",
+    "前排",
+    "承伤",
+    "护盾"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 16,
+      "modifier": 3,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "CON"
+  ],
+  "hit_die": 12,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 150,
+    "hp_dnd_raw": 15,
+    "ac": 13,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1850,
+    "hp_dnd_raw": 185,
+    "ac": 13,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 1,
+      "CON": 9,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 100,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "蛇盘围护",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "蛇盘护体"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+CON 力场伤害。美罕化身为盘蛇，把太阳船整个围在中间，外面的东西咬不进来。护盾2回合。"
+    },
+    {
+      "name": "鳞身减伤",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "减伤",
+          "target": "自身",
+          "duration": 2,
+          "desc": "鳞身减伤"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+CON 力场伤害。盘蛇的鳞片比青铜还硬，刀砍上去只留下一道白印。减伤2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 8
+    },
+    {
+      "name": "蛇道阻行",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "束缚",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被蛇道缠住"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d6+CON 力场伤害。他在地上盘出一条蛇道，踩上去的脚踝会被缠住。束缚1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "盘蛇解体",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "CON",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "压制",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "万蛇压制"
+        },
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "移动速度降低"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+CON 力场伤害。《棺文》第 646 节：美罕的盘身可以解体为千万条小蛇，从每个缝隙钻进去。压制1回合+减速2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+CON",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

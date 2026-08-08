@@ -1,0 +1,121 @@
+[
+  {
+    "name": "禁井之约",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "禁锢",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "禁井之约"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 冰冷伤害。他的井只许他和三个杯子官靠近。其余人绕井一圈，井水就追出来。禁锢1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "智水之秘",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "智水漫溢"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 冰冷伤害。井底藏着智慧。波安偏要逆时针绕，井水就把她追成了一条河。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "夫之怒",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "井枯之躯"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 冰冷伤害。妻子波安和达格达私通。他不动声色，但井水从此再没为她家流过。减伤2回合。"
+  },
+  {
+    "name": "三杯之司",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "三杯倾覆"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 冰冷伤害。井边的三个杯子官由他任命。三个杯子同时倾倒，那一天就是洪水日。倒地1回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

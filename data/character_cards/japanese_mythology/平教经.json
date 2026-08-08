@@ -1,0 +1,215 @@
+{
+  "card_id": "japanese_mythology:平教经",
+  "legacy_card_id": "JAP-1155",
+  "hero": {
+    "name": "平教经",
+    "name_en": "Taira no Noritsune",
+    "alias": "平家猛将",
+    "title": "平家猛将"
+  },
+  "game": {
+    "name": "Japanese Mythology",
+    "name_cn": "日本神话",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "日本神话",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "收割",
+    "爆发",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "平家猛将",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "平家猛将"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+DEX 挥砍伤害。他是平教经，能拉开强弓，力冠三军。强化2回合。"
+    },
+    {
+      "name": "矢无虚发",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "暴击",
+          "target": "自身",
+          "duration": 2,
+          "desc": "矢无虚发"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 挥砍伤害。他射源义经，箭箭必中，义经仅以身免。暴击2回合。"
+    },
+    {
+      "name": "八艘追击",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "八艘追击"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+DEX 挥砍伤害。他追源义经，连跳八艘船，义经狼狈而逃。加速1回合。"
+    },
+    {
+      "name": "抱投共沉",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "抱投共沉"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 挥砍伤害。他抱住敌将投海，同归于尽，壮烈殉国。处决。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

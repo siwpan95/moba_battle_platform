@@ -1,0 +1,112 @@
+[
+  {
+    "name": "自焚之焰",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "自焚之焰"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 火焰伤害。达刹祭上辱骂湿婆，萨蒂当场引火自焚以断父女之情。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "火葬之护",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "火葬之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 火焰伤害。她以自身为祭。火焰因此认她为主，不再伤她的人。护盾2回合。"
+  },
+  {
+    "name": "断亲之咒",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "驱散",
+        "target": "自身",
+        "desc": "断亲之咒"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 火焰伤害。她断绝与达刹的父女关系。这份断绝也作用于敌人的盟约。驱散。"
+  },
+  {
+    "name": "转世重逢",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "转世重逢"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 火焰伤害。她死后转世为雪山神女，再次嫁给湿婆。死亡对她只是过渡。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

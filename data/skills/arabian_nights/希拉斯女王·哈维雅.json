@@ -1,0 +1,120 @@
+[
+  {
+    "name": "水镜凝形",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "隐形",
+        "target": "自身",
+        "duration": 1,
+        "desc": "水镜凝形"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 冰冷伤害。她自一面水镜中走出，身形如倒影般虚幻。隐形1回合。"
+  },
+  {
+    "name": "水蛇蛊惑",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "水蛇蛊惑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 冰冷伤害。她以美色惑人，背后却藏着水蛇的毒牙。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "水牢囚敌",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "水牢囚敌"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 冰冷伤害。她用一道水墙把敌人围在中间，水墙越来越小。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "倒影之噬",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "倒影之噬"
+      },
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "无视护甲与护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 冰冷伤害。她踩碎敌人的水中倒影，敌人也跟着碎裂。处决+真实伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

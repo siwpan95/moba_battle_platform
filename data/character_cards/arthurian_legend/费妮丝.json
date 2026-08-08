@@ -1,0 +1,223 @@
+{
+  "card_id": "arthurian_legend:费妮丝",
+  "legacy_card_id": "ART-1157",
+  "hero": {
+    "name": "费妮丝",
+    "name_en": "Fenice",
+    "alias": "克利热斯之妻",
+    "title": "克利热斯之妻"
+  },
+  "game": {
+    "name": "Arthurian Legend",
+    "name_cn": "亚瑟王传说",
+    "native_role": "辅助",
+    "universal_role": "support",
+    "role_name": "辅助",
+    "role_dnd_class": "牧师"
+  },
+  "source": "亚瑟王传说",
+  "difficulty": 2,
+  "playstyle_tags": [
+    "保护",
+    "增益",
+    "护盾",
+    "治疗",
+    "潜行"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "WIS",
+    "CHA"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 13,
+    "physical_atk": 36,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 4,
+      "CHA": 5
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 13,
+    "physical_atk": 48,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 1.0,
+    "crit_chance": 12.0,
+    "crit_damage": 155.0,
+    "cdr_pct": 2.0,
+    "heal_bonus_pct": 6.0,
+    "cc_resist_pct": 2.0,
+    "save_bonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "INT": -1,
+      "WIS": 8,
+      "CHA": 9
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "不愿同床",
+      "key": "Q",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "免疫",
+          "target": "自身",
+          "duration": 1,
+          "desc": "誓不共寝"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d6+WIS 力场伤害。她嫁了克利热斯，但立誓永不与他同床。她做到了。免疫1回合。"
+    },
+    {
+      "name": "伪死之术",
+      "key": "W",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "友方",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "隐身",
+          "target": "自身",
+          "duration": 1,
+          "desc": "以伪死脱身"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d6+WIS 力场伤害。她用法术装死，让自己被抬出宫。从此再没回克利热斯的房。隐身1回合。"
+    },
+    {
+      "name": "塔中隐居",
+      "key": "E",
+      "type": "法术",
+      "action": "附赠动作",
+      "range": "自身",
+      "target": "自身",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "护盾",
+          "target": "自身",
+          "duration": 2,
+          "desc": "无门之塔"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+WIS 力场伤害。她和爱人住进一座隐秘的塔里。塔没有门，只有一道窗。护盾2回合。"
+    },
+    {
+      "name": "事败之终",
+      "key": "R",
+      "type": "法术",
+      "action": "动作",
+      "range": "远程",
+      "target": "范围",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 6,
+        "bonus_attr": "WIS",
+        "type": "力场"
+      },
+      "effects": [
+        {
+          "type": "复活",
+          "target": "自身",
+          "desc": "坠塔余生"
+        },
+        {
+          "type": "净化",
+          "target": "自身",
+          "desc": "移除负面状态"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d6+WIS 力场伤害。塔最后被人发现。她和爱人一起从塔上跳下，她活了下来，他没活。复活+净化。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+WIS",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 15
+    }
+  ]
+}

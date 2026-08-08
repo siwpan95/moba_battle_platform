@@ -1,0 +1,109 @@
+[
+  {
+    "name": "东方木龙",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "东方木龙"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 力场伤害。他是十二神将之一，居寅位，东方青龙。强化2回合。"
+  },
+  {
+    "name": "龙吟之震",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "龙吟之震"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 力场伤害。他一吟，东方木气皆应，万物复苏。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "龙爪之裂",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "龙爪之裂"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 力场伤害。他爪裂岩石，所过之处草木皆兵。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "木德之主",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "木德之主"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。东方木德由他主持，春生万物，不可阻挡。增援2回合。"
+  }
+]

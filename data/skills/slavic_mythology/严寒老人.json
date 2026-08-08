@@ -1,0 +1,121 @@
+[
+  {
+    "name": "三马车之至",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "三马雪橇"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 冰冷伤害。他坐三马拉的雪橇来。马是白的，橇是银的，路是冰的。加速1回合。"
+  },
+  {
+    "name": "孙女的伴",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "祖孙同行"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 冰冷伤害。他每年冬天带着孙女雪姑娘一起出门。两人一红一白。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "叩窗三问",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "叩窗之问"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 冰冷伤害。他在窗外问：暖和吗？答暖和的得礼，答冷的得霜。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "礼物与霜",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "霜礼之分"
+      },
+      {
+        "type": "冻结",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被冰封"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 冰冷伤害。他给好孩子礼物，给坏孩子一根冰柱。冰柱第二天就化成水。处决+冻结1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

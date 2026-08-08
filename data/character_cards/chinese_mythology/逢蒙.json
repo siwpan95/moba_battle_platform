@@ -1,11 +1,11 @@
 {
   "card_id": "chinese_mythology:逢蒙",
-  "legacy_card_id": "CHI-2011",
+  "legacy_card_id": "CHI-1068",
   "hero": {
     "name": "逢蒙",
-    "name_en": "Peng Meng",
-    "alias": "叛师弓手",
-    "title": "叛师弓手"
+    "name_en": "Fengmeng",
+    "alias": "羿之徒",
+    "title": "羿之徒"
   },
   "game": {
     "name": "Chinese Mythology",
@@ -18,7 +18,6 @@
   "source": "中国神话",
   "difficulty": 2,
   "playstyle_tags": [
-    "持续伤害",
     "持续输出",
     "核心",
     "远程"
@@ -113,7 +112,7 @@
   },
   "skills": [
     {
-      "name": "叛师之射",
+      "name": "羿之徒",
       "key": "Q",
       "type": "物理",
       "action": "动作",
@@ -125,94 +124,99 @@
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
-      "cooldown": 0,
-      "description": "1d10+DEX穿刺伤害。逢蒙以「叛师之射」在敌身烙下印记，其行踪再无可藏。被标记，受到的伤害提升。",
       "effects": [
         {
-          "type": "标记",
-          "target": "敌方",
-          "desc": "被标记，受到的伤害提升"
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "尽得羿道"
         }
       ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "半伤"
-      }
+      "cooldown": 0,
+      "description": "1d10+DEX 穿刺伤害。《孟子》他是后羿的徒弟，尽得羿的射法。增益2回合。"
     },
     {
-      "name": "毒雾藏踪",
+      "name": "学成而忌",
       "key": "W",
-      "type": "混合",
+      "type": "物理",
       "action": "动作",
-      "range": "自身",
-      "target": "自身",
+      "range": "远程",
+      "target": "单体",
       "damage": {
         "dice_count": 2,
         "dice_size": 6,
         "bonus_attr": "DEX",
-        "type": "光影"
+        "type": "穿刺"
       },
-      "cooldown": 1,
-      "description": "2d6+DEX光影伤害。逢蒙借「毒雾藏踪」敛去气息，连脚步声都被一并吞没。遁入暗影，难以被察觉。",
       "effects": [
         {
-          "type": "隐身",
+          "type": "暴击",
           "target": "自身",
-          "desc": "遁入暗影，难以被察觉"
+          "duration": 2,
+          "desc": "忌才之心"
         }
-      ]
+      ],
+      "cooldown": 1,
+      "description": "2d6+DEX 穿刺伤害。他学成后觉得天下只有羿胜过自己，遂起杀心。暴击2回合。"
     },
     {
-      "name": "弯弓破甲",
+      "name": "桃木之击",
       "key": "E",
       "type": "物理",
-      "action": "动作",
+      "action": "附赠动作",
       "range": "远程",
-      "target": "直线",
+      "target": "范围",
       "damage": {
         "dice_count": 1,
         "dice_size": 8,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
-      "cooldown": 2,
-      "description": "1d8+DEX穿刺伤害。逢蒙挥出「弯弓破甲」，锋刃削过甲面，破绽就此暴露。护甲被洞穿，防御大减。",
       "effects": [
         {
-          "type": "破甲",
+          "type": "重伤",
           "target": "敌方",
-          "desc": "护甲被洞穿，防御大减"
+          "duration": 2,
+          "desc": "桃棒之击"
         }
       ],
+      "cooldown": 2,
+      "description": "1d8+DEX 穿刺伤害。他趁羿不备，用桃木棒把羿打死。重伤2回合。",
       "saving_throw": {
-        "attr": "DEX",
+        "attr": "CON",
         "dc_formula": "8+PROF+DEX",
         "on_save": "半伤"
-      }
+      },
+      "aoe_radius": 10
     },
     {
-      "name": "尽夺天日",
+      "name": "杀师之名",
       "key": "R",
       "type": "物理",
       "action": "动作",
       "range": "远程",
-      "target": "范围",
+      "target": "单体",
       "damage": {
         "dice_count": 3,
         "dice_size": 8,
         "bonus_attr": "DEX",
         "type": "穿刺"
       },
-      "cooldown": 4,
-      "description": "3d8+DEX穿刺伤害。逢蒙挥落「尽夺天日」，濒死者的最后一线生机被彻底斩断。对残血敌人造成致命一击。",
       "effects": [
         {
-          "type": "处决",
+          "type": "穿透",
           "target": "敌方",
-          "desc": "对残血敌人造成致命一击"
+          "desc": "杀师之末"
+        },
+        {
+          "type": "重创",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "创伤持续加深"
         }
       ],
+      "cooldown": 4,
+      "description": "3d8+DEX 穿刺伤害。「逢蒙学射于羿，尽羿之道，思天下惟羿为愈己，于是杀羿」。穿透+重创2回合。",
       "saving_throw": {
         "attr": "DEX",
         "dc_formula": "8+PROF+DEX",

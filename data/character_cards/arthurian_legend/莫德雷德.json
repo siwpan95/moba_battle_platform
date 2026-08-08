@@ -19,10 +19,9 @@
   "difficulty": 4,
   "playstyle_tags": [
     "切入",
-    "持续伤害",
     "收割",
-    "爆发",
-    "高机动"
+    "潜行",
+    "爆发"
   ],
   "attributes": {
     "STR": {

@@ -1,0 +1,120 @@
+[
+  {
+    "name": "原初之能",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "原初之能"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 力场伤害。萨克蒂是宇宙的原初能量。一切力量都从她流出。强化2回合。"
+  },
+  {
+    "name": "雌雄同体",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "雌雄之合"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 力场伤害。没有沙克蒂，湿婆只是尸体。她让所有神“活”起来。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "幻力之网",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "混乱",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "幻力之网"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 力场伤害。摩耶（幻力）是她的延伸。她织出一张让敌人分不清真假的网。混乱1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "觉醒之震",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "觉醒之震"
+      },
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "无视护甲与护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 力场伤害。当库昆达里尼蛇能量觉醒时，整条脊柱都在震。战场也在震。击飞1回合+真实伤害。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "与夫同体",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "合一之居"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 法术伤害。她是奥梅特奥特尔的女性面。她和丈夫住在同一天里，从未分开过。增益2回合。"
+  },
+  {
+    "name": "万物之母",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "万神之母"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 法术伤害。所有神都是她生下来的。她不直接管任何一件事，但所有事都从她来。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "二元之护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "存在之壁"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 法术伤害。攻击她等于攻击存在本身。这件事没有先例，也没有成功的记录。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "造物之始",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "先于万物"
+      },
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "防御破绽暴露"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 法术伤害。她先于一切造物存在。她不参战，但她一退场整场都失去意义。处决+易伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

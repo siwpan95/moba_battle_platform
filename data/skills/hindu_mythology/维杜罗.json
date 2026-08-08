@@ -1,0 +1,113 @@
+[
+  {
+    "name": "智者之谏",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "智者之谏"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 法术伤害。他是持国与般度的同父异母弟。每次劝谏持国都无效。强化2回合。"
+  },
+  {
+    "name": "摩差护送",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "摩差之路"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 法术伤害。他帮助般度五子逃出紫胶宫。火里替他们留了后路。加速1回合。"
+  },
+  {
+    "name": "骰子之阻",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "干扰",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "骰子之阻"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 法术伤害。赌博大会上他试图阻止沙恭尼。没成功。但他试过。干扰1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "法言之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "法言之护"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 法术伤害。他被誉为“法之化身”。他的话能让听者冷静。净化+回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

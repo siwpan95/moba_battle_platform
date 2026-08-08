@@ -1,0 +1,127 @@
+[
+  {
+    "name": "蛇毒之咒",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "中毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "蛇毒之咒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 毒素伤害。杰特之王名意为“蛇”，他的法术以蛇毒为引。中毒2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "眼镜蛇之护",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "蛇神之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 毒素伤害。他以眼镜蛇之神瓦吉特之力筑起护身法阵。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "蛇蜕之术",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "反弹",
+        "target": "自身",
+        "duration": 2,
+        "desc": "蛇蜕之术"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 毒素伤害。他像蛇一样蜕去一层皮，旧皮留在原地承伤。反弹2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "杰特之裁",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "毒素"
+    },
+    "effects": [
+      {
+        "type": "剧毒",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "蛇王之咬"
+      },
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法移动"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 毒素伤害。《第一王朝蛇王石碑》：杰特以蛇之神力裁决敌军，被咬者三步之内必倒。剧毒2回合+束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

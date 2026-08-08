@@ -1,37 +1,36 @@
 {
   "card_id": "japanese_mythology:木曾义仲",
-  "legacy_card_id": "JAP-2008",
+  "legacy_card_id": "JAP-1067",
   "hero": {
     "name": "木曾义仲",
-    "name_en": "Kiso",
-    "alias": "木曾义仲",
-    "title": "木曾义仲"
+    "name_en": "Kiso Yoshinaka",
+    "alias": "木曾之众",
+    "title": "木曾之众"
   },
   "game": {
     "name": "Japanese Mythology",
     "name_cn": "日本神话",
-    "native_role": "射手",
-    "universal_role": "marksman",
-    "role_name": "射手",
-    "role_dnd_class": "游侠"
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
   },
   "source": "日本神话",
-  "difficulty": 2,
+  "difficulty": 3,
   "playstyle_tags": [
-    "护盾",
     "持续输出",
-    "核心",
-    "远程"
+    "突进",
+    "缠斗"
   ],
   "attributes": {
     "STR": {
-      "score": 12,
-      "modifier": 1,
+      "score": 17,
+      "modifier": 3,
       "name_cn": "力量"
     },
     "DEX": {
-      "score": 17,
-      "modifier": 3,
+      "score": 15,
+      "modifier": 2,
       "name_cn": "敏捷"
     },
     "CON": {
@@ -45,8 +44,8 @@
       "name_cn": "智力"
     },
     "WIS": {
-      "score": 15,
-      "modifier": 2,
+      "score": 12,
+      "modifier": 1,
       "name_cn": "感知"
     },
     "CHA": {
@@ -56,30 +55,30 @@
     }
   },
   "primary_abilities": [
-    "DEX",
-    "WIS"
+    "STR",
+    "DEX"
   ],
   "hit_die": 10,
   "stats_lv1": {
     "level": 1,
     "hp": 110,
     "hp_dnd_raw": 11,
-    "ac": 16,
+    "ac": 15,
     "physical_atk": 51,
     "magic_power": 23,
     "prof_bonus": 2,
-    "atk_speed_pct": 3.0,
-    "crit_chance": 16.0,
-    "crit_damage": 165.0,
-    "cdr_pct": 2.0,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
     "heal_bonus_pct": 0.0,
-    "cc_resist_pct": 2.0,
+    "cc_resist_pct": 1.0,
     "save_bonuses": {
-      "STR": 3,
-      "DEX": 5,
-      "CON": 1,
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
       "INT": -1,
-      "WIS": 2,
+      "WIS": 1,
       "CHA": 0
     }
   },
@@ -87,22 +86,22 @@
     "level": 18,
     "hp": 1300,
     "hp_dnd_raw": 130,
-    "ac": 16,
+    "ac": 15,
     "physical_atk": 63,
     "magic_power": 31,
     "prof_bonus": 6,
-    "atk_speed_pct": 3.0,
-    "crit_chance": 16.0,
-    "crit_damage": 165.0,
-    "cdr_pct": 2.0,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
     "heal_bonus_pct": 0.0,
-    "cc_resist_pct": 2.0,
+    "cc_resist_pct": 1.0,
     "save_bonuses": {
-      "STR": 7,
-      "DEX": 9,
-      "CON": 1,
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
       "INT": -1,
-      "WIS": 2,
+      "WIS": 1,
       "CHA": 0
     }
   },
@@ -113,110 +112,113 @@
   },
   "skills": [
     {
-      "name": "疾风连弹",
+      "name": "木曾之众",
       "key": "Q",
       "type": "物理",
       "action": "动作",
-      "range": "远程",
-      "target": "直线",
-      "damage": {
-        "dice_count": 1,
-        "dice_size": 10,
-        "bonus_attr": "DEX",
-        "type": "穿刺"
-      },
-      "cooldown": 0,
-      "description": "1d10+DEX穿刺伤害。木曾义仲散出「疾风连弹」，敌之感官被搅乱，脚步一寸寸沉滞下去。被箭风削减速，移速下降。",
-      "effects": [
-        {
-          "type": "减速",
-          "target": "敌方",
-          "desc": "被箭风削减速，移速下降",
-          "duration": 2
-        }
-      ],
-      "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
-        "on_save": "半伤"
-      }
-    },
-    {
-      "name": "战旗护阵",
-      "key": "W",
-      "type": "混合",
-      "action": "动作",
-      "range": "自身",
-      "target": "自身",
-      "damage": {
-        "dice_count": 2,
-        "dice_size": 6,
-        "bonus_attr": "DEX",
-        "type": "护盾"
-      },
-      "cooldown": 1,
-      "description": "2d6+DEX护盾伤害。木曾义仲张开「战旗护阵」，光壁在身周凝成，来袭之伤尽碎于其上。获得护盾庇护。",
-      "effects": [
-        {
-          "type": "护盾",
-          "target": "自身",
-          "desc": "获得护盾庇护"
-        }
-      ]
-    },
-    {
-      "name": "踏破之矢",
-      "key": "E",
-      "type": "物理",
-      "action": "动作",
-      "range": "远程",
+      "range": "近战",
       "target": "单体",
       "damage": {
         "dice_count": 1,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
+        "dice_size": 10,
+        "bonus_attr": "STR",
         "type": "穿刺"
       },
-      "cooldown": 2,
-      "description": "1d8+DEX穿刺伤害。木曾义仲以「踏破之矢」精准凿开敌之甲缝，护体之力应声瓦解。护甲被洞穿，防御大减。",
+      "effects": [
+        {
+          "type": "增援",
+          "target": "自身",
+          "duration": 2,
+          "desc": "木曾之众"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 穿刺伤害。他是源义仲，号木曾，举兵信浓，响应赖朝。增援2回合。"
+    },
+    {
+      "name": "长锋之枪",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
       "effects": [
         {
           "type": "破甲",
           "target": "敌方",
-          "desc": "护甲被洞穿，防御大减"
+          "duration": 2,
+          "desc": "长锋之枪"
         }
       ],
+      "cooldown": 1,
+      "description": "2d8+STR 穿刺伤害。他使长锋枪，马上挥舞如风，无人能挡。破甲2回合。",
       "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
         "on_save": "半伤"
       }
     },
     {
-      "name": "乱军突阵",
+      "name": "入京之急",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "加速",
+          "target": "自身",
+          "duration": 1,
+          "desc": "入京之急"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 穿刺伤害。他急行入京，平家弃都西逃，京中震动。加速1回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "栗津之死",
       "key": "R",
       "type": "物理",
       "action": "动作",
-      "range": "远程",
-      "target": "范围",
+      "range": "近战",
+      "target": "单体",
       "damage": {
-        "dice_count": 3,
-        "dice_size": 8,
-        "bonus_attr": "DEX",
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
         "type": "穿刺"
       },
-      "cooldown": 4,
-      "description": "3d8+DEX穿刺伤害。木曾义仲倾尽「乱军突阵」，八百万神的息见证了这一记终结之斩。对残血敌人造成致命一击。",
       "effects": [
         {
           "type": "处决",
           "target": "敌方",
-          "desc": "对残血敌人造成致命一击"
+          "desc": "栗津之死"
         }
       ],
+      "cooldown": 4,
+      "description": "2d10+STR 穿刺伤害。他在栗津战死，巴御前为最后一阵，壮烈而亡。处决。",
       "saving_throw": {
-        "attr": "DEX",
-        "dc_formula": "8+PROF+DEX",
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
         "on_save": "半伤"
       }
     }

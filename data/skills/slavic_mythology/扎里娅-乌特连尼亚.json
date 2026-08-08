@@ -1,0 +1,112 @@
+[
+  {
+    "name": "开晓之光",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "开晓纳光"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 光耀伤害。她替黎明把第一缕光推开。光到的顺序她说了算。增益2回合。"
+  },
+  {
+    "name": "露珠之洒",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "晨露之润"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 光耀伤害。她走过草尖，草上就结露。露是给活人的水。回复。"
+  },
+  {
+    "name": "退夜鬼之矢",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "光矢破夜"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 光耀伤害。她射的箭专破夜鬼。箭是光的，夜鬼怕光。恐惧1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "朝阳穿云",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "穿云透日"
+      },
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "对残血目标造成额外伤害"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。她把云射穿一个洞。洞里透出的是真正的朝阳。穿透+处决。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

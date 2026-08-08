@@ -1,0 +1,126 @@
+[
+  {
+    "name": "双斧旋斩",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "双斧重创"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。阿纳特双手各持一柄弯头战斧，旋转起来像一片血色的风车。重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "头颅串饰",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 2,
+        "desc": "颈血反哺"
+      },
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "能力被强化"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。她把敌人的头颅穿成项链戴上——每加一颗，她的力气就涨一分。吸血2回合+强化2回合。"
+  },
+  {
+    "name": "布托之冲锋",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "盾墙被踏碎"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。下埃及的女战神不等人列阵完毕，她直接踩着前排的盾墙冲过去。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "阿娜特之盛宴",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "血宴狂化"
+      },
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤口持续流失生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。《阿娜特史诗》：她沐浴在敌血中，从膝盖以下浸在红色里，这是她的盛宴。狂暴2回合+持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "如意神牛",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "如意牛之乳"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 法术伤害。极裕拥有一头要什么给什么的如意牛。把敌人也喂饱了再说。回复。"
+  },
+  {
+    "name": "七仙之首",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "王师之威"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 法术伤害。他是七仙人中的领袖，论资历在场无人能及。强化2回合。"
+  },
+  {
+    "name": "咒语回护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "咒语回护"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 法术伤害。众友仙人曾放罗刹来攻，他用一道咒就把整座道场围住。护盾2回合。"
+  },
+  {
+    "name": "永生之咒",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "永生之咒"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 法术伤害。《梨俱吠陀》记他与众友斗法数百年不死。他把不死的窍门给了队友。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

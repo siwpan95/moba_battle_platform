@@ -1,0 +1,122 @@
+[
+  {
+    "name": "金手之触",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "金手激发"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 光耀伤害。《梨俱吠陀》称萨维特利有一双金手，触者皆被激发。增益2回合。"
+  },
+  {
+    "name": "三界驱驰",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被驱驰定住"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 光耀伤害。他驾驭三界之间，日落前让所有事物各归其位。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "日行之前",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "光路刺目"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 光耀伤害。他在太阳之前先行，把路照亮。能见度因此提升。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "激发万物",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "万物激发"
+      },
+      {
+        "type": "攻速强化",
+        "target": "自身",
+        "duration": 1,
+        "desc": "攻击速度提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 光耀伤害。他负责让人醒来、让种子发芽、让咒语生效。今天他激发的是杀意。狂暴2回合+攻速强化1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,231 @@
+{
+  "card_id": "Arabian_Nights:阿布·基尔",
+  "legacy_card_id": "ARA-1120",
+  "hero": {
+    "name": "阿布·基尔",
+    "name_en": "Abu Kir",
+    "alias": "染匠骗子",
+    "title": "染匠骗子"
+  },
+  "game": {
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
+    "native_role": "刺客",
+    "universal_role": "assassin",
+    "role_name": "刺客",
+    "role_dnd_class": "游荡者"
+  },
+  "source": "一千零一夜",
+  "difficulty": 4,
+  "playstyle_tags": [
+    "切入",
+    "持续伤害",
+    "收割",
+    "爆发"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "DEX"
+  ],
+  "hit_die": 8,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 90,
+    "hp_dnd_raw": 9,
+    "ac": 14,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 5,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1110,
+    "hp_dnd_raw": 111,
+    "ac": 14,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 3.0,
+    "crit_chance": 16.0,
+    "crit_damage": 165.0,
+    "cdr_pct": 0.0,
+    "heal_bonus_pct": 4.0,
+    "cc_resist_pct": 0.0,
+    "save_bonuses": {
+      "STR": 1,
+      "DEX": 9,
+      "CON": 1,
+      "INT": 5,
+      "WIS": 0,
+      "CHA": 2
+    }
+  },
+  "growth_per_level": {
+    "hp": 60,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "假药惑众",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "中毒",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "假药惑众"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d8+DEX 毒素伤害。他配的药方看似灵验，实则掺了慢性的毒。中毒2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "谋财害命",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "谋财害命"
+        },
+        {
+          "type": "沉默",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "无法施放技能"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+DEX 毒素伤害。他骗同伴上船，半夜把人推下海。处决+沉默1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "冒名顶替",
+      "key": "E",
+      "type": "物理",
+      "action": "附赠动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "潜行",
+          "target": "自身",
+          "duration": 1,
+          "desc": "冒名顶替"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d10+DEX 毒素伤害。他偷了同伴的身份，在异国招摇撞骗。潜行1回合。"
+    },
+    {
+      "name": "毒染一城",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 3,
+        "dice_size": 8,
+        "bonus_attr": "DEX",
+        "type": "毒素"
+      },
+      "effects": [
+        {
+          "type": "剧毒",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "毒染一城"
+        }
+      ],
+      "cooldown": 4,
+      "description": "3d8+DEX 毒素伤害。他的染坊排出的毒水，染黑了半条河。剧毒2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+DEX",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

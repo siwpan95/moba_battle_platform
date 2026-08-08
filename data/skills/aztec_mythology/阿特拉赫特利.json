@@ -1,0 +1,120 @@
+[
+  {
+    "name": "深渊之名",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "深渊之滞"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 力场伤害。他的名字和「深水」有关。他住在湖和海最深的地方。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "深水之压",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "深压之护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 力场伤害。深水压在身上，动一下都很费劲。这是他的主场。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "水渊之护",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "水渊之壁"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 力场伤害。他用深水做盾。深水里什么都砍不透。护盾2回合。"
+  },
+  {
+    "name": "沉渊之终",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "沉渊之终"
+      },
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "无法移动"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 力场伤害。他把人拖进深渊。到一定深度之后人就不再上来了。处决+束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

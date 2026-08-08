@@ -1,0 +1,110 @@
+[
+  {
+    "name": "北方水龟",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "北方水龟"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 寒冷伤害。他是十二神将之一，居子位，北方玄武。防御2回合。"
+  },
+  {
+    "name": "龟甲之坚",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "龟甲之坚"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 寒冷伤害。他龟甲之坚，无人能破，刀枪不入。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "蛇龟相缠",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "反弹",
+        "target": "自身",
+        "duration": 2,
+        "desc": "蛇龟相缠"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 寒冷伤害。他本是龟蛇相缠之形，攻防一体。反弹2回合。"
+  },
+  {
+    "name": "水德之镇",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "水德之镇"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 寒冷伤害。北方水德由他主持，冬藏万物，不动如山。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "忘川之主",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "奈何之守"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 黯蚀伤害。她守奈何桥，给过往亡魂递一碗汤。增益2回合。"
+  },
+  {
+    "name": "孟婆汤",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "忘川之汤"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 黯蚀伤害。喝下此汤前尘尽忘，再无挂碍，亦无恩怨。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "遗忘之碗",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "洗去执念"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 黯蚀伤害。她的汤能洗去一切记忆与执念，了却尘缘。净化。"
+  },
+  {
+    "name": "奈何桥",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "桥上无回"
+      },
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得吸收伤害的护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 黯蚀伤害。桥上无回头，过了桥即入轮回，再返不得。减速2回合+护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

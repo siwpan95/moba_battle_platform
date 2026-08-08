@@ -1,0 +1,119 @@
+[
+  {
+    "name": "三生变换",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三生变换"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。《两兄弟的故事》：巴塔化为公牛、又化为佩鲁树、又化为精子重生。强化2回合。"
+  },
+  {
+    "name": "金角挑飞",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被金角挑起"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。他的金角比刀刃更锋利，挑起来时带出一串血珠。击飞1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "佩鲁树影",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "藏入树芯"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。他藏在佩鲁树的树芯里，从外面看只是一棵普通的树。隐身1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "命运之条",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "命运之条"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "对低生命目标造成致命一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。巴塔的命运被刻在七根大麦条上，烧掉一根他就弱一分——但他从不让人靠近。标记2回合+斩杀。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

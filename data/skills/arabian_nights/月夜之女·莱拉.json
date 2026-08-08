@@ -1,0 +1,107 @@
+[
+  {
+    "name": "月华之愈",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "月华之愈"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 冰冷伤害。她借月光洒在友军身上，伤口便合上了。治疗。"
+  },
+  {
+    "name": "月晕致盲",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "月晕致盲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 冰冷伤害。她一抬手，月晕让敌人眼前一花。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "夜风之抚",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "夜风之抚"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 冰冷伤害。她呼出一口夜风，友军的疲惫便消了。回复。"
+  },
+  {
+    "name": "月华之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "月华之护"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 冰冷伤害。她在友军周身裹上一层月光，挡住夜袭。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

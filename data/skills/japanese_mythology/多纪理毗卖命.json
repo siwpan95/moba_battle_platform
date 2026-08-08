@@ -1,0 +1,103 @@
+[
+  {
+    "name": "宗像三女神",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "宗像长女"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 寒冷伤害。她是宗像三女神长女，海神之女，天孙之妃。增益2回合。"
+  },
+  {
+    "name": "福冈之祀",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "海路守护"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 寒冷伤害。福冈宗像大社祭的就是她。海路平安由她保。护盾2回合。"
+  },
+  {
+    "name": "奥津岛之镇",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "奥津岛之镇"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 寒冷伤害。她镇守奥津岛，海上渔民都向她祈祷。回复。"
+  },
+  {
+    "name": "天孙之妃",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "天孙之妃"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 寒冷伤害。她是迩迩艺命的妃子，生出三世代皇统。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

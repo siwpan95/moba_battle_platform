@@ -1,0 +1,119 @@
+[
+  {
+    "name": "地之蛙",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "蛙鸣之兆"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 力场伤害。它是特拉尔特库特利的蛙。地一动它就叫，叫完地就真动了。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "远跃之射",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "远跃之冲"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 力场伤害。它从远处跃过来。跃的距离比箭的射程还远。冲锋1回合。"
+  },
+  {
+    "name": "雨前之鸣",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "雨前之鸣"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 力场伤害。它在雨前叫得最响。这是它的本事，也是它的信号。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "一跃之终",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一跃之终"
+      },
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被击倒在地"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 力场伤害。它最后落在一个目标身上。被落的那个直接被压平了。处决+倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

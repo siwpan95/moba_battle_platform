@@ -1,0 +1,107 @@
+[
+  {
+    "name": "鹰城之护",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "鹰城之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。涅亨是上埃及最古老的圣城，城之灵化为护身法阵。护盾2回合。"
+  },
+  {
+    "name": "荷鲁斯之佑",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "荷鲁斯之佑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。涅亨供奉荷鲁斯，神之佑化为治愈之力。治疗。"
+  },
+  {
+    "name": "圣隼之翔",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "圣隼之翔"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。圣隼从涅亨起飞，为队友带来加速之风。加速1回合。"
+  },
+  {
+    "name": "鹰城之复",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "鹰城之复"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。《涅亨城市铭文》：鹰城历经千年而不衰，她也能让倒下的人重新站起。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "罗刹之祖",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "罗刹之祖"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 黯蚀伤害。毗婆罗是所有罗刹的始祖。罗刹族的力量源自他。增援2回合。"
+  },
+  {
+    "name": "幻力之焰",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "幻力之焰"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 黯蚀伤害。他吐出的焰是黑的。被烧到的人灵魂都痛。痛苦2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "因陀罗之敌",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "因陀罗之创"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 黯蚀伤害。他曾与因陀罗争夺天界。失败了，但咬了因陀罗一口。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "日蚀之刻",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "黯蚀"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "日蚀之刻"
+      },
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "进入狂暴状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 黯蚀伤害。他在日蚀时力量最强。太阳被遮那一刻他出手。真实伤害+狂暴2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

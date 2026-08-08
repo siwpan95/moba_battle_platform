@@ -1,0 +1,121 @@
+[
+  {
+    "name": "旋风凝身",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "旋风凝身"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 电击伤害。她自一阵旋风中现身，衣袂飘飘。加速1回合。"
+  },
+  {
+    "name": "风刃割肤",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "重伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "风刃割肤"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 电击伤害。她一挥手，几道看不见的风刃割向敌人。重伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "风墙护体",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "风墙护体"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 电击伤害。她召出一道风墙，把敌人的攻击全部弹开。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "龙卷之噬",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "龙卷之噬"
+      },
+      {
+        "type": "击飞",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被抛向空中"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 电击伤害。她召起一道龙卷，把敌人卷入云端再摔下。处决+击飞1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

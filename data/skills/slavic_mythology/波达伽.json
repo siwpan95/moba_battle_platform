@@ -1,0 +1,120 @@
+[
+  {
+    "name": "风调之掌",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "风调之佑"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 冰冷伤害。他管风、雨和渔获。出海前给他留一份，回来时船就沉一点。护盾2回合。"
+  },
+  {
+    "name": "雾锁海湾",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "海湾浓雾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 冰冷伤害。他一生气海湾就起雾。雾里看不清自己的手。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "冰上设网",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "冰网缠足"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 冰冷伤害。冬天他在冰上凿洞下网。网里有时候是鱼，有时候是别的东西。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "收冬之贡",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "冬末收贡"
+      },
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "受到的伤害降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 冰冷伤害。冬天最后一网拉上来什么，就是他今年要的贡。处决+减伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

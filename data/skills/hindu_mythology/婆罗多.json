@@ -1,0 +1,114 @@
+[
+  {
+    "name": "拒位之贤",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "拒位之贤"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。罗摩被流放时，他拒绝继承王位。把罗摩的鞋放上王座。护盾2回合。"
+  },
+  {
+    "name": "鞋之治",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "鞋之治"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。他以罗摩之鞋代治十四年。鞋的权威等于罗摩本人。强化2回合。"
+  },
+  {
+    "name": "履约还政",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "履约还政"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。十四年期满，他亲自迎罗摩回城。诺言履行到底。净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "沙如质那之兄",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "军威之压"
+      },
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "向前突进"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。他率领整支军队去森林请罗摩回来。军队压境只为请人。压制1回合+冲锋1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

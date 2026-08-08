@@ -1,0 +1,109 @@
+[
+  {
+    "name": "玉作之祖",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "玉作之祖"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他铸造八尺琼勾玉，玉匠氏族从他这里论辈分。增益2回合。"
+  },
+  {
+    "name": "勾玉附灵",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "附魔",
+        "target": "自身",
+        "duration": 2,
+        "desc": "勾玉附灵"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。勾玉是神灵寄宿之物。他做的玉能装下神力。附魔2回合。"
+  },
+  {
+    "name": "玉光引目",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "玉光引目"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。天岩户前，他将玉串挂在树上，吸引天照的目光。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "神器之玉",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "神器守护"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。八尺琼勾玉后来成为三种神器之一，世代供奉于皇居。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

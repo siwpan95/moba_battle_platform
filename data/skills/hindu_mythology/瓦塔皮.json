@@ -1,0 +1,117 @@
+[
+  {
+    "name": "变形为羊",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "变形为羊"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 酸蚀伤害。瓦塔皮能变成一只羊。被“吃掉”后从腹中撕开人。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "再生之躯",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "痛苦",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "再生之躯"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 酸蚀伤害。他被吃掉后能从腹中重组。再生的过程极痛。痛苦2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "双魔之计",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双魔之计"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 酸蚀伤害。他与伊力瓦拉是兄弟。哥哥扮路人，他扮羊。增援2回合。"
+  },
+  {
+    "name": "阿竭之消",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "真实伤害",
+        "target": "敌方",
+        "desc": "阿竭之消"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "对低生命目标造成致命一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 酸蚀伤害。阿竭斯提亚仙人一口把他消化了。这次没再生出来。真实伤害+斩杀。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

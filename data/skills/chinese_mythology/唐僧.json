@@ -1,0 +1,108 @@
+[
+  {
+    "name": "金蝉子",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "十世修行"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他是如来二弟子金蝉子转世，十世修行的高僧。增益2回合。"
+  },
+  {
+    "name": "锦襕袈裟",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "袈裟护体"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。唐太宗赐他锦襕袈裟、九环锡杖，护体不沾尘。护盾2回合。"
+  },
+  {
+    "name": "紧箍之师",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "持戒之僧"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。他念紧箍咒管束孙悟空，师徒西行十万八千里。净化。"
+  },
+  {
+    "name": "取经证道",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "证道成佛"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "属性获得提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。历九九八十一难，他终于灵山取得真经，证旃檀功德佛。复活+增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

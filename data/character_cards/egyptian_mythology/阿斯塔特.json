@@ -1,0 +1,234 @@
+{
+  "card_id": "egyptian_mythology:阿斯塔特",
+  "legacy_card_id": "EGY-1071",
+  "hero": {
+    "name": "阿斯塔特",
+    "name_en": "Astarte",
+    "alias": "战爱双面",
+    "title": "战爱双面"
+  },
+  "game": {
+    "name": "Egyptian Mythology",
+    "name_cn": "埃及神话",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "埃及神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "突进",
+    "缠斗",
+    "钩子"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "战车驰援",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "冲锋",
+          "target": "自身",
+          "duration": 1,
+          "desc": "战车突进"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 挥砍伤害。她驾着两匹白马拉的战车冲进战场，车毂上挂满了敌人的耳朵。冲锋1回合。"
+    },
+    {
+      "name": "欲念缠锋",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "魅惑",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被欲念夺神"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+STR 挥砍伤害。阿斯塔特的刃上淬着爱欲之蜜，被割者会忘了自己在打仗。魅惑1回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    },
+    {
+      "name": "阿瓦利斯驻防",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "攻击增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "要塞火力"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 挥砍伤害。三角洲要塞由她镇守，城墙上射下的箭比涨潮还密。攻击增益2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "舍赫姆之怒",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "挥砍"
+      },
+      "effects": [
+        {
+          "type": "恐惧",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "战阵溃散"
+        },
+        {
+          "type": "狂暴",
+          "target": "自身",
+          "duration": 2,
+          "desc": "进入狂暴状态"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 挥砍伤害。《亡灵书》第 147 篇：她以“舍赫姆”之力统御战阵，一念之间敌阵溃散。恐惧1回合+狂暴2回合。",
+      "saving_throw": {
+        "attr": "WIS",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

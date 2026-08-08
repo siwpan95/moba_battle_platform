@@ -1,0 +1,107 @@
+[
+  {
+    "name": "阶梯之护",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "阶梯之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。左塞尔的阶梯金字塔以六层石阶筑成，石阶化为护身法阵。护盾2回合。"
+  },
+  {
+    "name": "萨卡拉之筑",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "萨卡拉法阵"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。他在萨卡拉建起人类第一座石造巨构，巨构化为法阵。强化2回合。"
+  },
+  {
+    "name": "伊姆霍特普之佑",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "伊姆霍特普之佑"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。他的宰相伊姆霍特普为他设计金字塔，宰相的智慧化为加护。治疗。"
+  },
+  {
+    "name": "阶梯之升",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "阶梯之升"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。《左塞尔阶梯金字塔铭文》：他沿六层阶梯升天，他也能把队友托举一层。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

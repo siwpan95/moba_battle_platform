@@ -1,0 +1,107 @@
+[
+  {
+    "name": "牛群之佑",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "牛群之佑"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。他管牛羊。从前家里牛病了，往他像前放一撮毛。护盾2回合。"
+  },
+  {
+    "name": "化圣之蛇",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "蛇之余威"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。基督化后维列斯变成了他。所以他还带着一点蛇的脾气。增益2回合。"
+  },
+  {
+    "name": "冬末之节",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "冬末之馈"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。冬末他的节日上，各家把最好的一块肉留给他。回复。"
+  },
+  {
+    "name": "还牛之约",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "还牛之约"
+      },
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "恢复生命值"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。牛丢了的人去他像前说一声。三天内牛自己回来。复活+治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "name": "夹龙山主",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "飞云洞天"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 法术伤害。他是阐教十二金仙之一，居夹龙山飞云洞。增益2回合。"
+  },
+  {
+    "name": "降魔杵",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "破甲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "降魔之杵"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 法术伤害。他传韦护降魔杵，弟子以此杵立功封神。破甲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "收韦护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "高徒下山"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 法术伤害。他是韦护之师，命弟子下山助周伐商。增援2回合。"
+  },
+  {
+    "name": "万仙阵",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "金仙之护"
+      },
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "属性获得提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 法术伤害。万仙阵中他率弟子力战，全身而退。护盾2回合+增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

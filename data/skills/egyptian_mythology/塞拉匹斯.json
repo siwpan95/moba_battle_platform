@@ -1,0 +1,118 @@
+[
+  {
+    "name": "双冠之光",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "双冠之力"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 光耀伤害。塞拉匹斯戴希腊-埃及混搭的 modius 篮冠，篮里装着两地的丰收。强化2回合。"
+  },
+  {
+    "name": "亚历山大圣坛",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "圣坛之焰"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 光耀伤害。他在亚历山大港的圣坛之火从不熄灭，火光射出的箭就是火焰本身。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "萨拉皮斯之篮",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "篮中之粮"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 光耀伤害。他头顶的 modius 篮里装着冥府与现世的一切粮食。回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "托勒密之合",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "双界之矢"
+      },
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。《托勒密一世敕令》：塞拉匹斯融合奥西里斯与哈迪斯，他的箭同时射向两个世界。穿透+标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "晨星之嗣",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "晨星之嗣"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 光耀伤害。他是晨星神的儿子。他的箭和他的父亲一样准时。增益2回合。"
+  },
+  {
+    "name": "金星之射",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "金星之射"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 光耀伤害。他的箭在金星升起时最准。这个时间窗口很短。暴击2回合。"
+  },
+  {
+    "name": "五年周期",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "周期之锁"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 光耀伤害。他的射击有周期。八年一个轮回，每次都一样准。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "破晓之终",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "破晓之终"
+      },
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "视野被夺"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。他在破晓时出最后一箭。那一箭带着第一缕光。处决+致盲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

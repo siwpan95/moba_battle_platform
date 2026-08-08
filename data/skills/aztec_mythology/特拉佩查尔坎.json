@@ -1,0 +1,108 @@
+[
+  {
+    "name": "执杵之名",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "执杵之名"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她手持一根舂谷杵。杵既是工具也是武器，她两者都用。增益2回合。"
+  },
+  {
+    "name": "舂谷之礼",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "舂谷之礼"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她主持舂谷的仪式。舂完的谷才能吃，这是规矩。回复。"
+  },
+  {
+    "name": "杵之护",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "杵之护"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她把杵横在身前做盾。这根杵比一般的盾硬。护盾2回合。"
+  },
+  {
+    "name": "一杵之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一杵之终"
+      },
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被击倒在地"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。她最后用杵砸下。这一砸能碎石。处决+倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

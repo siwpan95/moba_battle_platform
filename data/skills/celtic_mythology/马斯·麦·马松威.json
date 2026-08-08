@@ -1,0 +1,121 @@
+[
+  {
+    "name": "持足之约",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "持足之约"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 法术伤害。他不战时双脚必置于少女膝上，否则必死。这规矩他守了一辈子。护盾2回合。"
+  },
+  {
+    "name": "变形之罚",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "石化",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "变形之罚"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 法术伤害。两个侄子强暴了持足少女戈沃因。他把两人变成鹿、猪、狼，各配一对。石化1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "杖试之处",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "杖试揭穿"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 法术伤害。他用魔杖试阿里安罗德之处子之身。她当场生下两个儿子。震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "花造之妇",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "法术"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "花造之妻"
+      },
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "创伤持续加深"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 法术伤害。他和格温迪恩用橡花、金雀花、绣线菊造出布洛德韦德，给勒夫做妻。增益2回合+重创2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

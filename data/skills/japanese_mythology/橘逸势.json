@@ -1,0 +1,108 @@
+[
+  {
+    "name": "三笔之一",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "暴击",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三笔之一"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 力场伤害。他是平安三笔之一，书法名动天下，笔如剑。暴击2回合。"
+  },
+  {
+    "name": "笔如剑",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "附魔",
+        "target": "自身",
+        "duration": 2,
+        "desc": "笔如剑"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 力场伤害。他的笔如剑，所书皆符，符成即灵。附魔2回合。"
+  },
+  {
+    "name": "入唐之学",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "入唐之学"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 力场伤害。他随遣唐使入唐，学书法与秘术，归国授徒。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "一笔成符",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "一笔成符"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 力场伤害。他一笔成符，符成即灵，敌手中符即败。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

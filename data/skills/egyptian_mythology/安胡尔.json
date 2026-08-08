@@ -1,0 +1,130 @@
+[
+  {
+    "name": "天索套猎",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被天索套住"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。安胡尔以猎手之索套住天空中的猎物，被套中者无法逃离他的视野。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "提尼斯之矛",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "长矛贯穿"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。上埃及军神的长矛从不投出——他习惯刺穿后才松手。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "狮獒冲阵",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "冲锋",
+        "target": "自身",
+        "duration": 1,
+        "desc": "狮獒突进"
+      },
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "移动速度提升"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。安胡尔化身披甲狮獒，在布西里斯的战场上冲开第一条血路。冲锋1回合+加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "拉之归来",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被拖行碾过"
+      },
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "进入狂暴状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。《金字塔铭文》第 558 节：安胡尔从努比亚带回远行的拉，途中挡路者皆被拖行。倒地1回合+狂暴2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

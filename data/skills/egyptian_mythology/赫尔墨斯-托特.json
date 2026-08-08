@@ -1,0 +1,124 @@
+[
+  {
+    "name": "双蛇杖之矢",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "双蛇缚矢"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+DEX 力场伤害。赫尔墨斯-托特以双蛇杖化弓，杖上的两条蛇就是弓弦。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "抄录之眼",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "抄录之眼"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+DEX 力场伤害。他同时是希腊与埃及的书记之神，他抄录下你的每一个动作。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "圣鹭之翼",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "攻速强化",
+        "target": "自身",
+        "duration": 1,
+        "desc": "圣鹭之速"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+DEX 力场伤害。他化身为圣鹭从高处俯瞰，整片战场尽收眼底。攻速强化1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "三重智慧之矢",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "三重之矢"
+      },
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "防御破绽暴露"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 力场伤害。《赫尔墨斯文献》：赫尔墨斯-托特的三重智慧化为三矢齐发。穿透+易伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

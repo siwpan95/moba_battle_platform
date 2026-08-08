@@ -1,0 +1,121 @@
+[
+  {
+    "name": "泥沼凝形",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "泥沼凝形"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 酸蚀伤害。她从泥沼中升起，浑身裹着黑色的烂泥。护盾2回合。"
+  },
+  {
+    "name": "流泥陷足",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "流泥陷足"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 酸蚀伤害。她脚下的土地变成泥沼，把人往下吸。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "酸泥灼肤",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "酸泥灼肤"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 酸蚀伤害。她甩出一团酸泥，皮肤沾到便开始溃烂。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "泥葬之咒",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "酸蚀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "泥葬之咒"
+      },
+      {
+        "type": "禁锢",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被困于原地"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 酸蚀伤害。她让泥沼从四面合拢，把敌人吞入地底。处决+禁锢1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

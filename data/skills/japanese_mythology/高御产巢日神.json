@@ -1,0 +1,103 @@
+[
+  {
+    "name": "高天原之枢",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "造化三神之枢"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 光耀伤害。《古事记》载他与天之御中主、神产巢日共为造化三神，居高天原之顶。增益2回合。"
+  },
+  {
+    "name": "化生万神",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "化为父母二神"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 光耀伤害。他独自化生五柱神，又与神产巢日共化为男女二神，万物自此有父母。强化2回合。"
+  },
+  {
+    "name": "思金之父",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "智神降生"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 光耀伤害。思兼神是他的儿子。智神一脉从他这里开始，谋略自有出处。增援2回合。"
+  },
+  {
+    "name": "育天孙之命",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "造化之育"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 光耀伤害。天孙降临时，他与神产巢日受命护育迩迩艺命，掌造化之育。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

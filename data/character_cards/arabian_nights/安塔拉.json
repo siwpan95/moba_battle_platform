@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:安塔拉",
-  "legacy_card_id": "ONE-2026",
+  "card_id": "Arabian_Nights:安塔拉",
+  "legacy_card_id": "ARA-1081",
   "hero": {
     "name": "安塔拉",
     "name_en": "Antarah",
@@ -8,8 +8,8 @@
     "title": "诗剑骑士"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "射手",
     "universal_role": "marksman",
     "role_name": "射手",

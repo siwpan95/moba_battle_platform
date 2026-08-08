@@ -1,0 +1,121 @@
+[
+  {
+    "name": "火炉之主",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "灶火之护"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 火焰伤害。她是火炉和火山女神。每家的灶火归她管，金匠也拜她。护盾2回合。"
+  },
+  {
+    "name": "辣椒之食",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "辣椒之火"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 火焰伤害。她吃了辣椒被罚。从此她管的东西里多了辣椒这一项。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "火山之怒",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "火山掀顶"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 火焰伤害。火山喷发归她管。她发火时整座山都跟着抖。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "闻烟断运",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "灶烟之判"
+      },
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被标记，受到的伤害提升"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 火焰伤害。她能从灶烟的形状看出一家人的运势。她看得很准，但不说。处决+标记2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

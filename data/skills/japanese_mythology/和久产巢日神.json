@@ -1,0 +1,102 @@
+[
+  {
+    "name": "海神之子",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "海宫之子"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 寒冷伤害。他是绵津见之子，丰玉姬之兄，居于海宫。增援2回合。"
+  },
+  {
+    "name": "食神之父",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "食神补全"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 寒冷伤害。大宜都比卖被杀后，他化身食物神，补全食源。强化2回合。"
+  },
+  {
+    "name": "丰熟之水",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "丰熟之水"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 寒冷伤害。他管海上丰熟。水与食的关联在他这里成立。回复。"
+  },
+  {
+    "name": "海陆之桥",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "海陆之桥"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 寒冷伤害。海宫与陆地的通路，由他来维系，潮汐听他号令。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

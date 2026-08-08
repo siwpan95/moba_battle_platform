@@ -1,0 +1,110 @@
+[
+  {
+    "name": "那罗延之伴",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "那罗延之伴"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 穿刺伤害。那罗与那罗延是不分的一对。他喊一声，那罗延就到。增援2回合。"
+  },
+  {
+    "name": "苦行之力",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "苦行之力"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 穿刺伤害。他在雪山苦行千年，积下的力量一击释放。狂暴2回合。"
+  },
+  {
+    "name": "神弓在手",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "神弓之响"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 穿刺伤害。他有一张只属于他的神弓。弓弦一响，敌人退三步。击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "不败之咒",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "穿刺"
+    },
+    "effects": [
+      {
+        "type": "免疫控制",
+        "target": "自身",
+        "duration": 1,
+        "desc": "不败之咒"
+      },
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "能力被强化"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 穿刺伤害。《摩诃婆罗多》说他与黑天是不败组合。今天仍不败。免疫控制1回合+强化2回合。"
+  }
+]

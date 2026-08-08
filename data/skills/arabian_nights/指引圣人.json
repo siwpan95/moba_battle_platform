@@ -1,0 +1,119 @@
+[
+  {
+    "name": "指路之光",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "指路之光"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 光耀伤害。他在黑暗中点一盏灯，迷路的人便能找到方向。净化。"
+  },
+  {
+    "name": "预知之眼",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "标记",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "预知之眼"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 光耀伤害。他能看见敌人接下来要做的事。标记2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "圣言宽慰",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "圣言宽慰"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 光耀伤害。他一句话便让恐惧中的人镇定下来。治疗。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "指引之裁",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "指引之裁"
+      },
+      {
+        "type": "易伤",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "防御破绽暴露"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 光耀伤害。他指出敌人的破绽，让同伴一刀了结。处决+易伤2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

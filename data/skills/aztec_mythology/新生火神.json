@@ -1,0 +1,113 @@
+[
+  {
+    "name": "新火之名",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "新火之燃"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 火焰伤害。他管五十二年一次的新火仪式。那一夜所有火都要灭，然后重新点。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "灭旧之礼",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "驱散",
+        "target": "自身",
+        "desc": "灭旧之礼"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 火焰伤害。他先把旧火灭掉。旧火不灭，新火点不着。驱散。"
+  },
+  {
+    "name": "点新之火",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "点新之火"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 火焰伤害。他在俘虏胸口点新火。这一簇火是所有火的母火。增益2回合。"
+  },
+  {
+    "name": "新火之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "火焰"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "新火之终"
+      },
+      {
+        "type": "持续伤害",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "伤口持续流失生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 火焰伤害。新火点着之后旧的就彻底过去了。这是他的判词，也是他的仪式。处决+持续伤害2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

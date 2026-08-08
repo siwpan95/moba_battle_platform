@@ -1,0 +1,113 @@
+[
+  {
+    "name": "龙宫之行",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "龙宫之行"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 寒冷伤害。他救了海龟，被请入龙宫，受乙姬款待。加速1回合。"
+  },
+  {
+    "name": "乙姬之客",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "乙姬之客"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 寒冷伤害。乙姬款待他三日，海上却过了三百年，时光异速。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "玉手箱之礼",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "暗示",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "玉手箱之礼"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 寒冷伤害。乙姬赠他玉手箱，嘱勿打开，他归家即忘嘱。暗示1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "一开之烟",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一开之烟"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 寒冷伤害。他归家开箱，白烟散出，他瞬间变老，三百年结清。处决。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

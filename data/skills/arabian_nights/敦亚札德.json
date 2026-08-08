@@ -1,0 +1,108 @@
+[
+  {
+    "name": "请续一夜",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "故事锁神"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她在夜深时喊：姐姐，再讲一段嘛，国王便也跟着等。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "榻边陪伴",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "榻边陪伴"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她躺在姐姐身旁，把国王的注意力全留在了故事上。增益2回合。"
+  },
+  {
+    "name": "奉茶续气",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "奉茶续气"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。故事将尽，她适时奉上一杯热茶，让姐姐喘口气。回复。"
+  },
+  {
+    "name": "姐妹同心",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "姐妹同心"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。姐妹俩合力，才把那一千零一夜讲到了结尾。增援2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "name": "隐锥突刺",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "穿透",
+        "target": "敌方",
+        "desc": "锥光贯穿"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 光耀伤害。《亡灵书》第 17 篇插图中的梅杰德蒙在白布下，只露出一双锥形的眼。穿透。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "无名之击",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "眩晕",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被无名之力击中"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 光耀伤害。他被称为“击打者”，但没有任何文献记录他的击打方式——因为被打者说不出来。眩晕1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "白幕潜行",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "潜行",
+        "target": "自身",
+        "duration": 1,
+        "desc": "隐于白幕"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 光耀伤害。他永远裹在白布里，从白布里出来，又退回白布里。潜行1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "雷霆之罚",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "神罚处决"
+      },
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "视野被夺"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 光耀伤害。《亡灵书》第 125 章：审判庭里他负责惩罚说谎者，一击之下灵魂散为灰烬。处决+致盲2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

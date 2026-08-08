@@ -1,0 +1,228 @@
+{
+  "card_id": "aztec_mythology:特拉科宗特利",
+  "legacy_card_id": "AZT-1100",
+  "hero": {
+    "name": "特拉科宗特利",
+    "name_en": "Tlacotzontli",
+    "alias": "发之主",
+    "title": "发之主"
+  },
+  "game": {
+    "name": "Aztec Mythology",
+    "name_cn": "阿兹特克神话",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "阿兹特克神话",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "头发之主",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "发之力"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 黯蚀伤害。他管头发。阿兹特克人认为头发里藏着一个人的力气。增益2回合。"
+    },
+    {
+      "name": "束发之战",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "强化",
+          "target": "自身",
+          "duration": 2,
+          "desc": "束发之礼"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+STR 黯蚀伤害。战士上战场前要束发。束发这件事归他管，束错了会倒霉。强化2回合。"
+    },
+    {
+      "name": "散发之丧",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "减速",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "散发之丧"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 黯蚀伤害。服丧的人要散发。散发意味着力气被收走了，不能打仗。减速2回合。",
+      "saving_throw": {
+        "attr": "DEX",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "抓发制敌",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "黯蚀"
+      },
+      "effects": [
+        {
+          "type": "制服",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "抓发之制"
+        },
+        {
+          "type": "倒地",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "被击倒在地"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 黯蚀伤害。他打架时专抓头发。被抓头发的人没有不低头的。制服1回合+倒地1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

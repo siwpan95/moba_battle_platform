@@ -1,0 +1,107 @@
+[
+  {
+    "name": "经注解惑",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "经注解惑"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。他能把一段最晦涩的经文，讲得连牧童都听懂。净化。"
+  },
+  {
+    "name": "判例断争",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "判例断争"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。两族争执不下，他引一段判例便定了归属。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "古籍寻方",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "古籍寻方"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。他从一本发黄的古卷里，找到了治愈瘟疫的方子。治疗。"
+  },
+  {
+    "name": "学者之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "学者之护"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。他念完一段祝祷，全军的士气便高涨起来。增益2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

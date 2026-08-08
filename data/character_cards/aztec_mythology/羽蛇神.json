@@ -19,9 +19,10 @@
   "difficulty": 3,
   "playstyle_tags": [
     "AOE",
+    "持续伤害",
     "控制",
-    "远程",
-    "高机动"
+    "硬控制",
+    "远程"
   ],
   "attributes": {
     "STR": {

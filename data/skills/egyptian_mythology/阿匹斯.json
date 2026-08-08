@@ -1,0 +1,119 @@
+[
+  {
+    "name": "圣牛冲撞",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "倒地",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被圣牛撞翻"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 钝击伤害。孟菲斯圣牛阿匹斯冲起来时，整条神道上的石板都被踏碎。倒地1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "额前日轮",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "灼烧",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "日轮灼烧"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 钝击伤害。牛额上的日轮放出灼光，照到的东西先冒烟后着火。灼烧2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "普塔之化身",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "造物主之力"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 钝击伤害。他是普塔的活体化身，皮毛里流淌着造物主的血。强化2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "圣牛葬仪",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "圣牛转世"
+      },
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "进入狂暴状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。阿匹斯死时全城哀悼，新的圣牛即刻在另一处降生——他只是换了一副身体。复活+狂暴2回合。"
+  }
+]

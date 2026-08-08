@@ -1,0 +1,121 @@
+[
+  {
+    "name": "雷暴之女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "雷暴之形"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+INT 电击伤害。她是闪电化成的。雷一响她就出现，雷一停她就走。增益2回合。"
+  },
+  {
+    "name": "一指之电",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "麻痹",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "一指之雷"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+INT 电击伤害。她指谁，谁头上就落一道雷。雷比指头还准。麻痹1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "光足之疾",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "光足之疾"
+      }
+    ],
+    "cooldown": 2,
+    "description": "2d6+INT 电击伤害。她跑起来脚下全是光。光追着她的脚。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "一闪而灭",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 4,
+      "dice_size": 6,
+      "bonus_attr": "INT",
+      "type": "电击"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "一闪而灭"
+      },
+      {
+        "type": "震慑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "神智短暂空白"
+      }
+    ],
+    "cooldown": 4,
+    "description": "4d6+INT 电击伤害。她最后一闪，闪到的人就灭了。灭得无声。处决+震慑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+INT",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

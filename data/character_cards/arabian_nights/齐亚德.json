@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:齐亚德",
-  "legacy_card_id": "ONE-2023",
+  "card_id": "Arabian_Nights:齐亚德",
+  "legacy_card_id": "ARA-1078",
   "hero": {
     "name": "齐亚德",
     "name_en": "Ziyad",
@@ -8,8 +8,8 @@
     "title": "沙海谋士"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "射手",
     "universal_role": "marksman",
     "role_name": "射手",

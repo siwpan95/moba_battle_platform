@@ -1,0 +1,110 @@
+[
+  {
+    "name": "勾阵之将",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "防御",
+        "target": "自身",
+        "duration": 2,
+        "desc": "勾阵之将"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他是十二神将之一，居辰位，主坚阵不可破。防御2回合。"
+  },
+  {
+    "name": "钩形之盾",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "钩形之盾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他以钩为盾，挡下所有正面来袭，无物可透。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "钩陈之星",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "钩陈之星"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他源自天上钩陈星，是天子近卫，最坚之将。减伤2回合。"
+  },
+  {
+    "name": "坚阵之锁",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "禁锢",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "坚阵之锁"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他立阵后，敌手无法穿透，进退皆困。禁锢1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

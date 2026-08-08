@@ -1,0 +1,109 @@
+[
+  {
+    "name": "绑筏逃生",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "桅杆为筏"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。船碎之后，他靠一根桅杆扎成筏子活了下来。护盾2回合。"
+  },
+  {
+    "name": "以肉诱鹰",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "缚肉腾空"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他学着商人的法子，把肉绑在背上让鹰带他出谷。加速1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "拒食保命",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "拒食保命"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。在食人族岛上，他死活不吃那盘迷药肉。净化。"
+  },
+  {
+    "name": "藏身蛇穴",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "藏身蛇穴"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。他在钻石谷把身子缩进石缝，躲过夜行大蟒。减伤2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "name": "教谕之安",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "治疗",
+        "target": "自身",
+        "desc": "教谕之安"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。美里卡瑞之名意为“卡之所爱者”，他的教谕能安抚伤痛。治疗。"
+  },
+  {
+    "name": "父亲之诫",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "父亲之诫"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。《美里卡瑞教谕》记载了父亲对儿子的诫命，诫命化为护身。护盾2回合。"
+  },
+  {
+    "name": "正义之衡",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "正义之衡"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。教谕强调正义与玛阿特，失衡者被矫正。净化。"
+  },
+  {
+    "name": "教谕之传",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "教谕之愈"
+      },
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "重返战场"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。《美里卡瑞教谕》：他使教谕流传后世，被教谕感化者得获新生。回复+复活。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

@@ -1,0 +1,227 @@
+{
+  "card_id": "arthurian_legend:费雷菲兹",
+  "legacy_card_id": "ART-1073",
+  "hero": {
+    "name": "费雷菲兹",
+    "name_en": "Feirefiz",
+    "alias": "黑白斑驳的骑士",
+    "title": "黑白斑驳的骑士"
+  },
+  "game": {
+    "name": "Arthurian Legend",
+    "name_cn": "亚瑟王传说",
+    "native_role": "战士",
+    "universal_role": "fighter",
+    "role_name": "战士",
+    "role_dnd_class": "战士"
+  },
+  "source": "亚瑟王传说",
+  "difficulty": 3,
+  "playstyle_tags": [
+    "持续输出",
+    "突进",
+    "缠斗"
+  ],
+  "attributes": {
+    "STR": {
+      "score": 17,
+      "modifier": 3,
+      "name_cn": "力量"
+    },
+    "DEX": {
+      "score": 15,
+      "modifier": 2,
+      "name_cn": "敏捷"
+    },
+    "CON": {
+      "score": 13,
+      "modifier": 1,
+      "name_cn": "体质"
+    },
+    "INT": {
+      "score": 8,
+      "modifier": -1,
+      "name_cn": "智力"
+    },
+    "WIS": {
+      "score": 12,
+      "modifier": 1,
+      "name_cn": "感知"
+    },
+    "CHA": {
+      "score": 10,
+      "modifier": 0,
+      "name_cn": "魅力"
+    }
+  },
+  "primary_abilities": [
+    "STR",
+    "DEX"
+  ],
+  "hit_die": 10,
+  "stats_lv1": {
+    "level": 1,
+    "hp": 110,
+    "hp_dnd_raw": 11,
+    "ac": 15,
+    "physical_atk": 51,
+    "magic_power": 23,
+    "prof_bonus": 2,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 3,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "stats_lv18": {
+    "level": 18,
+    "hp": 1300,
+    "hp_dnd_raw": 130,
+    "ac": 15,
+    "physical_atk": 63,
+    "magic_power": 31,
+    "prof_bonus": 6,
+    "atk_speed_pct": 2.0,
+    "crit_chance": 14.0,
+    "crit_damage": 160.0,
+    "cdr_pct": 1.0,
+    "heal_bonus_pct": 0.0,
+    "cc_resist_pct": 1.0,
+    "save_bonuses": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 7,
+      "INT": -1,
+      "WIS": 1,
+      "CHA": 0
+    }
+  },
+  "growth_per_level": {
+    "hp": 70,
+    "atk": 2.5,
+    "ap": 1.5
+  },
+  "skills": [
+    {
+      "name": "异域来寻",
+      "key": "Q",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "增益",
+          "target": "自身",
+          "duration": 2,
+          "desc": "斑驳之身"
+        }
+      ],
+      "cooldown": 0,
+      "description": "1d10+STR 穿刺伤害。他母亲是黑人王后，父亲是帕西瓦尔的父亲。他出生时通体黑白相间。增益2回合。"
+    },
+    {
+      "name": "未识其父",
+      "key": "W",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "暴击",
+          "target": "自身",
+          "duration": 2,
+          "desc": "同袍未识"
+        }
+      ],
+      "cooldown": 1,
+      "description": "2d8+STR 穿刺伤害。他和亲弟弟帕西瓦尔在战场上打了半天，谁也没认出谁。暴击2回合。"
+    },
+    {
+      "name": "认弟休战",
+      "key": "E",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "范围",
+      "damage": {
+        "dice_count": 1,
+        "dice_size": 8,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "制服",
+          "target": "敌方",
+          "duration": 1,
+          "desc": "认亲休兵"
+        }
+      ],
+      "cooldown": 2,
+      "description": "1d8+STR 穿刺伤害。帕西瓦尔说出母亲名字的那一刻，他当场扔了剑。制服1回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      },
+      "aoe_radius": 10
+    },
+    {
+      "name": "圣杯不许",
+      "key": "R",
+      "type": "物理",
+      "action": "动作",
+      "range": "近战",
+      "target": "单体",
+      "damage": {
+        "dice_count": 2,
+        "dice_size": 10,
+        "bonus_attr": "STR",
+        "type": "穿刺"
+      },
+      "effects": [
+        {
+          "type": "处决",
+          "target": "敌方",
+          "desc": "圣杯不许"
+        },
+        {
+          "type": "易伤",
+          "target": "敌方",
+          "duration": 2,
+          "desc": "防御破绽暴露"
+        }
+      ],
+      "cooldown": 4,
+      "description": "2d10+STR 穿刺伤害。圣杯在他面前变成了灰烬——因为他没受洗。这是他离开的理由。处决+易伤2回合。",
+      "saving_throw": {
+        "attr": "CON",
+        "dc_formula": "8+PROF+STR",
+        "on_save": "半伤"
+      }
+    }
+  ]
+}

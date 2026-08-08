@@ -1,0 +1,116 @@
+[
+  {
+    "name": "六月一醒",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "六月一醒"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+STR 钝击伤害。他被梵天诅咒一年只能醒六天。醒着的六天里所向披靡。狂暴2回合。"
+  },
+  {
+    "name": "巨躯压顶",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "巨躯之压"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+STR 钝击伤害。他身形巨大，一站起来就遮住太阳。压制1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "吞兵之口",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 2,
+        "desc": "吞兵之口"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+STR 钝击伤害。他一口能吞下一整支小队。嚼都不嚼。吸血2回合。"
+  },
+  {
+    "name": "诱醒之战",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "钝击"
+    },
+    "effects": [
+      {
+        "type": "重创",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "诱醒之战"
+      },
+      {
+        "type": "击退",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "被推离原位"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 钝击伤害。罗摩军需要用尽方法把他从睡梦中弄醒。醒了之后他先是想吃。重创2回合+击退1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

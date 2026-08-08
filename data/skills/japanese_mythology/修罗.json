@@ -1,0 +1,108 @@
+[
+  {
+    "name": "修罗之战",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "狂暴",
+        "target": "自身",
+        "duration": 2,
+        "desc": "修罗之战"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d10+STR 挥砍伤害。阿修罗好战，常与天神争斗，败而不服。狂暴2回合。"
+  },
+  {
+    "name": "三头六臂",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三头六臂"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+STR 挥砍伤害。修罗三头六臂，一手持一器，攻防一体。强化2回合。"
+  },
+  {
+    "name": "战意不灭",
+    "key": "E",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "免疫",
+        "target": "自身",
+        "duration": 1,
+        "desc": "战意不灭"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+STR 挥砍伤害。修罗战意永不灭，重伤仍战，不知退却。免疫1回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 10
+  },
+  {
+    "name": "与天争雄",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "STR",
+      "type": "挥砍"
+    },
+    "effects": [
+      {
+        "type": "处决",
+        "target": "敌方",
+        "desc": "与天争雄"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+STR 挥砍伤害。修罗与天神争权，败而不服，卷土重来。处决。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+STR",
+      "on_save": "半伤"
+    }
+  }
+]

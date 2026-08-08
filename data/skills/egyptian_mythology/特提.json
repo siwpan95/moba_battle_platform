@@ -1,0 +1,116 @@
+[
+  {
+    "name": "铭文护体",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "铭文护壁"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+CON 力场伤害。特提的金字塔内壁刻满了咒语，咒文在他身周形成一层看不见的壁。护盾2回合。"
+  },
+  {
+    "name": "咒语反震",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "反弹",
+        "target": "自身",
+        "duration": 2,
+        "desc": "咒语反弹"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+CON 力场伤害。刻在墙上的咒语会把攻击弹回去，就像石壁反弹声音。反弹2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "萨卡拉列阵",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "萨卡拉列阵"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+CON 力场伤害。他在萨卡拉集结了六位继任者的金字塔，排成一道防线。强化2回合。"
+  },
+  {
+    "name": "升天咒决",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "压制",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "升天咒压"
+      },
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "移动速度降低"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+CON 力场伤害。《金字塔铭文》最早出现于特提金字塔内部：升天咒念完，攻击者被钉在原地。压制1回合+减速2回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

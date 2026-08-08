@@ -1,0 +1,108 @@
+[
+  {
+    "name": "妇人之相",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "中毒"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "妇人之相"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 中毒伤害。她化形为美貌妇人，引男子入屋，而后现形。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "丝缚之术",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "中毒"
+    },
+    "effects": [
+      {
+        "type": "束缚",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "丝缚之术"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 中毒伤害。她吐丝缚住猎物，丝坚韧不可断，越挣越紧。束缚1回合。",
+    "saving_throw": {
+      "attr": "CON",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "水边之巢",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "中毒"
+    },
+    "effects": [
+      {
+        "type": "隐身",
+        "target": "自身",
+        "duration": 1,
+        "desc": "脱离视野"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 中毒伤害。她居于水边，巢悬于树梢，隐于林间。隐身1回合。"
+  },
+  {
+    "name": "一吸而干",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "中毒"
+    },
+    "effects": [
+      {
+        "type": "吸血",
+        "target": "自身",
+        "duration": 2,
+        "desc": "一吸而干"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 中毒伤害。她吸干猎物精血，留下一具空壳，丢入水中。吸血2回合。"
+  }
+]

@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:白都伦",
-  "legacy_card_id": "ONE-87712",
+  "card_id": "Arabian_Nights:白都伦",
+  "legacy_card_id": "ARA-1011",
   "hero": {
     "name": "白都伦",
     "name_en": "Badoura",
@@ -8,8 +8,8 @@
     "title": "Badoura"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "辅助",
     "universal_role": "support",
     "role_name": "辅助",

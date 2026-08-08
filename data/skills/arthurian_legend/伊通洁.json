@@ -1,0 +1,113 @@
+[
+  {
+    "name": "书信之女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "书信之女"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 力场伤害。她替哥哥写过一封信去退婚。这封信是帕西瓦尔世界少有的情书。增益2回合。"
+  },
+  {
+    "name": "拒婚之诺",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "沉默",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "拒婚之诺"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 力场伤害。她拒绝了一位国王的求婚。她的理由是：等一个先开口的人。沉默1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "三色之环",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "附魔",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三色之环"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 力场伤害。她有一只三色戒指，送给心上人一只，自己留一只。附魔2回合。"
+  },
+  {
+    "name": "成婚之终",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "复活",
+        "target": "自身",
+        "desc": "成婚之终"
+      },
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "移除负面状态"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 力场伤害。她最后嫁给了那位国王。婚礼她哥哥没来，她替他写了信。复活+净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

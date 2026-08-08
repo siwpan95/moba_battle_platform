@@ -1,6 +1,6 @@
 {
-  "card_id": "arabian_nights:莎赫扎曼",
-  "legacy_card_id": "ONE-21411",
+  "card_id": "Arabian_Nights:莎赫扎曼",
+  "legacy_card_id": "ARA-1014",
   "hero": {
     "name": "莎赫扎曼",
     "name_en": "Shahzaman",
@@ -8,8 +8,8 @@
     "title": "Shahzaman"
   },
   "game": {
-    "name": "One Thousand and One Nights",
-    "name_cn": "一千零一夜",
+    "name": "Arabian Nights",
+    "name_cn": "Arabian Nights",
     "native_role": "战士",
     "universal_role": "fighter",
     "role_name": "战士",
@@ -18,7 +18,6 @@
   "source": "一千零一夜",
   "difficulty": 3,
   "playstyle_tags": [
-    "变身",
     "持续输出",
     "突进",
     "缠斗"

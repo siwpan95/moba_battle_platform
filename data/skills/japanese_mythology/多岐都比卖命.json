@@ -1,0 +1,102 @@
+[
+  {
+    "name": "宗像三女",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "宗像三女"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 寒冷伤害。她是宗像三女神三女，主管河流川泽。增益2回合。"
+  },
+  {
+    "name": "河之神格",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "河川之净"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 寒冷伤害。她管河流。河上的安全与凶吉归她管。净化。"
+  },
+  {
+    "name": "神体川流",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "川流之回"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 寒冷伤害。她以川为体，川流不息即神力不息。回复。"
+  },
+  {
+    "name": "三女神合祀",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "三水之守"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 寒冷伤害。三女神合祭于宗像，海陆河三水归一家。护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

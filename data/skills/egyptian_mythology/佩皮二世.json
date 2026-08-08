@@ -1,0 +1,115 @@
+[
+  {
+    "name": "幼王早慧",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减伤",
+        "target": "自身",
+        "duration": 2,
+        "desc": "长御之智"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+CON 力场伤害。他六岁即位，在位九十四年——九十四年的经验沉淀为一层看不见的甲。减伤2回合。"
+  },
+  {
+    "name": "夜鸟传令",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "夜鸟传令"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+CON 力场伤害。小法老用信鸟夜间传令，鸟影掠过之处敌军行动迟滞。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 8
+  },
+  {
+    "name": "南境商队",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "商道防线"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d6+CON 力场伤害。他派商队深入努比亚，商道成为一道防线。强化2回合。"
+  },
+  {
+    "name": "长寿之护",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "近战",
+    "target": "范围",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 10,
+      "bonus_attr": "CON",
+      "type": "力场"
+    },
+    "effects": [
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "长寿之护"
+      },
+      {
+        "type": "回复",
+        "target": "自身",
+        "desc": "持续恢复生命"
+      }
+    ],
+    "cooldown": 4,
+    "description": "2d10+CON 力场伤害。《教谕文学》：佩皮二世活到百岁，他的寿数成为王国最后的屏障。护盾2回合+回复。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+CON",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

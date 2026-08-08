@@ -1,0 +1,113 @@
+[
+  {
+    "name": "黄金面具之光",
+    "key": "Q",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "致盲",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "黄金面具之光"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d8+DEX 光耀伤害。图坦卡蒙的黄金面具反射的光足以让直视者短暂失明。致盲2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "少年短命",
+    "key": "W",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "少年之疾"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d8+DEX 光耀伤害。他十八岁就死了，少年人的急躁变成了一击即走的刺杀风格。加速1回合。"
+  },
+  {
+    "name": "复神之令",
+    "key": "E",
+    "type": "物理",
+    "action": "附赠动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 10,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "强化",
+        "target": "自身",
+        "duration": 2,
+        "desc": "复神之令"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d10+DEX 光耀伤害。他废除了父亲的异端，恢复了众神——但他自己也成了神。强化2回合。"
+  },
+  {
+    "name": "墓室封印",
+    "key": "R",
+    "type": "物理",
+    "action": "动作",
+    "range": "近战",
+    "target": "单体",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 8,
+      "bonus_attr": "DEX",
+      "type": "光耀"
+    },
+    "effects": [
+      {
+        "type": "恐惧",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "封印之诅"
+      },
+      {
+        "type": "斩杀",
+        "target": "敌方",
+        "desc": "对低生命目标造成致命一击"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d8+DEX 光耀伤害。《卡特日记》：墓室封印被打开的人都会在七年内死去——他把封印贴到你身上。恐惧1回合+斩杀。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+DEX",
+      "on_save": "半伤"
+    }
+  }
+]

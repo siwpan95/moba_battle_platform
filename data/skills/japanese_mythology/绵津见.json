@@ -1,0 +1,108 @@
+[
+  {
+    "name": "海神之宫",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "海宫之主"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 寒冷伤害。他的宫殿在海底，鱼群替他开门，潮汐为他铺路。增益2回合。"
+  },
+  {
+    "name": "潮汐之珠",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "减速",
+        "target": "敌方",
+        "duration": 2,
+        "desc": "被潮水缠住"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 寒冷伤害。他给山幸彦两颗珠子，一颗涨潮，一颗退潮，兄长从此臣服。减速2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "八百之鱼",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "鱼群云集"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 寒冷伤害。海中八百种鱼听他号令，没有一条敢违抗他的命令。增援2回合。"
+  },
+  {
+    "name": "海陆之约",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "寒冷"
+    },
+    "effects": [
+      {
+        "type": "净化",
+        "target": "自身",
+        "desc": "海陆祓禊"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 寒冷伤害。他答应女儿的婚事，只立一个禁忌：生孩子时不许看。净化。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]

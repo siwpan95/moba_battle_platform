@@ -1,0 +1,115 @@
+[
+  {
+    "name": "湘水之神",
+    "key": "Q",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "单体",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "增益",
+        "target": "自身",
+        "duration": 2,
+        "desc": "湘水之泽"
+      }
+    ],
+    "cooldown": 0,
+    "description": "1d6+WIS 冰冷伤害。《九歌·湘君》他是湘水男神，与湘夫人伉俪相望。增益2回合。"
+  },
+  {
+    "name": "沅芷澧兰",
+    "key": "W",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "友方",
+    "damage": {
+      "dice_count": 2,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "增援",
+        "target": "自身",
+        "duration": 2,
+        "desc": "香草为引"
+      }
+    ],
+    "cooldown": 1,
+    "description": "2d6+WIS 冰冷伤害。「沅有芷兮澧有兰」，他衣香草以迎湘夫人。增援2回合。"
+  },
+  {
+    "name": "望夫君",
+    "key": "E",
+    "type": "法术",
+    "action": "附赠动作",
+    "range": "自身",
+    "target": "自身",
+    "damage": {
+      "dice_count": 1,
+      "dice_size": 8,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "魅惑",
+        "target": "敌方",
+        "duration": 1,
+        "desc": "参差之音"
+      }
+    ],
+    "cooldown": 2,
+    "description": "1d8+WIS 冰冷伤害。「望夫君兮未来，吹参差兮谁思」，他吹笙以待。魅惑1回合。",
+    "saving_throw": {
+      "attr": "WIS",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    }
+  },
+  {
+    "name": "驾飞龙",
+    "key": "R",
+    "type": "法术",
+    "action": "动作",
+    "range": "远程",
+    "target": "范围",
+    "damage": {
+      "dice_count": 3,
+      "dice_size": 6,
+      "bonus_attr": "WIS",
+      "type": "冰冷"
+    },
+    "effects": [
+      {
+        "type": "加速",
+        "target": "自身",
+        "duration": 1,
+        "desc": "龙舟巡湖"
+      },
+      {
+        "type": "护盾",
+        "target": "自身",
+        "duration": 2,
+        "desc": "获得吸收伤害的护盾"
+      }
+    ],
+    "cooldown": 4,
+    "description": "3d6+WIS 冰冷伤害。「驾飞龙兮北征，邅吾道兮洞庭」，他驾龙舟巡洞庭。加速1回合+护盾2回合。",
+    "saving_throw": {
+      "attr": "DEX",
+      "dc_formula": "8+PROF+WIS",
+      "on_save": "半伤"
+    },
+    "aoe_radius": 15
+  }
+]
