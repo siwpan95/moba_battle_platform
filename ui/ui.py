@@ -3,11 +3,17 @@
 """对战平台 UI —— tkinter GUI 主窗口"""
 
 import tkinter as tk
-from tkinter import ttk, font as tkfont, filedialog
+from tkinter import ttk, font as tkfont
 import random
 import sys
 import os
+import threading
 from collections import OrderedDict
+
+# 日志与润色后日志的保存目录（硬编码）
+SAVE_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs"
+)
 
 from core.config import FONT_DIR, ROLE_NAME_CN, game_cn
 from core.catalog import filter_cards, describe_card
@@ -38,6 +44,7 @@ class BattlePlatform:
         self.simulator = None
         self.all_logs = []
         self.log_lines = []  # 已显示日志的纯文本缓存（供复制/分享）
+        self.polish_thread = None  # 日志润色后台线程（避免阻塞 GUI）
 
         # 筛选状态
         self.game_filter_var = tk.StringVar(value="全部游戏")
@@ -338,6 +345,23 @@ class BattlePlatform:
         )
         self.log_count_label.pack(side=tk.RIGHT)
 
+        # 日志润色入口（把当前战斗日志改写为港漫风武侠短篇）
+        self.btn_polish = tk.Button(
+            log_label_frame, text="✨ 日志润色", command=self._polish_log,
+            font=self.default_font, bg="#6e40c9", fg="white",
+            activebackground="#8957e5", relief=tk.FLAT, padx=14, pady=4,
+            cursor="hand2", state=tk.DISABLED
+        )
+        self.btn_polish.pack(side=tk.RIGHT, padx=(5, 12))
+
+        self.polish_master_var = tk.StringVar(value="随机风格")
+        self.polish_master_combo = ttk.Combobox(
+            log_label_frame, textvariable=self.polish_master_var,
+            font=self.default_font, state="readonly", width=12,
+            values=["随机风格"]
+        )
+        self.polish_master_combo.pack(side=tk.RIGHT, padx=4)
+
         canvas_frame = tk.Frame(log_frame, bg="#0d1117")
         canvas_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=8)
 
@@ -591,6 +615,9 @@ class BattlePlatform:
         self.canvas.yview_moveto(1)
         self.log_count += 1
         self.log_count_label.config(text=f"共 {self.log_count} 行")
+        # 有日志后开放「日志润色」入口
+        if self.btn_polish["state"] == tk.DISABLED:
+            self.btn_polish.config(state=tk.NORMAL)
 
     def _clear_log(self):
         """清空日志"""
@@ -609,6 +636,8 @@ class BattlePlatform:
         self.current_line = 0
         self.log_count = 0
         self.log_count_label.config(text="")
+        # 清空日志后关闭「日志润色」入口
+        self.btn_polish.config(state=tk.DISABLED)
 
     def _on_mousewheel(self, event):
         self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
@@ -629,23 +658,191 @@ class BattlePlatform:
             self._add_log(f"⚠️ 复制失败: {e}", "#f85149")
 
     def _save_log(self):
-        """将日志保存为文本文件（分享用）"""
+        """将日志保存为文本文件（分享用），固定写入 SAVE_DIR"""
         if not self.log_lines:
             self._add_log("⚠️ 暂无日志可保存", "#f85149")
             return
         from datetime import datetime
-        default_name = f"battle_log_{datetime.now():%Y%m%d_%H%M%S}.txt"
-        path = filedialog.asksaveasfilename(
-            defaultextension=".txt",
-            filetypes=[("文本文件", "*.txt"), ("全部文件", "*.*")],
-            initialfile=default_name,
-            title="保存战斗日志",
-        )
-        if not path:
-            return
         try:
+            os.makedirs(SAVE_DIR, exist_ok=True)
+            default_name = f"battle_log_{datetime.now():%Y%m%d_%H%M%S}.txt"
+            path = os.path.join(SAVE_DIR, default_name)
             with open(path, "w", encoding="utf-8") as f:
                 f.write("\n".join(self.log_lines))
             self._add_log(f"💾 日志已保存: {path}", "#7ee787")
         except Exception as e:
             self._add_log(f"⚠️ 保存失败: {e}", "#f85149")
+        except Exception as e:
+            self._add_log(f"⚠️ 保存失败: {e}", "#f85149")
+
+    # ── 日志润色 ──────────────────────────────
+
+    def _ensure_polish_imports(self):
+        """懒加载日志润色依赖（tools 不在默认路径，且需避免阻塞启动）"""
+        if getattr(self, "_log_polish_mod", None) is None:
+            # ui.py 位于 <root>/ui/ui.py，项目根为 ui 目录的上级
+            project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            sys.path.insert(0, project_root)  # 使 tools 作为 namespace 包可导入
+            import tools.log_polish as log_polish  # noqa: E402
+            from tools.hk_comic_styles import list_master_names  # noqa: E402
+            self._log_polish_mod = log_polish
+            self._polish_master_names = list_master_names()
+            # 填充风格下拉框
+            names = ["随机风格"] + self._polish_master_names
+            self.polish_master_combo.config(values=names)
+            if self.polish_master_var.get() not in names:
+                self.polish_master_var.set("随机风格")
+        return self._log_polish_mod
+
+    def _polish_log(self):
+        """将当前战斗日志润色为港漫风武侠短篇（在线润色，后台执行避免卡界面）"""
+        if not self.log_lines:
+            self._add_log("⚠️ 暂无可润色的战斗日志，请先开始一场对战", "#f85149")
+            return
+        if self.polish_thread and self.polish_thread.is_alive():
+            return  # 润色进行中，忽略重复点击
+
+        try:
+            log_polish = self._ensure_polish_imports()
+        except Exception as e:
+            self._add_log(f"⚠️ 润色模块加载失败: {e}", "#f85149")
+            return
+
+        master_sel = self.polish_master_var.get()
+        master = None if master_sel == "随机风格" else master_sel
+
+        # 适配 log_polish 期望的「单场」日志格式（以【第 N/M 场】起头）
+        raw_log = "\n".join(self.log_lines)
+        styled_input = "【第 1/1 场】\n" + raw_log
+
+        # 凭据优先级：环境变量 / 私人令牌.txt / 内置默认值
+        try:
+            api_key, model = log_polish.resolve_credentials()
+        except Exception as e:
+            self.btn_polish.config(state=tk.NORMAL, text="✨ 日志润色")
+            self._add_log(f"⚠️ 读取润色凭据失败: {e}", "#f85149")
+            return
+
+        self._add_log("✨ 正在润色日志（港漫风武侠短篇），请稍候…", "#d2a8ff")
+        self.btn_polish.config(state=tk.DISABLED, text="✨ 润色中…")
+
+        def _worker():
+            try:
+                # polish_match 期望 match 为 dict（含 index/header/body），
+                # 需先按【第 N/M 场】切分出单场结构，不能直接传原始字符串。
+                matches = log_polish.split_matches(styled_input)
+                if not matches:
+                    raise ValueError("未能从当前日志中解析出可润色的场次")
+                result = log_polish.polish_match(
+                    matches[0], api_key, master=master, model=model)
+                self.root.after(0, self._show_polish_result, result, master_sel)
+            except Exception as e:
+                # 原样展示真实错误，便于排查（网络/鉴权/模型名等）
+                self.root.after(0, self._on_polish_error, str(e))
+
+        self.polish_thread = threading.Thread(target=_worker, daemon=True)
+        self.polish_thread.start()
+
+    def _on_polish_error(self, msg: str):
+        self.btn_polish.config(state=tk.NORMAL, text="✨ 日志润色")
+        self._add_log(f"⚠️ 日志润色失败: {msg}", "#f85149")
+
+    def _show_polish_result(self, result, master_sel: str):
+        self.btn_polish.config(state=tk.NORMAL, text="✨ 日志润色")
+        # polish_match 返回 dict，润色正文在 result["story"]；兼容直接返回字符串的情况
+        if isinstance(result, dict):
+            story = result.get("story") or result.get("text") or ""
+            master_used = result.get("master") or master_sel
+            works = result.get("works", "")
+            self._add_log(
+                f"✅ 日志润色完成（风格：{master_used}，{len(story)} 字），已弹出预览窗口",
+                "#7ee787")
+            self._open_polish_window(story, master_used, works)
+        else:
+            self._add_log("✅ 日志润色完成，已弹出预览窗口", "#7ee787")
+            self._open_polish_window(str(result), master_sel, "")
+
+    def _open_polish_window(self, result: str, master_sel: str, works: str = ""):
+        """弹出润色结果预览窗口（支持复制/保存）"""
+        self.polish_result = result  # 缓存，供保存/复制闭包使用
+        win = tk.Toplevel(self.root)
+        win.title("✨ 日志润色 · 港漫风武侠短篇")
+        win.geometry("720x560")
+        win.configure(bg="#0d1117")
+        try:
+            win.transient(self.root)
+            win.grab_set()
+        except Exception:
+            pass
+
+        header = tk.Frame(win, bg="#161b22")
+        header.pack(fill=tk.X, padx=12, pady=(12, 6))
+        tk.Label(header, text=f"风格：{master_sel}",
+                font=self.header_font, fg="#d2a8ff", bg="#161b22").pack(side=tk.LEFT)
+        if works:
+            tk.Label(header, text=f"· {works}", font=self.subtitle_font,
+                    fg="#8b949e", bg="#161b22").pack(side=tk.LEFT, padx=(8, 0))
+
+        btn_bar = tk.Frame(win, bg="#0d1117")
+        btn_bar.pack(fill=tk.X, padx=12, pady=(0, 6))
+
+        def _copy():
+            try:
+                win.clipboard_clear()
+                win.clipboard_append(self.polish_result)
+                _flash("📋 已复制")
+            except Exception as e:
+                import traceback
+                traceback.print_exc()
+                self._add_log(f"⚠️ 复制失败: {e}", "#f85149")
+                _flash(f"⚠️ 复制失败: {e}")
+
+        def _save():
+            from datetime import datetime
+            import traceback
+            try:
+                os.makedirs(SAVE_DIR, exist_ok=True)
+                default_name = f"polished_log_{datetime.now():%Y%m%d_%H%M%S}.txt"
+                path = os.path.join(SAVE_DIR, default_name)
+                with open(path, "w", encoding="utf-8") as f:
+                    f.write(self.polish_result)
+                self._add_log(f"💾 润色日志已保存: {path}", "#7ee787")
+                _flash(f"💾 已保存: {os.path.basename(path)}")
+            except Exception as e:
+                traceback.print_exc()
+                self._add_log(f"⚠️ 润色日志保存失败: {e}", "#f85149")
+                _flash(f"⚠️ 保存失败: {e}")
+
+        status_var = tk.StringVar(value="")
+        def _flash(text):
+            status_var.set(text)
+            win.after(2000, lambda: status_var.set(""))
+
+        tk.Button(btn_bar, text="📋 复制", command=_copy,
+                font=self.default_font, bg="#238636", fg="white",
+                activebackground="#2ea043", relief=tk.FLAT, padx=14, pady=4,
+                cursor="hand2").pack(side=tk.LEFT, padx=4)
+        tk.Button(btn_bar, text="💾 保存", command=_save,
+                font=self.default_font, bg="#1f6feb", fg="white",
+                activebackground="#388bfd", relief=tk.FLAT, padx=14, pady=4,
+                cursor="hand2").pack(side=tk.LEFT, padx=4)
+        tk.Label(btn_bar, textvariable=status_var,
+                font=self.subtitle_font, fg="#7ee787", bg="#0d1117").pack(
+                side=tk.LEFT, padx=8)
+
+        text_frame = tk.Frame(win, bg="#0d1117")
+        text_frame.pack(fill=tk.BOTH, expand=True, padx=12, pady=(0, 12))
+
+        txt = tk.Text(text_frame, wrap=tk.WORD, bg="#161b22", fg="#e6edf3",
+                    font=self.default_font, relief=tk.FLAT, padx=14, pady=12,
+                    insertbackground="#e6edf3")
+        txt.insert("1.0", result)
+        txt.config(state=tk.DISABLED)
+        txt.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        scroll = tk.Scrollbar(text_frame, command=txt.yview)
+        scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        txt.config(yscrollcommand=scroll.set)
+
+        win.update_idletasks()
+        win.minsize(520, 400)
