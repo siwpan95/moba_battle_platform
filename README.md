@@ -98,11 +98,3 @@ python tools/card_tool.py status           # 管线状态总览
 python tools/card_tool.py search <关键词>   # 搜索英雄
 python tools/card_tool.py info <英雄名>    # 查看英雄详情
 ```
-
-
----
-
-## 仓库索引标注（2026-08-25 · siwpan 统一治理）
-
-> 现行仓库（main 分支）；本地对应 G:\games\moba_battle_platform。
-> 本标注为发布面统一追加，不改变原有内容。
