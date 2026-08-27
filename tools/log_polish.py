@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """对战日志润色模块 —— 调用 DeepSeek 在线模型把对战日志改写成武侠短篇。
 
@@ -33,7 +33,7 @@ from tools.hk_comic_styles import (      # noqa: E402
     HK_COMIC_MASTERS, build_style_prompt, get_master, list_master_names,
 )
 
-DEFAULT_API_KEY = "sk-e3e91877be66452fb2093d2f2ecbbb81"
+DEFAULT_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")  # 2026-08-27 安全修复：原明文密钥已公开泄露，密钥仅经环境变量注入
 DEFAULT_MODEL = "deepseek-v4-pro"
 DEFAULT_BASE_URL = "https://api.deepseek.com"
 

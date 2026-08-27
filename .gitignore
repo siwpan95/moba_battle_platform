@@ -1,4 +1,4 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -12,3 +12,8 @@ venv/
 # 系统
 .DS_Store
 node_modules/
+
+# 凭据（禁止入库）
+私人令牌.txt
+*.key
+.env
