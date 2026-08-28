@@ -23,6 +23,8 @@ import random
 import re
 from typing import Any, Dict, List, Optional
 
+from alloy.trpg.dice import roll_d20, roll_dice  # D&D 5e 骰原语（R2 内核接入，2026-08-27）
+
 __all__ = [
     "roll_dice", "roll_dice_expr", "categorize_effect",
     "parse_dc", "roll_saving_throw",
@@ -85,11 +87,9 @@ def categorize_effect(eff: Any) -> str:
 
 
 # ── 骰子 ──
-def roll_dice(count: int, size: int, rng: Any = random) -> int:
-    """掷 count 颗 size 面骰，返回总和。count<=0 或 size<=0 返回 0。"""
-    count = max(0, int(count))
-    size = max(1, int(size))
-    return sum(rng.randint(1, size) for _ in range(count))
+# roll_dice(count, size, rng) 已内核化：单一事实来源 = alloy.trpg.dice.roll_dice
+# （D&D 伤害骰，语义与本仓原实现一致：count<=0 → 0、size<=0 收敛 1、rng 可注入）。
+# 本仓保留 roll_dice_expr（"1d8+WIS" 表达式 DSL）与安全算式求值（ADR-004）。
 
 
 _DICE_RE = re.compile(r"(\d+)d(\d+)", re.I)
@@ -186,7 +186,7 @@ def roll_saving_throw(
                    defender_attr_mods.get("_prof", 2),
                    defender_attr_mods)
     bonus = defender_attr_mods.get(attr, 0) if attr else 0
-    roll = rng.randint(1, 20) + bonus
+    roll = roll_d20(rng) + bonus   # d20 豁免（R2：alloy 内核 roll_d20，rng 注入保持模拟器确定性）
     if roll >= dc:
         return saving_throw.get("on_save", "半伤")
     return None

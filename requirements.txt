@@ -1,3 +1,4 @@
 # moba_battle_platform dependencies (auto-generated 2026-08-20)
 pytest
 requests
+# 规则内核（R2）: alloy — pip install -e G:\repos\an-engine

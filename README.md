@@ -98,3 +98,17 @@ python tools/card_tool.py status           # 管线状态总览
 python tools/card_tool.py search <关键词>   # 搜索英雄
 python tools/card_tool.py info <英雄名>    # 查看英雄详情
 ```
+
+## 规则内核接入（R2 · 2026-08-27）
+
+本仓战斗机制为 **D&D 5e**（伤害骰 `XdY` + d20 豁免 vs DC）——与 alloy.trpg（D&D 三宝书
++ GURPS Basic Set）**同构**，已按「只接同构原语、绝不破坏行为契约」原则接入：
+
+- `core/mechanics.py`：`roll_dice(count, size, rng)` 内核化为
+  `alloy.trpg.dice.roll_dice`（语义一致：count<=0 → 0、size<=0 收敛 1、rng 可注入）；
+  d20 豁免改内核 `roll_d20(rng)`（模拟器确定性不变）。
+- 保留仓内（本仓专有）：`roll_dice_expr`（"1d8+WIS" 表达式 DSL）、安全算式求值（ADR-004）、
+  simulator 的 `DND_DAMAGE_SCALE`（数据骰缩放）、机制类别别名表。
+
+依赖：alloy（`pip install -e G:\\repos\\an-engine`，见 requirements.txt 注释）。
+全量 pytest 全绿；内核侧对应增强见 an-engine（rng 注入 + 通用 NdS，测试 489 项）。

@@ -1,13 +1,17 @@
-﻿# Python
+# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
-.venv/
 venv/
 
-# 工程保障 / 备份
+# 构建产物
+build/
+dist/
+*.spec
+
+# 本地工具/备份
 .workbuddy/
-*.bak*
+*.bak_pre_dedup
 
 # 系统
 .DS_Store
