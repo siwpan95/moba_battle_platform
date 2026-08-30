@@ -354,6 +354,15 @@ class BattlePlatform:
         )
         self.btn_polish.pack(side=tk.RIGHT, padx=(5, 12))
 
+        # DeepSeek API Key 设置入口（key 仅存本地私人令牌.txt，不入库）
+        self.btn_key = tk.Button(
+            log_label_frame, text="🔑 密钥", command=self._open_key_settings,
+            font=self.default_font, bg="#30363d", fg="#f0f6fc",
+            activebackground="#484f58", relief=tk.FLAT, padx=10, pady=4,
+            cursor="hand2"
+        )
+        self.btn_key.pack(side=tk.RIGHT, padx=(5, 0))
+
         self.polish_master_var = tk.StringVar(value="随机风格")
         self.polish_master_combo = ttk.Combobox(
             log_label_frame, textvariable=self.polish_master_var,
@@ -677,6 +686,84 @@ class BattlePlatform:
 
     # ── 日志润色 ──────────────────────────────
 
+    def _open_key_settings(self):
+        """打开 DeepSeek API Key 设置弹窗（key 仅保存到本地私人令牌.txt）。"""
+        try:
+            log_polish = self._ensure_polish_imports()
+        except Exception as e:
+            self._add_log(f"⚠️ 润色模块加载失败: {e}", "#f85149")
+            return
+
+        cur_key, cur_model = log_polish.load_token_file()
+        win = tk.Toplevel(self.root)
+        win.title("🔑 DeepSeek API Key 设置")
+        win.geometry("560x320")
+        win.configure(bg="#0d1117")
+        try:
+            win.transient(self.root)
+            win.grab_set()
+        except Exception:
+            pass
+
+        tip = ("API Key 仅保存在本地文件「私人令牌.txt」（已被 .gitignore 忽略，"
+               "不会进入代码或仓库）。\n可在 DeepSeek 开放平台申请。")
+        tk.Label(win, text=tip, font=self.subtitle_font, fg="#8b949e",
+                 bg="#0d1117", justify=tk.LEFT, wraplength=520).pack(
+            anchor=tk.W, padx=16, pady=(14, 8))
+
+        row1 = tk.Frame(win, bg="#0d1117")
+        row1.pack(fill=tk.X, padx=16, pady=4)
+        tk.Label(row1, text="API Key", font=self.default_font, fg="#f0f6fc",
+                 bg="#0d1117", width=12, anchor=tk.W).pack(side=tk.LEFT)
+        key_var = tk.StringVar(value=cur_key or "")
+        key_entry = tk.Entry(row1, textvariable=key_var, font=self.default_font,
+                             show="•", bg="#161b22", fg="#f0f6fc",
+                             insertbackground="#f0f6fc", relief=tk.FLAT)
+        key_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 8))
+        show_var = tk.BooleanVar(value=False)
+
+        def _toggle_show():
+            key_entry.config(show="" if show_var.get() else "•")
+
+        tk.Checkbutton(row1, text="显示明文", variable=show_var,
+                       command=_toggle_show, font=self.subtitle_font,
+                       fg="#8b949e", bg="#0d1117", selectcolor="#161b22",
+                       activebackground="#0d1117").pack(side=tk.LEFT)
+
+        row2 = tk.Frame(win, bg="#0d1117")
+        row2.pack(fill=tk.X, padx=16, pady=4)
+        tk.Label(row2, text="模型名", font=self.default_font, fg="#f0f6fc",
+                 bg="#0d1117", width=12, anchor=tk.W).pack(side=tk.LEFT)
+        model_var = tk.StringVar(value=cur_model or "deepseek-v4-pro")
+        tk.Entry(row2, textvariable=model_var, font=self.default_font,
+                 bg="#161b22", fg="#f0f6fc", insertbackground="#f0f6fc",
+                 relief=tk.FLAT).pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        btn_bar = tk.Frame(win, bg="#0d1117")
+        btn_bar.pack(fill=tk.X, padx=16, pady=(14, 0))
+
+        def _save():
+            key = key_var.get().strip()
+            model = model_var.get().strip() or "deepseek-v4-pro"
+            if not key:
+                self._add_log("⚠️ API Key 不能为空", "#f85149")
+                return
+            try:
+                log_polish.save_token_file(key, model)
+            except Exception as e:
+                self._add_log(f"⚠️ 保存 API Key 失败: {e}", "#f85149")
+                return
+            self._add_log("🔑 API Key 已保存到本地「私人令牌.txt」（不入库）", "#7ee787")
+            win.destroy()
+
+        tk.Button(btn_bar, text="保存", command=_save, font=self.default_font,
+                  bg="#238636", fg="white", activebackground="#2ea043",
+                  relief=tk.FLAT, padx=18, pady=4, cursor="hand2").pack(side=tk.RIGHT)
+        tk.Button(btn_bar, text="取消", command=win.destroy, font=self.default_font,
+                  bg="#30363d", fg="#f0f6fc", activebackground="#484f58",
+                  relief=tk.FLAT, padx=18, pady=4, cursor="hand2").pack(
+            side=tk.RIGHT, padx=(0, 8))
+
     def _ensure_polish_imports(self):
         """懒加载日志润色依赖（tools 不在默认路径，且需避免阻塞启动）"""
         if getattr(self, "_log_polish_mod", None) is None:
@@ -721,6 +808,12 @@ class BattlePlatform:
         except Exception as e:
             self.btn_polish.config(state=tk.NORMAL, text="✨ 日志润色")
             self._add_log(f"⚠️ 读取润色凭据失败: {e}", "#f85149")
+            return
+
+        if not api_key:
+            # 未配置 API Key：引导到设置弹窗，而不是发起必然失败的请求
+            self._add_log("⚠️ 尚未配置 DeepSeek API Key，请先在设置弹窗中填入", "#f85149")
+            self._open_key_settings()
             return
 
         self._add_log("✨ 正在润色日志（港漫风武侠短篇），请稍候…", "#d2a8ff")

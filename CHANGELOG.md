@@ -6,6 +6,11 @@
 
 ## [Unreleased]
 
+### Added
+
+- UI 新增「🔑 密钥」设置弹窗：可在界面内输入 DeepSeek API Key（掩码显示、可切换明文）与模型名，保存到本地 `私人令牌.txt`（已 .gitignore，不入库不上传）；未配置 key 时点「日志润色」自动弹出引导（2026-08-29）。
+- tools/log_polish.py 新增 `save_token_file()`：写入/更新凭据时保留无关行（如 gitee 令牌），仅在存在旧 key 时才移除旧 key/model 行；配套单测 tests/test_log_polish_credentials.py。
+
 ### Security
 
 - 移除 tools/log_polish.py 中硬编码的 DeepSeek API Key（改为环境变量 DEEPSEEK_API_KEY 注入）。原密钥已公开泄露，请立即在 DeepSeek 平台轮换（2026-08-27 深度审核 R0）。

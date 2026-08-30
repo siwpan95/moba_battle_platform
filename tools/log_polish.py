@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """对战日志润色模块 —— 调用 DeepSeek 在线模型把对战日志改写成武侠短篇。
 
@@ -83,6 +83,46 @@ def load_token_file(path=None):
             model = ln
             break
     return api_key, model
+
+
+def save_token_file(api_key, model, path=None):
+    """写入/更新 私人令牌.txt 的模型与 API Key 行。
+
+    规则（保平安）：保留文件中所有与旧 model / 旧 key 无关的行（如 gitee 令牌），
+    仅在文件中存在旧 key（sk- 开头）时，才移除旧 key 行与其前的旧 model 行；
+    最后追加新的 model 行与 key 行，保证 load_token_file 可正确解析。
+    文件始终位于本地且已被 .gitignore 忽略，绝不入库。
+    """
+    path = path or _TOKEN_FILE
+    old_key, old_model = load_token_file(path)
+    lines = []
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                lines = [ln.rstrip("\r\n") for ln in f.read().splitlines()]
+        except OSError:
+            lines = []
+    kept = []
+    for ln in lines:
+        s = ln.strip()
+        if s and s != old_key:
+            kept.append(ln)
+    if old_key:
+        # 旧 key 存在时，其前最后一个非空行即旧 model 行，可安全移除
+        while kept and not kept[-1].strip():
+            kept.pop()
+        if kept and kept[-1].strip() == old_model:
+            kept.pop()
+    while kept and not kept[-1].strip():
+        kept.pop()
+    kept.append(str(model).strip())
+    kept.append(str(api_key).strip())
+    try:
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    except OSError:
+        pass
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(kept) + "\n")
 
 
 def resolve_api_key(cli_key=None, file_key=None):
