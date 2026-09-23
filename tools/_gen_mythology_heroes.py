@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Add 55 mythology heroes to all_heroes_unified.json."""
-# 2026-09-28 去本地化：数据路径改为仓内推导（原 G:/moba_battle_platform/data/analysis/all_heroes_unified.json 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
+# 2026-09-23 去本地化：数据路径改为仓内推导（原 G:/moba_battle_platform/data/analysis/all_heroes_unified.json 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
 # 解析优先级：环境变量 MOBA_BATTLE_PLATFORM_ROOT → 仓根推导（tools/ 上溯 1 层，复用 core.paths 单一真相）→ fail-loud 点名该设哪个变量
 import json
 import os

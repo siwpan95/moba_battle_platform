@@ -16,7 +16,7 @@
 """
 
 from . import paths  # noqa: F401  导入即完成 PROJECT_ROOT 的 sys.path 引导
-# 2026-09-28 去本地化：本文档串中的部署/引擎路径改为通用写法（原 G:/moba_battle_platform/battle_platform/ 与
+# 2026-09-23 去本地化：本文档串中的部署/引擎路径改为通用写法（原 G:/moba_battle_platform/battle_platform/ 与
 #   G:/moba_battle_platform/ 已不存在，仓已迁移至 G:\repos\moba_battle_platform）；运行时逻辑未变。
 
 __all__ = ["paths"]

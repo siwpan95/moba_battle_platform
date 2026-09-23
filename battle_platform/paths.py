@@ -15,7 +15,7 @@ import sys
 # battle_platform 目录本身
 BP_DIR = os.path.dirname(os.path.abspath(__file__))
 # 项目根：battle_platform 的父目录，即仓库根
-# 2026-09-28 去本地化：项目根由 __file__ 推导、非硬编码（原 G:/moba_battle_platform 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
+# 2026-09-23 去本地化：项目根由 __file__ 推导、非硬编码（原 G:/moba_battle_platform 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
 PROJECT_ROOT = os.path.dirname(BP_DIR)
 TOOLS_DIR = os.path.join(PROJECT_ROOT, "tools")
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
