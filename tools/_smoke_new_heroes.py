@@ -24,7 +24,7 @@
 
 用法
 ----
-  F:/Python314/python.exe G:/moba_battle_platform/tools/_smoke_new_heroes.py
+  python tools/_smoke_new_heroes.py            # 在仓库根目录执行
   可选参数： --level N (默认 1)   --seed N (默认 20250607)   --verbose
 
 只读脚本：不修改任何 data/ 文件、不修改源码、不提交。

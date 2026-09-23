@@ -1,4 +1,26 @@
 import json
+import os
+import sys
+
+# 2026-09-28 去本地化：技能数据路径改为仓内推导（原 G:/moba_battle_platform/data/skills/league_of_legends.json 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
+# 解析优先级：环境变量 MOBA_BATTLE_PLATFORM_ROOT → 仓根推导（tools/_archive/ 上溯 2 层，复用 core.paths 单一真相）→ fail-loud 点名该设哪个变量
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if _REPO_ROOT not in sys.path:
+    sys.path.insert(0, _REPO_ROOT)
+
+from core.paths import PROJECT_ROOT  # noqa: E402  仓内路径单一真相（ADR-002），本身由 __file__ 推导
+
+_SKILLS_JSON = os.path.join(
+    os.environ.get("MOBA_BATTLE_PLATFORM_ROOT") or PROJECT_ROOT,
+    "data", "skills", "league_of_legends.json",
+)
+if not os.path.exists(_SKILLS_JSON):
+    raise SystemExit(
+        "[find_missing] 找不到技能数据文件：%s\n"
+        "  注：本仓技能数据现为「每英雄一文件」格式 <仓库根>/data/skills/league_of_legends/<英雄>.json，\n"
+        "  本脚本依赖的旧「单文件 {英雄: 技能}」JSON 已不在仓内。\n"
+        "  如该单文件数据位于他处，请设置环境变量 MOBA_BATTLE_PLATFORM_ROOT 指向本仓根目录后重试。" % _SKILLS_JSON
+    )
 
 all_champs = {
     '阿卡丽': 'assassin', '艾克': 'assassin', '伊芙琳': 'assassin', '菲兹': 'assassin',
@@ -50,7 +72,7 @@ all_champs = {
     '斯卡纳': 'tank', '扎克': 'tank',
 }
 
-with open('G:/moba_battle_platform/data/skills/league_of_legends.json', 'r', encoding='utf-8') as f:
+with open(_SKILLS_JSON, 'r', encoding='utf-8') as f:
     existing = json.load(f)
 existing_names = [k for k in existing if not k.startswith('_')]
 

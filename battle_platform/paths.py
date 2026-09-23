@@ -2,9 +2,11 @@
 # -*- coding: utf-8 -*-
 """路径引导 + 项目根解析。
 
-battle_platform/ 是 G:/moba_battle_platform/ 的子目录；真正的引擎
+battle_platform/ 是仓库根（本包父目录）的子目录；真正的引擎
 （core/ data/ tools/）在父目录。本模块在 import 时把父目录与 tools/
 加入 sys.path，使包内任何模块都能 `from core...` / `from tools...`。
+
+路径来源：全部由 __file__ 推导（见下方 PROJECT_ROOT），不依赖本机绝对路径。
 """
 
 import os
@@ -12,7 +14,8 @@ import sys
 
 # battle_platform 目录本身
 BP_DIR = os.path.dirname(os.path.abspath(__file__))
-# 项目根：battle_platform 的父目录，即 G:/moba_battle_platform
+# 项目根：battle_platform 的父目录，即仓库根
+# 2026-09-28 去本地化：项目根由 __file__ 推导、非硬编码（原 G:/moba_battle_platform 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
 PROJECT_ROOT = os.path.dirname(BP_DIR)
 TOOLS_DIR = os.path.join(PROJECT_ROOT, "tools")
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")

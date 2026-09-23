@@ -1,8 +1,28 @@
 #!/usr/bin/env python3
 """Add 55 mythology heroes to all_heroes_unified.json."""
+# 2026-09-28 去本地化：数据路径改为仓内推导（原 G:/moba_battle_platform/data/analysis/all_heroes_unified.json 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
+# 解析优先级：环境变量 MOBA_BATTLE_PLATFORM_ROOT → 仓根推导（tools/ 上溯 1 层，复用 core.paths 单一真相）→ fail-loud 点名该设哪个变量
 import json
+import os
+import sys
 
-path = 'G:/moba_battle_platform/data/analysis/all_heroes_unified.json'
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _REPO_ROOT not in sys.path:
+    sys.path.insert(0, _REPO_ROOT)
+
+from core.paths import PROJECT_ROOT  # noqa: E402  仓内路径单一真相（ADR-002），本身由 __file__ 推导
+
+path = os.path.join(
+    os.environ.get("MOBA_BATTLE_PLATFORM_ROOT") or PROJECT_ROOT,
+    "data", "analysis", "all_heroes_unified.json",
+)
+if not os.path.exists(path):
+    raise SystemExit(
+        "[_gen_mythology_heroes] 找不到英雄池统一数据：%s\n"
+        "  该文件应位于 <仓库根>/data/analysis/all_heroes_unified.json。\n"
+        "  如仓库根不在推导位置，请设置环境变量 MOBA_BATTLE_PLATFORM_ROOT 指向本仓根目录后重试。" % path
+    )
+
 with open(path, 'r', encoding='utf-8') as f:
     data = json.load(f)
 

@@ -1,9 +1,9 @@
 # battle_platform —— 对战平台技能流工作流包
 
-部署位置：`G:\moba_battle_platform\battle_platform\`
+部署位置：`<仓库根>/battle_platform/`
 
 本包是对战平台「技能流」的**可独立运行入口/子包**。它不重写战斗引擎，而是衔接
-父目录 `G:\moba_battle_platform\` 已有的引擎（`core/` `data/` `tools/`），把技能工作流
+父目录（仓库根）已有的引擎（`core/` `data/` `tools/`），把技能工作流
 封装成可调用、可命令化的模块。
 
 > ⚠️ 格式约定：技能文档中「单文件 `data/skills/<game_id>.json` = {英雄:技能}」的写法已过期。
