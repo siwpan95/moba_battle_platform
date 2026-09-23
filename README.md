@@ -1,5 +1,8 @@
 # MOBA 英雄大乱斗 — 1v1 对战平台
 
+> 仓库：<https://gitee.com/siwpan/moba_battle_platform> ｜ 许可：MIT（见 [LICENSE](LICENSE)）
+> 注：文中 <PATH> 为路径占位符，请替换为你本机实际的目录 / 可执行文件路径。
+
 ## 启动
 
 ```bash
@@ -125,5 +128,5 @@ python tools/card_tool.py info <英雄名>    # 查看英雄详情
 - 保留仓内（本仓专有）：`roll_dice_expr`（"1d8+WIS" 表达式 DSL）、安全算式求值（ADR-004）、
   simulator 的 `DND_DAMAGE_SCALE`（数据骰缩放）、机制类别别名表。
 
-依赖：alloy（`pip install -e G:\\repos\\an-engine`，见 requirements.txt 注释）。
+依赖：alloy（`pip install -e <PATH>`，见 requirements.txt 注释）。
 全量 pytest 全绿；内核侧对应增强见 an-engine（rng 注入 + 通用 NdS，测试 489 项）。
