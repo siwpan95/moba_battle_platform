@@ -30,13 +30,13 @@
 
 - OS：Windows
 - Python：`F:/Python314/python.exe`
-- 仓库：`G:/moba_battle_platform` @ `main` / `04b3bf0`
+- 仓库：`<仓库根>` @ `main` / `04b3bf0`
 - 前置：`data/character_cards/` 下 9 个新公版 IP 卡数据已就位（164 英雄）
 
 ### 2.2 复现命令
 
 ```bash
-cd G:/moba_battle_platform
+cd <仓库根>
 F:/Python314/python.exe tools/_smoke_new_heroes.py --level 18
 ```
 
