@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-# 2026-09-23 去本地化：技能数据路径改为仓内推导（原 G:/moba_battle_platform/data/skills/league_of_legends.json 已不存在，仓已迁移至 G:\repos\moba_battle_platform）
+# 2026-09-23 去本地化：技能数据路径改为仓内推导（原路径已不存在，仓已迁移至 原路径）
 # 解析优先级：环境变量 MOBA_BATTLE_PLATFORM_ROOT → 仓根推导（tools/_archive/ 上溯 2 层，复用 core.paths 单一真相）→ fail-loud 点名该设哪个变量
 _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 if _REPO_ROOT not in sys.path:
