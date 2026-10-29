@@ -21,3 +21,8 @@ node_modules/
 私人令牌.txt
 *.key
 .env
+
+# 未跟踪产物/输出治理（2026-10-29 补）
+output/
+# 仓库自身的嵌套副本（误拷入，含 dist/ 构建产物）—— 不删，先忽略；如需清理另行确认
+moba_battle_platform/
