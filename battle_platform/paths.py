@@ -24,14 +24,14 @@ CARDS_DIR = os.path.join(DATA_DIR, "character_cards")
 SOURCE_DIR = os.path.join(DATA_DIR, "source")
 ANALYSIS_DIR = os.path.join(DATA_DIR, "analysis")
 
-# embeddable Python（F:/Python314）不会自动把脚本目录加入 sys.path，
+# embeddable Python（/Python314）不会自动把脚本目录加入 sys.path，
 # 且 ._pth / PYTHONSAFEPATH 会禁用该行为 → 必须显式引导。
 for _p in (PROJECT_ROOT, TOOLS_DIR):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
 # 运行 Python 解释器（与项目约定一致）
-PY = r"F:/Python314/python.exe"
+PY = r"python"
 
 
 def skill_file(game_id: str, hero: str) -> str:

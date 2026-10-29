@@ -29,7 +29,7 @@
 ### 2.1 环境 / 前置条件
 
 - OS：Windows
-- Python：`F:/Python314/python.exe`
+- Python：`/Python314/python.exe`
 - 仓库：`<仓库根>` @ `main` / `04b3bf0`
 - 前置：`data/character_cards/` 下 9 个新公版 IP 卡数据已就位（164 英雄）
 
@@ -37,7 +37,7 @@
 
 ```bash
 cd <仓库根>
-F:/Python314/python.exe tools/_smoke_new_heroes.py --level 18
+/Python314/python.exe tools/_smoke_new_heroes.py --level 18
 ```
 
 ### 2.3 典型复现对（最小复现用例）
@@ -235,7 +235,7 @@ def _effect_value(self, eff, attrs, side):
 ### V1 — 主验收（工单指定）
 
 ```bash
-F:/Python314/python.exe tools/_smoke_new_heroes.py --level 18
+/Python314/python.exe tools/_smoke_new_heroes.py --level 18
 ```
 
 - 164 英雄随机 **400 场** @ lv18

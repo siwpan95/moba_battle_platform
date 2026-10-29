@@ -26,8 +26,8 @@
 英雄定位：命名表的 key = 文件名 stem = card.hero.name。
 
 用法：
-    F:/Python314/python.exe tools/_apply_thematic_names_hero.py --dry-run
-    F:/Python314/python.exe tools/_apply_thematic_names_hero.py
+    python tools/_apply_thematic_names_hero.py --dry-run
+    python tools/_apply_thematic_names_hero.py
 """
 
 import io

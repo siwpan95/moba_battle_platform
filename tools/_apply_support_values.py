@@ -29,8 +29,8 @@ support 卡的治疗/护盾 effect 此前没有 `value` 字段，simulator 的 `
   骨头卡   data/character_cards/<ip>/<hero>.json  (内嵌 skills)
 
 用法：
-    F:/Python314/python.exe tools/_apply_support_values.py --dry-run
-    F:/Python314/python.exe tools/_apply_support_values.py
+    python tools/_apply_support_values.py --dry-run
+    python tools/_apply_support_values.py
 """
 
 import io

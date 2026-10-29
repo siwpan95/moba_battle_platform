@@ -17,8 +17,8 @@
   骨头卡   data/character_cards/<ip>/<hero>.json   (game.universal_role + 内嵌 skills)
 
 用法：
-    F:/Python314/python.exe tools/_apply_thematic_names.py --dry-run
-    F:/Python314/python.exe tools/_apply_thematic_names.py
+    python tools/_apply_thematic_names.py --dry-run
+    python tools/_apply_thematic_names.py
 """
 
 import io

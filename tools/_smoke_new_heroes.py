@@ -40,7 +40,7 @@ import traceback
 from collections import Counter, defaultdict
 
 # ── 路径修正 ──
-# F:/Python314 解释器会把 sys.path[0] 设为 python zip，必须手动插入项目根目录
+# /Python314 解释器会把 sys.path[0] 设为 python zip，必须手动插入项目根目录
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "tools"))
